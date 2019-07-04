@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top:20px;
 }
 
 .App-logo {
@@ -30,4 +31,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-nav > li {
+  float: left;
+  position: relative;
+}
+.navbar-light .navbar-nav .active a::after {
+  border-bottom: 2px solid #3D4043;
+  bottom: -5px;
+  left: 0;
+  content : " ";
+  position: absolute;
+  right: 0;
+}
+
+.navbar{
+  background-color: transparent !important;
+  margin-bottom: 40px;
+}
+
+.logo{
+  width:85px;
 }
