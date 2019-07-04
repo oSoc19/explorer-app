@@ -27,10 +27,10 @@ namespace backend.Controllers
         }
 
         // GET: api/paintings/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Painting>> GetPainting(long id)
-        {
-            return Ok();
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<Painting>> GetPainting(long id)
+        //{
+            //return Ok();
             // var painting = await _context.Paintings.FindAsync(id);
 
             // if (painting == null)
@@ -39,6 +39,6 @@ namespace backend.Controllers
             // }
 
             // return painting;
-        }
+        //}
     }
 }

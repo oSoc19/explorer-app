@@ -12,8 +12,9 @@ namespace backend.Models
         public String nationality { get; set; }
         public DateTime birthDate { get; set; }
         public DateTime deathDate { get; set; }
+        public String description { get; set; }
 
-        public virtual List<Painting> Paintings { get; set;}
+        //public virtual List<Painting> Paintings { get; set;}
 
     }
 }
