@@ -4,45 +4,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using backend.Models;
+using backend.DAL;
 
 namespace backend.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class PaintingController : ControllerBase
     {
-        private readonly PaintingContext _context;
-
+        private readonly PaintingDataAccess _paintingDataAccess;
         public PaintingController(PaintingContext context)
         {
-            _context = context;
-
-            if (_context.Paintings.Count() == 0)
-            {
-                _context.Paintings.Add(new Painting { title = "Superbe peinture", author = new Author { firstName = "Sushil", lastName = "Ghambir" } });
-                _context.SaveChanges();
-            }
+            _paintingDataAccess = new PaintingDataAccess(context);
+            _paintingDataAccess.InitDatabase();
         }
 
         // GET: api/Painting
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Painting>>> GetPaintings()
+        [Route("api/painting")]
+        public ActionResult<IEnumerable<Painting>> GetPaintings()
         {
-            return await _context.Paintings.ToListAsync();
+            return Ok(_paintingDataAccess.GetPaintings());
         }
 
         // GET: api/paintings/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Painting>> GetPainting(long id)
         {
-            var painting = await _context.Paintings.FindAsync(id);
+            return Ok();
+            // var painting = await _context.Paintings.FindAsync(id);
 
-            if (painting == null)
-            {
-                return NotFound();
-            }
+            // if (painting == null)
+            // {
+            //     return NotFound();
+            // }
 
-            return painting;
+            // return painting;
         }
     }
 }

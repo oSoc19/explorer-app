@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-namespace backend.Models
+using backend.Models;
+
+namespace backend.DAL
 {
     public class PaintingContext : DbContext
     {
@@ -8,5 +10,6 @@ namespace backend.Models
         }
 
         public DbSet<Painting> Paintings { get; set; }
+        public DbSet<Author> Authors {get;set;}
     }
 }
