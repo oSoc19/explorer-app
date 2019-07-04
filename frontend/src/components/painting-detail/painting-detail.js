@@ -101,13 +101,7 @@ class PaintingDetail extends React.Component{
                        <div className={`container ${styles.tagsContainer}`}>
                         <p className="">Tags</p>
                            <div className="container">
-                            <span>Author</span>
-                            <span>Category</span>
-                            <span>Author</span>
-                            <span>Category</span>
-                            <span>Category</span>   
-                            <span>Category</span>
-                          
+                            
                            </div>
                        </div>
                     </div>
