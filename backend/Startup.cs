@@ -24,7 +24,7 @@ namespace backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<PaintingContext>(opt =>
-                opt.UseInMemoryDatabase("Paintings"));
+                opt.UseSqlServer(Configuration.GetConnectionString("ExplorerDb")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
