@@ -59,31 +59,31 @@ class PaintingDetail extends React.Component{
                                 <tbody>
                                     <tr>
                                         <td>Title</td>
-                                        <td>X</td>
+                                        <td>Portret van Fovin de Hasque</td>
                                     </tr>
                                     <tr>
-                                        <td>Artist</td>
-                                        <td>X</td>
+                                        <td>Author</td>
+                                        <td>Jakob van Oost</td>
                                     </tr>
                                     <tr>
                                         <td>Date</td>
-                                        <td>X</td>
+                                        <td>Between circa 1669 and circa 1670</td>
                                     </tr>
                                     <tr>
                                         <td>Place</td>
-                                        <td>X</td>
+                                        <td>Brugge</td>
                                     </tr>
                                     <tr>
                                         <td>Size</td>
-                                        <td>X</td>
+                                        <td>Height: 106 cm (41.7 ″); Width: 83 cm (32.6 ″)</td>
                                     </tr>
                                     <tr>
                                         <td>Category</td>
-                                        <td>X</td>
+                                        <td>Portrait</td>
                                     </tr>
                                     <tr>
                                         <td>Owner</td>
-                                        <td>X</td>
+                                        <td>Groeningemuseum</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -91,12 +91,11 @@ class PaintingDetail extends React.Component{
                     </div>
                     <div className="col-sm">
                        <div className="container">
-                           <div className={`row ${styles.paintTitle}`}>Title</div>
-                           <div className={`row ${styles.paintArtist}`}>Author</div>
+                           <div className={`row ${styles.paintTitle}`}>Portret van Fovin de Hasque</div>
+                           <div className={`row ${styles.paintArtist}`}>Jakob van Oost</div>
                        </div>
                        <div className={`container ${styles.paintDescription}`}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed diam vehicula, rutrum libero vitae, interdum nunc. Aenean dictum vel velit vitae semper. Curabitur facilisis massa vel lacus semper semper. Suspendisse a viverra sapien, non tempus neque. Donec ultricies turpis at mauris bibendum placerat. Integer malesuada eleifend vulputate. Pellentesque ac ipsum magna. Quisque quis pretium lorem. Proin et suscipit nibh, nec volutpat diam. Quisque commodo, nunc sit amet molestie rutrum, lacus nunc porta quam, in feugiat lectus ex tempus nulla. Nulla ut dui lobortis, viverra arcu maximus, euismod massa. Proin sit amet tempus odio. Integer at turpis nec ex placerat pellentesque. Suspendisse pulvinar egestas luctus. Integer condimentum purus et fermentum molestie.
-                        Curabitur ullamcorper ex neque, sit amet aliquet mi hendrerit nec. Sed leo nisl, vestibulum id diam et, sollicitudin tincidunt sapien. Curabitur aliquam enim sit amet diam ultrices, ut porttitor nisi consequat. Nulla a sodales massa, et tincidunt tellus. Donec sit amet neque ut felis ultricies porta ut blandit est. Aenean ac lacinia tortor, eget gravida lectus. Praesent vitae scelerisque ante. Nam hendrerit risus ipsum, ut ultricies neque ultricies ut. Aliquam vel urna eu erat gravida imperdiet id ut odio. Quisque magna ligula, finibus non libero nec, consequat gravida tellus. Proin posuere rutrum ligula ac vehicula. Praesent malesuada tempus nisl quis mollis.
+                            Portret van Fovin de Hasque (Jacob I van Oost, circa 1669 - circa 1670); collection: Musea Brugge - Groeningemuseum
                        </div>
                        <div className={`container ${styles.tagsContainer}`}>
                         <p className="">Tags</p>
