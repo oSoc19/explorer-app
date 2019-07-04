@@ -1,0 +1,67 @@
+.imageSize{
+ 
+}
+
+.paintDetails{
+text-align: left;
+margin-top : 20px;
+color:#787B7D;
+font-size: 13px;
+}
+
+.paintDetails td{
+padding : 0px;
+}
+
+.paintDetails>tbody>tr>:first-child{
+width : 100px;
+}
+
+.paintDescription{
+text-align: left;
+color:#787B7D;
+font-size: 13px;
+margin-top : 35px;
+padding : 0px;
+}
+
+.paintImage{
+display: flex;
+margin-right: auto;
+}
+
+.paintTitle{
+color:black;
+font-weight: bold;
+}
+
+.paintArtist{
+color:#787B7D;
+}
+
+.paintDetailsContainer{
+margin-top : 50px;
+}
+
+.tagsContainer{
+margin-top : 50px;
+display: block;
+padding: 0;
+}
+
+.tagsContainer>p{
+margin-bottom: 20px;
+text-align: left;
+}
+
+.tagsContainer>div>span{
+border : 1px solid black;
+/* margin-left : 10px; */
+margin-right: 10px;
+padding : 5px;
+}
+
+.tagsContainer>div{
+text-align: left !important;
+padding: 0px;
+}
