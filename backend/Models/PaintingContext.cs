@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
 namespace backend.Models
 {
-    public class PaintingContext
+    public class PaintingContext : DbContext
     {
-        public PaintingContext()
+        public PaintingContext(DbContextOptions<PaintingContext> options) : base(options)
         {
         }
+
+        public DbSet<Painting> Paintings { get; set; }
     }
 }
