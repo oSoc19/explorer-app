@@ -9,6 +9,8 @@ const override = css`
     border-color: red;
 `;
 
+const TESTURL = "https://en.wikipedia.org/w/api.php?prop=imageinfo&format=json&action=query&titles=File:Portret van Fovin de Hasque, circa 1669 - circa 1670, Groeningemuseum, 0040728000.jpg&iiprop=url&origin=*";
+
 class PaintingDetail extends React.Component{
 
     constructor(props){
@@ -21,7 +23,13 @@ class PaintingDetail extends React.Component{
     }
 
     async getImage(){
-        let response = await fetch(TESTURL, {headers : {'Access-Control-Allow-Origin' : '*'}});
+        const headers = {
+            'Access-Control-Allow-Origin' : '*',
+            'Content-Type' : 'application/json',
+            'Origin' : '*'
+        };
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        let response = await fetch(proxyurl + TESTURL, {headers : headers});
         let dataJSON = await response.json();
         await this.setState({data : dataJSON, loading : false});
     }
@@ -113,7 +121,5 @@ class PaintingDetail extends React.Component{
         );
     }
 }
-
-const TESTURL = "https://en.wikipedia.org/w/api.php?prop=imageinfo&format=json&action=query&titles=File:Portret van Fovin de Hasque, circa 1669 - circa 1670, Groeningemuseum, 0040728000.jpg&iiprop=url";
 
 export default PaintingDetail;
