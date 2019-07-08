@@ -15,10 +15,10 @@ namespace backend.Controllers
         public PaintingController(PaintingContext context)
         {
             _paintingDataAccess = new PaintingDataAccess(context);
-            _paintingDataAccess.InitDatabase();
+            //_paintingDataAccess.InitDatabase();
         }
 
-        // GET: api/Painting
+        // GET: api/painting
         [HttpGet]
         [Route("api/painting")]
         public ActionResult<IEnumerable<Painting>> GetPaintings()

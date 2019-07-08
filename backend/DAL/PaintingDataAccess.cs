@@ -16,12 +16,14 @@ namespace backend.DAL
             _context = context;
         }
 
-        public void InitDatabase()
+        public async void InitDatabase()
         {
             if (_context.Paintings.Count() == 0)
             {
-                _context.Paintings.Add(new Painting { title = "Superbe peinture", author = new Author { firstName = "Sushil", lastName = "Ghambir", id=1 }, AuthorId=1 });
-                _context.SaveChanges();
+                var authorInsert =  new Author { firstName = "Sushil", lastName = "Ghambir" };
+                _context.Authors.Add(authorInsert);
+                _context.Paintings.Add(new Painting { title = "Superbe peinture", author = authorInsert, AuthorId=1 });
+                await _context.SaveChangesAsync();
             }
         }
 
