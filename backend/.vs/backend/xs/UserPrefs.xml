@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="DAL/PaintingDataAccess.cs">
     <Files>
       <File FileName="DAL/AuthorDataAccess.cs" Line="1" Column="1" />
-      <File FileName="Controllers/PaintingController.cs" Line="18" Column="37" />
-      <File FileName="DAL/PaintingDataAccess.cs" Line="20" Column="36" />
-      <File FileName="DAL/PaintingContext.cs" Line="1" Column="1" />
+      <File FileName="Controllers/PaintingController.cs" />
+      <File FileName="DAL/PaintingDataAccess.cs" Line="3" Column="19" />
+      <File FileName="DAL/PaintingContext.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

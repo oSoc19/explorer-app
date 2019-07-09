@@ -26,19 +26,19 @@ namespace backend.Controllers
             return Ok(_paintingDataAccess.GetPaintings());
         }
 
-        // GET: api/paintings/5
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Painting>> GetPainting(long id)
-        //{
-            //return Ok();
-            // var painting = await _context.Paintings.FindAsync(id);
+        // GET: api/painting/{id}
+        [HttpGet]
+        [Route("api/painting/{id}")]
+        public ActionResult<Painting> GetPainting(long id)
+        {
+            var painting = _paintingDataAccess.GetPainting(id);
 
-            // if (painting == null)
-            // {
-            //     return NotFound();
-            // }
+            if (painting == null)
+            {
+                return NotFound();
+            }
 
-            // return painting;
-        //}
+            return Ok(painting);
+        }
     }
 }

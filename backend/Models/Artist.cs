@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using backend.Models;
 
 namespace backend.Models
 {

@@ -1,10 +1,10 @@
 using System;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using backend.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace backend.DAL
 {
@@ -26,13 +26,16 @@ namespace backend.DAL
             _context.SaveChanges();
         }
 
-        public List<Painting> GetPaintings()
-        {
+        public List<Painting> GetPaintings(){
             return _context.Paintings
                 .Include(painting => painting.author)
                 .Include(painting => painting.movement)
                 .Include(painting => painting.technique)
                 .ToList();
+        }
+
+        public Painting GetPainting(long id){
+            return GetPaintings().Find(painting => painting.id == id);
         }
     }
 }
