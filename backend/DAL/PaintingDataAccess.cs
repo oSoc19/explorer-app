@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using backend.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace backend.DAL
 {
@@ -16,15 +17,13 @@ namespace backend.DAL
             _context = context;
         }
 
-        public async void InitDatabase()
-        {
-            if (_context.Paintings.Count() == 0)
-            {
-                var authorInsert =  new Author { firstName = "Sushil", lastName = "Ghambir" };
-                _context.Authors.Add(authorInsert);
-                _context.Paintings.Add(new Painting { title = "Superbe peinture", author = authorInsert, AuthorId=1 });
-                await _context.SaveChangesAsync();
-            }
+        public void InitDatabase(){
+            var rand = _context.Paintings.Count();
+            _context.Paintings.Add(new Painting { title = "Superbe peinture"+rand, 
+                    author = new Artist{firstName = "Sushil"+rand, lastName = "Ghambir"+rand},
+                    movement = new Movement{name = "Baroque"+rand},
+                    technique = new Technique{name = "Oil painting"+rand}});
+            _context.SaveChanges();
         }
 
         public List<Painting> GetPaintings()

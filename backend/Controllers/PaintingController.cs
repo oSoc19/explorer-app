@@ -15,7 +15,7 @@ namespace backend.Controllers
         public PaintingController(PaintingContext context)
         {
             _paintingDataAccess = new PaintingDataAccess(context);
-            //_paintingDataAccess.InitDatabase();
+            _paintingDataAccess.InitDatabase();
         }
 
         // GET: api/painting

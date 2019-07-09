@@ -4,7 +4,7 @@ using backend.Models;
 
 namespace backend.Models
 {
-    public class Author
+    public class Artist
     {
         public long id { get; set; }
         public String firstName { get; set; }
