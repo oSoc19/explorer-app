@@ -28,7 +28,11 @@ namespace backend.DAL
 
         public List<Painting> GetPaintings()
         {
-            return _context.Paintings.ToList();
+            return _context.Paintings
+                .Include(painting => painting.author)
+                .Include(painting => painting.movement)
+                .Include(painting => painting.technique)
+                .ToList();
         }
     }
 }
