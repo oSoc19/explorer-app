@@ -14,8 +14,6 @@ namespace backend.Models
         public DateTime deathDate { get; set; }
         public String description { get; set; }
 
-        //public virtual List<Painting> Paintings { get; set;}
-
     }
 }
 
