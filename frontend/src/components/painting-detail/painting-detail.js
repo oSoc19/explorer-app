@@ -98,6 +98,7 @@ class PaintingDetail extends React.Component{
             :
 
             <div className="container">
+                <div id="Stories"></div>
                 <nav className="navbar sticky-top navbar-expand navbar-light bg-light">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -118,7 +119,7 @@ class PaintingDetail extends React.Component{
                 </nav>
 
                 <div className={styles.body}>
-                    <div id="Stories">
+                    <div >
                         <AliceCarousel mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
                             {images.map(i => <img key={i.url} src={i.url} onDragStart={this.handleOnDragStart} className="img-fluid"></img>)}
                         </AliceCarousel>
