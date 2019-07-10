@@ -1,5 +1,4 @@
-﻿// Unused usings removed
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +6,6 @@ using Microsoft.Extensions.Configuration;
 using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
-using backend.Models;
 using backend.DAL;
 
 namespace backend
@@ -39,7 +37,7 @@ namespace backend
 
         // This method gets called by the runtime. Use this method to configure the HTTP 
         //request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, PaintingContext context)
         {
             if (env.IsDevelopment())
             {
@@ -65,6 +63,7 @@ namespace backend
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+
         }
     }
 }

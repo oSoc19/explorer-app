@@ -1,15 +1,19 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace backend.Models
 {
     public class PaintingStory
     {
-        public long id { get; set; }
-        public String text { get; set; }
-        public String imageUrl {get;set;}
-        public String language {get;set;}
-        public long paintingId { get; set;}
-        public virtual Painting painting {get;set;}
+        public long Id { get; set; }
+        public String Text { get; set; }
+        public String ImageUrl {get;set;}
+        public long LanguageId {get;set;}
+        public long PaintingId { get; set;}
+        [ForeignKey("PaintingId")]
+        public virtual Painting Painting {get;set;}
+        [ForeignKey("LanguageId")]
+        public virtual Language Language {get;set;}
     }
 }
 

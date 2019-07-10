@@ -18,24 +18,24 @@ namespace backend.DAL
         }
 
         public void InitDatabase(){
-            var rand = _context.Paintings.Count();
-            _context.Paintings.Add(new Painting { title = "Superbe peinture"+rand, 
-                    author = new Artist{firstName = "Sushil"+rand, lastName = "Ghambir"+rand},
-                    movement = new Movement{name = "Baroque"+rand},
-                    technique = new Technique{name = "Oil painting"+rand}});
+            var rand = _context.Painting.Count();
+            _context.Painting.Add(new Painting { 
+                    Author = new Artist{FirstName = "Sushil"+rand, LastName = "Ghambir"+rand},
+                    Movement = new Movement{},
+                    Technique = new Technique{}});
             _context.SaveChanges();
         }
 
         public List<Painting> GetPaintings(){
-            return _context.Paintings
-                .Include(painting => painting.author)
-                .Include(painting => painting.movement)
-                .Include(painting => painting.technique)
+            return _context.Painting
+                .Include(painting => painting.Author)
+                .Include(painting => painting.Movement)
+                .Include(painting => painting.Technique)
                 .ToList();
         }
 
         public Painting GetPainting(long id){
-            return GetPaintings().Find(painting => painting.id == id);
+            return GetPaintings().Find(painting => painting.Id == id);
         }
     }
 }

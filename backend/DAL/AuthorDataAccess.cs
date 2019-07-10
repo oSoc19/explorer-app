@@ -15,7 +15,7 @@ namespace backend.DAL
 
         public List<Artist> GetAuthors()
         {
-            return _context.Artists.ToList();
+            return _context.Artist.ToList();
         }
     }
 }

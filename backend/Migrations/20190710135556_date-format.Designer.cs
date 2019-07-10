@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(PaintingContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190710135556_date-format")]
+    partial class dateformat
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -98,6 +100,8 @@ namespace backend.Migrations
 
                     b.Property<long>("AuthorId");
 
+                    b.Property<string>("Description");
+
                     b.Property<float>("Height");
 
                     b.Property<string>("ImageUrl");
@@ -105,6 +109,8 @@ namespace backend.Migrations
                     b.Property<long>("MovementId");
 
                     b.Property<long>("TechniqueId");
+
+                    b.Property<string>("Title");
 
                     b.Property<float>("Width");
 

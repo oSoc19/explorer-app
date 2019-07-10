@@ -5,10 +5,9 @@ namespace backend.Models
 {
     public class Movement
     {
-        public long id { get; set; }
-        public String name { get; set; }
-        public String description { get; set; }
-        public virtual List<Artist> artists {get;set;}
+        public long Id { get; set; }
+        public virtual List<Painting> Paintings {get;set;}
+        public virtual List<MovementTranslation> Translations {get;set;}
     }
 }
 

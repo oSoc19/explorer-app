@@ -15,8 +15,6 @@ namespace backend.Controllers
         {
 
             _paintingDataAccess = new PaintingDataAccess(context);
-            _paintingDataAccess.InitDatabase();
-
             _mapper = mapper;
         }
 
