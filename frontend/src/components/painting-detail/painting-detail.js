@@ -5,6 +5,7 @@ import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import AudioPlayer from "react-h5-audio-player";
 import ReadMoreAndLess from 'react-read-more-less';
+import ReadMore from '../read-more/read-more';
 
 const images = [
     {
@@ -65,23 +66,6 @@ class PaintingDetail extends React.Component{
         this.setState({data : dataState, loading : loadingState, currentStoryIndex : e.item})
     }
 
-    renderStoryContent(){
-        return (
-            <div>
-                <h5 className={styles.title}>{images[this.state.currentStoryIndex].storyTitle}</h5>
-                <ReadMoreAndLess
-                    ref={this.ReadMore}
-                    className={`read-more-content ${styles.content}`}
-                    charLimit={150}
-                    readMoreText="Read more"
-                    readLessText="Read less"
-                >
-                    {images[this.state.currentStoryIndex].content}
-                </ReadMoreAndLess>
-            </div>
-        );
-    }
-
     render(){
         return(
             this.state.loading ?
@@ -126,7 +110,7 @@ class PaintingDetail extends React.Component{
                     </div>
 
                     <div id="StoryInfo" className={styles.content}>
-                        {this.renderStoryContent()}
+                        <ReadMore obj={images[this.state.currentStoryIndex]} maxLength={150}></ReadMore>
                     </div>
 
                     <div id="Artwork" className={styles.content}>
