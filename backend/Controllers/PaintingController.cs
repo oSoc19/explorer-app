@@ -11,23 +11,13 @@ namespace backend.Controllers
     {
         private readonly PaintingDataAccess _paintingDataAccess;
         private readonly IMapper _mapper;
-        public PaintingController(PaintingContext context)
+        public PaintingController(PaintingContext context, IMapper mapper)
         {
 
             _paintingDataAccess = new PaintingDataAccess(context);
             _paintingDataAccess.InitDatabase();
-            
-            var configuration = new MapperConfiguration(cfg => {
-                cfg.CreateMap<Painting, PaintingDto>();
-                cfg.CreateMap<Artist, ArtistDto>();
-                cfg.CreateMap<Movement, MovementDto>();
-                cfg.CreateMap<PaintingAudio, PaintingAudioDto>();
-                cfg.CreateMap<PaintingStory, PaintingStoryDto>();
-                cfg.CreateMap<Technique, TechniqueDto>();
-            });
 
-            configuration.AssertConfigurationIsValid();
-            _mapper = configuration.CreateMapper();
+            _mapper = mapper;
         }
 
         // GET: api/painting
