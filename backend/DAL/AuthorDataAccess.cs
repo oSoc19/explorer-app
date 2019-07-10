@@ -13,9 +13,9 @@ namespace backend.DAL
             _context = context;
         }
 
-        public List<Author> GetAuthors()
+        public List<Artist> GetAuthors()
         {
-            return _context.Authors.ToList();
+            return _context.Artists.ToList();
         }
     }
 }

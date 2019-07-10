@@ -10,8 +10,8 @@ using backend.DAL;
 namespace backend.Migrations
 {
     [DbContext(typeof(PaintingContext))]
-    [Migration("20190704115952_first-mig")]
-    partial class firstmig
+    [Migration("20190709112422_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,11 +21,15 @@ namespace backend.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("backend.Models.Author", b =>
+            modelBuilder.Entity("backend.Models.Artist", b =>
                 {
                     b.Property<long>("id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<long?>("Movementid");
+
+                    b.Property<long?>("Techniqueid");
 
                     b.Property<DateTime>("birthDate");
 
@@ -41,24 +45,26 @@ namespace backend.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Authors");
+                    b.HasIndex("Movementid");
+
+                    b.HasIndex("Techniqueid");
+
+                    b.ToTable("Artists");
                 });
 
-            modelBuilder.Entity("backend.Models.Category", b =>
+            modelBuilder.Entity("backend.Models.Movement", b =>
                 {
                     b.Property<long>("id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long?>("Paintingid");
+                    b.Property<string>("description");
 
                     b.Property<string>("name");
 
                     b.HasKey("id");
 
-                    b.HasIndex("Paintingid");
-
-                    b.ToTable("Category");
+                    b.ToTable("Movement");
                 });
 
             modelBuilder.Entity("backend.Models.Painting", b =>
@@ -67,7 +73,7 @@ namespace backend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long>("AuthorId");
+                    b.Property<long>("authorId");
 
                     b.Property<string>("description");
 
@@ -75,9 +81,9 @@ namespace backend.Migrations
 
                     b.Property<string>("imageUrl");
 
-                    b.Property<string>("owner");
+                    b.Property<long>("movementId");
 
-                    b.Property<string>("place");
+                    b.Property<long>("techniqueId");
 
                     b.Property<string>("title");
 
@@ -87,48 +93,57 @@ namespace backend.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("AuthorId");
+                    b.HasIndex("authorId");
+
+                    b.HasIndex("movementId");
+
+                    b.HasIndex("techniqueId");
 
                     b.ToTable("Paintings");
                 });
 
-            modelBuilder.Entity("backend.Models.Tag", b =>
+            modelBuilder.Entity("backend.Models.Technique", b =>
                 {
                     b.Property<long>("id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long?>("Paintingid");
+                    b.Property<string>("description");
 
                     b.Property<string>("name");
 
                     b.HasKey("id");
 
-                    b.HasIndex("Paintingid");
-
-                    b.ToTable("Tag");
+                    b.ToTable("Technique");
                 });
 
-            modelBuilder.Entity("backend.Models.Category", b =>
+            modelBuilder.Entity("backend.Models.Artist", b =>
                 {
-                    b.HasOne("backend.Models.Painting")
-                        .WithMany("categories")
-                        .HasForeignKey("Paintingid");
+                    b.HasOne("backend.Models.Movement")
+                        .WithMany("artists")
+                        .HasForeignKey("Movementid");
+
+                    b.HasOne("backend.Models.Technique")
+                        .WithMany("artists")
+                        .HasForeignKey("Techniqueid");
                 });
 
             modelBuilder.Entity("backend.Models.Painting", b =>
                 {
-                    b.HasOne("backend.Models.Author", "author")
+                    b.HasOne("backend.Models.Artist", "author")
                         .WithMany()
-                        .HasForeignKey("AuthorId")
+                        .HasForeignKey("authorId")
                         .OnDelete(DeleteBehavior.Cascade);
-                });
 
-            modelBuilder.Entity("backend.Models.Tag", b =>
-                {
-                    b.HasOne("backend.Models.Painting")
-                        .WithMany("tags")
-                        .HasForeignKey("Paintingid");
+                    b.HasOne("backend.Models.Movement", "movement")
+                        .WithMany()
+                        .HasForeignKey("movementId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("backend.Models.Technique", "technique")
+                        .WithMany()
+                        .HasForeignKey("techniqueId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

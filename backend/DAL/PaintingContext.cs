@@ -10,6 +10,6 @@ namespace backend.DAL
         }
 
         public DbSet<Painting> Paintings { get; set; }
-        public DbSet<Author> Authors {get;set;}
+        public DbSet<Artist> Artists {get;set;}
     }
 }
