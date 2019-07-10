@@ -65,3 +65,58 @@ padding : 5px;
 text-align: left !important;
 padding: 0px;
 }
+
+.audioPlayer{
+    margin-bottom : 10px;
+}
+
+.infos{
+    text-align:left
+}
+
+.paintInfos{
+    margin-bottom : 10px;
+}
+
+.footer {
+    position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+.body {
+    padding:10px;
+    padding-bottom:60px;
+    margin-bottom : 20px;
+}
+
+.header{
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.title{
+    font-weight: bold
+    /* font-family: 'Karla' */
+}
+
+.content{
+    color : #787B7D;
+    margin-top : 20px;
+    text-align: left;
+
+}
+
+.override{
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+}
