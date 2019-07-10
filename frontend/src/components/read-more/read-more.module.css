@@ -1,0 +1,13 @@
+.readMoreButton{
+    margin-top:5px;
+    text-align: center;
+    color:black;
+}
+
+/* .readMoreButton:hover{
+    text-decoration: underline !important;
+} */
+
+.title{
+    font-weight: bold
+}
