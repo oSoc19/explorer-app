@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 
 namespace backend.Models
 {
-    public class Artist
+    public class ArtistDto
     {
         public long id { get; set; }
         public String firstName { get; set; }
@@ -12,8 +11,6 @@ namespace backend.Models
         public DateTime birthDate { get; set; }
         public DateTime deathDate { get; set; }
         public String description { get; set; }
-
-        public List<Painting> paintings {get;set;}
 
     }
 }

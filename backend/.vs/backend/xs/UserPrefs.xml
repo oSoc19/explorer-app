@@ -1,20 +1,18 @@
 ﻿<Properties StartupConfiguration="{9CCCA912-2EED-4988-8186-AAE4468E9E54}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/PaintingDataAccess.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PaintingController.cs">
     <Files>
-      <File FileName="DAL/AuthorDataAccess.cs" Line="1" Column="1" />
-      <File FileName="Controllers/PaintingController.cs" />
-      <File FileName="DAL/PaintingDataAccess.cs" Line="3" Column="19" />
-      <File FileName="DAL/PaintingContext.cs" />
+      <File FileName="Controllers/PaintingController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="backend" expanded="True">
             <Node name="backend" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="DAL" expanded="True">
-                <Node name="PaintingDataAccess.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="PaintingController.cs" selected="True" />
               </Node>
+              <Node name="DAL" expanded="True" />
+              <Node name="DTO" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>

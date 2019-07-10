@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace backend.Models
 {
@@ -27,6 +28,9 @@ namespace backend.Models
         [ForeignKey("techniqueId")]
         public virtual Technique technique {get;set;}
 
+        public virtual List<PaintingAudio> audios {get;set;}
+
+        public virtual List<PaintingStory> stories {get;set;}
 
     }
 }

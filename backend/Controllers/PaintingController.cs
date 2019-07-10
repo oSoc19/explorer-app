@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using backend.Models;
+using AutoMapper;
 using backend.DAL;
 
 namespace backend.Controllers
@@ -12,10 +10,24 @@ namespace backend.Controllers
     public class PaintingController : ControllerBase
     {
         private readonly PaintingDataAccess _paintingDataAccess;
+        private readonly IMapper _mapper;
         public PaintingController(PaintingContext context)
         {
+
             _paintingDataAccess = new PaintingDataAccess(context);
             _paintingDataAccess.InitDatabase();
+            
+            var configuration = new MapperConfiguration(cfg => {
+                cfg.CreateMap<Painting, PaintingDto>();
+                cfg.CreateMap<Artist, ArtistDto>();
+                cfg.CreateMap<Movement, MovementDto>();
+                cfg.CreateMap<PaintingAudio, PaintingAudioDto>();
+                cfg.CreateMap<PaintingStory, PaintingStoryDto>();
+                cfg.CreateMap<Technique, TechniqueDto>();
+            });
+
+            configuration.AssertConfigurationIsValid();
+            _mapper = configuration.CreateMapper();
         }
 
         // GET: api/painting
@@ -23,7 +35,9 @@ namespace backend.Controllers
         [Route("api/painting")]
         public ActionResult<IEnumerable<Painting>> GetPaintings()
         {
-            return Ok(_paintingDataAccess.GetPaintings());
+            var paintings = _paintingDataAccess.GetPaintings();
+            var paintingsDto = _mapper.Map<List<PaintingDto>>(paintings);
+            return Ok(paintingsDto);
         }
 
         // GET: api/painting/{id}
@@ -32,13 +46,12 @@ namespace backend.Controllers
         public ActionResult<Painting> GetPainting(long id)
         {
             var painting = _paintingDataAccess.GetPainting(id);
-
             if (painting == null)
             {
                 return NotFound();
             }
-
-            return Ok(painting);
+            var paintingDto = _mapper.Map<PaintingDto>(painting);
+            return Ok(paintingDto);
         }
     }
 }
