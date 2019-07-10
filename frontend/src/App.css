@@ -47,10 +47,13 @@
 }
 
 .navbar{
-  background-color: transparent !important;
-  margin-bottom: 40px;
+  background-color: white !important;
 }
 
 .logo{
   width:85px;
+}
+
+.react-h5-audio-player {
+  margin-bottom: 10px;
 }
