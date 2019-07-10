@@ -25,7 +25,7 @@ namespace backend.DAL
             .HasData(
                 new Language
                 {
-                    Id = 0,
+                    Id = 1,
                     Code = "FR",
                     Name = "Français"
                 }
@@ -35,7 +35,7 @@ namespace backend.DAL
             .HasData(
                 new Artist
                 {
-                    Id = 0,
+                    Id = 1,
                     FirstName = "Lucas",
                     LastName = "Achtschellinck",
                     Nationality = "Belgian",
@@ -48,7 +48,7 @@ namespace backend.DAL
             .HasData(
                 new Artist
                 {
-                    Id = 1,
+                    Id = 2,
                     FirstName = "Jacob I",
                     LastName = "Van Oost",
                     Nationality = "Belgian",
@@ -61,7 +61,7 @@ namespace backend.DAL
             .HasData(
                 new Artist
                 {
-                    Id = 2,
+                    Id = 3,
                     FirstName = "Jacob II",
                     LastName = "Van Oost",
                     Nationality = "Belgian",
@@ -74,7 +74,7 @@ namespace backend.DAL
             .HasData(
                 new Movement
                 {
-                    Id = 0
+                    Id = 1
                 }
             );
 
@@ -82,11 +82,11 @@ namespace backend.DAL
             .HasData(
                 new MovementTranslation
                 {
-                    Id = 0,
-                    MovementId = 0,
+                    Id = 1,
+                    MovementId = 1,
                     Name = "Baroque",
                     Description = "Baroque description too lazy to look for it",
-                    LanguageId = 0
+                    LanguageId = 1
                 }
             );
 
@@ -94,7 +94,7 @@ namespace backend.DAL
             .HasData(
                 new Technique
                 {
-                    Id = 0
+                    Id = 1
                 }
             );
 
@@ -102,11 +102,11 @@ namespace backend.DAL
             .HasData(
                 new TechniqueTranslation
                 {
-                    Id = 0,
-                    TechniqueId = 0,
+                    Id = 1,
+                    TechniqueId = 1,
                     Name = "Peinture à l'huile",
                     Description = "Too lazy again",
-                    LanguageId = 0
+                    LanguageId = 1
                 }
             );
 
@@ -114,14 +114,14 @@ namespace backend.DAL
             .HasData(
                 new Painting
                 {
-                    Id = 0,
-                    AuthorId = 1,
+                    Id = 1,
+                    AuthorId = 2,
                     ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0184_I",
                     Year = 1668,
                     Height = (float) 116,
                     Width = (float) 222,
-                    TechniqueId = 0,
-                    MovementId = 0
+                    TechniqueId = 1,
+                    MovementId = 1
                 }
             );
 
@@ -129,9 +129,9 @@ namespace backend.DAL
             .HasData(
                 new PaintingTranslation
                 {
-                    Id = 0,
-                    PaintingId = 0,
-                    LanguageId = 0,
+                    Id = 1,
+                    PaintingId = 1,
+                    LanguageId = 1,
                     Name = "Portrait d’un théologien et son secrétaire",
                     Description = "Once again again lazy"
                 }
