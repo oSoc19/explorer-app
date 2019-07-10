@@ -54,3 +54,8 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+
+# backend
+backend/[Oo]bj/
+backend/.vs/
+backend/bin/
