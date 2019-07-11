@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using backend.Models;
+using backend.dto;
 using AutoMapper;
 using backend.DAL;
 
@@ -13,7 +14,6 @@ namespace backend.Controllers
         private readonly IMapper _mapper;
         public PaintingController(PaintingContext context, IMapper mapper)
         {
-
             _paintingDataAccess = new PaintingDataAccess(context);
             _mapper = mapper;
         }
