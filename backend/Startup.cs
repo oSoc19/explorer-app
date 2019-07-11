@@ -32,6 +32,7 @@ namespace backend
                 configuration.RootPath = "../frontend/build";
             });
 
+            services.AddCors();
             services.AddAutoMapper(typeof(Startup));
         }
 
@@ -49,6 +50,14 @@ namespace backend
                 // production scenarios, see https://aka.ms/aspnetcore-hsts.
                app.UseHsts();
             }
+
+            app.UseCors(builder => 
+            {
+                builder
+                    .AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

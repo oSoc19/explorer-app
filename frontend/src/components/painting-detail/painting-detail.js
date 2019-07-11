@@ -4,8 +4,15 @@ import styles from './painting-detail.module.css';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import AudioPlayer from "react-h5-audio-player";
-import ReadMoreAndLess from 'react-read-more-less';
 import ReadMore from '../read-more/read-more';
+import Api from '../../services/api';
+import { css } from '@emotion/core';
+
+const override = css`
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+`;
 
 const images = [
     {
@@ -34,26 +41,15 @@ class PaintingDetail extends React.Component{
         super(props);
 
         this.state = {
-            loading : false,
-            data : 'null',
+            loading : true,
+            data : null,
             currentStoryIndex : 0
         };
     }
 
-    async getImage(){
-        const headers = {
-            'Access-Control-Allow-Origin' : '*',
-            'Content-Type' : 'application/json',
-            'Origin' : '*'
-        };
-        const proxyurl = "https://cors-anywhere.herokuapp.com/";
-        let response = await fetch(proxyurl + TESTURL, {headers : headers});
-        let dataJSON = await response.json();
+    async componentWillMount(){
+        let dataJSON = await Api.getPaintingDetail(1);
         await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0});
-    }
-
-    componentWillMount(){
-        this.getImage();
     }
 
     handleOnDragStart(e){
@@ -71,11 +67,11 @@ class PaintingDetail extends React.Component{
             this.state.loading ?
             <div className='sweet-loading'>
                 <ClipLoader
-                    css={styles.override}
+                    css={override}
                     sizeUnit={"px"}
                     size={100}
                     color={'#787B7D'}
-                    loading={this.state.loading}
+                    loading={true}
                 />
             </div>  
             
