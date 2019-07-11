@@ -12,7 +12,7 @@ namespace backend.Controllers
     {
         private readonly PaintingDataAccess _paintingDataAccess;
         private readonly IMapper _mapper;
-        public PaintingController(PaintingContext context, IMapper mapper)
+        public PaintingController(ExplorerContext context, IMapper mapper)
         {
             _paintingDataAccess = new PaintingDataAccess(context);
             _mapper = mapper;

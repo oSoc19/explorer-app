@@ -7,7 +7,7 @@ using backend.DAL;
 
 namespace backend.Migrations
 {
-    [DbContext(typeof(PaintingContext))]
+    [DbContext(typeof(ExplorerContext))]
     partial class PaintingContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

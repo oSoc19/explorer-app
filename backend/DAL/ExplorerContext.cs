@@ -3,7 +3,7 @@ using backend.Models;
 
 namespace backend.DAL
 {
-    public class PaintingContext : DbContext
+    public class ExplorerContext : DbContext
     {
         public DbSet<Painting> Painting { get; set; }
         public DbSet<Artist> Artist {get;set;}
@@ -15,7 +15,7 @@ namespace backend.DAL
         public DbSet<Technique> Technique {get;set;}
         public DbSet<Movement> Movement {get;set;}
 
-        public PaintingContext(DbContextOptions<PaintingContext> options) : base(options)
+        public ExplorerContext(DbContextOptions<ExplorerContext> options) : base(options)
         {
         }
 
