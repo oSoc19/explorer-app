@@ -23,7 +23,7 @@ namespace backend
         //container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<PaintingContext>(opt =>
+            services.AddDbContext<ExplorerContext>(opt =>
                 opt.UseSqlServer(Configuration.GetConnectionString("ExplorerServerDb")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             // In production, the React files will be served from this directory
@@ -38,7 +38,7 @@ namespace backend
 
         // This method gets called by the runtime. Use this method to configure the HTTP 
         //request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, PaintingContext context)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ExplorerContext context)
         {
             if (env.IsDevelopment())
             {

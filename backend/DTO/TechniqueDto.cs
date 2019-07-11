@@ -1,12 +1,12 @@
 using System;
+using System.Collections.Generic;
 
-namespace backend.Models
+namespace backend.dto
 {
     public class TechniqueDto
     {
         public long id { get; set; }
-        public String name { get; set; }
-        public String description { get; set; }
+        public virtual List<TechniqueTranslationDto> Translations {get;set;}
     }
 }
 

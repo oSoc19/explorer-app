@@ -1,6 +1,7 @@
 using System;
+using System.Collections.Generic;
 
-namespace backend.Models
+namespace backend.dto
 {
     public class ArtistDto
     {
@@ -8,9 +9,9 @@ namespace backend.Models
         public String firstName { get; set; }
         public String lastName { get; set; }
         public String nationality { get; set; }
-        public DateTime birthDate { get; set; }
-        public DateTime deathDate { get; set; }
-        public String description { get; set; }
+        public String birthDate { get; set; }
+        public String deathDate { get; set; }
+        public virtual List<ArtistTranslationDto> Translations {get;set;}
 
     }
 }

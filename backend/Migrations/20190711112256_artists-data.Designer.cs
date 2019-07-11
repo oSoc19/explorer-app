@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190711112256_artists-data")]
+    partial class artistsdata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -315,24 +317,8 @@ namespace backend.Migrations
                         new
                         {
                             Id = 1L,
-                            Description = "Le baroque est un mouvement artistique qui trouve son origine en Italie dans des villes telles que Rome, Mantoue, Venise et Florence dès le milieu du xvie siècle et qui se termine au milieu du xviiie siècle. Il y a un âge baroque différent selon les domaines, qu'ils soient intellectuels, historiques ou artistiques. Certains critiques y voient une constante culturelle qui revient tout au long de l'histoire comme l'a écrit Eugenio d'Ors.Le baroque, qui touche tous les domaines, se caractérise par l’exagération du mouvement, la surcharge décorative, les effets dramatiques, la tension, l’exubérance des formes, la grandeur parfois pompeuse et le contraste, ce même contraste dont parlait Philippe Beaussant : l’époque baroque a tenté de dire « un monde où tous les contraires seraient harmonieusement possibles »",
+                            Description = "Baroque description too lazy to look for it",
                             LanguageId = 1L,
-                            MovementId = 1L,
-                            Name = "Baroque"
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            Description = "De barok is een Europese stijlperiode die aan het begin van de 17e eeuw in Italië tot ontwikkeling kwam en tot in de eerste helft van de 18e eeuw voortduurde, en die zich kenmerkt door overdaad van vorm en heftigheid van gevoelsuitdrukking. De barok kwam tot uiting op alle terreinen van de cultuur, zoals architectuur, tuinarchitectuur, schilderkunst, beeldhouwkunst, literatuur en muziek. Er wordt een onderscheid gemaakt tussen vroeg-, hoog- en laatbarok. De laatbarok wordt ook wel rococo genoemd.",
-                            LanguageId = 2L,
-                            MovementId = 1L,
-                            Name = "Barok (stijlperiode)"
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            Description = "The Baroque (UK: /bəˈrɒk/, US: /bəˈroʊk/) is a highly ornate and often extravagant style of architecture, music, dance, painting, sculpture and other arts that flourished in Europe from the early 17th until the mid-18th century. It followed Renaissance art and Mannerism and preceded the Rococo (in the past often referred to as 'late Baroque') and Neoclassical styles. It was encouraged by the Catholic Church as a means to counter the simplicity and austerity of Protestant architecture, art and music, though Lutheran Baroque art developed in parts of Europe as well.[1]The Baroque style used contrast, movement, exuberant detail, deep colour, grandeur and surprise to achieve a sense of awe. The style began at the start of the 17th century in Rome, then spread rapidly to France, northern Italy, Spain and Portugal, then to Austria and southern Germany. By the 1730s, it had evolved into an even more flamboyant style, called rocaille or Rococo, which appeared in France and Central Europe until the mid to late 18th century.",
-                            LanguageId = 3L,
                             MovementId = 1L,
                             Name = "Baroque"
                         });
@@ -372,28 +358,6 @@ namespace backend.Migrations
                         new
                         {
                             Id = 1L,
-                            AuthorId = 1L,
-                            Height = 162f,
-                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0004_I",
-                            MovementId = 1L,
-                            TechniqueId = 1L,
-                            Width = 228f,
-                            Year = 1699
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            AuthorId = 2L,
-                            Height = 150.5f,
-                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0181_I",
-                            MovementId = 1L,
-                            TechniqueId = 1L,
-                            Width = 255.5f,
-                            Year = 1645
-                        },
-                        new
-                        {
-                            Id = 3L,
                             AuthorId = 2L,
                             Height = 116f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0184_I",
@@ -401,71 +365,6 @@ namespace backend.Migrations
                             TechniqueId = 1L,
                             Width = 222f,
                             Year = 1668
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            AuthorId = 3L,
-                            Height = 73f,
-                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0187_I",
-                            MovementId = 1L,
-                            TechniqueId = 1L,
-                            Width = 59f,
-                            Year = 1697
-                        },
-                        new
-                        {
-                            Id = 5L,
-                            AuthorId = 4L,
-                            Height = 123.3f,
-                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0374_I",
-                            MovementId = 1L,
-                            TechniqueId = 1L,
-                            Width = 94.2f,
-                            Year = 1641
-                        },
-                        new
-                        {
-                            Id = 6L,
-                            AuthorId = 2L,
-                            Height = 106f,
-                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO1346_I",
-                            MovementId = 1L,
-                            TechniqueId = 1L,
-                            Width = 83f,
-                            Year = 1670
-                        },
-                        new
-                        {
-                            Id = 7L,
-                            AuthorId = 5L,
-                            Height = 220f,
-                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/1991_GRO0007_I",
-                            MovementId = 1L,
-                            TechniqueId = 1L,
-                            Width = 240f,
-                            Year = 1643
-                        },
-                        new
-                        {
-                            Id = 8L,
-                            AuthorId = 6L,
-                            Height = 76.2f,
-                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/2012_GRO0001_I",
-                            MovementId = 1L,
-                            TechniqueId = 1L,
-                            Width = 63.5f,
-                            Year = 1652
-                        },
-                        new
-                        {
-                            Id = 9L,
-                            AuthorId = 2L,
-                            Height = 193.5f,
-                            MovementId = 1L,
-                            TechniqueId = 1L,
-                            Width = 275f,
-                            Year = 1640
                         });
                 });
 
@@ -541,199 +440,10 @@ namespace backend.Migrations
                         new
                         {
                             Id = 1L,
-                            LanguageId = 1L,
-                            Name = "Paysage boisé avec gué",
-                            PaintingId = 1L
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            Description = "Gezicht op een open plek in het bos, met marktkramers en boeren, nabij een doorwaadbare plaats in een beek. Aan de overkant van het water staat een man met twee paarden. Doorheen de bomen heeft men een doorkijk op een verre, gedeeltelijk beboste achtergrond, waar eveneens mensen te zien zijn. De personages op de voorgrond lijken door Achtschellinck zelf geschilderd te zijn; ze zijn duidelijk verwant aan de figuren van zijn tijd- en stadsgenoot David Teniers de Jongere. Het schilderij vertoont een zeer enge stijlovereenkomst met de andere beboste landschappen van Lucas Achtschellinck in de collectie van het Groeningemuseum",
-                            LanguageId = 2L,
-                            Name = "Boslandschap met wad",
-                            PaintingId = 1L
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            LanguageId = 3L,
-                            Name = "Wooded Landscape with Ford",
-                            PaintingId = 1L
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            LanguageId = 1L,
-                            Name = "Portrait d'une famille brugeoise",
-                            PaintingId = 2L
-                        },
-                        new
-                        {
-                            Id = 5L,
-                            Description = "De burgerman wijst ostentatief naar het ommeland om onze aandacht te vestigen op zijn bezittingen. Het lage gezichtspunt maakt dat de personages een imposante indruk maken. De familie is onbekend, maar door het herkenbare silhouet van de stad Brugge dient de familie in Brugse context gesitueerd te worden. De leeftijden van de familieleden zijn onopvallend geïntegreerd: bij de man op de hiel van zijn schoen (46), bij de vrouw op haar waaier (26), bij de kleine jongen naast haar op zijn hoedje (3), bij het zittende meisje op het kussen in haar korf (15), bij de jongeman op zijn laars (17), en bij het kindje in de armen van het kindermeisje op het stuk brood in haar handen (1). Uit het grote leeftijdsverschil tussen de echtgenoten enerzijds, en de jonge leeftijd van de vrouw anderzijds, kan afgeleid worden dat de kinderen uit twee huwelijken moeten stammen. Waarschijnlijk zijn alleen de twee kleinste kinderen geboren uit het huwelijk met de hier afgebeelde vrouw. Uiterst links op het schilderij staat een tuinman met een spade over de schouder, afdalend naar de tuin. Zoals bij de meeste familieportretten bevat dit werk een onderliggende symboliek, verwijzend naar liefde, zuiverheid en vruchtbaarheid, als voorwaarden voor een harmonisch gezinsleven. Daarnaast wordt de sociale status van het gezin belicht.  (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, pp. 194-195.)",
-                            LanguageId = 2L,
-                            Name = "Portret van een Brugse familie",
-                            PaintingId = 2L
-                        },
-                        new
-                        {
-                            Id = 6L,
-                            LanguageId = 3L,
-                            Name = "Portrait of a Bruges family",
-                            PaintingId = 2L
-                        },
-                        new
-                        {
-                            Id = 7L,
+                            Description = "Once again again lazy",
                             LanguageId = 1L,
                             Name = "Portrait d’un théologien et son secrétaire",
-                            PaintingId = 3L
-                        },
-                        new
-                        {
-                            Id = 8L,
-                            Description = "Een theoloog, waarschijnlijk een jezuïet, leest de conciliebesluiten en becommentarieert ze. Zijn seculiere secretaris noteert. Links staat de lezenaar, versierd met een sculptuur van een Calvariegroep, en met deel 36 van de verzamelde conciliebesluiten er op. Rechts een werktafel  met een rijk gekleurd tafelkleed, waaraan de priester en de secretaris zitten. Op de tafel bevinden zich studie-attributen, zoals een wereldbol en een boek. Erachter ziet men een boekenkast met bijbeluitgaven en literatuur op het gebied van theologie, exegese en kerkelijk recht. Zoals vaak, inspireert Van Oost zich ook hier weer op de portretten van Anthony van Dyck.  (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 198; E. Tahon, in: musea@brugge, augustus 2003, pp. 13-14.)",
-                            LanguageId = 2L,
-                            Name = "Portret van een theoloog met zijn secretaris",
-                            PaintingId = 3L
-                        },
-                        new
-                        {
-                            Id = 9L,
-                            LanguageId = 3L,
-                            Name = "Portrait of a Theologue and his Secretary",
-                            PaintingId = 3L
-                        },
-                        new
-                        {
-                            Id = 10L,
-                            LanguageId = 1L,
-                            Name = "Portrait d' un homme",
-                            PaintingId = 4L
-                        },
-                        new
-                        {
-                            Id = 11L,
-                            Description = "Borstbeeld van een in het zwart geklede man in driekwartswending. Ovaal schilderij, gevat in een rechthoekige lijst. Af te leiden uit het opschrift op de achterzijde, gaat het hier om een vriend van de kunstenaar. (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, pp. 208.)",
-                            LanguageId = 2L,
-                            Name = "Portret van een man",
-                            PaintingId = 4L
-                        },
-                        new
-                        {
-                            Id = 12L,
-                            LanguageId = 3L,
-                            Name = "Portrait of a Man",
-                            PaintingId = 4L
-                        },
-                        new
-                        {
-                            Id = 13L,
-                            LanguageId = 1L,
-                            Name = "Sainte Trinité",
-                            PaintingId = 5L
-                        },
-                        new
-                        {
-                            Id = 14L,
-                            Description = "God de Vader, met tiara op het hoofd, toont Christus, de Zoon, die ostentatief zijn wonden laat zien. Boven beiden zweeft de Helige Geest, in de gedaante van een duif. De hier gevolgde iconografie heeft een oude traditie: uiteindelijk gaat ze terug op Dürers gelijknamige prent uit 1511, die op haar beurt weer vroegere Oud-Nederlandse prototypes reflecteert. Het schilderij werd in het verleden begeschreven als achtereenvolgens een werk van Gerard Seghers, een kopie naar Rubens, van de hand van Nicolaas de Liemaeker, in verband te brengen met Abraham Janssens, en toe te schrijven aan Joos de Momper. De recentste toeschrijving toont aan dat het uit het atelier van de Antwerpse schilder Artus Wolffort zou afkomstig zijn. Dit baseert voornamelijk op de karakteristieke gelaatstypering. Van deze compositie bestaan verschillende versies.",
-                            LanguageId = 2L,
-                            Name = "Heilige Drievuldigheid",
-                            PaintingId = 5L
-                        },
-                        new
-                        {
-                            Id = 15L,
-                            LanguageId = 3L,
-                            Name = "Holy Trinity",
-                            PaintingId = 5L
-                        },
-                        new
-                        {
-                            Id = 16L,
-                            LanguageId = 1L,
-                            Name = "Portrait de Fovin de Hasque",
-                            PaintingId = 6L
-                        },
-                        new
-                        {
-                            Id = 17L,
-                            Description = "De schermmeester van de Brugse Sint-Michielsgilde is hier voorgesteld met een degen aan zijn gordel. Met zijn rechterhand houdt hij de schacht van een hellebaard of een standaard vast. Het opschrift luidt: Dit is het beelt van Fovin d'Hasque Schermmeester van Brugghe vaillant / Die alhier ghebracht heeft de olie van [de] H. Walburgis uyt duytslant / 1670. Dit laatste deed De Hasque in 1669, op verzoek van de pastoors, kapelaans en kerkmeesters van Sint-Walburga in Brugge. Hij overleed in datzelfde jaar. Wellicht werd dit portret geschilderd naar aanleiding van zijn dood. (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 204.)",
-                            LanguageId = 2L,
-                            Name = "Portret van Fovin de Hasque",
-                            PaintingId = 6L
-                        },
-                        new
-                        {
-                            Id = 18L,
-                            LanguageId = 3L,
-                            Name = "Portrait of Fovin de Hasque",
-                            PaintingId = 6L
-                        },
-                        new
-                        {
-                            Id = 19L,
-                            LanguageId = 1L,
-                            Name = "Achille parmi les filles de Lycomède",
-                            PaintingId = 7L
-                        },
-                        new
-                        {
-                            Id = 20L,
-                            Description = "Aan Thetis was voorspeld dat haar zoon Achilles in de Trojaanse Oorlog zou sneuvelen. Om dit lot te omzeilen, verborg ze hem verkleed als vrouw aan het hof van koning Lycomedes. Voor de Griekse aanvoerders Odysseus en Diomedes was Achilles echter onmisbaar. Ze kwamen zijn schuilplaats te weten, en met een list wilden ze hem ontmaskeren. De twee legeraanvoerders gaven geschenken, waaronder wapens, aan de dochters van Lycomedes, met onder hen de verklede Achilles. Spontaan greep Achilles naar een helm en een zwaard, waardoor hij zichzelf verraadde.Links op het voorplan van het schilderij zijn Odysseus en Diomedes afgebeeld. Eén van hen grijpt Achilles bij zijn mouw, op het moment dat hij een helm past en een wapen grijpt uit de geschenken die rechts in een mand zitten en waarrond de dochters van Lycomedes zich scharen. Het tafereel speelt zich af op een terras, met links een doorkijk naar een tuin. De Antwerpse schilder Erasmus Quellinus II behoorde tot een familie van beeldhouwers, schilders, etsers en houtsnijders. Hij was leerling en medewerker van Peter Paul Rubens, die hij als stadsschilder van Antwerpen opvolgde. (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 143.)",
-                            LanguageId = 2L,
-                            Name = "Achilles en de dochters van Lycomedes",
-                            PaintingId = 7L
-                        },
-                        new
-                        {
-                            Id = 21L,
-                            LanguageId = 3L,
-                            Name = "Achilles among the Daughters of Lycomedes",
-                            PaintingId = 7L
-                        },
-                        new
-                        {
-                            Id = 22L,
-                            LanguageId = 1L,
-                            Name = "Portrait de Samuel Crew",
-                            PaintingId = 8L
-                        },
-                        new
-                        {
-                            Id = 23L,
-                            Description = "Het betreft een vroeg portret van Lely ut 1650 van Samuel Crew, of zijn broer Nathaniel Crew, telgen van een belangrijke Engelse familie en beide protestantse priesters. Hun vader John Crew of Stene was lid van het Engelse Parliament en fungeerde tussen 1623 en 1625 als Speaker of the House. Lely wilde met dit portret duidelijk aan de verwachtingen van zijn opdrachtgever en zijn belangrijkste mecenas voldoen. Met grote virtuositeit - waarin reflecties van de portretkunst van Frans Hals zijn te herkennen - schildert Lely de kledij van de jonge heer (vermoedelijk Samuel), met veel aandacht voor de textuur en de lichtinval op het zwarte textiel. Het witte hemd schittert in het midden van de donkere, eerder sombere sfeer van het schilderij. Alleen het gelaat en de haren zijn door de lichtinval duidelijk benadrukt. Gedurfd toont Lely zijn model niet in het centrum van het doek, maar positioneert hij de jongeman net uit de middenas van het schilderij. Op die manier vermijdt hij het formalisme van portretten.",
-                            LanguageId = 2L,
-                            Name = "Portret van Samuel Crew",
-                            PaintingId = 8L
-                        },
-                        new
-                        {
-                            Id = 24L,
-                            LanguageId = 3L,
-                            Name = "Portrait of Samuel Crew",
-                            PaintingId = 8L
-                        },
-                        new
-                        {
-                            Id = 25L,
-                            LanguageId = 1L,
-                            Name = "La Vocation de saint Matthieu",
-                            PaintingId = 9L
-                        },
-                        new
-                        {
-                            Id = 26L,
-                            LanguageId = 2L,
-                            Name = "Roeping van Mattheüs",
-                            PaintingId = 9L
-                        },
-                        new
-                        {
-                            Id = 27L,
-                            LanguageId = 3L,
-                            Name = "The Calling of St Matthew",
-                            PaintingId = 9L
+                            PaintingId = 1L
                         });
                 });
 
@@ -780,25 +490,9 @@ namespace backend.Migrations
                         new
                         {
                             Id = 1L,
-                            Description = "La peinture à l'huile est une peinture dont le liant ou véhicule est une huile siccative qui enveloppe complètement les particules de pigment.On appelle aussi « peinture » les travaux d'enduction d'une surface par ce genre de produit. Les autorités normatives françaises demandent qu'on dise peinturage, mais ce terme n'a jamais pris1. La « peinture à l'huile » est donc aussi l'activité de nombreux artistes peintres passés et présents, ainsi qu'une technique picturale.",
+                            Description = "Too lazy again",
                             LanguageId = 1L,
                             Name = "Peinture à l'huile",
-                            TechniqueId = 1L
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            Description = "Olieverf is een verfsoort, een mengsel van pigment in de vorm van een zeer fijn gekleurd poeder met, als bindmiddel, een plantaardige drogende olie, meestal lijnolie. Olieverf is vanaf de 15e eeuw een belangrijk medium in de schilderkunst. Ze werd voor het eerst gebruikt door de Vlaamse Primitieven.",
-                            LanguageId = 2L,
-                            Name = "olieverfschilderij",
-                            TechniqueId = 1L
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            Description = "Oil paint is a type of slow-drying paint that consists of particles of pigment suspended in a drying oil, commonly linseed oil. The viscosity of the paint may be modified by the addition of a solvent such as turpentine or white spirit, and varnish may be added to increase the glossiness of the dried oil paint film. Oil paints have been used in Europe since the 12th century for simple decoration, but were not widely adopted as an artistic medium until the early 15th century. Common modern applications of oil paint are in finishing and protection of wood in buildings and exposed metal structures such as ships and bridges. Its hard-wearing properties and luminous colors make it desirable for both interior and exterior use on wood and metal. Due to its slow-drying properties, it has recently been used in paint-on-glass animation. Thickness of coat has considerable bearing on time required for drying: thin coats of oil paint dry relatively quickly.",
-                            LanguageId = 3L,
-                            Name = "Oil paint",
                             TechniqueId = 1L
                         });
                 });
@@ -806,7 +500,7 @@ namespace backend.Migrations
             modelBuilder.Entity("backend.Models.ArtistTranslation", b =>
                 {
                     b.HasOne("backend.Models.Artist", "Artist")
-                        .WithMany("Translations")
+                        .WithMany("Tranlsations")
                         .HasForeignKey("ArtistId")
                         .OnDelete(DeleteBehavior.Cascade);
 

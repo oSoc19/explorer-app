@@ -9,7 +9,7 @@ using backend.DAL;
 
 namespace backend.Migrations
 {
-    [DbContext(typeof(PaintingContext))]
+    [DbContext(typeof(ExplorerContext))]
     [Migration("20190710133129_initial-model")]
     partial class initialmodel
     {

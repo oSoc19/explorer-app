@@ -8,7 +8,7 @@ using backend.DAL;
 
 namespace backend.Migrations
 {
-    [DbContext(typeof(PaintingContext))]
+    [DbContext(typeof(ExplorerContext))]
     [Migration("20190710135556_date-format")]
     partial class dateformat
     {

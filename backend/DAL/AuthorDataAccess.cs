@@ -7,8 +7,8 @@ namespace backend.DAL
 {
     public class AuthorDataAccess
     {
-        private readonly PaintingContext _context;
-        public AuthorDataAccess(PaintingContext context)
+        private readonly ExplorerContext _context;
+        public AuthorDataAccess(ExplorerContext context)
         {
             _context = context;
         }

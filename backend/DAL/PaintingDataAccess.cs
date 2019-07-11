@@ -11,8 +11,8 @@ namespace backend.DAL
     public class PaintingDataAccess
     {
 
-        private readonly PaintingContext _context;
-        public PaintingDataAccess(PaintingContext context)
+        private readonly ExplorerContext _context;
+        public PaintingDataAccess(ExplorerContext context)
         {
             _context = context;
         }
