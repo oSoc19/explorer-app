@@ -28,6 +28,18 @@ namespace backend.DAL
                     Id = 1,
                     Code = "FR",
                     Name = "Français"
+                },
+                new Language
+                {
+                    Id = 2,
+                    Code = "NL",
+                    Name = "Nederlands"
+                },
+                new Language
+                {
+                    Id = 3,
+                    Code = "EN",
+                    Name = "English"
                 }
             );
 
@@ -41,11 +53,7 @@ namespace backend.DAL
                     Nationality = "Belgian",
                     Birthdate = "1626-01-16",
                     Deathdate = "1699-05-12"
-                }
-            );
-
-            modelBuilder.Entity<Artist>()
-            .HasData(
+                },
                 new Artist
                 {
                     Id = 2,
@@ -54,11 +62,7 @@ namespace backend.DAL
                     Nationality = "Belgian",
                     Birthdate = "1603-07-01",
                     Deathdate = "1671-03-03"
-                }
-            );
-
-            modelBuilder.Entity<Artist>()
-            .HasData(
+                },
                 new Artist
                 {
                     Id = 3,
