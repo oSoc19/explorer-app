@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace backend.dto
 {
@@ -10,7 +11,7 @@ namespace backend.dto
         public String nationality { get; set; }
         public DateTime birthDate { get; set; }
         public DateTime deathDate { get; set; }
-        public String description { get; set; }
+        public virtual List<ArtistTranslationDto> Translations {get;set;}
 
     }
 }

@@ -7,7 +7,6 @@ namespace backend.Models
     public class Painting
     {
         public long Id { get; set; }
-        //json string with different languages
         public long AuthorId {get;set;}
 
         [ForeignKey("AuthorId")]

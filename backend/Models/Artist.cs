@@ -13,7 +13,7 @@ namespace backend.Models
         public String Birthdate { get; set; }
         public String Deathdate { get; set; }
         public virtual List<Painting> paintings {get;set;}
-        public virtual List<ArtistTranslation> Tranlsations {get;set;}
+        public virtual List<ArtistTranslation> Translations {get;set;}
 
     }
 }
