@@ -1,13 +1,26 @@
 .readMoreButton{
     margin-top:5px;
     text-align: center;
-    color:black;
+    color:#1D5748;
+    text-align: left;
+    text-decoration: underline;
 }
 
-/* .readMoreButton:hover{
-    text-decoration: underline !important;
-} */
+.content{
+    padding : 0px 25px;
+    font-family: 'Montserrat';
+}
 
 .title{
-    font-weight: bold
+    font-weight: bold;
+    font-family: miller-display,seruif;
+    color : #1D1E1F !important;
+}
+
+.arrow{
+    margin-left : 10px;
+}
+
+.hyphen{
+    color : #1D5748;
 }

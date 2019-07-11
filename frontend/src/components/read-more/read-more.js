@@ -17,27 +17,38 @@ class ReadMore extends React.Component{
     }
 
     render(){
-        if(this.props.obj.content.length <= this.props.maxLength)
-            return <div>{this.props.obj.content}</div>;
+        if(this.props.content.length <= this.props.maxLength)
+            return (
+            <div>
+                <h5 className={styles.title}>{this.props.storyTitle}</h5>
+                {this.props.content}
+            </div>);
         else
             return (
                 <div>
-                    <h5 className={styles.title}>{this.props.obj.storyTitle}</h5>
-                    {
-                        this.state.wantsMore ? 
-                        <div>
-                            {this.props.obj.content}
+                    <h5 className={styles.title}>{this.props.storyTitle}</h5>
+                    <div className={`row ${styles.content}`}>
+                        <div className="col-1">
+                            <span className={`fa ${styles.hyphen}`}>&#xf068;</span>
                         </div>
-                        :
-                        <div>
-                            {`${this.props.obj.content.substring(0, this.props.maxLength)}...`}
+                        <div className="col">
+                            {
+                                this.state.wantsMore ? 
+                                <span>
+                                    {this.props.content}
+                                </span>
+                                :
+                                <span>
+                                    {`${this.props.content.substring(0, this.props.maxLength)}...`}
+                                </span>
+                            }
+                            <div className={styles.readMoreButton}>
+                                <span onClick={this.showMoreOrLess}>
+                                    {this.state.wantsMore? 'Show less' : 'Continue reading'}
+                                    {this.state.wantsMore ? <i className={`fa ${styles.arrow}`}>&#xf177;</i> : <i className={`fa ${styles.arrow}`}>&#xf178;</i>}
+                                </span>
+                            </div>
                         </div>
-                    }
-                    <div className={styles.readMoreButton}>
-                        <span onClick={this.showMoreOrLess}>
-                            {this.state.wantsMore? 'Read less' : 'Read more'}
-                            {this.state.wantsMore ? <i className="fa">&#xf106;</i> : <i className="fa">&#xf107;</i>}
-                        </span>
                     </div>
                 </div>
             );

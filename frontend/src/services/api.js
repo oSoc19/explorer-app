@@ -5,9 +5,9 @@ class Api{
     }
 
     static async getPaintingDetail(id){
+        let data = null;    
         let response = await fetch(`${BASE_URL}/painting/${id}`);
-        let data = await response.json();
-        console.log(data);
+        data = await response.json();
         return data;
     }
 }

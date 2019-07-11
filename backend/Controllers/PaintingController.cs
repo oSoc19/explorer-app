@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using backend.Models;
 using AutoMapper;
 using backend.DAL;
+using System.Linq;
 
 namespace backend.Controllers
 {

@@ -1,10 +1,5 @@
-.imageSize{
- 
-}
-
 .paintDetails{
 text-align: left;
-margin-top : 20px;
 color:#787B7D;
 font-size: 17px;
 }
@@ -15,6 +10,7 @@ padding : 0px;
 
 .paintDetails>tbody>tr>:first-child{
 width : 100px;
+font-weight: bold;
 }
 
 .paintDescription{
@@ -86,7 +82,7 @@ padding: 0px;
 }
 
 .body {
-    padding:10px;
+    /* padding:10px; */
     padding-bottom:60px;
     margin-bottom : 20px;
 }
@@ -104,13 +100,23 @@ padding: 0px;
 }
 
 .title{
-    font-weight: bold
-    /* font-family: 'Karla' */
+    font-weight: bold;
+    font-family: miller-display,seruif;
+    color : #1D1E1F !important;
 }
 
 .content{
     color : #787B7D;
     margin-top : 20px;
     text-align: left;
+}
 
+.infoSection{
+    padding : 0px 25px;
+    font-family: 'Montserrat';
+    
+}
+
+.navBackground{
+    background-color : #F9F6F2 !important;
 }

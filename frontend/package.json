@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "query-string": "^6.8.1",
     "react": "^16.8.6",
     "react-alice-carousel": "^1.15.1",
     "react-dom": "^16.8.6",
     "react-h5-audio-player": "^1.2.1",
     "react-read-more-less": "^0.1.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-slideshow-image": "^1.2.0",
     "react-spinners": "^0.5.4"
