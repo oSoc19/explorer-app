@@ -24,7 +24,7 @@ namespace backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<PaintingContext>(opt =>
-                opt.UseSqlServer(Configuration.GetConnectionString("ExplorerDb")));
+                opt.UseSqlServer(Configuration.GetConnectionString("ExplorerServerDb")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
