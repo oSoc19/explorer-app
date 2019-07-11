@@ -341,11 +341,99 @@ namespace backend.DAL
                 new Painting
                 {
                     Id = 1,
+                    AuthorId = 1,
+                    ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0004_I",
+                    Year = 1699,
+                    Height = (float) 162,
+                    Width = (float) 228,
+                    TechniqueId = 1,
+                    MovementId = 1
+                },
+                new Painting
+                {
+                    Id = 2,
+                    AuthorId = 2,
+                    ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0181_I",
+                    Year = 1645,
+                    Height = (float) 150.5,
+                    Width = (float) 255.5,
+                    TechniqueId = 1,
+                    MovementId = 1
+                },
+                new Painting
+                {
+                    Id = 3,
                     AuthorId = 2,
                     ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0184_I",
                     Year = 1668,
                     Height = (float) 116,
                     Width = (float) 222,
+                    TechniqueId = 1,
+                    MovementId = 1
+                },
+                new Painting
+                {
+                    Id = 4,
+                    AuthorId = 3,
+                    ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0187_I",
+                    Year = 1697,
+                    Height = (float) 73,
+                    Width = (float) 59,
+                    TechniqueId = 1,
+                    MovementId = 1
+                },
+                new Painting
+                {
+                    Id = 5,
+                    AuthorId = 4,
+                    ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0374_I",
+                    Year = 1641,
+                    Height = (float) 123.3,
+                    Width = (float) 94.2,
+                    TechniqueId = 1,
+                    MovementId = 1
+                },
+                new Painting
+                {
+                    Id = 6,
+                    AuthorId = 2,
+                    ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO1346_I",
+                    Year = 1670,
+                    Height = (float) 106,
+                    Width = (float) 83,
+                    TechniqueId = 1,
+                    MovementId = 1
+                },
+                new Painting
+                {
+                    Id = 7,
+                    AuthorId = 5,
+                    ImageUrl = "http://groeningemuseum.be/collection/work/representation/1991_GRO0007_I",
+                    Year = 1643,
+                    Height = (float) 220,
+                    Width = (float) 240,
+                    TechniqueId = 1,
+                    MovementId = 1
+                },
+                new Painting
+                {
+                    Id = 8,
+                    AuthorId = 6,
+                    ImageUrl = "http://groeningemuseum.be/collection/work/representation/2012_GRO0001_I",
+                    Year = 1652,
+                    Height = (float) 76.2,
+                    Width = (float) 63.5,
+                    TechniqueId = 1,
+                    MovementId = 1
+                },
+                new Painting
+                {
+                    Id = 9,
+                    AuthorId = 2,
+                    ImageUrl = null,
+                    Year = 1640,
+                    Height = (float) 193.5,
+                    Width = (float) 275,
                     TechniqueId = 1,
                     MovementId = 1
                 }
@@ -358,8 +446,218 @@ namespace backend.DAL
                     Id = 1,
                     PaintingId = 1,
                     LanguageId = 1,
+                    Name = "Paysage boisé avec gué",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 2,
+                    PaintingId = 1,
+                    LanguageId = 2,
+                    Name = "Boslandschap met wad",
+                    Description = "Gezicht op een open plek in het bos, met marktkramers en boeren, nabij een doorwaadbare plaats in een beek. Aan de overkant van het water staat een man met twee paarden. Doorheen de bomen heeft men een doorkijk op een verre, gedeeltelijk beboste achtergrond, waar eveneens mensen te zien zijn. De personages op de voorgrond lijken door Achtschellinck zelf geschilderd te zijn; ze zijn duidelijk verwant aan de figuren van zijn tijd- en stadsgenoot David Teniers de Jongere. Het schilderij vertoont een zeer enge stijlovereenkomst met de andere beboste landschappen van Lucas Achtschellinck in de collectie van het Groeningemuseum"
+                },
+                new PaintingTranslation
+                {
+                    Id = 3,
+                    PaintingId = 1,
+                    LanguageId = 3,
+                    Name = "Wooded Landscape with Ford",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 4,
+                    PaintingId = 2,
+                    LanguageId = 1,
+                    Name = "Portrait d'une famille brugeoise",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 5,
+                    PaintingId = 2,
+                    LanguageId = 2,
+                    Name = "Portret van een Brugse familie",
+                    Description = "De burgerman wijst ostentatief naar het ommeland om onze aandacht te vestigen op zijn bezittingen. Het lage gezichtspunt maakt dat de personages een imposante indruk maken. De familie is onbekend, maar door het herkenbare silhouet van de stad Brugge dient de familie in Brugse context gesitueerd te worden. De leeftijden van de familieleden zijn onopvallend geïntegreerd: bij de man op de hiel van zijn schoen (46), bij de vrouw op haar waaier (26), bij de kleine jongen naast haar op zijn hoedje (3), bij het zittende meisje op het kussen in haar korf (15), bij de jongeman op zijn laars (17), en bij het kindje in de armen van het kindermeisje op het stuk brood in haar handen (1). Uit het grote leeftijdsverschil tussen de echtgenoten enerzijds, en de jonge leeftijd van de vrouw anderzijds, kan afgeleid worden dat de kinderen uit twee huwelijken moeten stammen. Waarschijnlijk zijn alleen de twee kleinste kinderen geboren uit het huwelijk met de hier afgebeelde vrouw. Uiterst links op het schilderij staat een tuinman met een spade over de schouder, afdalend naar de tuin. Zoals bij de meeste familieportretten bevat dit werk een onderliggende symboliek, verwijzend naar liefde, zuiverheid en vruchtbaarheid, als voorwaarden voor een harmonisch gezinsleven. Daarnaast wordt de sociale status van het gezin belicht.  (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, pp. 194-195.)"
+                },
+                new PaintingTranslation
+                {
+                    Id = 6,
+                    PaintingId = 2,
+                    LanguageId = 3,
+                    Name = "Portrait of a Bruges family",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 7,
+                    PaintingId = 3,
+                    LanguageId = 1,
                     Name = "Portrait d’un théologien et son secrétaire",
-                    Description = "Once again again lazy"
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 8,
+                    PaintingId = 3,
+                    LanguageId = 2,
+                    Name = "Portret van een theoloog met zijn secretaris",
+                    Description = "Een theoloog, waarschijnlijk een jezuïet, leest de conciliebesluiten en becommentarieert ze. Zijn seculiere secretaris noteert. Links staat de lezenaar, versierd met een sculptuur van een Calvariegroep, en met deel 36 van de verzamelde conciliebesluiten er op. Rechts een werktafel  met een rijk gekleurd tafelkleed, waaraan de priester en de secretaris zitten. Op de tafel bevinden zich studie-attributen, zoals een wereldbol en een boek. Erachter ziet men een boekenkast met bijbeluitgaven en literatuur op het gebied van theologie, exegese en kerkelijk recht. Zoals vaak, inspireert Van Oost zich ook hier weer op de portretten van Anthony van Dyck.  (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 198; E. Tahon, in: musea@brugge, augustus 2003, pp. 13-14.)"
+                },
+                new PaintingTranslation
+                {
+                    Id = 9,
+                    PaintingId = 3,
+                    LanguageId = 3,
+                    Name = "Portrait of a Theologue and his Secretary",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 10,
+                    PaintingId = 4,
+                    LanguageId = 1,
+                    Name = "Portrait d' un homme",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 11,
+                    PaintingId = 4,
+                    LanguageId = 2,
+                    Name = "Portret van een man",
+                    Description = "Borstbeeld van een in het zwart geklede man in driekwartswending. Ovaal schilderij, gevat in een rechthoekige lijst. Af te leiden uit het opschrift op de achterzijde, gaat het hier om een vriend van de kunstenaar. (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, pp. 208.)"
+                },
+                new PaintingTranslation
+                {
+                    Id = 12,
+                    PaintingId = 4,
+                    LanguageId = 3,
+                    Name = "Portrait of a Man",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 13,
+                    PaintingId = 5,
+                    LanguageId = 1,
+                    Name = "Sainte Trinité",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 14,
+                    PaintingId = 5,
+                    LanguageId = 2,
+                    Name = "Heilige Drievuldigheid",
+                    Description = "God de Vader, met tiara op het hoofd, toont Christus, de Zoon, die ostentatief zijn wonden laat zien. Boven beiden zweeft de Helige Geest, in de gedaante van een duif. De hier gevolgde iconografie heeft een oude traditie: uiteindelijk gaat ze terug op Dürers gelijknamige prent uit 1511, die op haar beurt weer vroegere Oud-Nederlandse prototypes reflecteert. Het schilderij werd in het verleden begeschreven als achtereenvolgens een werk van Gerard Seghers, een kopie naar Rubens, van de hand van Nicolaas de Liemaeker, in verband te brengen met Abraham Janssens, en toe te schrijven aan Joos de Momper. De recentste toeschrijving toont aan dat het uit het atelier van de Antwerpse schilder Artus Wolffort zou afkomstig zijn. Dit baseert voornamelijk op de karakteristieke gelaatstypering. Van deze compositie bestaan verschillende versies."
+                },
+                new PaintingTranslation
+                {
+                    Id = 15,
+                    PaintingId = 5,
+                    LanguageId = 3,
+                    Name = "Holy Trinity",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 16,
+                    PaintingId = 6,
+                    LanguageId = 1,
+                    Name = "Portrait de Fovin de Hasque",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 17,
+                    PaintingId = 6,
+                    LanguageId = 2,
+                    Name = "Portret van Fovin de Hasque",
+                    Description = "De schermmeester van de Brugse Sint-Michielsgilde is hier voorgesteld met een degen aan zijn gordel. Met zijn rechterhand houdt hij de schacht van een hellebaard of een standaard vast. Het opschrift luidt: Dit is het beelt van Fovin d'Hasque Schermmeester van Brugghe vaillant / Die alhier ghebracht heeft de olie van [de] H. Walburgis uyt duytslant / 1670. Dit laatste deed De Hasque in 1669, op verzoek van de pastoors, kapelaans en kerkmeesters van Sint-Walburga in Brugge. Hij overleed in datzelfde jaar. Wellicht werd dit portret geschilderd naar aanleiding van zijn dood. (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 204.)"
+                },
+                new PaintingTranslation
+                {
+                    Id = 18,
+                    PaintingId = 6,
+                    LanguageId = 3,
+                    Name = "Portrait of Fovin de Hasque",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 19,
+                    PaintingId = 7,
+                    LanguageId = 1,
+                    Name = "Achille parmi les filles de Lycomède",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 20,
+                    PaintingId = 7,
+                    LanguageId = 2,
+                    Name = "Achilles en de dochters van Lycomedes",
+                    Description = "Aan Thetis was voorspeld dat haar zoon Achilles in de Trojaanse Oorlog zou sneuvelen. Om dit lot te omzeilen, verborg ze hem verkleed als vrouw aan het hof van koning Lycomedes. Voor de Griekse aanvoerders Odysseus en Diomedes was Achilles echter onmisbaar. Ze kwamen zijn schuilplaats te weten, en met een list wilden ze hem ontmaskeren. De twee legeraanvoerders gaven geschenken, waaronder wapens, aan de dochters van Lycomedes, met onder hen de verklede Achilles. Spontaan greep Achilles naar een helm en een zwaard, waardoor hij zichzelf verraadde."
+	                    +"Links op het voorplan van het schilderij zijn Odysseus en Diomedes afgebeeld. Eén van hen grijpt Achilles bij zijn mouw, op het moment dat hij een helm past en een wapen grijpt uit de geschenken die rechts in een mand zitten en waarrond de dochters van Lycomedes zich scharen. Het tafereel speelt zich af op een terras, met links een doorkijk naar een tuin. "
+	                    +"De Antwerpse schilder Erasmus Quellinus II behoorde tot een familie van beeldhouwers, schilders, etsers en houtsnijders. Hij was leerling en medewerker van Peter Paul Rubens, die hij als stadsschilder van Antwerpen opvolgde. (Naar: H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 143.)"
+                },
+                new PaintingTranslation
+                {
+                    Id = 21,
+                    PaintingId = 7,
+                    LanguageId = 3,
+                    Name = "Achilles among the Daughters of Lycomedes",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 22,
+                    PaintingId = 8,
+                    LanguageId = 1,
+                    Name = "Portrait de Samuel Crew",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 23,
+                    PaintingId = 8,
+                    LanguageId = 2,
+                    Name = "Portret van Samuel Crew",
+                    Description = "Het betreft een vroeg portret van Lely ut 1650 van Samuel Crew, of zijn broer Nathaniel Crew, telgen van een belangrijke Engelse familie en beide protestantse priesters. Hun vader John Crew of Stene was lid van het Engelse Parliament en fungeerde tussen 1623 en 1625 als Speaker of the House. Lely wilde met dit portret duidelijk aan de verwachtingen van zijn opdrachtgever en zijn belangrijkste mecenas voldoen. Met grote virtuositeit - waarin reflecties van de portretkunst van Frans Hals zijn te herkennen - schildert Lely de kledij van de jonge heer (vermoedelijk Samuel), met veel aandacht voor de textuur en de lichtinval op het zwarte textiel. Het witte hemd schittert in het midden van de donkere, eerder sombere sfeer van het schilderij. Alleen het gelaat en de haren zijn door de lichtinval duidelijk benadrukt. Gedurfd toont Lely zijn model niet in het centrum van het doek, maar positioneert hij de jongeman net uit de middenas van het schilderij. Op die manier vermijdt hij het formalisme van portretten."
+                },
+                new PaintingTranslation
+                {
+                    Id = 24,
+                    PaintingId = 8,
+                    LanguageId = 3,
+                    Name = "Portrait of Samuel Crew",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 25,
+                    PaintingId = 9,
+                    LanguageId = 1,
+                    Name = "La Vocation de saint Matthieu",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 26,
+                    PaintingId = 9,
+                    LanguageId = 2,
+                    Name = "Roeping van Mattheüs",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 27,
+                    PaintingId = 9,
+                    LanguageId = 3,
+                    Name = "The Calling of St Matthew",
+                    Description = null
                 }
             );
 
