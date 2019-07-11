@@ -282,7 +282,7 @@ namespace backend.DAL
                 },
                 new MovementTranslation
                 {
-                    Id = 1,
+                    Id = 2,
                     MovementId = 1,
                     Name = "Barok (stijlperiode)",
                     LanguageId = 2,
@@ -290,7 +290,7 @@ namespace backend.DAL
                 },
                 new MovementTranslation
                 {
-                    Id = 1,
+                    Id = 3,
                     MovementId = 1,
                     Name = "Baroque",
                     LanguageId = 3,
@@ -313,9 +313,26 @@ namespace backend.DAL
                 {
                     Id = 1,
                     TechniqueId = 1,
+                    LanguageId = 1,
                     Name = "Peinture à l'huile",
-                    Description = "Too lazy again",
-                    LanguageId = 1
+                    Description = "La peinture à l'huile est une peinture dont le liant ou véhicule est une huile siccative qui enveloppe complètement les particules de pigment."
+                        +"On appelle aussi « peinture » les travaux d'enduction d'une surface par ce genre de produit. Les autorités normatives françaises demandent qu'on dise peinturage, mais ce terme n'a jamais pris1. La « peinture à l'huile » est donc aussi l'activité de nombreux artistes peintres passés et présents, ainsi qu'une technique picturale."
+                },
+                new TechniqueTranslation
+                {
+                    Id = 2,
+                    TechniqueId = 1,
+                    LanguageId = 2,
+                    Name = "olieverfschilderij",
+                    Description = "Olieverf is een verfsoort, een mengsel van pigment in de vorm van een zeer fijn gekleurd poeder met, als bindmiddel, een plantaardige drogende olie, meestal lijnolie. Olieverf is vanaf de 15e eeuw een belangrijk medium in de schilderkunst. Ze werd voor het eerst gebruikt door de Vlaamse Primitieven."
+                },
+                new TechniqueTranslation
+                {
+                    Id = 3,
+                    TechniqueId = 1,
+                    LanguageId = 3,
+                    Name = "Oil paint",
+                    Description = "Oil paint is a type of slow-drying paint that consists of particles of pigment suspended in a drying oil, commonly linseed oil. The viscosity of the paint may be modified by the addition of a solvent such as turpentine or white spirit, and varnish may be added to increase the glossiness of the dried oil paint film. Oil paints have been used in Europe since the 12th century for simple decoration, but were not widely adopted as an artistic medium until the early 15th century. Common modern applications of oil paint are in finishing and protection of wood in buildings and exposed metal structures such as ships and bridges. Its hard-wearing properties and luminous colors make it desirable for both interior and exterior use on wood and metal. Due to its slow-drying properties, it has recently been used in paint-on-glass animation. Thickness of coat has considerable bearing on time required for drying: thin coats of oil paint dry relatively quickly."
                 }
             );
 
