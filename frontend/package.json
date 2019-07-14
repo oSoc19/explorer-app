@@ -8,6 +8,7 @@
     "react-alice-carousel": "^1.15.1",
     "react-dom": "^16.8.6",
     "react-h5-audio-player": "^1.2.1",
+    "react-notifications-component": "^1.1.1",
     "react-read-more-less": "^0.1.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
