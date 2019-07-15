@@ -64,7 +64,7 @@ class ChoosePainting extends React.Component{
 
     addNotification() {
         this.notificationDOMRef.current.addNotification({
-          message: "This painting does not exist!",
+          message: Translation.Translate("paintingNotFound"),
           type: "danger",
           insert: "top",
           container: "top-center",

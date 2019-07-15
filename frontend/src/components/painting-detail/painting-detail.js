@@ -105,7 +105,7 @@ class PaintingDetail extends React.Component{
                     <div className={`container ${styles.missingLanguage}`}>
                         <span>{Translation.Translate("missingLanguage")}</span>
                         <div>
-                            <button onClick={this.changeLanguage} className={styles.changeLanguage}>Change language</button>
+                            <button onClick={this.changeLanguage} className={styles.changeLanguage}>{Translation.Translate("changeLanguage")}</button>
                         </div>
                     </div>
                 );
@@ -125,13 +125,13 @@ class PaintingDetail extends React.Component{
                         </ul>
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
-                                <a className="nav-link" id="ArtistLink" href="#Artist">Artist</a>
+                                <a className="nav-link" id="ArtistLink" href="#Artist">{Translation.Translate("artist")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="MovementLink" href="#Movement">Movement</a>
+                                <a className="nav-link" id="MovementLink" href="#Movement">{Translation.Translate("movement")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="TechniqueLink" href="#Technique">Technique</a>
+                                <a className="nav-link" id="TechniqueLink" href="#Technique">{Translation.Translate("technique")}</a>
                             </li>
                         </ul>
                         <ul className="navbar-nav ml-auto">
@@ -182,27 +182,27 @@ class PaintingDetail extends React.Component{
                                     <table className={`table table-borderless ${styles.paintDetails}`}>
                                         <tbody>
                                             <tr>
-                                                <td>Title</td>
+                                                <td>{Translation.Translate("title")}</td>
                                                 <td>{this.state.data.translations[0].name}</td>
                                             </tr>
                                             <tr>
-                                                <td>Artist</td>
+                                                <td>{Translation.Translate("artist")}</td>
                                                 <td>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</td>
                                             </tr>
                                             <tr>
-                                                <td>Year</td>
+                                                <td>{Translation.Translate("year")}</td>
                                                 <td>{this.state.data.year}</td>
                                             </tr>
                                             <tr>
-                                                <td>Size</td>
+                                                <td>{Translation.Translate("size")}</td>
                                                 <td>{`${this.state.data.height} x ${this.state.data.width} cm`}</td>
                                             </tr>
                                             <tr>
-                                                <td>Technique</td>
+                                                <td>{Translation.Translate("technique")}</td>
                                                 <td>{this.state.data.technique.translations[0].name}</td>
                                             </tr>
                                             <tr>
-                                                <td>Movement</td>
+                                                <td>{Translation.Translate("movement")}</td>
                                                 <td>{this.state.data.movement.translations[0].name}</td>
                                             </tr>
                                         </tbody>

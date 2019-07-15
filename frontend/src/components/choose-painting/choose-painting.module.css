@@ -1,5 +1,5 @@
 .choose {
-	width: 200px;
+	width: 250px;
 	height: 300px;	
 	position: absolute;
 	top:0;
@@ -24,4 +24,5 @@
 
 .spanPlaceholder{
 	color : grey;
+	font-size: 13
 }

@@ -1,21 +1,132 @@
 {
     "missingLanguage" : {
-        "FR" : "La ressource que vous avez demandé n'est pas disponible dans la langue sélectionnée",
         "EN" : "The resource you requested is not available in the selected language",
+        "FR" : "La ressource que vous avez demandé n'est pas disponible dans la langue sélectionnée",
+        "IT" : "La risorsa richiesta non è disponibile nella lingua selezionata",
         "DE" : "Die von Ihnen angeforderte Ressource ist in der ausgewählten Sprache nicht verfügbar",
         "NL" : "De bron die u hebt opgevraagd, is niet beschikbaar in de geselecteerde taal",
-        "ES" : "El recurso solicitado no está disponible en el idioma seleccionado.",
-        "IT" : "La risorsa richiesta non è disponibile nella lingua selezionata.",
+        "ES" : "El recurso solicitado no está disponible en el idioma seleccionado",
         "JA" : "要求されたリソースは選択された言語では利用できません。",
-        "RU" : "Запрашиваемый ресурс недоступен на выбранном языке."
+        "RU" : "Запрашиваемый ресурс недоступен на выбранном языке"
+    },
+    "changeLanguage" : {
+        "EN" : "Change language",
+        "FR" : "Changer de langue",
+        "IT" : "Cambia lingua",
+        "DE" : "Sprache ändern",
+        "NL" : "Verander de taal",
+        "ES" : "Cambiar idioma",
+        "JA" : "言語を変えてください",
+        "RU" : "изменение языка"
     },
     "choosePainting":{
-        "IT":"OOF",
-        "EN":"Search the painting",
-        "FR":"Entrez le numéro de la peinture"
+        "EN" : "Search the painting",
+        "FR" : "Rechercher le tableau",
+        "IT" : "Cerca nel dipinto",
+        "DE" : "Durchsuche das Gemälde",
+        "NL" : "Doorzoek het schilderij",
+        "ES" : "Buscar la pintura",
+        "JA" : "絵を検索",
+        "RU" : "Ищите картину"
     },
     "placeholder":{
         "EN" : "Enter the number",
-        "FR" : "Entrez le numéro"
+        "FR" : "Entrez le numéro",
+        "IT" : "Inserisci il numero",
+        "DE" : "Geben Sie die Nummer ein",
+        "NL" : "Voer het nummer in",
+        "ES" : "Ingrese el numero",
+        "JA" : "番号を入力",
+        "RU" : "Введите номер"
+    },
+    "paintingNotFound":{
+        "EN" : "This painting does not exist",
+        "FR" : "Ce tableau n'existe pas",
+        "IT" : "Questo dipinto non esiste",
+        "DE" : "Dieses Gemälde existiert nicht",
+        "NL" : "Dit schilderij bestaat niet",
+        "ES" : "Esta pintura no existe",
+        "JA" : "この絵は存在しません",
+        "RU" : "Эта картина не существует"
+    },
+    "readMore" : {
+        "EN" : "Read more",
+        "FR" : "Lire la suite",
+        "IT" : "Leggi di più",
+        "DE" : "Weiterlesen",
+        "NL" : "Lees verder",
+        "ES" : "Lee mas",
+        "JA" : "続きを読む",
+        "RU" : "Прочитайте больше"
+    },
+    "readLess" : {
+        "EN" : "Read less",
+        "FR" : "Lire moins",
+        "IT" : "Leggi meno",
+        "DE" : "Lese weniger",
+        "NL" : "Lees minder",
+        "ES" : "Leer menos",
+        "JA" : "もっと読む",
+        "RU" : "Читать меньше"
+    },
+    "artist" : {
+        "EN" : "Artist",
+        "FR" : "Artiste",
+        "IT" : "Artista",
+        "DE" : "Künstler",
+        "NL" : "Artiest",
+        "ES" : "Artista",
+        "JA" : "アーティスト",
+        "RU" : "художник"
+    },
+    "movement" : {
+        "EN" : "Movement",
+        "FR" : "Mouvement",
+        "IT" : "Movimento",
+        "DE" : "Bewegung",
+        "NL" : "Beweging",
+        "ES" : "Movimiento",
+        "JA" : "移動",
+        "RU" : "движение"
+    },
+    "technique" : {
+        "EN" : "Technique",
+        "FR" : "Technique",
+        "IT" : "Tecnica",
+        "DE" : "Technik",
+        "NL" : "Techniek",
+        "ES" : "Técnica",
+        "JA" : "技術",
+        "RU" : "Техника"
+    },
+    "title" : {
+        "EN" : "Title",
+        "FR" : "Titre",
+        "IT" : "Titolo",
+        "DE" : "Titel",
+        "NL" : "Titel",
+        "ES" : "Título",
+        "JA" : "タイトル",
+        "RU" : "заглавие"
+    },
+    "year" : {
+        "EN" : "Year",
+        "FR" : "Année",
+        "IT" : "Anno",
+        "DE" : "Jahr",
+        "NL" : "Jaar",
+        "ES" : "Año",
+        "JA" : "年",
+        "RU" : "Год"
+    },
+    "size" : {
+        "EN" : "Size",
+        "FR" : "Taille",
+        "IT" : "Taglia",
+        "DE" : "Größe",
+        "NL" : "Grootte",
+        "ES" : "tamaño",
+        "JA" : "サイズ",
+        "RU" : "Размер"
     }
 }

@@ -85,6 +85,10 @@ class ChooseLanguage extends React.Component{
                                 <td id='IT'>Italiano</td>
                             </tr>
                             <tr>
+                                <td id='JA'>日本の</td>
+                                <td id='RU'>русский</td>
+                            </tr>
+                            <tr>
                                 <td></td>
                                 <td data-attr="selectButton" onClick={this.state.language ? this.selectLanguage : this.addNotification}>
                                     <i className="material-icons">&#xe5cc;</i>

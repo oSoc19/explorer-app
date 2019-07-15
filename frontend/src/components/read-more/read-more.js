@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './read-more.module.css';
+import Translation from '../../services/translation';
 
 class ReadMore extends React.Component{
 
@@ -44,7 +45,7 @@ class ReadMore extends React.Component{
                             }
                             <div className={styles.readMoreButton}>
                                 <span onClick={this.showMoreOrLess}>
-                                    {this.state.wantsMore? 'Show less' : 'Continue reading'}
+                                    {this.state.wantsMore? Translation.Translate("readLess") : Translation.Translate("readMore") }
                                     {this.state.wantsMore ? <i className={`fa ${styles.arrow}`}>&#xf177;</i> : <i className={`fa ${styles.arrow}`}>&#xf178;</i>}
                                 </span>
                             </div>
