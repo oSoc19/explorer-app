@@ -47,8 +47,9 @@ class ChooseLanguage extends React.Component{
 
     selectLanguage(){
         let language = document.getElementsByClassName('selectedLanguage')[0];
-        if(language)
-            this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}?language=${language.id}`)
+        if(language){
+            this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}?language=${language.id}`);
+        }
     }
 
     render(){
@@ -66,16 +67,18 @@ class ChooseLanguage extends React.Component{
                 </div>
 
                 <div className={styles.containerLanguages}>
-                    <h6 className={`${styles.title}`}>Select a language</h6>
+                    <h6 className={`${styles.title}`}>
+                        Select a language
+                    </h6>
                     <table className={`table table-borderless align-middle`}>
                         <tbody>
                             <tr>
-                                <td id='EN' className={styles.language}>English</td>
-                                <td id='DE' className={styles.language}>German</td>
+                                <td id='EN'>English</td>
+                                <td id='DE'>German</td>
                             </tr>
                             <tr>
-                                <td id='NL' className={styles.language}>Nederlands</td>
-                                <td id='ES' className={styles.language}>Espanol</td>
+                                <td id='NL'>Nederlands</td>
+                                <td id='ES'>Espanol</td>
                             </tr>
                             <tr>
                                 <td id='FR'>Français</td>

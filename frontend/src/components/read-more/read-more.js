@@ -7,7 +7,8 @@ class ReadMore extends React.Component{
         super(props);
 
         this.state = {
-            wantsMore : false
+            wantsMore : false,
+            maxLength : this.props.maxLength ? this.props.maxLength : 150
         };
     }
 
@@ -17,7 +18,7 @@ class ReadMore extends React.Component{
     }
 
     render(){
-        if(this.props.content.length <= this.props.maxLength)
+        if(this.props.content.length <= this.state.maxLength)
             return (
             <div>
                 <h5 className={styles.title}>{this.props.storyTitle}</h5>
@@ -29,8 +30,6 @@ class ReadMore extends React.Component{
                     <h5 className={styles.title}>{this.props.storyTitle}</h5>
                     <div className={`row ${styles.content}`}>
                         <div className={`col-1 ${styles.line}`}>
-                            {/* <span className={`fa ${styles.hyphen}`}>&#xf068;</span> */}
-                            {/* <div className={styles.line}></div> */}
                         </div>
                         <div className="col">
                             {
@@ -40,7 +39,7 @@ class ReadMore extends React.Component{
                                 </span>
                                 :
                                 <span>
-                                    {`${this.props.content.substring(0, this.props.maxLength)}...`}
+                                    {`${this.props.content.substring(0, this.state.maxLength)}...`}
                                 </span>
                             }
                             <div className={styles.readMoreButton}>

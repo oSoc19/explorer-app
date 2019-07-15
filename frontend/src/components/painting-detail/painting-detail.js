@@ -9,6 +9,8 @@ import { css } from '@emotion/core';
 import Image from '../../assets/images/story.jpg';
 import InfoSection from '../info-section/info-section';
 import queryString from 'query-string'
+import ReadMore from '../read-more/read-more';
+import Translation from '../../services/translation';
 
 const override = css`
     display: block;
@@ -98,6 +100,16 @@ class PaintingDetail extends React.Component{
                 </div>  
             );
 
+        if(!this.state.loading && this.state.data.translations.length === 0)
+                return(
+                    <div className={`container ${styles.missingLanguage}`}>
+                        <span>{Translation.Translate("missingLanguage")}</span>
+                        <div>
+                            <button onClick={this.changeLanguage} className={styles.changeLanguage}>Change language</button>
+                        </div>
+                    </div>
+                );
+
         if(!this.state.loading)
             return(
             <div className="">
@@ -139,7 +151,7 @@ class PaintingDetail extends React.Component{
 
                     <div className="container">
                         <div id="Artist" className={styles.content}>
-                            <InfoSection storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
+                            <ReadMore maxLength={150} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></ReadMore>
                         </div>
 
                         <hr></hr>

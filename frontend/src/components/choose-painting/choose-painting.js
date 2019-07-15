@@ -5,13 +5,17 @@ import queryString from 'query-string'
 import Logo from '../../assets/images/logo_brugge.png';
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
-
-const PLACE_HOLDER = "Enter the number";
+import Translation from '../../services/translation';
 
 class ChoosePainting extends React.Component{
+
     constructor(props){
         super(props);
-        this.state = {isEmpty : true};
+        this.state = {
+            isEmpty : true,
+            language : queryString.parse(this.props.location.search).language
+        };
+        this.state.placeholder = Translation.Translate("placeholder");
 
         this.routeChange = this.routeChange.bind(this);
         this.addNotification = this.addNotification.bind(this);
@@ -38,7 +42,7 @@ class ChoosePainting extends React.Component{
     updateInput(number){
         return () => {
             let input = document.getElementById("paintingNumber").innerHTML;
-            if(input === PLACE_HOLDER){
+            if(input === this.state.placeholder){
                 input = "";
                 this.setState({isEmpty : false});
             }
@@ -49,13 +53,13 @@ class ChoosePainting extends React.Component{
     removeNumber(){
         document.getElementById("paintingNumber").innerHTML = document.getElementById("paintingNumber").innerHTML.slice(0,-1);
         if(document.getElementById("paintingNumber").innerHTML === ""){
-            document.getElementById("paintingNumber").innerHTML = PLACE_HOLDER;
+            document.getElementById("paintingNumber").innerHTML = this.state.placeholder;
             this.setState({isEmpty : true});
         }
     }
 
     isInputEmpty(){
-        return document.getElementById("paintingNumber").innerHTML === PLACE_HOLDER;
+        return document.getElementById("paintingNumber").innerHTML === this.state.placeholder;
     }
 
     addNotification() {
@@ -77,9 +81,11 @@ class ChoosePainting extends React.Component{
                 <ReactNotification ref={this.notificationDOMRef} />
                 <img src={Logo} className="bruggeLogo"></img>
                 <div className={styles.choose}>
-                    <label>Search the painting</label>
+                    <label>
+                        {Translation.Translate('choosePainting')}
+                    </label>
                     <div  className={styles.input}>
-                        <span id="paintingNumber" className={this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent}>{PLACE_HOLDER}</span>
+                        <span id="paintingNumber" className={this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent}>{this.state.placeholder}</span>
                     </div>
                     <div className="table-responsive-sm">
                         <table className="table table-borderless">
