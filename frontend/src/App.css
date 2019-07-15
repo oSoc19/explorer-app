@@ -58,3 +58,7 @@ html, body{
 .react-h5-audio-player {
   margin-bottom: 0px;
 }
+
+.selectedLanguage{
+  border : 1px solid black !important;
+}
