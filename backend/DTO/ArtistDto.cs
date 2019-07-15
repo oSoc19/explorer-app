@@ -1,18 +1,24 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace backend.dto
 {
     public class ArtistDto
     {
-        public long id { get; set; }
-        public String firstName { get; set; }
-        public String lastName { get; set; }
-        public String nationality { get; set; }
-        public String birthDate { get; set; }
-        public String deathDate { get; set; }
+        public long Id { get; set; }
+        public String FirstName { get; set; }
+        public String LastName { get; set; }
+        public String Nationality { get; set; }
+        public String BirthDate { get; set; }
+        public String DeathDate { get; set; }
         public virtual List<ArtistTranslationDto> Translations {get;set;}
 
+        public void FilterByLanguage(string language){
+            this.Translations = this.Translations.Where(at => at.Language.Code == language).ToList();
+        }
+
     }
+
 }
 

@@ -32,14 +32,17 @@ namespace backend.Controllers
         // GET: api/painting/{id}
         [HttpGet]
         [Route("api/painting/{id}")]
-        public ActionResult<Painting> GetPainting(long id)
+        public ActionResult<Painting> GetPainting(long id, string language)
         {
-            var painting = _paintingDataAccess.GetPainting(id);
-            if (painting == null)
-            {
+            Painting painting = _paintingDataAccess.GetPainting(id);
+            if (painting == null){
                 return NotFound();
             }
-            var paintingDto = _mapper.Map<PaintingDto>(painting);
+            PaintingDto paintingDto = _mapper.Map<PaintingDto>(painting);
+            if (language != null){
+                paintingDto.FilterByLanguage(language);
+            }
+            
             return Ok(paintingDto);
         }
     }
