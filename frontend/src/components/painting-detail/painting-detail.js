@@ -4,13 +4,11 @@ import styles from './painting-detail.module.css';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import AudioPlayer from "react-h5-audio-player";
-import ReadMore from '../read-more/read-more';
 import Api from '../../services/api';
 import { css } from '@emotion/core';
 import Image from '../../assets/images/story.jpg';
-import { Redirect } from 'react-router-dom'
 import ChoosePaiting from '../choose-painting/choose-painting';
-import queryString from 'query-string'
+import InfoSection from '../info-section/info-section';
 
 const override = css`
     display: block;
@@ -50,7 +48,6 @@ class PaintingDetail extends React.Component{
             data : null,
             currentStoryIndex : 0
         };
-        console.log(queryString.parse(this.props.location.search));
     }
 
     async componentWillMount(){
@@ -90,7 +87,6 @@ class PaintingDetail extends React.Component{
         if(!this.state.loading)
             return(
             <div className="">
-                <div id="Stories"></div>
                 <nav className={`navbar sticky-top navbar-expand navbar-light bg-light ${styles.navBackground}`}>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -98,14 +94,17 @@ class PaintingDetail extends React.Component{
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
-                                <a className="nav-link" id="StoriesLink" href="#Stories">Short story</a>
+                                <a className="nav-link" id="ArtistLink" href="#Artist">Artist</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="ArtworkLink" href="#Artwork">The artwork</a>
+                                <a className="nav-link" id="MovementLink" href="#Movement">Movement</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="InfoLink" href="#Info">Info</a>
+                                <a className="nav-link" id="TechniqueLink" href="#Technique">Technique</a>
                             </li>
+                            {/* <li className="nav-item">
+                                <img src="https://img.icons8.com/metro/26/000000/google-translate.png"></img>
+                            </li> */}
                         </ul>
                     </div>
                 </nav>
@@ -118,14 +117,20 @@ class PaintingDetail extends React.Component{
                     </div>
 
                     <div className="container">
-                        <div id="StoryInfo" className={styles.content}>
-                            <ReadMore storyTitle={images[this.state.currentStoryIndex].storyTitle} content={images[this.state.currentStoryIndex].content} maxLength={150}></ReadMore>
+                        <div id="Artist" className={styles.content}>
+                            <InfoSection storyTitle={images[this.state.currentStoryIndex].storyTitle} content={images[this.state.currentStoryIndex].content}></InfoSection>
                         </div>
 
                         <hr></hr>
 
                         <div id="Artwork" className={styles.content}>
-                            <ReadMore storyTitle="About the artwork" content={sampleText} maxLength={150}></ReadMore>
+                            <InfoSection storyTitle={images[this.state.currentStoryIndex].storyTitle} content={images[this.state.currentStoryIndex].content}></InfoSection>
+                        </div>
+
+                        <hr></hr>
+
+                        <div id="Technique" className={styles.content}>
+                            <InfoSection storyTitle={images[this.state.currentStoryIndex].storyTitle} content={images[this.state.currentStoryIndex].content}></InfoSection>
                         </div>
 
                         <hr></hr>
@@ -133,19 +138,17 @@ class PaintingDetail extends React.Component{
                         <div id="Info" className={`${styles.content}`}>
                             <h5 className={styles.title}>Info</h5>
                             <div className={`row ${styles.infoSection}`}>
-                                <div className="col-1">
-                                    <span className={`fa ${styles.hyphen}`}>&#xf068;</span>
-                                </div>
+                                <div className={`col-1 ${styles.line}`}></div>
                                 <div className="col">
                                     <table className={`table table-borderless ${styles.paintDetails}`}>
                                         <tbody>
                                             <tr>
-                                                <td>Genre</td>
-                                                <td>Portait</td>
+                                                <td>Artist</td>
+                                                <td>Artist infos</td>
                                             </tr>
                                             <tr>
-                                                <td>Movement</td>
-                                                <td>Barok</td>
+                                                <td>Year</td>
+                                                <td>XXX</td>
                                             </tr>
                                             <tr>
                                                 <td>Size</td>
@@ -155,7 +158,10 @@ class PaintingDetail extends React.Component{
                                                 <td>Technique</td>
                                                 <td>Oil painting</td>
                                             </tr>
-
+                                            <tr>
+                                                <td>Movement</td>
+                                                <td>Baroque</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -163,12 +169,10 @@ class PaintingDetail extends React.Component{
                         </div>
                     </div>
                </div>
-               <footer className={`fixed-bottom`}>
-                    {/* <div className="container"> */}
-                        <AudioPlayer
-                                src={AUDIO}
-                        />
-                    {/* </div> */}
+                <footer className={`fixed-bottom`}>
+                    <AudioPlayer
+                            src={AUDIO}
+                    />
                </footer>
             </div>
         );

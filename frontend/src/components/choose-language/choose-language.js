@@ -14,6 +14,7 @@ class ChooseLanguage extends React.Component{
 
         this.addNotification = this.addNotification.bind(this);
         this.notificationDOMRef = React.createRef();
+        this.selectLanguage = this.selectLanguage.bind(this);
     }
 
     addNotification() {
@@ -21,7 +22,7 @@ class ChooseLanguage extends React.Component{
           message: "Please select a language !",
           type: "warning",
           insert: "top",
-          container: "bottom-center",
+          container: "top-center",
           animationIn: ["animated", "fadeIn"],
           animationOut: ["animated", "fadeOut"],
           dismiss: { duration: 2000 },
@@ -46,7 +47,8 @@ class ChooseLanguage extends React.Component{
 
     selectLanguage(){
         let language = document.getElementsByClassName('selectedLanguage')[0];
-
+        if(language)
+            this.props.history.push(`/choose-painting?language=${language.id}`);
     }
 
     render(){
@@ -54,7 +56,7 @@ class ChooseLanguage extends React.Component{
             <div className="container">
                 <ReactNotification ref={this.notificationDOMRef} />
                 <div className="row">
-                    <div className="col align-self-center">
+                    <div className="col align-self-center bruggeLogo">
                         <img src={Logo} ></img>
                     </div>
                 </div>
@@ -63,33 +65,31 @@ class ChooseLanguage extends React.Component{
                     <div className="col h-100"></div>
                 </div>
 
-                <h6 className={styles.title}>Select a language</h6>
-                <table className="table table-borderless align-middle">
-                    <tbody>
-                        <tr>
-                            <td id='EN'>English</td>
-                            <td id='GR'>German</td>
-                        </tr>
-                        <tr>
-                            <td id='NL'>Nederlands</td>
-                            <td id='ES'>Espanol</td>
-                        </tr>
-                        <tr>
-                            <td id='FR'>Français</td>
-                            <td id='IT'>Italiano</td>
-                        </tr>
-                        <tr>
-                            <td>English</td>
-                            <td>German</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td data-attr="selectButton" onClick={this.state.language ? this.selectLanguage : this.addNotification}>
-                                <i className="material-icons">&#xe5cc;</i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className="">
+                    <h6 className={`${styles.title}`}>Select a language</h6>
+                    <table className={`table table-borderless align-middle`}>
+                        <tbody>
+                            <tr>
+                                <td id='EN' className={styles.language}>English</td>
+                                <td id='DE' className={styles.language}>German</td>
+                            </tr>
+                            <tr>
+                                <td id='NL' className={styles.language}>Nederlands</td>
+                                <td id='ES' className={styles.language}>Espanol</td>
+                            </tr>
+                            <tr>
+                                <td id='FR'>Français</td>
+                                <td id='IT'>Italiano</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td data-attr="selectButton" onClick={this.state.language ? this.selectLanguage : this.addNotification}>
+                                    <i className="material-icons">&#xe5cc;</i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         );
     }

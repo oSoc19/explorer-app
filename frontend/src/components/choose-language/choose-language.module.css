@@ -1,4 +1,9 @@
 td{
+    /* width : 50%; */
+    font-family: 'Montserrat';
+}
+
+.language{
     width : 50%;
 }
 
@@ -7,5 +12,17 @@ td{
 }
 
 .title{
-    font-family: 'Montserrat medium'
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size : 19px !important;
+    margin-bottom: 50px;
+}
+
+.containerLanguages {
+    width: 80%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }

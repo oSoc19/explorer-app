@@ -62,3 +62,7 @@ html, body{
 .selectedLanguage{
   border : 1px solid black !important;
 }
+
+.bruggeLogo{
+  margin-top : 20px;
+}

@@ -28,8 +28,9 @@ class ReadMore extends React.Component{
                 <div>
                     <h5 className={styles.title}>{this.props.storyTitle}</h5>
                     <div className={`row ${styles.content}`}>
-                        <div className="col-1">
-                            <span className={`fa ${styles.hyphen}`}>&#xf068;</span>
+                        <div className={`col-1 ${styles.line}`}>
+                            {/* <span className={`fa ${styles.hyphen}`}>&#xf068;</span> */}
+                            {/* <div className={styles.line}></div> */}
                         </div>
                         <div className="col">
                             {
