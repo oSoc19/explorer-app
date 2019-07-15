@@ -31,7 +31,7 @@ namespace backend.Controllers
         // GET: api/technique/{id}
         [HttpGet]
         [Route("api/technique/{id}")]
-        public ActionResult<Artist> GetPainting(long id)
+        public ActionResult<Technique> GetPainting(long id)
         {
             Technique technique = _techniqueDataAccess.GetTechnique(id);
             if (technique == null){

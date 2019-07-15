@@ -31,7 +31,7 @@ namespace backend.Controllers
         // GET: api/movement/{id}
         [HttpGet]
         [Route("api/movement/{id}")]
-        public ActionResult<Artist> GetPainting(long id)
+        public ActionResult<Movement> GetPainting(long id)
         {
             Movement movement = _movementDataAccess.GetMovement(id);
             if (movement == null){
