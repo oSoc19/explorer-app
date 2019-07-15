@@ -31,7 +31,7 @@ namespace backend.Controllers
         // GET: api/language/{id}
         [HttpGet]
         [Route("api/language/{id}")]
-        public ActionResult<Painting> GetPainting(long id)
+        public ActionResult<Artist> GetPainting(long id)
         {
             Language language = _languageDataAccess.GetLanguage(id);
             if (language == null){
