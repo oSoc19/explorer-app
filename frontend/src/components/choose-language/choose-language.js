@@ -48,7 +48,7 @@ class ChooseLanguage extends React.Component{
     selectLanguage(){
         let language = document.getElementsByClassName('selectedLanguage')[0];
         if(language)
-            this.props.history.push(`/choose-painting?language=${language.id}`);
+            this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}?language=${language.id}`)
     }
 
     render(){
@@ -65,7 +65,7 @@ class ChooseLanguage extends React.Component{
                     <div className="col h-100"></div>
                 </div>
 
-                <div className="">
+                <div className={styles.containerLanguages}>
                     <h6 className={`${styles.title}`}>Select a language</h6>
                     <table className={`table table-borderless align-middle`}>
                         <tbody>

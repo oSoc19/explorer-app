@@ -7,8 +7,8 @@ import AudioPlayer from "react-h5-audio-player";
 import Api from '../../services/api';
 import { css } from '@emotion/core';
 import Image from '../../assets/images/story.jpg';
-import ChoosePaiting from '../choose-painting/choose-painting';
 import InfoSection from '../info-section/info-section';
+import queryString from 'query-string'
 
 const override = css`
     display: block;
@@ -34,9 +34,7 @@ const images = [
     }
 ];
 
-const TESTURL = "https://en.wikipedia.org/w/api.php?prop=imageinfo&format=json&action=query&titles=File:Portret van Fovin de Hasque, circa 1669 - circa 1670, Groeningemuseum, 0040728000.jpg&iiprop=url&origin=*";
 const AUDIO = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/48641ebd9e794a7a8fb2f579990e4af155eea4585d12466591e87f3fd3d5dd99/browse.mp3";
-const sampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod metus ut quam tincidunt finibus. Ut purus tortor, semper convallis hendrerit sed, viverra in arcu. Sed aliquam velit nec nunc rhoncus euismod. Ut eget condimentum magna, vitae aliquam velit. Nullam gravida dolor eleifend interdum varius. Nulla fermentum dictum neque, et feugiat ligula fermentum eu. Curabitur a iaculis neque, eu vulputate urna. Donec elit turpis, consequat ut ligula sit amet, congue porta augue. Nulla turpis nunc, tempor in fringilla ac, pulvinar vitae orci. Vestibulum vel iaculis magna. Morbi in orci vitae justo porta pretium vel sed dui. Sed lobortis tellus et sapien pretium, eu maximus lorem imperdiet. Ut ut diam dolor. Duis nec turpis massa.";
 
 class PaintingDetail extends React.Component{
 
@@ -48,11 +46,21 @@ class PaintingDetail extends React.Component{
             data : null,
             currentStoryIndex : 0
         };
+        this.goBackToSelection = this.goBackToSelection.bind(this);
+        this.changeLanguage = this.changeLanguage.bind(this);
     }
 
     async componentWillMount(){
-        let dataJSON = await Api.getPaintingDetail(this.props.match.params.id);
-        await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0});
+        let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, queryString.parse(this.props.location.search).language);
+        if(dataJSON.status === 404){
+            this.props.history.push({
+                pathname : `/choose-painting?language=${queryString.parse(this.props.location.search).language}`, 
+                state:{notFound : true}
+            });
+            window.location.reload();
+        }
+        else
+            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0});
     }
 
     handleOnDragStart(e){
@@ -65,12 +73,18 @@ class PaintingDetail extends React.Component{
         this.setState({data : dataState, loading : loadingState, currentStoryIndex : e.item})
     }
 
-    render(){
-        if(!this.state.loading && this.state.data.status === 404)
-            return (
-                <ChoosePaiting></ChoosePaiting>
-            );
+    goBackToSelection(){
+        this.props.history.push(`/choose-painting?language=${queryString.parse(this.props.location.search).language}`);
+    }
 
+    changeLanguage(){
+        this.props.history.push({
+            pathname : `/language`, 
+            state:{previousUrl : `paintings/detail/${this.props.match.params.id}`}
+        });
+    }
+
+    render(){
         if(this.state.loading)
             return(
                 <div className='sweet-loading'>
@@ -92,6 +106,11 @@ class PaintingDetail extends React.Component{
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item" onClick={this.goBackToSelection}>
+                                <i className="material-icons">&#xe5cb;</i>
+                            </li>
+                        </ul>
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
                                 <a className="nav-link" id="ArtistLink" href="#Artist">Artist</a>
@@ -102,9 +121,11 @@ class PaintingDetail extends React.Component{
                             <li className="nav-item">
                                 <a className="nav-link" id="TechniqueLink" href="#Technique">Technique</a>
                             </li>
-                            {/* <li className="nav-item">
-                                <img src="https://img.icons8.com/metro/26/000000/google-translate.png"></img>
-                            </li> */}
+                        </ul>
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item" onClick={this.changeLanguage}>
+                                <i className="material-icons">&#xe8e2;</i>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -118,19 +139,25 @@ class PaintingDetail extends React.Component{
 
                     <div className="container">
                         <div id="Artist" className={styles.content}>
-                            <InfoSection storyTitle={images[this.state.currentStoryIndex].storyTitle} content={images[this.state.currentStoryIndex].content}></InfoSection>
+                            <InfoSection storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
                         </div>
 
                         <hr></hr>
 
-                        <div id="Artwork" className={styles.content}>
-                            <InfoSection storyTitle={images[this.state.currentStoryIndex].storyTitle} content={images[this.state.currentStoryIndex].content}></InfoSection>
+                        <div id="Movement" className={styles.content}>
+                            <InfoSection storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                         </div>
 
                         <hr></hr>
 
                         <div id="Technique" className={styles.content}>
-                            <InfoSection storyTitle={images[this.state.currentStoryIndex].storyTitle} content={images[this.state.currentStoryIndex].content}></InfoSection>
+                            <InfoSection storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
+                        </div>
+
+                        <hr></hr>
+
+                        <div id="Artwork" className={styles.content}>
+                            <InfoSection storyTitle="About the artwork" content={this.state.data.translations[0].description}></InfoSection>
                         </div>
 
                         <hr></hr>
@@ -143,24 +170,28 @@ class PaintingDetail extends React.Component{
                                     <table className={`table table-borderless ${styles.paintDetails}`}>
                                         <tbody>
                                             <tr>
+                                                <td>Title</td>
+                                                <td>{this.state.data.translations[0].name}</td>
+                                            </tr>
+                                            <tr>
                                                 <td>Artist</td>
-                                                <td>Artist infos</td>
+                                                <td>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</td>
                                             </tr>
                                             <tr>
                                                 <td>Year</td>
-                                                <td>XXX</td>
+                                                <td>{this.state.data.year}</td>
                                             </tr>
                                             <tr>
                                                 <td>Size</td>
-                                                <td>300 x 400 cm</td>
+                                                <td>{`${this.state.data.height} x ${this.state.data.width} cm`}</td>
                                             </tr>
                                             <tr>
                                                 <td>Technique</td>
-                                                <td>Oil painting</td>
+                                                <td>{this.state.data.technique.translations[0].name}</td>
                                             </tr>
                                             <tr>
                                                 <td>Movement</td>
-                                                <td>Baroque</td>
+                                                <td>{this.state.data.movement.translations[0].name}</td>
                                             </tr>
                                         </tbody>
                                     </table>

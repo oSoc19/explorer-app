@@ -19,6 +19,7 @@ namespace backend.dto
         public virtual List<PaintingTranslationDto> Translations {get;set;}
 
         public void FilterByLanguage(string language){
+            language = language.ToUpper();
             Author.FilterByLanguage(language);
             Movement.FilterByLanguage(language);
             Technique.FilterByLanguage(language);
