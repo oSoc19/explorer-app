@@ -31,7 +31,7 @@ namespace backend.DAL
         }
 
         public Painting GetPainting(long id){
-            return GetPaintings().Find(painting => painting.Id == id);
+            return _context.Painting.Find(id);
         }
     }
 }
