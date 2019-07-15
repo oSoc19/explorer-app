@@ -27,11 +27,7 @@ namespace backend.DAL
         }
 
         public List<Painting> GetPaintings(){
-            return _context.Painting
-                .Include(painting => painting.Author)
-                .Include(painting => painting.Movement)
-                .Include(painting => painting.Technique)
-                .ToList();
+            return _context.Painting.ToList();
         }
 
         public Painting GetPainting(long id){
