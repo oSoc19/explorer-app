@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace backend.dto
 {
@@ -17,5 +18,13 @@ namespace backend.dto
         public virtual List<PaintingStoryDto> Stories {get;set;}
         public virtual List<PaintingTranslationDto> Translations {get;set;}
 
+        public void FilterByLanguage(string language){
+            Author.FilterByLanguage(language);
+            Movement.FilterByLanguage(language);
+            Technique.FilterByLanguage(language);
+            this.Audios = this.Audios.Where(a => a.Language.Code == language).ToList();
+            this.Stories = this.Stories.Where(s => s.Language.Code == language).ToList();
+            this.Translations = this.Translations.Where(pt => pt.Language.Code == language).ToList();
+        }
     }
 }

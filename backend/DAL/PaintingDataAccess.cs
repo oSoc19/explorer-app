@@ -1,10 +1,7 @@
 using System;
-using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using backend.Models;
-using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 
 namespace backend.DAL
 {
