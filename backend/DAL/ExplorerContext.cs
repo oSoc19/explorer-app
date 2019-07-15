@@ -741,6 +741,78 @@ namespace backend.DAL
                     LanguageId = 3,
                     Name = "The Calling of St Matthew",
                     Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 28,
+                    PaintingId = 1,
+                    LanguageId = 4,
+                    Name = "Waldlandschaft mit Furt",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 29,
+                    PaintingId = 2,
+                    LanguageId = 4,
+                    Name = "Porträt einer Brüggener Familie",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 30,
+                    PaintingId = 3,
+                    LanguageId = 4,
+                    Name = "Porträt eines Theologen mit seinem Sekretär",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 31,
+                    PaintingId = 4,
+                    LanguageId = 4,
+                    Name = "Porträt eines Mannes",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 32,
+                    PaintingId = 5,
+                    LanguageId = 4,
+                    Name = "Heilige Dreifaltigkeit",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 33,
+                    PaintingId = 6,
+                    LanguageId = 4,
+                    Name = "Porträt des Fovin de Hasque",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 34,
+                    PaintingId = 7,
+                    LanguageId = 4,
+                    Name = "Achilles unter den Töchtern des Lycomedes",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 35,
+                    PaintingId = 8,
+                    LanguageId = 4,
+                    Name = "Porträt des Samuel Crew",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 36,
+                    PaintingId = 9,
+                    LanguageId = 4,
+                    Name = "Berufung des Hl. Matthäus",
+                    Description = null
                 }
             );
 
