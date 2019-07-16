@@ -1,0 +1,31 @@
+td{
+    /* width : 50%; */
+    font-family: 'Montserrat';
+}
+
+.language{
+    width : 50%;
+}
+
+.image{
+    margin-bottom: 20px;
+}
+
+.title{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size : 19px !important;
+    margin-bottom: 50px;
+}
+
+.containerLanguages {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'Montserrat';
+}

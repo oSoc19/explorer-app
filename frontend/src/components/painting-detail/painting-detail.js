@@ -4,8 +4,19 @@ import styles from './painting-detail.module.css';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import AudioPlayer from "react-h5-audio-player";
-import ReadMoreAndLess from 'react-read-more-less';
+import Api from '../../services/api';
+import { css } from '@emotion/core';
+import Image from '../../assets/images/story.jpg';
+import InfoSection from '../info-section/info-section';
+import queryString from 'query-string'
 import ReadMore from '../read-more/read-more';
+import Translation from '../../services/translation';
+
+const override = css`
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+`;
 
 const images = [
     {
@@ -25,7 +36,6 @@ const images = [
     }
 ];
 
-const TESTURL = "https://en.wikipedia.org/w/api.php?prop=imageinfo&format=json&action=query&titles=File:Portret van Fovin de Hasque, circa 1669 - circa 1670, Groeningemuseum, 0040728000.jpg&iiprop=url&origin=*";
 const AUDIO = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/48641ebd9e794a7a8fb2f579990e4af155eea4585d12466591e87f3fd3d5dd99/browse.mp3";
 
 class PaintingDetail extends React.Component{
@@ -34,26 +44,25 @@ class PaintingDetail extends React.Component{
         super(props);
 
         this.state = {
-            loading : false,
-            data : 'null',
+            loading : true,
+            data : null,
             currentStoryIndex : 0
         };
+        this.goBackToSelection = this.goBackToSelection.bind(this);
+        this.changeLanguage = this.changeLanguage.bind(this);
     }
 
-    async getImage(){
-        const headers = {
-            'Access-Control-Allow-Origin' : '*',
-            'Content-Type' : 'application/json',
-            'Origin' : '*'
-        };
-        const proxyurl = "https://cors-anywhere.herokuapp.com/";
-        let response = await fetch(proxyurl + TESTURL, {headers : headers});
-        let dataJSON = await response.json();
-        await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0});
-    }
-
-    componentWillMount(){
-        this.getImage();
+    async componentWillMount(){
+        let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, queryString.parse(this.props.location.search).language);
+        if(dataJSON.status === 404){
+            this.props.history.push({
+                pathname : `/choose-painting?language=${queryString.parse(this.props.location.search).language}`, 
+                state:{notFound : true}
+            });
+            window.location.reload();
+        }
+        else
+            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0});
     }
 
     handleOnDragStart(e){
@@ -66,160 +75,154 @@ class PaintingDetail extends React.Component{
         this.setState({data : dataState, loading : loadingState, currentStoryIndex : e.item})
     }
 
-    render(){
-        return(
-            this.state.loading ?
-            <div className='sweet-loading'>
-                <ClipLoader
-                    css={styles.override}
-                    sizeUnit={"px"}
-                    size={100}
-                    color={'#787B7D'}
-                    loading={this.state.loading}
-                />
-            </div>  
-            
-            :
+    goBackToSelection(){
+        this.props.history.push(`/choose-painting?language=${queryString.parse(this.props.location.search).language}`);
+    }
 
-            <div className="container">
-                <div id="Stories"></div>
-                <nav className="navbar sticky-top navbar-expand navbar-light bg-light">
+    changeLanguage(isLanguageMissing){
+        this.props.history.push({
+            pathname : `/language`, 
+            state:{
+                previousUrl : `paintings/detail/${this.props.match.params.id}`,
+                isLanguageMissing : isLanguageMissing
+            }
+        });
+    }
+
+    render(){
+        if(this.state.loading)
+            return(
+                <div className='sweet-loading'>
+                    <ClipLoader
+                        css={override}
+                        sizeUnit={"px"}
+                        size={100}
+                        color={'#787B7D'}
+                        loading={true}
+                    />
+                </div>  
+            );
+
+        if(!this.state.loading && this.state.data.translations.length === 0)
+                return(
+                    <div className={`container ${styles.missingLanguage}`}>
+                        <span>{Translation.Translate("missingLanguage")}</span>
+                        <div>
+                            <button onClick={() => this.changeLanguage(true)} className={styles.changeLanguage}>{Translation.Translate("changeLanguage")}</button>
+                        </div>
+                    </div>
+                );
+
+        if(!this.state.loading)
+            return(
+            <div className="">
+                <nav className={`navbar sticky-top navbar-expand navbar-light bg-light ${styles.navBackground}`}>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item" onClick={this.goBackToSelection}>
+                                <i className="material-icons">&#xe5cb;</i>
+                            </li>
+                        </ul>
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
-                                <a className="nav-link" id="StoriesLink" href="#Stories">Short story</a>
+                                <a className="nav-link" id="ArtistLink" href="#Artist">{Translation.Translate("artist")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="ArtworkLink" href="#Artwork">The artwork</a>
+                                <a className="nav-link" id="MovementLink" href="#Movement">{Translation.Translate("movement")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="InfoLink" href="#Info">Info</a>
+                                <a className="nav-link" id="TechniqueLink" href="#Technique">{Translation.Translate("technique")}</a>
+                            </li>
+                        </ul>
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item" onClick={()=>this.changeLanguage(false)}>
+                                <i className="material-icons">&#xe8e2;</i>
                             </li>
                         </ul>
                     </div>
                 </nav>
 
                 <div className={styles.body}>
-                    <div >
+                    <div>
                         <AliceCarousel mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
-                            {images.map(i => <img id={`img-fact-${i.storyTitle}`} key={i.url} src={i.url} onDragStart={this.handleOnDragStart} className="img-fluid"></img>)}
+                            {images.map(i => <img id={`img-fact-${i.storyTitle}`} key={i.url} src={Image} onDragStart={this.handleOnDragStart} className="img-fluid"></img>)}
                         </AliceCarousel>
                     </div>
 
-                    <div id="StoryInfo" className={styles.content}>
-                        <ReadMore obj={images[this.state.currentStoryIndex]} maxLength={150}></ReadMore>
-                    </div>
+                    <div className="container">
+                        <hr id="Artist"></hr>
 
-                    <div id="Artwork" className={styles.content}>
-                        <h5 className={styles.title}>About the artwork</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod metus ut quam tincidunt finibus. Ut purus tortor, semper convallis hendrerit sed, viverra in arcu. Sed aliquam velit nec nunc rhoncus euismod. Ut eget condimentum magna, vitae aliquam velit. Nullam gravida dolor eleifend interdum varius. Nulla fermentum dictum neque, et feugiat ligula fermentum eu. Curabitur a iaculis neque, eu vulputate urna. Donec elit turpis, consequat ut ligula sit amet, congue porta augue. Nulla turpis nunc, tempor in fringilla ac, pulvinar vitae orci. Vestibulum vel iaculis magna. Morbi in orci vitae justo porta pretium vel sed dui. Sed lobortis tellus et sapien pretium, eu maximus lorem imperdiet. Ut ut diam dolor. Duis nec turpis massa.
-                    </div>
+                        <div className={styles.content}>
+                            <InfoSection maxLength={150} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
+                        </div>
 
-                    <div id="Info" className={styles.content}>
-                        <h5 className={styles.title}>Info</h5>
-                        <table className={`table table-borderless ${styles.paintDetails}`}>
-                            <tbody>
-                                <tr>
-                                    <td>Genre</td>
-                                    <td>Portait</td>
-                                </tr>
-                                <tr>
-                                    <td>Movement</td>
-                                    <td>Barok</td>
-                                </tr>
-                                <tr>
-                                    <td>Size</td>
-                                    <td>300 x 400 cm</td>
-                                </tr>
-                                <tr>
-                                    <td>Technique</td>
-                                    <td>Oil painting</td>
-                                </tr>
+                        <hr id="Movement"></hr>
 
-                            </tbody>
-                        </table>
+                        <div className={styles.content}>
+                            <InfoSection storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
+                        </div>
+
+                        <hr id="Technique"></hr>
+
+                        <div className={styles.content}>
+                            <InfoSection storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
+                        </div>
+
+                        <hr></hr>
+
+                        <div id="Artwork" className={styles.content}>
+                            <InfoSection storyTitle="About the artwork" content={this.state.data.translations[0].description}></InfoSection>
+                        </div>
+
+                        <hr></hr>
+
+                        <div id="Info" className={`${styles.content}`}>
+                            <h5 className={styles.title}>Info</h5>
+                            <div className={`row ${styles.infoSection}`}>
+                                <div className={`col-1 ${styles.line}`}></div>
+                                <div className="col">
+                                    <table className={`table table-borderless ${styles.paintDetails}`}>
+                                        <tbody>
+                                            <tr>
+                                                <td>{Translation.Translate("title")}</td>
+                                                <td>{this.state.data.translations[0].name}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{Translation.Translate("artist")}</td>
+                                                <td>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{Translation.Translate("year")}</td>
+                                                <td>{this.state.data.year}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{Translation.Translate("size")}</td>
+                                                <td>{`${this.state.data.height} x ${this.state.data.width} cm`}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{Translation.Translate("technique")}</td>
+                                                <td>{this.state.data.technique.translations[0].name}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{Translation.Translate("movement")}</td>
+                                                <td>{this.state.data.movement.translations[0].name}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                </div>
-               <footer className={`fixed-bottom`}>
-                    <div className="container">
-                        <AudioPlayer
-                                src={AUDIO}
-                                className={styles.AudioPlayer}
-                        />
-                    </div>
+                <footer className={`fixed-bottom`}>
+                    <AudioPlayer
+                            src={AUDIO}
+                    />
                </footer>
             </div>
-
-            // <div className="container">
-            //     <div className="row">
-            //         <div className="col-sm">
-            //             <img className={`img-fluid ${styles.imageSize}`} src="https://via.placeholder.com/500" alt="Placeholder"/>
-            //         </div>
-            //         <div className="col-sm">
-            //             <div className="container">
-            //                 <div className={`row ${styles.paintTitle}`}>Portret van Fovin de Hasque</div>
-            //                 <div className={`row ${styles.paintArtist}`}>Jakob van Oost</div>
-            //             </div>
-            //             <div className={`container ${styles.paintDescription}`}>
-            //                 Portret van Fovin de Hasque (Jacob I van Oost, circa 1669 - circa 1670); collection: Musea Brugge - Groeningemuseum
-            //             </div>
-            //         </div>
-            //     </div>
-            //     <div className="row">
-            //         <div className="col-sm">
-            //             <div className={`container ${styles.paintDetailsContainer}`}>
-            //                 <div className="container">
-            //                     <div className="row">
-            //                         Details
-            //                     </div>
-            //                 </div>
-                        //     <table className={`table table-borderless ${styles.paintDetails}`}>
-                        //         <tbody>
-                        //             <tr>
-                        //                 <td>Title</td>
-                        //                 <td>Portret van Fovin de Hasque</td>
-                        //             </tr>
-                        //             <tr>
-                        //                 <td>Author</td>
-                        //                 <td>Jakob van Oost</td>
-                        //             </tr>
-                        //             <tr>
-                        //                 <td>Date</td>
-                        //                 <td>Between circa 1669 and circa 1670</td>
-                        //             </tr>
-                        //             <tr>
-                        //                 <td>Place</td>
-                        //                 <td>Brugge</td>
-                        //             </tr>
-                        //             <tr>
-                        //                 <td>Size</td>
-                        //                 <td>Height: 106 cm (41.7 ″); Width: 83 cm (32.6 ″)</td>
-                        //             </tr>
-                        //             <tr>
-                        //                 <td>Category</td>
-                        //                 <td>Portrait</td>
-                        //             </tr>
-                        //             <tr>
-                        //                 <td>Owner</td>
-                        //                 <td>Groeningemuseum</td>
-                        //             </tr>
-                        //         </tbody>
-                        //     </table>
-                        // </div>
-            //         </div>
-            //         <div className="col-sm">
-            //             <div className={`container ${styles.tagsContainer}`}>
-            //                 <p className="">Tags</p>
-            //                <div className="container">
-
-            //                </div>
-            //            </div>
-            //         </div>
-            //     </div>
-            // </div>
         );
     }
 }

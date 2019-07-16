@@ -1,3 +1,8 @@
+html, body{
+  background-color : #F9F6F2;
+}
+
+
 .App {
   text-align: center;
   margin-top:20px;
@@ -46,14 +51,18 @@
   right: 0;
 }
 
-.navbar{
-  background-color: white !important;
-}
-
 .logo{
   width:85px;
 }
 
 .react-h5-audio-player {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+.selectedLanguage{
+  border : 1px solid black !important;
+}
+
+.bruggeLogo{
+  margin-top : 20px;
 }
