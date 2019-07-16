@@ -9,6 +9,7 @@
 .content{
     padding : 0px 25px;
     font-family: 'Montserrat';
+    word-wrap: break-word;
 }
 
 .title{

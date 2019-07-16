@@ -14,10 +14,8 @@ class InfoSection extends React.Component{
                 <h5 className={styles.title}>{this.props.storyTitle}</h5>
                 <div className={`row ${styles.content}`}>
                     <div className={`col-1 ${styles.line}`}></div>
-                    <div className="col">
-                        <span>
-                            {this.props.content}
-                        </span>
+                    <div className="col-10">
+                        {this.props.content}
                     </div>
                 </div>
             </div>

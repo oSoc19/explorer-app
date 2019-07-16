@@ -32,7 +32,7 @@ class ReadMore extends React.Component{
                     <div className={`row ${styles.content}`}>
                         <div className={`col-1 ${styles.line}`}>
                         </div>
-                        <div className="col">
+                        <div className="col-10">
                             {
                                 this.state.wantsMore ? 
                                 <span>

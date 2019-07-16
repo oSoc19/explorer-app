@@ -150,19 +150,21 @@ class PaintingDetail extends React.Component{
                     </div>
 
                     <div className="container">
-                        <div id="Artist" className={styles.content}>
-                            <ReadMore maxLength={150} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></ReadMore>
+                        <hr id="Artist"></hr>
+
+                        <div className={styles.content}>
+                            <InfoSection maxLength={150} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr></hr>
+                        <hr id="Movement"></hr>
 
-                        <div id="Movement" className={styles.content}>
+                        <div className={styles.content}>
                             <InfoSection storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr></hr>
+                        <hr id="Technique"></hr>
 
-                        <div id="Technique" className={styles.content}>
+                        <div className={styles.content}>
                             <InfoSection storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
                         </div>
 
