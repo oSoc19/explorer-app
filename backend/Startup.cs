@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using backend.DAL;
 
 namespace backend
@@ -27,12 +26,6 @@ namespace backend
                 opt.UseLazyLoadingProxies()
                 .UseSqlServer(Configuration.GetConnectionString("ExplorerServerDb")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            // In production, the React files will be served from this directory
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "../frontend/build";
-            });
-
             services.AddCors();
             services.AddAutoMapper(typeof(Startup));
         }
@@ -61,18 +54,7 @@ namespace backend
             });
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseSpaStaticFiles();
             app.UseMvc();
-            app.UseSpa(spa =>
-            {
-                spa.Options.SourcePath = "../frontend";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseReactDevelopmentServer(npmScript: "start");
-                }
-            });
 
         }
     }
