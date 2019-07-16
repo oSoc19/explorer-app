@@ -79,10 +79,13 @@ class PaintingDetail extends React.Component{
         this.props.history.push(`/choose-painting?language=${queryString.parse(this.props.location.search).language}`);
     }
 
-    changeLanguage(){
+    changeLanguage(isLanguageMissing){
         this.props.history.push({
             pathname : `/language`, 
-            state:{previousUrl : `paintings/detail/${this.props.match.params.id}`}
+            state:{
+                previousUrl : `paintings/detail/${this.props.match.params.id}`,
+                isLanguageMissing : isLanguageMissing
+            }
         });
     }
 
@@ -105,7 +108,7 @@ class PaintingDetail extends React.Component{
                     <div className={`container ${styles.missingLanguage}`}>
                         <span>{Translation.Translate("missingLanguage")}</span>
                         <div>
-                            <button onClick={this.changeLanguage} className={styles.changeLanguage}>{Translation.Translate("changeLanguage")}</button>
+                            <button onClick={() => this.changeLanguage(true)} className={styles.changeLanguage}>{Translation.Translate("changeLanguage")}</button>
                         </div>
                     </div>
                 );
@@ -135,7 +138,7 @@ class PaintingDetail extends React.Component{
                             </li>
                         </ul>
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item" onClick={this.changeLanguage}>
+                            <li className="nav-item" onClick={()=>this.changeLanguage(false)}>
                                 <i className="material-icons">&#xe8e2;</i>
                             </li>
                         </ul>

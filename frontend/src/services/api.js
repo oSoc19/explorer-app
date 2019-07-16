@@ -7,6 +7,12 @@ class Api{
         data = await response.json();
         return data;
     }
+
+    static async getAvailableLanguages(){
+        let response = await fetch(`${BASE_URL}/language`);
+        let data = await response.json();
+        return data;
+    }
 }
 
 export default Api;

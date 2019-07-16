@@ -26,16 +26,16 @@ class ChoosePainting extends React.Component{
     
     componentDidMount(){
         if(this.props.location.state !== undefined)
-            this.addNotification();
+            this.addNotification(Translation.Translate("paintingNotFound"));
     }
 
     routeChange(event){
-        if(document.getElementById("paintingNumber").innerHTML !== ""){
+        if(document.getElementById("paintingNumber").innerHTML !== this.state.placeholder){
             this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").innerHTML}?language=${queryString.parse(this.props.location.search).language}`);
             window.location.reload();
         }
         else{
-
+            this.addNotification("Enter the painting number")
         }
     }
 
@@ -62,9 +62,9 @@ class ChoosePainting extends React.Component{
         return document.getElementById("paintingNumber").innerHTML === this.state.placeholder;
     }
 
-    addNotification() {
+    addNotification(message) {
         this.notificationDOMRef.current.addNotification({
-          message: Translation.Translate("paintingNotFound"),
+          message: message,
           type: "danger",
           insert: "top",
           container: "top-center",
