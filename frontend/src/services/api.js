@@ -1,9 +1,9 @@
 const BASE_URL = "https://localhost:5001/api";
 
 class Api{
-    static async getPaintingDetail(id, language){
+    static async getPaintingDetail(museumNumber, language){
         let data = null;    
-        let response = await fetch(`${BASE_URL}/painting/${id}?language=${language}`);
+        let response = await fetch(`${BASE_URL}/painting/museum/${museumNumber}?language=${language}`);
         data = await response.json();
         return data;
     }
