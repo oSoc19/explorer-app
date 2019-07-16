@@ -5,17 +5,20 @@ using backend.Models;
 
 namespace backend.DAL
 {
-    public class AuthorDataAccess
+    public class ArtistDataAccess
     {
         private readonly ExplorerContext _context;
-        public AuthorDataAccess(ExplorerContext context)
-        {
+
+        public ArtistDataAccess(ExplorerContext context){
             _context = context;
         }
 
-        public List<Artist> GetAuthors()
-        {
+        public List<Artist> GetArtists(){
             return _context.Artist.ToList();
+        }
+
+        public Artist GetArtist(long id){
+            return _context.Artist.Find(id);
         }
     }
 }

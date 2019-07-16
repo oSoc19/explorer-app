@@ -40,6 +40,18 @@ namespace backend.DAL
                     Id = 3,
                     Code = "EN",
                     Name = "English"
+                },
+                new Language
+                {
+                    Id = 4,
+                    Code = "DE",
+                    Name = "Deutsch"
+                },
+                new Language
+                {
+                    Id = 5,
+                    Code = "ES",
+                    Name = "Español"
                 }
             );
 
@@ -258,6 +270,125 @@ namespace backend.DAL
                     Description = "Sir Peter Lely (14 September 1618 – 7 December 1680)[1][2] was a painter of Dutch origin whose career was nearly all spent in England, where he became the dominant portrait painter to the court."
                         +"Lely was born Pieter van der Faes to Dutch parents in Soest in Westphalia,[3] where his father was an officer serving in the armed forces of the Elector of Brandenburg. Lely studied painting in Haarlem, where he may have been apprenticed to Pieter de Grebber. He became a master of the Guild of Saint Luke in Haarlem in 1637. He is reputed to have adopted the surname 'Lely' (also occasionally spelled Lilly) from a heraldic lily on the gable of the house where his father was born in The Hague."
                         +"He arrived in London in around 1643,[4] His early English paintings, mainly mythological or religious scenes, or portraits set in a pastoral landscape, show influences from Anthony van Dyck and the Dutch baroque. Lely's portraits were well received, and he succeeded Anthony van Dyck (who had died in 1641) as the most fashionable portrait artist in England. He became a freeman of the Painter-Stainers' Company in 1647 and was portrait artist to Charles I. His talent ensured that his career was not interrupted by Charles's execution, and he served Oliver Cromwell, whom he painted 'warts and all', and Richard Cromwell. In the years around 1650 the poet Sir Richard Lovelace wrote two poems about Lely – Peinture and 'See what a clouded majesty ...'"
+                },
+                new ArtistTranslation
+                {
+                    Id = 18,
+                    ArtistId = 1,
+                    LanguageId = 4,
+                    Description = "Lucas Achtschellinck (* 16. Januar 1626 in Brüssel; † 12. Mai 1699) war ein flämischer Landschaftsmaler."
+                        +"1639 wurde Achtschellinck als Schüler von Peter van der Borcht in die Brüsseler Malergilde aufgenommen und wurde stark beeinflusst von Jacques d’Arthois. 1657 wurde er als Freimeister in Brüssel zugelassen. Seine Bilder zeichnen sich aus durch Großräumigkeit der Bilder, ein kräftiges Grün und eine etwas derbe Formanschauung."
+                        +"Am 13. März 1674 heiratete er Anna Parys."
+                },
+                new ArtistTranslation
+                {
+                    Id = 19,
+                    ArtistId = 2,
+                    LanguageId = 4,
+                    Description = "Jakob van Oost der Ältere (* um 1600 in Brügge; † um 1671 in Brügge) war ein flämischer Maler des Barocks in Brügge. Zu seinem Œuvre zählen Historien- und Porträtgemälde."
+                        +"Am 19. Januar 1619 wurde Jakob van Oost als Lehrling seines Bruders Franz van Oost (1618 Freimeister in Brügge; † um 1625) in der Brügger Malergilde aufgelistet. Zu seinem Frühwerk zählen Kopien der Gemälde Jan van Eycksund Peter Paul Rubens, die 1857 teils als Originale galten. Im Jahr 1621 erfolgte seine Ernennung zum Freimeister. Zeitgemäß studierte er in den 20er Jahren in Italien die von Caravaggio beeinflussten Werke Hannibal/Annibale Carraccis. Nach seiner Rückkehr wurde er ab 1630 ein gefragter Auftragskünstler für Porträts, Historiengemälde und Altarwerke. Im Jahr 1633 fand seine Wahl zum Oberhaupt, dem Dekan der Schildergilde statt. Zu seinen Schülern zählten u. a. seine Söhne Jakob van Oost der Jüngere, der die Schule seines Vaters fortsetzte und Willem van Oost (~8. März 1651 in Brügge; † 31. August 1866 ebenda), der Maler und Dominikanerlaienbruder war."
+                        +"Nach seinen Rubenskopien gelangte er zu seinem eigenen Stil in dunkler und toniger Gesamthaltung. Sein Spätwerk ab 1660 besteht aus schwärzlich getonten Werken. Seine Gemälde finden sich in religiösen Einrichtungen und Sammlungen in Brügge, als auch in belgischem Privatbesitz und in folgenden Museen von Bergues, Berlin, Brüssel, Caen, Dijon, Dünkirchen, Leningrad, Lille, London, Lyon, New York City (Histor.Soc.[1] Kat. 1903 und Metropolitan Museum), Oostende, Paris, Tournai, Valenciennes und Wien."
+                },
+                new ArtistTranslation
+                {
+                    Id = 20,
+                    ArtistId = 3,
+                    LanguageId = 4,
+                    Description = "Jakob van Oost der Jüngere (* 1637 in Brügge; † 29. September 1713 in Brügge) war ein flämischer Maler des Barocks."
+                        +"Zunächst von seinem Vater Jakob van Oost dem Älteren in Brügge ausgebildet, vertiefte er seine Kunststudien zwei Jahre lang in Paris. Anschließend widmete er sich mehrere Jahre der Antike und den alten Meistern in Rom. Nach seiner Rückkehr in Brügge wollte er zwar zurück nach Paris, blieb aber in Lille bei seinen Freunden aus der Studienzeit und lebte seit 1668 für 41 Jahre in dieser nordfranzösischen Stadt."
+                        +"Jakob van Oost der Jüngere wurde in dieser Stadt neben Arnould de Vuezein anerkannter Porträtmaler[1]. Zeitgemäß beinhalteten seine Gemälde religiöse Themen. Im Jahr 1670 heiratete er Marie Bourgeois aus Lille, die ihm unter anderem den Sohn Dominique van Oost gebar, welcher ebenfalls Maler wurde."
+                        +"Im Jahr 1709 verließ er als Folge des Spanischen Erbfolgekriegs Lille und kehrte zum Schutz vor dem Krieg in seine Heimatstadt Brügge zurück, wo er vier Jahre später 76-jährig verstarb."
+                },
+                new ArtistTranslation
+                {
+                    Id = 21,
+                    ArtistId = 4,
+                    LanguageId = 4,
+                    Description = "Artus Wolffordt (* 1581 in Antwerpen; † 1641 ebenda) (auch: Wolfaerts, Wolffort, Wolfert) war ein flämischer Maler."
+                        +"Kurz nach seiner Geburt zogen seine Eltern nach Dordrecht. Am 29. Dezember 1603 wurde er dort Mitglied in der St. Lucasgilde, doch bald wieder aus ihr gestrichen, da er nicht mehr vermögend genug war. 1615 wurde er Assistent von Otto van Veen in Antwerpen. 1617 soll er in der Kathedrale St. Paul in Antwerpen am Altar Die Auferstehung und Mariä Himmelfahrt gemalt haben."
+                        +"In seiner Werkstatt sind zahlreiche Werke mit religiösen Motiven entstanden."
+                        +"Zu seinen Schülern zählten Pieter Van Mol (1599–1650) und Pieter van Lint(1609–1690)."
+                },
+                new ArtistTranslation
+                {
+                    Id = 22,
+                    ArtistId = 5,
+                    LanguageId = 4,
+                    Description = "Erasmus Quellinus II., auch Erasmus Quellinus der Jüngere, (* 19. November 1607 in Antwerpen; † 7. November1678 ebenda) war ein flämischer Maler, Schüler von Rubens, und Kupferstecher aus der Antwerpener KünstlerfamilieQuellinus."
+                        +"Er ist Sohn des Bildhauers Erasmus Quellinus I. und Bruder von Artus Quellinus I. und Hubertus Quellinus. Er wurde nach seiner Ausbildung bei Rubens 1633/34 Meister der Antwerpener Lukasgilde. Nach dem Tod von Rubens wurde er Stadtmaler von Antwerpen und überführte die ausgesprochen barocke Kunstauffassung von Rubens in eine eher klassizistisch grundierte Malerei. Gut dokumentieren lässt sich diese Neuorientierung an einem seiner wichtigsten Ausstattungsprojekte, die des Paleis op de Dam in Amsterdam, das er um 1656 zusammen mit seinem Bruder Artus Quellinus I ausstattete."
+                        +"Sein Sohn Jan Erasmus Quellinus ist ebenfalls eine bekannte Persönlichkeit unter den Barockmalern der Spanischen Niederlande. Er führte die Hinwendung des Vaters zu einer eher klassizistischen Kunstströmung in Flandern in das 18. Jahrhundert fort."
+                },
+                new ArtistTranslation
+                {
+                    Id = 23,
+                    ArtistId = 6,
+                    LanguageId = 4,
+                    Description = "Sir Peter Lely (eigentlich Pieter van der Faes, * 14. September 1618 im westfälischen Soest;[1] † 30. November 1680 in London) war ein englischerMaler niederländischer Herkunft."
+                        +"Mit 19 Jahren wurde Lely 1637 Schüler bei Pieter de Grebber in Haarlem. Mit Bürgschaft seines Lehrers de Grebber konnte er auch der Lukasgildebeitreten."
+                        +"1643 ging Lely nach England und ließ sich 1647 in London nieder. Schon bald war er überall im Gespräch, da er seine Porträts ganz im Stil Anthonis van Dycks gestaltete. Da van Dyck vor einigen Jahren gestorben war, schloss Lely mit seinen Bildern eine große Lücke. Darum wurde Lely wahrscheinlich auch die Mitgliedschaft der altehrwürdigen Company of Painter Stainers angeboten."
+                        +"Mit der Zeit wurde Lely, zusammen mit William Dobson, einer der führenden Porträtisten der englischen Revolution unter Oliver Cromwell und der nachfolgenden Herrscher. 1651 bewarb sich Lely für die Gestaltung verschiedener Wandmalereien in Whitehall."
+                        +"Zehn Jahre später berief König Karl II. Lely zu seinem offiziellen Hofmaler. Ein Jahr später, 1662, wurde Lely die britische Staatsbürgerschaft verliehen. In den Jahren 1666 bis 1667 schuf Lely für Anne Hyde eine Serie von Porträts verschiedener Hofdamen; heute noch bekannt unter dem Titel The Windsor Beauties. Fast zeitgleich entstand eine weitere Porträtserie von Admirälen, The Flagmen."
+                        +"Am 11. Januar 1680 wurde Lely von König Karl II. persönlich zum Knight Bachelor („Sir“) geschlagen.[2] Bereits ein Jahr später starb Sir Peter Lely im Alter von 62 Jahren."
+                        +"Nach seiner stark niederländisch beeinflussten Phase gelangte Lely im Alter zu einer gelösten freien Maltechnik. Neben vielen Schülern Lelys sei hier vertretend für alle Nicolas de Largillière genannt."
+                },
+                new ArtistTranslation
+                {
+                    Id = 24,
+                    ArtistId = 1,
+                    LanguageId = 5,
+                    Description = "Lucas Achtschellinck (Bruselas 1626–1699) fue un pintor barroco flamenco, especializado en la pintura de paisaje."
+                        +"Nació en Bruselas donde fue bautizado el 16 de enero de 1605. Entró como aprendiz de Pieter van der Borcht II en 1639 y aprendió la técnica de la pintura de paisaje con Lodewijk de Vadder. En 1657 fue aprobado como maestro en su ciudad natal, donde entre 1687 y 1689 desempeñó el cargo de decano de la corporación. Tuvo como discípulo a Theobald Michau.1 "
+                        +"Influido por Jacques d'Arthois, sus paisajes, inspirados en el bosque de Soignes, siguen los efectos atmosféricos de los paisajes de Rubens, amplificando su valor pictórico y decorativo por la utilización de sutiles gradaciones de color.2 De él se conocen algunos paisajes animados con escenas bíblicas pintados para iglesias y conventos y, como en otros casos, es posible que colaborase con otros maestros, a los que pudo proporcionar los fondos de paisaje además de ocuparse en la ejecución de cartones para tapices."
+                },
+                new ArtistTranslation
+                {
+                    Id = 25,
+                    ArtistId = 2,
+                    LanguageId = 5,
+                    Description = "Jacob van Oost I o el Viejo (Brujas, 1603 – 1671), fue un pintor barroco flamenco, especializado en pintura religiosa e historiada y retratos."
+                        +"Nacido en Brujas, donde fue bautizado el 7 de enero de 1603, en octubre de 1621 ingresó en el gremio de San Lucas de su ciudad natal. Inmediatamente debió de marchar a Italia donde fue influido por la pintura caravaggista. De nuevo en Brujas, en 1629 fue elegido vicario del gremio y un año después contrajo matrimonio con Jaquemyne van Overdille, de la que enviudó en 1631, tras dar a luz a su hijo Martín. En 1633 casó en segundas nupcias con María van Tollenaere, con quien tuvo seis hijos, entre ellos el también pintor Jacob van Oost, llamado el joven. Decano del gremio de San Lucas en 1633-1634 y en 1643-1644, en enero de 1662 se le documenta por última vez como vicario de la organización gremial."
+                        +"Tuvo numerosos discípulos trabajando en su taller, entre ellos dos aprendices de origen portugués o español: Franscoeis o Francisco Gomes y Jan o Juan Ramón, documentados en Brujas en 1640 y 1666 respectivamente."
+                        +"Desde su primera obra firmada y fechada, la Adoración de los pastores del Museo del Ermitage(1630), caravaggista en el tratamiento de la luz y en la elección de los tipos populares, Van Oost fue frecuentemente reclamado por las iglesias locales para pintar retablos adaptados a la nueva sensibilidad contrarreformista. La influencia de Caravaggio no fue, no obstante, la única influencia italiana de Van Oost, que derivó tempranamente hacia las formulaciones clasicistas de Domenichino a la vez que aclaraba su paleta."
+                },
+                new ArtistTranslation
+                {
+                    Id = 26,
+                    ArtistId = 3,
+                    LanguageId = 5,
+                    Description = "Jacob van Oost II o el Joven (Brujas, 1639 – 1713) fue un pintor barroco flamenco, especializado en retratos y pintura historiada y de género."
+                        +"Hijo y discípulo de Jacob van Oost el Viejo, nació en Brujas, donde fue bautizado el 11 de febrero de 1639. Tras completar su formación en Roma, en el entorno de Simon Vouet, en 1668 se estableció en Lille donde en 1670 casó con Marie Bourgeois. En Lille trabajó principalmente para las iglesias y conventos de la ciudad —San Carlos Borromeo orando por el fin de la peste y San Antonio de Padua con el Niño Jesús para la iglesia de San Mauricio, la Resurrección de Lázaro para la iglesia de la Magdalena o San Macario de Gante socorriendo a los apestados, pasada al Museo del Louvre— en un estilo suave, influido tanto por el tardobarroco romano como por el clasicismo francés.2 "
+                        +"Tras enviudar hacia 1697, en 1708 retornó a Brujas donde falleció el 29 de septiembre de 1713."
+                },
+                new ArtistTranslation
+                {
+                    Id = 27,
+                    ArtistId = 4,
+                    LanguageId = 5,
+                    Description = "Artus Wolffort, Wolfordt o Wolffaert (Amberes, 1581 -1641) fue un pintor barroco flamenco especializado en pintura historiada, principalmente de asunto religioso, aunque también cultivó el paisaje y el retrato."
+                        +"Formado en Dordrecht, ciudad a la que se habían trasladado sus padres cuando apenas contaba un año, en 1616 se encontraba de nuevo en Amberes, trabajando durante un corto espacio de tiempo en el taller de Otto van Veen, uno de los maestros de Rubens. Admitido en el gremio local de San Lucas en 1617, el 8 de septiembre de 1619 contrajo matrimonio con María Vandelaer. Del matrimonio nació en 1625 Jan-Baptiste Wolfaerts, quien llegaría a ser pintor especializado en paisajes y ocasionalmente copista de las obras paternas."
+                        +"Aunque recibió algún encargo importante con destino a la iglesia de San Pablo de Amberes, el grueso de su producción está formado por escenas evangélicas y series de apóstoles, evangelistas y padres de la Iglesia, destinadas a particulares. La abundancia de copias de sus obras y su desigual calidad, ha hecho suponer que se situase a la cabeza de un numeroso taller desde el que atender las demandas del mercado de arte. En él se formaron, además de su hijo, Peter van Lint y Peter van Mol."
+                        +"Su pintura, aunque arraigada en el clasicismo de Otto van Veen, recibe también influencias del más vitalista y animado estilo de Rubens, incluso adaptando composiciones de este al más seco estilo de su maestro."
+                },
+                new ArtistTranslation
+                {
+                    Id = 28,
+                    ArtistId = 5,
+                    LanguageId = 5,
+                    Description = "Erasmus Quellinus II, también llamado Erasmus el Joven(Amberes, 1607- 1678), fue un pintor y dibujante flamenco, miembro de una familia de artistas, principalmente escultores, oficio desempeñado por su padre Erasmus Quellinus I y su hermano, Artus Quellinus."
+                        +"Erasmus se formó inicialmente con su padre, pero habiendo optado por la pintura se inclinó hacia los pintores caravaggistas flamencos como Theodoor Rombouts o Gerard Seghers, para crear mediante el uso de la luz figuras rotundas de modelado escultórico."
+                        +"Hacia 1633 se estableció como maestro pintor independiente, ingresando en el Gremio de San Lucas de su ciudad natal, a la vez que comenzó a colaborar con Rubens, primero en las lujosas arquitecturas efímeras levantadas para conmemorar la «joyeuse entrée» del cardenal-infante don Fernando de Austria en la ciudad de Amberes el 15 de abril de 1635,1 y a continuación en el amplio ciclo de pinturas mitológicas encargadas por Felipe IV para la decoración de la Torre de la Parada, en el que Rubens se encontraba trabajando ya en noviembre de 1636.2 A Quellinus correspondieron en este encargo seis cuadros realizados sobre los bocetos de Rubens, todos ellos conservados en el Museo del Prado. A partir de este momento su pintura se hizo más ampulosa, eligiendo para sus escenas de asunto tanto histórico como mitológico o religioso lujosos fondos arquitectónicos de raíz clasicista."
+                        +"Colaboró también con cierta frecuencia con Daniel Seghers y con su cuñado Jan Philip van Thielen, pintando las figuras de sus célebres guirnaldas florales y, a partir de 1656, con su hermano Artus se encargó de la decoración del nuevo Ayuntamiento de Ámsterdam. Como dibujante proporcionó los diseños para series de tapices, como la dedicada a la historia de la familia Thurn und Taxis."
+                        +"Entre sus discípulos y colaboradores se contó su hijo, Jan Erasmus Quellinus."
+                },
+                new ArtistTranslation
+                {
+                    Id = 29,
+                    ArtistId = 6,
+                    LanguageId = 5,
+                    Description = "Peter Lely (Soest, Westfalia; 14 de septiembre de 1618-Covent Garden, Londres, Inglaterra; 30 de noviembre de 1680) fue un retratista danés, nacido en Soest, Westfalia, cuyo verdadero nombre era Pieter van der Faes."
+                        +"Se formó artísticamente en Haarlem, Países Bajos. En 1641 se estableció en Londres, y poco después recibió el encargo de retratar a los principales personajes de la corte inglesa."
+                        +"Carlos II de Inglaterra le nombró pintor de cámara en 1661 y le armó caballero en 1680."
+                        +"Su pintura, rica sobre todo en el colorido de los elegantes ropajes de los retratados, tiene una clara influencia de Anton van Dyck. La serie de cuadros Bellezas de Windsor (década de 1660) se encuentra en el palacio de Hampton Court, Londres. Otra serie, denominada Almirantes, se conserva en el Museo Marítimo Nacional de Greenwich, Londres."
                 }
             );
 
@@ -296,6 +427,24 @@ namespace backend.DAL
                     LanguageId = 3,
                     Description = "The Baroque (UK: /bəˈrɒk/, US: /bəˈroʊk/) is a highly ornate and often extravagant style of architecture, music, dance, painting, sculpture and other arts that flourished in Europe from the early 17th until the mid-18th century. It followed Renaissance art and Mannerism and preceded the Rococo (in the past often referred to as 'late Baroque') and Neoclassical styles. It was encouraged by the Catholic Church as a means to counter the simplicity and austerity of Protestant architecture, art and music, though Lutheran Baroque art developed in parts of Europe as well.[1]"
                         +"The Baroque style used contrast, movement, exuberant detail, deep colour, grandeur and surprise to achieve a sense of awe. The style began at the start of the 17th century in Rome, then spread rapidly to France, northern Italy, Spain and Portugal, then to Austria and southern Germany. By the 1730s, it had evolved into an even more flamboyant style, called rocaille or Rococo, which appeared in France and Central Europe until the mid to late 18th century."
+                },
+                new MovementTranslation
+                {
+                    Id = 4,
+                    MovementId = 1,
+                    Name = "Baroque",
+                    LanguageId = 4,
+                    Description = "Als Barock (Maskulinum „der Barock“, oder gleichwertig Neutrum „das Barock“) wird eine Epoche der europäischen Kunstgeschichte bezeichnet, die Ende des 16. Jahrhunderts begann[1] und bis ca. 1760/70 reicht. Es handelt sich nicht um einen völlig einheitlichen Stilbegriff, da es innerhalb des Barockzeitalters gleichzeitig zum Teil sehr verschiedene künstlerische Ausprägungen und Unterströmungen und auch eine Entwicklung gab,[2] nicht zuletzt auch große Unterschiede in verschiedenen Gegenden und Ländern.[3]Eine grobe Unterteilung in drei oder vier Unterepochen ist üblich, deren zeitliche Abgrenzung jedoch nicht völlig eindeutig angegeben werden kann: Frühbarock (bis ca. 1650), Hochbarock (ca. 1650–1700), Spätbarock (ca. 1700–1730)[4] und Rokoko (ca. 1730–1760/70). Gelegentlich werden Spätbarock und Rokoko gleichgesetzt, andererseits wird das Rokoko auch als eigenständige Epoche angesehen."
+                        +"Dem Barock voraus gingen die Epochen der Renaissance und des Manierismus, ihm folgte der Klassizismus."
+                },
+                new MovementTranslation
+                {
+                    Id = 5,
+                    MovementId = 1,
+                    Name = "Barroco",
+                    LanguageId = 5,
+                    Description = "El Barroco fue un período de la historia en la cultura occidental originado por una nueva forma de concebir el arte (el «estilo barroco») y que, partiendo desde diferentes contextos histórico-culturales, produjo obras en numerosos campos artísticos: literatura, arquitectura, escultura, pintura, música, ópera, danza, teatro, etc. Se manifestó principalmente en la Europa occidental, aunque debido al colonialismo también se dio en numerosas colonias de las potencias europeas, principalmente en Latinoamérica. Cronológicamente, abarcó todo el siglo XVIIy principios del XVIII, con mayor o menor prolongación en el tiempo dependiendo de cada país. Se suele situar entre el Manierismo y el Rococó, en una época caracterizada por fuertes disputas religiosas entre países católicos y protestantes, así como marcadas diferencias políticas entre los Estados absolutistas y los parlamentarios, donde una incipiente burguesía empezaba a poner los cimientos del capitalismo."
+                        +"Como estilo artístico, el Barroco surgió a principios del siglo XVII (según otros autores a finales del XVI) en Italia —período también conocido en este país como Seicento—, desde donde se extendió hacia la mayor parte de Europa. Durante mucho tiempo (siglos XVIII y XIX) el término «barroco» tuvo un sentido peyorativo, con el significado de recargado, engañoso, caprichoso, hasta que fue posteriormente revalorizado a finales del siglo XIX por Jacob Burckhardt y, en el XX, por Benedetto Croce y Eugenio d'Ors. Algunos historiadores dividen el Barroco en tres períodos: «primitivo» (1580-1630), «maduro» o «pleno» (1630-1680) y «tardío» (1680-1750)."
                 }
             );
 
@@ -323,7 +472,7 @@ namespace backend.DAL
                     Id = 2,
                     TechniqueId = 1,
                     LanguageId = 2,
-                    Name = "olieverfschilderij",
+                    Name = "Olieverfschilderij",
                     Description = "Olieverf is een verfsoort, een mengsel van pigment in de vorm van een zeer fijn gekleurd poeder met, als bindmiddel, een plantaardige drogende olie, meestal lijnolie. Olieverf is vanaf de 15e eeuw een belangrijk medium in de schilderkunst. Ze werd voor het eerst gebruikt door de Vlaamse Primitieven."
                 },
                 new TechniqueTranslation
@@ -333,6 +482,23 @@ namespace backend.DAL
                     LanguageId = 3,
                     Name = "Oil paint",
                     Description = "Oil paint is a type of slow-drying paint that consists of particles of pigment suspended in a drying oil, commonly linseed oil. The viscosity of the paint may be modified by the addition of a solvent such as turpentine or white spirit, and varnish may be added to increase the glossiness of the dried oil paint film. Oil paints have been used in Europe since the 12th century for simple decoration, but were not widely adopted as an artistic medium until the early 15th century. Common modern applications of oil paint are in finishing and protection of wood in buildings and exposed metal structures such as ships and bridges. Its hard-wearing properties and luminous colors make it desirable for both interior and exterior use on wood and metal. Due to its slow-drying properties, it has recently been used in paint-on-glass animation. Thickness of coat has considerable bearing on time required for drying: thin coats of oil paint dry relatively quickly."
+                },
+                new TechniqueTranslation
+                {
+                    Id = 4,
+                    TechniqueId = 1,
+                    LanguageId = 4,
+                    Name = "Ölmalerei",
+                    Description = "Die Ölmalerei ist die künstlerische Malerei mit Ölfarben und gilt als „klassische Königsdisziplin“ der Kunst, die insbesondere bei Porträt-, Landschafts-, Stillleben- und Genremalerei zur Anwendung kommt. Die Haltbarkeit und Farbbrillanz der Ölmalerei ist unübertroffen. Öl ist als Bindemittel ein Hauptbestandteil der Ölfarbe, woraus sich die Bezeichnung für die Ölmalerei ableitet."
+                },
+                new TechniqueTranslation
+                {
+                    Id = 5,
+                    TechniqueId = 1,
+                    LanguageId = 5,
+                    Name = "Pintura al aceite",
+                    Description = "Una pintura al aceite es un tipo de pintura de secado lento que consiste de partículas de pigmentos en suspensión en un aceite secante. Las pinturas al aceite han sido utilizadas en Inglaterra desde el siglo XIII para decoración,1​ pero no se popularizaron para usos artísticos sino hasta el siglo XV. Los usos modernos más comunes de pinturas al aceite son la decoración de casas, donde su resistencia y colores luminosos las hacen apropiadas tanto para usos en interiores como en exteriores. Sus propiedades de secado lento han sido aprovechadas recientemente para realizar animación mediante pintura sobre vidrio."
+                        +"Cuando se la utiliza para fines artísticos es llamada pintura al óleo."
                 }
             );
 
@@ -657,6 +823,150 @@ namespace backend.DAL
                     PaintingId = 9,
                     LanguageId = 3,
                     Name = "The Calling of St Matthew",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 28,
+                    PaintingId = 1,
+                    LanguageId = 4,
+                    Name = "Waldlandschaft mit Furt",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 29,
+                    PaintingId = 2,
+                    LanguageId = 4,
+                    Name = "Porträt einer Brüggener Familie",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 30,
+                    PaintingId = 3,
+                    LanguageId = 4,
+                    Name = "Porträt eines Theologen mit seinem Sekretär",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 31,
+                    PaintingId = 4,
+                    LanguageId = 4,
+                    Name = "Porträt eines Mannes",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 32,
+                    PaintingId = 5,
+                    LanguageId = 4,
+                    Name = "Heilige Dreifaltigkeit",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 33,
+                    PaintingId = 6,
+                    LanguageId = 4,
+                    Name = "Porträt des Fovin de Hasque",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 34,
+                    PaintingId = 7,
+                    LanguageId = 4,
+                    Name = "Achilles unter den Töchtern des Lycomedes",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 35,
+                    PaintingId = 8,
+                    LanguageId = 4,
+                    Name = "Porträt des Samuel Crew",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 36,
+                    PaintingId = 9,
+                    LanguageId = 4,
+                    Name = "Berufung des Hl. Matthäus",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 37,
+                    PaintingId = 1,
+                    LanguageId = 5,
+                    Name = "Paisaje boscoso con fuerte",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 38,
+                    PaintingId = 2,
+                    LanguageId = 5,
+                    Name = "Retrato de una familia de Brujas",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 39,
+                    PaintingId = 3,
+                    LanguageId = 5,
+                    Name = "Retrato de un Teólogo y su secretario",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 40,
+                    PaintingId = 4,
+                    LanguageId = 5,
+                    Name = "Retrato de un hombre",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 41,
+                    PaintingId = 5,
+                    LanguageId = 5,
+                    Name = "Santa Trinidad",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 42,
+                    PaintingId = 6,
+                    LanguageId = 5,
+                    Name = "Retrato de Fovin de Hasque",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 43,
+                    PaintingId = 7,
+                    LanguageId = 5,
+                    Name = "Achilles entre las hijas de Licomedes",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 44,
+                    PaintingId = 8,
+                    LanguageId = 5,
+                    Name = "Retrato de Samuel Crew",
+                    Description = null
+                },
+                new PaintingTranslation
+                {
+                    Id = 45,
+                    PaintingId = 9,
+                    LanguageId = 5,
+                    Name = "El llamado de San Mateo",
                     Description = null
                 }
             );
