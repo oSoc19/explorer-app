@@ -23,6 +23,11 @@ namespace backend.DAL
             _context.SaveChanges();
         }
 
+        public Painting GetPaintingByMuseumNumber(long number)
+        {
+            return _context.Painting.Where(p => p.MuseumNumber == number).First();
+        }
+
         public List<Painting> GetPaintings(){
             return _context.Painting.ToList();
         }

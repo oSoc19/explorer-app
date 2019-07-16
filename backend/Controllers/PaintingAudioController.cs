@@ -40,5 +40,13 @@ namespace backend.Controllers
             PaintingAudioDto paintingAudioDto = _mapper.Map<PaintingAudioDto>(paintingAudio);
             return Ok(paintingAudioDto);
         }
+
+        [HttpPost]
+        [Route("api/paintingAudio/{id}")]
+        public IActionResult PostAudioGuide(long id,string languageCode)
+        {
+
+            return Ok();
+        }
     }
 }

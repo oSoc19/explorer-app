@@ -513,7 +513,8 @@ namespace backend.DAL
                     Height = (float) 162,
                     Width = (float) 228,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 1
                 },
                 new Painting
                 {
@@ -524,7 +525,8 @@ namespace backend.DAL
                     Height = (float) 150.5,
                     Width = (float) 255.5,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 2
                 },
                 new Painting
                 {
@@ -535,7 +537,8 @@ namespace backend.DAL
                     Height = (float) 116,
                     Width = (float) 222,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 3
                 },
                 new Painting
                 {
@@ -546,7 +549,8 @@ namespace backend.DAL
                     Height = (float) 73,
                     Width = (float) 59,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 4
                 },
                 new Painting
                 {
@@ -557,7 +561,8 @@ namespace backend.DAL
                     Height = (float) 123.3,
                     Width = (float) 94.2,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 5
                 },
                 new Painting
                 {
@@ -568,7 +573,8 @@ namespace backend.DAL
                     Height = (float) 106,
                     Width = (float) 83,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 6
                 },
                 new Painting
                 {
@@ -579,7 +585,8 @@ namespace backend.DAL
                     Height = (float) 220,
                     Width = (float) 240,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 7
                 },
                 new Painting
                 {
@@ -590,7 +597,8 @@ namespace backend.DAL
                     Height = (float) 76.2,
                     Width = (float) 63.5,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 8
                 },
                 new Painting
                 {
@@ -601,7 +609,8 @@ namespace backend.DAL
                     Height = (float) 193.5,
                     Width = (float) 275,
                     TechniqueId = 1,
-                    MovementId = 1
+                    MovementId = 1,
+                    MuseumNumber = 9
                 }
             );
 

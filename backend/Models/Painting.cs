@@ -17,6 +17,8 @@ namespace backend.Models
         public float Width { get; set; }
         public long MovementId {get;set;}
 
+        public long MuseumNumber {get;set;}
+
         [ForeignKey("MovementId")]
         public virtual Movement Movement {get;set;}
         public long TechniqueId {get;set;}

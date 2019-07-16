@@ -45,5 +45,21 @@ namespace backend.Controllers
             
             return Ok(paintingDto);
         }
+
+        [HttpGet]
+        [Route("api/painting/museum/{paintingNumber}")]
+        public ActionResult<Painting> GetPaintingByMuseumNumber(long paintingNumber, string language)
+        {
+            Painting painting = _paintingDataAccess.GetPaintingByMuseumNumber(paintingNumber);
+            if (painting == null){
+                return NotFound();
+            }
+            PaintingDto paintingDto = _mapper.Map<PaintingDto>(painting);
+            if (language != null){
+                paintingDto.FilterByLanguage(language);
+            }
+            
+            return Ok(paintingDto);
+        }
     }
 }
