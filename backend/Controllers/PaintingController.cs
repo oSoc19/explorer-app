@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using backend.Models;
+using backend.dto;
+using AutoMapper;
 using backend.DAL;
+using System.Linq;
 
 namespace backend.Controllers
 {
@@ -12,10 +12,11 @@ namespace backend.Controllers
     public class PaintingController : ControllerBase
     {
         private readonly PaintingDataAccess _paintingDataAccess;
-        public PaintingController(PaintingContext context)
+        private readonly IMapper _mapper;
+        public PaintingController(ExplorerContext context, IMapper mapper)
         {
             _paintingDataAccess = new PaintingDataAccess(context);
-            //_paintingDataAccess.InitDatabase();
+            _mapper = mapper;
         }
 
         // GET: api/painting
@@ -23,22 +24,26 @@ namespace backend.Controllers
         [Route("api/painting")]
         public ActionResult<IEnumerable<Painting>> GetPaintings()
         {
-            return Ok(_paintingDataAccess.GetPaintings());
+            var paintings = _paintingDataAccess.GetPaintings();
+            var paintingsDto = _mapper.Map<List<PaintingDto>>(paintings);
+            return Ok(paintingsDto);
         }
 
-        // GET: api/paintings/5
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Painting>> GetPainting(long id)
-        //{
-            //return Ok();
-            // var painting = await _context.Paintings.FindAsync(id);
-
-            // if (painting == null)
-            // {
-            //     return NotFound();
-            // }
-
-            // return painting;
-        //}
+        // GET: api/painting/{id}
+        [HttpGet]
+        [Route("api/painting/{id}")]
+        public ActionResult<Painting> GetPainting(long id, string language)
+        {
+            Painting painting = _paintingDataAccess.GetPainting(id);
+            if (painting == null){
+                return NotFound();
+            }
+            PaintingDto paintingDto = _mapper.Map<PaintingDto>(painting);
+            if (language != null){
+                paintingDto.FilterByLanguage(language);
+            }
+            
+            return Ok(paintingDto);
+        }
     }
 }

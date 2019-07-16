@@ -1,27 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace backend.Models
 {
     public class Painting
     {
-        public long id { get; set; }
-        public String title { get; set; }
-        public String description { get; set; }
+        public long Id { get; set; }
         public long AuthorId {get;set;}
 
         [ForeignKey("AuthorId")]
-        public virtual Author author { get; set; }
-        public String imageUrl { get; set; }
-        public int year { get; set; }
-        public String place { get; set; }
-        public float height { get; set; }
-        public float width { get; set; }
+        public virtual Artist Author { get; set; }
+        public String ImageUrl { get; set; }
+        public int Year { get; set; }
+        public float Height { get; set; }
+        public float Width { get; set; }
+        public long MovementId {get;set;}
 
-        public virtual List<Category> categories { get; set; }
-
-        public virtual List<Tag> tags { get; set; }
-        public String owner { get; set; }
+        [ForeignKey("MovementId")]
+        public virtual Movement Movement {get;set;}
+        public long TechniqueId {get;set;}
+        [ForeignKey("TechniqueId")]
+        public virtual Technique Technique {get;set;}
+        public virtual List<PaintingAudio> Audios {get;set;}
+        public virtual List<PaintingStory> Stories {get;set;}
+        public virtual List<PaintingTranslation> Translations {get;set;}
     }
 }

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using backend.Models;
 
 namespace backend.DAL
@@ -10,26 +8,27 @@ namespace backend.DAL
     public class PaintingDataAccess
     {
 
-        private readonly PaintingContext _context;
-        public PaintingDataAccess(PaintingContext context)
+        private readonly ExplorerContext _context;
+        public PaintingDataAccess(ExplorerContext context)
         {
             _context = context;
         }
 
-        public async void InitDatabase()
-        {
-            if (_context.Paintings.Count() == 0)
-            {
-                var authorInsert =  new Author { firstName = "Sushil", lastName = "Ghambir" };
-                _context.Authors.Add(authorInsert);
-                _context.Paintings.Add(new Painting { title = "Superbe peinture", author = authorInsert, AuthorId=1 });
-                await _context.SaveChangesAsync();
-            }
+        public void InitDatabase(){
+            var rand = _context.Painting.Count();
+            _context.Painting.Add(new Painting { 
+                    Author = new Artist{FirstName = "Sushil"+rand, LastName = "Ghambir"+rand},
+                    Movement = new Movement{},
+                    Technique = new Technique{}});
+            _context.SaveChanges();
         }
 
-        public List<Painting> GetPaintings()
-        {
-            return _context.Paintings.ToList();
+        public List<Painting> GetPaintings(){
+            return _context.Painting.ToList();
+        }
+
+        public Painting GetPainting(long id){
+            return _context.Painting.Find(id);
         }
     }
 }

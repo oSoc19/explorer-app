@@ -1,12 +1,11 @@
-﻿// Unused usings removed
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
-using backend.Models;
 using backend.DAL;
 
 namespace backend
@@ -24,19 +23,22 @@ namespace backend
         //container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<PaintingContext>(opt =>
-                opt.UseSqlServer(Configuration.GetConnectionString("ExplorerDb")));
+            services.AddDbContext<ExplorerContext>(opt =>
+                opt.UseLazyLoadingProxies()
+                .UseSqlServer(Configuration.GetConnectionString("ExplorerServerDb")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "../frontend/build";
             });
+
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP 
         //request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ExplorerContext context)
         {
             if (env.IsDevelopment())
             {
@@ -46,7 +48,7 @@ namespace backend
             {
                 // The default HSTS value is 30 days. You may want to change this for 
                 // production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+               app.UseHsts();
             }
 
             app.UseHttpsRedirection();
@@ -62,6 +64,7 @@ namespace backend
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+
         }
     }
 }

@@ -90,13 +90,13 @@ class PaintingDetail extends React.Component{
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
-                                <a className="nav-link" href="#Stories">Short story</a>
+                                <a className="nav-link" id="StoriesLink" href="#Stories">Short story</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#Artwork">The artwork</a>
+                                <a className="nav-link" id="ArtworkLink" href="#Artwork">The artwork</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#Infos">Info</a>
+                                <a className="nav-link" id="InfoLink" href="#Info">Info</a>
                             </li>
                         </ul>
                     </div>
@@ -105,7 +105,7 @@ class PaintingDetail extends React.Component{
                 <div className={styles.body}>
                     <div >
                         <AliceCarousel mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
-                            {images.map(i => <img key={i.url} src={i.url} onDragStart={this.handleOnDragStart} className="img-fluid"></img>)}
+                            {images.map(i => <img id={`img-fact-${i.storyTitle}`} key={i.url} src={i.url} onDragStart={this.handleOnDragStart} className="img-fluid"></img>)}
                         </AliceCarousel>
                     </div>
 
@@ -118,7 +118,7 @@ class PaintingDetail extends React.Component{
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod metus ut quam tincidunt finibus. Ut purus tortor, semper convallis hendrerit sed, viverra in arcu. Sed aliquam velit nec nunc rhoncus euismod. Ut eget condimentum magna, vitae aliquam velit. Nullam gravida dolor eleifend interdum varius. Nulla fermentum dictum neque, et feugiat ligula fermentum eu. Curabitur a iaculis neque, eu vulputate urna. Donec elit turpis, consequat ut ligula sit amet, congue porta augue. Nulla turpis nunc, tempor in fringilla ac, pulvinar vitae orci. Vestibulum vel iaculis magna. Morbi in orci vitae justo porta pretium vel sed dui. Sed lobortis tellus et sapien pretium, eu maximus lorem imperdiet. Ut ut diam dolor. Duis nec turpis massa.
                     </div>
 
-                    <div id="Infos" className={styles.content}>
+                    <div id="Info" className={styles.content}>
                         <h5 className={styles.title}>Info</h5>
                         <table className={`table table-borderless ${styles.paintDetails}`}>
                             <tbody>
