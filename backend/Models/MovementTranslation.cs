@@ -15,5 +15,7 @@ namespace backend.Models
         public virtual Movement Movement {get;set;}
         [ForeignKey("LanguageId")]
         public virtual Language Language {get;set;}
+
+        public String SourceLink {get;set;}
     }
 }
