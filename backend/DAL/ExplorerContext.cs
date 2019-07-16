@@ -130,7 +130,9 @@ namespace backend.DAL
                         + "En 1687, il est doyen représentant les peintres à la corporation et ce jusqu'en 168910. "
                         + "En 1689, il est exonéré en tant que cartonnier11 En 1681, il est « reconnu » c'est-à-dire : exempté de certaines charges du métier à la condition qu'il ne se livre qu'à des travaux artistiques12. "
                         + "Achtschellick est influencé par le style de Rubens dans la façon de peindre les paysages. Il est également fortement influencé par Jacques d'Arthois. Il peint des paysages forestiers, des églises et des cloîtres, ainsi que des scènes avec des personnages inspirées de la Bible. Achtschellinck est connu pour avoir peint les paysages des œuvres majeures du peintre flamand Gaspard de Crayer (1582-1669)."
-                        + "Lucas Achtschellinck est souvent associé à son professeur de peinture Lodewijk de Vadder (1605-1655)13, ainsi qu'à Jacques d'Arthois (1603-1686). En effet, on les appelle les peintres de la Forêt de Soignes."
+                        + "Lucas Achtschellinck est souvent associé à son professeur de peinture Lodewijk de Vadder (1605-1655)13, ainsi qu'à Jacques d'Arthois (1603-1686). En effet, on les appelle les peintres de la Forêt de Soignes.",
+                    SourceLink = ""
+                
                 },
                 new ArtistTranslation
                 {
@@ -138,7 +140,8 @@ namespace backend.DAL
                     ArtistId = 1,
                     LanguageId = 2,
                     Description = "Lucas Achtschellinck (Brussel, gedoopt 16 januari 1626 - aldaar, begraven 12 mei 1699) was een Brussels landschapschilder uit de baroktijd.Achtschellinck werd op 26 oktober 1639 ingeschreven in de Brusselse schildersgilde als leerling van Peter van der Borcht. Men veronderstelt dat hij tussen 1639 en 1657 veel reisde daar hij pas in 1657 gildemeester werd."
-                        +"Achtschellinck werd sterk beïnvloed door Jacques d'Arthois, een leerling uit de Rubensschool. Hij schilderde vooral grote boslandschappen voor kerken en kloosters. Deze landschappen werden door anderen verder afgewerkt met figuren en gebeurtenissen uit de Bijbel. Achtschellinck schilderde ook verscheidene landschappen in de schilderijen van Gaspar de Crayer. Hij vormde samen met Lodewijk de Vadder en Jacques d'Arthois de zogenaamde Zoniënwoudschilders, de leidende groep van Brusselse landschapschilders van dat moment. Hij werd de leraar van onder andere Theobald Michau."
+                        +"Achtschellinck werd sterk beïnvloed door Jacques d'Arthois, een leerling uit de Rubensschool. Hij schilderde vooral grote boslandschappen voor kerken en kloosters. Deze landschappen werden door anderen verder afgewerkt met figuren en gebeurtenissen uit de Bijbel. Achtschellinck schilderde ook verscheidene landschappen in de schilderijen van Gaspar de Crayer. Hij vormde samen met Lodewijk de Vadder en Jacques d'Arthois de zogenaamde Zoniënwoudschilders, de leidende groep van Brusselse landschapschilders van dat moment. Hij werd de leraar van onder andere Theobald Michau.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -146,16 +149,18 @@ namespace backend.DAL
                     ArtistId = 1,
                     LanguageId = 3,
                     Description = "Lucas Achtschellinck baptized 16 January 1626 – buried 12 May 1699), was a Flemish landscape painter. He is counted among the landscape painters active in Brussels referred to as the School of Painters of the Sonian Forest who all shared an interest in depicting scenes set in the Sonian Forest, which is located near Brussels."
-                    + "He was born in Brussels and was possibly the grandson of the landscape painter Lukas Achtschelling. He was registered in the Brussels Guild of Saint Luke on 26 October 1639 as a pupil of a Pieter van der Borcht. The 17th century Flemish biographer Cornelis de Bie mentioned that Lucas Achtschellinck also studied with the Brussels landscapist Lodewijk de Vadder but this is not confirmed by Guild records. However, stylistically the two artists are quite close."
-                    + "Achtschellinck likely travelled abroad after completing his apprenticeship since he only became a master in the Brussels guild in 1657. On 13 March 1674 he married Anna Parys. He remained active in Brussels and in 1687 he was the deacon of the Brussels guild. He was successfully and employed 8 pupils including Théobald Michau between 1659 and 1686."
-                    + "He died in Brussels."
+                        + "He was born in Brussels and was possibly the grandson of the landscape painter Lukas Achtschelling. He was registered in the Brussels Guild of Saint Luke on 26 October 1639 as a pupil of a Pieter van der Borcht. The 17th century Flemish biographer Cornelis de Bie mentioned that Lucas Achtschellinck also studied with the Brussels landscapist Lodewijk de Vadder but this is not confirmed by Guild records. However, stylistically the two artists are quite close."
+                        + "Achtschellinck likely travelled abroad after completing his apprenticeship since he only became a master in the Brussels guild in 1657. On 13 March 1674 he married Anna Parys. He remained active in Brussels and in 1687 he was the deacon of the Brussels guild. He was successfully and employed 8 pupils including Théobald Michau between 1659 and 1686."
+                        + "He died in Brussels.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
                     Id = 4,
                     ArtistId = 2,
                     LanguageId = 1,
-                    Description = "Jacob van Oost dit le Vieux, également connu sous le nom de Jacques Van Oost le Vieux, né le 1er juillet 1603 à Bruges où il est mort entre le 1er et le 3 mars 1671, est un peintre flamand. Il est considéré comme étant le principal peintre brugeois du xviie siècle."
+                    Description = "Jacob van Oost dit le Vieux, également connu sous le nom de Jacques Van Oost le Vieux, né le 1er juillet 1603 à Bruges où il est mort entre le 1er et le 3 mars 1671, est un peintre flamand. Il est considéré comme étant le principal peintre brugeois du xviie siècle.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -165,14 +170,16 @@ namespace backend.DAL
                     Description = "Van Oost was de telg van een uitgebreide Brugse schildersfamilie. Na zijn eerste opleiding, waarschijnlijk bij zijn broer Frans van Oost, verbleef hij in Italië van 1621 tot 1628. Vanaf 1651 bekleedde hij de functie van stadsschilder."
                         + "Zijn oeuvre is sterk beïnvloed door Caravaggio en de Italiaanse meesters, alsook door Vlaamse kunstenaars als Rubens, Antoon van Dyck en Gaspard de Crayer. Zijn voornaamste werken zijn portretten en religieuze taferelen. Ze worden gekenmerkt door licht-donker-effecten, de realistische voorstelling van de figuren, de persoonlijke kleuren en de stillevenelementen. Boven het hoogaltaar van de Sint-Agathakerk te Landskouter is zijn De verrijzenis van Jezus te zien."
                         + "Jacob van Oost was getrouwd met Jacquemine van Overdille. Ze kregen een zoon, Martinus. Hij hertrouwde met Maria Tollenaere en ze kregen zes kinderen. Zijn zonen Jacob II van Oost (1639-1713) en Willem van Oost (1651-1686) werden eveneens kunstschilder."
-                        + "Er werd een gedenkplaat aangebracht aan zijn woning, Wapenmakersstraat 3 in Brugge. Brugge heeft ook een Jakob van Ooststraat."
+                        + "Er werd een gedenkplaat aangebracht aan zijn woning, Wapenmakersstraat 3 in Brugge. Brugge heeft ook een Jakob van Ooststraat.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
                     Id = 6,
                     ArtistId = 2,
                     LanguageId = 3,
-                    Description = "Jacob van Oost or Jacob van Oost the Elder (1603–1671) was a Flemish painter of history paintings and portraits. He was the most important painter of Bruges in the 17th century through his portraits of members of the local bourgeois and his many altarpieces made in the spirit of the Counter Reformation. He also created genre paintings of musicians and card players for the open market."
+                    Description = "Jacob van Oost or Jacob van Oost the Elder (1603–1671) was a Flemish painter of history paintings and portraits. He was the most important painter of Bruges in the 17th century through his portraits of members of the local bourgeois and his many altarpieces made in the spirit of the Counter Reformation. He also created genre paintings of musicians and card players for the open market.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -183,7 +190,8 @@ namespace backend.DAL
                         +"Élève de son père, Jacob van Oost dit le vieux, à Bruges, il poursuit sa formation à Paris puis Rome. Il s'installe à Lille en Flandre en 1668. Il est l'un des peintres les plus renommés, avec Arnould de Vuez, à œuvrer à Lille durant ces années."
                         +"Peintre de portraits mais surtout de sujets religieux, il couvre les églises et couvents de la ville de ses œuvres. Il épouse une lilloise, Marie Bourgeois, en 1670. De cette union naissent plusieurs enfants dont Dominique van Oost (1677-1738), peintre comme son père."
                         +"Devenu veuf, il quitte Lille en 1709, à la suite de la prise de la ville par les armées hollandaises et aux troubles qui s'ensuivent, pour retourner dans sa ville natale à l'abri de la guerre. Il y décède le 29 septembre 1713."
-                        +"De nombreuses œuvres de ce maître flamand sont exposées dans des musées et des édifices religieux à Bruges, Bruxelles, Lille et au Louvre à Paris"
+                        +"De nombreuses œuvres de ce maître flamand sont exposées dans des musées et des édifices religieux à Bruges, Bruxelles, Lille et au Louvre à Paris",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -191,7 +199,8 @@ namespace backend.DAL
                     ArtistId = 3,
                     LanguageId = 3,
                     Description = "Jacob van Oost the Younger (1639, in Bruges – 1713, in Bruges), was a Flemish Baroque painter."
-                        +"According to the Rijksbureau voor Kunsthistorische Documentatie, he was a pupil of his father Jacob sr. and brother to the painter Willem. He is known for portraits and genre works."
+                        +"According to the Rijksbureau voor Kunsthistorische Documentatie, he was a pupil of his father Jacob sr. and brother to the painter Willem. He is known for portraits and genre works.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -202,7 +211,8 @@ namespace backend.DAL
                         +"Peu après sa naissance ses parents déménagent à Dordrecht. Le 29 décembre 1603, il devient un membre des guildes de Saint-Luc mais doit les quitter faute de moyens financiers. En 1615, il devient l'assistant d'Otto van Veen à Anvers, puis de Rubens, qui influence son style et ses compositions."
                         +"Dès 1617, il bénéficie d'importantes commandes, dont les retables de l’Ascension et l'Assomption de la Vierge de l'église Saint-Paul d'Anvers. Son œuvre est cependant principalement constituée de compositions destinées à des particuliers. Il peint essentiellement des œuvres religieuses, comprenant des scènes de la vie du Christ et des pères de l'Église."
                         +"Plusieurs de ses tableaux ont fait l'objet de plusieurs versions, de qualité inégale, comme ses séries Les douze apôtres, Les quatre évangélistes et Les quatre Pères de l'Église. On peut en déduire que Wolffordt entretient un atelier. Deux de ses assistants, Pieter van Lint et Pieter van Mol, sont même connus pour avoir réalisé des répliques de ses tableaux et ont été tous deux fortement influencés par le peintre."
-                        +"Le fils d'Artus Wolffordt, Jan Baptist Wolfaerts, est également peintre. L'une de ses filles a épousé le peintre Willem van Herp."
+                        +"Le fils d'Artus Wolffordt, Jan Baptist Wolfaerts, est également peintre. L'une de ses filles a épousé le peintre Willem van Herp.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -212,7 +222,8 @@ namespace backend.DAL
                     Description = "Artus Wolffort (1581-1641), ook Wolffaert genoemd, was een Brabants kunstschilder uit Antwerpen. Zijn werken behoren tot de Vlaamse barokschilderkunst."
                         +"Hij studeerde eerst in Dordrecht waar zijn familie in 1581 naar was uitgeweken. Bij zijn terugkeer naar Antwerpen rond 1615 studeerde hij bij Otto van Veen en Peter Paul Rubens. Rubens beïnvloedde hem qua compositie en stijl."
                         +"Wolffort schilderde vooral scènes uit het leven van Christus en de kerkvaders. Pieter van Mol en Pieter van Lint waren twee van zijn leerlingen. Het schilderij Aanbidding van de koningen (zie foto) was een opdracht van het kleermakersambacht van Antwerpen. Het toont de figuren in kostbare gewaden, exuberante hoofddeksels en allerlei dure stoffen. Over de toeschrijving van het schilderij was men het lang oneens. Het kwam op naam van Deodaat del Monte, Pieter van Mol en Pieter van Lint. Recent stilistisch onderzoek schrijft het overtuigend toe aan Wolffort."
-                        +"Het gemeentehuis van Aartselaar (ten zuiden van Antwerpen) wordt weliswaar 'Wolffaertshof' genoemd, doch was niet de residentie van barokschilder Wolffort."
+                        +"Het gemeentehuis van Aartselaar (ten zuiden van Antwerpen) wordt weliswaar 'Wolffaertshof' genoemd, doch was niet de residentie van barokschilder Wolffort.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -221,16 +232,18 @@ namespace backend.DAL
                     LanguageId = 3,
                     Description = "Artus Wolffort, Artus Wolffaert or Artus Wolffaerts[1] (1581–1641) was a Flemish painter known mainly for his history paintings depicting religious and mythological scenes."
                         +"Artus Wolffort was born in Antwerp and moved with his parents to Dordrecht in the year of his birth. He trained as a painter in Dordrecht where he joined the local Guild of Saint Luke in 1603. He returned to Antwerp around 1615 where he worked as an assistant in the studio of Otto van Veen, one of the teachers of Peter Paul Rubens.[3] During this period he lived in the house of van Veen.[4] He became a member of the Antwerp Guild of Saint Luke in 1617."
-                        +"He married Maria Wandelaer on 8 September 1619. Their son Johannes Artusz (better known as Jan Baptist Wolfaerts) was born in November 1625 and later became a painter.[2] Artus Wolffort likely operated a workshop in Antwerp, which produced various copies of his works.[3] His pupils Pieter van Lint and Pieter van Mol worked for a while as copyists in his workshop.[4]"
+                        +"He married Maria Wandelaer on 8 September 1619. Their son Johannes Artusz (better known as Jan Baptist Wolfaerts) was born in November 1625 and later became a painter. Artus Wolffort likely operated a workshop in Antwerp, which produced various copies of his works.[3] His pupils Pieter van Lint and Pieter van Mol worked for a while as copyists in his workshop.[4]"
                         +"Artus Wolffort was one of the artists who worked on the decorations for the Joyous Entry into Antwerp of the new governor of the Habsburg Netherlands Cardinal-Infante Ferdinand in 1635. Rubens was in overall charge of this project for which Wolffort made decorative paintings after designs by Rubens.[6]"
-                        +"His pupils included his son Jan Baptist Wolfaerts, Pieter van Lint, Pieter van Mol and Lucas Smout the Elder. He died in Antwerp.[2]"
+                        +"His pupils included his son Jan Baptist Wolfaerts, Pieter van Lint, Pieter van Mol and Lucas Smout the Elder. He died in Antwerp.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
                     Id = 12,
                     ArtistId = 5,
                     LanguageId = 1,
-                    Description = "Érasme Quellin le Jeune (ou Erasmus Quellinus II, Kwelien, Quellien, Quellincs, Quellingh), né le 19 novembre 1607 à Anvers et mort le 11 novembre 1678 dans cette ville, est un peintre, graveur, dessinateur et concepteur de tapisseries flamand qui travaille dans divers genres, dont la peinture d'histoire, le portrait, les scènes de bataille et peintures animalières. Il est un élève de Pierre Paul Rubens et est l’un des plus proches collaborateurs de Rubens dans les années 1630. Après la mort de Rubens en 1640, il devient l’un des peintres les plus prolifiques et les plus prospères des Pays-Bas méridionaux du xviie siècle."
+                    Description = "Érasme Quellin le Jeune (ou Erasmus Quellinus II, Kwelien, Quellien, Quellincs, Quellingh), né le 19 novembre 1607 à Anvers et mort le 11 novembre 1678 dans cette ville, est un peintre, graveur, dessinateur et concepteur de tapisseries flamand qui travaille dans divers genres, dont la peinture d'histoire, le portrait, les scènes de bataille et peintures animalières. Il est un élève de Pierre Paul Rubens et est l’un des plus proches collaborateurs de Rubens dans les années 1630. Après la mort de Rubens en 1640, il devient l’un des peintres les plus prolifiques et les plus prospères des Pays-Bas méridionaux du xviie siècle.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -238,21 +251,24 @@ namespace backend.DAL
                     ArtistId = 5,
                     LanguageId = 2,
                     Description = "Erasmus Quellinus II (Antwerpen, 19 november 1607 - aldaar, 7 november 1678), ook genoemd Erasmus de Jonge, was een bekende Brabantse kunstschilder en kopergraveur uit de Antwerpse kunstenaarsfamilie Quellinus. Hij was de zoon van de beeldhouwer Erasmus Quellinus I. Hij werkte vaak samen met Daniël Seghers. Een van hun gezamenlijke werken hangt in de Pinacoteca Nazionale te Bologna."
-                        +"Erasmus werd geboren in een familie van kunstenaars, hoofdzakelijk beeldhouwers, maar koos als beroep voor het schilderen. Hij had het geluk om één van Peter Paul Rubens' vele leerlingen te worden en vervolgens een van zijn naaste medewerkers. Na zijn opleiding bij Rubens in de jaren 1633 - 1634 werd Erasmus Quellinus II meesterschilder in het Antwerpse Sint-Lucasgilde. Hij was zeer erudiet wat zich manifesteerde in zijn verzorgde stijl en zijn veelzijdige activiteiten. Zijn grondige kennis van de mythologie en filosofie kwam tot uiting in vele van zijn werken. Zijn gevarieerde productie droeg veel bij aan de artistieke uitstraling van Antwerpen."
+                        +"Erasmus werd geboren in een familie van kunstenaars, hoofdzakelijk beeldhouwers, maar koos als beroep voor het schilderen. Hij had het geluk om één van Peter Paul Rubens' vele leerlingen te worden en vervolgens een van zijn naaste medewerkers. Na zijn opleiding bij Rubens in de jaren 1633 - 1634 werd Erasmus Quellinus II meesterschilder in het Antwerpse Sint-Lucasgilde. Hij was zeer erudiet wat zich manifesteerde in zijn verzorgde stijl en zijn veelzijdige activiteiten. Zijn grondige kennis van de mythologie en filosofie kwam tot uiting in vele van zijn werken. Zijn gevarieerde productie droeg veel bij aan de artistieke uitstraling van Antwerpen.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
                     Id = 14,
                     ArtistId = 5,
                     LanguageId = 3,
-                    Description = "Erasmus Quellinus the Younger and Erasmus Quellinus II (1607–1678) was a Flemish painter, engraver, draughtsman and tapestry designer who worked in various genres including history, portrait, battle and animal paintings. He was a pupil of Peter Paul Rubens and was one of the closest collaborators of Rubens in the 1630s. Following Rubens’ death in 1640 he became one of the most prolific and successful painters in Flanders."
+                    Description = "Erasmus Quellinus the Younger and Erasmus Quellinus II (1607–1678) was a Flemish painter, engraver, draughtsman and tapestry designer who worked in various genres including history, portrait, battle and animal paintings. He was a pupil of Peter Paul Rubens and was one of the closest collaborators of Rubens in the 1630s. Following Rubens’ death in 1640 he became one of the most prolific and successful painters in Flanders.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
                     Id = 15,
                     ArtistId = 6,
                     LanguageId = 1,
-                    Description = "Sir Peter Lely, de son vrai nom Pieter Van der Faes, né le 14 septembre 1618 à Soest en Westphalie, mort le 30 novembre 1680 à Londres, est un peintre d'origine néerlandaise. Il a connu une immense popularité comme portraitiste en Angleterre où il s'établit dans les années 1640. C'était aussi un grand amateur d'art, qui possédait une belle collection de dessins d'artistes."
+                    Description = "Sir Peter Lely, de son vrai nom Pieter Van der Faes, né le 14 septembre 1618 à Soest en Westphalie, mort le 30 novembre 1680 à Londres, est un peintre d'origine néerlandaise. Il a connu une immense popularité comme portraitiste en Angleterre où il s'établit dans les années 1640. C'était aussi un grand amateur d'art, qui possédait une belle collection de dessins d'artistes.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -260,7 +276,8 @@ namespace backend.DAL
                     ArtistId = 6,
                     LanguageId = 2,
                     Description = "Peter Lely (Soest (Duitsland), 14 september 1618 – Londen, 30 november 1680) was een Engelse kunstschilder van Nederlandse oorsprong. Hij was de populairste portretschilder in Engeland vanaf ongeveer 1640 tot aan zijn dood. Hij was ook kunstverzamelaar en bezat vooral veel tekeningen van andere kunstenaars."
-                        +"Lely werd geboren als Pieter van der Faes uit Nederlandse ouders in Soest in Westfalen, waar zijn vader een ambtenaar was in dienst van het leger van de keurvorst van Brandenburg. Lely studeerde schilderkunst in Haarlem, waar hij mogelijk bij Pieter de Grebber in de leer is geweest. Hij werd een meester van het Sint-Lucasgilde in Haarlem in 1637. Hij was bekend onder de achternaam 'Lely' (nu en dan gespeld als Lilly) vanwege een lelie op de gevel van het huis waar zijn vader in Den Haag geboren was. Hij arriveerde in Londen rond 1641."
+                        +"Lely werd geboren als Pieter van der Faes uit Nederlandse ouders in Soest in Westfalen, waar zijn vader een ambtenaar was in dienst van het leger van de keurvorst van Brandenburg. Lely studeerde schilderkunst in Haarlem, waar hij mogelijk bij Pieter de Grebber in de leer is geweest. Hij werd een meester van het Sint-Lucasgilde in Haarlem in 1637. Hij was bekend onder de achternaam 'Lely' (nu en dan gespeld als Lilly) vanwege een lelie op de gevel van het huis waar zijn vader in Den Haag geboren was. Hij arriveerde in Londen rond 1641.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -269,7 +286,8 @@ namespace backend.DAL
                     LanguageId = 3,
                     Description = "Sir Peter Lely (14 September 1618 – 7 December 1680)[1][2] was a painter of Dutch origin whose career was nearly all spent in England, where he became the dominant portrait painter to the court."
                         +"Lely was born Pieter van der Faes to Dutch parents in Soest in Westphalia,[3] where his father was an officer serving in the armed forces of the Elector of Brandenburg. Lely studied painting in Haarlem, where he may have been apprenticed to Pieter de Grebber. He became a master of the Guild of Saint Luke in Haarlem in 1637. He is reputed to have adopted the surname 'Lely' (also occasionally spelled Lilly) from a heraldic lily on the gable of the house where his father was born in The Hague."
-                        +"He arrived in London in around 1643,[4] His early English paintings, mainly mythological or religious scenes, or portraits set in a pastoral landscape, show influences from Anthony van Dyck and the Dutch baroque. Lely's portraits were well received, and he succeeded Anthony van Dyck (who had died in 1641) as the most fashionable portrait artist in England. He became a freeman of the Painter-Stainers' Company in 1647 and was portrait artist to Charles I. His talent ensured that his career was not interrupted by Charles's execution, and he served Oliver Cromwell, whom he painted 'warts and all', and Richard Cromwell. In the years around 1650 the poet Sir Richard Lovelace wrote two poems about Lely – Peinture and 'See what a clouded majesty ...'"
+                        +"He arrived in London in around 1643,[4] His early English paintings, mainly mythological or religious scenes, or portraits set in a pastoral landscape, show influences from Anthony van Dyck and the Dutch baroque. Lely's portraits were well received, and he succeeded Anthony van Dyck (who had died in 1641) as the most fashionable portrait artist in England. He became a freeman of the Painter-Stainers' Company in 1647 and was portrait artist to Charles I. His talent ensured that his career was not interrupted by Charles's execution, and he served Oliver Cromwell, whom he painted 'warts and all', and Richard Cromwell. In the years around 1650 the poet Sir Richard Lovelace wrote two poems about Lely – Peinture and 'See what a clouded majesty ...'",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -278,7 +296,8 @@ namespace backend.DAL
                     LanguageId = 4,
                     Description = "Lucas Achtschellinck (* 16. Januar 1626 in Brüssel; † 12. Mai 1699) war ein flämischer Landschaftsmaler."
                         +"1639 wurde Achtschellinck als Schüler von Peter van der Borcht in die Brüsseler Malergilde aufgenommen und wurde stark beeinflusst von Jacques d’Arthois. 1657 wurde er als Freimeister in Brüssel zugelassen. Seine Bilder zeichnen sich aus durch Großräumigkeit der Bilder, ein kräftiges Grün und eine etwas derbe Formanschauung."
-                        +"Am 13. März 1674 heiratete er Anna Parys."
+                        +"Am 13. März 1674 heiratete er Anna Parys.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -287,7 +306,8 @@ namespace backend.DAL
                     LanguageId = 4,
                     Description = "Jakob van Oost der Ältere (* um 1600 in Brügge; † um 1671 in Brügge) war ein flämischer Maler des Barocks in Brügge. Zu seinem Œuvre zählen Historien- und Porträtgemälde."
                         +"Am 19. Januar 1619 wurde Jakob van Oost als Lehrling seines Bruders Franz van Oost (1618 Freimeister in Brügge; † um 1625) in der Brügger Malergilde aufgelistet. Zu seinem Frühwerk zählen Kopien der Gemälde Jan van Eycksund Peter Paul Rubens, die 1857 teils als Originale galten. Im Jahr 1621 erfolgte seine Ernennung zum Freimeister. Zeitgemäß studierte er in den 20er Jahren in Italien die von Caravaggio beeinflussten Werke Hannibal/Annibale Carraccis. Nach seiner Rückkehr wurde er ab 1630 ein gefragter Auftragskünstler für Porträts, Historiengemälde und Altarwerke. Im Jahr 1633 fand seine Wahl zum Oberhaupt, dem Dekan der Schildergilde statt. Zu seinen Schülern zählten u. a. seine Söhne Jakob van Oost der Jüngere, der die Schule seines Vaters fortsetzte und Willem van Oost (~8. März 1651 in Brügge; † 31. August 1866 ebenda), der Maler und Dominikanerlaienbruder war."
-                        +"Nach seinen Rubenskopien gelangte er zu seinem eigenen Stil in dunkler und toniger Gesamthaltung. Sein Spätwerk ab 1660 besteht aus schwärzlich getonten Werken. Seine Gemälde finden sich in religiösen Einrichtungen und Sammlungen in Brügge, als auch in belgischem Privatbesitz und in folgenden Museen von Bergues, Berlin, Brüssel, Caen, Dijon, Dünkirchen, Leningrad, Lille, London, Lyon, New York City (Histor.Soc.[1] Kat. 1903 und Metropolitan Museum), Oostende, Paris, Tournai, Valenciennes und Wien."
+                        +"Nach seinen Rubenskopien gelangte er zu seinem eigenen Stil in dunkler und toniger Gesamthaltung. Sein Spätwerk ab 1660 besteht aus schwärzlich getonten Werken. Seine Gemälde finden sich in religiösen Einrichtungen und Sammlungen in Brügge, als auch in belgischem Privatbesitz und in folgenden Museen von Bergues, Berlin, Brüssel, Caen, Dijon, Dünkirchen, Leningrad, Lille, London, Lyon, New York City (Histor.Soc.[1] Kat. 1903 und Metropolitan Museum), Oostende, Paris, Tournai, Valenciennes und Wien.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -297,7 +317,8 @@ namespace backend.DAL
                     Description = "Jakob van Oost der Jüngere (* 1637 in Brügge; † 29. September 1713 in Brügge) war ein flämischer Maler des Barocks."
                         +"Zunächst von seinem Vater Jakob van Oost dem Älteren in Brügge ausgebildet, vertiefte er seine Kunststudien zwei Jahre lang in Paris. Anschließend widmete er sich mehrere Jahre der Antike und den alten Meistern in Rom. Nach seiner Rückkehr in Brügge wollte er zwar zurück nach Paris, blieb aber in Lille bei seinen Freunden aus der Studienzeit und lebte seit 1668 für 41 Jahre in dieser nordfranzösischen Stadt."
                         +"Jakob van Oost der Jüngere wurde in dieser Stadt neben Arnould de Vuezein anerkannter Porträtmaler[1]. Zeitgemäß beinhalteten seine Gemälde religiöse Themen. Im Jahr 1670 heiratete er Marie Bourgeois aus Lille, die ihm unter anderem den Sohn Dominique van Oost gebar, welcher ebenfalls Maler wurde."
-                        +"Im Jahr 1709 verließ er als Folge des Spanischen Erbfolgekriegs Lille und kehrte zum Schutz vor dem Krieg in seine Heimatstadt Brügge zurück, wo er vier Jahre später 76-jährig verstarb."
+                        +"Im Jahr 1709 verließ er als Folge des Spanischen Erbfolgekriegs Lille und kehrte zum Schutz vor dem Krieg in seine Heimatstadt Brügge zurück, wo er vier Jahre später 76-jährig verstarb.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -307,7 +328,8 @@ namespace backend.DAL
                     Description = "Artus Wolffordt (* 1581 in Antwerpen; † 1641 ebenda) (auch: Wolfaerts, Wolffort, Wolfert) war ein flämischer Maler."
                         +"Kurz nach seiner Geburt zogen seine Eltern nach Dordrecht. Am 29. Dezember 1603 wurde er dort Mitglied in der St. Lucasgilde, doch bald wieder aus ihr gestrichen, da er nicht mehr vermögend genug war. 1615 wurde er Assistent von Otto van Veen in Antwerpen. 1617 soll er in der Kathedrale St. Paul in Antwerpen am Altar Die Auferstehung und Mariä Himmelfahrt gemalt haben."
                         +"In seiner Werkstatt sind zahlreiche Werke mit religiösen Motiven entstanden."
-                        +"Zu seinen Schülern zählten Pieter Van Mol (1599–1650) und Pieter van Lint(1609–1690)."
+                        +"Zu seinen Schülern zählten Pieter Van Mol (1599–1650) und Pieter van Lint(1609–1690).",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -316,7 +338,8 @@ namespace backend.DAL
                     LanguageId = 4,
                     Description = "Erasmus Quellinus II., auch Erasmus Quellinus der Jüngere, (* 19. November 1607 in Antwerpen; † 7. November1678 ebenda) war ein flämischer Maler, Schüler von Rubens, und Kupferstecher aus der Antwerpener KünstlerfamilieQuellinus."
                         +"Er ist Sohn des Bildhauers Erasmus Quellinus I. und Bruder von Artus Quellinus I. und Hubertus Quellinus. Er wurde nach seiner Ausbildung bei Rubens 1633/34 Meister der Antwerpener Lukasgilde. Nach dem Tod von Rubens wurde er Stadtmaler von Antwerpen und überführte die ausgesprochen barocke Kunstauffassung von Rubens in eine eher klassizistisch grundierte Malerei. Gut dokumentieren lässt sich diese Neuorientierung an einem seiner wichtigsten Ausstattungsprojekte, die des Paleis op de Dam in Amsterdam, das er um 1656 zusammen mit seinem Bruder Artus Quellinus I ausstattete."
-                        +"Sein Sohn Jan Erasmus Quellinus ist ebenfalls eine bekannte Persönlichkeit unter den Barockmalern der Spanischen Niederlande. Er führte die Hinwendung des Vaters zu einer eher klassizistischen Kunstströmung in Flandern in das 18. Jahrhundert fort."
+                        +"Sein Sohn Jan Erasmus Quellinus ist ebenfalls eine bekannte Persönlichkeit unter den Barockmalern der Spanischen Niederlande. Er führte die Hinwendung des Vaters zu einer eher klassizistischen Kunstströmung in Flandern in das 18. Jahrhundert fort.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -329,7 +352,8 @@ namespace backend.DAL
                         +"Mit der Zeit wurde Lely, zusammen mit William Dobson, einer der führenden Porträtisten der englischen Revolution unter Oliver Cromwell und der nachfolgenden Herrscher. 1651 bewarb sich Lely für die Gestaltung verschiedener Wandmalereien in Whitehall."
                         +"Zehn Jahre später berief König Karl II. Lely zu seinem offiziellen Hofmaler. Ein Jahr später, 1662, wurde Lely die britische Staatsbürgerschaft verliehen. In den Jahren 1666 bis 1667 schuf Lely für Anne Hyde eine Serie von Porträts verschiedener Hofdamen; heute noch bekannt unter dem Titel The Windsor Beauties. Fast zeitgleich entstand eine weitere Porträtserie von Admirälen, The Flagmen."
                         +"Am 11. Januar 1680 wurde Lely von König Karl II. persönlich zum Knight Bachelor („Sir“) geschlagen.[2] Bereits ein Jahr später starb Sir Peter Lely im Alter von 62 Jahren."
-                        +"Nach seiner stark niederländisch beeinflussten Phase gelangte Lely im Alter zu einer gelösten freien Maltechnik. Neben vielen Schülern Lelys sei hier vertretend für alle Nicolas de Largillière genannt."
+                        +"Nach seiner stark niederländisch beeinflussten Phase gelangte Lely im Alter zu einer gelösten freien Maltechnik. Neben vielen Schülern Lelys sei hier vertretend für alle Nicolas de Largillière genannt.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -338,7 +362,8 @@ namespace backend.DAL
                     LanguageId = 5,
                     Description = "Lucas Achtschellinck (Bruselas 1626–1699) fue un pintor barroco flamenco, especializado en la pintura de paisaje."
                         +"Nació en Bruselas donde fue bautizado el 16 de enero de 1605. Entró como aprendiz de Pieter van der Borcht II en 1639 y aprendió la técnica de la pintura de paisaje con Lodewijk de Vadder. En 1657 fue aprobado como maestro en su ciudad natal, donde entre 1687 y 1689 desempeñó el cargo de decano de la corporación. Tuvo como discípulo a Theobald Michau.1 "
-                        +"Influido por Jacques d'Arthois, sus paisajes, inspirados en el bosque de Soignes, siguen los efectos atmosféricos de los paisajes de Rubens, amplificando su valor pictórico y decorativo por la utilización de sutiles gradaciones de color.2 De él se conocen algunos paisajes animados con escenas bíblicas pintados para iglesias y conventos y, como en otros casos, es posible que colaborase con otros maestros, a los que pudo proporcionar los fondos de paisaje además de ocuparse en la ejecución de cartones para tapices."
+                        +"Influido por Jacques d'Arthois, sus paisajes, inspirados en el bosque de Soignes, siguen los efectos atmosféricos de los paisajes de Rubens, amplificando su valor pictórico y decorativo por la utilización de sutiles gradaciones de color.2 De él se conocen algunos paisajes animados con escenas bíblicas pintados para iglesias y conventos y, como en otros casos, es posible que colaborase con otros maestros, a los que pudo proporcionar los fondos de paisaje además de ocuparse en la ejecución de cartones para tapices.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -348,7 +373,8 @@ namespace backend.DAL
                     Description = "Jacob van Oost I o el Viejo (Brujas, 1603 – 1671), fue un pintor barroco flamenco, especializado en pintura religiosa e historiada y retratos."
                         +"Nacido en Brujas, donde fue bautizado el 7 de enero de 1603, en octubre de 1621 ingresó en el gremio de San Lucas de su ciudad natal. Inmediatamente debió de marchar a Italia donde fue influido por la pintura caravaggista. De nuevo en Brujas, en 1629 fue elegido vicario del gremio y un año después contrajo matrimonio con Jaquemyne van Overdille, de la que enviudó en 1631, tras dar a luz a su hijo Martín. En 1633 casó en segundas nupcias con María van Tollenaere, con quien tuvo seis hijos, entre ellos el también pintor Jacob van Oost, llamado el joven. Decano del gremio de San Lucas en 1633-1634 y en 1643-1644, en enero de 1662 se le documenta por última vez como vicario de la organización gremial."
                         +"Tuvo numerosos discípulos trabajando en su taller, entre ellos dos aprendices de origen portugués o español: Franscoeis o Francisco Gomes y Jan o Juan Ramón, documentados en Brujas en 1640 y 1666 respectivamente."
-                        +"Desde su primera obra firmada y fechada, la Adoración de los pastores del Museo del Ermitage(1630), caravaggista en el tratamiento de la luz y en la elección de los tipos populares, Van Oost fue frecuentemente reclamado por las iglesias locales para pintar retablos adaptados a la nueva sensibilidad contrarreformista. La influencia de Caravaggio no fue, no obstante, la única influencia italiana de Van Oost, que derivó tempranamente hacia las formulaciones clasicistas de Domenichino a la vez que aclaraba su paleta."
+                        +"Desde su primera obra firmada y fechada, la Adoración de los pastores del Museo del Ermitage(1630), caravaggista en el tratamiento de la luz y en la elección de los tipos populares, Van Oost fue frecuentemente reclamado por las iglesias locales para pintar retablos adaptados a la nueva sensibilidad contrarreformista. La influencia de Caravaggio no fue, no obstante, la única influencia italiana de Van Oost, que derivó tempranamente hacia las formulaciones clasicistas de Domenichino a la vez que aclaraba su paleta.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -357,7 +383,8 @@ namespace backend.DAL
                     LanguageId = 5,
                     Description = "Jacob van Oost II o el Joven (Brujas, 1639 – 1713) fue un pintor barroco flamenco, especializado en retratos y pintura historiada y de género."
                         +"Hijo y discípulo de Jacob van Oost el Viejo, nació en Brujas, donde fue bautizado el 11 de febrero de 1639. Tras completar su formación en Roma, en el entorno de Simon Vouet, en 1668 se estableció en Lille donde en 1670 casó con Marie Bourgeois. En Lille trabajó principalmente para las iglesias y conventos de la ciudad —San Carlos Borromeo orando por el fin de la peste y San Antonio de Padua con el Niño Jesús para la iglesia de San Mauricio, la Resurrección de Lázaro para la iglesia de la Magdalena o San Macario de Gante socorriendo a los apestados, pasada al Museo del Louvre— en un estilo suave, influido tanto por el tardobarroco romano como por el clasicismo francés.2 "
-                        +"Tras enviudar hacia 1697, en 1708 retornó a Brujas donde falleció el 29 de septiembre de 1713."
+                        +"Tras enviudar hacia 1697, en 1708 retornó a Brujas donde falleció el 29 de septiembre de 1713.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -367,7 +394,8 @@ namespace backend.DAL
                     Description = "Artus Wolffort, Wolfordt o Wolffaert (Amberes, 1581 -1641) fue un pintor barroco flamenco especializado en pintura historiada, principalmente de asunto religioso, aunque también cultivó el paisaje y el retrato."
                         +"Formado en Dordrecht, ciudad a la que se habían trasladado sus padres cuando apenas contaba un año, en 1616 se encontraba de nuevo en Amberes, trabajando durante un corto espacio de tiempo en el taller de Otto van Veen, uno de los maestros de Rubens. Admitido en el gremio local de San Lucas en 1617, el 8 de septiembre de 1619 contrajo matrimonio con María Vandelaer. Del matrimonio nació en 1625 Jan-Baptiste Wolfaerts, quien llegaría a ser pintor especializado en paisajes y ocasionalmente copista de las obras paternas."
                         +"Aunque recibió algún encargo importante con destino a la iglesia de San Pablo de Amberes, el grueso de su producción está formado por escenas evangélicas y series de apóstoles, evangelistas y padres de la Iglesia, destinadas a particulares. La abundancia de copias de sus obras y su desigual calidad, ha hecho suponer que se situase a la cabeza de un numeroso taller desde el que atender las demandas del mercado de arte. En él se formaron, además de su hijo, Peter van Lint y Peter van Mol."
-                        +"Su pintura, aunque arraigada en el clasicismo de Otto van Veen, recibe también influencias del más vitalista y animado estilo de Rubens, incluso adaptando composiciones de este al más seco estilo de su maestro."
+                        +"Su pintura, aunque arraigada en el clasicismo de Otto van Veen, recibe también influencias del más vitalista y animado estilo de Rubens, incluso adaptando composiciones de este al más seco estilo de su maestro.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -378,7 +406,8 @@ namespace backend.DAL
                         +"Erasmus se formó inicialmente con su padre, pero habiendo optado por la pintura se inclinó hacia los pintores caravaggistas flamencos como Theodoor Rombouts o Gerard Seghers, para crear mediante el uso de la luz figuras rotundas de modelado escultórico."
                         +"Hacia 1633 se estableció como maestro pintor independiente, ingresando en el Gremio de San Lucas de su ciudad natal, a la vez que comenzó a colaborar con Rubens, primero en las lujosas arquitecturas efímeras levantadas para conmemorar la «joyeuse entrée» del cardenal-infante don Fernando de Austria en la ciudad de Amberes el 15 de abril de 1635,1 y a continuación en el amplio ciclo de pinturas mitológicas encargadas por Felipe IV para la decoración de la Torre de la Parada, en el que Rubens se encontraba trabajando ya en noviembre de 1636.2 A Quellinus correspondieron en este encargo seis cuadros realizados sobre los bocetos de Rubens, todos ellos conservados en el Museo del Prado. A partir de este momento su pintura se hizo más ampulosa, eligiendo para sus escenas de asunto tanto histórico como mitológico o religioso lujosos fondos arquitectónicos de raíz clasicista."
                         +"Colaboró también con cierta frecuencia con Daniel Seghers y con su cuñado Jan Philip van Thielen, pintando las figuras de sus célebres guirnaldas florales y, a partir de 1656, con su hermano Artus se encargó de la decoración del nuevo Ayuntamiento de Ámsterdam. Como dibujante proporcionó los diseños para series de tapices, como la dedicada a la historia de la familia Thurn und Taxis."
-                        +"Entre sus discípulos y colaboradores se contó su hijo, Jan Erasmus Quellinus."
+                        +"Entre sus discípulos y colaboradores se contó su hijo, Jan Erasmus Quellinus.",
+                    SourceLink = ""
                 },
                 new ArtistTranslation
                 {
@@ -388,7 +417,8 @@ namespace backend.DAL
                     Description = "Peter Lely (Soest, Westfalia; 14 de septiembre de 1618-Covent Garden, Londres, Inglaterra; 30 de noviembre de 1680) fue un retratista danés, nacido en Soest, Westfalia, cuyo verdadero nombre era Pieter van der Faes."
                         +"Se formó artísticamente en Haarlem, Países Bajos. En 1641 se estableció en Londres, y poco después recibió el encargo de retratar a los principales personajes de la corte inglesa."
                         +"Carlos II de Inglaterra le nombró pintor de cámara en 1661 y le armó caballero en 1680."
-                        +"Su pintura, rica sobre todo en el colorido de los elegantes ropajes de los retratados, tiene una clara influencia de Anton van Dyck. La serie de cuadros Bellezas de Windsor (década de 1660) se encuentra en el palacio de Hampton Court, Londres. Otra serie, denominada Almirantes, se conserva en el Museo Marítimo Nacional de Greenwich, Londres."
+                        +"Su pintura, rica sobre todo en el colorido de los elegantes ropajes de los retratados, tiene una clara influencia de Anton van Dyck. La serie de cuadros Bellezas de Windsor (década de 1660) se encuentra en el palacio de Hampton Court, Londres. Otra serie, denominada Almirantes, se conserva en el Museo Marítimo Nacional de Greenwich, Londres.",
+                    SourceLink = ""
                 }
             );
 
