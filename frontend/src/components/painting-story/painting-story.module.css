@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color : black;
+    background-color: white;
+    opacity: 0.5 !important;
+}
