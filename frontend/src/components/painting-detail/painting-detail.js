@@ -81,7 +81,7 @@ class PaintingDetail extends React.Component{
 
     changeLanguage(isLanguageMissing){
         this.props.history.push({
-            pathname : `/language`, 
+            pathname : `/`, 
             state:{
                 previousUrl : `paintings/detail/${this.props.match.params.id}`,
                 isLanguageMissing : isLanguageMissing
@@ -218,9 +218,7 @@ class PaintingDetail extends React.Component{
                     </div>
                </div>
                 <footer className={`fixed-bottom`}>
-                    <AudioPlayer
-                            src={AUDIO}
-                    />
+                    {this.state.data.audios.length > 0 ? <AudioPlayer src={this.state.data.audios[0].audioUrl}/> : null}
                </footer>
             </div>
         );
