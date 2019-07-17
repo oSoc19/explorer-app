@@ -11,6 +11,7 @@ import InfoSection from '../info-section/info-section';
 import queryString from 'query-string'
 import ReadMore from '../read-more/read-more';
 import Translation from '../../services/translation';
+import PaintingStory from '../painting-story/painting-story';
 
 const override = css`
     display: block;
@@ -36,8 +37,6 @@ const images = [
     }
 ];
 
-const AUDIO = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/48641ebd9e794a7a8fb2f579990e4af155eea4585d12466591e87f3fd3d5dd99/browse.mp3";
-
 class PaintingDetail extends React.Component{
 
     constructor(props){
@@ -56,7 +55,7 @@ class PaintingDetail extends React.Component{
         let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, queryString.parse(this.props.location.search).language);
         if(dataJSON.status === 404){
             this.props.history.push({
-                pathname : `/choose-painting?language=${queryString.parse(this.props.location.search).language}`, 
+                pathname : `/choose-painting?language=${queryString.parse(this.props.location.search).language}`,
                 state:{notFound : true}
             });
             window.location.reload();
@@ -81,7 +80,7 @@ class PaintingDetail extends React.Component{
 
     changeLanguage(isLanguageMissing){
         this.props.history.push({
-            pathname : `/`, 
+            pathname : `/`,
             state:{
                 previousUrl : `paintings/detail/${this.props.match.params.id}`,
                 isLanguageMissing : isLanguageMissing
@@ -100,7 +99,7 @@ class PaintingDetail extends React.Component{
                         color={'#787B7D'}
                         loading={true}
                     />
-                </div>  
+                </div>
             );
 
         if(!this.state.loading && this.state.data.translations.length === 0)
@@ -148,7 +147,10 @@ class PaintingDetail extends React.Component{
                 <div className={styles.body}>
                     <div>
                         <AliceCarousel mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
-                            {images.map(i => <img id={`img-fact-${i.storyTitle}`} key={i.url} src={Image} onDragStart={this.handleOnDragStart} className="img-fluid"></img>)}
+                            {
+                                // images.map(i => <img id={`img-fact-${i.storyTitle}`} key={i.url} src={Image} onDragStart={this.handleOnDragStart} className="img-fluid"></img>)
+                                images.map(i => <PaintingStory></PaintingStory>)
+                            }
                         </AliceCarousel>
                     </div>
 
