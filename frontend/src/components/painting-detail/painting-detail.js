@@ -24,16 +24,6 @@ const images = [
         url : "https://via.placeholder.com/500",
         content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod metus ut quam tincidunt finibus. Ut purus tortor, semper convallis hendrerit sed, viverra in arcu. Sed aliquam velit nec nunc rhoncus euismod. Ut eget condimentum magna, vitae aliquam velit. Nullam gravida dolor eleifend interdum varius. Nulla fermentum dictum neque, et feugiat ligula fermentum eu. Curabitur a iaculis neque, eu vulputate urna. Donec elit turpis, consequat ut ligula sit amet, congue porta augue. Nulla turpis nunc, tempor in fringilla ac, pulvinar vitae orci. Vestibulum vel iaculis magna. Morbi in orci vitae justo porta pretium vel sed dui. Sed lobortis tellus et sapien pretium, eu maximus lorem imperdiet. Ut ut diam dolor. Duis nec turpis massa.",
         storyTitle : "Baroque 0"
-    },
-    {
-        url : "https://via.placeholder.com/500",
-        content : "This is the content of the card 1",
-        storyTitle : "Baroque 1"
-    },
-    {
-        url : "https://via.placeholder.com/500",
-        content : "This is the content of the card 2",
-        storyTitle : "Baroque 2"
     }
 ];
 
@@ -148,8 +138,7 @@ class PaintingDetail extends React.Component{
                     <div>
                         <AliceCarousel mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
                             {
-                                // images.map(i => <img id={`img-fact-${i.storyTitle}`} key={i.url} src={Image} onDragStart={this.handleOnDragStart} className="img-fluid"></img>)
-                                images.map(i => <PaintingStory></PaintingStory>)
+                                images.map(i => <PaintingStory key={Math.random()} ></PaintingStory>)
                             }
                         </AliceCarousel>
                     </div>
