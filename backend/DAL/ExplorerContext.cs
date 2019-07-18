@@ -1074,7 +1074,7 @@ namespace backend.DAL
                     Name = null,
                     AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/2605365f663a409689f5e4fb409ef06033f428359b984682b165594a41082bdc/browse.mp3",
                     LanguageId = 2,
-                    PaintingId = 1
+                    PaintingId = 8
                 },
                 new PaintingAudio
                 {
@@ -1098,7 +1098,7 @@ namespace backend.DAL
                     Name = null,
                     AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5f7e3285958144f7aa133b0fdb17e88a2c50a93ebd834eab8a2797c369b99527/browse.mp3",
                     LanguageId = 1,
-                    PaintingId = 1
+                    PaintingId = 8
                 },
                 new PaintingAudio
                 {
@@ -1122,7 +1122,7 @@ namespace backend.DAL
                     Name = null,
                     AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/48641ebd9e794a7a8fb2f579990e4af155eea4585d12466591e87f3fd3d5dd99/browse.mp3",
                     LanguageId = 3,
-                    PaintingId = 1
+                    PaintingId = 8
                 },
                 new PaintingAudio
                 {
@@ -1146,7 +1146,7 @@ namespace backend.DAL
                     Name = null,
                     AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f5d86614bfca40e886bd131c4cc22e236c0eb61eeb7b41868fc60a4e6f0fed0e/browse.mp3",
                     LanguageId = 4,
-                    PaintingId = 1
+                    PaintingId = 8
                 },
                 new PaintingAudio
                 {
