@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190718124636_audio-fix")]
+    partial class audiofix
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -769,7 +771,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 1L,
-                            ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 1L,
                             Subtitle = "à propos de l'oeuvre",
@@ -779,7 +781,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 2L,
-                            ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 1L,
                             Subtitle = "à propos du mouvement",
@@ -789,7 +791,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 3L,
-                            ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 1L,
                             Subtitle = "à propos de la technique",
@@ -799,7 +801,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 4L,
-                            ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 1L,
                             Subtitle = "over het kunstwerk",
@@ -809,7 +811,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 5L,
-                            ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 1L,
                             Subtitle = "over de stijlperiode",
@@ -819,7 +821,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 6L,
-                            ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 1L,
                             Subtitle = "over de techniek",
@@ -829,7 +831,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 7L,
-                            ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 1L,
                             Subtitle = "about the artwork",
@@ -839,7 +841,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 8L,
-                            ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 1L,
                             Subtitle = "about the movement",
@@ -849,7 +851,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 9L,
-                            ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 1L,
                             Subtitle = "about the technique",
@@ -859,7 +861,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 10L,
-                            ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 2L,
                             Subtitle = "à propos de l'oeuvre",
@@ -869,7 +871,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 11L,
-                            ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 2L,
                             Subtitle = "à propos du mouvement",
@@ -879,7 +881,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 12L,
-                            ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 2L,
                             Subtitle = "à propos de la technique",
@@ -889,7 +891,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 13L,
-                            ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 2L,
                             Subtitle = "Over het kunstwerk",
@@ -899,7 +901,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 14L,
-                            ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 2L,
                             Subtitle = "over de stijlperiode",
@@ -909,7 +911,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 15L,
-                            ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 2L,
                             Subtitle = "over de techniek",
@@ -919,7 +921,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 16L,
-                            ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 2L,
                             Subtitle = "About the artwork",
@@ -929,7 +931,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 17L,
-                            ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 2L,
                             Subtitle = "about the movement",
@@ -939,7 +941,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 18L,
-                            ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 2L,
                             Subtitle = "about the technique",
@@ -949,7 +951,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 19L,
-                            ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 3L,
                             Subtitle = "à propos de l'oeuvre",
@@ -959,7 +961,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 20L,
-                            ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 3L,
                             Subtitle = "à propos du mouvement",
@@ -969,7 +971,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 21L,
-                            ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 3L,
                             Subtitle = "à propos de la technique",
@@ -979,7 +981,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 22L,
-                            ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 3L,
                             Subtitle = "over het kunstwerk",
@@ -989,7 +991,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 23L,
-                            ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 3L,
                             Subtitle = "over de stijlperiode",
@@ -999,7 +1001,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 24L,
-                            ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 3L,
                             Subtitle = "over de techniek",
@@ -1009,7 +1011,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 25L,
-                            ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 3L,
                             Subtitle = "About the artwork",
@@ -1019,7 +1021,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 26L,
-                            ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 3L,
                             Subtitle = "about the movement",
@@ -1029,7 +1031,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 27L,
-                            ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 3L,
                             Subtitle = "about the technique",
@@ -1039,7 +1041,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 28L,
-                            ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 4L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1049,7 +1051,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 29L,
-                            ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 4L,
                             Subtitle = "à propos du mouvement",
@@ -1059,7 +1061,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 30L,
-                            ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 4L,
                             Subtitle = "à propos de la technique ",
@@ -1069,7 +1071,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 31L,
-                            ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 4L,
                             Subtitle = "over het kunstwerk ",
@@ -1079,7 +1081,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 32L,
-                            ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 4L,
                             Subtitle = "over de stijlperiode ",
@@ -1089,7 +1091,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 33L,
-                            ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 4L,
                             Subtitle = "over de techniek ",
@@ -1099,7 +1101,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 34L,
-                            ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 4L,
                             Subtitle = "about the artwork",
@@ -1109,7 +1111,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 35L,
-                            ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 4L,
                             Subtitle = "about the movement",
@@ -1119,7 +1121,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 36L,
-                            ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 4L,
                             Subtitle = "about the technique",
@@ -1129,7 +1131,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 37L,
-                            ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1139,7 +1141,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 38L,
-                            ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "à propos du mouvement",
@@ -1149,7 +1151,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 39L,
-                            ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "à propos de la technique",
@@ -1159,7 +1161,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 40L,
-                            ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "over het kunstwerk",
@@ -1169,7 +1171,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 41L,
-                            ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "over de stijlperiode",
@@ -1179,7 +1181,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 42L,
-                            ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "over de techniek",
@@ -1189,7 +1191,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 43L,
-                            ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "about the artwork",
@@ -1199,7 +1201,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 44L,
-                            ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "about the movement",
@@ -1209,7 +1211,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 45L,
-                            ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/7_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "about the technique",
@@ -1219,17 +1221,17 @@ namespace backend.Migrations
                         new
                         {
                             Id = 46L,
-                            ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 6L,
-                            Subtitle = "à propos de l'oeuvre",
-                            Text = "Fovin de Hasque était un maître d’armes de la guilde de Sint Michiels, une des plus anciennes guildes d’escrime connues de Flandres.",
+                            Subtitle = "about the artwork",
+                            Text = "Fovin de Hasque was a swordsman of the Sint Michiels guild, the oldest swordsmanship guild known in Flanders",
                             Title = "Portrait de Fovin de Hasque"
                         },
                         new
                         {
                             Id = 47L,
-                            ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 6L,
                             Subtitle = "à propos du mouvement",
@@ -1239,7 +1241,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 48L,
-                            ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 6L,
                             Subtitle = "à propos de la technique",
@@ -1249,7 +1251,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 49L,
-                            ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_ART@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 6L,
                             Subtitle = "over het kunstwerk",
@@ -1259,7 +1261,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 50L,
-                            ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_MOV@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 6L,
                             Subtitle = "over de stijlperiode",
@@ -1269,7 +1271,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 51L,
-                            ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_TECH@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 6L,
                             Subtitle = "over de techniek",
@@ -1279,7 +1281,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 52L,
-                            ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_ART@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 6L,
                             Subtitle = "about the artwork",
@@ -1289,7 +1291,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 53L,
-                            ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_MOV@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 6L,
                             Subtitle = "about the movement",
@@ -1299,7 +1301,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 54L,
-                            ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/4_TECH@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 6L,
                             Subtitle = "about the technique",
@@ -1309,7 +1311,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 55L,
-                            ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 7L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1319,7 +1321,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 56L,
-                            ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 7L,
                             Subtitle = "à propos du mouvement",
@@ -1329,7 +1331,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 57L,
-                            ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 7L,
                             Subtitle = "à propos de la technique",
@@ -1339,7 +1341,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 58L,
-                            ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_ART@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 7L,
                             Subtitle = "over het kunstwerk",
@@ -1349,7 +1351,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 59L,
-                            ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_MOV@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 7L,
                             Subtitle = "over de stijlperiode",
@@ -1359,7 +1361,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 60L,
-                            ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_TECH@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 7L,
                             Subtitle = "over de techniek",
@@ -1369,7 +1371,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 61L,
-                            ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_ART@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 7L,
                             Subtitle = "about the artwork",
@@ -1379,7 +1381,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 62L,
-                            ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_MOV@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 7L,
                             Subtitle = "about the movement",
@@ -1389,7 +1391,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 63L,
-                            ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/8_TECH@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 7L,
                             Subtitle = "about the technique",
@@ -1399,7 +1401,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 64L,
-                            ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 8L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1409,7 +1411,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 65L,
-                            ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 8L,
                             Subtitle = "à propos du mouvement",
@@ -1419,7 +1421,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 66L,
-                            ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 8L,
                             Subtitle = "à propos de la technique",
@@ -1429,7 +1431,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 67L,
-                            ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_ART@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 8L,
                             Subtitle = "over het kunstwerk",
@@ -1439,7 +1441,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 68L,
-                            ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_MOV@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 8L,
                             Subtitle = "over de stijlperiode",
@@ -1449,7 +1451,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 69L,
-                            ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_TECH@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 8L,
                             Subtitle = "over de techniek",
@@ -1459,7 +1461,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 70L,
-                            ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_ART@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 8L,
                             Subtitle = "about the artwork",
@@ -1469,7 +1471,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 71L,
-                            ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_MOV@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 8L,
                             Subtitle = "about the movement",
@@ -1479,7 +1481,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 72L,
-                            ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/9_TECH@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 8L,
                             Subtitle = "about the technique",
@@ -1489,7 +1491,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 73L,
-                            ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1499,7 +1501,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 74L,
-                            ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos du mouvement",
@@ -1509,7 +1511,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 75L,
-                            ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos de la technique",
@@ -1519,7 +1521,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 76L,
-                            ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over het kunstwerk",
@@ -1529,7 +1531,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 77L,
-                            ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over de stijlperiode",
@@ -1539,7 +1541,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 78L,
-                            ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over de techniek",
@@ -1549,7 +1551,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 79L,
-                            ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the artwork",
@@ -1559,7 +1561,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 80L,
-                            ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the movement",
@@ -1569,7 +1571,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 81L,
-                            ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the technique",
