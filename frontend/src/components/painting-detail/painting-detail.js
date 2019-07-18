@@ -46,7 +46,6 @@ class PaintingDetail extends React.Component{
 
     async componentWillMount(){
         let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, queryString.parse(this.props.location.search).language);
-        console.log(dataJSON)
         if(dataJSON.status === 404){
             this.props.history.push({
                 pathname : `/choose-painting?language=${queryString.parse(this.props.location.search).language}`,
