@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../choose-painting/choose-painting.module.css';
 import { withRouter } from 'react-router-dom';
 import queryString from 'query-string'
-import Logo from '../../assets/images/logo_brugge.png';
+import Logo from '../../assets/images/logo_brugge.svg';
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 import Translation from '../../services/translation';

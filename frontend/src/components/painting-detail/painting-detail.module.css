@@ -142,7 +142,7 @@ padding: 0px;
 
 .missingLanguage{
     width: 300px;
-    height:111px;;
+    height:300px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -151,4 +151,9 @@ padding: 0px;
     margin: auto;
     font-family: 'Montserrat';
     text-align: center;
+}
+
+#missingSentence{
+    display: block;
+    margin-bottom: 50px;
 }

@@ -4,12 +4,39 @@
     color: white;
 }
 
+.content{
+    margin : 25px;
+}
+
+#movement{
+    font-size: 25px;
+}
+
+#technique{
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#story{
+    font-size : 17px;
+    padding : 5px;
+}
+
+.content>hr{
+    width : 20%;
+    background-color:white;
+    margin-top : 2px;
+    margin-bottom: 2px;
+}
+
 .text {
     position: absolute;
-    top: 25%;
+    top: 83%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color : black;
-    background-color: white;
-    opacity: 0.5 !important;
+    color : white;
+    background-color: rgb(29,87,72,0.8);
+    width : 84%;
+    font-family: miller-display,seruif;
 }

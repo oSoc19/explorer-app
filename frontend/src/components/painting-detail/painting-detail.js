@@ -6,12 +6,11 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import AudioPlayer from "react-h5-audio-player";
 import Api from '../../services/api';
 import { css } from '@emotion/core';
-import Image from '../../assets/images/story.jpg';
 import InfoSection from '../info-section/info-section';
 import queryString from 'query-string'
-import ReadMore from '../read-more/read-more';
 import Translation from '../../services/translation';
 import PaintingStory from '../painting-story/painting-story';
+import ReactNotification from "react-notifications-component";
 
 const override = css`
     display: block;
@@ -35,10 +34,14 @@ class PaintingDetail extends React.Component{
         this.state = {
             loading : true,
             data : null,
-            currentStoryIndex : 0
+            currentStoryIndex : 0,
+            availableLanguages : []
         };
         this.goBackToSelection = this.goBackToSelection.bind(this);
         this.changeLanguage = this.changeLanguage.bind(this);
+        this.addLanguages = this.addLanguages.bind(this);
+        this.addNotification = this.addNotification.bind(this);
+        this.selectLanguage = this.selectLanguage.bind(this);
     }
 
     async componentWillMount(){
@@ -50,8 +53,13 @@ class PaintingDetail extends React.Component{
             });
             window.location.reload();
         }
-        else
-            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0});
+        else if(dataJSON.translations.length !== 0)
+            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : []});
+        else{
+            let languages = await Api.getAvailableLanguages();
+            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : languages});
+            this.addLanguages();
+        }
     }
 
     handleOnDragStart(e){
@@ -78,6 +86,59 @@ class PaintingDetail extends React.Component{
         });
     }
 
+    addLanguages(){
+        let body = document.getElementById("languages");
+        let goTo = document.getElementById("goTo");
+        console.log(body.childNodes[0])
+        let line;
+        for(let i =0; i < this.state.availableLanguages.length; i++){
+            let lan = document.createElement("td");
+            lan.id = this.state.availableLanguages[i].code;
+            lan.innerHTML = this.state.availableLanguages[i].name;
+            if(i%2 === 0){
+                line = document.createElement("tr");
+                body.insertBefore(line, goTo);
+            }
+            line.append(lan);
+        }
+        this.assignSelectionAction();
+    }
+
+    assignSelectionAction(){
+        let languages = document.getElementsByTagName('td');
+        for(let i = 0; i < languages.length; i++){
+            if(languages[i].dataset.attr !== 'selectButton'){
+                languages[i].addEventListener('click', ()=>{
+                    let selectedLanguage = document.getElementsByClassName('selectedLanguage')[0];
+                    if(selectedLanguage)
+                        selectedLanguage.classList.toggle('selectedLanguage');
+                    languages[i].classList.toggle('selectedLanguage');
+                    this.setState({language : languages[i].id});
+                });
+            }
+        }
+    }
+
+    selectLanguage(){
+        if(this.state.language){
+            this.props.history.push(`/paintings/detail/${this.props.match.params.id}?language=${this.state.language}`);
+            window.location.reload();
+        }
+    }
+
+    addNotification() {
+        this.notificationDOMRef.current.addNotification({
+          message: "Please select a language !",
+          type: "warning",
+          insert: "top",
+          container: "top-center",
+          animationIn: ["animated", "fadeIn"],
+          animationOut: ["animated", "fadeOut"],
+          dismiss: { duration: 2000 },
+          dismissable: { click: true }
+        });
+    }
+
     render(){
         if(this.state.loading)
             return(
@@ -94,10 +155,20 @@ class PaintingDetail extends React.Component{
 
         if(!this.state.loading && this.state.data.translations.length === 0)
                 return(
-                    <div className={`container ${styles.missingLanguage}`}>
-                        <span>{Translation.Translate("missingLanguage")}</span>
-                        <div>
-                            <button onClick={() => this.changeLanguage(true)} className={styles.changeLanguage}>{Translation.Translate("changeLanguage")}</button>
+                    <div>
+                        <ReactNotification ref={this.notificationDOMRef} />
+                        <div className={`container ${styles.missingLanguage}`}>
+                            <span id={styles.missingSentence}>{Translation.Translate("missingLanguage")}</span>
+                            <table className="table table-borderless">
+                                <tbody id="languages">
+                                <tr id="goTo">
+                                    <td></td>
+                                    <td data-attr="selectButton" onClick={this.state.language ? this.selectLanguage : this.addNotification}>
+                                        <i className="material-icons">&#xe5cc;</i>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 );
@@ -117,20 +188,20 @@ class PaintingDetail extends React.Component{
                         </ul>
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
-                                <a className="nav-link" id="ArtistLink" href="#Artist">{Translation.Translate("artist")}</a>
+                                <a className="nav-link" id="ArtistLink" href={`#Artist-${this.props.match.params.id}`}>{Translation.Translate("artist")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="MovementLink" href="#Movement">{Translation.Translate("movement")}</a>
+                                <a className="nav-link" id="MovementLink" href={`#Movement-${this.props.match.params.id}`}>{Translation.Translate("movement")}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" id="TechniqueLink" href="#Technique">{Translation.Translate("technique")}</a>
+                                <a className="nav-link" id="TechniqueLink" href={`#Technique-${this.props.match.params.id}`}>{Translation.Translate("technique")}</a>
                             </li>
                         </ul>
-                        <ul className="navbar-nav ml-auto">
+                        {/* <ul className="navbar-nav ml-auto">
                             <li className="nav-item" onClick={()=>this.changeLanguage(false)}>
                                 <i className="material-icons">&#xe8e2;</i>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </nav>
 
@@ -143,20 +214,21 @@ class PaintingDetail extends React.Component{
                         </AliceCarousel>
                     </div>
 
+                    <hr id={`Artist-${this.props.match.params.id}`}></hr>
+
                     <div className="container">
-                        <hr id="Artist"></hr>
 
                         <div className={styles.content}>
                             <InfoSection maxLength={150} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr id="Movement"></hr>
+                        <hr id={`Movement-${this.props.match.params.id}`}></hr>
 
                         <div className={styles.content}>
                             <InfoSection storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr id="Technique"></hr>
+                        <hr id={`Technique-${this.props.match.params.id}`}></hr>
 
                         <div className={styles.content}>
                             <InfoSection storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>

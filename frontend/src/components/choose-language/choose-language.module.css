@@ -1,6 +1,11 @@
 td{
     /* width : 50%; */
+    
+}
+
+.link{
     font-family: 'Montserrat';
+    color:black !important;
 }
 
 .language{
