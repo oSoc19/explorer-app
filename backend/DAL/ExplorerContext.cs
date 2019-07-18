@@ -1166,6 +1166,819 @@ namespace backend.DAL
                 }
             );
 
+            modelBuilder.Entity<PaintingStory>()
+            .HasData(
+                new PaintingStory
+                {
+                    Id = 1,
+                    Title = "Paysage boisé avec gué",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Les feuilles sur les arbres ne sont en fait pas peintes une à une mais à coups de pinceaux",
+                    ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 2,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Le mot “baroque” avait une connotation négative",
+                    ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 3,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "Avant que la peinture à l’huile ne soit inventée, la plupart des artistes utilisaient la tempera à l’oeuf",
+                    ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 4,
+                    Subtitle = "over het kunstwerk",
+                    Title = "Boslandschap met wad",
+                    Text = "De schilder gebruikte ruwe schilder stroken om de blaadjes aan de bomen te schilderen, niet blaadje per blaadje apart",
+                    ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 5,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Het woord “barok” was vroeger een negatief woord",
+                    ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 6,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Voordat olieverf werd uitgevonden gebruikten de meeste kunstenaars ei tempera",
+                    ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 7,
+                    Subtitle = "about the artwork",
+                    Title = "Wooded Landscape with Ford",
+                    Text = "The painter used raw brush strokes to paint the leaves on the trees, not every leave separately.",
+                    ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 8,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "The word 'baroque' used to be a negative term",
+                    ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 9,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Before oil paint was invented, most artists used egg tempera",
+                    ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 10,
+                    Subtitle = "à propos de l'oeuvre",
+                    Title = "Portrait d'une famille brugeoise",
+                    Text = "Observez bien attentivement et vous pourrez apercevoir l’âge des personnages sur leurs vêtements",
+                    ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 11,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Les oeuvres catholiques baroques étaient souvent larges",
+                    ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 12,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "Le bleu ultramarine était fabriqué avec du lapis lazuli qui était très onéreux. Après l’avoir mélangé avec l’huile, la peinture était conservée dans une vessie de porc",
+                    ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 13,
+                    Subtitle = "Over het kunstwerk",
+                    Title = "Portret van een Brugse familie",
+                    Text = "Wist je dat de leeftijd van de personen weergegeven is in hun kledij?",
+                    ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 14,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Katholieke barok kunstwerken waren doorgaans groot",
+                    ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 15,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Ultramarijnblauw werd gemaakt met lapis lazuli, iets wat zeer duur was. Na het mixen met olie werd het vaak bewaard in een varkensblaas",
+                    ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 16,
+                    Subtitle = "About the artwork",
+                    Title = "Portrait of a Bruges family",
+                    Text = "Did you know that the characters’ age is displayed within their clothing?",
+                    ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 17,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Catholic baroque works were usually large",
+                    ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 18,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Ultramarine blue was made with lapis lazuli, which was very expensive. After mixing it with the oil, it was often stored in a pig’s bladder",
+                    ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 19,
+                    Subtitle = "à propos de l'oeuvre",
+                    Title = "Portrait d’un théologien et son secrétaire",
+                    Text = "Le tableau est daté de 1668. Selon l’inscription, le théologien serait âgé de 47 ans.  Son identité reste à ce jour inconnue",
+                    ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 20,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "L’art baroque servait à la propagande religieuse",
+                    ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 21,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "La peinture blanche était créée avec du plomb.  Elle séchait vite et couvrait bien",
+                    ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 22,
+                    Subtitle = "over het kunstwerk",
+                    Title = "Portret van een theoloog met zijn secretaris",
+                    Text = "Het schilderij dateert uit 1668. Volgens het opschrift is de theoloog 47 jaar oud. Zijn identiteit is tot op de dag van vandaag nog steeds onbekend",
+                    ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 23,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Barok kunst werd gemaakt als religieuze propaganda",
+                    ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 24,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Witte verf werd gemaakt uit lood. Het droogde snel en bedekte goed",
+                    ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 25,
+                    Subtitle = "About the artwork",
+                    Title = "Portrait of a Theologue and his Secretary",
+                    Text = "The date on the painting is 1668 and according to the inscription on it, the theologue is 47 years old. The identity of the man is still unknown to this day",
+                    ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 26,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Baroque art was made for religious propaganda",
+                    ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 27,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "White paint was created with lead. It dried quickly and covered well",
+                    ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 28,
+                    Title = "Portrait d' un homme",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Figure au dos de cette peinture: “J. Van Oost en tant qu’amis 1697”",
+                    ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 29,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Les artistes créaient des innovations pour rendre leurs oeuvres plus réalistes et émotives",
+                    ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 30,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique ",
+                    Text = "Jusqu’au 19ème siècle, les peintres préparaient leurs propres couleurs, en expérimentant",
+                    ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 31,
+                    Title = "Portret van een man",
+                    Subtitle = "over het kunstwerk ",
+                    Text = "Het schilderij is ondertekend en gedateerd op de achterkant: “J. Van Oost als vriend 1697”",
+                    ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 32,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode ",
+                    Text = "Kunstenaars creëerden innovaties om hun werk realistischer en gevoeliger te maken",
+                    ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 33,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek ",
+                    Text = "Tot de 19e eeuw, schilders maakten hun eigen kleuren op basis van ervaring",
+                    ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 34,
+                    Title = "Portrait of a Man",
+                    Subtitle = "about the artwork",
+                    Text = "The painting is signed and dated on the rear: J. Van Oost als vriend 1697 (J. Van Oost as a friend 1697)",
+                    ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 35,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Artists created innovations to make their works more realistic and emotive",
+                    ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 36,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Until the 19th century, painters prepared their own colors based on experience.",
+                    ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Sainte Trinité",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Le peintre de cette oeuvre est resté inconnu jusque dans les années 70 bien qu’elle ressemblait au style de Rubens. On découvrit plus tard qu’Artus Wolfordt était l’artiste, après une reconstruction de son oeuvre “Women bathing”",
+                    ImageUrl = "/api/images/painting-stories/7_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 38,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "La peinture de scènes religieuses servait à enseigner la religion à la population analphabète",
+                    ImageUrl = "/api/images/painting-stories/7_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 39,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "Les peintres expérimentent l’épaisseur de la pâte pour accentuer les lumières",
+                    ImageUrl = "/api/images/painting-stories/7_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 40,
+                    Title = "Heilige Drievuldigheid",
+                    Subtitle = "over het kunstwerk",
+                    Text = "De schilder was onbekend tot in de jaren 1970 ze beschouwden het een werk van Rubens. Later bleek het een schilderij te zijn door Artus Wolfordt, na een reconstructie van een van zijn kunstwerken ‘badende vrouwen’",
+                    ImageUrl = "/api/images/painting-stories/7_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 41,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Het schilderen van religieuze scènes werd gebruikt om de ongeletterde bevolking het verhaal te doen begrijpen",
+                    ImageUrl = "/api/images/painting-stories/7_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 42,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Schilders beginnen te experimenteren met de dikte van de verf om het licht te accentueren",
+                    ImageUrl = "/api/images/painting-stories/7_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 43,
+                    Title = "Holy Trinity",
+                    Subtitle = "about the artwork",
+                    Text = "The painter was unknown until the 1970’s and thought to be by Rubens. It was later found to be painted by Artus Wolfordt, after a reconstruction on one of his artwork “Women bathing” from this",
+                    ImageUrl = "/api/images/painting-stories/7_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 44,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Painting of religious scenes was used for religious instruction for the illiterate population",
+                    ImageUrl = "/api/images/painting-stories/7_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 45,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Painters start to experiment with the thickness of the paint to accentuate the light",
+                    ImageUrl = "/api/images/painting-stories/7_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 46,
+                    Title = "Portrait de Fovin de Hasque",
+                    Subtitle = "about the artwork",
+                    Text = "Fovin de Hasque was a swordsman of the Sint Michiels guild, the oldest swordsmanship guild known in Flanders",
+                    ImageUrl = "/api/images/painting-stories/4_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 47,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Le style baroque devint un symbole de richesse et pouvoir",
+                    ImageUrl = "/api/images/painting-stories/4_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 48,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "Depuis 1841, la peinture à l’huile est disponible dans des tubes de métal. Les artistes peuvent maintenant sortir et peindre à l’extérieur",
+                    ImageUrl = "/api/images/painting-stories/4_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 49,
+                    Title = "Portret van Fovin de Hasque",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Fovin de Hasque was een schermmeester van de Sint Michielsgilde,  de oudste zwaardvechtkunst gilde bekend in Vlaanderen",
+                    ImageUrl = "/api/images/painting-stories/4_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 50,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "De barokstijl werd een symbool van rijkdom en macht",
+                    ImageUrl = "/api/images/painting-stories/4_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 51,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Sinds 1841, olieverf was verkrijgbaar in metalen tubes. Nu konden kunstenaars buiten schilderen",
+                    ImageUrl = "/api/images/painting-stories/4_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 52,
+                    Title = "Portrait of Fovin de Hasque",
+                    Subtitle = "about the artwork",
+                    Text = "Fovin de Hasque was a swordsman of the Sint Michiels guild, the oldest swordsmanship guild known in Flanders",
+                    ImageUrl = "/api/images/painting-stories/4_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 53,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "The baroque style became a symbol of wealth and power",
+                    ImageUrl = "/api/images/painting-stories/4_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 54,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Since 1841, oil paint has been available in metal tube. Now, artists could go and paint outdoors",
+                    ImageUrl = "/api/images/painting-stories/4_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 55,
+                    Title = "Achille parmi les filles de Lycomède",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "L’histoire de la guerre de Troie fut la base de nombreux tableaux. Quellinus peignit trois versions de cette scène. Cette version est caractérisée par l’amour du peintre pour l’architecture classique de cette période",
+                    ImageUrl = "/api/images/painting-stories/8_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 56,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "La peinture baroque utilise des couleurs chaudes et vives ainsi que des contrastes (clair/obscur). La toile est éclairée par tâches contrairement au style de la  Renaissance ayant un éclairage uniforme de la toile",
+                    ImageUrl = "/api/images/painting-stories/8_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 57,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "La peinture à l’huile met plus de temps à sécher  que d’autres types de peinture (environ 2 semaines, bien que certaines couleurs sèchent en quelques jours). De ce fait, le peintre pouvait enlever une couche complète de peinture et en recommencer une nouvelle",
+                    ImageUrl = "/api/images/painting-stories/8_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 58,
+                    Title = "Achilles en de dochters van Lycomedes",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Dit Trojaans verhaal is gebaseerd op verschillende schilderijen. Quellinus zelf schilderde drie verschillende versies van deze scène. Deze versie wordt gekenmerkt door de schilder zijn liefde voor klassieke architectuur uit die periode",
+                    ImageUrl = "/api/images/painting-stories/8_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 59,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Barok schilderijen maakt gebruik van warme en levendige kleuren en contrasten (Chiaroscuro). De verlichting van het schilderij concentreerde zich op sommige punten terwijl de Renaissance-stijl een consistente verlichting had",
+                    ImageUrl = "/api/images/painting-stories/8_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 60,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Omdat olieverf langer nat blijft dan andere verfsoorten, kan de schilder zijn verf langer bewaren. Het duurt meestal twee weken om te drogen (hoewel sommige kleuren binnen dagen drogen)",
+                    ImageUrl = "/api/images/painting-stories/8_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 61,
+                    Title = "Achilles among the Daughters of Lycomedes",
+                    Subtitle = "about the artwork",
+                    Text = "This Troyan story is the base of many paintings.  Quellinus self painted three versions of this scene. This version is characterised by the painter’s love for Classical Architecture of the time of painting",
+                    ImageUrl = "/api/images/painting-stories/8_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 62,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Baroque painting uses warm and vivid colors as well as contrasts (Chiaroscuro). The painting’s lighting focused on some points while the Renaissance style had a consistent lighting",
+                    ImageUrl = "/api/images/painting-stories/8_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 63,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "As oil paint remains wet longer than other types of paint, the painter might remote an entire layer of paint. It usually takes a span of two weeks to dry (although some colors dry within days)",
+                    ImageUrl = "/api/images/painting-stories/8_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 64,
+                    Title = "Portrait de Samuel Crew",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Lely (de son vrai nom était van der Faes) étudia à Haarlem et pris pour nom d’artiste Lely (Lys en néerlandais) car la fleur de Lys était représentée sur le pignon de la maison de son père",
+                    ImageUrl = "/api/images/painting-stories/9_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 65,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "La peinture baroque se caractérise par l’asymétrie: le sujet n’est pas toujours au centre du tableau",
+                    ImageUrl = "/api/images/painting-stories/9_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 66,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "L’avantage de la peinture à l’huile est qu’elle met plus de temps à sécher, ce qui permet au peintre de développer son oeuvre au fur et à mesure, contrairement à la tempéra aux oeufs",
+                    ImageUrl = "/api/images/painting-stories/9_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 67,
+                    Title = "Portret van Samuel Crew",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Lely (Zijn echte naam was van der Faes) studeerde in Haarlem en nam Lely (Lelie in het Nederlands) als een artiestennaam omdat er op zijn huis een Lelie stond)",
+                    ImageUrl = "/api/images/painting-stories/9_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 68,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Barok schilderijen wordt gekenmerkt door asymmetrie: het onderwerp staat niet altijd centraal in het schilderij",
+                    ImageUrl = "/api/images/painting-stories/9_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 69,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Het voordeel van olieverf is dat het langzaam droogt, waardoor de kunstenaar een schilderij geleidelijk kan ontwikkelen, in tegenstelling tot eitempera",
+                    ImageUrl = "/api/images/painting-stories/9_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 70,
+                    Title = "Portrait of Samuel Crew",
+                    Subtitle = "about the artwork",
+                    Text = "Lely (his real name was van der Faes) studied in Haarlem and took Lely (lily in Dutch) as an artist name  because his house had a Lily on it",
+                    ImageUrl = "/api/images/painting-stories/9_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 71,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Baroque painting is characterised by asymmetry: the subject is not always at the center of the painting",
+                    ImageUrl = "/api/images/painting-stories/9_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 72,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "The advantage of oil paint is its slow drying which enables  the artist to develop a painting gradually, as opposed to egg tempera",
+                    ImageUrl = "/api/images/painting-stories/9_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 73,
+                    Title = "La Vocation de saint Matthieu",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Matthieu, le percepteur d’impôt, est représenté de dos. Son chien prend l’expression de son maitre, comme si le peintre voulait nous dire “un croyant écoute Jésus comme un chien écoute son maitre”",
+                    ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 74,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Contrairement à la peinture de la Renaissance (qui illustre le moment précédant un événement important), les peintres baroques choisissent de représenter le moment le plus dramatique de la scène",
+                    ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 75,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "Les artistes remplacèrent la peinture sur bois par la toile car les pigments tenaient mieux",
+                    ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 76,
+                    Title = "Roeping van Mattheüs",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Mattheüs, de tollenaar, is op zijn rug afgebeeld. Zijn hond weerspiegelt zijn meesters emotie alsof de schilder ons wil vertellen “een gelovige luistert naar jezus zoals een hond luistert naar zijn baasje”",
+                    ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 77,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "In tegenstelling tot de Renaissance schilderijen ( die belangrijke gebeurtenissen afbeelden), kiezen Baroque schilders ervoor om het meest dramatische moment van de gebeurtenis af te beelden",
+                    ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 78,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Kunstenaars begonnen te schilderen op canvas in plaats van hout omdat het pigment beter vasthoudt",
+                    ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 79,
+                    Title = "The Calling of St Matthew",
+                    Subtitle = "about the artwork",
+                    Text = "Matthew, the tax collector, is represented from behind. His dog reflects his master’s emotion as if the painter wanted to tell us “a believer listens to Jesus like a dog listens to his master”",
+                    ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 80,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Contrary to the Renaissance art (which showed the moment before an important event), Baroque painters chose to represent the most dramatic point",
+                    ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 81,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Artists started painting on canvas instead of wood because it holds the pigments better",
+                    ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 9
+                }
+            );
         }
 
     }
