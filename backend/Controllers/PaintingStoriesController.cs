@@ -47,7 +47,7 @@ namespace backend.Controllers
         public ActionResult GetPaintingStoryImage(string filename)
         {
             try{
-                byte[] b = System.IO.File.ReadAllBytes("/data/images/painting-stories/" + filename);
+                byte[] b = System.IO.File.ReadAllBytes("data/images/painting-stories/" + filename);
                 return File(b, "image/jpeg");
             }catch(Exception e){
                 return NotFound(e);
