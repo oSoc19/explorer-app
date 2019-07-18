@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190718075303_story-title")]
+    partial class storytitle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -751,8 +753,6 @@ namespace backend.Migrations
 
                     b.Property<long>("PaintingId");
 
-                    b.Property<string>("Subtitle");
-
                     b.Property<string>("Text");
 
                     b.Property<string>("Title");
@@ -764,251 +764,6 @@ namespace backend.Migrations
                     b.HasIndex("PaintingId");
 
                     b.ToTable("PaintingStory");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 1L,
-                            Text = "Les feuilles sur les arbres ne sont en fait pas peintes une à une mais à coups de pinceaux",
-                            Title = "À propos de l'oeuvre"
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 1L,
-                            Text = "Le mot “baroque” avait une connotation négative",
-                            Title = "Baroque"
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 1L,
-                            Text = "Avant que la peinture à l’huile ne soit inventée, la plupart des artistes utilisaient la tempera à l’oeuf",
-                            Title = "Peinture à l’huile"
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 1L,
-                            Text = "De schilder gebruikte ruwe schilder stroken om de blaadjes aan de bomen te schilderen, niet blaadje per blaadje apart",
-                            Title = "Over het kunstwerk"
-                        },
-                        new
-                        {
-                            Id = 5L,
-                            ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 1L,
-                            Text = "Het woord “barok” was vroeger een negatief woord",
-                            Title = "Barok"
-                        },
-                        new
-                        {
-                            Id = 6L,
-                            ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 1L,
-                            Text = "Voordat olieverf werd uitgevonden gebruikten de meeste kunstenaars ei tempera",
-                            Title = "Olieverf"
-                        },
-                        new
-                        {
-                            Id = 7L,
-                            ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 1L,
-                            Text = "The painter used raw brush strokes to paint the leaves on the trees, not every leave separately.",
-                            Title = "About the artwork"
-                        },
-                        new
-                        {
-                            Id = 8L,
-                            ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 1L,
-                            Text = "The word 'baroque' used to be a negative term",
-                            Title = "Baroque"
-                        },
-                        new
-                        {
-                            Id = 9L,
-                            ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 1L,
-                            Text = "Before oil paint was invented, most artists used egg tempera",
-                            Title = "Oil paint"
-                        },
-                        new
-                        {
-                            Id = 10L,
-                            ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 2L,
-                            Text = "Observez bien attentivement et vous pourrez apercevoir l’âge des personnages sur leurs vêtements",
-                            Title = "À propos de l'oeuvre"
-                        },
-                        new
-                        {
-                            Id = 11L,
-                            ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 2L,
-                            Text = "Les oeuvres catholiques baroques étaient souvent larges",
-                            Title = "Baroque"
-                        },
-                        new
-                        {
-                            Id = 12L,
-                            ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 2L,
-                            Text = "Le bleu ultramarine était fabriqué avec du lapis lazuli qui était très onéreux. Après l’avoir mélangé avec l’huile, la peinture était conservée dans une vessie de porc",
-                            Title = "Peinture à l’huile"
-                        },
-                        new
-                        {
-                            Id = 13L,
-                            ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 2L,
-                            Text = "Wist je dat de leeftijd van de personen weergegeven is in hun kledij?",
-                            Title = "Over het kunstwerk"
-                        },
-                        new
-                        {
-                            Id = 14L,
-                            ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 2L,
-                            Text = "Katholieke barok kunstwerken waren doorgaans groot",
-                            Title = "Barok"
-                        },
-                        new
-                        {
-                            Id = 15L,
-                            ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 2L,
-                            Text = "Ultramarijnblauw werd gemaakt met lapis lazuli, iets wat zeer duur was. Na het mixen met olie werd het vaak bewaard in een varkensblaas",
-                            Title = "Olieverf"
-                        },
-                        new
-                        {
-                            Id = 16L,
-                            ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 2L,
-                            Text = "Did you know that the characters’ age is displayed within their clothing?",
-                            Title = "About the artwork"
-                        },
-                        new
-                        {
-                            Id = 17L,
-                            ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 2L,
-                            Text = "Catholic baroque works were usually large",
-                            Title = "Baroque"
-                        },
-                        new
-                        {
-                            Id = 18L,
-                            ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 2L,
-                            Text = "Ultramarine blue was made with lapis lazuli, which was very expensive. After mixing it with the oil, it was often stored in a pig’s bladder",
-                            Title = "Oil paint"
-                        },
-                        new
-                        {
-                            Id = 19L,
-                            ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 3L,
-                            Text = "Le tableau est daté de 1668. Selon l’inscription, le théologien serait âgé de 47 ans.  Son identité reste à ce jour inconnue",
-                            Title = "À propos de l'oeuvre"
-                        },
-                        new
-                        {
-                            Id = 20L,
-                            ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 3L,
-                            Text = "L’art baroque servait à la propagande religieuse",
-                            Title = "Baroque"
-                        },
-                        new
-                        {
-                            Id = 21L,
-                            ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
-                            LanguageId = 1L,
-                            PaintingId = 3L,
-                            Text = "La peinture blanche était créée avec du plomb.  Elle séchait vite et couvrait bien",
-                            Title = "Peinture à l’huile"
-                        },
-                        new
-                        {
-                            Id = 22L,
-                            ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 3L,
-                            Text = "Het schilderij dateert uit 1668. Volgens het opschrift is de theoloog 47 jaar oud. Zijn identiteit is tot op de dag van vandaag nog steeds onbekend",
-                            Title = "Over het kunstwerk"
-                        },
-                        new
-                        {
-                            Id = 23L,
-                            ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 3L,
-                            Text = "Barok kunst werd gemaakt als religieuze propaganda",
-                            Title = "Barok"
-                        },
-                        new
-                        {
-                            Id = 24L,
-                            ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
-                            LanguageId = 2L,
-                            PaintingId = 3L,
-                            Text = "Witte verf werd gemaakt uit lood. Het droogde snel en bedekte goed",
-                            Title = "Olieverf"
-                        },
-                        new
-                        {
-                            Id = 25L,
-                            ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 3L,
-                            Text = "The date on the painting is 1668 and according to the inscription on it, the theologue is 47 years old. The identity of the man is still unknown to this day",
-                            Title = "About the artwork"
-                        },
-                        new
-                        {
-                            Id = 26L,
-                            ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 3L,
-                            Text = "Baroque art was made for religious propaganda",
-                            Title = "Baroque"
-                        },
-                        new
-                        {
-                            Id = 27L,
-                            ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
-                            LanguageId = 3L,
-                            PaintingId = 3L,
-                            Text = "White paint was created with lead. It dried quickly and covered well",
-                            Title = "Oil paint"
-                        });
                 });
 
             modelBuilder.Entity("backend.Models.PaintingTranslation", b =>

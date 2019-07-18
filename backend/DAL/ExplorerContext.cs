@@ -1166,6 +1166,459 @@ namespace backend.DAL
                 }
             );
 
+            modelBuilder.Entity<PaintingStory>()
+            .HasData(
+                new PaintingStory
+                {
+                    Id = 1,
+                    Title = "Paysage boisé avec gué",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Les feuilles sur les arbres ne sont en fait pas peintes une à une mais à coups de pinceaux",
+                    ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 2,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Le mot “baroque” avait une connotation négative",
+                    ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 3,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "Avant que la peinture à l’huile ne soit inventée, la plupart des artistes utilisaient la tempera à l’oeuf",
+                    ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 4,
+                    Subtitle = "over het kunstwerk",
+                    Title = "Boslandschap met wad",
+                    Text = "De schilder gebruikte ruwe schilder stroken om de blaadjes aan de bomen te schilderen, niet blaadje per blaadje apart",
+                    ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 5,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Het woord “barok” was vroeger een negatief woord",
+                    ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 6,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Voordat olieverf werd uitgevonden gebruikten de meeste kunstenaars ei tempera",
+                    ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 7,
+                    Subtitle = "about the artwork",
+                    Title = "Wooded Landscape with Ford",
+                    Text = "The painter used raw brush strokes to paint the leaves on the trees, not every leave separately.",
+                    ImageUrl = "/api/images/painting-stories/1_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 8,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "The word 'baroque' used to be a negative term",
+                    ImageUrl = "/api/images/painting-stories/1_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 9,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Before oil paint was invented, most artists used egg tempera",
+                    ImageUrl = "/api/images/painting-stories/1_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 10,
+                    Subtitle = "à propos de l'oeuvre",
+                    Title = "Portrait d'une famille brugeoise",
+                    Text = "Observez bien attentivement et vous pourrez apercevoir l’âge des personnages sur leurs vêtements",
+                    ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 11,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Les oeuvres catholiques baroques étaient souvent larges",
+                    ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 12,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "Le bleu ultramarine était fabriqué avec du lapis lazuli qui était très onéreux. Après l’avoir mélangé avec l’huile, la peinture était conservée dans une vessie de porc",
+                    ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 13,
+                    Subtitle = "Over het kunstwerk",
+                    Title = "Portret van een Brugse familie",
+                    Text = "Wist je dat de leeftijd van de personen weergegeven is in hun kledij?",
+                    ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 14,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Katholieke barok kunstwerken waren doorgaans groot",
+                    ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 15,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Ultramarijnblauw werd gemaakt met lapis lazuli, iets wat zeer duur was. Na het mixen met olie werd het vaak bewaard in een varkensblaas",
+                    ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 16,
+                    Subtitle = "About the artwork",
+                    Title = "Portrait of a Bruges family",
+                    Text = "Did you know that the characters’ age is displayed within their clothing?",
+                    ImageUrl = "/api/images/painting-stories/2_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 17,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Catholic baroque works were usually large",
+                    ImageUrl = "/api/images/painting-stories/2_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 18,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Ultramarine blue was made with lapis lazuli, which was very expensive. After mixing it with the oil, it was often stored in a pig’s bladder",
+                    ImageUrl = "/api/images/painting-stories/2_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 19,
+                    Subtitle = "à propos de l'oeuvre",
+                    Title = "Portrait d’un théologien et son secrétaire",
+                    Text = "Le tableau est daté de 1668. Selon l’inscription, le théologien serait âgé de 47 ans.  Son identité reste à ce jour inconnue",
+                    ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 20,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "L’art baroque servait à la propagande religieuse",
+                    ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 21,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "La peinture blanche était créée avec du plomb.  Elle séchait vite et couvrait bien",
+                    ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 22,
+                    Subtitle = "over het kunstwerk",
+                    Title = "Portret van een theoloog met zijn secretaris",
+                    Text = "Het schilderij dateert uit 1668. Volgens het opschrift is de theoloog 47 jaar oud. Zijn identiteit is tot op de dag van vandaag nog steeds onbekend",
+                    ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 23,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Barok kunst werd gemaakt als religieuze propaganda",
+                    ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 24,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Witte verf werd gemaakt uit lood. Het droogde snel en bedekte goed",
+                    ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 25,
+                    Subtitle = "About the artwork",
+                    Title = "Portrait of a Theologue and his Secretary",
+                    Text = "The date on the painting is 1668 and according to the inscription on it, the theologue is 47 years old. The identity of the man is still unknown to this day",
+                    ImageUrl = "/api/images/painting-stories/3_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 26,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Baroque art was made for religious propaganda",
+                    ImageUrl = "/api/images/painting-stories/3_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 27,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "White paint was created with lead. It dried quickly and covered well",
+                    ImageUrl = "/api/images/painting-stories/3_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 28,
+                    Title = "Portrait d' un homme",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Figure au dos de cette peinture: “J. Van Oost en tant qu’amis 1697”",
+                    ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 29,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Les artistes créaient des innovations pour rendre leurs oeuvres plus réalistes et émotives",
+                    ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 30,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique ",
+                    Text = "Jusqu’au 19ème siècle, les peintres préparaient leurs propres couleurs, en expérimentant",
+                    ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
+                    LanguageId = 1,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 31,
+                    Title = "Portret van een man",
+                    Subtitle = "over het kunstwerk ",
+                    Text = "Het schilderij is ondertekend en gedateerd op de achterkant: “J. Van Oost als vriend 1697”",
+                    ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 32,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode ",
+                    Text = "Kunstenaars creëerden innovaties om hun werk realistischer en gevoeliger te maken",
+                    ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 33,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek ",
+                    Text = "Tot de 19e eeuw, schilders maakten hun eigen kleuren op basis van ervaring",
+                    ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
+                    LanguageId = 2,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 34,
+                    Title = "Portrait of a Man",
+                    Subtitle = "about the artwork",
+                    Text = "The painting is signed and dated on the rear: J. Van Oost als vriend 1697 (J. Van Oost as a friend 1697)",
+                    ImageUrl = "/api/images/painting-stories/6_ART@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 35,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Artists created innovations to make their works more realistic and emotive",
+                    ImageUrl = "/api/images/painting-stories/6_MOV@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 36,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Until the 19th century, painters prepared their own colors based on experience.",
+                    ImageUrl = "/api/images/painting-stories/6_TECH@2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Sainte Trinité",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Le peintre de cette oeuvre est resté inconnu jusque dans les années 70 bien qu’elle ressemblait au style de Rubens. On découvrit plus tard qu’Artus Wolfordt était l’artiste, après une reconstruction de son oeuvre “Women bathing”",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Baroque",
+                    Subtitle = "à propos du mouvement",
+                    Text = "La peinture de scènes religieuses servait à enseigner la religion à la population analphabète",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Peinture à l’huile",
+                    Subtitle = "à propos de la technique",
+                    Text = "Les peintres expérimentent l’épaisseur de la pâte pour accentuer les lumières",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Heilige Drievuldigheid",
+                    Subtitle = "over het kunstwerk",
+                    Text = "De schilder was onbekend tot in de jaren 1970 ze beschouwden het een werk van Rubens. Later bleek het een schilderij te zijn door Artus Wolfordt, na een reconstructie van een van zijn kunstwerken ‘badende vrouwen’",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Barok",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Het schilderen van religieuze scènes werd gebruikt om de ongeletterde bevolking het verhaal te doen begrijpen",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Olieverf",
+                    Subtitle = "over de techniek",
+                    Text = "Schilders beginnen te experimenteren met de dikte van de verf om het licht te accentueren",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Holy Trinity",
+                    Subtitle = "about the artwork",
+                    Text = "The painter was unknown until the 1970’s and thought to be by Rubens. It was later found to be painted by Artus Wolfordt, after a reconstruction on one of his artwork “Women bathing” from this",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Baroque",
+                    Subtitle = "about the movement",
+                    Text = "Painting of religious scenes was used for religious instruction for the illiterate population",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Oil paint",
+                    Subtitle = "about the technique",
+                    Text = "Painters start to experiment with the thickness of the paint to accentuate the light",
+                    ImageUrl = "/api/images/painting-stories/",
+                    LanguageId = 1,
+                    PaintingId = 5
+                }
+            );
         }
 
     }
