@@ -17,24 +17,8 @@ class ChooseLanguage extends React.Component{
             languages : []
         };
 
-        this.addNotification = this.addNotification.bind(this);
         this.notificationDOMRef = React.createRef();
         this.selectLanguage = this.selectLanguage.bind(this);
-        this.assignSelectionAction = this.assignSelectionAction.bind(this);
-        this.addLanguages = this.addLanguages.bind(this);
-    }
-
-    addNotification() {
-        this.notificationDOMRef.current.addNotification({
-          message: "Please select a language !",
-          type: "warning",
-          insert: "top",
-          container: "top-center",
-          animationIn: ["animated", "fadeIn"],
-          animationOut: ["animated", "fadeOut"],
-          dismiss: { duration: 2000 },
-          dismissable: { click: true }
-        });
     }
 
     async componentWillMount(){
@@ -47,72 +31,30 @@ class ChooseLanguage extends React.Component{
         }
     }
 
-    componentDidMount(){
-        this.assignSelectionAction();
-    }
-
-    addLanguages(){
-        let body = document.getElementById("languages");
-        let line;
-        for(let i =0; i < this.state.languages.length; i++){
-            let lan = document.createElement("td");
-            lan.id = this.state.languages[i].code;
-            lan.innerHTML = this.state.languages[i].name;
-            if(i%2 === 0){
-                line = document.createElement("tr");
-                body.appendChild(line);
-            }
-            line.append(lan);
-        }
-    }
-
-    assignSelectionAction(){
-        let languages = document.getElementsByTagName('td');
-        for(let i = 0; i < languages.length; i++){
-            if(languages[i].dataset.attr === 'selectButton')
-                return;
-            languages[i].addEventListener('click', ()=>{
-                let selectedLanguage = document.getElementsByClassName('selectedLanguage')[0];
-                if(selectedLanguage)
-                    selectedLanguage.classList.toggle('selectedLanguage');
-                languages[i].classList.toggle('selectedLanguage');
-                this.setState({language : languages[i].id});
-            });
-        }
-    }
-
-    selectLanguage(){
-        if(this.state.language){
-            this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}?language=${this.state.language}`);
-        }
+    selectLanguage(language){
+        this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}?language=${language}`);
     }
 
     renderAllLanguages(){
         return(
             <tbody>
                 <tr>
-                    <td id='EN' className="selectableLanguage">
+                    <td id='EN' className="selectableLanguage" onClick={()=>this.selectLanguage('EN')}>
                         English
                     </td>
-                    <td id='DE' className="selectableLanguage">German</td>
+                    <td id='DE' className="selectableLanguage" onClick={()=>this.selectLanguage('DE')}>German</td>
                 </tr>
                 <tr>
-                    <td id='NL' className="selectableLanguage">Nederlands</td>
-                    <td id='ES' className="selectableLanguage">Espanol</td>
+                    <td id='NL' className="selectableLanguage" onClick={()=>this.selectLanguage('NL')}>Nederlands</td>
+                    <td id='ES' className="selectableLanguage" onClick={()=>this.selectLanguage('ES')}>Espanol</td>
                 </tr>
                 <tr>
-                    <td id='FR' className="selectableLanguage">Français</td>
-                    <td id='IT' className="selectableLanguage">Italiano</td>
+                    <td id='FR' className="selectableLanguage" onClick={()=>this.selectLanguage('FR')}>Français</td>
+                    <td id='IT' className="selectableLanguage" onClick={()=>this.selectLanguage('IT')}>Italiano</td>
                 </tr>
                 <tr>
-                    <td id='JA' className="selectableLanguage">日本の</td>
-                    <td id='RU' className="selectableLanguage">русский</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td data-attr="selectButton" onClick={this.state.language ? this.selectLanguage : this.addNotification}>
-                        <i className="material-icons">&#xe5cc;</i>
-                    </td>
+                    <td id='JA' className="selectableLanguage" onClick={()=>this.selectLanguage('JA')}>日本の</td>
+                    <td id='RU' className="selectableLanguage" onClick={()=>this.selectLanguage('RU')}>русский</td>
                 </tr>
             </tbody>
         );

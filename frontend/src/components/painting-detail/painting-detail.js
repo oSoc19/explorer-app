@@ -40,7 +40,6 @@ class PaintingDetail extends React.Component{
         this.goBackToSelection = this.goBackToSelection.bind(this);
         this.changeLanguage = this.changeLanguage.bind(this);
         this.addLanguages = this.addLanguages.bind(this);
-        this.addNotification = this.addNotification.bind(this);
         this.selectLanguage = this.selectLanguage.bind(this);
     }
 
@@ -93,6 +92,9 @@ class PaintingDetail extends React.Component{
         let line;
         for(let i =0; i < this.state.availableLanguages.length; i++){
             let lan = document.createElement("td");
+            lan.onclick = ()=>{
+                this.selectLanguage(this.state.availableLanguages[i].code);
+            }
             lan.id = this.state.availableLanguages[i].code;
             lan.innerHTML = this.state.availableLanguages[i].name;
             if(i%2 === 0){
@@ -101,42 +103,11 @@ class PaintingDetail extends React.Component{
             }
             line.append(lan);
         }
-        this.assignSelectionAction();
     }
 
-    assignSelectionAction(){
-        let languages = document.getElementsByTagName('td');
-        for(let i = 0; i < languages.length; i++){
-            if(languages[i].dataset.attr !== 'selectButton'){
-                languages[i].addEventListener('click', ()=>{
-                    let selectedLanguage = document.getElementsByClassName('selectedLanguage')[0];
-                    if(selectedLanguage)
-                        selectedLanguage.classList.toggle('selectedLanguage');
-                    languages[i].classList.toggle('selectedLanguage');
-                    this.setState({language : languages[i].id});
-                });
-            }
-        }
-    }
-
-    selectLanguage(){
-        if(this.state.language){
-            this.props.history.push(`/paintings/detail/${this.props.match.params.id}?language=${this.state.language}`);
-            window.location.reload();
-        }
-    }
-
-    addNotification() {
-        this.notificationDOMRef.current.addNotification({
-          message: "Please select a language !",
-          type: "warning",
-          insert: "top",
-          container: "top-center",
-          animationIn: ["animated", "fadeIn"],
-          animationOut: ["animated", "fadeOut"],
-          dismiss: { duration: 2000 },
-          dismissable: { click: true }
-        });
+    selectLanguage(language){
+        this.props.history.push(`/paintings/detail/${this.props.match.params.id}?language=${language}`);
+        window.location.reload();
     }
 
     render(){
@@ -161,12 +132,6 @@ class PaintingDetail extends React.Component{
                             <span id={styles.missingSentence}>{Translation.Translate("missingLanguage")}</span>
                             <table className="table table-borderless">
                                 <tbody id="languages">
-                                <tr id="goTo">
-                                    <td></td>
-                                    <td data-attr="selectButton" onClick={this.state.language ? this.selectLanguage : this.addNotification}>
-                                        <i className="material-icons">&#xe5cc;</i>
-                                    </td>
-                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -209,7 +174,7 @@ class PaintingDetail extends React.Component{
                     <div>
                         <AliceCarousel mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
                             {
-                                images.map(i => <PaintingStory key={Math.random()} ></PaintingStory>)
+                                this.state.data.stories.map(s => <PaintingStory key={s.id} story={s}></PaintingStory>)
                             }
                         </AliceCarousel>
                     </div>
