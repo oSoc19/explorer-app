@@ -1,9 +1,12 @@
 import React from 'react';
-import Logo from '../../assets/images/logo_brugge.png';
+import Logo from '../../assets/images/logo_brugge.svg';
 import styles from './choose-language.module.css';
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 import Api from '../../services/api';
+import {Link} from 'react-router-dom';
+
+const PAINTING_SELECTION_PAGE = "/choose-painting";
 
 class ChooseLanguage extends React.Component{
 
@@ -32,7 +35,7 @@ class ChooseLanguage extends React.Component{
           dismiss: { duration: 2000 },
           dismissable: { click: true }
         });
-      }
+    }
 
     async componentWillMount(){
         if(this.props.location.state !== undefined && this.props.location.state.isLanguageMissing){
@@ -79,9 +82,8 @@ class ChooseLanguage extends React.Component{
     }
 
     selectLanguage(){
-        let language = document.getElementsByClassName('selectedLanguage')[0];
-        if(language){
-            this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}?language=${language.id}`);
+        if(this.state.language){
+            this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}?language=${this.state.language}`);
         }
     }
 
@@ -89,7 +91,9 @@ class ChooseLanguage extends React.Component{
         return(
             <tbody>
                 <tr>
-                    <td id='EN' className="selectableLanguage">English</td>
+                    <td id='EN' className="selectableLanguage">
+                        English
+                    </td>
                     <td id='DE' className="selectableLanguage">German</td>
                 </tr>
                 <tr>
