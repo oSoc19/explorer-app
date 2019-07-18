@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NODE_ENV === 'development' ? "https://localhost:5001/api":"http://165.22.197.214:8080/api";
+const BASE_URL = process.env.NODE_ENV === 'development' ? "https://localhost:5001/api":"https://api.story-api.be/api";
 
 class Api{
     static async getPaintingDetail(museumNumber, language){

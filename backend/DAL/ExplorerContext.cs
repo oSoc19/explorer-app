@@ -555,7 +555,7 @@ namespace backend.DAL
                     Width = (float) 228,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 1
+                    MuseumNumber = 22
                 },
                 new Painting
                 {
@@ -567,7 +567,7 @@ namespace backend.DAL
                     Width = (float) 255.5,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 2
+                    MuseumNumber = 23
                 },
                 new Painting
                 {
@@ -579,7 +579,7 @@ namespace backend.DAL
                     Width = (float) 222,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 3
+                    MuseumNumber = 26
                 },
                 new Painting
                 {
@@ -591,7 +591,7 @@ namespace backend.DAL
                     Width = (float) 59,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 4
+                    MuseumNumber = 27
                 },
                 new Painting
                 {
@@ -603,7 +603,7 @@ namespace backend.DAL
                     Width = (float) 94.2,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 5
+                    MuseumNumber = 28
                 },
                 new Painting
                 {
@@ -615,7 +615,7 @@ namespace backend.DAL
                     Width = (float) 83,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 6
+                    MuseumNumber = 29
                 },
                 new Painting
                 {
@@ -627,7 +627,7 @@ namespace backend.DAL
                     Width = (float) 240,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 7
+                    MuseumNumber = 24
                 },
                 new Painting
                 {
@@ -639,7 +639,7 @@ namespace backend.DAL
                     Width = (float) 63.5,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 8
+                    MuseumNumber = 25
                 },
                 new Painting
                 {
@@ -651,7 +651,7 @@ namespace backend.DAL
                     Width = (float) 275,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 9
+                    MuseumNumber = 30
                 }
             );
 
@@ -681,8 +681,12 @@ namespace backend.DAL
                     PaintingId = 1,
                     LanguageId = 3,
                     Name = "Wooded Landscape with Ford",
+<<<<<<< HEAD
                     Description = null,
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+=======
+                    Description = "View of a clearing in the woods, with market vendors and farmers, near a fordable place in a stream. On the other side of the water is a man with two horses. Through the trees one has a view on a distant, partially wooded background, where also people can be seen. The characters in the foreground seem to have been painted by Achtschellinck himself; they are clearly related to the figures of his contemporary David Teniers the Younger. The painting shows a similar in style to the other wooded landscapes of Lucas Achtschellinck in the collection of the Groeninge Museum (0000.GRO0001.I-0000.GRO0003.I, 0000.GRO0005.I). (H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, pp. 14)."
+>>>>>>> develop
                 },
                 new PaintingTranslation
                 {
@@ -708,8 +712,12 @@ namespace backend.DAL
                     PaintingId = 2,
                     LanguageId = 3,
                     Name = "Portrait of a Bruges family",
+<<<<<<< HEAD
                     Description = null,
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0181_I"
+=======
+                    Description = "The bourgeois ostentatiously points to the countryside to draw our attention to his possessions. The low point of view makes that the characters make an impressive impression. The family is unknown, but because of the recognizable silhouette of the city of Bruges, the family has to be situated in a Bruges context. The ages of the family members are unobtrusively integrated: with the man on the heel of his shoe (46), with the woman on her fan (26), with the little boy next to her in his hat (3), with the sitting girl on the pillow in her basket (15), with the young man on his boot (17), and with the child in the arms of the nanny on the piece of bread in her hands (1). From the large age difference between the husbands on the one hand, and the young age of the woman on the other hand, it can be deduced that the children have to come from two marriages. Probably only the two smallest children were born from the marriage with the woman depicted here. On the far left of the painting is a gardener with a spade over his shoulder, descending to the garden. As with most family portraits, this work contains an underlying symbolism, referring to love, purity and fertility, as conditions for a harmonious family life. In addition, the social status of the family is highlighted. (H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, pp. 194-195.)"
+>>>>>>> develop
                 },
                 new PaintingTranslation
                 {
@@ -735,8 +743,12 @@ namespace backend.DAL
                     PaintingId = 3,
                     LanguageId = 3,
                     Name = "Portrait of a Theologue and his Secretary",
+<<<<<<< HEAD
                     Description = null,
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0184_I"
+=======
+                    Description = "A theologian, probably a Jesuit, reads and comments on the council decisions. His secular secretary notes. On the left is the lectern, decorated with a sculpture of a Calvary group, and with part 36 of the collected council decrees on it. On the right a work table with a richly coloured tablecloth, on which the priest and the secretary are seated. On the table there are study attributes, such as a globe and a book. Behind it is a bookcase with biblical editions and literature in the field of theology, exegesis and ecclesiastical law. As is often the case, Van Oost is again inspired by the portraits of Anthony van Dyck. (H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 198; E. Tahon, in: musea@brugge, augustus 2003, pp. 13-14.)"
+>>>>>>> develop
                 },
                 new PaintingTranslation
                 {
@@ -762,8 +774,12 @@ namespace backend.DAL
                     PaintingId = 4,
                     LanguageId = 3,
                     Name = "Portrait of a Man",
+<<<<<<< HEAD
                     Description = null,
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0187_I"
+=======
+                    Description = "Bust of a man dressed in black in a three-quarter turn. Oval painting, framed in a rectangular frame. From the inscription on the back, this is a friend of the artist. (H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, pp. 208.)"
+>>>>>>> develop
                 },
                 new PaintingTranslation
                 {
@@ -789,8 +805,12 @@ namespace backend.DAL
                     PaintingId = 5,
                     LanguageId = 3,
                     Name = "Holy Trinity",
+<<<<<<< HEAD
                     Description = null,
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0374_I"
+=======
+                    Description = "God the Father, with tiara on his head, shows Christ, the Son, who ostentatiously shows his wounds. Above them floats the Holy Spirit, in the form of a dove. The iconography followed here has an old tradition: in the end it goes back to Dürer's print of the same name from 1511, which in turn reflects earlier Old Dutch prototypes. In the past, the painting was written successively as a work by Gerard Seghers, a copy after Rubens, by the hand of Nicolaas de Liemaeker, in connection with Abraham Janssens, and attributable to Joos de Momper. The most recent attribution shows that it came from the studio of the Antwerp painter Artus Wolffort. This is mainly based on the characteristic facial typing. There are different versions of this composition."
+>>>>>>> develop
                 },
                 new PaintingTranslation
                 {
@@ -816,8 +836,12 @@ namespace backend.DAL
                     PaintingId = 6,
                     LanguageId = 3,
                     Name = "Portrait of Fovin de Hasque",
+<<<<<<< HEAD
                     Description = null,
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO1346_I"
+=======
+                    Description = "The fencing master of the Bruges Guild of St Michael is shown here with a sword on his belt. With his right hand he holds the shaft of a halberd or a stand. The inscription reads: This is the image of Fovin d'Hasque Schermmeester van Brugghe vaillant / Die alhier ghebracht heeft de olie van [de] H. Walburgis uyt duytslant / 1670 (Translation: This is the image of Fovin d'Hasque vaillant van Brugge vaillant / Who brought the oil from Schermmeester van H. Walburgis from Germany to this place / 1670). The latter was done by De Hasque in 1669, at the request of the parish priests, chaplains and church masters of Sint-Walburga in Bruges. He died that same year. Possibly this portrait was painted on the occasion of his death. (H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 204.)"
+>>>>>>> develop
                 },
                 new PaintingTranslation
                 {
@@ -845,8 +869,12 @@ namespace backend.DAL
                     PaintingId = 7,
                     LanguageId = 3,
                     Name = "Achilles among the Daughters of Lycomedes",
+<<<<<<< HEAD
                     Description = null,
                     SourceLink = "http://groeningemuseum.be/collection/work/data/1991_GRO0007_I"
+=======
+                    Description = "Thetis was predicted that her son Achilles would be killed in the Trojan War. To avoid this fate, she hid him dressed as a woman at the court of King Lycomedes. For the Greek captains Odysseus and Diomedes, however, Achilles was indispensable. They found out about his hiding place, and with a trick they wanted to expose him. The two commanders gave gifts, including weapons, to the daughters of Lycomedes, including the dressed Achilles. Spontaneously Achilles grabbed a helmet and a sword, by which he betrayed himself. On the left in the foreground of the painting Odysseus and Diomedes are depicted. One of them grabs Achilles by the sleeve, as soon as he fits a helmet and grabs a weapon from the gifts that are in a basket on the right and around which the daughters of Lycomedes gather. The scene takes place on a terrace, with on the left a view of a garden. The Antwerp painter Erasmus Quellinus II belonged to a family of sculptors, painters, etchers and woodcarvers. He was a pupil and collaborator of Peter Paul Rubens, whom he succeeded as a city painter of Antwerp (H. Vlieghe, Stedelijke Musea Brugge. Catalogus Schilderijen 17de en 18de eeuw, Brugge, 1994, p. 143.)"
+>>>>>>> develop
                 },
                 new PaintingTranslation
                 {
@@ -872,8 +900,12 @@ namespace backend.DAL
                     PaintingId = 8,
                     LanguageId = 3,
                     Name = "Portrait of Samuel Crew",
+<<<<<<< HEAD
                     Description = null,
                     SourceLink = "http://groeningemuseum.be/collection/work/data/2012_GRO0001_I"
+=======
+                    Description = "This is an early portrait of Lely from 1650 of Samuel Crew, or his brother Nathaniel Crew, descendants of an important English family and both Protestant priests. Their father John Crew of Stene was a member of the English Parliament and served as Speaker of the House between 1623 and 1625. With this portrait Lely clearly wanted to meet the expectations of his client and his most important patron. With great virtuosity - in which reflections of the portrait art of Frans Hals can be recognised - Lely paints the clothing of the young gentleman (presumably Samuel), with great attention to the texture and the incidence of light on the black textile. The white shirt shines in the middle of the dark, rather sombre atmosphere of the painting. Only the face and hair are clearly emphasized by the incidence of light. Lely does not boldly show his model in the centre of the canvas, but positions the young man just out of the middle axis of the painting. In this way he avoids the formalism of portraits."
+>>>>>>> develop
                 },
                 new PaintingTranslation
                 {
@@ -1063,6 +1095,106 @@ namespace backend.DAL
                     Name = "El llamado de San Mateo",
                     Description = null,
                     SourceLink = null
+                }
+            );
+
+            modelBuilder.Entity<PaintingAudio>()
+            .HasData(
+                new PaintingAudio
+                {
+                    Id = 1,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/2605365f663a409689f5e4fb409ef06033f428359b984682b165594a41082bdc/browse.mp3",
+                    LanguageId = 2,
+                    PaintingId = 1
+                },
+                new PaintingAudio
+                {
+                    Id = 2,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3e8fb0bb92834c8b8f61e4c14a0a09fd4099d22acea84b15bb821ed373eef072/browse.mp3",
+                    LanguageId = 2,
+                    PaintingId = 7
+                },
+                new PaintingAudio
+                {
+                    Id = 3,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5447d829839d421ebc7cd543bdc5f06a242838ec18164dfd878bedda52e33c6e/browse.mp3",
+                    LanguageId = 2,
+                    PaintingId = 2
+                },
+                new PaintingAudio
+                {
+                    Id = 4,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5f7e3285958144f7aa133b0fdb17e88a2c50a93ebd834eab8a2797c369b99527/browse.mp3",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                new PaintingAudio
+                {
+                    Id = 5,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/344d1355bb884f6d9014b16286cf042ecf0e1656ab2043dc8e5ac7cd7773b9ad/browse.mp3",
+                    LanguageId = 1,
+                    PaintingId = 7
+                },
+                new PaintingAudio
+                {
+                    Id = 6,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/59817bb85c9e466a81744e8ffe1d7ff4034405a2da0a4ca9b2fc3545306816db/browse.mp3",
+                    LanguageId = 1,
+                    PaintingId = 2
+                },
+                new PaintingAudio
+                {
+                    Id = 7,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/48641ebd9e794a7a8fb2f579990e4af155eea4585d12466591e87f3fd3d5dd99/browse.mp3",
+                    LanguageId = 3,
+                    PaintingId = 1
+                },
+                new PaintingAudio
+                {
+                    Id = 8,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d6cc25006af94b7b8b749b30edfcb884bc05e0524da54a55ae15476bf049b0f6/browse.mp3",
+                    LanguageId = 3,
+                    PaintingId = 7
+                },
+                new PaintingAudio
+                {
+                    Id = 9,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f98ec09a7afa4264957cdaffb526d5d56daae87302ad4f20a099eac5371e6803/browse.mp3",
+                    LanguageId = 3,
+                    PaintingId = 2
+                },
+                new PaintingAudio
+                {
+                    Id = 10,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f5d86614bfca40e886bd131c4cc22e236c0eb61eeb7b41868fc60a4e6f0fed0e/browse.mp3",
+                    LanguageId = 4,
+                    PaintingId = 1
+                },
+                new PaintingAudio
+                {
+                    Id = 11,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ba8fa7ca81be44d4beb2c7151d2d3f9bad3428e0c5af4ad9a054d2df1301a609/browse.mp3",
+                    LanguageId = 4,
+                    PaintingId = 7
+                },
+                new PaintingAudio
+                {
+                    Id = 12,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/68a8083495404f51af3ef6cc65d28192fc390fb6e39d4fe682ba7de2178209e3/browse.mp3",
+                    LanguageId = 4,
+                    PaintingId = 2
                 }
             );
 

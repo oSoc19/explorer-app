@@ -4,7 +4,6 @@ import styles from './choose-language.module.css';
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 import Api from '../../services/api';
-import { isFor } from '@babel/types';
 
 class ChooseLanguage extends React.Component{
 
@@ -90,20 +89,20 @@ class ChooseLanguage extends React.Component{
         return(
             <tbody>
                 <tr>
-                    <td id='EN'>English</td>
-                    <td id='DE'>German</td>
+                    <td id='EN' className="selectableLanguage">English</td>
+                    <td id='DE' className="selectableLanguage">German</td>
                 </tr>
                 <tr>
-                    <td id='NL'>Nederlands</td>
-                    <td id='ES'>Espanol</td>
+                    <td id='NL' className="selectableLanguage">Nederlands</td>
+                    <td id='ES' className="selectableLanguage">Espanol</td>
                 </tr>
                 <tr>
-                    <td id='FR'>Français</td>
-                    <td id='IT'>Italiano</td>
+                    <td id='FR' className="selectableLanguage">Français</td>
+                    <td id='IT' className="selectableLanguage">Italiano</td>
                 </tr>
                 <tr>
-                    <td id='JA'>日本の</td>
-                    <td id='RU'>русский</td>
+                    <td id='JA' className="selectableLanguage">日本の</td>
+                    <td id='RU' className="selectableLanguage">русский</td>
                 </tr>
                 <tr>
                     <td></td>
