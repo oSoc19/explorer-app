@@ -16,6 +16,8 @@ class InfoSection extends React.Component{
                     <div className={`col-1 ${styles.line}`}></div>
                     <div className="col-10">
                         {this.props.content}
+                        <br></br>
+                        <a href={this.props.sourceLink}>{this.props.sourceLink}</a>
                     </div>
                 </div>
             </div>

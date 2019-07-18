@@ -9,7 +9,7 @@ class PaitingStory extends React.Component{
     render(){
         return (
             <div className={styles.container}>
-                <img className="img-fluid" src={`${BASE_URL}${this.props.story.imageUrl}`}/>
+                <img className="img-fluid" src={`${this.props.story.imageUrl}`}/>
                 <div className={styles.text}>
                     <div className={styles.content}>
                         <span id={styles.movement}>{this.props.story.title.toUpperCase()}</span>

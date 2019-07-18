@@ -41,10 +41,12 @@ class PaintingDetail extends React.Component{
         this.changeLanguage = this.changeLanguage.bind(this);
         this.addLanguages = this.addLanguages.bind(this);
         this.selectLanguage = this.selectLanguage.bind(this);
+        
     }
 
     async componentWillMount(){
         let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, queryString.parse(this.props.location.search).language);
+        console.log(dataJSON)
         if(dataJSON.status === 404){
             this.props.history.push({
                 pathname : `/choose-painting?language=${queryString.parse(this.props.location.search).language}`,
@@ -184,25 +186,25 @@ class PaintingDetail extends React.Component{
                     <div className="container">
 
                         <div className={styles.content}>
-                            <InfoSection maxLength={150} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
+                            <InfoSection sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
                         </div>
 
                         <hr id={`Movement-${this.props.match.params.id}`}></hr>
 
                         <div className={styles.content}>
-                            <InfoSection storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
+                            <InfoSection  sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                         </div>
 
                         <hr id={`Technique-${this.props.match.params.id}`}></hr>
 
                         <div className={styles.content}>
-                            <InfoSection storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
+                            <InfoSection sourceLink={this.state.data.technique.translations[0].sourceLink} storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
                         </div>
 
                         <hr></hr>
 
                         <div id="Artwork" className={styles.content}>
-                            <InfoSection storyTitle="About the artwork" content={this.state.data.translations[0].description}></InfoSection>
+                            <InfoSection sourceLink={this.state.data.translations[0].sourceLink} storyTitle="About the artwork" content={this.state.data.translations[0].description}></InfoSection>
                         </div>
 
                         <hr></hr>
