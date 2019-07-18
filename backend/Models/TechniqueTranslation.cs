@@ -15,5 +15,6 @@ namespace backend.Models
         public virtual Technique Technique {get;set;}
         [ForeignKey("LanguageId")]
         public virtual Language Language {get;set;}
+        public String SourceLink {get;set;}
     }
 }

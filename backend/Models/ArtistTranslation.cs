@@ -15,5 +15,7 @@ namespace backend.Models
         [ForeignKey("LanguageId")]
         public virtual Language Language {get;set;}
 
+        public String SourceLink {get;set;}
+
     }
 }

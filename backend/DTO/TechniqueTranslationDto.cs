@@ -8,5 +8,7 @@ namespace backend.dto
         public String Name {get;set;}
         public String Description {get;set;}
         public virtual LanguageDto Language {get;set;}
+
+        public String SourceLink {get;set;}
     }
 }
