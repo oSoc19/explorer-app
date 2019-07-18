@@ -51,7 +51,8 @@ class ChoosePainting extends React.Component{
     }
 
     removeNumber(){
-        document.getElementById("paintingNumber").innerHTML = document.getElementById("paintingNumber").innerHTML.slice(0,-1);
+        if(document.getElementById("paintingNumber").innerHTML !== this.state.placeholder)
+            document.getElementById("paintingNumber").innerHTML = document.getElementById("paintingNumber").innerHTML.slice(0,-1);
         if(document.getElementById("paintingNumber").innerHTML === ""){
             document.getElementById("paintingNumber").innerHTML = this.state.placeholder;
             this.setState({isEmpty : true});
