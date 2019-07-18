@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190718113103_stories-imports")]
+    partial class storiesimports
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1489,7 +1491,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 73L,
-                            ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1499,7 +1501,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 74L,
-                            ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos du mouvement",
@@ -1509,7 +1511,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 75L,
-                            ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos de la technique",
@@ -1519,7 +1521,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 76L,
-                            ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over het kunstwerk",
@@ -1529,7 +1531,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 77L,
-                            ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over de stijlperiode",
@@ -1539,7 +1541,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 78L,
-                            ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over de techniek",
@@ -1549,7 +1551,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 79L,
-                            ImageUrl = "/api/images/painting-stories/5_ART@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the artwork",
@@ -1559,7 +1561,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 80L,
-                            ImageUrl = "/api/images/painting-stories/5_MOV@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the movement",
@@ -1569,7 +1571,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 81L,
-                            ImageUrl = "/api/images/painting-stories/5_TECH@2x-100.jpg",
+                            ImageUrl = "/api/images/painting-stories/",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the technique",
