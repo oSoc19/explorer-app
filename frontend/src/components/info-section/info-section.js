@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './info-section.module.css';
+import Translation from '../../services/translation';
 
 class InfoSection extends React.Component{
 
@@ -17,7 +18,7 @@ class InfoSection extends React.Component{
                     <div className="col-10">
                         {this.props.content}
                         <br></br>
-                        <a href={this.props.sourceLink}>{this.props.sourceLink}</a>
+                        <a href={this.props.sourceLink}>{Translation.Translate("learnMore")}</a>
                     </div>
                 </div>
             </div>

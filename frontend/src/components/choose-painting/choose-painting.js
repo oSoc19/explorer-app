@@ -26,11 +26,11 @@ class ChoosePainting extends React.Component{
     
     componentDidMount(){
         if(this.props.location.state !== undefined)
-            this.addNotification(Translation.Translate("paintingNotFound"));
+            this.addNotification(`${Translation.Translate("paintingNotFound")} ${this.props.location.state.paintingNumber}, ${Translation.Translate("tryAgain")}`);
     }
 
-    routeChange(event){
-        if(document.getElementById("paintingNumber").innerHTML !== this.state.placeholder){
+    async routeChange(event){
+        if(document.getElementById("paintingNumber").innerHTML !== this.state.placeholder){                
             this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").innerHTML}?language=${queryString.parse(this.props.location.search).language}`);
             window.location.reload();
         }
@@ -116,7 +116,7 @@ class ChoosePainting extends React.Component{
                                 <tr>
                                     <td onClick={this.removeNumber}><i className="material-icons">&#xe14a;</i></td>
                                     <td onClick={this.updateInput('0')}>0</td>
-                                    <td onClick={this.routeChange}><i className="material-icons">&#xe5cc;</i></td>
+                                    <td onClick={this.routeChange}><i className="material-icons search">&#xe5cc;</i></td>
                                 </tr>
                             </tbody>
                         </table>

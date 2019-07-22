@@ -1,12 +1,12 @@
 {
     "missingLanguage" : {
-        "EN" : "The resource you requested is not available in the selected language",
-        "FR" : "La ressource que vous avez demandé n'est pas disponible dans la langue sélectionnée",
-        "IT" : "La risorsa richiesta non è disponibile nella lingua selezionata",
-        "DE" : "Die von Ihnen angeforderte Ressource ist in der ausgewählten Sprache nicht verfügbar",
+        "EN" : "As culture should be accessible to all, we would love you to learn in english too. That’s why we are currently working on the translation.",
+        "FR" : "La culture devant être accessible à tous, nous aimerions que vous appreniez également en français. C’est pourquoi nous travaillons actuellement sur la traduction.",
+        "IT" : "Perché la cultura dovrebbe essere accessibile a tutti, vorremo insegnarvela anche in italiano. Ed è per questo che stiamo attualmente lavorando sulla traduzione.",
+        "DE" : "Da Kultur für alle zugänglich sein soll, möchten wir, dass Sie auch auf Deutsch lernt/lernen. Deswegen arbeiten wir gerade an der Übersetzung.",
         "NL" : "De bron die u hebt opgevraagd, is niet beschikbaar in de geselecteerde taal",
-        "ES" : "El recurso solicitado no está disponible en el idioma seleccionado",
-        "JA" : "要求されたリソースは選択された言語では利用できません。",
+        "ES" : "Dado que la cultura debe ser accesible para todos, nos encantaría que pudieras aprender sobre cultura en español también. Es por eso que estamos trabajando en su traducción.",
+        "JA" : "文化は共有すべきものだと思いますので、皆さんが日本語で勉強になれるようにしたいです。その為、現在、日本語の翻訳に取り組んでいます。",
         "RU" : "Запрашиваемый ресурс недоступен на выбранном языке"
     },
     "changeLanguage" : {
@@ -40,14 +40,24 @@
         "RU" : "Введите номер"
     },
     "paintingNotFound":{
-        "EN" : "This painting does not exist",
-        "FR" : "Ce tableau n'existe pas",
-        "IT" : "Questo dipinto non esiste",
-        "DE" : "Dieses Gemälde existiert nicht",
-        "NL" : "Dit schilderij bestaat niet",
-        "ES" : "Esta pintura no existe",
-        "JA" : "この絵は存在しません",
-        "RU" : "Эта картина не существует"
+        "EN" : "We could not find anything for",
+        "FR" : "ous n'avons rien pu trouver pour",
+        "IT" : "Non abbiamo trovato nulla per",
+        "DE" : "Wir konnten nichts dafür finden",
+        "NL" : "We konden er niets voor vinden",
+        "ES" : "No pudimos encontrar nada para",
+        "JA" : "何も見つからなかった",
+        "RU" : "Мы не могли ничего найти для"
+    },
+    "tryAgain":{
+        "EN":"Please enter another code",
+        "FR":"Veuillez entrer un autre code",
+        "IT":"Per favore inserisci un altro codice",
+        "DE":"Bitte geben Sie einen anderen Code ein",
+        "NL":"Voer een andere code in",
+        "ES":"Por favor ingrese otro código",
+        "JA":"別のコードを入力してください",
+        "RU":"Пожалуйста, введите другой код"
     },
     "readMore" : {
         "EN" : "Read more",
@@ -128,5 +138,15 @@
         "ES" : "tamaño",
         "JA" : "サイズ",
         "RU" : "Размер"
+    },
+    "learnMore":{
+        "NL":"Leer meer",
+        "EN":"Learn more",
+        "FR":"En apprendre plus",
+        "IT":"Per saperne di più",
+        "DE":"Mehr erfahren",
+        "ES":"Aprende más",
+        "JA":"もっと詳しく知る",
+        "RU":"Учить больше"
     }
 }
