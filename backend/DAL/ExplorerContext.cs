@@ -1565,7 +1565,7 @@ namespace backend.DAL
                     Subtitle = "over het kunstwerk",
                     Text = "De schilder was onbekend tot in de jaren 1970 ze beschouwden het een werk van Rubens. Later bleek het een schilderij te zijn door Artus Wolfordt, na een reconstructie van een van zijn kunstwerken ‘badende vrouwen’",
                     ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
-                    LanguageId = 1,
+                    LanguageId = 2,
                     PaintingId = 5
                 },
                 new PaintingStory
@@ -1575,7 +1575,7 @@ namespace backend.DAL
                     Subtitle = "over de stijlperiode",
                     Text = "Het schilderen van religieuze scènes werd gebruikt om de ongeletterde bevolking het verhaal te doen begrijpen",
                     ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
-                    LanguageId = 1,
+                    LanguageId = 2,
                     PaintingId = 5
                 },
                 new PaintingStory
@@ -1585,7 +1585,7 @@ namespace backend.DAL
                     Subtitle = "over de techniek",
                     Text = "Schilders beginnen te experimenteren met de dikte van de verf om het licht te accentueren",
                     ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
-                    LanguageId = 1,
+                    LanguageId = 2,
                     PaintingId = 5
                 },
                 new PaintingStory
@@ -1595,7 +1595,7 @@ namespace backend.DAL
                     Subtitle = "about the artwork",
                     Text = "The painter was unknown until the 1970’s and thought to be by Rubens. It was later found to be painted by Artus Wolfordt, after a reconstruction on one of his artwork “Women bathing” from this",
                     ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
-                    LanguageId = 1,
+                    LanguageId = 3,
                     PaintingId = 5
                 },
                 new PaintingStory
@@ -1605,7 +1605,7 @@ namespace backend.DAL
                     Subtitle = "about the movement",
                     Text = "Painting of religious scenes was used for religious instruction for the illiterate population",
                     ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
-                    LanguageId = 1,
+                    LanguageId = 3,
                     PaintingId = 5
                 },
                 new PaintingStory
@@ -1615,7 +1615,7 @@ namespace backend.DAL
                     Subtitle = "about the technique",
                     Text = "Painters start to experiment with the thickness of the paint to accentuate the light",
                     ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
-                    LanguageId = 1,
+                    LanguageId = 3,
                     PaintingId = 5
                 },
                 new PaintingStory
