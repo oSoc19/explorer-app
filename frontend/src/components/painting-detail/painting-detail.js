@@ -7,7 +7,6 @@ import AudioPlayer from "react-h5-audio-player";
 import Api from '../../services/api';
 import { css } from '@emotion/core';
 import InfoSection from '../info-section/info-section';
-import queryString from 'query-string'
 import Translation from '../../services/translation';
 import PaintingStory from '../painting-story/painting-story';
 import ReactNotification from "react-notifications-component";
@@ -17,14 +16,6 @@ const override = css`
     margin: 0 auto;
     border-color: red;
 `;
-
-const images = [
-    {
-        url : "https://via.placeholder.com/500",
-        content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod metus ut quam tincidunt finibus. Ut purus tortor, semper convallis hendrerit sed, viverra in arcu. Sed aliquam velit nec nunc rhoncus euismod. Ut eget condimentum magna, vitae aliquam velit. Nullam gravida dolor eleifend interdum varius. Nulla fermentum dictum neque, et feugiat ligula fermentum eu. Curabitur a iaculis neque, eu vulputate urna. Donec elit turpis, consequat ut ligula sit amet, congue porta augue. Nulla turpis nunc, tempor in fringilla ac, pulvinar vitae orci. Vestibulum vel iaculis magna. Morbi in orci vitae justo porta pretium vel sed dui. Sed lobortis tellus et sapien pretium, eu maximus lorem imperdiet. Ut ut diam dolor. Duis nec turpis massa.",
-        storyTitle : "Baroque 0"
-    }
-];
 
 class PaintingDetail extends React.Component{
 
@@ -45,10 +36,10 @@ class PaintingDetail extends React.Component{
     }
 
     async componentWillMount(){
-        let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, queryString.parse(this.props.location.search).language);
+        let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, localStorage.getItem("language"));
         if(dataJSON.status === 404){
             this.props.history.push({
-                pathname : `/choose-painting?language=${queryString.parse(this.props.location.search).language}`,
+                pathname : `/choose-painting`,
                 state:{notFound : true, paintingNumber : this.props.match.params.id}
             });
             window.location.reload();
@@ -73,7 +64,7 @@ class PaintingDetail extends React.Component{
     }
 
     goBackToSelection(){
-        this.props.history.push(`/choose-painting?language=${queryString.parse(this.props.location.search).language}`);
+        this.props.history.push(`/choose-painting?}`);
     }
 
     changeLanguage(isLanguageMissing){
@@ -96,7 +87,7 @@ class PaintingDetail extends React.Component{
             lan.onclick = ()=>{
                 this.selectLanguage(this.state.availableLanguages[i].code);
             }
-            lan.id = this.state.availableLanguages[i].code;
+            lan.id = `${localStorage.getItem("language")}-missing-${this.state.availableLanguages[i].code}`;
             lan.innerHTML = this.state.availableLanguages[i].name;
             if(i%2 === 0){
                 line = document.createElement("tr");
@@ -107,7 +98,8 @@ class PaintingDetail extends React.Component{
     }
 
     selectLanguage(language){
-        this.props.history.push(`/paintings/detail/${this.props.match.params.id}?language=${language}`);
+        localStorage.setItem("language",language);
+        this.props.history.push(`/paintings/detail/${this.props.match.params.id}`);
         window.location.reload();
     }
 
@@ -146,10 +138,10 @@ class PaintingDetail extends React.Component{
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className={`collapse navbar-collapse ${styles.fontColor}`} id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item" onClick={this.goBackToSelection}>
-                                <i className="material-icons">&#xe5cb;</i>
+                                <i className={styles.materialIcon}>&#xe5cb;</i>
                             </li>
                         </ul>
                         <ul className="navbar-nav mx-auto">
@@ -163,56 +155,51 @@ class PaintingDetail extends React.Component{
                                 <a className="nav-link" id="TechniqueLink" href={`#Technique-${this.props.match.params.id}`}>{Translation.Translate("technique")}</a>
                             </li>
                         </ul>
-                        {/* <ul className="navbar-nav ml-auto">
-                            <li className="nav-item" onClick={()=>this.changeLanguage(false)}>
-                                <i className="material-icons">&#xe8e2;</i>
-                            </li>
-                        </ul> */}
                     </div>
                 </nav>
 
                 <div className={styles.body}>
                     <div>
-                        <AliceCarousel mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
+                        <AliceCarousel autoPlayInterval={15000} autoPlay={true} mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
                             {
                                 this.state.data.stories.map(s => <PaintingStory key={s.id} story={s}></PaintingStory>)
                             }
                         </AliceCarousel>
                     </div>
 
-                    <hr id={`Artist-${this.props.match.params.id}`}></hr>
-
-                    <div className="container">
+                    <div id={`Artist-${this.props.match.params.id}`} className="container">
 
                         <div className={styles.content}>
-                            <InfoSection sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
+                            <InfoSection type="artist" sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr id={`Movement-${this.props.match.params.id}`}></hr>
+                        <hr id={`Movement-${this.props.match.params.id}`} className={styles.separation}></hr>
 
                         <div className={styles.content}>
-                            <InfoSection  sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
+                            <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr id={`Technique-${this.props.match.params.id}`}></hr>
+                        <hr id={`Technique-${this.props.match.params.id}`} className={styles.separation}></hr>
 
                         <div className={styles.content}>
-                            <InfoSection sourceLink={this.state.data.technique.translations[0].sourceLink} storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
+                            <InfoSection type="technique" sourceLink={this.state.data.technique.translations[0].sourceLink} storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr></hr>
+                        <hr className={styles.separation}></hr>
 
                         <div id="Artwork" className={styles.content}>
-                            <InfoSection sourceLink={this.state.data.translations[0].sourceLink} storyTitle="About the artwork" content={this.state.data.translations[0].description}></InfoSection>
+                            <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={Translation.Translate("aboutArtwork")} content={this.state.data.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr></hr>
+                        <hr className={styles.separation}></hr>
 
                         <div id="Info" className={`${styles.content}`}>
                             <h5 className={styles.title}>Info</h5>
                             <div className={`row ${styles.infoSection}`}>
-                                <div className={`col-1 ${styles.line}`}></div>
-                                <div className="col">
+                                <div className={`col-2`}>
+                                    <div className={styles.line}></div>
+                                </div>
+                                <div className="col-10">
                                     <table className={`table table-borderless ${styles.paintDetails}`}>
                                         <tbody>
                                             <tr>

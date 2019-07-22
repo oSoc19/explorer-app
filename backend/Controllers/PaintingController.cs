@@ -48,7 +48,7 @@ namespace backend.Controllers
 
         [HttpGet]
         [Route("api/painting/museum/{paintingNumber}")]
-        public ActionResult<Painting> GetPaintingByMuseumNumber(long paintingNumber, string language)
+        public ActionResult<Painting> GetPaintingByMuseumNumber(string paintingNumber, string language)
         {
             Painting painting = _paintingDataAccess.GetPaintingByMuseumNumber(paintingNumber);
             if (painting == null){

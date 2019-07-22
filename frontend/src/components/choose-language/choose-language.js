@@ -4,9 +4,6 @@ import styles from './choose-language.module.css';
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 import Api from '../../services/api';
-import {Link} from 'react-router-dom';
-
-const PAINTING_SELECTION_PAGE = "/choose-painting";
 
 class ChooseLanguage extends React.Component{
 
@@ -32,7 +29,8 @@ class ChooseLanguage extends React.Component{
     }
 
     selectLanguage(language){
-        this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}?language=${language}`);
+        localStorage.setItem("language", language);
+        this.props.history.push(`/${this.props.location.state === undefined? 'choose-painting' : this.props.location.state.previousUrl}`);
     }
 
     renderAllLanguages(){

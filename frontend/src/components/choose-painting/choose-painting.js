@@ -13,7 +13,6 @@ class ChoosePainting extends React.Component{
         super(props);
         this.state = {
             isEmpty : true,
-            language : queryString.parse(this.props.location.search).language
         };
         this.state.placeholder = Translation.Translate("placeholder");
 
@@ -27,11 +26,12 @@ class ChoosePainting extends React.Component{
     componentDidMount(){
         if(this.props.location.state !== undefined)
             this.addNotification(`${Translation.Translate("paintingNotFound")} ${this.props.location.state.paintingNumber}, ${Translation.Translate("tryAgain")}`);
+        document.getElementById("paintingNumber").addEventListener('focus',(evt)=>evt.target.blur());
     }
 
     async routeChange(event){
         if(document.getElementById("paintingNumber").innerHTML !== this.state.placeholder){                
-            this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").innerHTML}?language=${queryString.parse(this.props.location.search).language}`);
+            this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").value}`);
             window.location.reload();
         }
         else{
@@ -41,22 +41,16 @@ class ChoosePainting extends React.Component{
 
     updateInput(number){
         return () => {
-            let input = document.getElementById("paintingNumber").innerHTML;
-            if(input === this.state.placeholder){
-                input = "";
+            let input = document.getElementById("paintingNumber").value;
+            if(input.length === 0){
                 this.setState({isEmpty : false});
             }
-            document.getElementById("paintingNumber").innerHTML = input+number;
+            document.getElementById("paintingNumber").value = input+number;
         }
     }
 
     removeNumber(){
-        if(document.getElementById("paintingNumber").innerHTML !== this.state.placeholder)
-            document.getElementById("paintingNumber").innerHTML = document.getElementById("paintingNumber").innerHTML.slice(0,-1);
-        if(document.getElementById("paintingNumber").innerHTML === ""){
-            document.getElementById("paintingNumber").innerHTML = this.state.placeholder;
-            this.setState({isEmpty : true});
-        }
+        document.getElementById("paintingNumber").value = document.getElementById("paintingNumber").value.slice(0,-1);
     }
 
     isInputEmpty(){
@@ -82,12 +76,7 @@ class ChoosePainting extends React.Component{
                 <ReactNotification ref={this.notificationDOMRef} />
                 <img src={Logo} className="bruggeLogo"></img>
                 <div className={styles.choose}>
-                    <label>
-                        {Translation.Translate('choosePainting')}
-                    </label>
-                    <div  className={styles.input}>
-                        <span id="paintingNumber" className={this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent}>{this.state.placeholder}</span>
-                    </div>
+                    <input type="text" placeholder="Enter a code" id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>
                     <div className="table-responsive-sm">
                         <table className="table table-borderless">
                         <thead>
@@ -98,6 +87,11 @@ class ChoosePainting extends React.Component{
                             </tr>
                         </thead>
                             <tbody>
+                                <tr>
+                                    <td onClick={this.updateInput('A')}>A</td>
+                                    <td onClick={this.updateInput('B')}>B</td>
+                                    <td onClick={this.updateInput('C')}>C</td>
+                                </tr>
                                 <tr>
                                     <td onClick={this.updateInput('1')}>1</td>
                                     <td onClick={this.updateInput('2')}>2</td>

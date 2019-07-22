@@ -5,7 +5,6 @@ html, body{
 
 .App {
   text-align: center;
-  margin-top:20px;
 }
 
 .App-logo {
@@ -65,4 +64,8 @@ html, body{
 
 .bruggeLogo{
   margin-top : 20px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color : #1D1E1F !important;
 }

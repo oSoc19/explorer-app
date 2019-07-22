@@ -6,6 +6,9 @@ font-size: 17px;
 
 .paintDetails td{
 padding : 0px;
+font-size: 1rem;
+padding-bottom: 1rem;
+margin-top:20px;
 }
 
 .paintDetails>tbody>tr>:first-child{
@@ -112,20 +115,22 @@ padding: 0px;
 }
 
 .infoSection{
-    padding : 0px 25px;
+    padding : 0px 5px;
     font-family: 'Montserrat';
     
 }
 
 .navBackground{
     background-color : #F9F6F2 !important;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    box-shadow: 0px 0px 20px 0px #8888;
 }
 
 .line{
     background-color: #1D5748;
-    width: 5.8rem;
+    width: 1.5rem;
     height: 0.1rem;
-    /* margin-top */
 }
 
 .changeLanguage{
@@ -156,4 +161,23 @@ padding: 0px;
 #missingSentence{
     display: block;
     margin-bottom: 50px;
+}
+
+.materialIcon{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+
+.separation{
+    margin-top:2rem !important;
+    margin-bottom: 2rem !important;
 }

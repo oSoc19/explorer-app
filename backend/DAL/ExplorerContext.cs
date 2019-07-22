@@ -567,7 +567,7 @@ namespace backend.DAL
                     Width = (float) 228,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 22
+                    MuseumCode = "22"
                 },
                 new Painting
                 {
@@ -579,7 +579,7 @@ namespace backend.DAL
                     Width = (float) 255.5,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 23
+                    MuseumCode = "23"
                 },
                 new Painting
                 {
@@ -591,7 +591,7 @@ namespace backend.DAL
                     Width = (float) 222,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 26
+                    MuseumCode = "26"
                 },
                 new Painting
                 {
@@ -603,7 +603,7 @@ namespace backend.DAL
                     Width = (float) 59,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 27
+                    MuseumCode = "27"
                 },
                 new Painting
                 {
@@ -615,7 +615,7 @@ namespace backend.DAL
                     Width = (float) 94.2,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 28
+                    MuseumCode = "28"
                 },
                 new Painting
                 {
@@ -627,7 +627,7 @@ namespace backend.DAL
                     Width = (float) 83,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 29
+                    MuseumCode = "29"
                 },
                 new Painting
                 {
@@ -639,7 +639,7 @@ namespace backend.DAL
                     Width = (float) 240,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 24
+                    MuseumCode = "24"
                 },
                 new Painting
                 {
@@ -651,7 +651,7 @@ namespace backend.DAL
                     Width = (float) 63.5,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 25
+                    MuseumCode = "25"
                 },
                 new Painting
                 {
@@ -663,7 +663,7 @@ namespace backend.DAL
                     Width = (float) 275,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumNumber = 30
+                    MuseumCode = "30"
                 }
             );
 

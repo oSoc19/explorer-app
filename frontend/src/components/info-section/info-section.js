@@ -14,11 +14,13 @@ class InfoSection extends React.Component{
             <div>
                 <h5 className={styles.title}>{this.props.storyTitle}</h5>
                 <div className={`row ${styles.content}`}>
-                    <div className={`col-1 ${styles.line}`}></div>
-                    <div className="col-10">
+                    <div className={`col-2`}>
+                        <div className={`${styles.line}`}></div>
+                    </div>
+                    <div className={`col-10 ${styles.infos}`}>
                         {this.props.content}
                         <br></br>
-                        <a href={this.props.sourceLink} target="_blank">{Translation.Translate("learnMore")}</a>
+                        <a className={`${styles.link} link-to-${this.props.type}`} href={this.props.sourceLink} target="_blank">{Translation.Translate("learnMore")}</a>
                     </div>
                 </div>
             </div>

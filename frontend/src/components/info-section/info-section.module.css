@@ -1,17 +1,29 @@
 .content{
-    padding : 0px 25px;
+    padding : 0px 5px;
     font-family: 'Montserrat';
     word-wrap: break-word;
 }
 
 .title{
-    font-weight: bold;
+    font-weight: 500;
     font-family: miller-display,seruif;
     color : #1D1E1F !important;
 }
 
 .line{
     background-color: #1D5748;
-    width: 5.8rem;
+    width: 1.5rem;
     height: 0.1rem;
+}
+
+.infos{
+    padding-left : 0px;
+    padding-right: 25px;
+}
+
+.link{
+    color : #1D5748;
+    font-family: 'Montserrat';
+    line-height: 2px;
+    border-bottom: 1px solid;
 }
