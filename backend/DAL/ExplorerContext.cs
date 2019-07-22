@@ -166,20 +166,21 @@ namespace backend.DAL
                 {
                     Id = 5,
                     ArtistId = 2,
-                    LanguageId = 2,
-                    Description = "Van Oost was de telg van een uitgebreide Brugse schildersfamilie. Na zijn eerste opleiding, waarschijnlijk bij zijn broer Frans van Oost, verbleef hij in Italië van 1621 tot 1628. Vanaf 1651 bekleedde hij de functie van stadsschilder."
-                        + "Zijn oeuvre is sterk beïnvloed door Caravaggio en de Italiaanse meesters, alsook door Vlaamse kunstenaars als Rubens, Antoon van Dyck en Gaspard de Crayer. Zijn voornaamste werken zijn portretten en religieuze taferelen. Ze worden gekenmerkt door licht-donker-effecten, de realistische voorstelling van de figuren, de persoonlijke kleuren en de stillevenelementen. Boven het hoogaltaar van de Sint-Agathakerk te Landskouter is zijn De verrijzenis van Jezus te zien."
-                        + "Jacob van Oost was getrouwd met Jacquemine van Overdille. Ze kregen een zoon, Martinus. Hij hertrouwde met Maria Tollenaere en ze kregen zes kinderen. Zijn zonen Jacob II van Oost (1639-1713) en Willem van Oost (1651-1686) werden eveneens kunstschilder."
-                        + "Er werd een gedenkplaat aangebracht aan zijn woning, Wapenmakersstraat 3 in Brugge. Brugge heeft ook een Jakob van Ooststraat.",
-                    SourceLink = "https://nl.wikipedia.org/wiki/Jacob_I_van_Oost"
+                    LanguageId = 3,
+                    Description = "Jacob van Oost I is a Bruges painter and draftsman and probably a student of his brother Frans van Oost (died 1625). Van Oost is viewed as the most important 17th-century painter from Bruges. He makes portraits for the Bruges bourgeois and history paintings, but is primarily known for the altarpieces that he makes in the spirit of the Counter Reformation. The painter is strongly influenced by the Caravaggio effects that he learns in Italy. From the work of Caravaggio (1571-1610) he takes over the chiaroscuro as well as the non-idealised figures."
+                        +"After this, an evolution follows towards more monumental figures and a rather classicist treatment that is in line with the work of Annibale Carracci (1560-1690) and Domenichino (1581-1641)."
+                        +"After about 1650, a greater emotionality surfaces in his work, together with the dramatic spatial effects and a palette that is related to Venetian art. In this period, van Oost is influenced by Federico Barocci (1528-35-1612), Correggio (ca. 1489-1534) and Anthony van Dyck (1599-1641). A masterpiece in his oeuvre is Portrait of a Bruges Family (Groeninge Museum, Bruges).",
+                    SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/jacob-van-oost-i"
                 },
                 new ArtistTranslation
                 {
                     Id = 6,
                     ArtistId = 2,
-                    LanguageId = 3,
-                    Description = "Jacob van Oost or Jacob van Oost the Elder (1603–1671) was a Flemish painter of history paintings and portraits. He was the most important painter of Bruges in the 17th century through his portraits of members of the local bourgeois and his many altarpieces made in the spirit of the Counter Reformation. He also created genre paintings of musicians and card players for the open market.",
-                    SourceLink = "https://en.wikipedia.org/wiki/Jacob_van_Oost"
+                    LanguageId = 2,
+                    Description = "Jacob van Oost I is een Brugse schilder en tekenaar, en waarschijnlijk een leerling van zijn broer Frans van Oost (gestorven 1625). Van Oost wordt beschouwd als de belangrijkste zeventiende-eeuwse schilder van Brugge. Hij vervaardigt portretten voor de Brugse burgerij en historiestukken, maar staat vooral bekend om de altaarstukken die hij maakt in de geest van de contrareformatie. De schilder wordt sterk beïnvloed door het caravaggisme dat hij in Italië leert kennen. Het clair-obscur, maar ook de niet-geïdealiseerde figuren neemt hij uit het werk van Caravaggio (1571-1610) over."
+                        +"Daarna volgt een evolutie naar meer monumentale figuren en een eerder classicistische behandeling die aansluit bij het werk van Annibale Carracci (1560-1690) en Domenichino (1581-1641)."
+                        +"Na circa 1650 duikt een grotere emotionaliteit in zijn werk op, samen met dramatische ruimtelijke effecten en een aan de Venetiaanse kunst verwant coloriet. Van Oost wordt in deze periode beïnvloed door Federico Barocci (1528-35-1612), Correggio (Circa 1489-1534) en Anthony van Dyck (1599-1641). Een meesterwerk in zijn oeuvre is Portret van een Brugse familie (Groeningemuseum, Brugge).",
+                    SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/jacob-van-oost-i"
                 },
                 new ArtistTranslation
                 {
@@ -250,17 +251,28 @@ namespace backend.DAL
                     Id = 13,
                     ArtistId = 5,
                     LanguageId = 2,
-                    Description = "Erasmus Quellinus II (Antwerpen, 19 november 1607 - aldaar, 7 november 1678), ook genoemd Erasmus de Jonge, was een bekende Brabantse kunstschilder en kopergraveur uit de Antwerpse kunstenaarsfamilie Quellinus. Hij was de zoon van de beeldhouwer Erasmus Quellinus I. Hij werkte vaak samen met Daniël Seghers. Een van hun gezamenlijke werken hangt in de Pinacoteca Nazionale te Bologna."
-                        +"Erasmus werd geboren in een familie van kunstenaars, hoofdzakelijk beeldhouwers, maar koos als beroep voor het schilderen. Hij had het geluk om één van Peter Paul Rubens' vele leerlingen te worden en vervolgens een van zijn naaste medewerkers. Na zijn opleiding bij Rubens in de jaren 1633 - 1634 werd Erasmus Quellinus II meesterschilder in het Antwerpse Sint-Lucasgilde. Hij was zeer erudiet wat zich manifesteerde in zijn verzorgde stijl en zijn veelzijdige activiteiten. Zijn grondige kennis van de mythologie en filosofie kwam tot uiting in vele van zijn werken. Zijn gevarieerde productie droeg veel bij aan de artistieke uitstraling van Antwerpen.",
-                    SourceLink = "https://nl.wikipedia.org/wiki/Erasmus_Quellinus_II"
+                    Description = "Erasmus Quellinus II is een Antwerpse schilder, tekenaar, graveur en ontwerper van tapijten. Hij stamt uit een kunstenaarsfamilie. Zijn vader is de beeldhouwer Erasmus Quellinus I (1584-1640). Hij is de broer van beeldhouwer Artus Quellinus I (1609-1668) en de graveur Hubertus Quellinus (1619-1687). Quellinus is de vader en de leermeester van de schilder Jan Erasmus Quellinus (1634-1715)."
+                        +"Quellinus is een pictor doctus en in die zin vergelijkbaar met Peter Paul Rubens met wie hij vaak samenwerkt in de jaren 1630 en door wie hij beïnvloed wordt. Beiden bezitten een uitgebreide bibliotheek en kunstverzameling. In de geest van het humanisme schrijft Quellinus het filosofisch traktaat Philosophiae, dat niet overgeleverd is. De kunstenaar zou ook een academische graad in de filosofie behaald hebben."
+                        +"Quellinus is verantwoordelijk voor het ontwerp en deels voor de uitvoering van belangrijke decoratieve programma's in het kader van officiële huldigingen in Antwerpen. De kunstenaar werkt ook samen met stillevenspecialisten, onder wie de bloemenschilder Daniël Seghers (1590-1661)."
+                        +"Erasmus Quellinus II vervaardigt vele altaarstukken die in de invloedssfeer van de contrareformatie moeten geplaatst worden, maar ook historiestukken en mythologische en allegorische schilderijen. Niettegenstaande de grote invloed van Rubens ontwikkelt Quellinus vroeg in zijn carrière een eigen stijl met sterk door het licht gemodelleerde vormen. Het is mogelijk dat Quellinus die caravaggistische aspecten leert kennen via het werk van Theodoor Rombouts (1597-1637) en Gerard Seghers (1591-1651)."
+                        +"Vanaf circa 1640 worden zijn figuren sculpturaal en driedimensionaal, en lijken op geschilderde beelden. Hiermee krijgt zijn werk aansluiting bij het oeuvre van Annibale Carracci (1560-1690), of de classicistische tak van de barok. Quellinus reist nooit naar Italië, maar leert het Romeinse classicisme via zijn broer en beeldhouwer Artus Quellinus I, die een tijd in Rome verblijft, kennen."
+                        +"Na circa 1650 evolueert het barokke classicisme naar een eerder rigide academisme. Quellinus ontwikkelt een voorliefde voor breed uitgesponnen architecturale achtergrondsettings, zoals in werken als Salomon en de Koningin van Sheba. (Sammlungen des Fürsten von Liechtenstein, Vaduz) of Laat de kinderen tot mij komen. (Koninklijke Musea voor Schone Kunsten van België, Brussel)"
+                        +"Erasmus Quellinus II sterft als een rijk en beroemd kunstenaar.",
+                    SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/erasmus-quellinus-ii"
                 },
                 new ArtistTranslation
                 {
                     Id = 14,
                     ArtistId = 5,
                     LanguageId = 3,
-                    Description = "Erasmus Quellinus the Younger and Erasmus Quellinus II (1607–1678) was a Flemish painter, engraver, draughtsman and tapestry designer who worked in various genres including history, portrait, battle and animal paintings. He was a pupil of Peter Paul Rubens and was one of the closest collaborators of Rubens in the 1630s. Following Rubens’ death in 1640 he became one of the most prolific and successful painters in Flanders.",
-                    SourceLink = "https://en.wikipedia.org/wiki/Erasmus_Quellinus_II"
+                    Description = "Erasmus Quellinus II is an Antwerp painter, draftsman, engraver and tapestry designer. He comes from an artistic family. His father is the sculptor Erasmus Quellinus I (1584-1640). He is the brother of the sculptor Artus Quellinus I (1609-1668) and the engraver Hubertus Quellinus (1619-1687). Quellinus is the father and master instructor of the painter Jan Erasmus Quellinus (1634-1715)."
+                        +"Quellinus is a pictor doctus and in that sense is comparable to Peter Paul Rubens with whom he often collaborated in the 1630's and by whom he was influenced. Both possess an extensive library and art collection. In the spirit of Humanism, Quellinus writes the philosophical treatise, Philosophae, which has not survived. The artist also would have obtained an academic degree in Philosophy."
+                        +"Quellinus is responsible for the design and in part for the execution of important decorative programmes in the context of official honourings in Antwerp. The artist also worked together with still-life specialists, amongst whom is the floral painter Daniël Seghers (1590-1661)."
+                        +"Erasmus Quellinus II made many altarpieces, which need to be placed within the sphere of influence of the Counter Reformation, but also history pieces and mythological and allegorical paintings. The significant influence of Rubens notwithstanding, Quellinus develops early in his career his own style with forms strongly modeled by the light. It is possible that Quellinus learned the Caravaggio-esque aspects via the work of Theodoor Rombouts (1597-1637) and Gerard Seghers (1591-1651)."
+                        +"Starting about 1640, his figures become sculptural and three-dimensional and resemble painted sculptures. With this, his work is connected with the oeuvre of Annibale Carracci (1560-1690), or the Classicist branch of the Baroque. Quellinus travels to Italy, but learns about Roman Classicism via his brother and sculptor Artus Quellinus I, who spent some time in Rome."
+                        +"After about 1650, the Baroque Classicism evolves towards a rather rigid academicism. Quellinus develops a preference for broad, expansive architectural background settings, such as in works like Solomon and the Queen of Sheba, (Sammlungen des Fürsten von Liechtenstein, Vaduz), or Suffer the little Children to Come unto Me (Royal Museums of Fine Arts of Belgium, Brussels)."
+                        +"Erasmus Quellinus II dies as a rich and famous artist.",
+                    SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/erasmus-quellinus-ii"
                 },
                 new ArtistTranslation
                 {
