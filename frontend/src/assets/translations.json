@@ -7,7 +7,7 @@
         "NL" : "De bron die u hebt opgevraagd, is niet beschikbaar in de geselecteerde taal",
         "ES" : "Dado que la cultura debe ser accesible para todos, nos encantaría que pudieras aprender sobre cultura en español también. Es por eso que estamos trabajando en su traducción.",
         "JA" : "文化は共有すべきものだと思いますので、皆さんが日本語で勉強になれるようにしたいです。その為、現在、日本語の翻訳に取り組んでいます。",
-        "RU" : "Запрашиваемый ресурс недоступен на выбранном языке"
+        "RU" : "Поскольку культура должна быть доступна всем, мы бы хотели, чтобы вы учились и на русском языке. Вот почему мы сейчас работаем над переводом."
     },
     "changeLanguage" : {
         "EN" : "Change language",
@@ -148,5 +148,15 @@
         "ES":"Aprende más",
         "JA":"もっと詳しく知る",
         "RU":"Учить больше"
+    },
+    "aboutArtwork":{
+        "EN":"About the artwork",
+        "NL":"Over het schilderij",
+        "FR":"À propos de l'oeuvre",
+        "DE":"Über das Kunstwerk",
+        "IT":"Circa l'opera d'arte",
+        "ES":"Sobre la obra de arte",
+        "JA":"アートワークについて",
+        "RU":"О работе"
     }
 }

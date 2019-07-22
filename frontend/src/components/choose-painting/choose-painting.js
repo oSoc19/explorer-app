@@ -13,7 +13,6 @@ class ChoosePainting extends React.Component{
         super(props);
         this.state = {
             isEmpty : true,
-            language : queryString.parse(this.props.location.search).language
         };
         this.state.placeholder = Translation.Translate("placeholder");
 
@@ -31,7 +30,7 @@ class ChoosePainting extends React.Component{
 
     async routeChange(event){
         if(document.getElementById("paintingNumber").innerHTML !== this.state.placeholder){                
-            this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").innerHTML}?language=${queryString.parse(this.props.location.search).language}`);
+            this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").innerHTML}`);
             window.location.reload();
         }
         else{
@@ -98,6 +97,11 @@ class ChoosePainting extends React.Component{
                             </tr>
                         </thead>
                             <tbody>
+                                <tr>
+                                    <td onClick={this.updateInput('A')}>A</td>
+                                    <td onClick={this.updateInput('B')}>B</td>
+                                    <td onClick={this.updateInput('C')}>C</td>
+                                </tr>
                                 <tr>
                                     <td onClick={this.updateInput('1')}>1</td>
                                     <td onClick={this.updateInput('2')}>2</td>
