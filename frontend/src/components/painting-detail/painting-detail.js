@@ -87,7 +87,7 @@ class PaintingDetail extends React.Component{
             lan.onclick = ()=>{
                 this.selectLanguage(this.state.availableLanguages[i].code);
             }
-            lan.id = this.state.availableLanguages[i].code;
+            lan.id = `${localStorage.getItem("language")}-missing-${this.state.availableLanguages[i].code}`;
             lan.innerHTML = this.state.availableLanguages[i].name;
             if(i%2 === 0){
                 line = document.createElement("tr");
@@ -138,10 +138,10 @@ class PaintingDetail extends React.Component{
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className={`collapse navbar-collapse ${styles.fontColor}`} id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item" onClick={this.goBackToSelection}>
-                                <i className="material-icons">&#xe5cb;</i>
+                                <i className={styles.materialIcon}>&#xe5cb;</i>
                             </li>
                         </ul>
                         <ul className="navbar-nav mx-auto">
@@ -160,46 +160,46 @@ class PaintingDetail extends React.Component{
 
                 <div className={styles.body}>
                     <div>
-                        <AliceCarousel mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
+                        <AliceCarousel autoPlayInterval={15000} autoPlay={true} mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
                             {
                                 this.state.data.stories.map(s => <PaintingStory key={s.id} story={s}></PaintingStory>)
                             }
                         </AliceCarousel>
                     </div>
 
-                    <hr id={`Artist-${this.props.match.params.id}`}></hr>
-
-                    <div className="container">
+                    <div id={`Artist-${this.props.match.params.id}`} className="container">
 
                         <div className={styles.content}>
-                            <InfoSection sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
+                            <InfoSection type="artist" sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr id={`Movement-${this.props.match.params.id}`}></hr>
+                        <hr id={`Movement-${this.props.match.params.id}`} className={styles.separation}></hr>
 
                         <div className={styles.content}>
-                            <InfoSection  sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
+                            <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr id={`Technique-${this.props.match.params.id}`}></hr>
+                        <hr id={`Technique-${this.props.match.params.id}`} className={styles.separation}></hr>
 
                         <div className={styles.content}>
-                            <InfoSection sourceLink={this.state.data.technique.translations[0].sourceLink} storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
+                            <InfoSection type="technique" sourceLink={this.state.data.technique.translations[0].sourceLink} storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr></hr>
+                        <hr className={styles.separation}></hr>
 
                         <div id="Artwork" className={styles.content}>
-                            <InfoSection sourceLink={this.state.data.translations[0].sourceLink} storyTitle={Translation.Translate("aboutArtwork")} content={this.state.data.translations[0].description}></InfoSection>
+                            <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={Translation.Translate("aboutArtwork")} content={this.state.data.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr></hr>
+                        <hr className={styles.separation}></hr>
 
                         <div id="Info" className={`${styles.content}`}>
                             <h5 className={styles.title}>Info</h5>
                             <div className={`row ${styles.infoSection}`}>
-                                <div className={`col-1 ${styles.line}`}></div>
-                                <div className="col">
+                                <div className={`col-2`}>
+                                    <div className={styles.line}></div>
+                                </div>
+                                <div className="col-10">
                                     <table className={`table table-borderless ${styles.paintDetails}`}>
                                         <tbody>
                                             <tr>

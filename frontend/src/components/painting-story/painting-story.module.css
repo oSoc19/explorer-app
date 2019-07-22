@@ -9,7 +9,9 @@
 }
 
 #movement{
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 0.02rem;
+    line-height: 1.5rem;
 }
 
 #technique{
@@ -17,12 +19,15 @@
     margin-bottom: 10px;
     display: block;
     font-style: italic;
+    padding-top : 0.2rem;
 }
 
 #story{
-    font-size : 15px;
+    font-size : 14px;
     padding : 5px;
     font-family: Montserrat;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .content>hr{
@@ -34,7 +39,7 @@
 
 .text {
     position: absolute;
-    top: 75%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color : black;
