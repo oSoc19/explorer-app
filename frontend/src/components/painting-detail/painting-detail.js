@@ -64,7 +64,7 @@ class PaintingDetail extends React.Component{
     }
 
     goBackToSelection(){
-        this.props.history.push(`/choose-painting?}`);
+        this.props.history.push(`/choose-painting`);
     }
 
     changeLanguage(isLanguageMissing){
