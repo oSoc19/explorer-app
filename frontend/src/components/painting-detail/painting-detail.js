@@ -49,7 +49,7 @@ class PaintingDetail extends React.Component{
         if(dataJSON.status === 404){
             this.props.history.push({
                 pathname : `/choose-painting?language=${queryString.parse(this.props.location.search).language}`,
-                state:{notFound : true}
+                state:{notFound : true, paintingNumber : this.props.match.params.id}
             });
             window.location.reload();
         }
