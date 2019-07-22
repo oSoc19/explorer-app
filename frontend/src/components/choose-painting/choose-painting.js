@@ -31,7 +31,7 @@ class ChoosePainting extends React.Component{
 
     async routeChange(event){
         if(document.getElementById("paintingNumber").innerHTML !== this.state.placeholder){                
-            this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").innerHTML}`);
+            this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").value}`);
             window.location.reload();
         }
         else{
@@ -43,7 +43,6 @@ class ChoosePainting extends React.Component{
         return () => {
             let input = document.getElementById("paintingNumber").value;
             if(input.length === 0){
-                console.log("oof");
                 this.setState({isEmpty : false});
             }
             document.getElementById("paintingNumber").value = input+number;

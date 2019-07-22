@@ -25,7 +25,7 @@ namespace backend.DAL
 
         public Painting GetPaintingByMuseumNumber(string number)
         {
-            return _context.Painting.Where(p => p.MuseumNumber.ToString().Equals(number)).FirstOrDefault();
+            return _context.Painting.Where(p => p.MuseumCode.Equals(number)).FirstOrDefault();
         }
 
         public List<Painting> GetPaintings(){
