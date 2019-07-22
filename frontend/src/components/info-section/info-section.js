@@ -18,7 +18,7 @@ class InfoSection extends React.Component{
                     <div className="col-10">
                         {this.props.content}
                         <br></br>
-                        <a href={this.props.sourceLink}>{Translation.Translate("learnMore")}</a>
+                        <a href={this.props.sourceLink} target="_blank">{Translation.Translate("learnMore")}</a>
                     </div>
                 </div>
             </div>
