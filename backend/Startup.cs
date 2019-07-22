@@ -24,7 +24,7 @@ namespace backend
         {
             services.AddDbContext<ExplorerContext>(opt =>
                 opt.UseLazyLoadingProxies()
-                .UseSqlServer(Configuration.GetConnectionString("ExplorerServerDb")));
+                .UseSqlServer(Configuration.GetConnectionString("ExplorerAzureDb")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddCors();
             services.AddAutoMapper(typeof(Startup));
