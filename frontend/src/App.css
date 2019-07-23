@@ -69,3 +69,30 @@ html, body{
 .navbar-light .navbar-nav .nav-link{
   color : #1D1E1F !important;
 }
+
+/* Carousel override */
+
+.alice-carousel__dots {
+  margin: 10px 0 5px !important;
+}
+
+.alice-carousel__dots-item {
+    display: inline-block;
+    width: 20px !important;
+    height: 2px !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+    background-color: #9ea5a3 !important; 
+}
+
+.alice-carousel__dots-item:not(:last-child) {
+      margin-right: 15px; 
+  }
+
+.alice-carousel__dots-item:hover, .alice-carousel__dots-item.__active {
+      background-color: #2D5549 !important; 
+}
+
+.flexWrapper{
+  background-color : black ! important;
+}
