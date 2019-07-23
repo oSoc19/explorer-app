@@ -64,7 +64,7 @@ class ChooseLanguage extends React.Component{
                 <ReactNotification ref={this.notificationDOMRef} />
                 <div className="row">
                     <div className="col align-self-center bruggeLogo">
-                        <img src={Logo} ></img>
+                        <img alt="Brugge logo" src={Logo} ></img>
                     </div>
                 </div>
 

@@ -19,6 +19,16 @@
         "JA" : "言語を変えてください",
         "RU" : "изменение языка"
     },
+    "codeMissing":{
+        "EN":"Enter a code",
+        "FR":"Entrez un code",
+        "IT":"Inserisci un codice",
+        "DE":"Geben Sie einen Code ein",
+        "NL":"Voer een code in",
+        "ES":"Ingresa un código",
+        "JA":"コードを入力してください",
+        "RU":"Введите код"
+    },
     "choosePainting":{
         "EN" : "Search the painting",
         "FR" : "Rechercher le tableau",
@@ -39,9 +49,9 @@
         "JA" : "番号を入力",
         "RU" : "Введите номер"
     },
-    "paintingNotFound":{
+    "codeNotFound":{
         "EN" : "We could not find anything for",
-        "FR" : "ous n'avons rien pu trouver pour",
+        "FR" : "Nous n'avons rien pu trouver pour",
         "IT" : "Non abbiamo trovato nulla per",
         "DE" : "Wir konnten nichts dafür finden",
         "NL" : "We konden er niets voor vinden",
