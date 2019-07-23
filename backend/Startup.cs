@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using backend.DAL;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.AspNetCore.Rewrite;
+using backend.Infrastructure;
+using System;
 
 namespace backend
 {
@@ -24,9 +26,15 @@ namespace backend
         //container.
         public void ConfigureServices(IServiceCollection services)
         {
+            ConfigurationHelper helper = new ConfigurationHelper("secret.json");
+            string server = helper.Get("server");
+            string database = helper.Get("database");
+            string user = helper.Get("user");
+            string password = helper.Get("password");
+            string connectionString = "server="+server+";"+"database="+database+";"+"user="+user+";"+"password="+password+";";
             services.AddDbContext<ExplorerContext>(opt =>
                 opt.UseLazyLoadingProxies()
-                .UseSqlServer(Configuration.GetConnectionString("ExplorerAzureDb")));
+                .UseSqlServer(connectionString));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddCors();
             services.AddAutoMapper(typeof(Startup));
