@@ -40,4 +40,5 @@ It's an interface for tourists to learn more on Brugge's artworks while getting 
 
 #### Data Sources
 https://en.wikipedia.org
+
 https://vkc-barok-prod.inuits.eu/en
