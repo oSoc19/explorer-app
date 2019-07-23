@@ -69,16 +69,14 @@ class ChoosePainting extends React.Component{
     render(){
         return (
             <div>
-                <ReactNotification ref={this.notificationDOMRef} />
                 {
                     this.state.error?
                     <div id="errorMessage" className={styles.errorMessageContainer}>
                         <span className={`container ${styles.errorMessage}`}>{this.state.errorMessage}</span>
                     </div>
                     :
-                    null
+                    <img src={Logo} alt="Brugge logo" className="bruggeLogo"></img>
                 }
-                <img src={Logo} alt="Brugge logo" className="bruggeLogo"></img>
                 
                 <div className={styles.choose}>
                     <input type="text" placeholder={`${Translation.Translate("codeMissing")}`} id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>

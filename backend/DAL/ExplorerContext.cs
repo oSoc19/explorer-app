@@ -1732,6 +1732,17 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
+                    Id = 82,
+                    Title = "Achille parmi les filles de Lycomède",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Achille eut une liaison secrète avec Deidamia, une des 7 filles du Roi Lycomède. Celle-ci a l’air triste car elle sait que Achille est sur le point de partir",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
+                    //TODO : Add the URL
+                    LanguageId = 1,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
                     Id = 56,
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
@@ -1762,6 +1773,16 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
+                    Id = 83,
+                    Title = "Achilles en de dochters van Lycomedes",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Achilles had een geheime relatie met een van de 7 dochters van koning Lycomede’s: namelijk Deidamia. Ze kijkt triest omdat ze weet dat Achilles haar zal verlaten",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
                     Id = 59,
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
@@ -1787,6 +1808,16 @@ namespace backend.DAL
                     Subtitle = "about the artwork",
                     Text = "This Troyan story is the base of many paintings.  Quellinus self painted three versions of this scene. This version is characterised by the painter’s love for Classical Architecture of the time of painting",
                     ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
+                    LanguageId = 3,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 84,
+                    Title = "Achilles among the Daughters of Lycomedes",
+                    Subtitle = "about the artwork",
+                    Text = "Achilles had a secret relationship with one of King Lycomedes’s 7 daughters: Deidamia. That is why she looks sad because she knows that  Achilles is going to leave",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 7
                 },
