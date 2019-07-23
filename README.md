@@ -38,6 +38,8 @@ It's an interface for tourists to learn more on Brugge's artworks while getting 
 - /api/paintingStory/[id] : one specific story
 
 #### Frontend
+- Install all the packages needed with `npm install`
+- Run the application with `npm start`
 
 #### Data Sources
 https://en.wikipedia.org
