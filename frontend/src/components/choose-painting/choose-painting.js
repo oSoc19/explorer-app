@@ -43,7 +43,7 @@ class ChoosePainting extends React.Component{
             await this.setState({
                 isEmpty : true,
                 error:true,
-                errorMessage:`Enter a code`
+                errorMessage:`${Translation.Translate("codeMissing")}`
             });
         }
     }
@@ -78,10 +78,10 @@ class ChoosePainting extends React.Component{
                     :
                     null
                 }
-                <img src={Logo} className="bruggeLogo"></img>
+                <img src={Logo} alt="Brugge logo" className="bruggeLogo"></img>
                 
                 <div className={styles.choose}>
-                    <input type="text" placeholder="Enter a code" id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>
+                    <input type="text" placeholder={`${Translation.Translate("codeMissing")}`} id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>
                     <div className="table-responsive-sm">
                         <table className="table table-borderless">
                         <thead>

@@ -3,7 +3,7 @@ import { ClipLoader } from 'react-spinners';
 import styles from './painting-detail.module.css';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import AudioPlayer from "react-h5-audio-player";
+import AudioPlayer from "../audio-player/index";
 import Api from '../../services/api';
 import { css } from '@emotion/core';
 import InfoSection from '../info-section/info-section';

@@ -3,12 +3,6 @@ import styles from './info-section.module.css';
 import Translation from '../../services/translation';
 
 class InfoSection extends React.Component{
-
-    constructor(props){
-        super(props);
-    }
-
-
     render(){
         return (
             <div>
