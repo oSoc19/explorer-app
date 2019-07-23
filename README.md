@@ -16,6 +16,7 @@ It's an interface for tourists to learn more on Brugge's artworks while getting 
 }
 ```
 - `cd backend/`
+- Run the migrations : `dotnet ef database update`
 - To run the API without docker : `dotnet run` -> localhost:5001/
 - To run the API with docker : `docker build -t backend .` then `docker run -d -p 8080:80 --name explorerapp backend` -> localhost:8080/
 
