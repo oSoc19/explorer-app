@@ -40,8 +40,12 @@ header{
     font-weight: 300;
     font-size: 3.5rem;
     letter-spacing: 0.2rem;
+    text-decoration: none;
 }
 
+.sub-title:hover{
+   text-decoration: 
+}
 .grid-container{
     display:grid;
     grid-template-columns: 60% 40%;
@@ -141,6 +145,7 @@ padding-right: 2rem;
 
 .social_media{
     margin-bottom:2rem;
+    margin-left: 2rem;
 }
 
 .last{
@@ -163,4 +168,9 @@ footer{
 .link{
     text-decoration: none;
     color: white;
+}
+
+.naast{
+    display: flex;
+    flex-direction: row
 }
