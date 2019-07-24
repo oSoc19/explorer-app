@@ -3,6 +3,8 @@ This repository holds the code for the Explorer App project, aka Learnmore.be bu
 
 It's an interface for tourists to learn more on Brugge's artworks while getting at the same time insights on their preferences.
 
+https://osoc19.github.io/explorer-app/
+
 ## Running the project
 #### Backend 
 
