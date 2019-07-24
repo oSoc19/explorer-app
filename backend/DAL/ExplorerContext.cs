@@ -1186,7 +1186,7 @@ namespace backend.DAL
                     Title = "Paysage boisé avec gué",
                     Subtitle = "à propos de l'oeuvre",
                     Text = "Les feuilles sur les arbres ne sont en fait pas peintes une à une mais à coups de pinceaux",
-                    ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 1
                 },
@@ -1196,7 +1196,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "Le mot “baroque” avait une connotation négative",
-                    ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 1
                 },
@@ -1206,7 +1206,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "Avant que la peinture à l’huile ne soit inventée, la plupart des artistes utilisaient la tempera à l’oeuf",
-                    ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 1
                 },
@@ -1216,7 +1216,7 @@ namespace backend.DAL
                     Subtitle = "over het kunstwerk",
                     Title = "Boslandschap met wad",
                     Text = "De schilder gebruikte ruwe schilder stroken om de blaadjes aan de bomen te schilderen, niet blaadje per blaadje apart",
-                    ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 1
                 },
@@ -1226,7 +1226,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "Het woord “barok” was vroeger een negatief woord",
-                    ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 1
                 },
@@ -1236,7 +1236,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Voordat olieverf werd uitgevonden gebruikten de meeste kunstenaars ei tempera",
-                    ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 1
                 },
@@ -1246,7 +1246,7 @@ namespace backend.DAL
                     Subtitle = "about the artwork",
                     Title = "Wooded Landscape with Ford",
                     Text = "The painter used raw brush strokes to paint the leaves on the trees, not every leave separately.",
-                    ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 1
                 },
@@ -1256,7 +1256,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "The word 'baroque' used to be a negative term",
-                    ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 1
                 },
@@ -1266,7 +1266,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "Before oil paint was invented, most artists used egg tempera",
-                    ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 1
                 },
@@ -1276,7 +1276,7 @@ namespace backend.DAL
                     Subtitle = "à propos de l'oeuvre",
                     Title = "Portrait d'une famille brugeoise",
                     Text = "Observez bien attentivement et vous pourrez apercevoir l’âge des personnages sur leurs vêtements",
-                    ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 2
                 },
@@ -1286,7 +1286,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "Les oeuvres catholiques baroques étaient souvent larges",
-                    ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5fdb481bb5f94f8697556ba58a986b659d9bfd331a374ad9810a549d601c2627/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 2
                 },
@@ -1296,7 +1296,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "Le bleu ultramarine était fabriqué avec du lapis lazuli qui était très onéreux. Après l’avoir mélangé avec l’huile, la peinture était conservée dans une vessie de porc",
-                    ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e346459340324138861abea18b6c87d2d65c583136a44fb8906007a69871cc23/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 2
                 },
@@ -1306,7 +1306,7 @@ namespace backend.DAL
                     Subtitle = "Over het kunstwerk",
                     Title = "Portret van een Brugse familie",
                     Text = "Wist je dat de leeftijd van de personen weergegeven is in hun kledij?",
-                    ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 2
                 },
@@ -1316,7 +1316,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "Katholieke barok kunstwerken waren doorgaans groot",
-                    ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5fdb481bb5f94f8697556ba58a986b659d9bfd331a374ad9810a549d601c2627/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 2
                 },
@@ -1326,7 +1326,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Ultramarijnblauw werd gemaakt met lapis lazuli, iets wat zeer duur was. Na het mixen met olie werd het vaak bewaard in een varkensblaas",
-                    ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e346459340324138861abea18b6c87d2d65c583136a44fb8906007a69871cc23/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 2
                 },
@@ -1336,7 +1336,7 @@ namespace backend.DAL
                     Subtitle = "About the artwork",
                     Title = "Portrait of a Bruges family",
                     Text = "Did you know that the characters’ age is displayed within their clothing?",
-                    ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 2
                 },
@@ -1346,7 +1346,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "Catholic baroque works were usually large",
-                    ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5fdb481bb5f94f8697556ba58a986b659d9bfd331a374ad9810a549d601c2627/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 2
                 },
@@ -1356,7 +1356,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "Ultramarine blue was made with lapis lazuli, which was very expensive. After mixing it with the oil, it was often stored in a pig’s bladder",
-                    ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e346459340324138861abea18b6c87d2d65c583136a44fb8906007a69871cc23/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 2
                 },
@@ -1366,7 +1366,7 @@ namespace backend.DAL
                     Subtitle = "à propos de l'oeuvre",
                     Title = "Portrait d’un théologien et son secrétaire",
                     Text = "Le tableau est daté de 1668. Selon l’inscription, le théologien serait âgé de 47 ans.  Son identité reste à ce jour inconnue",
-                    ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 3
                 },
@@ -1376,7 +1376,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "L’art baroque servait à la propagande religieuse",
-                    ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 3
                 },
@@ -1386,7 +1386,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "La peinture blanche était créée avec du plomb.  Elle séchait vite et couvrait bien",
-                    ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 3
                 },
@@ -1396,7 +1396,7 @@ namespace backend.DAL
                     Subtitle = "over het kunstwerk",
                     Title = "Portret van een theoloog met zijn secretaris",
                     Text = "Het schilderij dateert uit 1668. Volgens het opschrift is de theoloog 47 jaar oud. Zijn identiteit is tot op de dag van vandaag nog steeds onbekend",
-                    ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 3
                 },
@@ -1406,7 +1406,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "Barok kunst werd gemaakt als religieuze propaganda",
-                    ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 3
                 },
@@ -1416,7 +1416,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Witte verf werd gemaakt uit lood. Het droogde snel en bedekte goed",
-                    ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 3
                 },
@@ -1426,7 +1426,7 @@ namespace backend.DAL
                     Subtitle = "About the artwork",
                     Title = "Portrait of a Theologue and his Secretary",
                     Text = "The date on the painting is 1668 and according to the inscription on it, the theologue is 47 years old. The identity of the man is still unknown to this day",
-                    ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 3
                 },
@@ -1436,7 +1436,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "Baroque art was made for religious propaganda",
-                    ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 3
                 },
@@ -1446,7 +1446,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "White paint was created with lead. It dried quickly and covered well",
-                    ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 3
                 },
@@ -1456,7 +1456,7 @@ namespace backend.DAL
                     Title = "Portrait d' un homme",
                     Subtitle = "à propos de l'oeuvre",
                     Text = "Figure au dos de cette peinture: “J. Van Oost en tant qu’amis 1697”",
-                    ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 4
                 },
@@ -1466,7 +1466,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "Les artistes créaient des innovations pour rendre leurs oeuvres plus réalistes et émotives",
-                    ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a47b5970737453b816a29a596b25ff9f37f58290f9b4ab18521a5ce7b610ad3/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 4
                 },
@@ -1476,7 +1476,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique ",
                     Text = "Jusqu’au 19ème siècle, les peintres préparaient leurs propres couleurs, en expérimentant",
-                    ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/efd4bf7eedcc4d768d02849291c823abd947d1a712a04e70980bc3e1086273b9/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 4
                 },
@@ -1486,7 +1486,7 @@ namespace backend.DAL
                     Title = "Portret van een man",
                     Subtitle = "over het kunstwerk ",
                     Text = "Het schilderij is ondertekend en gedateerd op de achterkant: “J. Van Oost als vriend 1697”",
-                    ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 4
                 },
@@ -1496,7 +1496,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode ",
                     Text = "Kunstenaars creëerden innovaties om hun werk realistischer en gevoeliger te maken",
-                    ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a47b5970737453b816a29a596b25ff9f37f58290f9b4ab18521a5ce7b610ad3/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 4
                 },
@@ -1506,7 +1506,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek ",
                     Text = "Tot de 19e eeuw, schilders maakten hun eigen kleuren op basis van ervaring",
-                    ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/efd4bf7eedcc4d768d02849291c823abd947d1a712a04e70980bc3e1086273b9/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 4
                 },
@@ -1516,7 +1516,7 @@ namespace backend.DAL
                     Title = "Portrait of a Man",
                     Subtitle = "about the artwork",
                     Text = "The painting is signed and dated on the rear: J. Van Oost als vriend 1697 (J. Van Oost as a friend 1697)",
-                    ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 4
                 },
@@ -1526,7 +1526,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "Artists created innovations to make their works more realistic and emotive",
-                    ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a47b5970737453b816a29a596b25ff9f37f58290f9b4ab18521a5ce7b610ad3/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 4
                 },
@@ -1536,7 +1536,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "Until the 19th century, painters prepared their own colors based on experience.",
-                    ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/efd4bf7eedcc4d768d02849291c823abd947d1a712a04e70980bc3e1086273b9/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 4
                 },
@@ -1546,7 +1546,7 @@ namespace backend.DAL
                     Title = "Sainte Trinité",
                     Subtitle = "à propos de l'oeuvre",
                     Text = "Le peintre de cette oeuvre est resté inconnu jusque dans les années 70 bien qu’elle ressemblait au style de Rubens. On découvrit plus tard qu’Artus Wolfordt était l’artiste, après une reconstruction de son oeuvre “Women bathing”",
-                    ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 5
                 },
@@ -1556,7 +1556,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "La peinture de scènes religieuses servait à enseigner la religion à la population analphabète",
-                    ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 5
                 },
@@ -1566,7 +1566,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "Les peintres expérimentent l’épaisseur de la pâte pour accentuer les lumières",
-                    ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 5
                 },
@@ -1576,7 +1576,7 @@ namespace backend.DAL
                     Title = "Heilige Drievuldigheid",
                     Subtitle = "over het kunstwerk",
                     Text = "De schilder was onbekend tot in de jaren 1970 ze beschouwden het een werk van Rubens. Later bleek het een schilderij te zijn door Artus Wolfordt, na een reconstructie van een van zijn kunstwerken ‘badende vrouwen’",
-                    ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 5
                 },
@@ -1586,7 +1586,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "Het schilderen van religieuze scènes werd gebruikt om de ongeletterde bevolking het verhaal te doen begrijpen",
-                    ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 5
                 },
@@ -1596,7 +1596,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Schilders beginnen te experimenteren met de dikte van de verf om het licht te accentueren",
-                    ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 5
                 },
@@ -1606,7 +1606,7 @@ namespace backend.DAL
                     Title = "Holy Trinity",
                     Subtitle = "about the artwork",
                     Text = "The painter was unknown until the 1970’s and thought to be by Rubens. It was later found to be painted by Artus Wolfordt, after a reconstruction on one of his artwork “Women bathing” from this",
-                    ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 5
                 },
@@ -1616,7 +1616,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "Painting of religious scenes was used for religious instruction for the illiterate population",
-                    ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 5
                 },
@@ -1626,7 +1626,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "Painters start to experiment with the thickness of the paint to accentuate the light",
-                    ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 5
                 },
@@ -1636,7 +1636,7 @@ namespace backend.DAL
                     Title = "Portrait de Fovin de Hasque",
                     Subtitle = "à propos de l'oeuvre",
                     Text = "Fovin de Hasque était un maître d’armes de la guilde de Sint Michiels, une des plus anciennes guildes d’escrime connues de Flandres.",
-                    ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 6
                 },
@@ -1646,7 +1646,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "Le style baroque devint un symbole de richesse et pouvoir",
-                    ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 6
                 },
@@ -1656,7 +1656,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "Depuis 1841, la peinture à l’huile est disponible dans des tubes de métal. Les artistes peuvent maintenant sortir et peindre à l’extérieur",
-                    ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 6
                 },
@@ -1666,7 +1666,7 @@ namespace backend.DAL
                     Title = "Portret van Fovin de Hasque",
                     Subtitle = "over het kunstwerk",
                     Text = "Fovin de Hasque was een schermmeester van de Sint Michielsgilde,  de oudste zwaardvechtkunst gilde bekend in Vlaanderen",
-                    ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 6
                 },
@@ -1676,7 +1676,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "De barokstijl werd een symbool van rijkdom en macht",
-                    ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 6
                 },
@@ -1686,7 +1686,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Sinds 1841, olieverf was verkrijgbaar in metalen tubes. Nu konden kunstenaars buiten schilderen",
-                    ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 6
                 },
@@ -1696,7 +1696,7 @@ namespace backend.DAL
                     Title = "Portrait of Fovin de Hasque",
                     Subtitle = "about the artwork",
                     Text = "Fovin de Hasque was a swordsman of the Sint Michiels guild, the oldest swordsmanship guild known in Flanders",
-                    ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 6
                 },
@@ -1706,7 +1706,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "The baroque style became a symbol of wealth and power",
-                    ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 6
                 },
@@ -1716,7 +1716,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "Since 1841, oil paint has been available in metal tube. Now, artists could go and paint outdoors",
-                    ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 6
                 },
@@ -1726,7 +1726,7 @@ namespace backend.DAL
                     Title = "Achille parmi les filles de Lycomède",
                     Subtitle = "à propos de l'oeuvre",
                     Text = "L’histoire de la guerre de Troie fut la base de nombreux tableaux. Quellinus peignit trois versions de cette scène. Cette version est caractérisée par l’amour du peintre pour l’architecture classique de cette période",
-                    ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 7
                 },
@@ -1737,7 +1737,6 @@ namespace backend.DAL
                     Subtitle = "à propos de l'oeuvre",
                     Text = "Achille eut une liaison secrète avec Deidamia, une des 7 filles du Roi Lycomède. Celle-ci a l’air triste car elle sait que Achille est sur le point de partir",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
-                    //TODO : Add the URL
                     LanguageId = 1,
                     PaintingId = 7
                 },
@@ -1747,7 +1746,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "La peinture baroque utilise des couleurs chaudes et vives ainsi que des contrastes (clair/obscur). La toile est éclairée par tâches contrairement au style de la  Renaissance ayant un éclairage uniforme de la toile",
-                    ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 7
                 },
@@ -1757,7 +1756,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "La peinture à l’huile met plus de temps à sécher  que d’autres types de peinture (environ 2 semaines, bien que certaines couleurs sèchent en quelques jours). De ce fait, le peintre pouvait enlever une couche complète de peinture et en recommencer une nouvelle",
-                    ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ddd295ab406349bcaabd41e04e4aa7d3fa4285c4e274469ca4f84a09c82f7864/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 7
                 },
@@ -1767,7 +1766,7 @@ namespace backend.DAL
                     Title = "Achilles en de dochters van Lycomedes",
                     Subtitle = "over het kunstwerk",
                     Text = "Dit Trojaans verhaal is gebaseerd op verschillende schilderijen. Quellinus zelf schilderde drie verschillende versies van deze scène. Deze versie wordt gekenmerkt door de schilder zijn liefde voor klassieke architectuur uit die periode",
-                    ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 7
                 },
@@ -1787,7 +1786,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "Barok schilderijen maakt gebruik van warme en levendige kleuren en contrasten (Chiaroscuro). De verlichting van het schilderij concentreerde zich op sommige punten terwijl de Renaissance-stijl een consistente verlichting had",
-                    ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 7
                 },
@@ -1797,7 +1796,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Omdat olieverf langer nat blijft dan andere verfsoorten, kan de schilder zijn verf langer bewaren. Het duurt meestal twee weken om te drogen (hoewel sommige kleuren binnen dagen drogen)",
-                    ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ddd295ab406349bcaabd41e04e4aa7d3fa4285c4e274469ca4f84a09c82f7864/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 7
                 },
@@ -1807,7 +1806,7 @@ namespace backend.DAL
                     Title = "Achilles among the Daughters of Lycomedes",
                     Subtitle = "about the artwork",
                     Text = "This Troyan story is the base of many paintings.  Quellinus self painted three versions of this scene. This version is characterised by the painter’s love for Classical Architecture of the time of painting",
-                    ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 7
                 },
@@ -1827,7 +1826,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "Baroque painting uses warm and vivid colors as well as contrasts (Chiaroscuro). The painting’s lighting focused on some points while the Renaissance style had a consistent lighting",
-                    ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 7
                 },
@@ -1837,7 +1836,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "As oil paint remains wet longer than other types of paint, the painter might remote an entire layer of paint. It usually takes a span of two weeks to dry (although some colors dry within days)",
-                    ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ddd295ab406349bcaabd41e04e4aa7d3fa4285c4e274469ca4f84a09c82f7864/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 7
                 },
@@ -1847,7 +1846,7 @@ namespace backend.DAL
                     Title = "Portrait de Samuel Crew",
                     Subtitle = "à propos de l'oeuvre",
                     Text = "Lely (de son vrai nom était van der Faes) étudia à Haarlem et pris pour nom d’artiste Lely (Lys en néerlandais) car la fleur de Lys était représentée sur le pignon de la maison de son père",
-                    ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 8
                 },
@@ -1857,7 +1856,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "La peinture baroque se caractérise par l’asymétrie: le sujet n’est pas toujours au centre du tableau",
-                    ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5500b6e47c64cbba935e3dc2d68f8d6d652dd7e5a2943ed8fccd4ba779d8fe9/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 8
                 },
@@ -1867,7 +1866,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "L’avantage de la peinture à l’huile est qu’elle met plus de temps à sécher, ce qui permet au peintre de développer son oeuvre au fur et à mesure, contrairement à la tempéra aux oeufs",
-                    ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/07e8711ec42e4a659843bc2de2e78657108b44bc1fa24dbdaaca756a3c33f1e9/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 8
                 },
@@ -1877,7 +1876,7 @@ namespace backend.DAL
                     Title = "Portret van Samuel Crew",
                     Subtitle = "over het kunstwerk",
                     Text = "Lely (Zijn echte naam was van der Faes) studeerde in Haarlem en nam Lely (Lelie in het Nederlands) als een artiestennaam omdat er op zijn huis een Lelie stond)",
-                    ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 8
                 },
@@ -1887,7 +1886,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "Barok schilderijen wordt gekenmerkt door asymmetrie: het onderwerp staat niet altijd centraal in het schilderij",
-                    ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5500b6e47c64cbba935e3dc2d68f8d6d652dd7e5a2943ed8fccd4ba779d8fe9/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 8
                 },
@@ -1897,7 +1896,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Het voordeel van olieverf is dat het langzaam droogt, waardoor de kunstenaar een schilderij geleidelijk kan ontwikkelen, in tegenstelling tot eitempera",
-                    ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/07e8711ec42e4a659843bc2de2e78657108b44bc1fa24dbdaaca756a3c33f1e9/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 8
                 },
@@ -1907,7 +1906,7 @@ namespace backend.DAL
                     Title = "Portrait of Samuel Crew",
                     Subtitle = "about the artwork",
                     Text = "Lely (his real name was van der Faes) studied in Haarlem and took Lely (lily in Dutch) as an artist name  because his house had a Lily on it",
-                    ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 8
                 },
@@ -1917,7 +1916,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "Baroque painting is characterised by asymmetry: the subject is not always at the center of the painting",
-                    ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5500b6e47c64cbba935e3dc2d68f8d6d652dd7e5a2943ed8fccd4ba779d8fe9/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 8
                 },
@@ -1927,7 +1926,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "The advantage of oil paint is its slow drying which enables  the artist to develop a painting gradually, as opposed to egg tempera",
-                    ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/07e8711ec42e4a659843bc2de2e78657108b44bc1fa24dbdaaca756a3c33f1e9/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 8
                 },
@@ -1937,7 +1936,7 @@ namespace backend.DAL
                     Title = "La Vocation de saint Matthieu",
                     Subtitle = "à propos de l'oeuvre",
                     Text = "Matthieu, le percepteur d’impôt, est représenté de dos. Son chien prend l’expression de son maitre, comme si le peintre voulait nous dire “un croyant écoute Jésus comme un chien écoute son maitre”",
-                    ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 9
                 },
@@ -1947,7 +1946,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "Contrairement à la peinture de la Renaissance (qui illustre le moment précédant un événement important), les peintres baroques choisissent de représenter le moment le plus dramatique de la scène",
-                    ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 9
                 },
@@ -1957,7 +1956,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "Les artistes remplacèrent la peinture sur bois par la toile car les pigments tenaient mieux",
-                    ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 9
                 },
@@ -1967,7 +1966,7 @@ namespace backend.DAL
                     Title = "Roeping van Mattheüs",
                     Subtitle = "over het kunstwerk",
                     Text = "Mattheüs, de tollenaar, is op zijn rug afgebeeld. Zijn hond weerspiegelt zijn meesters emotie alsof de schilder ons wil vertellen “een gelovige luistert naar jezus zoals een hond luistert naar zijn baasje”",
-                    ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 9
                 },
@@ -1977,7 +1976,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "In tegenstelling tot de Renaissance schilderijen ( die belangrijke gebeurtenissen afbeelden), kiezen Baroque schilders ervoor om het meest dramatische moment van de gebeurtenis af te beelden",
-                    ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 9
                 },
@@ -1987,7 +1986,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Kunstenaars begonnen te schilderen op canvas in plaats van hout omdat het pigment beter vasthoudt",
-                    ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 9
                 },
@@ -1997,7 +1996,7 @@ namespace backend.DAL
                     Title = "The Calling of St Matthew",
                     Subtitle = "about the artwork",
                     Text = "Matthew, the tax collector, is represented from behind. His dog reflects his master’s emotion as if the painter wanted to tell us “a believer listens to Jesus like a dog listens to his master”",
-                    ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 9
                 },
@@ -2007,7 +2006,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "Contrary to the Renaissance art (which showed the moment before an important event), Baroque painters chose to represent the most dramatic point",
-                    ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 9
                 },
@@ -2017,7 +2016,7 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "Artists started painting on canvas instead of wood because it holds the pigments better",
-                    ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 9
                 }
