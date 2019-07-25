@@ -8,7 +8,7 @@ https://osoc19.github.io/explorer-app/
 ## Running the project
 #### Backend 
 
-- Add your database credentials in a file called ```secret.json``` and that has to in the ```backend/``` folder like this : 
+- Add your database credentials in a file called ```secret.json``` and put it in the ```backend/``` folder like this : 
 ```
 {
   "server":"YOUR_SERVER_IP",
