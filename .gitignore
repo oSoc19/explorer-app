@@ -60,3 +60,4 @@ backend/[Oo]bj/
 backend/.vs/
 backend/bin/
 backend/secret.json
+backend/publish
