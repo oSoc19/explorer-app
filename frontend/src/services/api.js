@@ -1,4 +1,4 @@
-const BASE_URL = process.env.NODE_ENV === 'development' ? "https://localhost:5001/api":"https://learnmorebruges.azurewebsites.net";
+const BASE_URL = process.env.NODE_ENV === 'development' ? "https://localhost:5001/api":"https://learnmorebruges.azurewebsites.net/api";
 //const BASE_URL = "https://learnmorebruges.azurewebsites.net/api";
 
 class Api{
