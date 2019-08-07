@@ -168,5 +168,95 @@
         "ES":"Sobre la obra de arte",
         "JA":"アートワークについて",
         "RU":"О работе"
+    },
+    "schilderij":{
+        "EN":"Artwork",
+        "NL":"Kunstwerk",
+        "FR":"Oeuvre d'art",
+        "DE":"Kunstwerk",
+        "IT":"Opere d'arte",
+        "ES":"Obra de arte",
+        "JA":"芸術作品",
+        "RU":"произведение искусства"
+    },
+    "gebouw":{
+        "EN":"Building",
+        "NL":"Gebouw",
+        "FR":"Bâtiment",
+        "DE":"Gebäude",
+        "IT":"Costruzione",
+        "ES":"Edificio",
+        "JA":"ビル",
+        "RU":"строительство"
+    },
+    "use":{
+        "EN":"Use",
+        "NL":"Functie",
+        "FR":"Bâtiment",
+        "DE":"Gebäude",
+        "IT":"Costruzione",
+        "ES":"Edificio",
+        "JA":"ビル",
+        "RU":"строительство"
+    },
+    "constructionyear":{
+        "EN":"Construction year",
+        "NL":"Bouwjaar",
+        "FR":"Bâtiment",
+        "DE":"Gebäude",
+        "IT":"Costruzione",
+        "ES":"Edificio",
+        "JA":"ビル",
+        "RU":"строительство"
+    },
+    "constructionyear":{
+        "EN":"Construction year",
+        "NL":"Bouwjaar",
+        "FR":"Bâtiment",
+        "DE":"Gebäude",
+        "IT":"Stile di costruzione",
+        "ES":"Edificio",
+        "JA":"ビル",
+        "RU":"строительство"
+    },
+    "trivia":{
+        "EN":"Trivia",
+        "NL":"Trivia",
+        "FR":"Bagatelles",
+        "DE":"Trivia",
+        "IT":"Banalità",
+        "ES":"Trivialidades",
+        "JA":"トリビア",
+        "RU":"пустяки"
+    },
+    "description":{
+        "EN":"Description",
+        "NL":"Beschrijving",
+        "FR":"Description",
+        "DE":"Descripción",
+        "IT":"Descrizione",
+        "ES":"Trivialidades",
+        "JA":"説明",
+        "RU":"описание"
+    },
+    "useful":{
+        "EN":"Was this information useful?",
+        "NL":"Vond je de informatie nuttig?",
+        "FR":"Description",
+        "DE":"Descripción",
+        "IT":"Descrizione",
+        "ES":"Trivialidades",
+        "JA":"説明",
+        "RU":"описание"
+    },
+    "thanks":{
+        "EN":"Thanks",
+        "NL":"Bedankt!",
+        "FR":"Description",
+        "DE":"Descripción",
+        "IT":"Descrizione",
+        "ES":"Trivialidades",
+        "JA":"説明",
+        "RU":"описание"
     }
 }

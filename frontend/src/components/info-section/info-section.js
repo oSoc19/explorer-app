@@ -7,13 +7,12 @@ class InfoSection extends React.Component{
         return (
             <div>
                 <h5 className={styles.title}>{this.props.storyTitle}</h5>
+                <div className={`${styles.line}`}></div>
                 <div className={`row ${styles.content}`}>
-                    <div className={`col-2`}>
-                        <div className={`${styles.line}`}></div>
-                    </div>
-                    <div className={`col-10 ${styles.infos}`}>
+                    <div className={`col-12 ${styles.infos}`}>
+                        <p>
                         {this.props.content}
-                        <br></br>
+                        </p>
                         <a className={`${styles.link} link-to-${this.props.type}`} href={this.props.sourceLink} target="_blank">{Translation.Translate("learnMore")}</a>
                     </div>
                 </div>

@@ -9,41 +9,41 @@
 }
 
 #movement{
-    font-size: 18px;
-    letter-spacing: 0.02rem;
+    font-size: 22px;
     line-height: 1.5rem;
+    font-weight: bold;
+}
+
+.storyLine {
+    background-color: #1D5748;
+    border: 0;
+    height: 2px;
+    margin: .5rem auto;
+    width: 30px;
 }
 
 #technique{
-    font-size: 13px;
-    margin-bottom: 10px;
-    display: block;
-    font-style: italic;
-    padding-top : 0.2rem;
+    display: inline-block;
+    margin: 2rem 0 0 0;
 }
 
-#story{
-    font-size : 15px;
-    padding : 5px;
+.imgFluid {
+    /*height: 75vh;*/
+}
+
+#story {
+    font-size : 1.1rem;
     font-family: miller-display,seruif;
     line-height: 1.5rem;
-    padding-bottom: 2rem;
-}
-
-.content>hr{
-    width : 20%;
-    background-color:black;
-    margin-top : 2px;
-    margin-bottom: 2px;
 }
 
 .text {
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color : black;
     background-color: rgb(255,255,255,0.8);
-    width : 84%;
+    width : 75%;
     font-family: miller-display,seruif;
 }

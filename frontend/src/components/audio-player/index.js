@@ -46,7 +46,7 @@ var style = {
     justifyContent: 'space-between',
     width: '100%',
     padding: '15px 0',
-    backgroundColor: 'black',
+    backgroundColor: '#1D1313',
     position: 'relative',
     zIndex: '100',
     boxShadow: '0 0 3px 0 rgba(0, 0, 0, 0.2)'
@@ -61,7 +61,7 @@ var style = {
     zIndex: '1',
     left: '9px',
     backgroundColor: 'white',
-    boxShadow: 'inset 7px 0 0 0 rgb(0, 0, 0)'
+    boxShadow: 'inset 7px 0 0 0 #22A4B4'
   },
   play: {
     boxSizing: 'content-box',
@@ -85,7 +85,7 @@ var style = {
     position: 'absolute',
     left: '50%',
     marginLeft: '-20px',
-    backgroundColor: 'black',
+    backgroundColor: '#22A4B4',
     color: 'white',
     width: '40px',
     height: '40px',

@@ -35,8 +35,14 @@ class ChoosePainting extends React.Component{
     }
 
     async routeChange(event){
-        if(document.getElementById("paintingNumber").value.length !== 0){                
-            this.props.history.push(`/paintings/detail/${document.getElementById("paintingNumber").value}`);
+        if(document.getElementById("paintingNumber").value.length !== 0){
+            var infoType = document.getElementById("paintingNumber").value                
+            if(parseInt(infoType) < 60){
+                infoType = 'paintings';
+            }else{
+                infoType = 'buildings';
+            }
+            this.props.history.push(`/${infoType}/detail/${document.getElementById("paintingNumber").value}`);
             window.location.reload();
         }
         else{

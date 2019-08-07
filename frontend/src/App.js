@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import PaintingDetail from './components/painting-detail/painting-detail';
+import BuildingDetail from './components/building-detail/building-detail';
 import ChooseLanguage from '../src/components/choose-language/choose-language';
 import { Route, Switch, Router } from 'react-router-dom';
 import { createBrowserHistory } from "history";
@@ -17,6 +18,7 @@ const history = createBrowserHistory();
             <Route exact={true} path="/" component={ChooseLanguage}></Route>
             <Route path="/choose-painting" component={ChoosePainting}></Route>
             <Route path="/paintings/detail/:id" component={PaintingDetail}></Route>
+            <Route path="/buildings/detail/:id" component={BuildingDetail}></Route>
           </Switch>
         </Router>
       </div>

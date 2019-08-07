@@ -45,7 +45,7 @@ class PaintingDetail extends React.Component{
             window.location.reload();
         }
         else if(dataJSON.translations.length !== 0)
-            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : []});
+            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : [], itemsInSlide:dataJSON.stories.length});
         else{
             let languages = await Api.getAvailableLanguages();
             await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : languages});
@@ -146,6 +146,9 @@ class PaintingDetail extends React.Component{
                         </ul>
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
+                                <a className="nav-link" id="DescriptionLink" href={`#Description-${this.props.match.params.id}`}>{Translation.Translate("schilderij")}</a>
+                            </li>
+                            <li className="nav-item ">
                                 <a className="nav-link" id="ArtistLink" href={`#Artist-${this.props.match.params.id}`}>{Translation.Translate("artist")}</a>
                             </li>
                             <li className="nav-item">
@@ -159,15 +162,65 @@ class PaintingDetail extends React.Component{
                 </nav>
 
                 <div className={styles.body}>
-                    <div>
-                        <AliceCarousel autoPlayInterval={15000} autoPlay={true} mouseDragEnabled buttonsDisabled={true} onSlideChanged={this.handleChange}>
-                            {
-                                this.state.data.stories.map(s => <PaintingStory key={s.id} story={s}></PaintingStory>)
-                            }
-                        </AliceCarousel>
-                    </div>
 
-                    <div id={`Artist-${this.props.match.params.id}`} className="container">
+                    { this.state.data.stories.length !== 0
+                        ?   <div className={`${styles.aliceContainer}`}>
+                                <AliceCarousel 
+                                    autoPlay={false} 
+                                    mouseDragEnabled 
+                                    buttonsDisabled={false}
+                                    slideToIndex={this.currentStoryIndex}
+                                    onSlideChanged={this.handleChange}>
+                                    {
+                                        this.state.data.stories.map(s => <PaintingStory key={s.id} story={s}></PaintingStory>)
+                                    }
+                                </AliceCarousel>
+                            </div>
+                        :   null
+                    }
+                    
+                    <div className="container info-container">
+
+                        <div id="Info" className={`${styles.content}`}>
+                            <h5 className={styles.title}>Info</h5>
+                            <div className={`${styles.line}`}></div>
+                            <div className={`col-12 row ${styles.infoSection}`}>
+                                <table className={`table table-borderless ${styles.paintDetails}`}>
+                                    <tbody>
+                                        <tr>
+                                            <td>{Translation.Translate("title")}</td>
+                                            <td><a id="DescriptionLink" href={`#Description-${this.props.match.params.id}`}>{this.state.data.translations[0].name}</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>{Translation.Translate("artist")}</td>
+                                            <td><a id="ArtistLink" href={`#Artist-${this.props.match.params.id}`}>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>{Translation.Translate("year")}</td>
+                                            <td>{this.state.data.year}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{Translation.Translate("size")}</td>
+                                            <td>{`${this.state.data.height} x ${this.state.data.width} cm`}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{Translation.Translate("technique")}</td>
+                                            <td><a id="TechniqueLink" href={`#Technique-${this.props.match.params.id}`}>{this.state.data.technique.translations[0].name}</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>{Translation.Translate("movement")}</td>
+                                            <td><a id="MovementLink" href={`#Movement-${this.props.match.params.id}`}>{this.state.data.movement.translations[0].name}</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr id={`Description-${this.props.match.params.id}`} className={styles.separation}></hr>
+                        <div id="Artwork" className={styles.content}>
+                            <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={Translation.Translate("aboutArtwork")} content={this.state.data.translations[0].description}></InfoSection>
+                        </div>
+
+                        <hr id={`Artist-${this.props.match.params.id}`} className={styles.separation}></hr>
 
                         <div className={styles.content}>
                             <InfoSection type="artist" sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
@@ -186,51 +239,13 @@ class PaintingDetail extends React.Component{
                         </div>
 
                         <hr className={styles.separation}></hr>
-
-                        <div id="Artwork" className={styles.content}>
-                            <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={Translation.Translate("aboutArtwork")} content={this.state.data.translations[0].description}></InfoSection>
+                        <div className={styles.feedback}>
+                            <p>{Translation.Translate("useful")}</p>
+                            <a href="#"><i class="far fa-smile fa-3x"></i></a>
+                            <a href="#"><i class="far fa-frown fa-3x"></i></a>
+                            <p>{Translation.Translate("thanks")}</p>
                         </div>
-
-                        <hr className={styles.separation}></hr>
-
-                        <div id="Info" className={`${styles.content}`}>
-                            <h5 className={styles.title}>Info</h5>
-                            <div className={`row ${styles.infoSection}`}>
-                                <div className={`col-2`}>
-                                    <div className={styles.line}></div>
-                                </div>
-                                <div className="col-10">
-                                    <table className={`table table-borderless ${styles.paintDetails}`}>
-                                        <tbody>
-                                            <tr>
-                                                <td>{Translation.Translate("title")}</td>
-                                                <td>{this.state.data.translations[0].name}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>{Translation.Translate("artist")}</td>
-                                                <td>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>{Translation.Translate("year")}</td>
-                                                <td>{this.state.data.year}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>{Translation.Translate("size")}</td>
-                                                <td>{`${this.state.data.height} x ${this.state.data.width} cm`}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>{Translation.Translate("technique")}</td>
-                                                <td>{this.state.data.technique.translations[0].name}</td>
-                                            </tr>
-                                            <tr>
-                                                <td>{Translation.Translate("movement")}</td>
-                                                <td>{this.state.data.movement.translations[0].name}</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                </div>
                 <footer className={`fixed-bottom`}>

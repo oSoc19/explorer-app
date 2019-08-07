@@ -1,7 +1,12 @@
 html, body{
   background-color : #F9F6F2;
+  scroll-behavior: smooth;
 }
 
+a {
+    border-bottom: 1px solid rgba(0,123,255,.2);
+    color: #22A4B4;
+}
 
 .App {
   text-align: center;
@@ -66,14 +71,26 @@ html, body{
   margin-top : 20px;
 }
 
-.navbar-light .navbar-nav .nav-link{
-  color : #1D1E1F !important;
+.navbar-light .navbar-nav .nav-item {
+    margin: 7px;
+}
+
+.navbar-light .navbar-nav a.nav-link,
+.navbar-light .navbar-nav a.nav-link:active,
+.navbar-light .navbar-nav a.nav-link:focus,
+.navbar-light .navbar-nav a.nav-link:hover {
+    border-bottom: 1px solid rgba(0,123,255,.2);
+    color : #22A4B4;
+    padding: 0;
 }
 
 /* Carousel override */
 
 .alice-carousel__dots {
-  margin: 10px 0 5px !important;
+    margin: 10px 0 5px !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .alice-carousel__dots-item {
@@ -94,5 +111,67 @@ html, body{
 }
 
 .flexWrapper{
-  background-color : black ! important;
+    background-color : black ! important;
 }
+
+.img-fluid {
+    height: 70vh;
+}
+
+.alice-carousel .alice-carousel__prev-btn, 
+.alice-carousel .alice-carousel__next-btn {
+    background: rgba(255,255,255,.15);
+    position: absolute;
+    top: 0%;
+    width: 10%;
+    height: 100%;
+}
+
+.alice-carousel .alice-carousel__next-btn,
+.alice-carousel__next-btn-wrapper,
+.alice-carousel__next-btn-item,
+.alice-carousel__next-btn-item span,
+.alice-carousel .alice-carousel__prev-btn,
+.alice-carousel__prev-btn-wrapper,
+.alice-carousel__prev-btn-item,
+.alice-carousel__prev-btn-item span {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.alice-carousel__next-btn-item {
+    height: 100%;
+}
+
+.alice-carousel .alice-carousel__prev-btn span, 
+.alice-carousel .alice-carousel__next-btn span {
+    display: block;
+    height: 100%;
+    line-height: 75vh;
+    text-align: center;
+    width: 45px;
+}
+
+.alice-carousel .alice-carousel__prev-btn span:after, 
+.alice-carousel .alice-carousel__next-btn span:after {
+    content:'\f0da';
+    color: #fff;
+    font-family: 'FontAwesome';
+    font-size: 1.6rem;
+}
+
+.alice-carousel .alice-carousel__prev-btn span:after {
+    content:'\f0d9';
+}
+ 
+.alice-carousel__next-btn {
+    right: 0;
+    text-align: left;
+}
+
+.alice-carousel__prev-btn {
+    left: 0;
+    text-align: right;
+}
+
