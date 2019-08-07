@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190802113802_testcarolina")]
+    partial class testcarolina
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -156,7 +158,7 @@ namespace backend.Migrations
                             ArtistId = 2L,
                             Description = "Jacob van Oost I is a Bruges painter and draftsman and probably a student of his brother Frans van Oost (died 1625). Van Oost is viewed as the most important 17th-century painter from Bruges. He makes portraits for the Bruges bourgeois and history paintings, but is primarily known for the altarpieces that he makes in the spirit of the Counter Reformation. The painter is strongly influenced by the Caravaggio effects that he learns in Italy. From the work of Caravaggio (1571-1610) he takes over the chiaroscuro as well as the non-idealised figures.After this, an evolution follows towards more monumental figures and a rather classicist treatment that is in line with the work of Annibale Carracci (1560-1690) and Domenichino (1581-1641).After about 1650, a greater emotionality surfaces in his work, together with the dramatic spatial effects and a palette that is related to Venetian art. In this period, van Oost is influenced by Federico Barocci (1528-35-1612), Correggio (ca. 1489-1534) and Anthony van Dyck (1599-1641). A masterpiece in his oeuvre is Portrait of a Bruges Family (Groeninge Museum, Bruges).",
                             LanguageId = 3L,
-                            SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/jacob-van-oost-i/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
+                            SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/jacob-van-oost-i"
                         },
                         new
                         {
@@ -164,7 +166,7 @@ namespace backend.Migrations
                             ArtistId = 2L,
                             Description = "Jacob van Oost I is een Brugse schilder en tekenaar, en waarschijnlijk een leerling van zijn broer Frans van Oost (gestorven 1625). Van Oost wordt beschouwd als de belangrijkste zeventiende-eeuwse schilder van Brugge. Hij vervaardigt portretten voor de Brugse burgerij en historiestukken, maar staat vooral bekend om de altaarstukken die hij maakt in de geest van de contrareformatie. De schilder wordt sterk beïnvloed door het caravaggisme dat hij in Italië leert kennen. Het clair-obscur, maar ook de niet-geïdealiseerde figuren neemt hij uit het werk van Caravaggio (1571-1610) over.Daarna volgt een evolutie naar meer monumentale figuren en een eerder classicistische behandeling die aansluit bij het werk van Annibale Carracci (1560-1690) en Domenichino (1581-1641).Na circa 1650 duikt een grotere emotionaliteit in zijn werk op, samen met dramatische ruimtelijke effecten en een aan de Venetiaanse kunst verwant coloriet. Van Oost wordt in deze periode beïnvloed door Federico Barocci (1528-35-1612), Correggio (Circa 1489-1534) en Anthony van Dyck (1599-1641). Een meesterwerk in zijn oeuvre is Portret van een Brugse familie (Groeningemuseum, Brugge).",
                             LanguageId = 2L,
-                            SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/jacob-van-oost-i/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
+                            SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/jacob-van-oost-i"
                         },
                         new
                         {
@@ -220,7 +222,7 @@ namespace backend.Migrations
                             ArtistId = 5L,
                             Description = "Erasmus Quellinus II is een Antwerpse schilder, tekenaar, graveur en ontwerper van tapijten. Hij stamt uit een kunstenaarsfamilie. Zijn vader is de beeldhouwer Erasmus Quellinus I (1584-1640). Hij is de broer van beeldhouwer Artus Quellinus I (1609-1668) en de graveur Hubertus Quellinus (1619-1687). Quellinus is de vader en de leermeester van de schilder Jan Erasmus Quellinus (1634-1715).Quellinus is een pictor doctus en in die zin vergelijkbaar met Peter Paul Rubens met wie hij vaak samenwerkt in de jaren 1630 en door wie hij beïnvloed wordt. Beiden bezitten een uitgebreide bibliotheek en kunstverzameling. In de geest van het humanisme schrijft Quellinus het filosofisch traktaat Philosophiae, dat niet overgeleverd is. De kunstenaar zou ook een academische graad in de filosofie behaald hebben.Quellinus is verantwoordelijk voor het ontwerp en deels voor de uitvoering van belangrijke decoratieve programma's in het kader van officiële huldigingen in Antwerpen. De kunstenaar werkt ook samen met stillevenspecialisten, onder wie de bloemenschilder Daniël Seghers (1590-1661).Erasmus Quellinus II vervaardigt vele altaarstukken die in de invloedssfeer van de contrareformatie moeten geplaatst worden, maar ook historiestukken en mythologische en allegorische schilderijen. Niettegenstaande de grote invloed van Rubens ontwikkelt Quellinus vroeg in zijn carrière een eigen stijl met sterk door het licht gemodelleerde vormen. Het is mogelijk dat Quellinus die caravaggistische aspecten leert kennen via het werk van Theodoor Rombouts (1597-1637) en Gerard Seghers (1591-1651).Vanaf circa 1640 worden zijn figuren sculpturaal en driedimensionaal, en lijken op geschilderde beelden. Hiermee krijgt zijn werk aansluiting bij het oeuvre van Annibale Carracci (1560-1690), of de classicistische tak van de barok. Quellinus reist nooit naar Italië, maar leert het Romeinse classicisme via zijn broer en beeldhouwer Artus Quellinus I, die een tijd in Rome verblijft, kennen.Na circa 1650 evolueert het barokke classicisme naar een eerder rigide academisme. Quellinus ontwikkelt een voorliefde voor breed uitgesponnen architecturale achtergrondsettings, zoals in werken als Salomon en de Koningin van Sheba. (Sammlungen des Fürsten von Liechtenstein, Vaduz) of Laat de kinderen tot mij komen. (Koninklijke Musea voor Schone Kunsten van België, Brussel)Erasmus Quellinus II sterft als een rijk en beroemd kunstenaar.",
                             LanguageId = 2L,
-                            SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/erasmus-quellinus-ii/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
+                            SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/erasmus-quellinus-ii"
                         },
                         new
                         {
@@ -228,7 +230,7 @@ namespace backend.Migrations
                             ArtistId = 5L,
                             Description = "Erasmus Quellinus II is an Antwerp painter, draftsman, engraver and tapestry designer. He comes from an artistic family. His father is the sculptor Erasmus Quellinus I (1584-1640). He is the brother of the sculptor Artus Quellinus I (1609-1668) and the engraver Hubertus Quellinus (1619-1687). Quellinus is the father and master instructor of the painter Jan Erasmus Quellinus (1634-1715).Quellinus is a pictor doctus and in that sense is comparable to Peter Paul Rubens with whom he often collaborated in the 1630's and by whom he was influenced. Both possess an extensive library and art collection. In the spirit of Humanism, Quellinus writes the philosophical treatise, Philosophae, which has not survived. The artist also would have obtained an academic degree in Philosophy.Quellinus is responsible for the design and in part for the execution of important decorative programmes in the context of official honourings in Antwerp. The artist also worked together with still-life specialists, amongst whom is the floral painter Daniël Seghers (1590-1661).Erasmus Quellinus II made many altarpieces, which need to be placed within the sphere of influence of the Counter Reformation, but also history pieces and mythological and allegorical paintings. The significant influence of Rubens notwithstanding, Quellinus develops early in his career his own style with forms strongly modeled by the light. It is possible that Quellinus learned the Caravaggio-esque aspects via the work of Theodoor Rombouts (1597-1637) and Gerard Seghers (1591-1651).Starting about 1640, his figures become sculptural and three-dimensional and resemble painted sculptures. With this, his work is connected with the oeuvre of Annibale Carracci (1560-1690), or the Classicist branch of the Baroque. Quellinus travels to Italy, but learns about Roman Classicism via his brother and sculptor Artus Quellinus I, who spent some time in Rome.After about 1650, the Baroque Classicism evolves towards a rather rigid academicism. Quellinus develops a preference for broad, expansive architectural background settings, such as in works like Solomon and the Queen of Sheba, (Sammlungen des Fürsten von Liechtenstein, Vaduz), or Suffer the little Children to Come unto Me (Royal Museums of Fine Arts of Belgium, Brussels).Erasmus Quellinus II dies as a rich and famous artist.",
                             LanguageId = 3L,
-                            SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/erasmus-quellinus-ii/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
+                            SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/erasmus-quellinus-ii"
                         },
                         new
                         {
@@ -352,114 +354,6 @@ namespace backend.Migrations
                         });
                 });
 
-            modelBuilder.Entity("backend.Models.Building", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<long>("MovementId");
-
-                    b.Property<string>("MuseumCode");
-
-                    b.Property<long>("UseId");
-
-                    b.Property<int>("Year");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MovementId");
-
-                    b.HasIndex("UseId");
-
-                    b.ToTable("Building");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            MovementId = 2L,
-                            MuseumCode = "60A",
-                            UseId = 1L,
-                            Year = 1699
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            MovementId = 2L,
-                            MuseumCode = "61A",
-                            UseId = 1L,
-                            Year = 1699
-                        });
-                });
-
-            modelBuilder.Entity("backend.Models.BuildingTranslation", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<long>("BuildingId");
-
-                    b.Property<string>("Description");
-
-                    b.Property<long>("LanguageId");
-
-                    b.Property<string>("Name");
-
-                    b.Property<string>("SourceLink");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BuildingId");
-
-                    b.HasIndex("LanguageId");
-
-                    b.ToTable("BuildingTranslation");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            BuildingId = 1L,
-                            LanguageId = 1L,
-                            Name = "Hôtel de Ville de Bruges",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            BuildingId = 1L,
-                            LanguageId = 2L,
-                            Name = "Stadhuis van Brugge",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            BuildingId = 1L,
-                            LanguageId = 3L,
-                            Name = "Town Hall of Bruges",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            BuildingId = 1L,
-                            LanguageId = 4L,
-                            Name = "Rathaus von Brügge",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 5L,
-                            BuildingId = 1L,
-                            LanguageId = 5L,
-                            Name = "Ayuntamiento de Brujas",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        });
-                });
-
             modelBuilder.Entity("backend.Models.Language", b =>
                 {
                     b.Property<long>("Id")
@@ -521,10 +415,6 @@ namespace backend.Migrations
                         new
                         {
                             Id = 1L
-                        },
-                        new
-                        {
-                            Id = 2L
                         });
                 });
 
@@ -568,7 +458,7 @@ namespace backend.Migrations
                             Description = "De barok is een Europese stijlperiode die aan het begin van de 17e eeuw in Italië tot ontwikkeling kwam en tot in de eerste helft van de 18e eeuw voortduurde, en die zich kenmerkt door overdaad van vorm en heftigheid van gevoelsuitdrukking. De barok kwam tot uiting op alle terreinen van de cultuur, zoals architectuur, tuinarchitectuur, schilderkunst, beeldhouwkunst, literatuur en muziek. Er wordt een onderscheid gemaakt tussen vroeg-, hoog- en laatbarok. De laatbarok wordt ook wel rococo genoemd.",
                             LanguageId = 2L,
                             MovementId = 1L,
-                            Name = "Barok (stijlperiode)",
+                            Name = "Barok",
                             SourceLink = "https://nl.wikipedia.org/wiki/Barok_(stijlperiode)"
                         },
                         new
@@ -597,51 +487,6 @@ namespace backend.Migrations
                             MovementId = 1L,
                             Name = "Barroco",
                             SourceLink = "https://es.wikipedia.org/wiki/Barroco"
-                        },
-                        new
-                        {
-                            Id = 6L,
-                            Description = "Le baroque est un mouvement artistique qui trouve son origine en Italie dans des villes telles que Rome, Mantoue, Venise et Florence dès le milieu du xvie siècle et qui se termine au milieu du xviiie siècle. Il y a un âge baroque différent selon les domaines, qu'ils soient intellectuels, historiques ou artistiques. Certains critiques y voient une constante culturelle qui revient tout au long de l'histoire comme l'a écrit Eugenio d'Ors.Le baroque, qui touche tous les domaines, se caractérise par l’exagération du mouvement, la surcharge décorative, les effets dramatiques, la tension, l’exubérance des formes, la grandeur parfois pompeuse et le contraste, ce même contraste dont parlait Philippe Beaussant : l’époque baroque a tenté de dire « un monde où tous les contraires seraient harmonieusement possibles »",
-                            LanguageId = 1L,
-                            MovementId = 2L,
-                            Name = "Architecture gothique",
-                            SourceLink = "https://fr.wikipedia.org/wiki/Architecture_gothique"
-                        },
-                        new
-                        {
-                            Id = 7L,
-                            Description = "De barok is een Europese stijlperiode die aan het begin van de 17e eeuw in Italië tot ontwikkeling kwam en tot in de eerste helft van de 18e eeuw voortduurde, en die zich kenmerkt door overdaad van vorm en heftigheid van gevoelsuitdrukking. De barok kwam tot uiting op alle terreinen van de cultuur, zoals architectuur, tuinarchitectuur, schilderkunst, beeldhouwkunst, literatuur en muziek. Er wordt een onderscheid gemaakt tussen vroeg-, hoog- en laatbarok. De laatbarok wordt ook wel rococo genoemd.",
-                            LanguageId = 2L,
-                            MovementId = 2L,
-                            Name = "Gotische architectuur",
-                            SourceLink = "https://nl.wikipedia.org/wiki/Gotiek_(bouwkunst)"
-                        },
-                        new
-                        {
-                            Id = 8L,
-                            Description = "Gothic art was a style of medieval art that developed in Northern France out of Romanesque art in the 12th century AD, led by the concurrent development of Gothic architecture.It spread to all of Western Europe, and much of Southern and Central Europe, never quite effacing more classical styles in Italy. In the late 14th century, the sophisticated court style of International Gothic developed, which continued to evolve until the late 15th century.In many areas, especially Germany, Late Gothic art continued well into the 16th century, before being subsumed into Renaissance art. Primary media in the Gothic period included sculpture, panel painting, stained glass, fresco and illuminated manuscripts.The easily recognizable shifts in architecture from Romanesque to Gothic, and Gothic to Renaissance styles, are typically used to define the periods in art in all media, although in many ways figurative art developed at a different pace.",
-                            LanguageId = 3L,
-                            MovementId = 2L,
-                            Name = "Gothic architecture",
-                            SourceLink = "https://en.wikipedia.org/wiki/Gothic_architecture"
-                        },
-                        new
-                        {
-                            Id = 9L,
-                            Description = "Als Barock (Maskulinum „der Barock“, oder gleichwertig Neutrum „das Barock“) wird eine Epoche der europäischen Kunstgeschichte bezeichnet, die Ende des 16. Jahrhunderts begann[1] und bis ca. 1760/70 reicht. Es handelt sich nicht um einen völlig einheitlichen Stilbegriff, da es innerhalb des Barockzeitalters gleichzeitig zum Teil sehr verschiedene künstlerische Ausprägungen und Unterströmungen und auch eine Entwicklung gab,[2] nicht zuletzt auch große Unterschiede in verschiedenen Gegenden und Ländern.[3]Eine grobe Unterteilung in drei oder vier Unterepochen ist üblich, deren zeitliche Abgrenzung jedoch nicht völlig eindeutig angegeben werden kann: Frühbarock (bis ca. 1650), Hochbarock (ca. 1650–1700), Spätbarock (ca. 1700–1730)[4] und Rokoko (ca. 1730–1760/70). Gelegentlich werden Spätbarock und Rokoko gleichgesetzt, andererseits wird das Rokoko auch als eigenständige Epoche angesehen.Dem Barock voraus gingen die Epochen der Renaissance und des Manierismus, ihm folgte der Klassizismus.",
-                            LanguageId = 4L,
-                            MovementId = 2L,
-                            Name = "Gotische Architektur",
-                            SourceLink = "https://de.wikipedia.org/wiki/Gotik#Baukunst"
-                        },
-                        new
-                        {
-                            Id = 10L,
-                            Description = "El Barroco fue un período de la historia en la cultura occidental originado por una nueva forma de concebir el arte (el «estilo barroco») y que, partiendo desde diferentes contextos histórico-culturales, produjo obras en numerosos campos artísticos: literatura, arquitectura, escultura, pintura, música, ópera, danza, teatro, etc. Se manifestó principalmente en la Europa occidental, aunque debido al colonialismo también se dio en numerosas colonias de las potencias europeas, principalmente en Latinoamérica. Cronológicamente, abarcó todo el siglo XVIIy principios del XVIII, con mayor o menor prolongación en el tiempo dependiendo de cada país. Se suele situar entre el Manierismo y el Rococó, en una época caracterizada por fuertes disputas religiosas entre países católicos y protestantes, así como marcadas diferencias políticas entre los Estados absolutistas y los parlamentarios, donde una incipiente burguesía empezaba a poner los cimientos del capitalismo.Como estilo artístico, el Barroco surgió a principios del siglo XVII (según otros autores a finales del XVI) en Italia —período también conocido en este país como Seicento—, desde donde se extendió hacia la mayor parte de Europa. Durante mucho tiempo (siglos XVIII y XIX) el término «barroco» tuvo un sentido peyorativo, con el significado de recargado, engañoso, caprichoso, hasta que fue posteriormente revalorizado a finales del siglo XIX por Jacob Burckhardt y, en el XX, por Benedetto Croce y Eugenio d'Ors. Algunos historiadores dividen el Barroco en tres períodos: «primitivo» (1580-1630), «maduro» o «pleno» (1630-1680) y «tardío» (1680-1750).",
-                            LanguageId = 5L,
-                            MovementId = 2L,
-                            Name = "Arquitectura gótica",
-                            SourceLink = "https://es.wikipedia.org/wiki/Arquitectura_g%C3%B3tica"
                         });
                 });
 
@@ -685,7 +530,7 @@ namespace backend.Migrations
                             Height = 162f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0004_I",
                             MovementId = 1L,
-                            MuseumCode = "10A",
+                            MuseumCode = "22",
                             TechniqueId = 1L,
                             Width = 228f,
                             Year = 1699
@@ -697,7 +542,7 @@ namespace backend.Migrations
                             Height = 150.5f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0181_I",
                             MovementId = 1L,
-                            MuseumCode = "11A",
+                            MuseumCode = "23",
                             TechniqueId = 1L,
                             Width = 255.5f,
                             Year = 1645
@@ -709,7 +554,7 @@ namespace backend.Migrations
                             Height = 116f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0184_I",
                             MovementId = 1L,
-                            MuseumCode = "12A",
+                            MuseumCode = "26",
                             TechniqueId = 1L,
                             Width = 222f,
                             Year = 1668
@@ -721,7 +566,7 @@ namespace backend.Migrations
                             Height = 73f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0187_I",
                             MovementId = 1L,
-                            MuseumCode = "13A",
+                            MuseumCode = "27",
                             TechniqueId = 1L,
                             Width = 59f,
                             Year = 1697
@@ -733,7 +578,7 @@ namespace backend.Migrations
                             Height = 123.3f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0374_I",
                             MovementId = 1L,
-                            MuseumCode = "14A",
+                            MuseumCode = "28",
                             TechniqueId = 1L,
                             Width = 94.2f,
                             Year = 1641
@@ -745,7 +590,7 @@ namespace backend.Migrations
                             Height = 106f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO1346_I",
                             MovementId = 1L,
-                            MuseumCode = "15A",
+                            MuseumCode = "29",
                             TechniqueId = 1L,
                             Width = 83f,
                             Year = 1670
@@ -757,7 +602,7 @@ namespace backend.Migrations
                             Height = 220f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/1991_GRO0007_I",
                             MovementId = 1L,
-                            MuseumCode = "16A",
+                            MuseumCode = "24",
                             TechniqueId = 1L,
                             Width = 240f,
                             Year = 1643
@@ -769,7 +614,7 @@ namespace backend.Migrations
                             Height = 76.2f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/2012_GRO0001_I",
                             MovementId = 1L,
-                            MuseumCode = "17A",
+                            MuseumCode = "25",
                             TechniqueId = 1L,
                             Width = 63.5f,
                             Year = 1652
@@ -780,7 +625,7 @@ namespace backend.Migrations
                             AuthorId = 2L,
                             Height = 193.5f,
                             MovementId = 1L,
-                            MuseumCode = "18A",
+                            MuseumCode = "30",
                             TechniqueId = 1L,
                             Width = 275f,
                             Year = 1640
@@ -926,7 +771,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 1L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 1L,
                             Subtitle = "à propos de l'oeuvre",
@@ -936,7 +781,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 2L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 1L,
                             Subtitle = "à propos du mouvement",
@@ -946,7 +791,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 3L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 1L,
                             Subtitle = "à propos de la technique",
@@ -956,7 +801,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 4L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 1L,
                             Subtitle = "over het kunstwerk",
@@ -966,7 +811,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 5L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 1L,
                             Subtitle = "over de stijlperiode",
@@ -976,7 +821,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 6L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 1L,
                             Subtitle = "over de techniek",
@@ -986,7 +831,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 7L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/BfKK5hC/1-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 1L,
                             Subtitle = "about the artwork",
@@ -996,7 +841,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 8L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/YZL18ws/1-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 1L,
                             Subtitle = "about the movement",
@@ -1006,7 +851,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 9L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/dWPynJ3/1-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 1L,
                             Subtitle = "about the technique",
@@ -1016,7 +861,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 10L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 2L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1026,7 +871,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 11L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5fdb481bb5f94f8697556ba58a986b659d9bfd331a374ad9810a549d601c2627/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 2L,
                             Subtitle = "à propos du mouvement",
@@ -1036,7 +881,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 12L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e346459340324138861abea18b6c87d2d65c583136a44fb8906007a69871cc23/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 2L,
                             Subtitle = "à propos de la technique",
@@ -1046,7 +891,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 13L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 2L,
                             Subtitle = "Over het kunstwerk",
@@ -1056,7 +901,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 14L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5fdb481bb5f94f8697556ba58a986b659d9bfd331a374ad9810a549d601c2627/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 2L,
                             Subtitle = "over de stijlperiode",
@@ -1066,7 +911,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 15L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e346459340324138861abea18b6c87d2d65c583136a44fb8906007a69871cc23/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 2L,
                             Subtitle = "over de techniek",
@@ -1076,7 +921,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 16L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/2Mfzxph/2-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 2L,
                             Subtitle = "About the artwork",
@@ -1086,7 +931,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 17L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5fdb481bb5f94f8697556ba58a986b659d9bfd331a374ad9810a549d601c2627/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/bFYY1ZH/2-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 2L,
                             Subtitle = "about the movement",
@@ -1096,7 +941,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 18L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e346459340324138861abea18b6c87d2d65c583136a44fb8906007a69871cc23/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/sqh93vN/2-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 2L,
                             Subtitle = "about the technique",
@@ -1106,7 +951,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 19L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 3L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1116,7 +961,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 20L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 3L,
                             Subtitle = "à propos du mouvement",
@@ -1126,7 +971,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 21L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 3L,
                             Subtitle = "à propos de la technique",
@@ -1136,7 +981,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 22L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 3L,
                             Subtitle = "over het kunstwerk",
@@ -1146,7 +991,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 23L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 3L,
                             Subtitle = "over de stijlperiode",
@@ -1156,7 +1001,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 24L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 3L,
                             Subtitle = "over de techniek",
@@ -1166,7 +1011,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 25L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/z7nSqh1/3-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 3L,
                             Subtitle = "About the artwork",
@@ -1176,7 +1021,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 26L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/kJKvdsn/3-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 3L,
                             Subtitle = "about the movement",
@@ -1186,7 +1031,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 27L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/DpgqCRh/3-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 3L,
                             Subtitle = "about the technique",
@@ -1196,7 +1041,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 28L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 4L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1206,7 +1051,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 29L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a47b5970737453b816a29a596b25ff9f37f58290f9b4ab18521a5ce7b610ad3/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 4L,
                             Subtitle = "à propos du mouvement",
@@ -1216,7 +1061,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 30L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/efd4bf7eedcc4d768d02849291c823abd947d1a712a04e70980bc3e1086273b9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 4L,
                             Subtitle = "à propos de la technique ",
@@ -1226,7 +1071,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 31L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 4L,
                             Subtitle = "over het kunstwerk ",
@@ -1236,7 +1081,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 32L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a47b5970737453b816a29a596b25ff9f37f58290f9b4ab18521a5ce7b610ad3/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 4L,
                             Subtitle = "over de stijlperiode ",
@@ -1246,7 +1091,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 33L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/efd4bf7eedcc4d768d02849291c823abd947d1a712a04e70980bc3e1086273b9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 4L,
                             Subtitle = "over de techniek ",
@@ -1256,7 +1101,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 34L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/zrLCVBg/6-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 4L,
                             Subtitle = "about the artwork",
@@ -1266,7 +1111,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 35L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a47b5970737453b816a29a596b25ff9f37f58290f9b4ab18521a5ce7b610ad3/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/W5564rG/6-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 4L,
                             Subtitle = "about the movement",
@@ -1276,7 +1121,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 36L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/efd4bf7eedcc4d768d02849291c823abd947d1a712a04e70980bc3e1086273b9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/mR3gR6d/6-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 4L,
                             Subtitle = "about the technique",
@@ -1286,7 +1131,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 37L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1296,7 +1141,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 38L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "à propos du mouvement",
@@ -1306,7 +1151,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 39L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "à propos de la technique",
@@ -1316,7 +1161,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 40L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 5L,
                             Subtitle = "over het kunstwerk",
@@ -1326,7 +1171,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 41L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 5L,
                             Subtitle = "over de stijlperiode",
@@ -1336,7 +1181,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 42L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 5L,
                             Subtitle = "over de techniek",
@@ -1346,7 +1191,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 43L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0J1Wf0J/7-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 5L,
                             Subtitle = "about the artwork",
@@ -1356,7 +1201,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 44L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/VDxHHv3/7-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 5L,
                             Subtitle = "about the movement",
@@ -1366,7 +1211,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 45L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/SnpBc9r/7-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 5L,
                             Subtitle = "about the technique",
@@ -1376,7 +1221,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 46L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 6L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1386,7 +1231,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 47L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 6L,
                             Subtitle = "à propos du mouvement",
@@ -1396,7 +1241,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 48L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 6L,
                             Subtitle = "à propos de la technique",
@@ -1406,7 +1251,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 49L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 6L,
                             Subtitle = "over het kunstwerk",
@@ -1416,7 +1261,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 50L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 6L,
                             Subtitle = "over de stijlperiode",
@@ -1426,7 +1271,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 51L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 6L,
                             Subtitle = "over de techniek",
@@ -1436,7 +1281,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 52L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/QPcwzmj/4-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 6L,
                             Subtitle = "about the artwork",
@@ -1446,7 +1291,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 53L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/hRgyJCv/4-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 6L,
                             Subtitle = "about the movement",
@@ -1456,7 +1301,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 54L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/5j9TJMW/4-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 6L,
                             Subtitle = "about the technique",
@@ -1466,7 +1311,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 55L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 7L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1486,7 +1331,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 56L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 7L,
                             Subtitle = "à propos du mouvement",
@@ -1496,7 +1341,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 57L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ddd295ab406349bcaabd41e04e4aa7d3fa4285c4e274469ca4f84a09c82f7864/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 7L,
                             Subtitle = "à propos de la technique",
@@ -1506,7 +1351,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 58L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 7L,
                             Subtitle = "over het kunstwerk",
@@ -1526,7 +1371,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 59L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 7L,
                             Subtitle = "over de stijlperiode",
@@ -1536,7 +1381,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 60L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ddd295ab406349bcaabd41e04e4aa7d3fa4285c4e274469ca4f84a09c82f7864/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 7L,
                             Subtitle = "over de techniek",
@@ -1546,7 +1391,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 61L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/ThbwXSp/8-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 7L,
                             Subtitle = "about the artwork",
@@ -1566,7 +1411,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 62L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0sGsXZh/8-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 7L,
                             Subtitle = "about the movement",
@@ -1576,7 +1421,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 63L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ddd295ab406349bcaabd41e04e4aa7d3fa4285c4e274469ca4f84a09c82f7864/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/dQcncwC/8-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 7L,
                             Subtitle = "about the technique",
@@ -1586,7 +1431,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 64L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 8L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1596,7 +1441,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 65L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5500b6e47c64cbba935e3dc2d68f8d6d652dd7e5a2943ed8fccd4ba779d8fe9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 8L,
                             Subtitle = "à propos du mouvement",
@@ -1606,7 +1451,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 66L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/07e8711ec42e4a659843bc2de2e78657108b44bc1fa24dbdaaca756a3c33f1e9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 8L,
                             Subtitle = "à propos de la technique",
@@ -1616,7 +1461,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 67L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 8L,
                             Subtitle = "over het kunstwerk",
@@ -1626,7 +1471,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 68L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5500b6e47c64cbba935e3dc2d68f8d6d652dd7e5a2943ed8fccd4ba779d8fe9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 8L,
                             Subtitle = "over de stijlperiode",
@@ -1636,7 +1481,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 69L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/07e8711ec42e4a659843bc2de2e78657108b44bc1fa24dbdaaca756a3c33f1e9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 8L,
                             Subtitle = "over de techniek",
@@ -1646,7 +1491,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 70L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/0hQyG5q/9-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 8L,
                             Subtitle = "about the artwork",
@@ -1656,7 +1501,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 71L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5500b6e47c64cbba935e3dc2d68f8d6d652dd7e5a2943ed8fccd4ba779d8fe9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/sWkTNkV/9-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 8L,
                             Subtitle = "about the movement",
@@ -1666,7 +1511,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 72L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/07e8711ec42e4a659843bc2de2e78657108b44bc1fa24dbdaaca756a3c33f1e9/browse.jpg",
+                            ImageUrl = "https://i.ibb.co/RPFhGnT/9-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 8L,
                             Subtitle = "about the technique",
@@ -1676,7 +1521,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 73L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1686,7 +1531,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 74L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos du mouvement",
@@ -1696,7 +1541,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 75L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos de la technique",
@@ -1706,7 +1551,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 76L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over het kunstwerk",
@@ -1716,7 +1561,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 77L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over de stijlperiode",
@@ -1726,7 +1571,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 78L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over de techniek",
@@ -1736,7 +1581,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 79L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/ZW6tNjq/5-ART-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the artwork",
@@ -1746,7 +1591,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 80L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/QcbYDfT/5-MOV-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the movement",
@@ -1756,7 +1601,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 81L,
-                            ImageUrl = "",
+                            ImageUrl = "https://i.ibb.co/1MDpNrY/5-TECH-2x-100.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the technique",
@@ -2252,126 +2097,11 @@ namespace backend.Migrations
                         });
                 });
 
-            modelBuilder.Entity("backend.Models.Use", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Use");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L
-                        });
-                });
-
-            modelBuilder.Entity("backend.Models.UseTranslation", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Description");
-
-                    b.Property<long>("LanguageId");
-
-                    b.Property<string>("Name");
-
-                    b.Property<string>("SourceLink");
-
-                    b.Property<long>("UseId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("LanguageId");
-
-                    b.HasIndex("UseId");
-
-                    b.ToTable("UseTranslation");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            Description = "FR",
-                            LanguageId = 1L,
-                            Name = "Hôtel de Ville",
-                            SourceLink = "https://fr.wikipedia.org/wiki/Baroque",
-                            UseId = 1L
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            Description = "NL",
-                            LanguageId = 2L,
-                            Name = "Stadhuis",
-                            SourceLink = "https://nl.wikipedia.org/wiki/Barok_(stijlperiode)",
-                            UseId = 1L
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            Description = "EN",
-                            LanguageId = 3L,
-                            Name = "Town Hall",
-                            SourceLink = "https://en.wikipedia.org/wiki/Baroque",
-                            UseId = 1L
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            Description = "DE",
-                            LanguageId = 4L,
-                            Name = "Rathaus",
-                            SourceLink = "https://de.wikipedia.org/wiki/Barock",
-                            UseId = 1L
-                        },
-                        new
-                        {
-                            Id = 5L,
-                            Description = "ES",
-                            LanguageId = 5L,
-                            Name = "Ayuntamiento",
-                            SourceLink = "https://es.wikipedia.org/wiki/Barroco",
-                            UseId = 1L
-                        });
-                });
-
             modelBuilder.Entity("backend.Models.ArtistTranslation", b =>
                 {
                     b.HasOne("backend.Models.Artist", "Artist")
                         .WithMany("Translations")
                         .HasForeignKey("ArtistId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("backend.Models.Language", "Language")
-                        .WithMany()
-                        .HasForeignKey("LanguageId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("backend.Models.Building", b =>
-                {
-                    b.HasOne("backend.Models.Movement", "Movement")
-                        .WithMany()
-                        .HasForeignKey("MovementId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("backend.Models.Use", "Use")
-                        .WithMany("Buildings")
-                        .HasForeignKey("UseId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("backend.Models.BuildingTranslation", b =>
-                {
-                    b.HasOne("backend.Models.Building", "Building")
-                        .WithMany("Translations")
-                        .HasForeignKey("BuildingId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("backend.Models.Language", "Language")
@@ -2460,19 +2190,6 @@ namespace backend.Migrations
                     b.HasOne("backend.Models.Technique", "Technique")
                         .WithMany("Translations")
                         .HasForeignKey("TechniqueId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("backend.Models.UseTranslation", b =>
-                {
-                    b.HasOne("backend.Models.Language", "Language")
-                        .WithMany()
-                        .HasForeignKey("LanguageId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("backend.Models.Use", "Use")
-                        .WithMany("Translations")
-                        .HasForeignKey("UseId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

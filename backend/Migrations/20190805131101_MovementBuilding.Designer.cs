@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190805131101_MovementBuilding")]
+    partial class MovementBuilding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -156,7 +158,7 @@ namespace backend.Migrations
                             ArtistId = 2L,
                             Description = "Jacob van Oost I is a Bruges painter and draftsman and probably a student of his brother Frans van Oost (died 1625). Van Oost is viewed as the most important 17th-century painter from Bruges. He makes portraits for the Bruges bourgeois and history paintings, but is primarily known for the altarpieces that he makes in the spirit of the Counter Reformation. The painter is strongly influenced by the Caravaggio effects that he learns in Italy. From the work of Caravaggio (1571-1610) he takes over the chiaroscuro as well as the non-idealised figures.After this, an evolution follows towards more monumental figures and a rather classicist treatment that is in line with the work of Annibale Carracci (1560-1690) and Domenichino (1581-1641).After about 1650, a greater emotionality surfaces in his work, together with the dramatic spatial effects and a palette that is related to Venetian art. In this period, van Oost is influenced by Federico Barocci (1528-35-1612), Correggio (ca. 1489-1534) and Anthony van Dyck (1599-1641). A masterpiece in his oeuvre is Portrait of a Bruges Family (Groeninge Museum, Bruges).",
                             LanguageId = 3L,
-                            SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/jacob-van-oost-i/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
+                            SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/jacob-van-oost-i"
                         },
                         new
                         {
@@ -164,7 +166,7 @@ namespace backend.Migrations
                             ArtistId = 2L,
                             Description = "Jacob van Oost I is een Brugse schilder en tekenaar, en waarschijnlijk een leerling van zijn broer Frans van Oost (gestorven 1625). Van Oost wordt beschouwd als de belangrijkste zeventiende-eeuwse schilder van Brugge. Hij vervaardigt portretten voor de Brugse burgerij en historiestukken, maar staat vooral bekend om de altaarstukken die hij maakt in de geest van de contrareformatie. De schilder wordt sterk beïnvloed door het caravaggisme dat hij in Italië leert kennen. Het clair-obscur, maar ook de niet-geïdealiseerde figuren neemt hij uit het werk van Caravaggio (1571-1610) over.Daarna volgt een evolutie naar meer monumentale figuren en een eerder classicistische behandeling die aansluit bij het werk van Annibale Carracci (1560-1690) en Domenichino (1581-1641).Na circa 1650 duikt een grotere emotionaliteit in zijn werk op, samen met dramatische ruimtelijke effecten en een aan de Venetiaanse kunst verwant coloriet. Van Oost wordt in deze periode beïnvloed door Federico Barocci (1528-35-1612), Correggio (Circa 1489-1534) en Anthony van Dyck (1599-1641). Een meesterwerk in zijn oeuvre is Portret van een Brugse familie (Groeningemuseum, Brugge).",
                             LanguageId = 2L,
-                            SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/jacob-van-oost-i/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
+                            SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/jacob-van-oost-i"
                         },
                         new
                         {
@@ -220,7 +222,7 @@ namespace backend.Migrations
                             ArtistId = 5L,
                             Description = "Erasmus Quellinus II is een Antwerpse schilder, tekenaar, graveur en ontwerper van tapijten. Hij stamt uit een kunstenaarsfamilie. Zijn vader is de beeldhouwer Erasmus Quellinus I (1584-1640). Hij is de broer van beeldhouwer Artus Quellinus I (1609-1668) en de graveur Hubertus Quellinus (1619-1687). Quellinus is de vader en de leermeester van de schilder Jan Erasmus Quellinus (1634-1715).Quellinus is een pictor doctus en in die zin vergelijkbaar met Peter Paul Rubens met wie hij vaak samenwerkt in de jaren 1630 en door wie hij beïnvloed wordt. Beiden bezitten een uitgebreide bibliotheek en kunstverzameling. In de geest van het humanisme schrijft Quellinus het filosofisch traktaat Philosophiae, dat niet overgeleverd is. De kunstenaar zou ook een academische graad in de filosofie behaald hebben.Quellinus is verantwoordelijk voor het ontwerp en deels voor de uitvoering van belangrijke decoratieve programma's in het kader van officiële huldigingen in Antwerpen. De kunstenaar werkt ook samen met stillevenspecialisten, onder wie de bloemenschilder Daniël Seghers (1590-1661).Erasmus Quellinus II vervaardigt vele altaarstukken die in de invloedssfeer van de contrareformatie moeten geplaatst worden, maar ook historiestukken en mythologische en allegorische schilderijen. Niettegenstaande de grote invloed van Rubens ontwikkelt Quellinus vroeg in zijn carrière een eigen stijl met sterk door het licht gemodelleerde vormen. Het is mogelijk dat Quellinus die caravaggistische aspecten leert kennen via het werk van Theodoor Rombouts (1597-1637) en Gerard Seghers (1591-1651).Vanaf circa 1640 worden zijn figuren sculpturaal en driedimensionaal, en lijken op geschilderde beelden. Hiermee krijgt zijn werk aansluiting bij het oeuvre van Annibale Carracci (1560-1690), of de classicistische tak van de barok. Quellinus reist nooit naar Italië, maar leert het Romeinse classicisme via zijn broer en beeldhouwer Artus Quellinus I, die een tijd in Rome verblijft, kennen.Na circa 1650 evolueert het barokke classicisme naar een eerder rigide academisme. Quellinus ontwikkelt een voorliefde voor breed uitgesponnen architecturale achtergrondsettings, zoals in werken als Salomon en de Koningin van Sheba. (Sammlungen des Fürsten von Liechtenstein, Vaduz) of Laat de kinderen tot mij komen. (Koninklijke Musea voor Schone Kunsten van België, Brussel)Erasmus Quellinus II sterft als een rijk en beroemd kunstenaar.",
                             LanguageId = 2L,
-                            SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/erasmus-quellinus-ii/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
+                            SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/erasmus-quellinus-ii"
                         },
                         new
                         {
@@ -228,7 +230,7 @@ namespace backend.Migrations
                             ArtistId = 5L,
                             Description = "Erasmus Quellinus II is an Antwerp painter, draftsman, engraver and tapestry designer. He comes from an artistic family. His father is the sculptor Erasmus Quellinus I (1584-1640). He is the brother of the sculptor Artus Quellinus I (1609-1668) and the engraver Hubertus Quellinus (1619-1687). Quellinus is the father and master instructor of the painter Jan Erasmus Quellinus (1634-1715).Quellinus is a pictor doctus and in that sense is comparable to Peter Paul Rubens with whom he often collaborated in the 1630's and by whom he was influenced. Both possess an extensive library and art collection. In the spirit of Humanism, Quellinus writes the philosophical treatise, Philosophae, which has not survived. The artist also would have obtained an academic degree in Philosophy.Quellinus is responsible for the design and in part for the execution of important decorative programmes in the context of official honourings in Antwerp. The artist also worked together with still-life specialists, amongst whom is the floral painter Daniël Seghers (1590-1661).Erasmus Quellinus II made many altarpieces, which need to be placed within the sphere of influence of the Counter Reformation, but also history pieces and mythological and allegorical paintings. The significant influence of Rubens notwithstanding, Quellinus develops early in his career his own style with forms strongly modeled by the light. It is possible that Quellinus learned the Caravaggio-esque aspects via the work of Theodoor Rombouts (1597-1637) and Gerard Seghers (1591-1651).Starting about 1640, his figures become sculptural and three-dimensional and resemble painted sculptures. With this, his work is connected with the oeuvre of Annibale Carracci (1560-1690), or the Classicist branch of the Baroque. Quellinus travels to Italy, but learns about Roman Classicism via his brother and sculptor Artus Quellinus I, who spent some time in Rome.After about 1650, the Baroque Classicism evolves towards a rather rigid academicism. Quellinus develops a preference for broad, expansive architectural background settings, such as in works like Solomon and the Queen of Sheba, (Sammlungen des Fürsten von Liechtenstein, Vaduz), or Suffer the little Children to Come unto Me (Royal Museums of Fine Arts of Belgium, Brussels).Erasmus Quellinus II dies as a rich and famous artist.",
                             LanguageId = 3L,
-                            SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/erasmus-quellinus-ii/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
+                            SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/erasmus-quellinus-ii"
                         },
                         new
                         {
@@ -416,48 +418,6 @@ namespace backend.Migrations
                     b.HasIndex("LanguageId");
 
                     b.ToTable("BuildingTranslation");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            BuildingId = 1L,
-                            LanguageId = 1L,
-                            Name = "Hôtel de Ville de Bruges",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            BuildingId = 1L,
-                            LanguageId = 2L,
-                            Name = "Stadhuis van Brugge",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            BuildingId = 1L,
-                            LanguageId = 3L,
-                            Name = "Town Hall of Bruges",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            BuildingId = 1L,
-                            LanguageId = 4L,
-                            Name = "Rathaus von Brügge",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 5L,
-                            BuildingId = 1L,
-                            LanguageId = 5L,
-                            Name = "Ayuntamiento de Brujas",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        });
                 });
 
             modelBuilder.Entity("backend.Models.Language", b =>
@@ -685,7 +645,7 @@ namespace backend.Migrations
                             Height = 162f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0004_I",
                             MovementId = 1L,
-                            MuseumCode = "10A",
+                            MuseumCode = "22A",
                             TechniqueId = 1L,
                             Width = 228f,
                             Year = 1699
@@ -697,7 +657,7 @@ namespace backend.Migrations
                             Height = 150.5f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0181_I",
                             MovementId = 1L,
-                            MuseumCode = "11A",
+                            MuseumCode = "23A",
                             TechniqueId = 1L,
                             Width = 255.5f,
                             Year = 1645
@@ -709,7 +669,7 @@ namespace backend.Migrations
                             Height = 116f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0184_I",
                             MovementId = 1L,
-                            MuseumCode = "12A",
+                            MuseumCode = "26A",
                             TechniqueId = 1L,
                             Width = 222f,
                             Year = 1668
@@ -721,7 +681,7 @@ namespace backend.Migrations
                             Height = 73f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0187_I",
                             MovementId = 1L,
-                            MuseumCode = "13A",
+                            MuseumCode = "27A",
                             TechniqueId = 1L,
                             Width = 59f,
                             Year = 1697
@@ -733,7 +693,7 @@ namespace backend.Migrations
                             Height = 123.3f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0374_I",
                             MovementId = 1L,
-                            MuseumCode = "14A",
+                            MuseumCode = "28A",
                             TechniqueId = 1L,
                             Width = 94.2f,
                             Year = 1641
@@ -745,7 +705,7 @@ namespace backend.Migrations
                             Height = 106f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO1346_I",
                             MovementId = 1L,
-                            MuseumCode = "15A",
+                            MuseumCode = "29A",
                             TechniqueId = 1L,
                             Width = 83f,
                             Year = 1670
@@ -757,7 +717,7 @@ namespace backend.Migrations
                             Height = 220f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/1991_GRO0007_I",
                             MovementId = 1L,
-                            MuseumCode = "16A",
+                            MuseumCode = "24A",
                             TechniqueId = 1L,
                             Width = 240f,
                             Year = 1643
@@ -769,7 +729,7 @@ namespace backend.Migrations
                             Height = 76.2f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/2012_GRO0001_I",
                             MovementId = 1L,
-                            MuseumCode = "17A",
+                            MuseumCode = "25A",
                             TechniqueId = 1L,
                             Width = 63.5f,
                             Year = 1652
@@ -780,7 +740,7 @@ namespace backend.Migrations
                             AuthorId = 2L,
                             Height = 193.5f,
                             MovementId = 1L,
-                            MuseumCode = "18A",
+                            MuseumCode = "30A",
                             TechniqueId = 1L,
                             Width = 275f,
                             Year = 1640
@@ -1676,7 +1636,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 73L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1686,7 +1646,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 74L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos du mouvement",
@@ -1696,7 +1656,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 75L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 9L,
                             Subtitle = "à propos de la technique",
@@ -1706,7 +1666,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 76L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over het kunstwerk",
@@ -1716,7 +1676,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 77L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over de stijlperiode",
@@ -1726,7 +1686,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 78L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 9L,
                             Subtitle = "over de techniek",
@@ -1736,7 +1696,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 79L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the artwork",
@@ -1746,7 +1706,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 80L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the movement",
@@ -1756,7 +1716,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 81L,
-                            ImageUrl = "",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 9L,
                             Subtitle = "about the technique",
@@ -2299,7 +2259,7 @@ namespace backend.Migrations
                             Id = 1L,
                             Description = "FR",
                             LanguageId = 1L,
-                            Name = "Hôtel de Ville",
+                            Name = "Hôtel de Ville de Bruges",
                             SourceLink = "https://fr.wikipedia.org/wiki/Baroque",
                             UseId = 1L
                         },
@@ -2308,7 +2268,7 @@ namespace backend.Migrations
                             Id = 2L,
                             Description = "NL",
                             LanguageId = 2L,
-                            Name = "Stadhuis",
+                            Name = "Stadhuis van Brugge",
                             SourceLink = "https://nl.wikipedia.org/wiki/Barok_(stijlperiode)",
                             UseId = 1L
                         },
@@ -2317,7 +2277,7 @@ namespace backend.Migrations
                             Id = 3L,
                             Description = "EN",
                             LanguageId = 3L,
-                            Name = "Town Hall",
+                            Name = "Town Hall of Bruges",
                             SourceLink = "https://en.wikipedia.org/wiki/Baroque",
                             UseId = 1L
                         },
@@ -2326,7 +2286,7 @@ namespace backend.Migrations
                             Id = 4L,
                             Description = "DE",
                             LanguageId = 4L,
-                            Name = "Rathaus",
+                            Name = "Rathaus von Brügge",
                             SourceLink = "https://de.wikipedia.org/wiki/Barock",
                             UseId = 1L
                         },
@@ -2335,7 +2295,7 @@ namespace backend.Migrations
                             Id = 5L,
                             Description = "ES",
                             LanguageId = 5L,
-                            Name = "Ayuntamiento",
+                            Name = "Ayuntamiento de Brujas",
                             SourceLink = "https://es.wikipedia.org/wiki/Barroco",
                             UseId = 1L
                         });

@@ -16,5 +16,9 @@ public class MappingProfile : Profile{
       CreateMap<PaintingTranslation, PaintingTranslationDto>();
       CreateMap<Technique, TechniqueDto>();
       CreateMap<TechniqueTranslation, TechniqueTranslationDto>();
+      CreateMap<Building, BuildingDto>();
+      CreateMap<BuildingTranslation, BuildingTranslationDto>();
+      CreateMap<Use, UseDto>();
+      CreateMap<UseTranslation, UseTranslationDto>();
    }
 }

@@ -14,7 +14,8 @@ namespace backend.DAL
         public DbSet<PaintingStory> PaintingStory {get;set;}
         public DbSet<Technique> Technique {get;set;}
         public DbSet<Movement> Movement {get;set;}
-
+        public DbSet<Use> Use {get;set;}
+        public DbSet<Building> Building { get; set; }
         public ExplorerContext(DbContextOptions<ExplorerContext> options) : base(options)
         {
         }
@@ -170,7 +171,7 @@ namespace backend.DAL
                     Description = "Jacob van Oost I is a Bruges painter and draftsman and probably a student of his brother Frans van Oost (died 1625). Van Oost is viewed as the most important 17th-century painter from Bruges. He makes portraits for the Bruges bourgeois and history paintings, but is primarily known for the altarpieces that he makes in the spirit of the Counter Reformation. The painter is strongly influenced by the Caravaggio effects that he learns in Italy. From the work of Caravaggio (1571-1610) he takes over the chiaroscuro as well as the non-idealised figures."
                         +"After this, an evolution follows towards more monumental figures and a rather classicist treatment that is in line with the work of Annibale Carracci (1560-1690) and Domenichino (1581-1641)."
                         +"After about 1650, a greater emotionality surfaces in his work, together with the dramatic spatial effects and a palette that is related to Venetian art. In this period, van Oost is influenced by Federico Barocci (1528-35-1612), Correggio (ca. 1489-1534) and Anthony van Dyck (1599-1641). A masterpiece in his oeuvre is Portrait of a Bruges Family (Groeninge Museum, Bruges).",
-                    SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/jacob-van-oost-i"
+                    SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/jacob-van-oost-i/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
                 },
                 new ArtistTranslation
                 {
@@ -180,7 +181,7 @@ namespace backend.DAL
                     Description = "Jacob van Oost I is een Brugse schilder en tekenaar, en waarschijnlijk een leerling van zijn broer Frans van Oost (gestorven 1625). Van Oost wordt beschouwd als de belangrijkste zeventiende-eeuwse schilder van Brugge. Hij vervaardigt portretten voor de Brugse burgerij en historiestukken, maar staat vooral bekend om de altaarstukken die hij maakt in de geest van de contrareformatie. De schilder wordt sterk beïnvloed door het caravaggisme dat hij in Italië leert kennen. Het clair-obscur, maar ook de niet-geïdealiseerde figuren neemt hij uit het werk van Caravaggio (1571-1610) over."
                         +"Daarna volgt een evolutie naar meer monumentale figuren en een eerder classicistische behandeling die aansluit bij het werk van Annibale Carracci (1560-1690) en Domenichino (1581-1641)."
                         +"Na circa 1650 duikt een grotere emotionaliteit in zijn werk op, samen met dramatische ruimtelijke effecten en een aan de Venetiaanse kunst verwant coloriet. Van Oost wordt in deze periode beïnvloed door Federico Barocci (1528-35-1612), Correggio (Circa 1489-1534) en Anthony van Dyck (1599-1641). Een meesterwerk in zijn oeuvre is Portret van een Brugse familie (Groeningemuseum, Brugge).",
-                    SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/jacob-van-oost-i"
+                    SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/jacob-van-oost-i/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
                 },
                 new ArtistTranslation
                 {
@@ -258,7 +259,7 @@ namespace backend.DAL
                         +"Vanaf circa 1640 worden zijn figuren sculpturaal en driedimensionaal, en lijken op geschilderde beelden. Hiermee krijgt zijn werk aansluiting bij het oeuvre van Annibale Carracci (1560-1690), of de classicistische tak van de barok. Quellinus reist nooit naar Italië, maar leert het Romeinse classicisme via zijn broer en beeldhouwer Artus Quellinus I, die een tijd in Rome verblijft, kennen."
                         +"Na circa 1650 evolueert het barokke classicisme naar een eerder rigide academisme. Quellinus ontwikkelt een voorliefde voor breed uitgesponnen architecturale achtergrondsettings, zoals in werken als Salomon en de Koningin van Sheba. (Sammlungen des Fürsten von Liechtenstein, Vaduz) of Laat de kinderen tot mij komen. (Koninklijke Musea voor Schone Kunsten van België, Brussel)"
                         +"Erasmus Quellinus II sterft als een rijk en beroemd kunstenaar.",
-                    SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/erasmus-quellinus-ii"
+                    SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/erasmus-quellinus-ii/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
                 },
                 new ArtistTranslation
                 {
@@ -272,7 +273,7 @@ namespace backend.DAL
                         +"Starting about 1640, his figures become sculptural and three-dimensional and resemble painted sculptures. With this, his work is connected with the oeuvre of Annibale Carracci (1560-1690), or the Classicist branch of the Baroque. Quellinus travels to Italy, but learns about Roman Classicism via his brother and sculptor Artus Quellinus I, who spent some time in Rome."
                         +"After about 1650, the Baroque Classicism evolves towards a rather rigid academicism. Quellinus develops a preference for broad, expansive architectural background settings, such as in works like Solomon and the Queen of Sheba, (Sammlungen des Fürsten von Liechtenstein, Vaduz), or Suffer the little Children to Come unto Me (Royal Museums of Fine Arts of Belgium, Brussels)."
                         +"Erasmus Quellinus II dies as a rich and famous artist.",
-                    SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/erasmus-quellinus-ii"
+                    SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/erasmus-quellinus-ii/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
                 },
                 new ArtistTranslation
                 {
@@ -439,6 +440,10 @@ namespace backend.DAL
                 new Movement
                 {
                     Id = 1
+                },
+                new Movement
+                {
+                    Id = 2
                 }
             );
 
@@ -493,6 +498,58 @@ namespace backend.DAL
                     Description = "El Barroco fue un período de la historia en la cultura occidental originado por una nueva forma de concebir el arte (el «estilo barroco») y que, partiendo desde diferentes contextos histórico-culturales, produjo obras en numerosos campos artísticos: literatura, arquitectura, escultura, pintura, música, ópera, danza, teatro, etc. Se manifestó principalmente en la Europa occidental, aunque debido al colonialismo también se dio en numerosas colonias de las potencias europeas, principalmente en Latinoamérica. Cronológicamente, abarcó todo el siglo XVIIy principios del XVIII, con mayor o menor prolongación en el tiempo dependiendo de cada país. Se suele situar entre el Manierismo y el Rococó, en una época caracterizada por fuertes disputas religiosas entre países católicos y protestantes, así como marcadas diferencias políticas entre los Estados absolutistas y los parlamentarios, donde una incipiente burguesía empezaba a poner los cimientos del capitalismo."
                         +"Como estilo artístico, el Barroco surgió a principios del siglo XVII (según otros autores a finales del XVI) en Italia —período también conocido en este país como Seicento—, desde donde se extendió hacia la mayor parte de Europa. Durante mucho tiempo (siglos XVIII y XIX) el término «barroco» tuvo un sentido peyorativo, con el significado de recargado, engañoso, caprichoso, hasta que fue posteriormente revalorizado a finales del siglo XIX por Jacob Burckhardt y, en el XX, por Benedetto Croce y Eugenio d'Ors. Algunos historiadores dividen el Barroco en tres períodos: «primitivo» (1580-1630), «maduro» o «pleno» (1630-1680) y «tardío» (1680-1750).",
                     SourceLink = "https://es.wikipedia.org/wiki/Barroco"
+                },
+                new MovementTranslation
+                {
+                    Id = 6,
+                    MovementId = 2,  //Gotisch
+                    Name = "Architecture gothique",
+                    LanguageId = 1, //Frans
+                    Description = "Le baroque est un mouvement artistique qui trouve son origine en Italie dans des villes telles que Rome, Mantoue, Venise et Florence dès le milieu du xvie siècle et qui se termine au milieu du xviiie siècle. Il y a un âge baroque différent selon les domaines, qu'ils soient intellectuels, historiques ou artistiques. Certains critiques y voient une constante culturelle qui revient tout au long de l'histoire comme l'a écrit Eugenio d'Ors."
+                        +"Le baroque, qui touche tous les domaines, se caractérise par l’exagération du mouvement, la surcharge décorative, les effets dramatiques, la tension, l’exubérance des formes, la grandeur parfois pompeuse et le contraste, ce même contraste dont parlait Philippe Beaussant : l’époque baroque a tenté de dire « un monde où tous les contraires seraient harmonieusement possibles »",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Architecture_gothique"
+                
+                },
+                new MovementTranslation
+                {
+                    Id = 7,
+                    MovementId = 2,  //Gotisch
+                    Name = "Gotische architectuur",
+                    LanguageId = 2, //Nederlands
+                    Description = "De barok is een Europese stijlperiode die aan het begin van de 17e eeuw in Italië tot ontwikkeling kwam en tot in de eerste helft van de 18e eeuw voortduurde, en die zich kenmerkt door overdaad van vorm en heftigheid van gevoelsuitdrukking. De barok kwam tot uiting op alle terreinen van de cultuur, zoals architectuur, tuinarchitectuur, schilderkunst, beeldhouwkunst, literatuur en muziek. Er wordt een onderscheid gemaakt tussen vroeg-, hoog- en laatbarok. De laatbarok wordt ook wel rococo genoemd.",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Gotiek_(bouwkunst)"
+                },
+                new MovementTranslation
+                {
+                    Id = 8,
+                    MovementId = 2,  //Gotisch
+                    Name = "Gothic architecture",
+                    LanguageId = 3, //Engels
+                    Description =   "Gothic art was a style of medieval art that developed in Northern France out of Romanesque art in the 12th century AD, led by the concurrent development of Gothic architecture." 
+                                    + "It spread to all of Western Europe, and much of Southern and Central Europe, never quite effacing more classical styles in Italy. In the late 14th century, the sophisticated court style of International Gothic developed, which continued to evolve until the late 15th century."
+                                    + "In many areas, especially Germany, Late Gothic art continued well into the 16th century, before being subsumed into Renaissance art. Primary media in the Gothic period included sculpture, panel painting, stained glass, fresco and illuminated manuscripts." 
+                                    + "The easily recognizable shifts in architecture from Romanesque to Gothic, and Gothic to Renaissance styles, are typically used to define the periods in art in all media, although in many ways figurative art developed at a different pace.",
+                    SourceLink = "https://en.wikipedia.org/wiki/Gothic_architecture"
+                },
+                new MovementTranslation
+                {
+                    Id = 9,
+                    MovementId = 2, //Gotisch
+                    Name = "Gotische Architektur",
+                    LanguageId = 4, //Duits
+                    Description = "Als Barock (Maskulinum „der Barock“, oder gleichwertig Neutrum „das Barock“) wird eine Epoche der europäischen Kunstgeschichte bezeichnet, die Ende des 16. Jahrhunderts begann[1] und bis ca. 1760/70 reicht. Es handelt sich nicht um einen völlig einheitlichen Stilbegriff, da es innerhalb des Barockzeitalters gleichzeitig zum Teil sehr verschiedene künstlerische Ausprägungen und Unterströmungen und auch eine Entwicklung gab,[2] nicht zuletzt auch große Unterschiede in verschiedenen Gegenden und Ländern.[3]Eine grobe Unterteilung in drei oder vier Unterepochen ist üblich, deren zeitliche Abgrenzung jedoch nicht völlig eindeutig angegeben werden kann: Frühbarock (bis ca. 1650), Hochbarock (ca. 1650–1700), Spätbarock (ca. 1700–1730)[4] und Rokoko (ca. 1730–1760/70). Gelegentlich werden Spätbarock und Rokoko gleichgesetzt, andererseits wird das Rokoko auch als eigenständige Epoche angesehen."
+                        +"Dem Barock voraus gingen die Epochen der Renaissance und des Manierismus, ihm folgte der Klassizismus.",
+                    SourceLink = "https://de.wikipedia.org/wiki/Gotik#Baukunst"
+                },
+                new MovementTranslation
+                {
+                    Id = 10,
+                    MovementId = 2, //Gotisch
+                    Name = "Arquitectura gótica",
+                    LanguageId = 5, //Spaans
+                    Description = "El Barroco fue un período de la historia en la cultura occidental originado por una nueva forma de concebir el arte (el «estilo barroco») y que, partiendo desde diferentes contextos histórico-culturales, produjo obras en numerosos campos artísticos: literatura, arquitectura, escultura, pintura, música, ópera, danza, teatro, etc. Se manifestó principalmente en la Europa occidental, aunque debido al colonialismo también se dio en numerosas colonias de las potencias europeas, principalmente en Latinoamérica. Cronológicamente, abarcó todo el siglo XVIIy principios del XVIII, con mayor o menor prolongación en el tiempo dependiendo de cada país. Se suele situar entre el Manierismo y el Rococó, en una época caracterizada por fuertes disputas religiosas entre países católicos y protestantes, así como marcadas diferencias políticas entre los Estados absolutistas y los parlamentarios, donde una incipiente burguesía empezaba a poner los cimientos del capitalismo."
+                        +"Como estilo artístico, el Barroco surgió a principios del siglo XVII (según otros autores a finales del XVI) en Italia —período también conocido en este país como Seicento—, desde donde se extendió hacia la mayor parte de Europa. Durante mucho tiempo (siglos XVIII y XIX) el término «barroco» tuvo un sentido peyorativo, con el significado de recargado, engañoso, caprichoso, hasta que fue posteriormente revalorizado a finales del siglo XIX por Jacob Burckhardt y, en el XX, por Benedetto Croce y Eugenio d'Ors. Algunos historiadores dividen el Barroco en tres períodos: «primitivo» (1580-1630), «maduro» o «pleno» (1630-1680) y «tardío» (1680-1750).",
+                    SourceLink = "https://es.wikipedia.org/wiki/Arquitectura_g%C3%B3tica"
                 }
             );
 
@@ -567,7 +624,7 @@ namespace backend.DAL
                     Width = (float) 228,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "22A"
+                    MuseumCode = "10A"
                 },
                 new Painting
                 {
@@ -579,7 +636,7 @@ namespace backend.DAL
                     Width = (float) 255.5,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "23A"
+                    MuseumCode = "11A"
                 },
                 new Painting
                 {
@@ -591,7 +648,7 @@ namespace backend.DAL
                     Width = (float) 222,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "26A"
+                    MuseumCode = "12A"
                 },
                 new Painting
                 {
@@ -603,7 +660,7 @@ namespace backend.DAL
                     Width = (float) 59,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "27A"
+                    MuseumCode = "13A"
                 },
                 new Painting
                 {
@@ -615,7 +672,7 @@ namespace backend.DAL
                     Width = (float) 94.2,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "28A"
+                    MuseumCode = "14A"
                 },
                 new Painting
                 {
@@ -627,7 +684,7 @@ namespace backend.DAL
                     Width = (float) 83,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "29A"
+                    MuseumCode = "15A"
                 },
                 new Painting
                 {
@@ -639,7 +696,7 @@ namespace backend.DAL
                     Width = (float) 240,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "24A"
+                    MuseumCode = "16A"
                 },
                 new Painting
                 {
@@ -651,7 +708,7 @@ namespace backend.DAL
                     Width = (float) 63.5,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "25A"
+                    MuseumCode = "17A"
                 },
                 new Painting
                 {
@@ -663,7 +720,7 @@ namespace backend.DAL
                     Width = (float) 275,
                     TechniqueId = 1,
                     MovementId = 1,
-                    MuseumCode = "30A"
+                    MuseumCode = "18A"
                 }
             );
 
@@ -1936,7 +1993,7 @@ namespace backend.DAL
                     Title = "La Vocation de saint Matthieu",
                     Subtitle = "à propos de l'oeuvre",
                     Text = "Matthieu, le percepteur d’impôt, est représenté de dos. Son chien prend l’expression de son maitre, comme si le peintre voulait nous dire “un croyant écoute Jésus comme un chien écoute son maitre”",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 1,
                     PaintingId = 9
                 },
@@ -1946,7 +2003,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "à propos du mouvement",
                     Text = "Contrairement à la peinture de la Renaissance (qui illustre le moment précédant un événement important), les peintres baroques choisissent de représenter le moment le plus dramatique de la scène",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 1,
                     PaintingId = 9
                 },
@@ -1956,7 +2013,7 @@ namespace backend.DAL
                     Title = "Peinture à l’huile",
                     Subtitle = "à propos de la technique",
                     Text = "Les artistes remplacèrent la peinture sur bois par la toile car les pigments tenaient mieux",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 1,
                     PaintingId = 9
                 },
@@ -1966,7 +2023,7 @@ namespace backend.DAL
                     Title = "Roeping van Mattheüs",
                     Subtitle = "over het kunstwerk",
                     Text = "Mattheüs, de tollenaar, is op zijn rug afgebeeld. Zijn hond weerspiegelt zijn meesters emotie alsof de schilder ons wil vertellen “een gelovige luistert naar jezus zoals een hond luistert naar zijn baasje”",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 2,
                     PaintingId = 9
                 },
@@ -1976,7 +2033,7 @@ namespace backend.DAL
                     Title = "Barok",
                     Subtitle = "over de stijlperiode",
                     Text = "In tegenstelling tot de Renaissance schilderijen ( die belangrijke gebeurtenissen afbeelden), kiezen Baroque schilders ervoor om het meest dramatische moment van de gebeurtenis af te beelden",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 2,
                     PaintingId = 9
                 },
@@ -1986,7 +2043,7 @@ namespace backend.DAL
                     Title = "Olieverf",
                     Subtitle = "over de techniek",
                     Text = "Kunstenaars begonnen te schilderen op canvas in plaats van hout omdat het pigment beter vasthoudt",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 2,
                     PaintingId = 9
                 },
@@ -1996,7 +2053,7 @@ namespace backend.DAL
                     Title = "The Calling of St Matthew",
                     Subtitle = "about the artwork",
                     Text = "Matthew, the tax collector, is represented from behind. His dog reflects his master’s emotion as if the painter wanted to tell us “a believer listens to Jesus like a dog listens to his master”",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/f1dea1f8e2d14c7ab25edbd98683f54040adc53f6d0e4da2aa4fb82fd1b4766b/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 3,
                     PaintingId = 9
                 },
@@ -2006,7 +2063,7 @@ namespace backend.DAL
                     Title = "Baroque",
                     Subtitle = "about the movement",
                     Text = "Contrary to the Renaissance art (which showed the moment before an important event), Baroque painters chose to represent the most dramatic point",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1e8f09c02f3f4807b168165d1e37501842824b713f4346019c8cb959954251ed/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 3,
                     PaintingId = 9
                 },
@@ -2016,9 +2073,136 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Subtitle = "about the technique",
                     Text = "Artists started painting on canvas instead of wood because it holds the pigments better",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d9e9b5c813842a6bec20460c7bd70d151690c96490c44c19a0010d174b809fb/browse.jpg",
+                    ImageUrl = "",
                     LanguageId = 3,
                     PaintingId = 9
+                }
+            );
+
+            modelBuilder.Entity<Building>()
+            .HasData(
+                new Building
+                {
+                    Id = 1,
+                    Year = 1699,
+                    MuseumCode = "60A",
+                    UseId = 1,
+                    MovementId = 2,
+                },
+                new Building
+                {
+                    Id = 2,
+                    Year = 1699,
+                    MuseumCode = "61A",
+                    UseId = 1,
+                    MovementId = 2
+                }
+            );
+
+            modelBuilder.Entity<Use>()
+            .HasData(
+                new Use
+                {
+                    Id = 1
+                }
+            );
+
+            modelBuilder.Entity<UseTranslation>()
+            .HasData(
+                new UseTranslation
+                {
+                    Id = 1,
+                    UseId = 1,
+                    Name = "Hôtel de Ville",
+                    LanguageId = 1,
+                    Description = "FR",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Baroque"
+                
+                },
+                new UseTranslation
+                {
+                    Id = 2,
+                    UseId = 1,
+                    Name = "Stadhuis",
+                    LanguageId = 2,
+                    Description = "NL",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Barok_(stijlperiode)"
+                },
+                new UseTranslation
+                {
+                    Id = 3,
+                    UseId = 1,
+                    Name = "Town Hall",
+                    LanguageId = 3,
+                    Description = "EN",
+                    SourceLink = "https://en.wikipedia.org/wiki/Baroque"
+                },
+                new UseTranslation
+                {
+                    Id = 4,
+                    UseId = 1,
+                    Name = "Rathaus",
+                    LanguageId = 4,
+                    Description = "DE",
+                    SourceLink = "https://de.wikipedia.org/wiki/Barock"
+                },
+                new UseTranslation
+                {
+                    Id = 5,
+                    UseId = 1,
+                    Name = "Ayuntamiento",
+                    LanguageId = 5,
+                    Description = "ES",
+                    SourceLink = "https://es.wikipedia.org/wiki/Barroco"
+                }
+            );
+
+            modelBuilder.Entity<BuildingTranslation>()
+            .HasData(
+                new BuildingTranslation
+                {
+                    Id = 1,
+                    BuildingId = 1,
+                    LanguageId = 1,
+                    Name = "Hôtel de Ville de Bruges",
+                    Description = null,
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 2,
+                    BuildingId = 1,
+                    LanguageId = 2,
+                    Name = "Stadhuis van Brugge",
+                    Description = null,
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 3,
+                    BuildingId = 1,
+                    LanguageId = 3,
+                    Name = "Town Hall of Bruges",
+                    Description = null,
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 4,
+                    BuildingId = 1,
+                    LanguageId = 4,
+                    Name = "Rathaus von Brügge",
+                    Description = null,
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 5,
+                    BuildingId = 1,
+                    LanguageId = 5,
+                    Name = "Ayuntamiento de Brujas",
+                    Description = null,
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
                 }
             );
         }
