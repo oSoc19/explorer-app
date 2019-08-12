@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190809125318_newLetterCodes")]
+    partial class newLetterCodes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -379,7 +381,7 @@ namespace backend.Migrations
                         {
                             Id = 1L,
                             MovementId = 2L,
-                            MuseumCode = "AB",
+                            MuseumCode = "60A",
                             UseId = 1L,
                             Year = 1400
                         },
@@ -387,7 +389,7 @@ namespace backend.Migrations
                         {
                             Id = 2L,
                             MovementId = 2L,
-                            MuseumCode = "AC",
+                            MuseumCode = "61A",
                             UseId = 1L,
                             Year = 1699
                         });

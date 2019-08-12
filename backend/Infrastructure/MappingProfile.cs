@@ -20,5 +20,6 @@ public class MappingProfile : Profile{
       CreateMap<BuildingTranslation, BuildingTranslationDto>();
       CreateMap<Use, UseDto>();
       CreateMap<UseTranslation, UseTranslationDto>();
+      CreateMap<BuildingStory, BuildingStoryDto>();
    }
 }

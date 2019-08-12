@@ -2,7 +2,7 @@ using System;
 
 namespace backend.dto
 {
-    public class PaintingStoryDto
+    public class BuildingStoryDto
     {
         public long Id { get; set; }
         public String Title {get;set;}

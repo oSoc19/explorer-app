@@ -18,6 +18,7 @@ namespace backend.Models
         [ForeignKey("MovementId")]
         public virtual Movement Movement {get;set;}
 
+        public virtual List<BuildingStory> Stories {get;set;}
         public virtual List<BuildingTranslation> Translations {get;set;}
     }
 }

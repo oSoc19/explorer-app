@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20190807123022_buildingStories2")]
+    partial class buildingStories2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -379,15 +381,15 @@ namespace backend.Migrations
                         {
                             Id = 1L,
                             MovementId = 2L,
-                            MuseumCode = "AB",
+                            MuseumCode = "60A",
                             UseId = 1L,
-                            Year = 1400
+                            Year = 1699
                         },
                         new
                         {
                             Id = 2L,
                             MovementId = 2L,
-                            MuseumCode = "AC",
+                            MuseumCode = "61A",
                             UseId = 1L,
                             Year = 1699
                         });
@@ -738,7 +740,7 @@ namespace backend.Migrations
                             Height = 162f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0004_I",
                             MovementId = 1L,
-                            MuseumCode = "A",
+                            MuseumCode = "10A",
                             TechniqueId = 1L,
                             Width = 228f,
                             Year = 1699
@@ -750,7 +752,7 @@ namespace backend.Migrations
                             Height = 150.5f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0181_I",
                             MovementId = 1L,
-                            MuseumCode = "B",
+                            MuseumCode = "11A",
                             TechniqueId = 1L,
                             Width = 255.5f,
                             Year = 1645
@@ -762,7 +764,7 @@ namespace backend.Migrations
                             Height = 116f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0184_I",
                             MovementId = 1L,
-                            MuseumCode = "C",
+                            MuseumCode = "12A",
                             TechniqueId = 1L,
                             Width = 222f,
                             Year = 1668
@@ -774,7 +776,7 @@ namespace backend.Migrations
                             Height = 73f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0187_I",
                             MovementId = 1L,
-                            MuseumCode = "D",
+                            MuseumCode = "13A",
                             TechniqueId = 1L,
                             Width = 59f,
                             Year = 1697
@@ -786,7 +788,7 @@ namespace backend.Migrations
                             Height = 123.3f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0374_I",
                             MovementId = 1L,
-                            MuseumCode = "E",
+                            MuseumCode = "14A",
                             TechniqueId = 1L,
                             Width = 94.2f,
                             Year = 1641
@@ -798,7 +800,7 @@ namespace backend.Migrations
                             Height = 106f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO1346_I",
                             MovementId = 1L,
-                            MuseumCode = "F",
+                            MuseumCode = "15A",
                             TechniqueId = 1L,
                             Width = 83f,
                             Year = 1670
@@ -810,7 +812,7 @@ namespace backend.Migrations
                             Height = 220f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/1991_GRO0007_I",
                             MovementId = 1L,
-                            MuseumCode = "G",
+                            MuseumCode = "16A",
                             TechniqueId = 1L,
                             Width = 240f,
                             Year = 1643
@@ -822,7 +824,7 @@ namespace backend.Migrations
                             Height = 76.2f,
                             ImageUrl = "http://groeningemuseum.be/collection/work/representation/2012_GRO0001_I",
                             MovementId = 1L,
-                            MuseumCode = "H",
+                            MuseumCode = "17A",
                             TechniqueId = 1L,
                             Width = 63.5f,
                             Year = 1652
@@ -833,7 +835,7 @@ namespace backend.Migrations
                             AuthorId = 2L,
                             Height = 193.5f,
                             MovementId = 1L,
-                            MuseumCode = "I",
+                            MuseumCode = "18A",
                             TechniqueId = 1L,
                             Width = 275f,
                             Year = 1640
@@ -2397,10 +2399,6 @@ namespace backend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("EndYear");
-
-                    b.Property<int>("StartYear");
-
                     b.HasKey("Id");
 
                     b.ToTable("Use");
@@ -2408,9 +2406,7 @@ namespace backend.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1L,
-                            EndYear = -1,
-                            StartYear = 1400
+                            Id = 1L
                         });
                 });
 
@@ -2507,7 +2503,7 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("backend.Models.Use", "Use")
-                        .WithMany()
+                        .WithMany("Buildings")
                         .HasForeignKey("UseId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
