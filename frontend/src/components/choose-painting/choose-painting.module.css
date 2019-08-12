@@ -10,13 +10,26 @@
 	font-family: 'Montserrat'
 }
 
+.chooseTable {
+	border-top: 1px solid rgba(0,0,0,.1)
+}
+
+.chooseTable td {
+	padding: 1rem 0;
+	width: 33%;
+}
+
 .input{
-	height: 50px;
-    line-height: 50px;
-    text-align: center;
-	border: 1px solid black;
+	border: 0;
 	background-color: transparent;
-	border-radius: 0;
+	font-size: 1.4rem;
+	height: 60px;
+    line-height: 60px;
+    margin-bottom: 1rem;
+    text-align: center;
+	/*border: 1px solid black;*/
+	width: 250px;
+
 }
 
 .spanContent{
@@ -26,7 +39,6 @@
 
 .spanPlaceholder{
 	color : grey;
-	font-size: 13
 }
 
 .errorMessageContainer{
@@ -46,4 +58,60 @@
 	font-size:14px; 
  	vertical-align: middle;
  	line-height: normal;
+}
+
+.touchButton {
+	position: relative;
+}
+
+.touchButton:after {
+	background: rgba(34,164,180,0.1);
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -35px 0 0 -35px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.touchButton:focus:after,
+.touchButton:active:after,
+.touchButton:hover:after {
+	animation: anim-effect-boris 0.3s forwards;
+}
+
+@keyframes anim-effect-boris {
+	0% {
+		transform: scale3d(0.3, 0.3, 1);
+	}
+	25%, 50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: scale3d(1.2, 1.2, 1);
+	}
+}
+
+.playButton i,
+.nonactivePlayButton i,
+.backspace i {
+	margin-top: 1.6rem;
+}
+
+.playButton i {
+	color: rgba(0,0,0,.1);
+	transition: all .1s ease-in-out;
+}
+
+.playButton.active i {
+	color: #22A4B4;
+} 
+
+.backspace i {
+	margin-top: 2.1rem;
 }

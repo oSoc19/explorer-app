@@ -9,8 +9,13 @@ font-size: 17px;
     padding : 0.2rem;
 }
 
-.paintDetails td a {
+.paintDetails td a,
+.paintDetails td a:focus,
+.paintDetails td a:active,
+.paintDetails td a:hover {
     border-bottom: 1px solid rgba(0,123,255,.2);
+    color: #22A4B4;
+    text-decoration: none;
 }
 
 .paintDetails>tbody>tr>:first-child{
@@ -117,8 +122,8 @@ padding: 0px;
 }
 
 .infoSection{
-    font-family: 'Montserrat';
     padding : 0 1.6rem 0 2rem;
+    font-family: 'Montserrat';
 }
 
 .infoSection .col12{
@@ -185,6 +190,64 @@ padding: 0px;
 }
 
 .separation{
-    margin-top:2rem !important;
-    margin-bottom: 2rem !important;
+    margin-top:1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden;
+}
+
+
+
+/* CAROUSEL */
+.aliceContainer {
+    background-color: #22A4B4;
+}
+.alice-carousel__prev-btn {
+    position: absolute;
+}
+.alice-carousel__next-btn {
+    background-color: red;
+}
+
+/* FEEDBACK */
+.feedback a {
+    border-bottom: 0;
+    display: inline-block;
+    margin: 0 .2rem;
+    padding: 0 .5rem;
+}
+
+.feedback a.negativeFeedback,
+.feedback a.negativeFeedback:hover,
+.feedback a.negativeFeedback:focus,
+.feedback a.negativeFeedback:active {
+    color: #A53220;
+}
+
+.feedback a.positiveFeedback
+.feedback a.positiveFeedback:hover,
+.feedback a.positiveFeedback:focus,
+.feedback a.positiveFeedback:active {
+    color: #22A4B4;
+}
+
+.feedback:focus-within a:not(:focus) {
+    display: none;
+}
+
+.feedback:focus-within a {
+    /*display: none;*/
+}
+
+.feedback a ~ p {
+    display: none;
+}
+
+.feedback a:focus ~ p {
+    display: block;
 }

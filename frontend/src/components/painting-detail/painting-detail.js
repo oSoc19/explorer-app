@@ -7,6 +7,7 @@ import AudioPlayer from "../audio-player/index";
 import Api from '../../services/api';
 import { css } from '@emotion/core';
 import InfoSection from '../info-section/info-section';
+import LanguageSection from '../language-section/language-section';
 import Translation from '../../services/translation';
 import PaintingStory from '../painting-story/painting-story';
 import ReactNotification from "react-notifications-component";
@@ -51,6 +52,7 @@ class PaintingDetail extends React.Component{
             await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : languages});
             this.addLanguages();
         }
+        console.log(dataJSON.author.translations.length)
     }
 
     handleOnDragStart(e){
@@ -170,9 +172,10 @@ class PaintingDetail extends React.Component{
                                     mouseDragEnabled 
                                     buttonsDisabled={false}
                                     slideToIndex={this.currentStoryIndex}
+                                    swipeDisabled={true}
                                     onSlideChanged={this.handleChange}>
                                     {
-                                        this.state.data.stories.map(s => <PaintingStory key={s.id} story={s}></PaintingStory>)
+                                        this.state.data.stories.map(s => <PaintingStory key={s.id} story={s} paintingId={this.props.match.params.id} objectType="painting"></PaintingStory>)
                                     }
                                 </AliceCarousel>
                             </div>
@@ -215,42 +218,60 @@ class PaintingDetail extends React.Component{
                                 </table>
                             </div>
                         </div>
-                        <hr id={`Description-${this.props.match.params.id}`} className={styles.separation}></hr>
+
+
+                        <hr className={styles.separation}></hr>
+                        <a id={`Description-${this.props.match.params.id}`} className={styles.anchor}></a>
                         <div id="Artwork" className={styles.content}>
-                            <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={Translation.Translate("aboutArtwork")} content={this.state.data.translations[0].description}></InfoSection>
+                            { this.state.data.translations.length !== 0
+                                ?   <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={Translation.Translate("aboutArtwork")} content={this.state.data.translations[0].description}></InfoSection>
+                                :   <LanguageSection type="artist"storyTitle={Translation.Translate("aboutArtwork")}></LanguageSection>
+                            }
                         </div>
 
-                        <hr id={`Artist-${this.props.match.params.id}`} className={styles.separation}></hr>
-
+                        <hr className={styles.separation}></hr>
+                        <a id={`Artist-${this.props.match.params.id}`} className={styles.anchor}></a>
                         <div className={styles.content}>
-                            <InfoSection type="artist" sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
+                            { this.state.data.author.translations.length !== 0
+                                ?   <InfoSection type="artist" sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`} content={this.state.data.author.translations[0].description}></InfoSection>
+                                :   <LanguageSection type="artist"storyTitle={`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}></LanguageSection>
+                            }
                         </div>
 
-                        <hr id={`Movement-${this.props.match.params.id}`} className={styles.separation}></hr>
-
+                        <hr className={styles.separation}></hr>
+                        <a id={`Movement-${this.props.match.params.id}`} className={styles.anchor}></a>
                         <div className={styles.content}>
-                            <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
+                            { this.state.data.technique.translations.length !== 0
+                                ?   <InfoSection type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
+                                :   <LanguageSection type="artist"storyTitle={Translation.Translate("movement")}></LanguageSection>
+                            }
                         </div>
 
-                        <hr id={`Technique-${this.props.match.params.id}`} className={styles.separation}></hr>
-
+                        <hr className={styles.separation}></hr>
+                        <a id={`Technique-${this.props.match.params.id}`} className={styles.anchor}></a>
                         <div className={styles.content}>
-                            <InfoSection type="technique" sourceLink={this.state.data.technique.translations[0].sourceLink} storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
+                            { this.state.data.technique.translations.length !== 0
+                                ?   <InfoSection type="technique" sourceLink={this.state.data.technique.translations[0].sourceLink} storyTitle={this.state.data.technique.translations[0].name} content={this.state.data.technique.translations[0].description}></InfoSection>
+                                :   <LanguageSection type="artist"storyTitle={Translation.Translate("technique")}></LanguageSection>
+                            }
                         </div>
 
                         <hr className={styles.separation}></hr>
                         <div className={styles.feedback}>
-                            <p>{Translation.Translate("useful")}</p>
-                            <a href="#"><i class="far fa-smile fa-3x"></i></a>
-                            <a href="#"><i class="far fa-frown fa-3x"></i></a>
+                            <p>
+                                {Translation.Translate("useful")}
+                            </p>
+                            <a className={styles.positiveFeedback} href={`#positive-${this.props.match.params.id}`}><i className="far fa-smile fa-3x"></i></a>
+                            <a className={styles.negativeFeedback} href={`#negative-${this.props.match.params.id}`}><i className="far fa-frown fa-3x"></i></a>
                             <p>{Translation.Translate("thanks")}</p>
                         </div>
                         
                     </div>
                </div>
-                <footer className={`fixed-bottom`}>
-                    {this.state.data.audios.length > 0 ? <AudioPlayer src={this.state.data.audios[0].audioUrl}/> : null}
-               </footer>
+                {this.state.data.audios.length > 0 
+                    ? <footer className={`fixed-bottom`}><AudioPlayer src={this.state.data.audios[0].audioUrl}/></footer>
+                    : null
+                }
             </div>
         );
     }

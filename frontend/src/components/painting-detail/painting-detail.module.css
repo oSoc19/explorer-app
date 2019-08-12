@@ -190,9 +190,18 @@ padding: 0px;
 }
 
 .separation{
-    margin-top:2rem !important;
-    margin-bottom: 2rem !important;
+    margin-top:1rem !important;
+    margin-bottom: 1rem !important;
 }
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden;
+}
+
+
 
 /* CAROUSEL */
 .aliceContainer {
@@ -208,17 +217,37 @@ padding: 0px;
 /* FEEDBACK */
 .feedback a {
     border-bottom: 0;
-    size: 2;
+    display: inline-block;
+    margin: 0 .2rem;
+    padding: 0 .5rem;
 }
-.feedback a span {
+
+.feedback a.negativeFeedback,
+.feedback a.negativeFeedback:hover,
+.feedback a.negativeFeedback:focus,
+.feedback a.negativeFeedback:active {
+    color: #A53220;
+}
+
+.feedback a.positiveFeedback
+.feedback a.positiveFeedback:hover,
+.feedback a.positiveFeedback:focus,
+.feedback a.positiveFeedback:active {
+    color: #22A4B4;
+}
+
+.feedback:focus-within a:not(:focus) {
     display: none;
 }
-.feedback a:focus {
-    display: block;
+
+.feedback:focus-within a {
+    /*display: none;*/
 }
-.feedback a:focus span {
-    display: block;
+
+.feedback a ~ p {
+    display: none;
 }
-.feedback a:focus ~ a:not(:focus) {
-   display: none; 
+
+.feedback a:focus ~ p {
+    display: block;
 }

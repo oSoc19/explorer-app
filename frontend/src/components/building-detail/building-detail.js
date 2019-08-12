@@ -7,6 +7,7 @@ import AudioPlayer from "../audio-player/index";
 import Api from '../../services/api';
 import { css } from '@emotion/core';
 import InfoSection from '../info-section/info-section';
+import PaintingStory from '../painting-story/painting-story';
 import Translation from '../../services/translation';
 import ReactNotification from "react-notifications-component";
 
@@ -162,6 +163,22 @@ class BuildingDetail extends React.Component{
                 </nav>
                 <div className={styles.body}>
 
+                    { this.state.data.stories.length !== 0
+                        ?   <div className={`${styles.aliceContainer}`}>
+                                <AliceCarousel 
+                                    autoPlay={false} 
+                                    mouseDragEnabled 
+                                    buttonsDisabled={false}
+                                    slideToIndex={this.currentStoryIndex}
+                                    onSlideChanged={this.handleChange}>
+                                    {
+                                        this.state.data.stories.map(s => <PaintingStory key={s.id} story={s} paintingId={this.props.match.params.id} objectType="building"></PaintingStory>)
+                                    }
+                                </AliceCarousel>
+                            </div>
+                        :   null
+                    }
+
                     <div className="container info-container">
                         <div id="Info" className={`${styles.content}`}>
                             <h5 className={styles.title}>{this.state.data.translations[0].name}</h5>
@@ -187,11 +204,9 @@ class BuildingDetail extends React.Component{
                                 </div>
                             </div>
                         </div>
-                        <hr id={`Movement-${this.props.match.params.id}`} className={styles.separation}></hr>
-                        <div className={styles.content}>
-                            <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
-                        </div>
-                        <hr id={`Movement-${this.props.match.params.id}`} className={styles.separation}></hr>
+                        
+                        <hr className={styles.separation}></hr>
+                        <a id={`Movement-${this.props.match.params.id}`} className={styles.anchor}></a>
                         <div className={styles.content}>
                             <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                         </div>
@@ -208,10 +223,13 @@ class BuildingDetail extends React.Component{
                         }
                         
                         <hr className={styles.separation}></hr>
-                        <div>
-                            Was dit nuttig? 
-                            <a href="#">Ja</a>
-                            <a href="#">Nee</a>
+                        <div className={styles.feedback}>
+                            <p>
+                                {Translation.Translate("useful")}
+                            </p>
+                            <a className={styles.positiveFeedback} href={`#positive-${this.props.match.params.id}`}><i className="far fa-smile fa-3x"></i></a>
+                            <a className={styles.negativeFeedback} href={`#negative-${this.props.match.params.id}`}><i className="far fa-frown fa-3x"></i></a>
+                            <p>{Translation.Translate("thanks")}</p>
                         </div>
                     </div>
                 </div>

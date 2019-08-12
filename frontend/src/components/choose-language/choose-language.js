@@ -4,6 +4,7 @@ import styles from './choose-language.module.css';
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 import Api from '../../services/api';
+import Translation from '../../services/translation';
 
 class ChooseLanguage extends React.Component{
 
@@ -37,10 +38,8 @@ class ChooseLanguage extends React.Component{
         return(
             <tbody>
                 <tr>
-                    <td id='EN' className="selectableLanguage" onClick={()=>this.selectLanguage('EN')}>
-                        English
-                    </td>
-                    <td id='DE' className="selectableLanguage" onClick={()=>this.selectLanguage('DE')}>German</td>
+                    <td id='EN' className="selectableLanguage" onClick={()=>this.selectLanguage('EN')}>English</td>
+                    <td id='DE' className="selectableLanguage" onClick={()=>this.selectLanguage('DE')}>Deutsch</td>
                 </tr>
                 <tr>
                     <td id='NL' className="selectableLanguage" onClick={()=>this.selectLanguage('NL')}>Nederlands</td>
@@ -56,6 +55,8 @@ class ChooseLanguage extends React.Component{
                 </tr>
             </tbody>
         );
+
+
     }
 
     render(){

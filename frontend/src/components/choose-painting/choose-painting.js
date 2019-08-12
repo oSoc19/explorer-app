@@ -37,9 +37,9 @@ class ChoosePainting extends React.Component{
     async routeChange(event){
         if(document.getElementById("paintingNumber").value.length !== 0){
             var infoType = document.getElementById("paintingNumber").value                
-            if(parseInt(infoType) < 60){
+            if(infoType.length == 1){
                 infoType = 'paintings';
-            }else{
+            } else {
                 infoType = 'buildings';
             }
             this.props.history.push(`/${infoType}/detail/${document.getElementById("paintingNumber").value}`);
@@ -85,9 +85,14 @@ class ChoosePainting extends React.Component{
                 }
                 
                 <div className={styles.choose}>
-                    <input type="text" placeholder={`${Translation.Translate("codeMissing")}`} id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>
+                    <div>
+                        <label for="paintingNumber">{Translation.Translate("codeMissing")}</label>
+                        <input type="text" id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>
+                    </div>
+                    
+                    
                     <div className="table-responsive-sm">
-                        <table className="table table-borderless">
+                        <table className={`table table-borderless ${styles.chooseTable}`}>
                         <thead>
                             <tr>
                                 <th scope="col"></th>
@@ -97,29 +102,26 @@ class ChoosePainting extends React.Component{
                         </thead>
                             <tbody>
                                 <tr>
-                                    <td onClick={this.updateInput('A')}>A</td>
-                                    <td onClick={this.updateInput('B')}>B</td>
-                                    <td onClick={this.updateInput('C')}>C</td>
+                                    <td onClick={this.updateInput('A')}><span className={`${styles.touchButton}`}>A</span></td>
+                                    <td onClick={this.updateInput('B')}><span className={`${styles.touchButton}`}>B</span></td>
+                                    <td onClick={this.updateInput('C')}><span className={`${styles.touchButton}`}>C</span></td>
                                 </tr>
                                 <tr>
-                                    <td onClick={this.updateInput('1')}>1</td>
-                                    <td onClick={this.updateInput('2')}>2</td>
-                                    <td onClick={this.updateInput('3')}>3</td>
+                                    <td onClick={this.updateInput('D')}><span className={`${styles.touchButton}`}>D</span></td>
+                                    <td onClick={this.updateInput('E')}><span className={`${styles.touchButton}`}>E</span></td>
+                                    <td onClick={this.updateInput('F')}><span className={`${styles.touchButton}`}>F</span></td>
                                 </tr>
                                 <tr>
-                                    <td onClick={this.updateInput('4')}>4</td>
-                                    <td onClick={this.updateInput('5')}>5</td>
-                                    <td onClick={this.updateInput('6')}>6</td>
+                                    <td onClick={this.updateInput('G')}><span className={`${styles.touchButton}`}>G</span></td>
+                                    <td onClick={this.updateInput('H')}><span className={`${styles.touchButton}`}>H</span></td>
+                                    <td onClick={this.updateInput('I')}><span className={`${styles.touchButton}`}>I</span></td>
                                 </tr>
                                 <tr>
-                                    <td onClick={this.updateInput('7')}>7</td>
-                                    <td onClick={this.updateInput('8')}>8</td>
-                                    <td onClick={this.updateInput('9')}>9</td>
-                                </tr>
-                                <tr>
-                                    <td onClick={this.removeNumber}><i className="material-icons">&#xe14a;</i></td>
-                                    <td onClick={this.updateInput('0')}>0</td>
-                                    <td onClick={this.routeChange}><i className="material-icons search">&#xe5cc;</i></td>
+                                    <td>&nbsp;</td>
+                                    <td onClick={this.routeChange} className={`${this.state.isEmpty ? null : styles.active} ${styles.playButton}`}><i className="fas fa-play-circle fa-3x"></i></td>
+                                    <td className={`${styles.backspace}`} onClick={this.removeNumber}>
+                                        {!this.state.isEmpty ? <i className="material-icons">&#xe14a;</i> : null}
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

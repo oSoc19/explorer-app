@@ -3,9 +3,13 @@ html, body{
   scroll-behavior: smooth;
 }
 
-a {
+a,
+a:hover,
+a:active,
+a:link {
     border-bottom: 1px solid rgba(0,123,255,.2);
     color: #22A4B4;
+    text-decoration: none;
 }
 
 .App {
@@ -157,8 +161,9 @@ a {
 .alice-carousel .alice-carousel__next-btn span:after {
     content:'\f0da';
     color: #fff;
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Free';
     font-size: 1.6rem;
+    font-weight: 900;
 }
 
 .alice-carousel .alice-carousel__prev-btn span:after {
