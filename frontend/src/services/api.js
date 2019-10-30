@@ -1,5 +1,6 @@
-const BASE_URL = process.env.NODE_ENV === 'development' ? "https://localhost:5001/api":"https://learnmorebruges.azurewebsites.net/api";
-//const BASE_URL = "https://learnmorebruges.azurewebsites.net/api";
+//const BASE_URL = process.env.NODE_ENV === 'development' ? "https://localhost:5001/api":"http://10.134.129.102/api";
+const BASE_URL = "http://10.134.129.102/api";
+// const BASE_URL = "https://learnmorebruges.azurewebsites.net/api";
 
 class Api{
     static async getPaintingDetail(museumNumber, language){
@@ -20,6 +21,12 @@ class Api{
     static async getAvailableLanguages(){
         let response = await fetch(`${BASE_URL}/language`);
         let data = await response.json();
+        let notAvailable = {};
+        /* notAvailable['id'] = data.length+1;
+        notAvailable['name'] = 'Not available';
+        notAvailable['code'] = 'NA';
+        data.push(notAvailable);
+        console.log(data); */
         return data;
     }
 }

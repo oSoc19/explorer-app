@@ -93,7 +93,7 @@ a:link {
 .alice-carousel__dots {
     margin: 10px 0 5px !important;
     position: absolute;
-    top: 0;
+    bottom: 0;
     width: 100%;
 }
 

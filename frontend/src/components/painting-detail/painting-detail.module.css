@@ -1,3 +1,7 @@
+.infocontainer {
+    max-width: 800px;
+}
+
 .paintDetails{
 text-align: left;
 color:#787B7D;
@@ -130,11 +134,17 @@ padding: 0px;
     padding : 0;
 }
 
-.navBackground{
+.navBackground {
     background-color : #F9F6F2 !important;
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 0.9rem;
     box-shadow: 0px 0px 20px 0px #8888;
+    transition: top 0.6s;
+    top: 0px;
+}
+
+.hide {
+    top: -80px !important;
 }
 
 .line{
@@ -205,13 +215,14 @@ padding: 0px;
 
 /* CAROUSEL */
 .aliceContainer {
-    background-color: #22A4B4;
+    /* background-color: #1D5748; */
+    background-color: #FFF;
 }
 .alice-carousel__prev-btn {
     position: absolute;
 }
 .alice-carousel__next-btn {
-    background-color: red;
+    /* background-color: red; */
 }
 
 /* FEEDBACK */
@@ -250,4 +261,17 @@ padding: 0px;
 
 .feedback a:focus ~ p {
     display: block;
+}
+
+a.btnToTop {
+    border-bottom-color: transparent;
+    bottom: 1rem;
+    display: block;
+    position: fixed;
+    right: 1rem;
+    z-index: 1050;
+}
+
+.btnToTop span{
+    display: none;
 }

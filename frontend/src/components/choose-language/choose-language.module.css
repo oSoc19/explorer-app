@@ -19,12 +19,19 @@ td{
 .title{
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size : 19px !important;
-    margin-bottom: 50px;
+    font-size : 1.1rem !important;
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size : .86rem !important;
+    margin-bottom: 8px;
 }
 
 .containerLanguages {
-    width: 250px;
+    width: 320px;
     height: 300px;
     position: absolute;
     top: 0;
@@ -33,4 +40,28 @@ td{
     right: 0;
     margin: auto;
     font-family: 'Montserrat';
+    font-size: .9rem;
 }
+
+.dropdown {
+    background: transparent;
+    border: 1px solid rgba(0,0,0,.05); /*#212529;*/
+    font-size: 1rem;
+    height: 50px;
+    padding: 5px; /* If you add too much padding here, the options won't show in IE */
+    width: 268px;
+ }
+
+ .line {
+     margin: 3rem 0 2rem 0;
+ }
+
+ .nextButton {
+    color: #22A4B4;
+    display: block;
+    margin-top: 50px;
+ }
+
+ i.nextButton span{
+     display: none;
+ }

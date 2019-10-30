@@ -1,7 +1,27 @@
 .container {
+    min-height: 60vh;
     position: relative;
     text-align: center;
-    color: white;
+}
+
+.containerBackground {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    opacity: .94;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    width: 100%;
+    z-index: -1;
 }
 
 .content{
@@ -29,6 +49,13 @@
 
 .imgFluid {
     /*height: 75vh;*/
+}
+
+img.imgFluid {
+    object-fit: contain;
+    height: 60vh;
+    width: 100%;
+    margin: 2rem auto;
 }
 
 #story {

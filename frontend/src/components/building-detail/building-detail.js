@@ -12,9 +12,11 @@ import Translation from '../../services/translation';
 import ReactNotification from "react-notifications-component";
 
 const override = css`
+    border-color: #22A4B4;
     display: block;
     margin: 0 auto;
-    border-color: red;
+    position: relative;
+    top: 40vh;
 `;
 
 class BuildingDetail extends React.Component{
@@ -170,6 +172,7 @@ class BuildingDetail extends React.Component{
                                     mouseDragEnabled 
                                     buttonsDisabled={false}
                                     slideToIndex={this.currentStoryIndex}
+                                    swipeDisabled={true}
                                     onSlideChanged={this.handleChange}>
                                     {
                                         this.state.data.stories.map(s => <PaintingStory key={s.id} story={s} paintingId={this.props.match.params.id} objectType="building"></PaintingStory>)

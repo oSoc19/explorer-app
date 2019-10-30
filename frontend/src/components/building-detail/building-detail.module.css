@@ -211,7 +211,7 @@ padding: 0px;
     position: absolute;
 }
 .alice-carousel__next-btn {
-    background-color: red;
+    /* background-color: red; */
 }
 
 /* FEEDBACK */

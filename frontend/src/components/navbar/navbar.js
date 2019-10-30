@@ -1,7 +1,7 @@
 import Logo from '../../assets/images/Logo_Bruges.jpg';
 import React from 'react';
 
-class NavBar extends React.Component{
+class NavBar extends React.Component {
     render(){
         return(
             <nav className="navbar navbar-expand-lg navbar-light bg-light">

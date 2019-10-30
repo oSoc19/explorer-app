@@ -13,9 +13,11 @@ import PaintingStory from '../painting-story/painting-story';
 import ReactNotification from "react-notifications-component";
 
 const override = css`
+    border-color: #22A4B4;
     display: block;
     margin: 0 auto;
-    border-color: red;
+    position: relative;
+    top: 40vh;
 `;
 
 class PaintingDetail extends React.Component{
@@ -27,7 +29,9 @@ class PaintingDetail extends React.Component{
             loading : true,
             data : null,
             currentStoryIndex : 0,
-            availableLanguages : []
+            availableLanguages : [],
+            prevScrollpos: window.pageYOffset,
+            visible: true
         };
         this.goBackToSelection = this.goBackToSelection.bind(this);
         this.changeLanguage = this.changeLanguage.bind(this);
@@ -38,22 +42,38 @@ class PaintingDetail extends React.Component{
 
     async componentWillMount(){
         let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, localStorage.getItem("language"));
+        window.addEventListener("scroll", this.handleScroll);
+
+        // TODO:Foolproof maken
+        let extraStory = {};
+        extraStory.id = 1000;
+        extraStory.imageUrl = dataJSON.imageUrl;
+        extraStory.language = {};
+        extraStory.subtitle = "";
+        extraStory.text = dataJSON.translations[0].name;
+        extraStory.title = "";
+        extraStory.type = 'title';
+        dataJSON.stories.unshift(extraStory);
+
         if(dataJSON.status === 404){
             this.props.history.push({
                 pathname : `/choose-painting`,
                 state:{notFound : true, paintingNumber : this.props.match.params.id}
             });
             window.location.reload();
-        }
+        }        
         else if(dataJSON.translations.length !== 0)
-            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : [], itemsInSlide:dataJSON.stories.length});
+            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : []});
         else{
             let languages = await Api.getAvailableLanguages();
             await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : languages});
             this.addLanguages();
         }
-        console.log(dataJSON.author.translations.length)
     }
+
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+      }
 
     handleOnDragStart(e){
         e.preventDefault();
@@ -82,14 +102,14 @@ class PaintingDetail extends React.Component{
     addLanguages(){
         let body = document.getElementById("languages");
         let goTo = document.getElementById("goTo");
-        console.log(body.childNodes[0])
         let line;
         for(let i =0; i < this.state.availableLanguages.length; i++){
             let lan = document.createElement("td");
             lan.onclick = ()=>{
                 this.selectLanguage(this.state.availableLanguages[i].code);
             }
-            lan.id = `${localStorage.getItem("language")}-missing-${this.state.availableLanguages[i].code}`;
+            lan.id = `${localStorage.getItem("preferred-language")}-missing-${this.state.availableLanguages[i].code}`;
+            lan.className = 'select-fallback-language';
             lan.innerHTML = this.state.availableLanguages[i].name;
             if(i%2 === 0){
                 line = document.createElement("tr");
@@ -105,6 +125,31 @@ class PaintingDetail extends React.Component{
         window.location.reload();
     }
 
+    handleScroll = () => {
+        /* const { prevScrollpos } = this.state;
+      
+        const currentScrollPos = window.pageYOffset;
+        const visible = prevScrollpos > currentScrollPos;
+      
+        this.setState({
+          prevScrollpos: currentScrollPos,
+          visible
+        }); */
+
+        let lastScrollTop = 0;
+        const currentScrollTop = window.pageYOffset;
+
+        // Set the state of hidden depending on scroll position
+        // We only change the state if it needs to be changed
+        if (!this.state.visible && currentScrollTop > lastScrollTop) {
+        this.setState({ visible: true });
+        } else if(this.state.visible) {
+        this.setState({ visible: false });
+        }
+        lastScrollTop = currentScrollTop;
+      };
+      
+
     render(){
         if(this.state.loading)
             return(
@@ -113,7 +158,6 @@ class PaintingDetail extends React.Component{
                         css={override}
                         sizeUnit={"px"}
                         size={100}
-                        color={'#787B7D'}
                         loading={true}
                     />
                 </div>
@@ -129,14 +173,15 @@ class PaintingDetail extends React.Component{
                                 <tbody id="languages">
                                 </tbody>
                             </table>
+                            <a href="#" class="select-fallback-language">Not available</a>
                         </div>
                     </div>
                 );
 
         if(!this.state.loading)
             return(
-            <div className="">
-                <nav className={`navbar sticky-top navbar-expand navbar-light bg-light ${styles.navBackground}`}>
+            <div className="" id="totop">
+                <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.visible ? 'show' : 'hide')} ${styles.navBackground}`}>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -164,13 +209,14 @@ class PaintingDetail extends React.Component{
                 </nav>
 
                 <div className={styles.body}>
-
-                    { this.state.data.stories.length !== 0
-                        ?   <div className={`${styles.aliceContainer}`}>
+                    {/* { this.state.data.stories.length !== 0 */}
+                        {/* ?    */}
+                        <div className={`${styles.aliceContainer}`}>
                                 <AliceCarousel 
                                     autoPlay={false} 
                                     mouseDragEnabled 
-                                    buttonsDisabled={false}
+                                    buttonsDisabled={(this.state.data.stories.length>1) ? false : true}
+                                    //buttonsDisabled={false}
                                     slideToIndex={this.currentStoryIndex}
                                     swipeDisabled={true}
                                     onSlideChanged={this.handleChange}>
@@ -179,10 +225,10 @@ class PaintingDetail extends React.Component{
                                     }
                                 </AliceCarousel>
                             </div>
-                        :   null
-                    }
+                        {/* :   <div className={`${styles.aliceContainer}`}><img src={this.state.data.imageUrl} /></div>
+                    } */}
                     
-                    <div className="container info-container">
+                    <div className={`container ${styles.infocontainer}`}>
 
                         <div id="Info" className={`${styles.content}`}>
                             <h5 className={styles.title}>Info</h5>
@@ -192,11 +238,11 @@ class PaintingDetail extends React.Component{
                                     <tbody>
                                         <tr>
                                             <td>{Translation.Translate("title")}</td>
-                                            <td><a id="DescriptionLink" href={`#Description-${this.props.match.params.id}`}>{this.state.data.translations[0].name}</a></td>
+                                            <td><a id="DescriptionInfoLink" href={`#Description-${this.props.match.params.id}`}>{this.state.data.translations[0].name}</a></td>
                                         </tr>
                                         <tr>
                                             <td>{Translation.Translate("artist")}</td>
-                                            <td><a id="ArtistLink" href={`#Artist-${this.props.match.params.id}`}>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</a></td>
+                                            <td><a id="ArtistInfoLink" href={`#Artist-${this.props.match.params.id}`}>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</a></td>
                                         </tr>
                                         <tr>
                                             <td>{Translation.Translate("year")}</td>
@@ -208,11 +254,11 @@ class PaintingDetail extends React.Component{
                                         </tr>
                                         <tr>
                                             <td>{Translation.Translate("technique")}</td>
-                                            <td><a id="TechniqueLink" href={`#Technique-${this.props.match.params.id}`}>{this.state.data.technique.translations[0].name}</a></td>
+                                            <td><a id="TechniqueInfoLink" href={`#Technique-${this.props.match.params.id}`}>{this.state.data.technique.translations[0].name}</a></td>
                                         </tr>
                                         <tr>
                                             <td>{Translation.Translate("movement")}</td>
-                                            <td><a id="MovementLink" href={`#Movement-${this.props.match.params.id}`}>{this.state.data.movement.translations[0].name}</a></td>
+                                            <td><a id="MovementInfoLink" href={`#Movement-${this.props.match.params.id}`}>{this.state.data.movement.translations[0].name}</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -268,6 +314,7 @@ class PaintingDetail extends React.Component{
                         
                     </div>
                </div>
+                <a className={`fas fa-arrow-circle-up fa-3x ${styles.btnToTop}`} href="#totop"><span>totop</span></a>
                 {this.state.data.audios.length > 0 
                     ? <footer className={`fixed-bottom`}><AudioPlayer src={this.state.data.audios[0].audioUrl}/></footer>
                     : null
