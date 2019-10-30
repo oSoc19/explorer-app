@@ -1238,39 +1238,8 @@ namespace backend.DAL
 
             modelBuilder.Entity<PaintingStory>()
             .HasData(
-                new PaintingStory
-                {
-                    Id = 1,
-                    Title = "Paysage boisé avec gué",
-                    Type = "artwork",
-                    Subtitle = "à propos de l'oeuvre",
-                    Text = "Les feuilles sur les arbres ne sont en fait pas peintes une à une mais à coups de pinceaux",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 1
-                },
-                new PaintingStory
-                {
-                    Id = 2,
-                    Title = "Baroque",
-                    Type = "style",
-                    Subtitle = "à propos du mouvement",
-                    Text = "Le mot “baroque” avait une connotation négative",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 1
-                },
-                new PaintingStory
-                {
-                    Id = 3,
-                    Title = "Peinture à l’huile",
-                    Type = "technique",
-                    Subtitle = "à propos de la technique",
-                    Text = "Avant que la peinture à l’huile ne soit inventée, la plupart des artistes utilisaient la tempera à l’oeuf",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 1
-                },
+                /* Schilderij A - Achtschellinck */
+                /*
                 new PaintingStory
                 {
                     Id = 4,
@@ -1279,28 +1248,6 @@ namespace backend.DAL
                     Title = "Boslandschap met wad",
                     Text = "De schilder gebruikte ruwe schilder stroken om de blaadjes aan de bomen te schilderen, niet blaadje per blaadje apart",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
-                    LanguageId = 2,
-                    PaintingId = 1
-                },
-                new PaintingStory
-                {
-                    Id = 5,
-                    Title = "Barok",
-                    Type = "sttle",
-                    Subtitle = "over de stijlperiode",
-                    Text = "Het woord “barok” was vroeger een negatief woord",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
-                    LanguageId = 2,
-                    PaintingId = 1
-                },
-                new PaintingStory
-                {
-                    Id = 6,
-                    Title = "Olieverf",
-                    Type = "tecnique",
-                    Subtitle = "over de techniek",
-                    Text = "Voordat olieverf werd uitgevonden gebruikten de meeste kunstenaars ei tempera",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
                     LanguageId = 2,
                     PaintingId = 1
                 },
@@ -1317,13 +1264,58 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
+                    Id = 1,
+                    Title = "Paysage boisé avec gué",
+                    Type = "artwork",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Les feuilles sur les arbres ne sont en fait pas peintes une à une mais à coups de pinceaux",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ce8835fad1b4288b17e627fa9fcbedf5d8a7c0ff5064c99be988e13675c8047/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                */
+                new PaintingStory
+                {
+                    Id = 5,
+                    Title = "Barok",
+                    Type = "style",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Het woord barok komt van het Portugese barroco, wat 'onregelmatig gevormde parel' betekent.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
                     Id = 8,
                     Title = "Baroque",
                     Type = "style",
                     Subtitle = "about the movement",
-                    Text = "The word 'baroque' used to be a negative term",
+                    Text = "The word baroque comes from the Portuguese barroco, which means 'irregularly shaped pearl'.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
                     LanguageId = 3,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 2,
+                    Title = "Baroque",
+                    Type = "style",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Le mot baroque vient du portugais barroco, qui signifie 'perle de forme irrégulière'.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 6,
+                    Title = "Olieverf",
+                    Type = "technique",
+                    Subtitle = "over de techniek",
+                    Text = "Voordat olieverf werd uitgevonden gebruikten de meeste kunstenaars tempera, een verfsoort waarbij pigment gemengd werd met eigeel als bindmiddel.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
+                    LanguageId = 2,
                     PaintingId = 1
                 },
                 new PaintingStory
@@ -1332,10 +1324,45 @@ namespace backend.DAL
                     Title = "Oil paint",
                     Type = "technique",
                     Subtitle = "about the technique",
-                    Text = "Before oil paint was invented, most artists used egg tempera",
+                    Text = "Before oil paint was invented, most artists used tempera, a type of paint in which pigment was mixed with egg yolk as a binding agent.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 1
+                },
+                new PaintingStory
+                {
+                    Id = 3,
+                    Title = "Peinture à l’huile",
+                    Type = "technique",
+                    Subtitle = "à propos de la technique",
+                    Text = "Avant l'invention de la peinture à l'huile, la plupart des artistes utilisaient la détrempe, un type de peinture dans lequel le pigment était mélangé au jaune d'œuf comme liant.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 1
+                },
+
+                /* Jacob van Oost - code B */
+                new PaintingStory
+                {
+                    Id = 13,
+                    Subtitle = "Over het kunstwerk",
+                    Type = "artwork",
+                    Title = "Portret van een Brugse familie",
+                    Text = "De leeftijd van de personen is weergegeven op allerlei details in het kunstwerk zoals de kledij.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 2
+                },
+                new PaintingStory
+                {
+                    Id = 16,
+                    Subtitle = "About the artwork",
+                    Type = "artwork",
+                    Title = "Portrait of a Bruges family",
+                    Text = "The age of the persons is reflected in all kinds of details in the artwork such as the clothing.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
+                    LanguageId = 3,
+                    PaintingId = 2
                 },
                 new PaintingStory
                 {
@@ -1343,11 +1370,12 @@ namespace backend.DAL
                     Subtitle = "à propos de l'oeuvre",
                     Type = "artwork",
                     Title = "Portrait d'une famille brugeoise",
-                    Text = "Observez bien attentivement et vous pourrez apercevoir l’âge des personnages sur leurs vêtements",
+                    Text = "L'âge des personnes se reflète dans toutes sortes de détails de l'œuvre d'art, comme les vêtements.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 2
                 },
+                /*
                 new PaintingStory
                 {
                     Id = 11,
@@ -1368,17 +1396,6 @@ namespace backend.DAL
                     Text = "Le bleu ultramarine était fabriqué avec du lapis lazuli qui était très onéreux. Après l’avoir mélangé avec l’huile, la peinture était conservée dans une vessie de porc",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e346459340324138861abea18b6c87d2d65c583136a44fb8906007a69871cc23/browse.jpg",
                     LanguageId = 1,
-                    PaintingId = 2
-                },
-                new PaintingStory
-                {
-                    Id = 13,
-                    Subtitle = "Over het kunstwerk",
-                    Type = "artwork",
-                    Title = "Portret van een Brugse familie",
-                    Text = "Wist je dat de leeftijd van de personen weergegeven is in hun kledij?",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
-                    LanguageId = 2,
                     PaintingId = 2
                 },
                 new PaintingStory
@@ -1405,17 +1422,6 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
-                    Id = 16,
-                    Subtitle = "About the artwork",
-                    Type = "artwork",
-                    Title = "Portrait of a Bruges family",
-                    Text = "Did you know that the characters’ age is displayed within their clothing?",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
-                    LanguageId = 3,
-                    PaintingId = 2
-                },
-                new PaintingStory
-                {
                     Id = 17,
                     Title = "Baroque",
                     Type = "style",
@@ -1436,48 +1442,39 @@ namespace backend.DAL
                     LanguageId = 3,
                     PaintingId = 2
                 },
-                new PaintingStory
-                {
-                    Id = 19,
-                    Subtitle = "à propos de l'oeuvre",
-                    Type = "style",
-                    Title = "Portrait d’un théologien et son secrétaire",
-                    Text = "Le tableau est daté de 1668. Selon l’inscription, le théologien serait âgé de 47 ans.  Son identité reste à ce jour inconnue",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 3
-                },
-                new PaintingStory
-                {
-                    Id = 20,
-                    Title = "Baroque",
-                    Type = "style",
-                    Subtitle = "à propos du mouvement",
-                    Text = "L’art baroque servait à la propagande religieuse",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 3
-                },
-                new PaintingStory
-                {
-                    Id = 21,
-                    Title = "Peinture à l’huile",
-                    Type = "style",
-                    Subtitle = "à propos de la technique",
-                    Text = "La peinture blanche était créée avec du plomb.  Elle séchait vite et couvrait bien",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 3
-                },
+                */
+                /* Schilderij C - Jacob van Oost */
                 new PaintingStory
                 {
                     Id = 22,
                     Subtitle = "over het kunstwerk",
-                    Type = "style",
+                    Type = "artwork",
                     Title = "Portret van een theoloog met zijn secretaris",
-                    Text = "Het schilderij dateert uit 1668. Volgens het opschrift is de theoloog 47 jaar oud. Zijn identiteit is tot op de dag van vandaag nog steeds onbekend",
+                    Text = "Het schilderij dateert uit 1668. Op het opschrift lezen we 'AETETIS 47' = op de leeftijd van 47. Zijn identiteit is tot op de dag van vandaag nog steeds onbekend.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
                     LanguageId = 2,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 25,
+                    Subtitle = "About the artwork",
+                    Type = "artwork",
+                    Title = "Portrait of a Theologue and his Secretary",
+                    Text = "The painting dates from 1668. On the inscription we read 'AETETIS 47' = at the age of 47. His identity is still unknown to this day.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
+                    LanguageId = 3,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 19,
+                    Subtitle = "à propos de l'oeuvre",
+                    Type = "artwork",
+                    Title = "Portrait d’un théologien et son secrétaire",
+                    Text = "Le tableau date de 1668. Sur l'inscription on peut lire 'AETETETIS 47' = à l'âge de 47 ans. Son identité reste à ce jour inconnue.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
+                    LanguageId = 1,
                     PaintingId = 3
                 },
                 new PaintingStory
@@ -1486,31 +1483,9 @@ namespace backend.DAL
                     Title = "Barok",
                     Type = "style",
                     Subtitle = "over de stijlperiode",
-                    Text = "Barok kunst werd gemaakt als religieuze propaganda",
+                    Text = "Barokkunst werd vaak gemaakt als religieuze propaganda.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
                     LanguageId = 2,
-                    PaintingId = 3
-                },
-                new PaintingStory
-                {
-                    Id = 24,
-                    Title = "Olieverf",
-                    Type = "style",
-                    Subtitle = "over de techniek",
-                    Text = "Witte verf werd gemaakt uit lood. Het droogde snel en bedekte goed",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
-                    LanguageId = 2,
-                    PaintingId = 3
-                },
-                new PaintingStory
-                {
-                    Id = 25,
-                    Subtitle = "About the artwork",
-                    Type = "style",
-                    Title = "Portrait of a Theologue and his Secretary",
-                    Text = "The date on the painting is 1668 and according to the inscription on it, the theologue is 47 years old. The identity of the man is still unknown to this day",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
-                    LanguageId = 3,
                     PaintingId = 3
                 },
                 new PaintingStory
@@ -1526,14 +1501,71 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
+                    Id = 20,
+                    Title = "Baroque",
+                    Type = "style",
+                    Subtitle = "à propos du mouvement",
+                    Text = "L’art baroque servait à la propagande religieuse",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 24,
+                    Title = "Olieverf",
+                    Type = "technique",
+                    Subtitle = "over de techniek",
+                    Text = "Witte verf werd gemaakt uit lood. Het droogde snel en bedekte goed, maar was heel giftig. Hierdoor had je als kunstschilder het risico een loodvergiftiging op te lopen.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 3
+                },
+                new PaintingStory
+                {
                     Id = 27,
                     Title = "Oil paint",
-                    Type = "style",
+                    Type = "technique",
                     Subtitle = "about the technique",
-                    Text = "White paint was created with lead. It dried quickly and covered well",
+                    Text = "White paint was made of lead. It dried quickly and covered well, but was very toxic. As a painter, you risked getting lead poisoning.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 3
+                },
+                new PaintingStory
+                {
+                    Id = 21,
+                    Title = "Peinture à l’huile",
+                    Type = "technique",
+                    Subtitle = "à propos de la technique",
+                    Text = "La peinture blanche était faite de plomb. Il séchait rapidement et couvrait bien, mais il était très toxique. Comme peintre, vous avez risqué un empoisonnement au plomb.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 3
+                },
+
+                /* Jacob van Oost II - code D */
+                new PaintingStory
+                {
+                    Id = 31,
+                    Title = "Portret van een man",
+                    Type = "style",
+                    Subtitle = "over het kunstwerk ",
+                    Text = "Het schilderij is ondertekend en gedateerd op de achterkant: 'J. van Oost als vrient / 1697'.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 4
+                },
+                new PaintingStory
+                {
+                    Id = 34,
+                    Title = "Portrait of a Man",
+                    Type = "style",
+                    Subtitle = "about the artwork",
+                    Text = "The painting is signed and dated on the back: 'J. van Oost as friend / 1697'.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
+                    LanguageId = 3,
+                    PaintingId = 4
                 },
                 new PaintingStory
                 {
@@ -1541,11 +1573,12 @@ namespace backend.DAL
                     Title = "Portrait d' un homme",
                     Type = "style",
                     Subtitle = "à propos de l'oeuvre",
-                    Text = "Figure au dos de cette peinture: “J. Van Oost en tant qu’amis 1697”",
+                    Text = "Le tableau est signé et daté au dos: 'J. van Oost comme ami / 1697'.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 4
                 },
+                /*
                 new PaintingStory
                 {
                     Id = 29,
@@ -1566,17 +1599,6 @@ namespace backend.DAL
                     Text = "Jusqu’au 19ème siècle, les peintres préparaient leurs propres couleurs, en expérimentant",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/efd4bf7eedcc4d768d02849291c823abd947d1a712a04e70980bc3e1086273b9/browse.jpg",
                     LanguageId = 1,
-                    PaintingId = 4
-                },
-                new PaintingStory
-                {
-                    Id = 31,
-                    Title = "Portret van een man",
-                    Type = "style",
-                    Subtitle = "over het kunstwerk ",
-                    Text = "Het schilderij is ondertekend en gedateerd op de achterkant: “J. Van Oost als vriend 1697”",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
-                    LanguageId = 2,
                     PaintingId = 4
                 },
                 new PaintingStory
@@ -1603,17 +1625,6 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
-                    Id = 34,
-                    Title = "Portrait of a Man",
-                    Type = "style",
-                    Subtitle = "about the artwork",
-                    Text = "The painting is signed and dated on the rear: J. Van Oost als vriend 1697 (J. Van Oost as a friend 1697)",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
-                    LanguageId = 3,
-                    PaintingId = 4
-                },
-                new PaintingStory
-                {
                     Id = 35,
                     Title = "Baroque",
                     Type = "style",
@@ -1634,48 +1645,40 @@ namespace backend.DAL
                     LanguageId = 3,
                     PaintingId = 4
                 },
-                new PaintingStory
-                {
-                    Id = 37,
-                    Title = "Sainte Trinité",
-                    Type = "style",
-                    Subtitle = "à propos de l'oeuvre",
-                    Text = "Le peintre de cette oeuvre est resté inconnu jusque dans les années 70 bien qu’elle ressemblait au style de Rubens. On découvrit plus tard qu’Artus Wolfordt était l’artiste, après une reconstruction de son oeuvre “Women bathing”",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 5
-                },
-                new PaintingStory
-                {
-                    Id = 38,
-                    Title = "Baroque",
-                    Type = "style",
-                    Subtitle = "à propos du mouvement",
-                    Text = "La peinture de scènes religieuses servait à enseigner la religion à la population analphabète",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 5
-                },
-                new PaintingStory
-                {
-                    Id = 39,
-                    Title = "Peinture à l’huile",
-                    Type = "style",
-                    Subtitle = "à propos de la technique",
-                    Text = "Les peintres expérimentent l’épaisseur de la pâte pour accentuer les lumières",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 5
-                },
+                */
+
+                /* Schilderij E - Artus Wolfordt */
                 new PaintingStory
                 {
                     Id = 40,
                     Title = "Heilige Drievuldigheid",
-                    Type = "style",
+                    Type = "artwork",
                     Subtitle = "over het kunstwerk",
-                    Text = "De schilder was onbekend tot in de jaren 1970 ze beschouwden het een werk van Rubens. Later bleek het een schilderij te zijn door Artus Wolfordt, na een reconstructie van een van zijn kunstwerken ‘badende vrouwen’",
+                    Text = "Dit schilderij werd aan verschillende kunstenaars toegeschreven, onder andere aan Rubens. Pas in de jaren 1990 werd het toegeschreven aan Wolfordt.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
                     LanguageId = 2,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 43,
+                    Title = "Holy Trinity",
+                    Type = "artwork",
+                    Subtitle = "about the artwork",
+                    Text = "This painting was attributed to various artists, including Rubens. It was not until the 1990s that it was attributed to Wolfordt.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
+                    LanguageId = 3,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 37,
+                    Title = "Sainte Trinité",
+                    Type = "artwork",
+                    Subtitle = "à propos de l'oeuvre",
+                    Text = "Ce tableau a été attribué à divers artistes, dont Rubens. Ce n'est que dans les années 1990 qu'il a été attribué à Wolfordt.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
+                    LanguageId = 1,
                     PaintingId = 5
                 },
                 new PaintingStory
@@ -1684,31 +1687,9 @@ namespace backend.DAL
                     Title = "Barok",
                     Type = "style",
                     Subtitle = "over de stijlperiode",
-                    Text = "Het schilderen van religieuze scènes werd gebruikt om de ongeletterde bevolking het verhaal te doen begrijpen",
+                    Text = "Het schilderen van religieuze scènes werd gebruikt om de ongeletterde bevolking het verhaal te doen begrijpen.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
                     LanguageId = 2,
-                    PaintingId = 5
-                },
-                new PaintingStory
-                {
-                    Id = 42,
-                    Title = "Olieverf",
-                    Type = "style",
-                    Subtitle = "over de techniek",
-                    Text = "Schilders beginnen te experimenteren met de dikte van de verf om het licht te accentueren",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
-                    LanguageId = 2,
-                    PaintingId = 5
-                },
-                new PaintingStory
-                {
-                    Id = 43,
-                    Title = "Holy Trinity",
-                    Type = "style",
-                    Subtitle = "about the artwork",
-                    Text = "The painter was unknown until the 1970’s and thought to be by Rubens. It was later found to be painted by Artus Wolfordt, after a reconstruction on one of his artwork “Women bathing” from this",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
-                    LanguageId = 3,
                     PaintingId = 5
                 },
                 new PaintingStory
@@ -1724,6 +1705,40 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
+                    Id = 38,
+                    Title = "Baroque",
+                    Type = "style",
+                    Subtitle = "à propos du mouvement",
+                    Text = "La peinture de scènes religieuses servait à enseigner la religion à la population analphabète",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                /*
+                new PaintingStory
+                {
+                    Id = 39,
+                    Title = "Peinture à l’huile",
+                    Type = "style",
+                    Subtitle = "à propos de la technique",
+                    Text = "Les peintres expérimentent l’épaisseur de la pâte pour accentuer les lumières",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
+                    Id = 42,
+                    Title = "Olieverf",
+                    Type = "style",
+                    Subtitle = "over de techniek",
+                    Text = "Schilders beginnen te experimenteren met de dikte van de verf om het licht te accentueren",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03c88b6c0857421985c8afe512996d300f59c58603f54e5a8a9371fad4d2c919/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 5
+                },
+                new PaintingStory
+                {
                     Id = 45,
                     Title = "Oil paint",
                     Type = "style",
@@ -1733,50 +1748,43 @@ namespace backend.DAL
                     LanguageId = 3,
                     PaintingId = 5
                 },
+                */
+
+                /* Schilderij F - Jacob van Oost */
+                new PaintingStory
+                {
+                    Id = 49,
+                    Title = "Portret van Fovin de Hasque",
+                    Type = "artwork",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Fovin de Hasque was schermmeester van de Brugse Sint-Michielsgilde, de oudst bekende schermersgilde in Vlaanderen.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 52,
+                    Title = "Portrait of Fovin de Hasque",
+                    Type = "artwork",
+                    Subtitle = "about the artwork",
+                    Text = "Fovin de Hasque was fencer of the Bruges St Michael's Guild, the oldest known fencer's guild in Flanders.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
+                    LanguageId = 3,
+                    PaintingId = 6
+                },
                 new PaintingStory
                 {
                     Id = 46,
                     Title = "Portrait de Fovin de Hasque",
                     Type = "style",
                     Subtitle = "à propos de l'oeuvre",
-                    Text = "Fovin de Hasque était un maître d’armes de la guilde de Sint Michiels, une des plus anciennes guildes d’escrime connues de Flandres.",
+                    Text = "Fovin de Hasque était escrimeur de la guilde St Michel de Bruges, la plus ancienne guilde d'escrime connue en Flandre.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 6
                 },
-                new PaintingStory
-                {
-                    Id = 47,
-                    Title = "Baroque",
-                    Type = "style",
-                    Subtitle = "à propos du mouvement",
-                    Text = "Le style baroque devint un symbole de richesse et pouvoir",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 6
-                },
-                new PaintingStory
-                {
-                    Id = 48,
-                    Title = "Peinture à l’huile",
-                    Type = "style",
-                    Subtitle = "à propos de la technique",
-                    Text = "Depuis 1841, la peinture à l’huile est disponible dans des tubes de métal. Les artistes peuvent maintenant sortir et peindre à l’extérieur",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
-                    LanguageId = 1,
-                    PaintingId = 6
-                },
-                new PaintingStory
-                {
-                    Id = 49,
-                    Title = "Portret van Fovin de Hasque",
-                    Type = "style",
-                    Subtitle = "over het kunstwerk",
-                    Text = "Fovin de Hasque was een schermmeester van de Sint Michielsgilde,  de oudste zwaardvechtkunst gilde bekend in Vlaanderen",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
-                    LanguageId = 2,
-                    PaintingId = 6
-                },
+                /*
                 new PaintingStory
                 {
                     Id = 50,
@@ -1786,28 +1794,6 @@ namespace backend.DAL
                     Text = "De barokstijl werd een symbool van rijkdom en macht",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
                     LanguageId = 2,
-                    PaintingId = 6
-                },
-                new PaintingStory
-                {
-                    Id = 51,
-                    Title = "Olieverf",
-                    Type = "style",
-                    Subtitle = "over de techniek",
-                    Text = "Sinds 1841, olieverf was verkrijgbaar in metalen tubes. Nu konden kunstenaars buiten schilderen",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
-                    LanguageId = 2,
-                    PaintingId = 6
-                },
-                new PaintingStory
-                {
-                    Id = 52,
-                    Title = "Portrait of Fovin de Hasque",
-                    Type = "style",
-                    Subtitle = "about the artwork",
-                    Text = "Fovin de Hasque was a swordsman of the Sint Michiels guild, the oldest swordsmanship guild known in Flanders",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
-                    LanguageId = 3,
                     PaintingId = 6
                 },
                 new PaintingStory
@@ -1823,9 +1809,31 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
+                    Id = 47,
+                    Title = "Baroque",
+                    Type = "style",
+                    Subtitle = "à propos du mouvement",
+                    Text = "Le style baroque devint un symbole de richesse et pouvoir",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fecdb0f11ba34090822eafcc87302d21ca86d20df97b4fbe92d455ccd29a4e78/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
+                    Id = 51,
+                    Title = "Olieverf",
+                    Type = "technique",
+                    Subtitle = "over de techniek",
+                    Text = "Sinds 1841, olieverf was verkrijgbaar in metalen tubes. Nu konden kunstenaars buiten schilderen",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 6
+                },
+                new PaintingStory
+                {
                     Id = 54,
                     Title = "Oil paint",
-                    Type = "style",
+                    Type = "technique",
                     Subtitle = "about the technique",
                     Text = "Since 1841, oil paint has been available in metal tube. Now, artists could go and paint outdoors",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
@@ -1834,13 +1842,71 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
+                    Id = 48,
+                    Title = "Peinture à l’huile",
+                    Type = "technique",
+                    Subtitle = "à propos de la technique",
+                    Text = "Depuis 1841, la peinture à l’huile est disponible dans des tubes de métal. Les artistes peuvent maintenant sortir et peindre à l’extérieur",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3931908a115a4e229c153dcf4468422282c74814f999464681d5ba1a28b18885/browse.jpg",
+                    LanguageId = 1,
+                    PaintingId = 6
+                },
+                */
+
+                /* Schilderij G - Quellinus */
+                new PaintingStory
+                {
+                    Id = 58,
+                    Title = "Achilles en de dochters van Lycomedes",
+                    Type = "artwork",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Dit verhaal is gebaseerd op verschillende schilderijen. Deze compositie gaat terug op een ontwerp voor een wandtapijt van Rubens over de Griekse held Achilles. Quellinus zelf schilderde drie verschillende versies van deze scène.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 61,
+                    Title = "Achilles among the Daughters of Lycomedes",
+                    Type = "artwork",
+                    Subtitle = "about the artwork",
+                    Text = "This story is based on several paintings. This composition goes back to a design for a tapestry by Rubens about the Greek hero Achilles. Quellinus himself painted three different versions of this scene.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
+                    LanguageId = 3,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
                     Id = 55,
                     Title = "Achille parmi les filles de Lycomède",
-                    Type = "style",
+                    Type = "artwork",
                     Subtitle = "à propos de l'oeuvre",
-                    Text = "L’histoire de la guerre de Troie fut la base de nombreux tableaux. Quellinus peignit trois versions de cette scène. Cette version est caractérisée par l’amour du peintre pour l’architecture classique de cette période",
+                    Text = "Cette histoire est basée sur plusieurs tableaux. Cette composition remonte à la conception d'une tapisserie de Rubens sur le héros grec Achille. Quellinus lui-même a peint trois versions différentes de cette scène.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
                     LanguageId = 1,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 83,
+                    Title = "Achilles en de dochters van Lycomedes",
+                    Type = "artwork",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Achilles had een geheime relatie met Deidamia, een van de zeven dochters van koning Lycomedes. Ze kijkt hier triest omdat ze weet dat Achilles haar zal verlaten.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 7
+                },
+                new PaintingStory
+                {
+                    Id = 84,
+                    Title = "Achilles among the Daughters of Lycomedes",
+                    Type = "artwork",
+                    Subtitle = "about the artwork",
+                    Text = "Achilles had a secret relationship with Deidamia, one of the seven daughters of King Lycomedes. She looks sad here because she knows that Achilles will leave her.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
+                    LanguageId = 3,
                     PaintingId = 7
                 },
                 new PaintingStory
@@ -1849,11 +1915,12 @@ namespace backend.DAL
                     Title = "Achille parmi les filles de Lycomède",
                     Type = "style",
                     Subtitle = "à propos de l'oeuvre",
-                    Text = "Achille eut une liaison secrète avec Deidamia, une des 7 filles du Roi Lycomède. Celle-ci a l’air triste car elle sait que Achille est sur le point de partir",
+                    Text = "Achille avait une relation secrète avec Deidamia, une des sept filles du roi Lycomède. Elle a l'air triste parce qu'elle sait qu'Achille va la quitter.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 7
                 },
+                /*
                 new PaintingStory
                 {
                     Id = 56,
@@ -1874,28 +1941,6 @@ namespace backend.DAL
                     Text = "La peinture à l’huile met plus de temps à sécher  que d’autres types de peinture (environ 2 semaines, bien que certaines couleurs sèchent en quelques jours). De ce fait, le peintre pouvait enlever une couche complète de peinture et en recommencer une nouvelle",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ddd295ab406349bcaabd41e04e4aa7d3fa4285c4e274469ca4f84a09c82f7864/browse.jpg",
                     LanguageId = 1,
-                    PaintingId = 7
-                },
-                new PaintingStory
-                {
-                    Id = 58,
-                    Title = "Achilles en de dochters van Lycomedes",
-                    Type = "style",
-                    Subtitle = "over het kunstwerk",
-                    Text = "Dit Trojaans verhaal is gebaseerd op verschillende schilderijen. Quellinus zelf schilderde drie verschillende versies van deze scène. Deze versie wordt gekenmerkt door de schilder zijn liefde voor klassieke architectuur uit die periode",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
-                    LanguageId = 2,
-                    PaintingId = 7
-                },
-                new PaintingStory
-                {
-                    Id = 83,
-                    Title = "Achilles en de dochters van Lycomedes",
-                    Type = "style",
-                    Subtitle = "over het kunstwerk",
-                    Text = "Achilles had een geheime relatie met een van de 7 dochters van koning Lycomede’s: namelijk Deidamia. Ze kijkt triest omdat ze weet dat Achilles haar zal verlaten",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
-                    LanguageId = 2,
                     PaintingId = 7
                 },
                 new PaintingStory
@@ -1922,28 +1967,6 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
-                    Id = 61,
-                    Title = "Achilles among the Daughters of Lycomedes",
-                    Type = "style",
-                    Subtitle = "about the artwork",
-                    Text = "This Troyan story is the base of many paintings.  Quellinus self painted three versions of this scene. This version is characterised by the painter’s love for Classical Architecture of the time of painting",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
-                    LanguageId = 3,
-                    PaintingId = 7
-                },
-                new PaintingStory
-                {
-                    Id = 84,
-                    Title = "Achilles among the Daughters of Lycomedes",
-                    Type = "style",
-                    Subtitle = "about the artwork",
-                    Text = "Achilles had a secret relationship with one of King Lycomedes’s 7 daughters: Deidamia. That is why she looks sad because she knows that  Achilles is going to leave",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
-                    LanguageId = 3,
-                    PaintingId = 7
-                },
-                new PaintingStory
-                {
                     Id = 62,
                     Title = "Baroque",
                     Type = "style",
@@ -1964,17 +1987,42 @@ namespace backend.DAL
                     LanguageId = 3,
                     PaintingId = 7
                 },
+                */
+                /** H. Peter Lely **/
+                new PaintingStory
+                {
+                    Id = 67,
+                    Title = "Portret van Samuel Crew",
+                    Type = "artwork",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Peter Lely (geboren als Pieter van der Faes) studeerde in Haarlem. Hij werd bekend onder de naam Lely vanwege de afbeelding van een lelie op het huis van zijn vader in Den Haag.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
+                    LanguageId = 2,
+                    PaintingId = 8
+                },
+                new PaintingStory
+                {
+                    Id = 70,
+                    Title = "Portrait of Samuel Crew",
+                    Type = "artwork",
+                    Subtitle = "about the artwork",
+                    Text = "Peter Lely (born as Pieter van der Faes) studied in Haarlem. He became known as Lely because of the image of a lily on his father's house in The Hague.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
+                    LanguageId = 3,
+                    PaintingId = 8
+                },
                 new PaintingStory
                 {
                     Id = 64,
                     Title = "Portrait de Samuel Crew",
-                    Type = "style",
+                    Type = "artwork",
                     Subtitle = "à propos de l'oeuvre",
-                    Text = "Lely (de son vrai nom était van der Faes) étudia à Haarlem et pris pour nom d’artiste Lely (Lys en néerlandais) car la fleur de Lys était représentée sur le pignon de la maison de son père",
+                    Text = "Peter Lely (né Pieter van der Faes) a étudié à Haarlem. Il est connu sous le nom de Lely en raison de l'image d'un lys sur la maison de son père à La Haye.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
                     LanguageId = 1,
                     PaintingId = 8
                 },
+                /*
                 new PaintingStory
                 {
                     Id = 65,
@@ -1995,17 +2043,6 @@ namespace backend.DAL
                     Text = "L’avantage de la peinture à l’huile est qu’elle met plus de temps à sécher, ce qui permet au peintre de développer son oeuvre au fur et à mesure, contrairement à la tempéra aux oeufs",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/07e8711ec42e4a659843bc2de2e78657108b44bc1fa24dbdaaca756a3c33f1e9/browse.jpg",
                     LanguageId = 1,
-                    PaintingId = 8
-                },
-                new PaintingStory
-                {
-                    Id = 67,
-                    Title = "Portret van Samuel Crew",
-                    Type = "style",
-                    Subtitle = "over het kunstwerk",
-                    Text = "Lely (Zijn echte naam was van der Faes) studeerde in Haarlem en nam Lely (Lelie in het Nederlands) als een artiestennaam omdat er op zijn huis een Lelie stond)",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
-                    LanguageId = 2,
                     PaintingId = 8
                 },
                 new PaintingStory
@@ -2032,17 +2069,6 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
-                    Id = 70,
-                    Title = "Portrait of Samuel Crew",
-                    Type = "style",
-                    Subtitle = "about the artwork",
-                    Text = "Lely (his real name was van der Faes) studied in Haarlem and took Lely (lily in Dutch) as an artist name  because his house had a Lily on it",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
-                    LanguageId = 3,
-                    PaintingId = 8
-                },
-                new PaintingStory
-                {
                     Id = 71,
                     Title = "Baroque",
                     Type = "style",
@@ -2062,25 +2088,71 @@ namespace backend.DAL
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/07e8711ec42e4a659843bc2de2e78657108b44bc1fa24dbdaaca756a3c33f1e9/browse.jpg",
                     LanguageId = 3,
                     PaintingId = 8
+                },*/
+
+                /** I.	Jacob van Oost, Roeping van Mattheüs **/
+                new PaintingStory
+                {
+                    Id = 76,
+                    Title = "Roeping van Mattheüs",
+                    Type = "artwork",
+                    Subtitle = "over het kunstwerk",
+                    Text = "Mattheüs, de tollenaar, is op zijn rug afgebeeld. De hond symboliseert zijn trouw aan Jezus en aan zijn geloof.",
+                    ImageUrl = "",
+                    LanguageId = 2,
+                    PaintingId = 9
                 },
                 new PaintingStory
                 {
+                    Id = 79,
+                    Title = "The Calling of St Matthew",
+                    Type = "artwork",
+                    Subtitle = "about the artwork",
+                    Text = "Matthew, the tax collector, is depicted on his back. The dog symbolizes his faithfulness to Jesus and to his faith.",
+                    ImageUrl = "",
+                    LanguageId = 3,
+                    PaintingId = 9
+                },
+                 new PaintingStory
+                {
                     Id = 73,
                     Title = "La Vocation de saint Matthieu",
-                    Type = "style",
+                    Type = "artwork",
                     Subtitle = "à propos de l'oeuvre",
-                    Text = "Matthieu, le percepteur d’impôt, est représenté de dos. Son chien prend l’expression de son maitre, comme si le peintre voulait nous dire “un croyant écoute Jésus comme un chien écoute son maitre”",
+                    Text = "Matthieu, le percepteur, est représenté sur son dos. Le chien symbolise sa fidélité à Jésus et à sa foi.",
                     ImageUrl = "",
                     LanguageId = 1,
                     PaintingId = 9
                 },
                 new PaintingStory
                 {
+                    Id = 77,
+                    Title = "Barok",
+                    Type = "style",
+                    Subtitle = "over de stijlperiode",
+                    Text = "Typisch voor een barokschilderij is dat het meest dramatische moment van een gebeurtenis wordt afgebeeld.",
+                    ImageUrl = "",
+                    LanguageId = 2,
+                    PaintingId = 9
+                },
+                new PaintingStory
+                {
+                    Id = 80,
+                    Title = "Baroque",
+                    Type = "style",
+                    Subtitle = "about the movement",
+                    Text = "Typical for a Baroque painting is that the most dramatic moment of an event is depicted.",
+                    ImageUrl = "",
+                    LanguageId = 3,
+                    PaintingId = 9
+                }/*,
+                new PaintingStory
+                {
                     Id = 74,
                     Title = "Baroque",
                     Type = "style",
                     Subtitle = "à propos du mouvement",
-                    Text = "Contrairement à la peinture de la Renaissance (qui illustre le moment précédant un événement important), les peintres baroques choisissent de représenter le moment le plus dramatique de la scène",
+                    Text = "Typique d'une peinture baroque, le moment le plus dramatique d'un événement est représenté.",
                     ImageUrl = "",
                     LanguageId = 1,
                     PaintingId = 9
@@ -2098,28 +2170,6 @@ namespace backend.DAL
                 },
                 new PaintingStory
                 {
-                    Id = 76,
-                    Title = "Roeping van Mattheüs",
-                    Type = "style",
-                    Subtitle = "over het kunstwerk",
-                    Text = "Mattheüs, de tollenaar, is op zijn rug afgebeeld. Zijn hond weerspiegelt zijn meesters emotie alsof de schilder ons wil vertellen “een gelovige luistert naar jezus zoals een hond luistert naar zijn baasje”",
-                    ImageUrl = "",
-                    LanguageId = 2,
-                    PaintingId = 9
-                },
-                new PaintingStory
-                {
-                    Id = 77,
-                    Title = "Barok",
-                    Type = "style",
-                    Subtitle = "over de stijlperiode",
-                    Text = "In tegenstelling tot de Renaissance schilderijen ( die belangrijke gebeurtenissen afbeelden), kiezen Baroque schilders ervoor om het meest dramatische moment van de gebeurtenis af te beelden",
-                    ImageUrl = "",
-                    LanguageId = 2,
-                    PaintingId = 9
-                },
-                new PaintingStory
-                {
                     Id = 78,
                     Title = "Olieverf",
                     Type = "style",
@@ -2127,28 +2177,6 @@ namespace backend.DAL
                     Text = "Kunstenaars begonnen te schilderen op canvas in plaats van hout omdat het pigment beter vasthoudt",
                     ImageUrl = "",
                     LanguageId = 2,
-                    PaintingId = 9
-                },
-                new PaintingStory
-                {
-                    Id = 79,
-                    Title = "The Calling of St Matthew",
-                    Type = "style",
-                    Subtitle = "about the artwork",
-                    Text = "Matthew, the tax collector, is represented from behind. His dog reflects his master’s emotion as if the painter wanted to tell us “a believer listens to Jesus like a dog listens to his master”",
-                    ImageUrl = "",
-                    LanguageId = 3,
-                    PaintingId = 9
-                },
-                new PaintingStory
-                {
-                    Id = 80,
-                    Title = "Baroque",
-                    Type = "style",
-                    Subtitle = "about the movement",
-                    Text = "Contrary to the Renaissance art (which showed the moment before an important event), Baroque painters chose to represent the most dramatic point",
-                    ImageUrl = "",
-                    LanguageId = 3,
                     PaintingId = 9
                 },
                 new PaintingStory
@@ -2161,7 +2189,7 @@ namespace backend.DAL
                     ImageUrl = "",
                     LanguageId = 3,
                     PaintingId = 9
-                }
+                }*/
             );
 
             modelBuilder.Entity<Building>()
