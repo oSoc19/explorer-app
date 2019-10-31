@@ -304,7 +304,7 @@ class ChooseLanguage extends React.Component{
 
                 <div className={styles.containerLanguages}>
                     <h6 className={`${styles.title}`}>
-                        Select your language / {this.state.language}
+                        Select your language
                     </h6>
                     {this.renderAllLanguages()} 
                     
