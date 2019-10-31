@@ -45,6 +45,16 @@ class PaintingDetail extends React.Component{
     }
 
     async componentWillMount(){
+        console.log(localStorage);
+        if( localStorage.getItem("language") === null || localStorage.getItem("language") === "false" ){
+            let language = navigator.language || navigator.userLanguage;
+            language = language.substring(0, 2).toUpperCase();
+            localStorage.setItem("language",language);
+            if( language !== "EN" || language !== "NL" || language !== "FR" ){
+                localStorage.setItem("language","EN");
+            }
+        }
+        console.log(localStorage.getItem("language"));
         let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, localStorage.getItem("language"));
         window.addEventListener("scroll", this.handleScroll);
 
