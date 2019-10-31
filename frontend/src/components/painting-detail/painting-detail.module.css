@@ -28,12 +28,12 @@ font-weight: bold;
 }
 
 .paintDescription{
-text-align: left;
-color:#787B7D;
-font-size: 13px;
-margin-top : 35px;
-padding : 0px;
-}
+    text-align: left;
+    color:#787B7D;
+    font-size: 13px;
+    margin-top : 35px;
+    padding : 0px;
+    }
 
 .paintImage{
 display: flex;
@@ -50,7 +50,7 @@ color:#787B7D;
 }
 
 .paintDetailsContainer{
-margin-top : 50px;
+    margin-top : 50px;
 }
 
 .tagsContainer{
@@ -65,15 +65,14 @@ text-align: left;
 }
 
 .tagsContainer>div>span{
-border : 1px solid black;
-/* margin-left : 10px; */
-margin-right: 10px;
-padding : 5px;
+    border : 1px solid black;
+    margin-right: 10px;
+    padding : 5px;
 }
 
 .tagsContainer>div{
-text-align: left !important;
-padding: 0px;
+    padding: 0px;
+    text-align: left !important;
 }
 
 .audioPlayer{
@@ -89,10 +88,10 @@ padding: 0px;
 }
 
 .footer {
+    bottom:0;
+    height:60px;
     position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
+    width:100%;
 }
 
 .body {
@@ -134,16 +133,19 @@ padding: 0px;
     padding : 0;
 }
 
-.navBackground {
+.navBackground,
+.navBackgroundHid {
     background-color : #F9F6F2 !important;
+    box-shadow: 0px 0px 20px 0px #8888;
     font-family: 'Montserrat';
     font-size: 0.9rem;
-    box-shadow: 0px 0px 20px 0px #8888;
+    position: fixed;
     transition: top 0.6s;
     top: 0px;
+    width: 100%;
 }
 
-.hide {
+.navBackgroundHide {
     top: -80px !important;
 }
 
@@ -263,15 +265,22 @@ padding: 0px;
     display: block;
 }
 
-a.btnToTop {
+a.btnToTop,
+a.btnToTopHide {
     border-bottom-color: transparent;
     bottom: 1rem;
     display: block;
     position: fixed;
     right: 1rem;
+    transition: right 0.2s;
     z-index: 1050;
 }
 
-.btnToTop span{
+a.btnToTopHide {
+    right: -3rem;
+}
+
+.btnToTop span,
+.btnToTopHide span {
     display: none;
 }

@@ -31,13 +31,17 @@ class PaintingDetail extends React.Component{
             currentStoryIndex : 0,
             availableLanguages : [],
             prevScrollpos: window.pageYOffset,
-            visible: true
+            hidden: false,
+            buttonHidden: false,
+            descriptionFlag: true
         };
+
         this.goBackToSelection = this.goBackToSelection.bind(this);
         this.changeLanguage = this.changeLanguage.bind(this);
         this.addLanguages = this.addLanguages.bind(this);
         this.selectLanguage = this.selectLanguage.bind(this);
-        
+        this.handleScroll = this.handleScroll.bind(this);
+        this.lastScrollTop = window.pageYOffset;
     }
 
     async componentWillMount(){
@@ -63,8 +67,8 @@ class PaintingDetail extends React.Component{
             window.location.reload();
         }        
         else if(dataJSON.translations.length !== 0)
-            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : []});
-        else{
+            await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : []});    
+        else {
             let languages = await Api.getAvailableLanguages();
             await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : languages});
             this.addLanguages();
@@ -125,30 +129,25 @@ class PaintingDetail extends React.Component{
         window.location.reload();
     }
 
-    handleScroll = () => {
-        /* const { prevScrollpos } = this.state;
-      
-        const currentScrollPos = window.pageYOffset;
-        const visible = prevScrollpos > currentScrollPos;
-      
-        this.setState({
-          prevScrollpos: currentScrollPos,
-          visible
-        }); */
-
-        let lastScrollTop = 0;
+    handleScroll(){
+        let navbar = document.getElementById("navbar");
         const currentScrollTop = window.pageYOffset;
 
-        // Set the state of hidden depending on scroll position
-        // We only change the state if it needs to be changed
-        if (!this.state.visible && currentScrollTop > lastScrollTop) {
-        this.setState({ visible: true });
-        } else if(this.state.visible) {
-        this.setState({ visible: false });
+        // Navigation
+        if (!this.state.hidden && currentScrollTop >= this.lastScrollTop) {
+            this.setState({ hidden: true });
+        } else if (this.state.hidden && currentScrollTop < this.lastScrollTop) {
+            this.setState({ hidden: false });
         }
-        lastScrollTop = currentScrollTop;
-      };
-      
+
+        // Scroll button totop
+        if( currentScrollTop > 200 ){
+            this.setState({ buttonHidden: true });
+        } else {
+            this.setState({ buttonHidden: false });
+        }
+        this.lastScrollTop = currentScrollTop;
+    };
 
     render(){
         if(this.state.loading)
@@ -181,7 +180,7 @@ class PaintingDetail extends React.Component{
         if(!this.state.loading)
             return(
             <div className="" id="totop">
-                <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.visible ? 'show' : 'hide')} ${styles.navBackground}`}>
+                <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.hidden ? styles.navBackgroundHide : styles.navBackground)}`}>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -265,7 +264,6 @@ class PaintingDetail extends React.Component{
                             </div>
                         </div>
 
-
                         <hr className={styles.separation}></hr>
                         <a id={`Description-${this.props.match.params.id}`} className={styles.anchor}></a>
                         <div id="Artwork" className={styles.content}>
@@ -314,7 +312,7 @@ class PaintingDetail extends React.Component{
                         
                     </div>
                </div>
-                <a className={`fas fa-arrow-circle-up fa-3x ${styles.btnToTop}`} href="#totop"><span>totop</span></a>
+                <a className={`fas fa-arrow-circle-up fa-3x ${(this.state.buttonHidden ? styles.btnToTop : styles.btnToTopHide)}`} href="#totop"><span>totop</span></a>
                 {this.state.data.audios.length > 0 
                     ? <footer className={`fixed-bottom`}><AudioPlayer src={this.state.data.audios[0].audioUrl}/></footer>
                     : null
