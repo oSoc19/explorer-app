@@ -95,8 +95,7 @@ text-align: left;
 }
 
 .body {
-    /* padding:10px; */
-    padding-bottom:60px;
+    padding: 50px 0 60px 0;
     margin-bottom : 20px;
 }
 
