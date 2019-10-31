@@ -10,8 +10,10 @@ class ChooseLanguage extends React.Component{
 
     constructor(props){
         super(props);
+        let fullLanguage = navigator.language || navigator.userLanguage;
+        this.language = fullLanguage.substring(0, 2);
         this.state = {
-            language : navigator.language || navigator.userLanguage,
+            language : this.language,
             languages : []
         };
 
@@ -219,7 +221,7 @@ class ChooseLanguage extends React.Component{
         if(this.props.location.state !== undefined && this.props.location.state.isLanguageMissing){
             let languages = await Api.getAvailableLanguages();
             await this.setState({
-                language : navigator.language || navigator.userLanguage,
+                language : this.language,
                 languages : languages
             });
         }
@@ -237,9 +239,6 @@ class ChooseLanguage extends React.Component{
     selectLanguage(dropdown){
         let language = "";
         if(typeof(dropdown) !== "string"){
-            console.log(dropdown);
-            console.log(dropdown.target.options[dropdown.target.selectedIndex].getAttribute('id'));
-            console.log(dropdown.target.selectedIndex);
             language = dropdown.target.options[dropdown.target.selectedIndex].getAttribute('id');
         }else{
             language = dropdown.toUpperCase();
