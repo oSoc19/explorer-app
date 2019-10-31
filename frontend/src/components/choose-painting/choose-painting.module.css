@@ -68,7 +68,9 @@
 	position: relative;
 }
 
-.touchButton:after {
+.touchButton:after,
+.backspace:after,
+.playButton.active:after {
 	background: rgba(34,164,180,0.1);
 	content: '';
 	position: absolute;
@@ -84,7 +86,13 @@
 
 .touchButton:focus:after,
 .touchButton:active:after,
-.touchButton:hover:after {
+.touchButton:hover:after,
+.backspace:focus:after,
+.backspace:active:after,
+.backspace:hover:after,
+.playButton.active:focus:after,
+.playButton.active:active:after,
+.playButton.active:hover:after {
 	animation: anim-effect-boris 0.3s forwards;
 }
 
@@ -102,9 +110,9 @@
 }
 
 .playButton i,
-.nonactivePlayButton i,
 .backspace i {
-	margin-top: 1.6rem;
+	display: block;
+	margin: 1.6rem 0;
 	user-select: none;
 }
 
@@ -117,6 +125,11 @@
 	color: #22A4B4;
 } 
 
+.backspace,
+.playButton {
+	position: relative;
+}
+
 .backspace i {
-	margin-top: 2.1rem;
+	margin: 2.1rem 0;
 }
