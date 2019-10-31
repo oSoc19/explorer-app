@@ -66,6 +66,12 @@ class ChoosePainting extends React.Component{
 
     removeNumber(){
         document.getElementById("paintingNumber").value = document.getElementById("paintingNumber").value.slice(0,-1);
+       
+        let input = document.getElementById("paintingNumber").value;
+        if(input.length === 0){
+            this.setState({isEmpty : true});
+        }
+        
     }
 
     isInputEmpty(){

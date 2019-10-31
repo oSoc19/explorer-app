@@ -101,6 +101,7 @@
 .nonactivePlayButton i,
 .backspace i {
 	margin-top: 1.6rem;
+	user-select: none;
 }
 
 .playButton i {
