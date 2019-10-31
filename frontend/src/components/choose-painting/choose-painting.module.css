@@ -15,8 +15,10 @@
 }
 
 .chooseTable td {
-	padding: 1rem 0;
-	width: 33%;
+	/* padding: 1rem 0; */
+	touch-action: manipulation;
+	user-select: none;
+	width: 33%;	
 }
 
 .input{
@@ -61,6 +63,8 @@
 }
 
 .touchButton {
+	display: block;
+	padding: 1rem 0;
 	position: relative;
 }
 
