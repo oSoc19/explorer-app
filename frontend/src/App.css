@@ -93,7 +93,7 @@ a:link {
 .alice-carousel__dots {
     margin: 10px 0 5px !important;
     position: absolute;
-    bottom: 0;
+    top: 0rem;
     width: 100%;
 }
 
@@ -103,7 +103,8 @@ a:link {
     height: 2px !important;
     cursor: pointer;
     border-radius: 0 !important;
-    background-color: #9ea5a3 !important; 
+    background-color: #fff !important;
+    /* background-color: #9ea5a3 !important;  */
 }
 
 .alice-carousel__dots-item:not(:last-child) {

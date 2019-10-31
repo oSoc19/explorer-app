@@ -43,7 +43,7 @@ class PaintingStory extends React.Component{
     renderZoom(param) {
         return <div>
         { param == 'painting'
-            ? <img alt="Story" className={`${styles.imgFluid}`} src={`${this.props.story.imageUrl}`}/>
+            ? <img className={`${styles.imgFluid}`} src={`${this.props.story.imageUrl}`}/>
             : (<PinchZoomPan initialScale="1" zoomButtons={false}><img alt="Loading" className={`${styles.imgFluid}`} src={`${this.props.story.imageUrl}`}/></PinchZoomPan>)
         }
         </div>;

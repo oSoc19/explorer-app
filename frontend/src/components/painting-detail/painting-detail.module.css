@@ -267,7 +267,7 @@ text-align: left;
 a.btnToTop,
 a.btnToTopHide {
     border-bottom-color: transparent;
-    bottom: 1rem;
+    bottom: 5rem;
     display: block;
     position: fixed;
     right: 1rem;
