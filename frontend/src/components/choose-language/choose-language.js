@@ -289,19 +289,11 @@ class ChooseLanguage extends React.Component{
         return(
             <div className="container">
                 <ReactNotification ref={this.notificationDOMRef} />
-                <div className="row">
-                    <div className="col align-self-center bruggeLogo">
-                        <img alt="Brugge logo" src={Logo} ></img><br />
-                        Learn more
+                <div className="row header">
+                    <div className="col align-self-top bruggeLogo">
+                        <img alt="Brugge logo" src={Logo} ></img>
                     </div>
                 </div>
-
-                <div className="row">
-                    <div className="col h-100"></div>
-                </div>
-
-               
-
                 <div className={styles.containerLanguages}>
                     <h6 className={`${styles.title}`}>
                         Select your language

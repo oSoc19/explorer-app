@@ -50,25 +50,26 @@ class PaintingDetail extends React.Component{
             let language = navigator.language || navigator.userLanguage;
             language = language.substring(0, 2).toUpperCase();
             localStorage.setItem("language",language);
-            if( language !== "EN" || language !== "NL" || language !== "FR" ){
+            if( language !== "EN" && language !== "NL" && language !== "FR" ){
                 localStorage.setItem("language","EN");
             }
         }
-        console.log(localStorage.getItem("language"));
         let dataJSON = await Api.getPaintingDetail(this.props.match.params.id, localStorage.getItem("language"));
         window.addEventListener("scroll", this.handleScroll);
 
-        // TODO:Foolproof maken
-        let extraStory = {};
-        extraStory.id = 1000;
-        extraStory.imageUrl = dataJSON.imageUrl;
-        extraStory.language = {};
-        extraStory.subtitle = "";
-        extraStory.text = dataJSON.translations[0].name;
-        extraStory.title = "";
-        extraStory.type = 'title';
-        dataJSON.stories.unshift(extraStory);
-
+        if(dataJSON.translations.length !== 0){
+            // TODO:Foolproof maken
+            let extraStory = {};
+            extraStory.id = 1000;
+            extraStory.imageUrl = dataJSON.imageUrl;
+            extraStory.language = {};
+            extraStory.subtitle = "";
+            extraStory.text = dataJSON.translations[0].name;
+            extraStory.title = "";
+            extraStory.type = 'title';
+            dataJSON.stories.unshift(extraStory);
+        }
+        
         if(dataJSON.status === 404){
             this.props.history.push({
                 pathname : `/choose-painting`,
@@ -83,6 +84,7 @@ class PaintingDetail extends React.Component{
             await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : languages});
             this.addLanguages();
         }
+
     }
 
     componentWillUnmount() {
@@ -186,10 +188,14 @@ class PaintingDetail extends React.Component{
                         </div>
                     </div>
                 );
+        
+            
 
         if(!this.state.loading)
             return(
+                
             <div className="" id="totop">
+                
                 <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.hidden ? styles.navBackgroundHide : styles.navBackground)}`}>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -238,7 +244,6 @@ class PaintingDetail extends React.Component{
                     } */}
                     
                     <div className={`container ${styles.infocontainer}`}>
-
                         <div id="Info" className={`${styles.content}`}>
                             <h5 className={styles.title}>Info</h5>
                             <div className={`${styles.line}`}></div>
@@ -315,8 +320,8 @@ class PaintingDetail extends React.Component{
                             <p>
                                 {Translation.Translate("useful")}
                             </p>
-                            <a className={styles.positiveFeedback} href={`#positive-${this.props.match.params.id}`}><i className="far fa-smile fa-3x"></i></a>
-                            <a className={styles.negativeFeedback} href={`#negative-${this.props.match.params.id}`}><i className="far fa-frown fa-3x"></i></a>
+                            <a className={styles.positiveFeedback} href={`#positive-${this.props.match.params.id}`} data-feedback="positive"><i className="far fa-smile fa-3x"></i></a>
+                            <a className={styles.negativeFeedback} href={`#negative-${this.props.match.params.id}`} data-feedback="negative"><i className="far fa-frown fa-3x"></i></a>
                             <p>{Translation.Translate("thanks")}</p>
                         </div>
                         

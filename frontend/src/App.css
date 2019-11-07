@@ -71,8 +71,13 @@ a:link {
   border : 1px solid black !important;
 }
 
+.header{
+    background: rgba(255,255,255,.3);
+    height: 10vh;
+}
+
 .bruggeLogo{
-  margin-top : 20px;
+  margin: auto;
 }
 
 .navbar-light .navbar-nav .nav-item {
