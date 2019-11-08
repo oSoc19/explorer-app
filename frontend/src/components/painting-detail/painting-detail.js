@@ -203,7 +203,7 @@ class PaintingDetail extends React.Component{
                     <div className={`collapse navbar-collapse ${styles.fontColor}`} id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item" onClick={this.goBackToSelection}>
-                                <i className={styles.materialIcon}>&#xe5cb;</i>
+                                <i className={`fas fa-th fa-1x`}></i>
                             </li>
                         </ul>
                         <ul className="navbar-nav mx-auto">
