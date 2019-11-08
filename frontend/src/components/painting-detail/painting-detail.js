@@ -196,14 +196,14 @@ class PaintingDetail extends React.Component{
             return(
                 
             <div className="" id="totop">
-                <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.hidden ? styles.navBackgroundHide : styles.navBackground)}`}>
+                {/* <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.hidden ? styles.navBackgroundHide : styles.navBackground)}`}>
                     <span className={styles.backButton} onClick={this.goBackToSelection}>
                         <i className={styles.materialIcon}>&#xe5cb;</i>
                     </span>
                     <div className="col align-self-top bruggeLogo">
                         <img alt="Brugge logo" src={Logo} ></img>
                     </div>
-                </nav>
+                </nav> */}
                 
                 {/* <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.hidden ? styles.navBackgroundHide : styles.navBackground)}`}>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
