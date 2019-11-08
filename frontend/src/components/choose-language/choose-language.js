@@ -266,15 +266,15 @@ class ChooseLanguage extends React.Component{
         return(
         <tbody>
             <tr>
-                <td id='EN' className="selectableLanguage" onClick={()=>this.selectLanguage('EN')}>English</td>
-                <td id='DE' className="selectableLanguage" onClick={()=>this.selectLanguage('DE')}>Deutsch</td>
-            </tr>
-            <tr>
                 <td id='NL' className="selectableLanguage" onClick={()=>this.selectLanguage('NL')}>Nederlands</td>
-                <td id='ES' className="selectableLanguage" onClick={()=>this.selectLanguage('ES')}>Espanol</td>
+                <td id='FR' className="selectableLanguage" onClick={()=>this.selectLanguage('FR')}>Français</td>
             </tr>
             <tr>
-                <td id='FR' className="selectableLanguage" onClick={()=>this.selectLanguage('FR')}>Français</td>
+                <td id='DE' className="selectableLanguage" onClick={()=>this.selectLanguage('DE')}>Deutsch</td>
+                <td id='EN' className="selectableLanguage" onClick={()=>this.selectLanguage('EN')}>English</td>
+            </tr>
+            <tr>
+                <td id='ES' className="selectableLanguage" onClick={()=>this.selectLanguage('ES')}>Espanol</td>
                 <td id='IT' className="selectableLanguage" onClick={()=>this.selectLanguage('IT')}>Italiano</td>
             </tr>
             <tr>
