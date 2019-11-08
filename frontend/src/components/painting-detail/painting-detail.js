@@ -11,6 +11,7 @@ import LanguageSection from '../language-section/language-section';
 import Translation from '../../services/translation';
 import PaintingStory from '../painting-story/painting-story';
 import ReactNotification from "react-notifications-component";
+import Logo from '../../assets/images/logo_brugge.svg';
 
 const override = css`
     border-color: #22A4B4;
@@ -195,18 +196,24 @@ class PaintingDetail extends React.Component{
             return(
                 
             <div className="" id="totop">
-                
                 <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.hidden ? styles.navBackgroundHide : styles.navBackground)}`}>
+                    <span className={styles.backButton} onClick={this.goBackToSelection}>
+                        <i className={styles.materialIcon}>&#xe5cb;</i>
+                    </span>
+                    <div className="col align-self-top bruggeLogo">
+                        <img alt="Brugge logo" src={Logo} ></img>
+                    </div>
+                </nav>
+                
+                {/* <nav id="navbar" className={`navbar sticky-top navbar-expand navbar-light bg-light ${(this.state.hidden ? styles.navBackgroundHide : styles.navBackground)}`}>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className={`collapse navbar-collapse ${styles.fontColor}`} id="navbarNav">
                         <ul className="navbar-nav">
-                            <li className="nav-item" onClick={this.goBackToSelection}>
-                                <i className={`fas fa-th fa-1x`}></i>
-                            </li>
+                            
                         </ul>
-                        <ul className="navbar-nav mx-auto">
+                        {<ul className="navbar-nav mx-auto">
                             <li className="nav-item ">
                                 <a className="nav-link" id="DescriptionLink" href={`#Description-${this.props.match.params.id}`}>{Translation.Translate("schilderij")}</a>
                             </li>
@@ -219,9 +226,9 @@ class PaintingDetail extends React.Component{
                             <li className="nav-item">
                                 <a className="nav-link" id="TechniqueLink" href={`#Technique-${this.props.match.params.id}`}>{Translation.Translate("technique")}</a>
                             </li>
-                        </ul>
+                        </ul>}
                     </div>
-                </nav>
+                </nav> */}
 
                 <div className={styles.body}>
                     {/* { this.state.data.stories.length !== 0 */}

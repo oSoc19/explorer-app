@@ -95,7 +95,7 @@ text-align: left;
 }
 
 .body {
-    padding: 50px 0 60px 0;
+    padding: 55px 0 80px 0;
     margin-bottom : 20px;
 }
 
@@ -138,6 +138,7 @@ text-align: left;
     box-shadow: 0px 0px 20px 0px #8888;
     font-family: 'Montserrat';
     font-size: 0.9rem;
+    padding: 0;
     position: fixed;
     transition: top 0.6s;
     top: 0px;
@@ -187,6 +188,7 @@ text-align: left;
 }
 
 .materialIcon{
+    font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
     font-size: 24px;
@@ -281,4 +283,10 @@ a.btnToTopHide {
 .btnToTop span,
 .btnToTopHide span {
     display: none;
+}
+
+.backButton {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
 }

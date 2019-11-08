@@ -80,6 +80,11 @@ label {
     height: 10vh;
 }
 
+.bruggeLogo img {
+  background:white; 
+  padding: 12px 7px;
+}
+
 .bruggeLogo{
   margin: auto;
 }
@@ -108,10 +113,10 @@ label {
 
 .alice-carousel__dots-item {
     display: inline-block;
-    width: 20px !important;
-    height: 2px !important;
+    width: 15px !important;
+    height: 15px !important;
     cursor: pointer;
-    border-radius: 0 !important;
+    border-radius: 50% !important;
     background-color: #fff !important;
     /* background-color: #9ea5a3 !important;  */
 }
@@ -121,7 +126,7 @@ label {
   }
 
 .alice-carousel__dots-item:hover, .alice-carousel__dots-item.__active {
-      background-color: #2D5549 !important; 
+      background-color: #22A4B4 !important; 
 }
 
 .flexWrapper{
@@ -134,7 +139,7 @@ label {
 
 .alice-carousel .alice-carousel__prev-btn, 
 .alice-carousel .alice-carousel__next-btn {
-    background: rgba(255,255,255,.15);
+    background: rgba(255,255,255,.35);
     position: absolute;
     top: 0%;
     width: 10%;
