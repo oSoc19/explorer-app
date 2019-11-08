@@ -113,8 +113,8 @@ label {
 
 .alice-carousel__dots-item {
     display: inline-block;
-    width: 15px !important;
-    height: 15px !important;
+    width: 23px !important;
+    height: 23px !important;
     cursor: pointer;
     border-radius: 50% !important;
     background-color: #fff !important;
@@ -122,7 +122,8 @@ label {
 }
 
 .alice-carousel__dots-item:not(:last-child) {
-      margin-right: 15px; 
+      margin-right: 1rem; 
+      margin-top: 1rem;
   }
 
 .alice-carousel__dots-item:hover, .alice-carousel__dots-item.__active {

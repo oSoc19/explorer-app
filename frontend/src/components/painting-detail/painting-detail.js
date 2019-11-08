@@ -240,7 +240,7 @@ class PaintingDetail extends React.Component{
                                     buttonsDisabled={(this.state.data.stories.length>1) ? false : true}
                                     //buttonsDisabled={false}
                                     slideToIndex={this.currentStoryIndex}
-                                    swipeDisabled={true}
+                                    swipeDisabled={false}
                                     onSlideChanged={this.handleChange}>
                                     {
                                         this.state.data.stories.map(s => <PaintingStory key={s.id} story={s} paintingId={this.props.match.params.id} objectType="painting"></PaintingStory>)
