@@ -25,14 +25,14 @@ class PaintingStory extends React.Component{
         switch(param) {
             case 'technique':
             case 'tecnique':
-                return (<a href={`#Technique-${this.props.paintingId}`} id={styles.storyLink}>{Translation.Translate("learnMore")}</a>)
+                return (<a class="technique" href={`#Technique-${this.props.paintingId}`} id={styles.storyLink}>{Translation.Translate("learnMore")}</a>)
             case 'style':
             case 'sttle':
-                return (<a href={`#Movement-${this.props.paintingId}`} id={styles.storyLink}>{Translation.Translate("learnMore")}</a>)
+                return (<a class="movement" href={`#Movement-${this.props.paintingId}`} id={styles.storyLink}>{Translation.Translate("learnMore")}</a>)
             case 'artwork':
-                return (<a href={`#Description-${this.props.paintingId}`} id={styles.storyLink}>{Translation.Translate("learnMore")}</a>)
+                return (<a class="description" href={`#Description-${this.props.paintingId}`} id={styles.storyLink}>{Translation.Translate("learnMore")}</a>)
             case 'artist':
-                return (<a href={`#Artist--${this.props.paintingId}`} id={styles.storyLink}>{Translation.Translate("learnMore")}</a>)
+                return (<a class="artist" href={`#Artist--${this.props.paintingId}`} id={styles.storyLink}>{Translation.Translate("learnMore")}</a>)
             case 'title':
                 return null;
             default:

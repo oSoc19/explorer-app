@@ -13,7 +13,7 @@ class InfoSection extends React.Component{
                         <p>
                         {this.props.content}
                         </p>
-                        <a className={`${styles.link} link-to-${this.props.type}`} href={this.props.sourceLink} target="_blank">{Translation.Translate("learnMore")}</a>
+                        <a className={`outbound link-to-${this.props.type}`} href={this.props.sourceLink} target="_blank">{Translation.Translate("learnMore")}</a>
                     </div>
                 </div>
             </div>

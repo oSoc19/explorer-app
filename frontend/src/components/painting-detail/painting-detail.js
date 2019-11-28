@@ -259,11 +259,11 @@ class PaintingDetail extends React.Component{
                                     <tbody>
                                         <tr>
                                             <td>{Translation.Translate("title")}</td>
-                                            <td><a id="DescriptionInfoLink" href={`#Description-${this.props.match.params.id}`}>{this.state.data.translations[0].name}</a></td>
+                                            <td><a class="description" href={`#Description-${this.props.match.params.id}`}>{this.state.data.translations[0].name}</a></td>
                                         </tr>
                                         <tr>
                                             <td>{Translation.Translate("artist")}</td>
-                                            <td><a id="ArtistInfoLink" href={`#Artist-${this.props.match.params.id}`}>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</a></td>
+                                            <td><a class="artist" href={`#Artist-${this.props.match.params.id}`}>{`${this.state.data.author.firstName} ${this.state.data.author.lastName}`}</a></td>
                                         </tr>
                                         <tr>
                                             <td>{Translation.Translate("year")}</td>
@@ -275,11 +275,11 @@ class PaintingDetail extends React.Component{
                                         </tr>
                                         <tr>
                                             <td>{Translation.Translate("technique")}</td>
-                                            <td><a id="TechniqueInfoLink" href={`#Technique-${this.props.match.params.id}`}>{this.state.data.technique.translations[0].name}</a></td>
+                                            <td><a class="technique" href={`#Technique-${this.props.match.params.id}`}>{this.state.data.technique.translations[0].name}</a></td>
                                         </tr>
                                         <tr>
                                             <td>{Translation.Translate("movement")}</td>
-                                            <td><a id="MovementInfoLink" href={`#Movement-${this.props.match.params.id}`}>{this.state.data.movement.translations[0].name}</a></td>
+                                            <td><a class="movement" href={`#Movement-${this.props.match.params.id}`}>{this.state.data.movement.translations[0].name}</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -291,7 +291,7 @@ class PaintingDetail extends React.Component{
                         <div id="Artwork" className={styles.content}>
                             { this.state.data.translations.length !== 0
                                 ?   <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={Translation.Translate("aboutArtwork")} content={this.state.data.translations[0].description}></InfoSection>
-                                :   <LanguageSection type="artist"storyTitle={Translation.Translate("aboutArtwork")}></LanguageSection>
+                                :   <LanguageSection type="artist" storyTitle={Translation.Translate("aboutArtwork")}></LanguageSection>
                             }
                         </div>
 
