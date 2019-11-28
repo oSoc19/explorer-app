@@ -123,7 +123,7 @@ class ChoosePainting extends React.Component{
                                 </tr>
                                 <tr>
                                     <td>&nbsp;</td>
-                                    <td onClick={this.routeChange} className={`${this.state.isEmpty ? null : styles.active} ${styles.playButton}`}><i className="fas fa-play-circle fa-3x"></i></td>
+                                    <td onClick={this.routeChange} className={`search-button ${this.state.isEmpty ? null : styles.active} ${styles.playButton}`}><i className="fas fa-play-circle fa-3x"></i></td>
                                     <td className={`${styles.backspace}`} onClick={this.removeNumber}>
                                         {!this.state.isEmpty ? <i className="material-icons">&#xe14a;</i> : null}
                                     </td>
