@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20191128161403_toevoegenNLJacobOostJongere")]
+    partial class toevoegenNLJacobOostJongere
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1120,6 +1122,39 @@ namespace backend.Migrations
                         },
                         new
                         {
+                            Id = 23L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            LanguageId = 2L,
+                            PaintingId = 3L,
+                            Subtitle = "over de stijlperiode",
+                            Text = "Barokkunst werd vaak gemaakt als religieuze propaganda.",
+                            Title = "Barok",
+                            Type = "style"
+                        },
+                        new
+                        {
+                            Id = 26L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            LanguageId = 3L,
+                            PaintingId = 3L,
+                            Subtitle = "about the movement",
+                            Text = "Baroque art was made for religious propaganda",
+                            Title = "Baroque",
+                            Type = "style"
+                        },
+                        new
+                        {
+                            Id = 20L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            LanguageId = 1L,
+                            PaintingId = 3L,
+                            Subtitle = "à propos du mouvement",
+                            Text = "L’art baroque servait à la propagande religieuse",
+                            Title = "Baroque",
+                            Type = "style"
+                        },
+                        new
+                        {
                             Id = 24L,
                             ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                             LanguageId = 2L,
@@ -1216,6 +1251,39 @@ namespace backend.Migrations
                             Text = "Ce tableau a été attribué à divers artistes, dont Rubens. Ce n'est que dans les années 1990 qu'il a été attribué à Wolfordt.",
                             Title = "Sainte Trinité",
                             Type = "artwork"
+                        },
+                        new
+                        {
+                            Id = 41L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            LanguageId = 2L,
+                            PaintingId = 5L,
+                            Subtitle = "over de stijlperiode",
+                            Text = "Het schilderen van religieuze scènes werd gebruikt om de ongeletterde bevolking het verhaal te doen begrijpen.",
+                            Title = "Barok",
+                            Type = "style"
+                        },
+                        new
+                        {
+                            Id = 44L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            LanguageId = 3L,
+                            PaintingId = 5L,
+                            Subtitle = "about the movement",
+                            Text = "Painting of religious scenes was used for religious instruction for the illiterate population",
+                            Title = "Baroque",
+                            Type = "style"
+                        },
+                        new
+                        {
+                            Id = 38L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            LanguageId = 1L,
+                            PaintingId = 5L,
+                            Subtitle = "à propos du mouvement",
+                            Text = "La peinture de scènes religieuses servait à enseigner la religion à la population analphabète",
+                            Title = "Baroque",
+                            Type = "style"
                         },
                         new
                         {
@@ -1401,17 +1469,6 @@ namespace backend.Migrations
                             PaintingId = 9L,
                             Subtitle = "about the movement",
                             Text = "Typical for a Baroque painting is that the most dramatic moment of an event is depicted.",
-                            Title = "Baroque",
-                            Type = "style"
-                        },
-                        new
-                        {
-                            Id = 74L,
-                            ImageUrl = "",
-                            LanguageId = 1L,
-                            PaintingId = 9L,
-                            Subtitle = "à propos du mouvement",
-                            Text = "Typique d'une peinture baroque, le moment le plus dramatique d'un événement est représenté.",
                             Title = "Baroque",
                             Type = "style"
                         });

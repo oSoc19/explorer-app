@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20191128155446_aanpassingenAlexander")]
+    partial class aanpassingenAlexander
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -349,14 +351,6 @@ namespace backend.Migrations
                             Description = "Peter Lely (Soest, Westfalia; 14 de septiembre de 1618-Covent Garden, Londres, Inglaterra; 30 de noviembre de 1680) fue un retratista danés, nacido en Soest, Westfalia, cuyo verdadero nombre era Pieter van der Faes. Se formó artísticamente en Haarlem, Países Bajos. En 1641 se estableció en Londres, y poco después recibió el encargo de retratar a los principales personajes de la corte inglesa. Carlos II de Inglaterra le nombró pintor de cámara en 1661 y le armó caballero en 1680. Su pintura, rica sobre todo en el colorido de los elegantes ropajes de los retratados, tiene una clara influencia de Anton van Dyck. La serie de cuadros Bellezas de Windsor (década de 1660) se encuentra en el palacio de Hampton Court, Londres. Otra serie, denominada Almirantes, se conserva en el Museo Marítimo Nacional de Greenwich, Londres. ",
                             LanguageId = 5L,
                             SourceLink = "https://es.wikipedia.org/wiki/Peter_Lely"
-                        },
-                        new
-                        {
-                            Id = 30L,
-                            ArtistId = 3L,
-                            Description = "Jacob II van Oost of Jacob van Oost de Jongere (Brugge, 1639 - Brugge, 29 september 1713) was een Vlaams barokschilder. Hij was de zoon van de Brugse stadsschilder Jacob I van Oost (1603-1671). Zijn broer Willem van Oost (1639-1713) was eveneens kunstschilder. De H. Carolus Borromeus bidt voor het einde van de pest (1668). Omstreeks 1660 vertrok Jacob II naar Parijs. Daarna bracht hij enkele jaren door in Rome. In 1668 vestigde hij zich in Rijsel, waar hij twee jaar later trouwde met Marie Bourgeois. Hun zoon Dominique (1677-1738) werd net als zijn vader kunstschilder in Rijsel. In 1703 keerde Jacob II definitief terug naar zijn geboortestad Brugge. Hij overleed er vijf jaar later. Hij is vooral bekend als schilder van portretten en genretaferelen. Verschillende van zijn werken zijn te bezichtigen in het Groeningemuseum in Brugge en de Sint-Mauritiuskerk in Rijsel. ",
-                            LanguageId = 2L,
-                            SourceLink = "https://nl.wikipedia.org/wiki/Jacob_II_van_Oost"
                         });
                 });
 
@@ -1120,6 +1114,39 @@ namespace backend.Migrations
                         },
                         new
                         {
+                            Id = 23L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            LanguageId = 2L,
+                            PaintingId = 3L,
+                            Subtitle = "over de stijlperiode",
+                            Text = "Barokkunst werd vaak gemaakt als religieuze propaganda.",
+                            Title = "Barok",
+                            Type = "style"
+                        },
+                        new
+                        {
+                            Id = 26L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            LanguageId = 3L,
+                            PaintingId = 3L,
+                            Subtitle = "about the movement",
+                            Text = "Baroque art was made for religious propaganda",
+                            Title = "Baroque",
+                            Type = "style"
+                        },
+                        new
+                        {
+                            Id = 20L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5ad098f654134125a19bb3c8b8163bfe5361b523e12f46009f305c05eab9eb3d/browse.jpg",
+                            LanguageId = 1L,
+                            PaintingId = 3L,
+                            Subtitle = "à propos du mouvement",
+                            Text = "L’art baroque servait à la propagande religieuse",
+                            Title = "Baroque",
+                            Type = "style"
+                        },
+                        new
+                        {
                             Id = 24L,
                             ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                             LanguageId = 2L,
@@ -1216,6 +1243,39 @@ namespace backend.Migrations
                             Text = "Ce tableau a été attribué à divers artistes, dont Rubens. Ce n'est que dans les années 1990 qu'il a été attribué à Wolfordt.",
                             Title = "Sainte Trinité",
                             Type = "artwork"
+                        },
+                        new
+                        {
+                            Id = 41L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            LanguageId = 2L,
+                            PaintingId = 5L,
+                            Subtitle = "over de stijlperiode",
+                            Text = "Het schilderen van religieuze scènes werd gebruikt om de ongeletterde bevolking het verhaal te doen begrijpen.",
+                            Title = "Barok",
+                            Type = "style"
+                        },
+                        new
+                        {
+                            Id = 44L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            LanguageId = 3L,
+                            PaintingId = 5L,
+                            Subtitle = "about the movement",
+                            Text = "Painting of religious scenes was used for religious instruction for the illiterate population",
+                            Title = "Baroque",
+                            Type = "style"
+                        },
+                        new
+                        {
+                            Id = 38L,
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/04ca66af841a4449a7dfe6b83c74d92593135c754d6a4f37b68c9914f7829cb8/browse.jpg",
+                            LanguageId = 1L,
+                            PaintingId = 5L,
+                            Subtitle = "à propos du mouvement",
+                            Text = "La peinture de scènes religieuses servait à enseigner la religion à la population analphabète",
+                            Title = "Baroque",
+                            Type = "style"
                         },
                         new
                         {
@@ -1401,17 +1461,6 @@ namespace backend.Migrations
                             PaintingId = 9L,
                             Subtitle = "about the movement",
                             Text = "Typical for a Baroque painting is that the most dramatic moment of an event is depicted.",
-                            Title = "Baroque",
-                            Type = "style"
-                        },
-                        new
-                        {
-                            Id = 74L,
-                            ImageUrl = "",
-                            LanguageId = 1L,
-                            PaintingId = 9L,
-                            Subtitle = "à propos du mouvement",
-                            Text = "Typique d'une peinture baroque, le moment le plus dramatique d'un événement est représenté.",
                             Title = "Baroque",
                             Type = "style"
                         });
@@ -1656,7 +1705,6 @@ namespace backend.Migrations
                         new
                         {
                             Id = 25L,
-                            Description = "Ce tableau représente un vers de la Bible : ‘De là étant allé plus loin, Jésus vit un homme assis au lieu des péages, et qui s’appelait Matthieu. Il lui dit: Suis-moi. Cet homme se leva, et le suivit.’ (Matthieu 9:9). La personne âgée derrière la table est probablement Matthieu. Jésus lui fait signe. L’adolescent assis à l’autre côté de la table semble être quelqu’un qui vient payer ses dettes chez Matthieu, le publicain. Il semble penser que le Christ lui appelle. En bas à droite, un chien grondant regarde la scène. Le tableau a clairement été inspiré par celui de Caravaggio du même nom. Cependant, Van Oost a peint beaucoup plus de figures. Il détourne ainsi l’attention de l’essence de la scène. Vers 1870, ce tableau a été donné à l’église Notre-Dame de Bruges. En 1944, la marine allemande l’enlève et l’héberge dans la mine de sel d’Altaussee (Autriche). Un an plus tard, le tableau revient à Bruges. (D’après : Jean-Luc Meulemeester, Jacob van Oost de Oudere en het zeventiende-eeuwse Brugge, Brugge 1984.)",
                             LanguageId = 1L,
                             Name = "La Vocation de saint Matthieu",
                             PaintingId = 9L
@@ -1664,7 +1712,6 @@ namespace backend.Migrations
                         new
                         {
                             Id = 26L,
-                            Description = "Het schilderij verbeeldt een vers uit de Bijbel: ‘Toen Jezus vandaar verder ging, zag Hij iemand aan het tolhuis zitten die Mattheüs heette, en Hij zei tot hem: “Volg mij.” De man stond op en volgde Hem.’ (Mattheüs 9:9). De oudere man achter de tafel is waarschijnlijk Mattheüs. Christus wenkt naar hem. De jongere man aan de andere zijde van de tafel komt wellicht zijn schulden afbetalen bij tollenaar Mattheüs. Hij lijkt te denken dat Christus hem roept. Rechts beneden kijkt een hond grommend toe. Het schilderij is duidelijk geïnspireerd op het gelijknamige werk van Caravaggio, maar Van Oost heeft veel meer figuren opgesteld. Daardoor leidt hij de aandacht van af van de essentie. Omstreeks 1870 wordt het schilderij geschonken aan de Onze-Lieve-Vrouwekerk in Brugge. In 1944 neemt de Duitse marine het weg en brengt het onder in de zoutmijn van Altaussee (Oostenrijk). Een jaar later komt het terug naar Brugge. (Naar: Jean-Luc Meulemeester, Jacob van Oost de Oudere en het zeventiende-eeuwse Brugge, Brugge 1984.)",
                             LanguageId = 2L,
                             Name = "Roeping van Mattheüs",
                             PaintingId = 9L
@@ -1672,7 +1719,6 @@ namespace backend.Migrations
                         new
                         {
                             Id = 27L,
-                            Description = "The painting depicts a verse from the Bible: ‘And when Jesus passed on from hence, he saw a man sitting in the custom house, named Matthew; and he saith to him: Follow me. And he rose up and followed him.’ (Matthew 9:9). The elderly man behind the table is probably Matthew. Christ beckons him. The young man sitting on the other side of the table probably wants to pay off his debts to Matthew, the publican. He seems to think that Christ calls him. In the lower right corner, a growling dog observes the scene. The painting is clearly inspired by the work of Caravaggio of the same name, but Van Oost has depicted more figures, diverting the attention from the painting’s essence. Around 1870, this painting was donated to the Church of Our Lady in Bruges. In 1944, the German marine transported it to the salt mine of Altaussee (Austria). It was returned to Bruges a year later. (After: Jean-Luc Meulemeester, Jacob van Oost de Oudere en het zeventiende-eeuwse Brugge, Brugge 1984.)",
                             LanguageId = 3L,
                             Name = "The Calling of St Matthew",
                             PaintingId = 9L
