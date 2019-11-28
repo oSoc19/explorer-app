@@ -209,16 +209,6 @@
         "JA":"ビル",
         "RU":"строительство"
     },
-    "constructionyear":{
-        "EN":"Construction year",
-        "NL":"Bouwjaar",
-        "FR":"Bâtiment",
-        "DE":"Gebäude",
-        "IT":"Stile di costruzione",
-        "ES":"Edificio",
-        "JA":"ビル",
-        "RU":"строительство"
-    },
     "trivia":{
         "EN":"Trivia",
         "NL":"Trivia",
@@ -235,28 +225,28 @@
         "FR":"Description",
         "DE":"Descripción",
         "IT":"Descrizione",
-        "ES":"Trivialidades",
+        "ES":"Descripción",
         "JA":"説明",
         "RU":"описание"
     },
     "useful":{
         "EN":"Was this information useful?",
         "NL":"Vond je de informatie nuttig?",
-        "FR":"Description",
-        "DE":"Descripción",
-        "IT":"Descrizione",
-        "ES":"Trivialidades",
+        "FR":"Avez-vous trouvé l'information utile ?",
+        "DE":"Haben Sie die Informationen für nützlich befunden?",
+        "IT":"Hai trovato le informazioni utili?",
+        "ES":"¿Encontró la información útil?",
         "JA":"説明",
         "RU":"описание"
     },
     "thanks":{
-        "EN":"Thanks",
-        "NL":"Bedankt!",
-        "FR":"Description",
-        "DE":"Descripción",
-        "IT":"Descrizione",
-        "ES":"Trivialidades",
-        "JA":"説明",
-        "RU":"описание"
+        "EN":"Thank you",
+        "NL":"Bedankt",
+        "FR":"Merci à vous",
+        "DE":"Danke",
+        "IT":"Grazie",
+        "ES":"Gracias",
+        "JA":"xx",
+        "RU":"спасибо"
     }
 }
