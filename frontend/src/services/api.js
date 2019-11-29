@@ -1,6 +1,6 @@
 //const BASE_URL = process.env.NODE_ENV === 'development' ? "https://localhost:5001/api":"http://10.134.129.102/api";
 //const BASE_URL = "http://10.134.129.102/api";
-const BASE_URL = "https://193.191.120.206/api";
+const BASE_URL = "//193.191.120.206/api";
 // const BASE_URL = "https://learnmorebruges.azurewebsites.net/api";
 
 class Api{
