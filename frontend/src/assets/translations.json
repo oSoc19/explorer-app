@@ -248,5 +248,25 @@
         "ES":"Gracias",
         "JA":"xx",
         "RU":"спасибо"
+    },
+    "morefeedback":{
+        "EN":"More feedback?",
+        "NL":"Meer input?",
+        "FR":"Merci à vous",
+        "DE":"Danke",
+        "IT":"Grazie",
+        "ES":"Gracias",
+        "JA":"xx",
+        "RU":"спасибо"
+    },
+    "sorryMissingLanguage":{
+        "EN":"We're sorry your language is not available",
+        "NL":"Meer input?",
+        "FR":"Merci à vous",
+        "DE":"Danke",
+        "IT":"Grazie",
+        "ES":"Gracias",
+        "JA":"xx",
+        "RU":"спасибо"
     }
 }

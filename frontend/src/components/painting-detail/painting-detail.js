@@ -34,13 +34,15 @@ class PaintingDetail extends React.Component{
             prevScrollpos: window.pageYOffset,
             hidden: false,
             buttonHidden: false,
-            descriptionFlag: true
+            descriptionFlag: true,
+            languageFlag: false
         };
 
         this.goBackToSelection = this.goBackToSelection.bind(this);
         this.changeLanguage = this.changeLanguage.bind(this);
         this.addLanguages = this.addLanguages.bind(this);
         this.selectLanguage = this.selectLanguage.bind(this);
+        this.showThankYouPage = this.showThankYouPage.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
         this.lastScrollTop = window.pageYOffset;
     }
@@ -142,6 +144,11 @@ class PaintingDetail extends React.Component{
         window.location.reload();
     }
 
+    showThankYouPage(){
+        localStorage.setItem("language", "NA");
+        this.setState({ languageFlag: true });
+    }
+
     handleScroll(){
         let navbar = document.getElementById("navbar");
         const currentScrollTop = window.pageYOffset;
@@ -175,22 +182,40 @@ class PaintingDetail extends React.Component{
                 </div>
             );
 
-        if(!this.state.loading && this.state.data.translations.length === 0)
+        if(!this.state.loading && this.state.data.translations.length === 0 && !this.state.languageFlag)
                 return(
                     <div>
                         <ReactNotification ref={this.notificationDOMRef} />
                         <div className={`container ${styles.missingLanguage}`}>
+                            <div className="row header"><div className="col align-self-top bruggeLogo"><a href="/"><img alt="Brugge logo" src={Logo} ></img></a></div></div>
+                            <br/>
                             <span id={styles.missingSentence}>{Translation.Translate("missingLanguage")}</span>
                             <table className="table table-borderless">
                                 <tbody id="languages">
                                 </tbody>
                             </table>
-                            <a href="#" class="select-fallback-language">Not available</a>
+                            <a href="#" class="select-fallback-language" onClick={this.showThankYouPage}>Not available</a>
                         </div>
                     </div>
                 );
         
-            
+        if(!this.state.loading && this.state.languageFlag)
+            return(
+                <div>
+                    <div className={`container ${styles.missingLanguage}`}>
+                        <div className="row header"><div className="col align-self-top bruggeLogo"><a href="/"><img alt="Brugge logo" src={Logo} ></img></a></div></div>
+                        <br/>
+                        <h4 id={styles.missingSentence}>We're sorry</h4>
+                        <p>Your language isn't available for the moment.</p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <a class="outbound link-to-wikipedia" href="https://wikipedia.org" target="_blank">Learn more on wikipedia</a>
+                    </div>     
+                </div>
+            );
 
         if(!this.state.loading)
             return(
@@ -329,7 +354,11 @@ class PaintingDetail extends React.Component{
                             </p>
                             <a className={styles.positiveFeedback} href={`#positive-${this.props.match.params.id}`} data-feedback="positive"><i className="far fa-smile fa-3x"></i></a>
                             <a className={styles.negativeFeedback} href={`#negative-${this.props.match.params.id}`} data-feedback="negative"><i className="far fa-frown fa-3x"></i></a>
-                            <p>{Translation.Translate("thanks")}</p>
+                            <p>
+                                {Translation.Translate("thanks")}
+                                <br/>
+                                <a href="https://tiny.cc/reviewlearnmore" target="_blank">{Translation.Translate("morefeedback")}</a>
+                            </p>
                         </div>
                         
                     </div>

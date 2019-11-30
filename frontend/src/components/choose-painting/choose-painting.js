@@ -91,7 +91,7 @@ class ChoosePainting extends React.Component{
                 
                 <div className={styles.choose}>
                     <div>
-                        <label for="paintingNumber">{Translation.Translate("codeMissing")}</label>
+                        <label htmlFor="paintingNumber">{Translation.Translate("codeMissing")}</label>
                         <input type="text" id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>
                     </div>
                     
