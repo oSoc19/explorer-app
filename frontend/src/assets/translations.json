@@ -1,13 +1,13 @@
 {
     "missingLanguage" : {
-        "EN" : "As culture should be accessible to all, we would love you to learn in English too. That’s why we are currently working on the translation.",
-        "FR" : "La culture devant être accessible à tous, nous aimerions que vous appreniez également en français. C’est pourquoi nous travaillons actuellement sur la traduction.",
-        "IT" : "Perché la cultura dovrebbe essere accessibile a tutti, vorremo insegnarvela anche in italiano. Ed è per questo che stiamo attualmente lavorando sulla traduzione.",
-        "DE" : "Da Kultur für alle zugänglich sein soll, möchten wir, dass Sie auch auf Deutsch lernt/lernen. Deswegen arbeiten wir gerade an der Übersetzung.",
-        "NL" : "De bron die u hebt opgevraagd, is niet beschikbaar in de geselecteerde taal",
-        "ES" : "Dado que la cultura debe ser accesible para todos, nos encantaría que pudieras aprender sobre cultura en español también. Es por eso que estamos trabajando en su traducción.",
-        "JA" : "文化は共有すべきものだと思いますので、皆さんが日本語で勉強になれるようにしたいです。その為、現在、日本語の翻訳に取り組んでいます。",
-        "RU" : "Поскольку культура должна быть доступна всем, мы бы хотели, чтобы вы учились и на русском языке. Вот почему мы сейчас работаем над переводом."
+        "EN" : "We're sorry your language is not available.",
+        "FR" : "We're sorry your language is not available.",
+        "IT" : "We're sorry your language is not available.",
+        "DE" : "We're sorry your language is not available.",
+        "NL" : "We're sorry your language is not available.",
+        "ES" : "We're sorry your language is not available.",
+        "JA" : "We're sorry your language is not available.",
+        "RU" : "We're sorry your language is not available."
     },
     "changeLanguage" : {
         "EN" : "Change language",
@@ -261,12 +261,12 @@
     },
     "sorryMissingLanguage":{
         "EN":"We're sorry your language is not available",
-        "NL":"Meer input?",
-        "FR":"Merci à vous",
-        "DE":"Danke",
-        "IT":"Grazie",
-        "ES":"Gracias",
-        "JA":"xx",
-        "RU":"спасибо"
+        "NL":"We're sorry your language is not available",
+        "FR":"We're sorry your language is not available",
+        "DE":"We're sorry your language is not available",
+        "IT":"We're sorry your language is not available",
+        "ES":"We're sorry your language is not available",
+        "JA":"We're sorry your language is not available",
+        "RU":"We're sorry your language is not available"
     }
 }

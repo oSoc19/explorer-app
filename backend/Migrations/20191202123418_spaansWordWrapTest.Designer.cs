@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20191202123418_spaansWordWrapTest")]
+    partial class spaansWordWrapTest
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -138,7 +140,7 @@ namespace backend.Migrations
                         {
                             Id = 3L,
                             ArtistId = 1L,
-                            Description = "Lucas Achtschellinck (baptized 16 January 1626 – buried 12 May 1699), was a Flemish landscape painter. He is counted among the landscape painters active in Brussels referred to as the School of Painters of the Sonian Forest who all shared an interest in depicting scenes set in the Sonian Forest, which is located near Brussels. He was born in Brussels and was possibly the grandson of the landscape painter Lukas Achtschelling. He was registered in the Brussels Guild of Saint Luke on 26 October 1639 as a pupil of a Pieter van der Borcht. The 17th century Flemish biographer Cornelis de Bie mentioned that Lucas Achtschellinck also studied with the Brussels landscapist Lodewijk de Vadder but this is not confirmed by Guild records. However, stylistically the two artists are quite close. Achtschellinck likely travelled abroad after completing his apprenticeship since he only became a master in the Brussels guild in 1657. On 13 March 1674 he married Anna Parys. He remained active in Brussels and in 1687 he was the deacon of the Brussels guild. He was successfully and employed 8 pupils including Théobald Michau between 1659 and 1686. He died in Brussels. ",
+                            Description = "Lucas Achtschellinck baptized 16 January 1626 – buried 12 May 1699), was a Flemish landscape painter. He is counted among the landscape painters active in Brussels referred to as the School of Painters of the Sonian Forest who all shared an interest in depicting scenes set in the Sonian Forest, which is located near Brussels. He was born in Brussels and was possibly the grandson of the landscape painter Lukas Achtschelling. He was registered in the Brussels Guild of Saint Luke on 26 October 1639 as a pupil of a Pieter van der Borcht. The 17th century Flemish biographer Cornelis de Bie mentioned that Lucas Achtschellinck also studied with the Brussels landscapist Lodewijk de Vadder but this is not confirmed by Guild records. However, stylistically the two artists are quite close. Achtschellinck likely travelled abroad after completing his apprenticeship since he only became a master in the Brussels guild in 1657. On 13 March 1674 he married Anna Parys. He remained active in Brussels and in 1687 he was the deacon of the Brussels guild. He was successfully and employed 8 pupils including Théobald Michau between 1659 and 1686. He died in Brussels. ",
                             LanguageId = 3L,
                             SourceLink = "https://en.wikipedia.org/wiki/Lucas_Achtschellinck"
                         },
@@ -154,7 +156,7 @@ namespace backend.Migrations
                         {
                             Id = 5L,
                             ArtistId = 2L,
-                            Description = "Jacob van Oost I is a Bruges painter and draftsman and probably a student of his brother Frans van Oost (died 1625). Van Oost is viewed as the most important 17th-century painter from Bruges. He makes portraits for the Bruges bourgeois and history paintings, but is primarily known for the altarpieces that he makes in the spirit of the Counter Reformation. The painter is strongly influenced by the Caravaggio effects that he learns in Italy. From the work of Caravaggio (1571-1610) he takes over the chiaroscuro as well as the non-idealised figures. After this, an evolution follows towards more monumental figures and a rather classicist treatment that is in line with the work of Annibale Carracci (1560-1690) and Domenichino (1581-1641). After about 1650, a greater emotionality surfaces in his work, together with the dramatic spatial effects and a palette that is related to Venetian art. In this period, van Oost is influenced by Federico Barocci (1528-35-1612), Correggio (ca. 1489-1534) and Anthony van Dyck (1599-1641). A masterpiece in his oeuvre is Portrait of a Bruges Family (Groeninge Museum, Bruges).",
+                            Description = "Jacob van Oost I is a Bruges painter and draftsman and probably a student of his brother Frans van Oost (died 1625). Van Oost is viewed as the most important 17th-century painter from Bruges. He makes portraits for the Bruges bourgeois and history paintings, but is primarily known for the altarpieces that he makes in the spirit of the Counter Reformation. The painter is strongly influenced by the Caravaggio effects that he learns in Italy. From the work of Caravaggio (1571-1610) he takes over the chiaroscuro as well as the non-idealised figures.After this, an evolution follows towards more monumental figures and a rather classicist treatment that is in line with the work of Annibale Carracci (1560-1690) and Domenichino (1581-1641).After about 1650, a greater emotionality surfaces in his work, together with the dramatic spatial effects and a palette that is related to Venetian art. In this period, van Oost is influenced by Federico Barocci (1528-35-1612), Correggio (ca. 1489-1534) and Anthony van Dyck (1599-1641). A masterpiece in his oeuvre is Portrait of a Bruges Family (Groeninge Museum, Bruges).",
                             LanguageId = 3L,
                             SourceLink = "https://vkc-barok-prod.inuits.eu/en/artist/jacob-van-oost-i/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
                         },
@@ -178,7 +180,7 @@ namespace backend.Migrations
                         {
                             Id = 8L,
                             ArtistId = 3L,
-                            Description = "Jacob van Oost the Younger (1639, in Bruges – 1713, in Bruges), was a Flemish Baroque painter. According to the Rijksbureau voor Kunsthistorische Documentatie, he was a pupil of his father Jacob sr. and brother to the painter Willem. He is known for portraits and genre works. ",
+                            Description = "Jacob van Oost the Younger (1639, in Bruges – 1713, in Bruges), was a Flemish Baroque painter.According to the Rijksbureau voor Kunsthistorische Documentatie, he was a pupil of his father Jacob sr. and brother to the painter Willem. He is known for portraits and genre works. ",
                             LanguageId = 3L,
                             SourceLink = "https://en.wikipedia.org/wiki/Jacob_van_Oost_the_Younger"
                         },
@@ -194,7 +196,7 @@ namespace backend.Migrations
                         {
                             Id = 10L,
                             ArtistId = 4L,
-                            Description = "Artus Wolffort (1581-1641), ook Wolffaert genoemd, was een Brabants kunstschilder uit Antwerpen. Zijn werken behoren tot de Vlaamse barokschilderkunst. Hij studeerde eerst in Dordrecht waar zijn familie in 1581 naar was uitgeweken. Bij zijn terugkeer naar Antwerpen rond 1615 studeerde hij bij Otto van Veen en Peter Paul Rubens. Rubens beïnvloedde hem qua compositie en stijl. Wolffort schilderde vooral scènes uit het leven van Christus en de kerkvaders. Pieter van Mol en Pieter van Lint waren twee van zijn leerlingen. Het schilderij Aanbidding van de koningen was een opdracht van het kleermakersambacht van Antwerpen. Het toont de figuren in kostbare gewaden, exuberante hoofddeksels en allerlei dure stoffen. Over de toeschrijving van het schilderij was men het lang oneens. Het kwam op naam van Deodaat del Monte, Pieter van Mol en Pieter van Lint. Recent stilistisch onderzoek schrijft het overtuigend toe aan Wolffort. ",
+                            Description = "Artus Wolffort (1581-1641), ook Wolffaert genoemd, was een Brabants kunstschilder uit Antwerpen. Zijn werken behoren tot de Vlaamse barokschilderkunst. Hij studeerde eerst in Dordrecht waar zijn familie in 1581 naar was uitgeweken. Bij zijn terugkeer naar Antwerpen rond 1615 studeerde hij bij Otto van Veen en Peter Paul Rubens. Rubens beïnvloedde hem qua compositie en stijl. Wolffort schilderde vooral scènes uit het leven van Christus en de kerkvaders. Pieter van Mol en Pieter van Lint waren twee van zijn leerlingen. Het schilderij Aanbidding van de koningen (zie foto) was een opdracht van het kleermakersambacht van Antwerpen. Het toont de figuren in kostbare gewaden, exuberante hoofddeksels en allerlei dure stoffen. Over de toeschrijving van het schilderij was men het lang oneens. Het kwam op naam van Deodaat del Monte, Pieter van Mol en Pieter van Lint. Recent stilistisch onderzoek schrijft het overtuigend toe aan Wolffort. ",
                             LanguageId = 2L,
                             SourceLink = "https://nl.wikipedia.org/wiki/Artus_Wolffort"
                         },
@@ -218,7 +220,7 @@ namespace backend.Migrations
                         {
                             Id = 13L,
                             ArtistId = 5L,
-                            Description = "Erasmus Quellinus II is een Antwerpse schilder, tekenaar, graveur en ontwerper van tapijten. Hij stamt uit een kunstenaarsfamilie. Zijn vader is de beeldhouwer Erasmus Quellinus I (1584-1640). Hij is de broer van beeldhouwer Artus Quellinus I (1609-1668) en de graveur Hubertus Quellinus (1619-1687). Quellinus is de vader en de leermeester van de schilder Jan Erasmus Quellinus (1634-1715). Quellinus is een pictor doctus en in die zin vergelijkbaar met Peter Paul Rubens met wie hij vaak samenwerkt in de jaren 1630 en door wie hij beïnvloed wordt. Beiden bezitten een uitgebreide bibliotheek en kunstverzameling. In de geest van het humanisme schrijft Quellinus het filosofisch traktaat Philosophiae, dat niet overgeleverd is. De kunstenaar zou ook een academische graad in de filosofie behaald hebben. Quellinus is verantwoordelijk voor het ontwerp en deels voor de uitvoering van belangrijke decoratieve programma's in het kader van officiële huldigingen in Antwerpen. De kunstenaar werkt ook samen met stillevenspecialisten, onder wie de bloemenschilder Daniël Seghers (1590-1661). Erasmus Quellinus II vervaardigt vele altaarstukken die in de invloedssfeer van de contrareformatie moeten geplaatst worden, maar ook historiestukken en mythologische en allegorische schilderijen. Niettegenstaande de grote invloed van Rubens ontwikkelt Quellinus vroeg in zijn carrière een eigen stijl met sterk door het licht gemodelleerde vormen. Het is mogelijk dat Quellinus die caravaggistische aspecten leert kennen via het werk van Theodoor Rombouts (1597-1637) en Gerard Seghers (1591-1651). Vanaf circa 1640 worden zijn figuren sculpturaal en driedimensionaal, en lijken op geschilderde beelden. Hiermee krijgt zijn werk aansluiting bij het oeuvre van Annibale Carracci (1560-1690), of de classicistische tak van de barok. Quellinus reist nooit naar Italië, maar leert het Romeinse classicisme via zijn broer en beeldhouwer Artus Quellinus I, die een tijd in Rome verblijft, kennen. Na circa 1650 evolueert het barokke classicisme naar een eerder rigide academisme. Quellinus ontwikkelt een voorliefde voor breed uitgesponnen architecturale achtergrondsettings, zoals in werken als Salomon en de Koningin van Sheba (Sammlungen des Fürsten von Liechtenstein, Vaduz) of Laat de kinderen tot mij komen (Koninklijke Musea voor Schone Kunsten van België, Brussel) Erasmus Quellinus II sterft als een rijk en beroemd kunstenaar. ",
+                            Description = "Erasmus Quellinus II is een Antwerpse schilder, tekenaar, graveur en ontwerper van tapijten. Hij stamt uit een kunstenaarsfamilie. Zijn vader is de beeldhouwer Erasmus Quellinus I (1584-1640). Hij is de broer van beeldhouwer Artus Quellinus I (1609-1668) en de graveur Hubertus Quellinus (1619-1687). Quellinus is de vader en de leermeester van de schilder Jan Erasmus Quellinus (1634-1715). Quellinus is een pictor doctus en in die zin vergelijkbaar met Peter Paul Rubens met wie hij vaak samenwerkt in de jaren 1630 en door wie hij beïnvloed wordt. Beiden bezitten een uitgebreide bibliotheek en kunstverzameling. In de geest van het humanisme schrijft Quellinus het filosofisch traktaat Philosophiae, dat niet overgeleverd is. De kunstenaar zou ook een academische graad in de filosofie behaald hebben. Quellinus is verantwoordelijk voor het ontwerp en deels voor de uitvoering van belangrijke decoratieve programma's in het kader van officiële huldigingen in Antwerpen. De kunstenaar werkt ook samen met stillevenspecialisten, onder wie de bloemenschilder Daniël Seghers (1590-1661). Erasmus Quellinus II vervaardigt vele altaarstukken die in de invloedssfeer van de contrareformatie moeten geplaatst worden, maar ook historiestukken en mythologische en allegorische schilderijen. Niettegenstaande de grote invloed van Rubens ontwikkelt Quellinus vroeg in zijn carrière een eigen stijl met sterk door het licht gemodelleerde vormen. Het is mogelijk dat Quellinus die caravaggistische aspecten leert kennen via het werk van Theodoor Rombouts (1597-1637) en Gerard Seghers (1591-1651). Vanaf circa 1640 worden zijn figuren sculpturaal en driedimensionaal, en lijken op geschilderde beelden. Hiermee krijgt zijn werk aansluiting bij het oeuvre van Annibale Carracci (1560-1690), of de classicistische tak van de barok. Quellinus reist nooit naar Italië, maar leert het Romeinse classicisme via zijn broer en beeldhouwer Artus Quellinus I, die een tijd in Rome verblijft, kennen. Na circa 1650 evolueert het barokke classicisme naar een eerder rigide academisme. Quellinus ontwikkelt een voorliefde voor breed uitgesponnen architecturale achtergrondsettings, zoals in werken als Salomon en de Koningin van Sheba (Sammlungen des Fürsten von Liechtenstein, Vaduz) of Laat de kinderen tot mij komen (Koninklijke Musea voor Schone Kunsten van België, Brussel)Erasmus Quellinus II sterft als een rijk en beroemd kunstenaar. ",
                             LanguageId = 2L,
                             SourceLink = "https://vkc-barok-prod.inuits.eu/nl/kunstenaar/erasmus-quellinus-ii/?utm_source=learnmore&utm_medium=app&utm_campaign=meertaligheid"
                         },
@@ -266,7 +268,7 @@ namespace backend.Migrations
                         {
                             Id = 19L,
                             ArtistId = 2L,
-                            Description = "Jakob van Oost der Ältere (* um 1600 in Brügge; † um 1671 in Brügge) war ein flämischer Maler des Barocks in Brügge. Zu seinem Œuvre zählen Historien- und Porträtgemälde. Am 19. Januar 1619 wurde Jakob van Oost als Lehrling seines Bruders Franz van Oost (1618 Freimeister in Brügge; † um 1625) in der Brügger Malergilde aufgelistet. Zu seinem Frühwerk zählen Kopien der Gemälde Jan van Eycksund Peter Paul Rubens, die 1857 teils als Originale galten. Im Jahr 1621 erfolgte seine Ernennung zum Freimeister. Zeitgemäß studierte er in den 20er Jahren in Italien die von Caravaggio beeinflussten Werke Hannibal/Annibale Carraccis. Nach seiner Rückkehr wurde er ab 1630 ein gefragter Auftragskünstler für Porträts, Historiengemälde und Altarwerke. Im Jahr 1633 fand seine Wahl zum Oberhaupt, dem Dekan der Schildergilde statt. Zu seinen Schülern zählten u. a. seine Söhne Jakob van Oost der Jüngere, der die Schule seines Vaters fortsetzte und Willem van Oost (~8. März 1651 in Brügge; † 31. August 1866 ebenda), der Maler und Dominikanerlaienbruder war. Nach seinen Rubenskopien gelangte er zu seinem eigenen Stil in dunkler und toniger Gesamthaltung. Sein Spätwerk ab 1660 besteht aus schwärzlich getonten Werken. Seine Gemälde finden sich in religiösen Einrichtungen und Sammlungen in Brügge, als auch in belgischem Privatbesitz und in folgenden Museen von Bergues, Berlin, Brüssel, Caen, Dijon, Dünkirchen, Leningrad, Lille, London, Lyon, New York City, Oostende, Paris, Tournai, Valenciennes und Wien. ",
+                            Description = "Jakob van Oost der Ältere (* um 1600 in Brügge; † um 1671 in Brügge) war ein flämischer Maler des Barocks in Brügge. Zu seinem Œuvre zählen Historien- und Porträtgemälde. Am 19. Januar 1619 wurde Jakob van Oost als Lehrling seines Bruders Franz van Oost (1618 Freimeister in Brügge; † um 1625) in der Brügger Malergilde aufgelistet. Zu seinem Frühwerk zählen Kopien der Gemälde Jan van Eycksund Peter Paul Rubens, die 1857 teils als Originale galten. Im Jahr 1621 erfolgte seine Ernennung zum Freimeister. Zeitgemäß studierte er in den 20er Jahren in Italien die von Caravaggio beeinflussten Werke Hannibal/Annibale Carraccis. Nach seiner Rückkehr wurde er ab 1630 ein gefragter Auftragskünstler für Porträts, Historiengemälde und Altarwerke. Im Jahr 1633 fand seine Wahl zum Oberhaupt, dem Dekan der Schildergilde statt. Zu seinen Schülern zählten u. a. seine Söhne Jakob van Oost der Jüngere, der die Schule seines Vaters fortsetzte und Willem van Oost (~8. März 1651 in Brügge; † 31. August 1866 ebenda), der Maler und Dominikanerlaienbruder war. Nach seinen Rubenskopien gelangte er zu seinem eigenen Stil in dunkler und toniger Gesamthaltung. Sein Spätwerk ab 1660 besteht aus schwärzlich getonten Werken. Seine Gemälde finden sich in religiösen Einrichtungen und Sammlungen in Brügge, als auch in belgischem Privatbesitz und in folgenden Museen von Bergues, Berlin, Brüssel, Caen, Dijon, Dünkirchen, Leningrad, Lille, London, Lyon, New York City, Oostende, Paris, Tournai, Valenciennes und Wien. ",
                             LanguageId = 4L,
                             SourceLink = "https://de.wikipedia.org/wiki/Jakob_van_Oost_der_%C3%84ltere"
                         },
@@ -274,7 +276,7 @@ namespace backend.Migrations
                         {
                             Id = 20L,
                             ArtistId = 3L,
-                            Description = "Jakob van Oost der Jüngere (* 1637 in Brügge; † 29. September 1713 in Brügge) war ein flämischer Maler des Barocks. Zunächst von seinem Vater Jakob van Oost dem Älteren in Brügge ausgebildet, vertiefte er seine Kunststudien zwei Jahre lang in Paris. Anschließend widmete er sich mehrere Jahre der Antike und den alten Meistern in Rom. Nach seiner Rückkehr in Brügge wollte er zwar zurück nach Paris, blieb aber in Lille bei seinen Freunden aus der Studienzeit und lebte seit 1668 für 41 Jahre in dieser nordfranzösischen Stadt. Jakob van Oost der Jüngere wurde in dieser Stadt neben Arnould de Vuezein anerkannter Porträtmaler. Zeitgemäß beinhalteten seine Gemälde religiöse Themen. Im Jahr 1670 heiratete er Marie Bourgeois aus Lille, die ihm unter anderem den Sohn Dominique van Oost gebar, welcher ebenfalls Maler wurde. Im Jahr 1709 verließ er als Folge des Spanischen Erbfolgekriegs Lille und kehrte zum Schutz vor dem Krieg in seine Heimatstadt Brügge zurück, wo er vier Jahre später 76-jährig verstarb. ",
+                            Description = "Jakob van Oost der Jüngere (* 1637 in Brügge; † 29. September 1713 in Brügge) war ein flämischer Maler des Barocks. Zunächst von seinem Vater Jakob van Oost dem Älteren in Brügge ausgebildet, vertiefte er seine Kunststudien zwei Jahre lang in Paris. Anschließend widmete er sich mehrere Jahre der Antike und den alten Meistern in Rom. Nach seiner Rückkehr in Brügge wollte er zwar zurück nach Paris, blieb aber in Lille bei seinen Freunden aus der Studienzeit und lebte seit 1668 für 41 Jahre in dieser nordfranzösischen Stadt. Jakob van Oost der Jüngere wurde in dieser Stadt neben Arnould de Vuezein anerkannter Porträtmaler. Zeitgemäß beinhalteten seine Gemälde religiöse Themen. Im Jahr 1670 heiratete er Marie Bourgeois aus Lille, die ihm unter anderem den Sohn Dominique van Oost gebar, welcher ebenfalls Maler wurde. Im Jahr 1709 verließ er als Folge des Spanischen Erbfolgekriegs Lille und kehrte zum Schutz vor dem Krieg in seine Heimatstadt Brügge zurück, wo er vier Jahre später 76-jährig verstarb. ",
                             LanguageId = 4L,
                             SourceLink = "https://de.wikipedia.org/wiki/Jakob_van_Oost_der_J%C3%BCngere"
                         },
@@ -282,7 +284,7 @@ namespace backend.Migrations
                         {
                             Id = 21L,
                             ArtistId = 4L,
-                            Description = "Artus Wolffordt (* 1581 in Antwerpen; † 1641 ebenda) (auch: Wolfaerts, Wolffort, Wolfert) war ein flämischer Maler. Kurz nach seiner Geburt zogen seine Eltern nach Dordrecht. Am 29. Dezember 1603 wurde er dort Mitglied in der St. Lucasgilde, doch bald wieder aus ihr gestrichen, da er nicht mehr vermögend genug war. 1615 wurde er Assistent von Otto van Veen in Antwerpen. 1617 soll er in der Kathedrale St. Paul in Antwerpen am Altar Die Auferstehung und Mariä Himmelfahrt gemalt haben.  In seiner Werkstatt sind zahlreiche Werke mit religiösen Motiven entstanden.  Zu seinen Schülern zählten Pieter Van Mol (1599–1650) und Pieter van Lint (1609–1690). ",
+                            Description = "Artus Wolffordt (* 1581 in Antwerpen; † 1641 ebenda) (auch: Wolfaerts, Wolffort, Wolfert) war ein flämischer Maler.Kurz nach seiner Geburt zogen seine Eltern nach Dordrecht. Am 29. Dezember 1603 wurde er dort Mitglied in der St. Lucasgilde, doch bald wieder aus ihr gestrichen, da er nicht mehr vermögend genug war. 1615 wurde er Assistent von Otto van Veen in Antwerpen. 1617 soll er in der Kathedrale St. Paul in Antwerpen am Altar Die Auferstehung und Mariä Himmelfahrt gemalt haben. In seiner Werkstatt sind zahlreiche Werke mit religiösen Motiven entstanden. Zu seinen Schülern zählten Pieter Van Mol (1599–1650) und Pieter van Lint (1609–1690). ",
                             LanguageId = 4L,
                             SourceLink = "https://de.wikipedia.org/wiki/Artus_Wolffordt"
                         },
@@ -290,7 +292,7 @@ namespace backend.Migrations
                         {
                             Id = 22L,
                             ArtistId = 5L,
-                            Description = "Erasmus Quellinus II., auch Erasmus Quellinus der Jüngere, (* 19. November 1607 in Antwerpen; † 7. November1678 ebenda) war ein flämischer Maler, Schüler von Rubens, und Kupferstecher aus der Antwerpener Künstlerfamilie Quellinus Er ist Sohn des Bildhauers Erasmus Quellinus I. und Bruder von Artus Quellinus I. und Hubertus Quellinus. Er wurde nach seiner Ausbildung bei Rubens 1633/34 Meister der Antwerpener Lukasgilde. Nach dem Tod von Rubens wurde er Stadtmaler von Antwerpen und überführte die ausgesprochen barocke Kunstauffassung von Rubens in eine eher klassizistisch grundierte Malerei. Gut dokumentieren lässt sich diese Neuorientierung an einem seiner wichtigsten Ausstattungsprojekte, die des Paleis op de Dam in Amsterdam, das er um 1656 zusammen mit seinem Bruder Artus Quellinus I ausstattete. Sein Sohn Jan Erasmus Quellinus ist ebenfalls eine bekannte Persönlichkeit unter den Barockmalern der Spanischen Niederlande. Er führte die Hinwendung des Vaters zu einer eher klassizistischen Kunstströmung in Flandern in das 18. Jahrhundert fort. ",
+                            Description = "Erasmus Quellinus II., auch Erasmus Quellinus der Jüngere, (* 19. November 1607 in Antwerpen; † 7. November1678 ebenda) war ein flämischer Maler, Schüler von Rubens, und Kupferstecher aus der Antwerpener Künstlerfamilie Quellinus. Er ist Sohn des Bildhauers Erasmus Quellinus I. und Bruder von Artus Quellinus I. und Hubertus Quellinus. Er wurde nach seiner Ausbildung bei Rubens 1633/34 Meister der Antwerpener Lukasgilde. Nach dem Tod von Rubens wurde er Stadtmaler von Antwerpen und überführte die ausgesprochen barocke Kunstauffassung von Rubens in eine eher klassizistisch grundierte Malerei. Gut dokumentieren lässt sich diese Neuorientierung an einem seiner wichtigsten Ausstattungsprojekte, die des Paleis op de Dam in Amsterdam, das er um 1656 zusammen mit seinem Bruder Artus Quellinus I ausstattete. Sein Sohn Jan Erasmus Quellinus ist ebenfalls eine bekannte Persönlichkeit unter den Barockmalern der Spanischen Niederlande. Er führte die Hinwendung des Vaters zu einer eher klassizistischen Kunstströmung in Flandern in das 18. Jahrhundert fort. ",
                             LanguageId = 4L,
                             SourceLink = "https://de.wikipedia.org/wiki/Erasmus_Quellinus_II."
                         },
@@ -298,7 +300,7 @@ namespace backend.Migrations
                         {
                             Id = 23L,
                             ArtistId = 6L,
-                            Description = "Sir Peter Lely (eigentlich Pieter van der Faes, * 14. September 1618 im westfälischen Soest; † 30. November 1680 in London) war ein englischer Maler niederländischer Herkunft. Mit 19 Jahren wurde Lely 1637 Schüler bei Pieter de Grebber in Haarlem. Mit Bürgschaft seines Lehrers de Grebber konnte er auch der Lukasgildebeitreten. 1643 ging Lely nach England und ließ sich 1647 in London nieder. Schon bald war er überall im Gespräch, da er seine Porträts ganz im Stil Anthonis van Dycks gestaltete. Da van Dyck vor einigen Jahren gestorben war, schloss Lely mit seinen Bildern eine große Lücke. Darum wurde Lely wahrscheinlich auch die Mitgliedschaft der altehrwürdigen Company of Painter Stainers angeboten. Mit der Zeit wurde Lely, zusammen mit William Dobson, einer der führenden Porträtisten der englischen Revolution unter Oliver Cromwell und der nachfolgenden Herrscher. 1651 bewarb sich Lely für die Gestaltung verschiedener Wandmalereien in Whitehall. Zehn Jahre später berief König Karl II. Lely zu seinem offiziellen Hofmaler. Ein Jahr später, 1662, wurde Lely die britische Staatsbürgerschaft verliehen. In den Jahren 1666 bis 1667 schuf Lely für Anne Hyde eine Serie von Porträts verschiedener Hofdamen; heute noch bekannt unter dem Titel The Windsor Beauties. Fast zeitgleich entstand eine weitere Porträtserie von Admirälen, The Flagmen. Am 11. Januar 1680 wurde Lely von König Karl II. persönlich zum Knight Bachelor („Sir“) geschlagen. Bereits ein Jahr später starb Sir Peter Lely im Alter von 62 Jahren. Nach seiner stark niederländisch beeinflussten Phase gelangte Lely im Alter zu einer gelösten freien Maltechnik. Neben vielen Schülern Lelys sei hier vertretend für alle Nicolas de Largillière genannt. ",
+                            Description = "Sir Peter Lely (eigentlich Pieter van der Faes, * 14. September 1618 im westfälischen Soest; † 30. November 1680 in London) war ein englischer Maler niederländischer Herkunft. Mit 19 Jahren wurde Lely 1637 Schüler bei Pieter de Grebber in Haarlem. Mit Bürgschaft seines Lehrers de Grebber konnte er auch der Lukasgildebeitreten. 1643 ging Lely nach England und ließ sich 1647 in London nieder. Schon bald war er überall im Gespräch, da er seine Porträts ganz im Stil Anthonis van Dycks gestaltete. Da van Dyck vor einigen Jahren gestorben war, schloss Lely mit seinen Bildern eine große Lücke. Darum wurde Lely wahrscheinlich auch die Mitgliedschaft der altehrwürdigen Company of Painter Stainers angeboten. Mit der Zeit wurde Lely, zusammen mit William Dobson, einer der führenden Porträtisten der englischen Revolution unter Oliver Cromwell und der nachfolgenden Herrscher. 1651 bewarb sich Lely für die Gestaltung verschiedener Wandmalereien in Whitehall. Zehn Jahre später berief König Karl II. Lely zu seinem offiziellen Hofmaler. Ein Jahr später, 1662, wurde Lely die britische Staatsbürgerschaft verliehen. In den Jahren 1666 bis 1667 schuf Lely für Anne Hyde eine Serie von Porträts verschiedener Hofdamen; heute noch bekannt unter dem Titel The Windsor Beauties. Fast zeitgleich entstand eine weitere Porträtserie von Admirälen, The Flagmen. Am 11. Januar 1680 wurde Lely von König Karl II. persönlich zum Knight Bachelor („Sir“) geschlagen. Bereits ein Jahr später starb Sir Peter Lely im Alter von 62 Jahren. Nach seiner stark niederländisch beeinflussten Phase gelangte Lely im Alter zu einer gelösten freien Maltechnik. Neben vielen Schülern Lelys sei hier vertretend für alle Nicolas de Largillière genannt. ",
                             LanguageId = 4L,
                             SourceLink = "https://de.wikipedia.org/wiki/Peter_Lely"
                         },
@@ -354,7 +356,7 @@ namespace backend.Migrations
                         {
                             Id = 30L,
                             ArtistId = 3L,
-                            Description = "Jacob II van Oost of Jacob van Oost de Jongere (Brugge, 1639 - Brugge, 29 september 1713) was een Vlaams barokschilder. Hij was de zoon van de Brugse stadsschilder Jacob I van Oost (1603-1671). Zijn broer Willem van Oost (1639-1713) was eveneens kunstschilder. Omstreeks 1660 vertrok Jacob II naar Parijs. Daarna bracht hij enkele jaren door in Rome. In 1668 vestigde hij zich in Rijsel, waar hij twee jaar later trouwde met Marie Bourgeois. Hun zoon Dominique (1677-1738) werd net als zijn vader kunstschilder in Rijsel. In 1703 keerde Jacob II definitief terug naar zijn geboortestad Brugge. Hij overleed er vijf jaar later. Hij is vooral bekend als schilder van portretten en genretaferelen. Verschillende van zijn werken zijn te bezichtigen in het Groeningemuseum in Brugge en de Sint-Mauritiuskerk in Rijsel. ",
+                            Description = "Jacob II van Oost of Jacob van Oost de Jongere (Brugge, 1639 - Brugge, 29 september 1713) was een Vlaams barokschilder. Hij was de zoon van de Brugse stadsschilder Jacob I van Oost (1603-1671). Zijn broer Willem van Oost (1639-1713) was eveneens kunstschilder. De H. Carolus Borromeus bidt voor het einde van de pest (1668). Omstreeks 1660 vertrok Jacob II naar Parijs. Daarna bracht hij enkele jaren door in Rome. In 1668 vestigde hij zich in Rijsel, waar hij twee jaar later trouwde met Marie Bourgeois. Hun zoon Dominique (1677-1738) werd net als zijn vader kunstschilder in Rijsel. In 1703 keerde Jacob II definitief terug naar zijn geboortestad Brugge. Hij overleed er vijf jaar later. Hij is vooral bekend als schilder van portretten en genretaferelen. Verschillende van zijn werken zijn te bezichtigen in het Groeningemuseum in Brugge en de Sint-Mauritiuskerk in Rijsel. ",
                             LanguageId = 2L,
                             SourceLink = "https://nl.wikipedia.org/wiki/Jacob_II_van_Oost"
                         });
@@ -744,7 +746,7 @@ namespace backend.Migrations
                             Id = 1L,
                             AuthorId = 1L,
                             Height = 162f,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e2930adb2fb2454581ab83e12fb2cbd3d59414b2c38642c3b49582f2806a0d1b/browse.jpg",
+                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0004_I",
                             MovementId = 1L,
                             MuseumCode = "A",
                             TechniqueId = 1L,
@@ -756,7 +758,7 @@ namespace backend.Migrations
                             Id = 2L,
                             AuthorId = 2L,
                             Height = 150.5f,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3e9cda9a68b34f5eb9ef3efaf8ab8cf85ee8a754f5eb409aa67275b49956a63f/browse.jpg",
+                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0181_I",
                             MovementId = 1L,
                             MuseumCode = "B",
                             TechniqueId = 1L,
@@ -768,7 +770,7 @@ namespace backend.Migrations
                             Id = 3L,
                             AuthorId = 2L,
                             Height = 116f,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ad04cf876f154b339a72fbae1d4e3afdc80b2c2582fc42ac9338e7e7d67398db/browse.jpg",
+                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0184_I",
                             MovementId = 1L,
                             MuseumCode = "C",
                             TechniqueId = 1L,
@@ -780,7 +782,7 @@ namespace backend.Migrations
                             Id = 4L,
                             AuthorId = 3L,
                             Height = 73f,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/435fca0311fa49a997a252430a1c021334b19e3e560545ff8f781535597a102f/browse.jpg",
+                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0187_I",
                             MovementId = 1L,
                             MuseumCode = "D",
                             TechniqueId = 1L,
@@ -792,7 +794,7 @@ namespace backend.Migrations
                             Id = 5L,
                             AuthorId = 4L,
                             Height = 123.3f,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/4d7cb86dc48f4b4289ec0d8123e513a6fdc961e491a24c40adb718aa2582a901/browse.jpg",
+                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO0374_I",
                             MovementId = 1L,
                             MuseumCode = "E",
                             TechniqueId = 1L,
@@ -804,7 +806,7 @@ namespace backend.Migrations
                             Id = 6L,
                             AuthorId = 2L,
                             Height = 106f,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d062f76440e14d43bdb10f1951b09a20a3f410e8a1874b75b7cded7b14bdd71a/browse.jpg",
+                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/0000_GRO1346_I",
                             MovementId = 1L,
                             MuseumCode = "F",
                             TechniqueId = 1L,
@@ -816,7 +818,7 @@ namespace backend.Migrations
                             Id = 7L,
                             AuthorId = 5L,
                             Height = 220f,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/48736d8d6adb4ef7a88aefc14a231e47550087be043845c18f27e4d731c25151/browse.jpg",
+                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/1991_GRO0007_I",
                             MovementId = 1L,
                             MuseumCode = "G",
                             TechniqueId = 1L,
@@ -828,7 +830,7 @@ namespace backend.Migrations
                             Id = 8L,
                             AuthorId = 6L,
                             Height = 76.2f,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8f390fb407274cacb8b339549fdff70f142e2be56f5348f387b85241cf83c3f0/browse.jpg",
+                            ImageUrl = "http://groeningemuseum.be/collection/work/representation/2012_GRO0001_I",
                             MovementId = 1L,
                             MuseumCode = "H",
                             TechniqueId = 1L,
@@ -989,7 +991,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 5L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8d269f2ce07a4f239167f1f46103d202db3da89e0f3d45cd9e3efd3a53728882/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 1L,
                             Subtitle = "over de stijlperiode",
@@ -1000,7 +1002,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 8L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8d269f2ce07a4f239167f1f46103d202db3da89e0f3d45cd9e3efd3a53728882/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 1L,
                             Subtitle = "about the movement",
@@ -1011,7 +1013,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 2L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8d269f2ce07a4f239167f1f46103d202db3da89e0f3d45cd9e3efd3a53728882/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf4aebd4aa6b44a4b86806c3f5d1fb41ee9536c041a44dc2b4f229191f930b3d/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 1L,
                             Subtitle = "à propos du mouvement",
@@ -1022,7 +1024,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 6L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8f1caf55392e47b885500dd3ad51f509b3b057a658e44b87be76eb383e5f8330/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 1L,
                             Subtitle = "over de techniek",
@@ -1033,7 +1035,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 9L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8f1caf55392e47b885500dd3ad51f509b3b057a658e44b87be76eb383e5f8330/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 1L,
                             Subtitle = "about the technique",
@@ -1044,7 +1046,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 3L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8f1caf55392e47b885500dd3ad51f509b3b057a658e44b87be76eb383e5f8330/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8e39500528c246ce8bfed9ff55140c14757edb0488824ddebc414be4c8654f71/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 1L,
                             Subtitle = "à propos de la technique",
@@ -1055,7 +1057,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 13L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fb495a7512104843b8cb8a13a2b54bf8131b834cd7514956abf4c6098703fe91/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 2L,
                             Subtitle = "Over het kunstwerk",
@@ -1066,7 +1068,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 16L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fb495a7512104843b8cb8a13a2b54bf8131b834cd7514956abf4c6098703fe91/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 2L,
                             Subtitle = "About the artwork",
@@ -1077,7 +1079,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 10L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fb495a7512104843b8cb8a13a2b54bf8131b834cd7514956abf4c6098703fe91/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/21643469958c454583ed0e84aa5a527478c3e5f9e24d477ab0a42b26b2c30519/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 2L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1088,7 +1090,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 22L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/2b1ab261f95045348699ab43027e68d168e1ee79adec4287a8bdf4a32328534f/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 3L,
                             Subtitle = "over het kunstwerk",
@@ -1099,7 +1101,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 25L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/2b1ab261f95045348699ab43027e68d168e1ee79adec4287a8bdf4a32328534f/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 3L,
                             Subtitle = "About the artwork",
@@ -1110,7 +1112,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 19L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/2b1ab261f95045348699ab43027e68d168e1ee79adec4287a8bdf4a32328534f/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dc1418bab7c3496c8c37befdb6b1247befd3d5a280b94fe0a33069adeda7f976/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 3L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1121,7 +1123,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 24L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5604135e5c8c47a8acd61d754b28dfdba6d135e346664d38ba0fc7912bf16a9d/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 3L,
                             Subtitle = "over de techniek",
@@ -1132,7 +1134,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 27L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5604135e5c8c47a8acd61d754b28dfdba6d135e346664d38ba0fc7912bf16a9d/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 3L,
                             Subtitle = "about the technique",
@@ -1143,7 +1145,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 21L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5604135e5c8c47a8acd61d754b28dfdba6d135e346664d38ba0fc7912bf16a9d/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e7ca0f24fe4d4a1b823eb466855c9735b470aaf39bfc4cb197203c76adafaa98/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 3L,
                             Subtitle = "à propos de la technique",
@@ -1154,7 +1156,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 31L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/57e66bc41e2f449abd2892db88cf4064da45472b2e8547a5beebf9c317a573ed/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 4L,
                             Subtitle = "over het kunstwerk ",
@@ -1165,7 +1167,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 34L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/57e66bc41e2f449abd2892db88cf4064da45472b2e8547a5beebf9c317a573ed/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 4L,
                             Subtitle = "about the artwork",
@@ -1176,7 +1178,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 28L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/57e66bc41e2f449abd2892db88cf4064da45472b2e8547a5beebf9c317a573ed/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d5828eddf70640fe95b7e2d861e68d65f7814194062b497e9159d47ba7edd5e1/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 4L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1187,7 +1189,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 40L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/18da05e28d6541daa774bd81cb8137a802298fc08ed74953a9b06d714de8449d/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 5L,
                             Subtitle = "over het kunstwerk",
@@ -1198,7 +1200,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 43L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/18da05e28d6541daa774bd81cb8137a802298fc08ed74953a9b06d714de8449d/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 5L,
                             Subtitle = "about the artwork",
@@ -1209,7 +1211,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 37L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/18da05e28d6541daa774bd81cb8137a802298fc08ed74953a9b06d714de8449d/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cfac3520af784cae8d957005692eafd8dd3fa80f861c480c99f71b59e0742a72/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 5L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1220,18 +1222,18 @@ namespace backend.Migrations
                         new
                         {
                             Id = 49L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e928c619b1ad455da95e5f377c2c31551754260867734bc6b7cf17b52834de68/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 6L,
                             Subtitle = "over het kunstwerk",
-                            Text = "Fovin de Hasque was schermmeester van de Brugse Sint-Michielsgilde, de oudste schermersgilde in Vlaanderen.",
+                            Text = "Fovin de Hasque was schermmeester van de Brugse Sint-Michielsgilde, de oudst bekende schermersgilde in Vlaanderen.",
                             Title = "Portret van Fovin de Hasque",
                             Type = "artwork"
                         },
                         new
                         {
                             Id = 52L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e928c619b1ad455da95e5f377c2c31551754260867734bc6b7cf17b52834de68/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 6L,
                             Subtitle = "about the artwork",
@@ -1242,7 +1244,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 46L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e928c619b1ad455da95e5f377c2c31551754260867734bc6b7cf17b52834de68/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ff432946d096434684d808320dde4bf02f871a55fcd94d47a0627365096384a1/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 6L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1253,7 +1255,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 58L,
-                            ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Peter_Paul_Rubens_174.jpg/1280px-Peter_Paul_Rubens_174.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 7L,
                             Subtitle = "over het kunstwerk",
@@ -1264,18 +1266,18 @@ namespace backend.Migrations
                         new
                         {
                             Id = 61L,
-                            ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Peter_Paul_Rubens_174.jpg/1280px-Peter_Paul_Rubens_174.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 7L,
                             Subtitle = "about the artwork",
-                            Text = "This composition goes back to a design for a tapestry by Rubens about Achilles. Quellinus painted three versions of this scene.",
+                            Text = "This composition goes back to a design for a tapestry by Rubens about Achilles. Quellinus  painted three versions of this scene.",
                             Title = "Achilles among the Daughters of Lycomedes",
                             Type = "artwork"
                         },
                         new
                         {
                             Id = 55L,
-                            ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Peter_Paul_Rubens_174.jpg/1280px-Peter_Paul_Rubens_174.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e8e022bf0ba64c549c9bba866d0e6a27cf21a60091304920b5aa3f1858c655e3/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 7L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1286,7 +1288,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 83L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/743fde063c114c759ec98ad4f6d3741c33e4525b4bef4782833df50227f07222/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 7L,
                             Subtitle = "over het kunstwerk",
@@ -1297,7 +1299,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 84L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/743fde063c114c759ec98ad4f6d3741c33e4525b4bef4782833df50227f07222/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 7L,
                             Subtitle = "about the artwork",
@@ -1308,7 +1310,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 82L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/743fde063c114c759ec98ad4f6d3741c33e4525b4bef4782833df50227f07222/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e66cc133bb5f4c2aa7739d7e9e60f52c52e4cb84ea5047a9ba2755a8edeed163/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 7L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1319,7 +1321,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 67L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/bea605c3ad9e47d898dda43dedf9c5a44a57002b54a541589f21029339694daf/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
                             LanguageId = 2L,
                             PaintingId = 8L,
                             Subtitle = "over het kunstwerk",
@@ -1330,7 +1332,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 70L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/bea605c3ad9e47d898dda43dedf9c5a44a57002b54a541589f21029339694daf/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
                             LanguageId = 3L,
                             PaintingId = 8L,
                             Subtitle = "about the artwork",
@@ -1341,7 +1343,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 64L,
-                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/bea605c3ad9e47d898dda43dedf9c5a44a57002b54a541589f21029339694daf/browse.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5d9dc2d4aa554328a7fc82837d1f9aa660898545b73d452e9ef0cd2909c610f1/browse.jpg",
                             LanguageId = 1L,
                             PaintingId = 8L,
                             Subtitle = "à propos de l'oeuvre",
@@ -1480,7 +1482,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 5L,
-                            Description = "De burgerman wijst ostentatief naar het ommeland om onze aandacht te vestigen op zijn bezittingen. Het lage gezichtspunt maakt dat de personages een imposante indruk maken. De leeftijden van de familieleden zijn onopvallend geïntegreerd: bij de man op de hiel van zijn schoen (46), bij de vrouw op haar waaier (26), bij de kleine jongen naast haar op zijn hoedje (3), bij het zittende meisje op het kussen in haar korf (15), bij de jongeman op zijn laars (17), en bij het kindje in de armen van het kindermeisje op het stuk brood in haar handen (1). Uit het grote leeftijdsverschil tussen de echtgenoten enerzijds, en de jonge leeftijd van de vrouw anderzijds, kan afgeleid worden dat de kinderen uit twee huwelijken moeten stammen. Uiterst links op het schilderij staat een tuinman met een spade over de schouder, afdalend naar de tuin. Ondanks deze gedetailleerde gegevens kon men de familie lange tijd niet identificeren. Uit diepgaand archiefonderzoek van begin deze eeuw is gebleken dat het hier mogelijk om de familie Baltijn gaat, een niet-adellijke Brugse familie en eigenaar van een hofstede in Sint-Andries. Zoals bij de meeste familieportretten bevat dit werk een onderliggende symboliek, verwijzend naar liefde, zuiverheid en vruchtbaarheid, als voorwaarden voor een harmonisch gezinsleven. Daarnaast wordt de sociale status van het gezin belicht. ",
+                            Description = "De burgerman wijst ostentatief naar het ommeland om onze aandacht te vestigen op zijn bezittingen. Het lage gezichtspunt maakt dat de personages een imposante indruk maken. De familie is onbekend, maar door het herkenbare silhouet van de stad Brugge dient de familie in Brugse context gesitueerd te worden. De leeftijden van de familieleden zijn onopvallend geïntegreerd: bij de man op de hiel van zijn schoen (46), bij de vrouw op haar waaier (26), bij de kleine jongen naast haar op zijn hoedje (3), bij het zittende meisje op het kussen in haar korf (15), bij de jongeman op zijn laars (17), en bij het kindje in de armen van het kindermeisje op het stuk brood in haar handen (1). Uit het grote leeftijdsverschil tussen de echtgenoten enerzijds, en de jonge leeftijd van de vrouw anderzijds, kan afgeleid worden dat de kinderen uit twee huwelijken moeten stammen. Uiterst links op het schilderij staat een tuinman met een spade over de schouder, afdalend naar de tuin. Ondanks deze gedetailleerde gegevens kon men de familie lange tijd niet identificeren. Uit diepgaand archiefonderzoek van begin deze eeuw is gebleken dat het hier mogelijk om de familie Baltijn gaat, een niet-adellijke Brugse familie en eigenaar van een hofstede in Sint-Andries. Zoals bij de meeste familieportretten bevat dit werk een onderliggende symboliek, verwijzend naar liefde, zuiverheid en vruchtbaarheid, als voorwaarden voor een harmonisch gezinsleven. Daarnaast wordt de sociale status van het gezin belicht. ",
                             LanguageId = 2L,
                             Name = "Portret van een Brugse familie",
                             PaintingId = 2L,
@@ -1489,7 +1491,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 6L,
-                            Description = "The bourgeois ostentatiously points to the countryside to draw our attention to his possessions. The low point of view makes that the characters make an impressive impression. The ages of the family members are unobtrusively integrated: with the man on the heel of his shoe (46), with the woman on her fan (26), with the little boy next to her in his hat (3), with the sitting girl on the pillow in her basket (15), with the young man on his boot (17), and with the child in the arms of the nanny on the piece of bread in her hands (1). From the large age difference between the husbands on the one hand, and the young age of the woman on the other hand, it can be deduced that the children have to come from two marriages. Despite these details, the family’s identity has long remained elusive. Thorough archive research at the beginning of the current century revealed, however, that they might be the Baltijns – a non-noble Bruges family who owned an estate in nearby Sint-Andries. On the far left of the painting is a gardener with a spade over his shoulder, descending to the garden. As with most family portraits, this work contains an underlying symbolism, referring to love, purity and fertility, as conditions for a harmonious family life. In addition, the social status of the family is highlighted. ",
+                            Description = "The bourgeois ostentatiously points to the countryside to draw our attention to his possessions. The low point of view makes that the characters make an impressive impression. The family is unknown, but because of the recognizable silhouette of the city of Bruges, the family has to be situated in a Bruges context. The ages of the family members are unobtrusively integrated: with the man on the heel of his shoe (46), with the woman on her fan (26), with the little boy next to her in his hat (3), with the sitting girl on the pillow in her basket (15), with the young man on his boot (17), and with the child in the arms of the nanny on the piece of bread in her hands (1). From the large age difference between the husbands on the one hand, and the young age of the woman on the other hand, it can be deduced that the children have to come from two marriages. Despite these details, the family’s identity has long remained elusive. Thorough archive research at the beginning of the current century revealed, however, that they might be the Baltijns – an non-noble Bruges family who owned an estate in nearby Sint-Andries. On the far left of the painting is a gardener with a spade over his shoulder, descending to the garden. As with most family portraits, this work contains an underlying symbolism, referring to love, purity and fertility, as conditions for a harmonious family life. In addition, the social status of the family is highlighted. ",
                             LanguageId = 3L,
                             Name = "Portrait of a Bruges family",
                             PaintingId = 2L,
@@ -1866,7 +1868,7 @@ namespace backend.Migrations
                         new
                         {
                             Id = 1L,
-                            Description = "La peinture à l'huile est une peinture dont le liant ou véhicule est une huile siccative qui enveloppe complètement les particules de pigment. On appelle aussi « peinture » les travaux d'enduction d'une surface par ce genre de produit. Les autorités normatives françaises demandent qu'on dise peinturage, mais ce terme n'a jamais pris. La « peinture à l'huile » est donc aussi l'activité de nombreux artistes peintres passés et présents, ainsi qu'une technique picturale. ",
+                            Description = "La peinture à l'huile est une peinture dont le liant ou véhicule est une huile siccative qui enveloppe complètement les particules de pigment.On appelle aussi « peinture » les travaux d'enduction d'une surface par ce genre de produit. Les autorités normatives françaises demandent qu'on dise peinturage, mais ce terme n'a jamais pris. La « peinture à l'huile » est donc aussi l'activité de nombreux artistes peintres passés et présents, ainsi qu'une technique picturale. ",
                             LanguageId = 1L,
                             Name = "Peinture à l'huile",
                             SourceLink = "https://fr.wikipedia.org/wiki/Peinture_%C3%A0_l%27huile",
