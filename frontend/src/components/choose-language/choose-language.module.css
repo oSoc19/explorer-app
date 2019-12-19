@@ -60,3 +60,37 @@ td{
  i.nextButton span{
      display: none;
  }
+
+/* IPAD MEDIA QUERY */
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+    h1{
+        display: block;
+    }
+
+    .containerLanguages {
+        height: 80vh;
+        padding: 2.5rem 1rem 1.5rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    .nextButton {
+        font-size: 3.5rem;
+     }
+
+     .dropdown {
+        background: transparent;
+        border: 1px solid rgba(0,0,0,.05); /*#212529;*/
+        font-size: 1.4rem;
+        height: 4rem;
+        padding: 5px; /* If you add too much padding here, the options won't show in IE */
+        width: 60vw;
+     }
+
+     .title{
+        font-size : 1.3rem !important;
+    }
+ }

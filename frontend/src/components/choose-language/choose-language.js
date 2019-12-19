@@ -292,6 +292,7 @@ class ChooseLanguage extends React.Component{
                 <div className="row header">
                     <div className="col align-self-top bruggeLogo">
                     <a href="/"><img alt="Brugge logo" src={Logo} ></img></a>
+                    <h1><span>www.</span>LearnMore<span>.be</span></h1>
                     </div>
                 </div>
                 <div className={styles.containerLanguages}>

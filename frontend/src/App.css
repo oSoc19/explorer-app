@@ -202,3 +202,40 @@ label {
     text-align: right;
 }
 
+h1 {
+  color: #1D5748;
+  display: none;
+  font-family: Montserrat;
+  margin: 1.5rem 0;
+  font-size: 4rem;
+}
+
+h1 span{
+   font-size: 1.3rem;
+}
+
+/* IPAD MEDIA QUERY */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+
+  html,
+  body {
+    background-color: #F0EDE9;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .header{
+    background: rgba(255,255,255,1);
+    height: 20vh;
+  }   
+  
+  .table td {
+    padding: 1.3rem .75rem;
+  }
+ }

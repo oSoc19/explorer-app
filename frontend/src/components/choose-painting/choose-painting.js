@@ -86,7 +86,7 @@ class ChoosePainting extends React.Component{
                     <div id="errorMessage" className={styles.errorMessageContainer}>
                         <span className={`container ${styles.errorMessage}`}>{this.state.errorMessage}</span>
                     </div>
-                    :<div className="row header"><div className="col align-self-top bruggeLogo"><a href="/"><img alt="Brugge logo" src={Logo} ></img></a></div></div>
+                    :<div className="row header"><div className="col align-self-top bruggeLogo"><a href="/"><img alt="Brugge logo" src={Logo} ></img></a><h1><span>www.</span>LearnMore<span>.be</span></h1></div></div>
                 }
                 
                 <div className={styles.choose}>
