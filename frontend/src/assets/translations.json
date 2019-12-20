@@ -20,14 +20,14 @@
         "RU" : "изменение языка"
     },
     "codeMissing":{
-        "EN":"Enter a code",
-        "FR":"Entrez un code",
-        "IT":"Inserisci un codice",
-        "DE":"Geben Sie einen Code ein",
-        "NL":"Voer een code in",
-        "ES":"Ingresa un código",
-        "JA":"コードを入力してください",
-        "RU":"Введите код"
+        "EN":"Enter the letter of the painting",
+        "FR":"Entrez la lettre du tableau",
+        "IT":"Inserisci la lettera del dipinto",
+        "DE":"Geben Sie den Buchstaben des Bildes",
+        "NL":"Geef de letter in van het schilderij",
+        "ES":"Ingrese la letra de la pintura",
+        "JA":"絵の文字を入力します。",
+        "RU":"Введите букву картины"
     },
     "choosePainting":{
         "EN" : "Search the painting",
