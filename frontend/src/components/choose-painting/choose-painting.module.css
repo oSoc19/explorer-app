@@ -158,4 +158,10 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	label {
 		font-size: 1.4rem;
 	}
+
+	.input{
+		height: 120px;
+		line-height: 120px;
+	
+	}
  }
