@@ -290,3 +290,28 @@ a.btnToTopHide {
     height: 55px;
     line-height: 55px;
 }
+
+/* IPAD MEDIA QUERY */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  { 
+    .paintDetails td {
+        font-size: 1.3rem;
+        padding : 0.3rem 0.4rem 0.3rem 0.2rem;
+    }   
+
+    h5 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+    }
+
+    a {
+        font-size: 1.3rem;
+    }
+ }
