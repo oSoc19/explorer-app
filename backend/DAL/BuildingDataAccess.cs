@@ -17,6 +17,7 @@ namespace backend.DAL
         public void InitDatabase(){
             var rand = _context.Building.Count();
             _context.Building.Add(new Building { 
+                    Author = new Artist{FirstName = "Sushil"+rand, LastName = "Ghambir"+rand},
                     Use = new Use{}});
             _context.SaveChanges();
         }

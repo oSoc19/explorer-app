@@ -39,6 +39,9 @@ namespace backend.Controllers
                 return NotFound();
             }
             BuildingDto buildingDto = _mapper.Map<BuildingDto>(building);
+            if (language != null){
+                buildingDto.FilterByLanguage(language);
+            }
             
             return Ok(buildingDto);
         }

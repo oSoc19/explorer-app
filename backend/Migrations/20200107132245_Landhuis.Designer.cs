@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20200107132245_Landhuis")]
+    partial class Landhuis
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -615,51 +617,6 @@ namespace backend.Migrations
                             Description = "<p><strong>Siglo XI</strong><br>Construcción del «<em>Love</em>», residencia de los condes de Flandes</p><p><strong>Siglo XV</strong><br>La administración del <em>Brugse Vrije</em> (el campo que rodeaba Brujas) se traslada a esta ubicación desde el <em>Steen</em>, situado al otro lado</p><p><strong>1520-1525</strong><br>Construcción de una sala para el escabinado, con una monumental chimenea</p><p><strong>1528-1532</strong><br>Construcción de una galería con arcos de medio punto</p><p><strong>Siglo XVII</strong><br>Ampliación con una capilla y un juzgado de huérfanos</p><p><strong>1722-1727</strong><br>Reforma en estilo clasicista</p><p><strong>1794</strong><br>El <em>landhuis</em> se convierte en tribunal&nbsp;</p><p><strong>1984</strong><br>Se pone al servicio de la administración municipal</p>",
                             LanguageId = 5L,
                             Name = "Landhuis",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 11L,
-                            BuildingId = 3L,
-                            Description = "<p><strong>1537</strong><br>Construit comme le bureau du greffier civil, l’un des plus importants fonctionnaires de la ville.</p><p><strong>1877-1881</strong><br>Restauration sous la direction de l’architecte de la ville Louis Delacenserie.</p><p><strong>1883</strong><br>Ajout de statues en bronze réalisées par le sculpteur brugeois Hendrik Pickery.</p><p><strong>2000</strong><br>Une nouvelle restauration redonne au bâtiment sa splendeur d’origine.</p>",
-                            LanguageId = 1L,
-                            Name = "Greffe",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 12L,
-                            BuildingId = 3L,
-                            Description = "<p><strong>1537</strong><br>opgetrokken als kantoor van de griffier-civiel, een van de belangrijkste stadsambtenaren</p><p><strong>1877-1881</strong><br>restauratie onder leiding van stadsarchitect Louis Delacenserie</p><p><strong>1883</strong><br>toevoeging bronzen beelden door de Brugse beeldhouwer Hendrik Pickery</p><p><strong>2000</strong><br>een nieuwe restauratie geeft het gebouw zijn oorspronkelijke kleurenpracht terug</p>",
-                            LanguageId = 2L,
-                            Name = "Griffie",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 13L,
-                            BuildingId = 3L,
-                            Description = "<p><strong>1537</strong><br>came into use as the office of the Civil Registrar, one of the most important city officials</p><p><strong>1877-1881</strong><br>renovations led by city architect Louis Delacenserie</p><p><strong>1883</strong><br>addition of bronze sculptures by Bruges sculptor Hendrik Pickery</p><p><strong>2000</strong><br>another renovation restores the original beautiful colours to the building</p>",
-                            LanguageId = 3L,
-                            Name = "Registry",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 14L,
-                            BuildingId = 3L,
-                            Description = "<p><strong>1537</strong><br>Errichtung als Büro des Kanzleileiters des Zivilgerichts, der zu den wichtigsten Stadtbeamten gehört.</p><p><strong>1877–1881</strong><br>Restaurierung unter der Leitung des Stadtarchitekten Louis Delacenserie.</p><p><strong>1883</strong><br>Hinzufügung von Bronzeskulpturen des Brügger Bildhauers Hendrik Pickery.</p><p><strong>2000</strong><br>Im Zuge einer neuen Restaurierung erhält das Gebäude seine ursprüngliche Farbenpracht wieder.</p>",
-                            LanguageId = 4L,
-                            Name = "Alte Zivilkanzlei",
-                            SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
-                        },
-                        new
-                        {
-                            Id = 15L,
-                            BuildingId = 3L,
-                            Description = "<p><strong>1537</strong><br>Se construye como oficina del secretario judicial civil, uno de los funcionarios municipales más importantes</p><p><strong>1877-1881</strong><br>Restauración dirigida por el arquitecto municipal Louis Delacenserie</p><p><strong>1883</strong><br>Adición de esculturas de bronce del escultor brujense Hendrik Pickery</p><p><strong>2000</strong><br>Una nueva restauración le devuelve al edificio su colorido original</p>",
-                            LanguageId = 5L,
-                            Name = "Escribanía civil",
                             SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
                         });
                 });

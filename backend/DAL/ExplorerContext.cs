@@ -2181,19 +2181,75 @@ namespace backend.DAL
 
             modelBuilder.Entity<Building>()
             .HasData(
-                new Building
+                new Building // Burg
                 {
                     Id = 1,
+                    AuthorId = 1,
+                    Year = 1400,
+                    MuseumCode = "AA",
+                    UseId = 1,
+                    MovementId = 2,
+                },
+                new Building // Landhuis
+                {
+                    Id = 2,
+                    AuthorId = 1,
                     Year = 1400,
                     MuseumCode = "AB",
                     UseId = 1,
                     MovementId = 2,
                 },
-                new Building
+                new Building // Griffie
                 {
-                    Id = 2,
+                    Id = 3,
+                    AuthorId = 1,
                     Year = 1699,
                     MuseumCode = "AC",
+                    UseId = 1,
+                    MovementId = 2
+                },
+                new Building // Stadhuis
+                {
+                    Id = 4,
+                    AuthorId = 1,
+                    Year = 1699,
+                    MuseumCode = "AD",
+                    UseId = 1,
+                    MovementId = 2
+                },
+                new Building // Basiliek
+                {
+                    Id = 5,
+                    AuthorId = 1,
+                    Year = 1699,
+                    MuseumCode = "AE",
+                    UseId = 1,
+                    MovementId = 2
+                },
+                new Building // Steen
+                {
+                    Id = 6,
+                    AuthorId = 1,
+                    Year = 1699,
+                    MuseumCode = "AF",
+                    UseId = 1,
+                    MovementId = 2
+                },
+                new Building // Proosdij
+                {
+                    Id = 7,
+                    AuthorId = 1,
+                    Year = 1699,
+                    MuseumCode = "AG",
+                    UseId = 1,
+                    MovementId = 2
+                },
+                new Building // Kathedraal/Crowne Plaza
+                {
+                    Id = 8,
+                    AuthorId = 1,
+                    Year = 1699,
+                    MuseumCode = "AH",
                     UseId = 1,
                     MovementId = 2
                 }
@@ -2261,49 +2317,142 @@ namespace backend.DAL
 
             modelBuilder.Entity<BuildingTranslation>()
             .HasData(
+                // BURG
                 new BuildingTranslation
                 {
                     Id = 1,
                     BuildingId = 1,
-                    LanguageId = 1,
-                    Name = "Hôtel de Ville de Bruges",
-                    Description = null,
+                    LanguageId = 1, //FR
+                    Name = "Place du Bourg",
+                    Description = "<p>La place du Bourg est l’un des centres urbains les plus anciens de la ville de Bruges. Il s’agit d’une ancienne forteresse. Au départ, elle était fortifiée et dotée de portes d’accès.</p><p>La forteresse se situait à la jonction de la route Oudenburg-Aardenburg et du Reie, un cours d’eau.</p><p>Le comte Arnulf Ier de Flandre (889-965) a fait de la forteresse un centre de pouvoir avec une fonction administrative et religieuse. La résidence du comte, le conseil municipal, l’église de Saint-Donatien et, plus tard, la Basilique du Saint-Sang ont trouvé leur place dans la forteresse.</p><p>La cathédrale Saint-Donatien a été démolie en 1799. L’église n’a pas été reconstruite. Par conséquent, la place a doublé de taille.</p>",
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
                 },
                 new BuildingTranslation
                 {
                     Id = 2,
                     BuildingId = 1,
-                    LanguageId = 2,
-                    Name = "Stadhuis van Brugge",
-                    Description = null,
+                    LanguageId = 2, //NL
+                    Name = "Burg",
+                    Description = "<p>De Burg is een van de oudste kernen van de stad. Het is een voormalige vesting. Aanvankelijk was ze omwald en voorzien van toegangspoorten.</p><p>De versterkte vesting bevond zich op het knooppunt van de weg Oudenburg-Aardenburg en de waterloop de Reie.</p><p>Graaf Arnulf I van Vlaanderen (889-965) bouwde de burcht uit tot een machtscentrum met een bestuurlijke en religieuze functie. De grafelijke residentie, het stadsbestuur, de Sint-Donaaskerk en de latere Heilig-Bloedbasiliek vonden een plaats binnen de vesting.</p><p>In 1799 werd de Sint-Donaaskathedraal gesloopt. De kerk werd niet heropgebouwd. Daardoor verdubbelde het plein in omvang.</p>",
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
                 },
                 new BuildingTranslation
                 {
                     Id = 3,
                     BuildingId = 1,
-                    LanguageId = 3,
-                    Name = "Town Hall of Bruges",
-                    Description = null,
+                    LanguageId = 3, //EN
+                    Name = "Burg Square",
+                    Description = "<p>Burg Square is one of the oldest parts of the city centre. It is a former fortress and was originally walled in and had entrance gates.</p><p>The fortress was located at the meeting-point of the Oudenburg-Aardenburg road and the Reie canal.</p><p>Count Arnulf I van Vlaanderen (889-965) extended the fortress, transforming it into a powerful religious and administrative centre. The Count’s Residence, the City Council, Saint Donatian’s Church and later the Basilica of the Holy Blood were also located within the fortress walls.</p><p>Saint Donatian’s Cathedral was demolished in 1799. It was never re-built, meaning that the square doubled to twice its previous size.</p>",
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
                 },
                 new BuildingTranslation
                 {
                     Id = 4,
                     BuildingId = 1,
-                    LanguageId = 4,
-                    Name = "Rathaus von Brügge",
-                    Description = null,
+                    LanguageId = 4, //DE
+                    Name = "Burg",
+                    Description = "<p>Der Burgplatz, eine ehemalige Festung, ist einer der ältesten Kernbereiche der Stadt. Anfänglich war der Platz mit Wällen und Zugangstoren versehen.</p><p>Die Festung befand sich am Knotenpunkt der Straße von Oudenburg nach Aardenburg und dem Fluss Reie.</p><p>Graf Arnulf I. von Flandern (889–965) verwandelte die Festung in ein Machtzentrum, das religiöse und verwaltungstechnische Funktionen erfüllte. In dieser Festung wurden die gräfliche Residenz, die Stadtverwaltung, die Kathedrale Sankt Donatian und die spätere Heilig-Blut-Basilika untergebracht.</p><p>1799 wurde die Kathedrale Sankt Donatian abgerissen und nicht wieder aufgebaut, wodurch der Platz zweimal so groß wurde.</p>",
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
                 },
                 new BuildingTranslation
                 {
                     Id = 5,
                     BuildingId = 1,
-                    LanguageId = 5,
-                    Name = "Ayuntamiento de Brujas",
-                    Description = null,
+                    LanguageId = 5, //ES
+                    Name = "Burg",
+                    Description = "<p>El edificio de Burg constituye uno de los núcleos más antiguos de la ciudad. Se trata de una antigua fortaleza. Originariamente estaba amurallado y contaba con puertas de acceso.&nbsp;</p><p>La fortaleza estaba situada en la intersección de la carretera de <em>Oudenburg-Aardenburg</em> y el canal de <em>Reie</em>.</p><p>El conde Arnulfo I de Flandes (889-965) amplió el castillo a un centro de poder con una función administrativa y religiosa. La residencia condal, las autoridades municipales, la Iglesia de San Donaciano y la posterior Basílica de la Santa Sangre se encontraban en el interior de la fortaleza. &nbsp; &nbsp;</p><p>En 1799 se destruyó la Catedral de San Donaciano. La iglesia no volvió a construirse, algo que permitió que la plaza doblara su extensión.</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                //LANDHUIS
+                new BuildingTranslation
+                {
+                    Id = 6,
+                    BuildingId = 2,
+                    LanguageId = 1, //FR
+                    Name = "Maison du Franc de Bruges",
+                    Description = "<p><strong>11<sup>e</sup> siècle</strong><br>Construction de « Love », la résidence des comtes de Flandre.</p><p><strong>15<sup>e</sup> siècle</strong><br>L’administration du Franc de Bruges (la campagne brugeoise) déménage du bâtiment « Het Steen » pour s’installer dans ce bâtiment situé de l’autre côté.</p><p><strong>1520-1525</strong><br>Construction d’une salle échevinale avec une cheminée monumentale.</p><p><strong>1528-1532</strong><br>Construction d’une galerie avec arches.</p><p><strong>17<sup>e</sup> siècle</strong><br>Nouvelle extension avec une chapelle et une chambre des orphelins.</p><p><strong>1722-1727</strong><br>Transformation dans un style classique.</p><p><strong>1794</strong><br>La maison du Franc de Bruges devient un tribunal.</p><p><strong>1984</strong><br>Le bâtiment est utilisé par l’administration de la ville de Bruges.</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 7,
+                    BuildingId = 2,
+                    LanguageId = 2, //NL
+                    Name = "Landhuis",
+                    Description = "<p><strong>11de eeuw</strong><br>bouw van de 'Love', residentie van de graven van Vlaanderen</p><p><strong>15de eeuw</strong>  <br>het bestuur van het Brugse Vrije (het platteland rondom Brugge) verhuist van Het Steen aan de overzijde naar deze locatie</p><p><strong>1520-1525</strong><br>bouw van een schepenkamer met monumentale schouw</p><p><strong>1528-1532</strong><br>bouw van een galerij met rondbogen</p><p><strong>17de eeuw</strong><br>verdere uitbreiding met een kapel en wezenkamer</p><p><strong>1722-1727</strong> <br>verbouwing in classicistische stijl</p><p><strong>1794</strong><br>het landhuis wordt gerechtshof</p><p><strong>1984</strong><br>in gebruik genomen door de stadsadministratie</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 8,
+                    BuildingId = 2,
+                    LanguageId = 3, //EN
+                    Name = "Manor House",
+                    Description = "<p><strong>11th century</strong><br>Love” building, the residence of the counts of Flanders</p><p><strong>15th century</strong><br>the government of the Franc of Bruges (the area of countryside surrounding Bruges) moved from Steen Castle (which was on the opposite side) to this location.</p><p><strong>1520-1525</strong><br>construction of an alderman’s room with monumental fireplace</p><p><strong>1528-1532</strong><br>construction of an arched gallery</p><p><strong>17th century</strong><br>further extensions including a chapel and orphanage</p><p><strong>1722-1727</strong><br>renovations in the classical style</p><p><strong>1794</strong><br>the manor became a court of justice</p><p><strong>1984</strong><br>came into use by the city administration</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 9,
+                    BuildingId = 2,
+                    LanguageId = 4, //DE
+                    Name = "Landeshaus",
+                    Description = "<p><strong>11. Jahrhundert</strong><br>Bau der Residenz „Love“ der Grafen von Flandern.</p><p><strong>15. Jahrhundert</strong><br>Das Brügger Freiamt (die Verwaltung des Brügger Umlands) zieht von „Het Steen“ auf die gegenüberliegende Seite an diesen Ort um.</p><p><strong>1520–1525</strong><br>Bau einer Schöffenkammer mit einem monumentalen Kamin.</p><p><strong>1528–1532</strong><br>Bau einer Galerie mit Rundbogen.</p><p><strong>17. Jahrhundert</strong><br>Zusätzliche Erweiterung mit Kapelle und Waisenkammer.</p><p><strong>1722–1727</strong><br>Umbau im klassizistischen Stil.</p><p><strong>1794</strong><br>Das Landeshaus wird in ein Gericht umfunktioniert.</p><p><strong>1984</strong><br>Die Stadtverwaltung wird im Gebäude untergebracht.</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 10,
+                    BuildingId = 2,
+                    LanguageId = 5, //ES
+                    Name = "Landhuis",
+                    Description = "<p><strong>Siglo XI</strong><br>Construcción del «<em>Love</em>», residencia de los condes de Flandes</p><p><strong>Siglo XV</strong><br>La administración del <em>Brugse Vrije</em> (el campo que rodeaba Brujas) se traslada a esta ubicación desde el <em>Steen</em>, situado al otro lado</p><p><strong>1520-1525</strong><br>Construcción de una sala para el escabinado, con una monumental chimenea</p><p><strong>1528-1532</strong><br>Construcción de una galería con arcos de medio punto</p><p><strong>Siglo XVII</strong><br>Ampliación con una capilla y un juzgado de huérfanos</p><p><strong>1722-1727</strong><br>Reforma en estilo clasicista</p><p><strong>1794</strong><br>El <em>landhuis</em> se convierte en tribunal&nbsp;</p><p><strong>1984</strong><br>Se pone al servicio de la administración municipal</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                //GRIFFIE
+                new BuildingTranslation
+                {
+                    Id = 11,
+                    BuildingId = 3,
+                    LanguageId = 1, //FR
+                    Name = "Greffe",
+                    Description = "<p><strong>1537</strong><br>Construit comme le bureau du greffier civil, l’un des plus importants fonctionnaires de la ville.</p><p><strong>1877-1881</strong><br>Restauration sous la direction de l’architecte de la ville Louis Delacenserie.</p><p><strong>1883</strong><br>Ajout de statues en bronze réalisées par le sculpteur brugeois Hendrik Pickery.</p><p><strong>2000</strong><br>Une nouvelle restauration redonne au bâtiment sa splendeur d’origine.</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 12,
+                    BuildingId = 3,
+                    LanguageId = 2, //NL
+                    Name = "Griffie",
+                    Description = "<p><strong>1537</strong><br>opgetrokken als kantoor van de griffier-civiel, een van de belangrijkste stadsambtenaren</p><p><strong>1877-1881</strong><br>restauratie onder leiding van stadsarchitect Louis Delacenserie</p><p><strong>1883</strong><br>toevoeging bronzen beelden door de Brugse beeldhouwer Hendrik Pickery</p><p><strong>2000</strong><br>een nieuwe restauratie geeft het gebouw zijn oorspronkelijke kleurenpracht terug</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 13,
+                    BuildingId = 3,
+                    LanguageId = 3, //EN
+                    Name = "Registry",
+                    Description = "<p><strong>1537</strong><br>came into use as the office of the Civil Registrar, one of the most important city officials</p><p><strong>1877-1881</strong><br>renovations led by city architect Louis Delacenserie</p><p><strong>1883</strong><br>addition of bronze sculptures by Bruges sculptor Hendrik Pickery</p><p><strong>2000</strong><br>another renovation restores the original beautiful colours to the building</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 14,
+                    BuildingId = 3,
+                    LanguageId = 4, //DE
+                    Name = "Alte Zivilkanzlei",
+                    Description = "<p><strong>1537</strong><br>Errichtung als Büro des Kanzleileiters des Zivilgerichts, der zu den wichtigsten Stadtbeamten gehört.</p><p><strong>1877–1881</strong><br>Restaurierung unter der Leitung des Stadtarchitekten Louis Delacenserie.</p><p><strong>1883</strong><br>Hinzufügung von Bronzeskulpturen des Brügger Bildhauers Hendrik Pickery.</p><p><strong>2000</strong><br>Im Zuge einer neuen Restaurierung erhält das Gebäude seine ursprüngliche Farbenpracht wieder.</p>",
+                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                },
+                new BuildingTranslation
+                {
+                    Id = 15,
+                    BuildingId = 3,
+                    LanguageId = 5, //ES
+                    Name = "Escribanía civil",
+                    Description = "<p><strong>1537</strong><br>Se construye como oficina del secretario judicial civil, uno de los funcionarios municipales más importantes</p><p><strong>1877-1881</strong><br>Restauración dirigida por el arquitecto municipal Louis Delacenserie</p><p><strong>1883</strong><br>Adición de esculturas de bronce del escultor brujense Hendrik Pickery</p><p><strong>2000</strong><br>Una nueva restauración le devuelve al edificio su colorido original</p>",
                     SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
                 }
             );

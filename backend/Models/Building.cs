@@ -7,6 +7,10 @@ namespace backend.Models
     public class Building
     {
         public long Id { get; set; }
+        public long AuthorId {get;set;}
+
+        [ForeignKey("AuthorId")]
+        public virtual Artist Author { get; set; }
         public int Year { get; set; }
         public long UseId {get;set;}
         public long MovementId {get;set;}
