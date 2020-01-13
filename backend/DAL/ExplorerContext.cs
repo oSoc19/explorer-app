@@ -112,6 +112,24 @@ namespace backend.DAL
                     Nationality = "Netherlands",
                     Birthdate = "1618-09-14",
                     Deathdate = "1680-11-30"
+                },
+                new Artist
+                {
+                    Id = 7,
+                    FirstName = "Hendrik",
+                    LastName = "Pickery",
+                    Nationality = "Netherlands",
+                    Birthdate = "1618-09-14",
+                    Deathdate = "1680-11-30"
+                },
+                new Artist
+                {
+                    Id = 8,
+                    FirstName = "Louis",
+                    LastName = "Delacenserie",
+                    Nationality = "Netherlands",
+                    Birthdate = "1618-09-14",
+                    Deathdate = "1680-11-30"
                 }
             );
 
@@ -424,119 +442,407 @@ namespace backend.DAL
                     LanguageId = 2,
                     Description = "Jacob II van Oost of Jacob van Oost de Jongere (Brugge, 1639 - Brugge, 29 september 1713) was een Vlaams barokschilder. Hij was de zoon van de Brugse stadsschilder Jacob I van Oost (1603-1671). Zijn broer Willem van Oost (1639-1713) was eveneens kunstschilder. Omstreeks 1660 vertrok Jacob II naar Parijs. Daarna bracht hij enkele jaren door in Rome. In 1668 vestigde hij zich in Rijsel, waar hij twee jaar later trouwde met Marie Bourgeois. Hun zoon Dominique (1677-1738) werd net als zijn vader kunstschilder in Rijsel. In 1703 keerde Jacob II definitief terug naar zijn geboortestad Brugge. Hij overleed er vijf jaar later. Hij is vooral bekend als schilder van portretten en genretaferelen. Verschillende van zijn werken zijn te bezichtigen in het Groeningemuseum in Brugge en de Sint-Mauritiuskerk in Rijsel. ",
                     SourceLink = "https://nl.wikipedia.org/wiki/Jacob_II_van_Oost"
+                },
+                // Pickery
+                new ArtistTranslation
+                {
+                    Id = 31,
+                    ArtistId = 7,
+                    LanguageId = 1, //FR
+                    Description = "Hendrik Pickery (1828-1894) était un sculpteur brugeois. Il fut l’élève du sculpteur liégeois Eugène Simonis (1810-1882). Les statues sur les escaliers et sur la façade du Palais provincial de Bruges (Grand-Place) ainsi que la statue de Hans Memling (Woensdagmarkt) ont également été réalisées par Pickery.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/63328"
+                },
+                new ArtistTranslation
+                {
+                    Id = 32,
+                    ArtistId = 7,
+                    LanguageId = 2, //NL
+                    Description = "Hendrik Pickery (1828–1894) was een Brugse beeldhouwer. Hij was een leerling van de Luikse beeldhouwer Eugène Simonis (1810–1882). Ook de beelden op de trappen en aan de gevel van het Provinciaal Hof (Markt) en het standbeeld van Hans Memling (Woensdagmarkt) zijn van de hand van Pickery.",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Hendrik_Pickery"
+                },
+                new ArtistTranslation
+                {
+                    Id = 33,
+                    ArtistId = 7,
+                    LanguageId = 3, //EN
+                    Description = "Hendrik Pickery (1828–1894) was a sculptor from Bruges. He was a student of the sculptor Eugène Simonis (1810–1882), who was from Liège. The statues on the steps of the gable of the Provinciaal Hof (Markt) and the statue of Hans Memling (Woensdagmarkt) are also Pickery’s work.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/63328"
+                },
+                new ArtistTranslation
+                {
+                    Id = 34,
+                    ArtistId = 7,
+                    LanguageId = 4, //DE
+                    Description = "Hendrik Pickery (1828–1894) war ein Brügger Bildhauer. Er war ein Schüler des Lütticher Bildhauers Eugène Simonis (1810–1882). Auch die Skulpturen auf den Treppen und an der Fassade des Provinzialpalastes („Provinciaal Hof“ am Marktplatz) und die Statue von Hans Memling (Woensdagmarkt) stammen von Pickery.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/63328"
+                },
+                new ArtistTranslation
+                {
+                    Id = 35,
+                    ArtistId = 7,
+                    LanguageId = 5, //ES
+                    Description = "Hendrik Pickery (1828–1894) fue un escultor brujense. Fue alumno del escultor liejense Eugène Simonis (1810–1882). Las estatuas sobre las escaleras y en la fachada de la Corte Provincial (en la plaza del Markt), y la estatua de Hans Memling (plaza de Woensdagmarkt) son obra de Pickery.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/63328"
+                },
+                // Delacenserie
+                new ArtistTranslation
+                {
+                    Id = 36,
+                    ArtistId = 8,
+                    LanguageId = 1, //FR
+                    Description = "L’architecte Louis Delacenserie (1838-1909) a restauré plusieurs bâtiments médiévaux de Bruges dans un style néogothique. Le Palais provincial sur la Grand-Place (1892) a également été conçu par lui. En dehors de la ville de Bruges, Louis Delacenserie a conçu notamment la Gare centrale d’Anvers.",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Louis_de_la_Censerie"
+                },
+                new ArtistTranslation
+                {
+                    Id = 37,
+                    ArtistId = 8,
+                    LanguageId = 2, //NL
+                    Description = "De architect Louis Delacenserie (1838-1909) restaureerde in Brugge verschillende middeleeuwse gebouwen in neogotische stijl. Ook het Provinciaal Hof op de Markt (1892) is van zijn hand. Buiten Brugge ontwierp hij onder meer het Centraal Station van Antwerpen.",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Louis_Delacenserie"
+                },
+                new ArtistTranslation
+                {
+                    Id = 38,
+                    ArtistId = 8,
+                    LanguageId = 3, //EN
+                    Description = "Architect Louis Delacenserie (1838-1909) restored a number of medieval buildings in Bruges in the neo-Gothic style. The Provinciaal Hof on the Markt is also his work. Outside Bruges, he designed Antwerp Central Station and other buildings.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/344043"
+                },
+                new ArtistTranslation
+                {
+                    Id = 39,
+                    ArtistId = 8,
+                    LanguageId = 4, //DE
+                    Description = "Der Architekt Louis Delacenserie (1838–1909) restaurierte in Brügge verschiedene mittelalterliche Gebäude im neugotischen Stil. Auch der Provinzialpalast am Marktplatz (1892) stammt von ihm. Außerhalb von Brügge entwarf er unter anderem den Antwerpener Zentralbahnhof.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/344043"
+                },
+                new ArtistTranslation
+                {
+                    Id = 40,
+                    ArtistId = 8,
+                    LanguageId = 5, //ES
+                    Description = "El arquitecto Louis Delacenserie (1838-1909) restauró en Brujas varios edificios medievales de estilo neogótico. La Corte Provincial en la plaza del Markt (1892) también fue obra suya. Fuera de Brujas diseñó, entre otras cosas, la Estación Central de Amberes.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/344043"
                 }
             );
 
             modelBuilder.Entity<Movement>()
             .HasData(
+                // Barok
                 new Movement
                 {
                     Id = 1
                 },
+                // Gotisch
                 new Movement
                 {
                     Id = 2
+                },
+                // Romanesque
+                new Movement
+                {
+                    Id = 3
+                },
+                // Renaissance
+                new Movement
+                {
+                    Id = 4
+                },
+                // Classicisme
+                new Movement
+                {
+                    Id = 5
+                },
+                // Romaans / Gotiek
+                new Movement
+                {
+                    Id = 6
                 }
             );
 
             modelBuilder.Entity<MovementTranslation>()
             .HasData(
+                // Barok
                 new MovementTranslation
                 {
                     Id = 1,
-                    MovementId = 1,
+                    MovementId = 1, //FR
                     Name = "Baroque",
                     LanguageId = 1,
-                    Description = "Le baroque est un mouvement artistique qui trouve son origine en Italie dans des villes telles que Rome, Mantoue, Venise et Florence dès le milieu du XVIe siècle et qui se termine au milieu du XVIIIe siècle. Il y a un âge baroque différent selon les domaines, qu'ils soient intellectuels, historiques ou artistiques. Certains critiques y voient une constante culturelle qui revient tout au long de l'histoire comme l'a écrit Eugenio d'Ors. Le baroque, qui touche tous les domaines, se caractérise par l’exagération du mouvement, la surcharge décorative, les effets dramatiques, la tension, l’exubérance des formes, la grandeur parfois pompeuse et le contraste. ",
-                    SourceLink = "https://fr.wikipedia.org/wiki/Baroque"
+                    Description = "L’architecture baroque s’est développée en Italie au début du 17<sup>e</sup> siècle et s’est ensuite répandue dans toute l’Europe. Il s’agit d’un style hautement décoratif et théâtral qui veut impressionner le visiteur. Le style a été fortement promu par l'Église catholique.",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Architecture_baroque"
                 
                 },
                 new MovementTranslation
                 {
                     Id = 2,
-                    MovementId = 1,
-                    Name = "Barok (stijlperiode)",
+                    MovementId = 1, //NL
+                    Name = "Barok",
                     LanguageId = 2,
-                    Description = "De barok is een Europese stijlperiode die aan het begin van de 17e eeuw in Italië tot ontwikkeling kwam en tot in de eerste helft van de 18e eeuw voortduurde, en die zich kenmerkt door overdaad van vorm en heftigheid van gevoelsuitdrukking. De barok kwam tot uiting op alle terreinen van de cultuur, zoals architectuur, tuinarchitectuur, schilderkunst, beeldhouwkunst, literatuur en muziek. Er wordt een onderscheid gemaakt tussen vroeg-, hoog- en laatbarok. De laatbarok wordt ook wel rococo genoemd. ",
-                    SourceLink = "https://nl.wikipedia.org/wiki/Barok_(stijlperiode)"
+                    Description = "De barokarchitectuur ontwikkelde zich in Italië in de vroege 17de eeuw en verspreidde zich van daar over Europa. Het is een sterk decoratieve en theatrale stijl die indruk wil maken op de bezoeker. De stijl werd sterk gepromoot door de Katholieke Kerk.",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Barokarchitectuur"
                 },
                 new MovementTranslation
                 {
                     Id = 3,
                     MovementId = 1,
                     Name = "Baroque",
-                    LanguageId = 3,
-                    Description = "The Baroque is a highly ornate and often extravagant style of architecture, music, dance, painting, sculpture and other arts that flourished in Europe from the early 17th until the mid-18th century. It followed Renaissance art and Mannerism and preceded the Rococo (in the past often referred to as 'late Baroque') and Neoclassical styles. It was encouraged by the Catholic Church as a means to counter the simplicity and austerity of Protestant architecture, art and music, though Lutheran Baroque art developed in parts of Europe as well. The Baroque style used contrast, movement, exuberant detail, deep colour, grandeur and surprise to achieve a sense of awe. The style began at the start of the 17th century in Rome, then spread rapidly to France, northern Italy, Spain and Portugal, then to Austria and southern Germany. ",
-                    SourceLink = "https://en.wikipedia.org/wiki/Baroque"
+                    LanguageId = 3, //EN
+                    Description = "Baroque architecture was developed in Italy in the early 17th century and its popularity extended from there across the rest of Europe. It is a highly decorative and theatrical style which aims to make a lasting impression upon visitors. This style was given prominence by the Catholic Church.",
+                    SourceLink = "https://en.wikipedia.org/wiki/Baroque_architecture"
                 },
                 new MovementTranslation
                 {
                     Id = 4,
                     MovementId = 1,
-                    Name = "Baroque",
+                    Name = "Barock", //DE
                     LanguageId = 4,
-                    Description = "Als Barock wird eine Epoche der europäischen Kunstgeschichte bezeichnet, die Ende des 16. Jahrhunderts begann und bis ca. 1760/70 reicht. Es handelt sich nicht um einen völlig einheitlichen Stilbegriff, da es innerhalb des Barockzeitalters gleichzeitig zum Teil sehr verschiedene künstlerische Ausprägungen und Unterströmungen und auch eine Entwicklung gab, nicht zuletzt auch große Unterschiede in verschiedenen Gegenden und Ländern. Eine grobe Unterteilung in drei oder vier Unterepochen ist üblich, deren zeitliche Abgrenzung jedoch nicht völlig eindeutig angegeben werden kann: Frühbarock (bis ca. 1650), Hochbarock (ca. 1650–1700), Spätbarock (ca. 1700–1730) und Rokoko (ca. 1730–1760/70). Gelegentlich werden Spätbarock und Rokoko gleichgesetzt, andererseits wird das Rokoko auch als eigenständige Epoche angesehen. ",
-                    SourceLink = "https://de.wikipedia.org/wiki/Barock"
+                    Description = "Die Architektur des Barocks entwickelte sich im frühen 17. Jahrhundert in Italien und verbreitete sich von dort aus über Europa. Der Barockstil ist ein stark dekorativer und theatralischer Stil, der Besucher beeindrucken soll. Dieser Stil wurde von der katholischen Kirche stark gefördert.",
+                    SourceLink = "https://de.wikipedia.org/wiki/Barock#Baukunst"
                 },
                 new MovementTranslation
                 {
                     Id = 5,
                     MovementId = 1,
-                    Name = "Barroco",
+                    Name = "Barroco", //ES
                     LanguageId = 5,
-                    Description = "El Barroco fue un período de la historia en la cultura occidental originado por una nueva forma de concebir el arte (el «estilo barroco») y que, partiendo desde diferentes contextos histórico-culturales, produjo obras en numerosos campos artísticos: literatura, arquitectura, escultura, pintura, música, ópera, danza, teatro, etc. Se manifestó principalmente en la Europa occidental, aunque debido al colonialismo también se dio en numerosas colonias de las potencias europeas, principalmente en Latinoamérica. Cronológicamente, abarcó todo el siglo XVII y principios del XVIII, con mayor o menor prolongación en el tiempo dependiendo de cada país. Se suele situar entre el Manierismo y el Rococó, en una época caracterizada por fuertes disputas religiosas entre países católicos y protestantes, así como marcadas diferencias políticas entre los Estados absolutistas y los parlamentarios, donde una incipiente burguesía empezaba a poner los cimientos del capitalismo. ",
-                    SourceLink = "https://es.wikipedia.org/wiki/Barroco"
+                    Description = "La arquitectura barroca se desarrolló en Italia a principios del siglo XVII, y de ahí se extendió por toda Europa. Se trata de un estilo fuertemente decorativo y teatral que tiene por objeto causar impresión en el visitante. La Iglesia católica promovió firmemente este estilo.",
+                    SourceLink = "https://es.wikipedia.org/wiki/Arquitectura_del_Barroco"
                 },
+                // Gotisch
                 new MovementTranslation
                 {
                     Id = 6,
-                    MovementId = 2,  //Gotisch
-                    Name = "Architecture gothique",
-                    LanguageId = 1, //Frans
-                    Description = "Le baroque est un mouvement artistique qui trouve son origine en Italie dans des villes telles que Rome, Mantoue, Venise et Florence dès le milieu du XVIe siècle et qui se termine au milieu du XVIIIe siècle. Il y a un âge baroque différent selon les domaines, qu'ils soient intellectuels, historiques ou artistiques. Certains critiques y voient une constante culturelle qui revient tout au long de l'histoire comme l'a écrit Eugenio d'Ors."
-                        +"Le baroque, qui touche tous les domaines, se caractérise par l’exagération du mouvement, la surcharge décorative, les effets dramatiques, la tension, l’exubérance des formes, la grandeur parfois pompeuse et le contraste, ce même contraste dont parlait Philippe Beaussant : l’époque baroque a tenté de dire « un monde où tous les contraires seraient harmonieusement possibles »",
+                    MovementId = 2,
+                    Name = "Gothique",
+                    LanguageId = 1, //FR
+                    Description = "L'architecture gothique est née en France au 12e siècle. À l’origine, ce style architectural était surtout utilisé pour les édifices religieux. Dès la fin du 15e siècle, les cathédrales gothiques ont également inspiré la construction d'hôtels de ville dans le nord de la France, en Belgique et aux Pays-Bas actuels.",
                     SourceLink = "https://fr.wikipedia.org/wiki/Architecture_gothique"
                 
                 },
                 new MovementTranslation
                 {
                     Id = 7,
-                    MovementId = 2,  //Gotisch
-                    Name = "Gotische architectuur",
-                    LanguageId = 2, //Nederlands
-                    Description = "De barok is een Europese stijlperiode die aan het begin van de 17e eeuw in Italië tot ontwikkeling kwam en tot in de eerste helft van de 18e eeuw voortduurde, en die zich kenmerkt door overdaad van vorm en heftigheid van gevoelsuitdrukking. De barok kwam tot uiting op alle terreinen van de cultuur, zoals architectuur, tuinarchitectuur, schilderkunst, beeldhouwkunst, literatuur en muziek. Er wordt een onderscheid gemaakt tussen vroeg-, hoog- en laatbarok. De laatbarok wordt ook wel rococo genoemd.",
+                    MovementId = 2,
+                    Name = "Gotisch",
+                    LanguageId = 2, //NL
+                    Description = "Gotische architectuur ontstond in het 12de-eeuwse Frankrijk. Aanvankelijk werd de bouwstijl vooral toegepast voor kerkgebouwen. Vanaf de late 15de eeuw inspireerden de gotische kathedralen ook de bouw van stadhuizen in het huidige Noord-Frankrijk, België en Nederland.",
                     SourceLink = "https://nl.wikipedia.org/wiki/Gotiek_(bouwkunst)"
                 },
                 new MovementTranslation
                 {
                     Id = 8,
-                    MovementId = 2,  //Gotisch
-                    Name = "Gothic architecture",
-                    LanguageId = 3, //Engels
-                    Description =   "Gothic art was a style of medieval art that developed in Northern France out of Romanesque art in the 12th century AD, led by the concurrent development of Gothic architecture." 
-                                    + "It spread to all of Western Europe, and much of Southern and Central Europe, never quite effacing more classical styles in Italy. In the late 14th century, the sophisticated court style of International Gothic developed, which continued to evolve until the late 15th century."
-                                    + "In many areas, especially Germany, Late Gothic art continued well into the 16th century, before being subsumed into Renaissance art. Primary media in the Gothic period included sculpture, panel painting, stained glass, fresco and illuminated manuscripts." 
-                                    + "The easily recognizable shifts in architecture from Romanesque to Gothic, and Gothic to Renaissance styles, are typically used to define the periods in art in all media, although in many ways figurative art developed at a different pace.",
-                    SourceLink = "https://en.wikipedia.org/wiki/Gothic_architecture"
+                    MovementId = 2,  
+                    Name = "Gothic",
+                    LanguageId = 3, //EN
+                    Description =   "The Gothic style of architecture emerged in the 12th century in France. Initially, this style was used for churches. From the late 15th century, gothic cathedrals were the inspiration for the construction of town halls in what is now northern France, Belgium and the Netherlands.",
+                    SourceLink = "https://en.wikipedia.org/wiki/Gothic_architecture#Civic_architecture"
                 },
                 new MovementTranslation
                 {
                     Id = 9,
-                    MovementId = 2, //Gotisch
-                    Name = "Gotische Architektur",
-                    LanguageId = 4, //Duits
-                    Description = "Als Barock (Maskulinum „der Barock“, oder gleichwertig Neutrum „das Barock“) wird eine Epoche der europäischen Kunstgeschichte bezeichnet, die Ende des 16. Jahrhunderts begann und bis ca. 1760/70 reicht. Es handelt sich nicht um einen völlig einheitlichen Stilbegriff, da es innerhalb des Barockzeitalters gleichzeitig zum Teil sehr verschiedene künstlerische Ausprägungen und Unterströmungen und auch eine Entwicklung gab, nicht zuletzt auch große Unterschiede in verschiedenen Gegenden und Ländern. Eine grobe Unterteilung in drei oder vier Unterepochen ist üblich, deren zeitliche Abgrenzung jedoch nicht völlig eindeutig angegeben werden kann: Frühbarock (bis ca. 1650), Hochbarock (ca. 1650–1700), Spätbarock (ca. 1700–1730) und Rokoko (ca. 1730–1760/70). Gelegentlich werden Spätbarock und Rokoko gleichgesetzt, andererseits wird das Rokoko auch als eigenständige Epoche angesehen."
-                        +"Dem Barock voraus gingen die Epochen der Renaissance und des Manierismus, ihm folgte der Klassizismus.",
+                    MovementId = 2,
+                    Name = "Gotisch",
+                    LanguageId = 4, //DE
+                    Description = "Die gotische Architektur entstand in Frankreich im 12. Jahrhundert. Zunächst kam der Baustil vor allem in Kirchengebäuden zum Einsatz. Ab dem 15. Jahrhundert ließ man sich beim Bau von Rathäusern im heutigen Nordfrankreich, Belgien und den Niederlanden auch von den gotischen Kathedralen inspirieren.",
                     SourceLink = "https://de.wikipedia.org/wiki/Gotik#Baukunst"
                 },
                 new MovementTranslation
                 {
                     Id = 10,
-                    MovementId = 2, //Gotisch
-                    Name = "Arquitectura gótica",
-                    LanguageId = 5, //Spaans
-                    Description = "El Barroco fue un período de la historia en la cultura occidental originado por una nueva forma de concebir el arte (el «estilo barroco») y que, partiendo desde diferentes contextos histórico-culturales, produjo obras en numerosos campos artísticos: literatura, arquitectura, escultura, pintura, música, ópera, danza, teatro, etc. Se manifestó principalmente en la Europa occidental, aunque debido al colonialismo también se dio en numerosas colonias de las potencias europeas, principalmente en Latinoamérica. Cronológicamente, abarcó todo el siglo XVII y principios del XVIII, con mayor o menor prolongación en el tiempo dependiendo de cada país. Se suele situar entre el Manierismo y el Rococó, en una época caracterizada por fuertes disputas religiosas entre países católicos y protestantes, así como marcadas diferencias políticas entre los Estados absolutistas y los parlamentarios, donde una incipiente burguesía empezaba a poner los cimientos del capitalismo."
-                        +"Como estilo artístico, el Barroco surgió a principios del siglo XVII (según otros autores a finales del XVI) en Italia —período también conocido en este país como Seicento—, desde donde se extendió hacia la mayor parte de Europa. Durante mucho tiempo (siglos XVIII y XIX) el término «barroco» tuvo un sentido peyorativo, con el significado de recargado, engañoso, caprichoso, hasta que fue posteriormente revalorizado a finales del siglo XIX por Jacob Burckhardt y, en el XX, por Benedetto Croce y Eugenio d'Ors. Algunos historiadores dividen el Barroco en tres períodos: «primitivo» (1580-1630), «maduro» o «pleno» (1630-1680) y «tardío» (1680-1750).",
+                    MovementId = 2,
+                    Name = "Gótico",
+                    LanguageId = 5, //ES
+                    Description = "La arquitectura gótica surgió en la Francia del siglo XII. Originariamente, el estilo de construcción se aplicó principalmente a edificios de iglesias. Desde finales del siglo XV, las catedrales góticas también inspiraron la construcción actual de ayuntamientos en el norte de Francia, Bélgica y los Países Bajos.",
+                    SourceLink = "https://es.wikipedia.org/wiki/Arquitectura_g%C3%B3tica"
+                },
+                // Romanesque
+                new MovementTranslation
+                {
+                    Id = 11,
+                    MovementId = 3,
+                    Name = "Roman",
+                    LanguageId = 1, //FR
+                    Description = "L’architecture romane s'est développée entre 1000 et 1200. Elle s’est inspirée des architectes carolingiens et ottoniens qui, à leur tour, ont suivi des exemples romains et byzantins. Des murs épais, des arcs en demi-cercle et des colonnes robustes sont typiques de l'architecture romane.",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Architecture_romane"
+                
+                },
+                new MovementTranslation
+                {
+                    Id = 12,
+                    MovementId = 3,
+                    Name = "Romaans",
+                    LanguageId = 2, //NL
+                    Description = "De romaanse architectuur bloeide tussen 1000 en 1200. Ze inspireerde zich op de Karolingische een Ottoonse architecten, die op hun beurt op Romeinse en Byzantijnse voorbeelden navolgden. Dikke muren, rondbogen en robuuste zuilen zijn typisch voor de romaanse architectuur.",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Romaanse_architectuur"
+                },
+                new MovementTranslation
+                {
+                    Id = 13,
+                    MovementId = 3,  
+                    Name = "Romanesque",
+                    LanguageId = 3, //EN
+                    Description =   "Romanesque architecture flourished between 1000 and 1200. It took inspiration from Carolingian and Ottoman architects, who in turn were inspired by Roman and Byzantine architecture. Thick walls, rounded arches and robust columns are typical features of Romanesque architecture.",
+                    SourceLink = "https://en.wikipedia.org/wiki/Romanesque_architecture"
+                },
+                new MovementTranslation
+                {
+                    Id = 14,
+                    MovementId = 3,
+                    Name = "Romanisch",
+                    LanguageId = 4, //DE
+                    Description = "Die romanische Architektur erlebte ihre Blütezeit zwischen 1000 und 1200. Sie wurde von karolingischen und ottonischen Architekten inspiriert, die ihrerseits römischen und byzantinischen Vorbildern folgten. Typisch für die romanische Architektur sind dicke Mauern, Rundbogen und robuste Säulen.",
+                    SourceLink = "https://de.wikipedia.org/wiki/Romanik#Romanische_Baukunst"
+                },
+                new MovementTranslation
+                {
+                    Id = 15,
+                    MovementId = 3,
+                    Name = "Románico",
+                    LanguageId = 5, //ES
+                    Description = "La arquitectura románica prosperó entre los años 1000 y 1200. Se inspiró en arquitectos carolingios y otomanos, que, a su vez, seguían los ejemplos romanos y bizantinos. Los elementos típicos de la arquitectura románica son los muros de gran grosor, los arcos de medio punto y las robustas columnas.",
+                    SourceLink = "https://es.wikipedia.org/wiki/Arte_rom%C3%A1nico"
+                },
+                // Renaissance
+                new MovementTranslation
+                {
+                    Id = 16,
+                    MovementId = 4,
+                    Name = "Renaissance",
+                    LanguageId = 1, //FR
+                    Description = "L’architecture grecque et romaine a été redécouverte aux alentours de 1400. Comme dans les temps anciens, l’architecture de la Renaissance accordait une importante toute particulière à la proportion et à l’harmonie. Les architectes et bâtisseurs ont bénéficié d’une plus grande considération et ont gagné en confiance. Vers 1600, l’architecture de la Renaissance est passée à l’ère baroque.",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Architecture_de_la_Renaissance"
+                
+                },
+                new MovementTranslation
+                {
+                    Id = 17,
+                    MovementId = 4,
+                    Name = "Renaissance",
+                    LanguageId = 2, //NL
+                    Description = "Vanaf ongeveer 1400 werd de Griekse en Romeinse bouwkunst herontdekt. Net zoals in de oudheid hechtte renaissancearchitectuur veel belang aan proportie en harmonie. Bouwmeesters kregen meer aanzien en zelfvertrouwen. Omstreeks 1600 ging de renaissancearchitectuur over in de barok.",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Renaissancearchitectuur"
+                },
+                new MovementTranslation
+                {
+                    Id = 18,
+                    MovementId = 4,  
+                    Name = "Renaissance",
+                    LanguageId = 3, //EN
+                    Description =   "Greek and Roman architecture was rediscovered in around 1400. Just like in ancient times, Renaissance architecture put great emphasis on the importance of proportions and harmony. Architects were given more respect and their confidence grew. The Renaissance period gave way to the Baroque style in around 1600.",
+                    SourceLink = "https://en.wikipedia.org/wiki/Renaissance_architecture"
+                },
+                new MovementTranslation
+                {
+                    Id = 19,
+                    MovementId = 4,
+                    Name = "Renaissance",
+                    LanguageId = 4, //DE
+                    Description = "Ab etwa 1400 wurde die griechische und römische Baukunst wiederentdeckt. Wie im Altertum wurde in der Architektur der Renaissance ausgewogenen Proportionen und Harmonie viel Bedeutung beigemessen. Die Baumeister erwarben ein größeres Ansehen und mehr Selbstvertrauen. Um 1600 ging die Renaissance-Architektur in den Barock über.",
+                    SourceLink = "https://de.wikipedia.org/wiki/Architektur_der_Renaissance"
+                },
+                new MovementTranslation
+                {
+                    Id = 20,
+                    MovementId = 4,
+                    Name = "Renacimiento",
+                    LanguageId = 5, //ES
+                    Description = "A partir de aproximadamente 1400 resurge la arquitectura griega y romana. De igual forma que en la antigüedad, la arquitectura renacentista concede mucha importancia a la proporción y a la armonía. Los arquitectos adquieren un mayor prestigio y seguridad en sí mismos. Hacia el año 1600 el barroco sustituye a la arquitectura renacentista.",
+                    SourceLink = "https://es.wikipedia.org/wiki/Arquitectura_del_Renacimiento"
+                },
+                // Classicisme
+                new MovementTranslation
+                {
+                    Id = 21,
+                    MovementId = 5,
+                    Name = "Classicisme",
+                    LanguageId = 1, //FR
+                    Description = "Dès la Renaissance, l’architecture de l’Antiquité est redevenue une source d'inspiration pour les architectes. Dans l’architecture classique, des proportions fixes sont utilisées dans la composition et la colonne, le pilastre ainsi que le fronton sont les éléments de construction les plus importants.",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Classicisme#Architecture"
+                
+                },
+                new MovementTranslation
+                {
+                    Id = 22,
+                    MovementId = 5,
+                    Name = "Classicisme",
+                    LanguageId = 2, //NL
+                    Description = "Al vanaf de renaissance vormde de bouwkunst van de antieke oudheid opnieuw een inspiratiebron voor architecten. In de classicistische architectuur worden vaste verhoudingen in de compositie toegepast en zijn de zuil, de pilaster en het fronton de belangrijkste bouwelementen.",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Classicisme#Architectuur"
+                },
+                new MovementTranslation
+                {
+                    Id = 23,
+                    MovementId = 5,  
+                    Name = "Classicism",
+                    LanguageId = 3, //EN
+                    Description =   "From as far back as the Renaissance, the architecture of ancient times has been a source of inspiration for architects. In classical architecture, there are fixed proportions for composition, and columns, pilasters and pediments are the most important features.",
+                    SourceLink = "https://en.wikipedia.org/wiki/Classicism#In_architecture"
+                },
+                new MovementTranslation
+                {
+                    Id = 24,
+                    MovementId = 5,
+                    Name = "Klassizismus",
+                    LanguageId = 4, //DE
+                    Description = "Bereits seit der Renaissance diente die Baukunst des antiken Altertums erneut als Inspirationsquelle für Architekten. In der klassizistischen Architektur werden feste Proportionsverhältnisse angewandt. Säule, Pilaster und Fronton sind die wichtigsten Bauelemente.",
+                    SourceLink = "https://de.wikipedia.org/wiki/Klassizismus#Architektur_des_Klassizismus"
+                },
+                new MovementTranslation
+                {
+                    Id = 25,
+                    MovementId = 5,
+                    Name = "Clasicismo",
+                    LanguageId = 5, //ES
+                    Description = "Ya desde la época renacentista, la arquitectura de la antigüedad clásica volvía a ser fuente de inspiración para los arquitectos. En la arquitectura clasicista se aplican las proporciones fijas en la composición y la columna, la pilastra y el frontón forman los elementos arquitectónicos más importantes.",
+                    SourceLink = "https://es.wikipedia.org/wiki/Arquitectura_neocl%C3%A1sica"
+                },
+                // Romaans / Gotiek
+                new MovementTranslation
+                {
+                    Id = 26,
+                    MovementId = 6,
+                    Name = "Roman / Gotique",
+                    LanguageId = 1, //FR
+                    Description = "<p><strong>Roman</strong></p> <p>L’architecture romane s'est développée entre 1000 et 1200. Elle s’est inspirée des architectes carolingiens et ottoniens qui, à leur tour, ont suivi des exemples romains et byzantins. Des murs épais, des arcs en demi-cercle et des colonnes robustes sont typiques de l'architecture romane.</p> <p><strong>Gotique</strong></p> <p>L'architecture gothique est née en France au 12<sup>e</sup> siècle. À l’origine, ce style architectural était surtout utilisé pour les édifices religieux. Dès la fin du 15<sup>e</sup> siècle, les cathédrales gothiques ont également inspiré la construction d'hôtels de ville dans le nord de la France, en Belgique et aux Pays-Bas actuels.</p>",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Architecture_gothique"
+                
+                },
+                new MovementTranslation
+                {
+                    Id = 27,
+                    MovementId = 6,
+                    Name = "Romaans / Gotisch",
+                    LanguageId = 2, //NL
+                    Description = "<p><strong>Romaans</strong></p> <p>De romaanse architectuur bloeide tussen 1000 en 1200. Ze inspireerde zich op de Karolingische een Ottoonse architecten, die op hun beurt op Romeinse en Byzantijnse voorbeelden navolgden. Dikke muren, rondbogen en robuuste zuilen zijn typisch voor de romaanse architectuur.</p> <p><strong>Gotisch</strong></p> <p>Gotische architectuur ontstond in het 12<sup>de</sup>-eeuwse Frankrijk. Aanvankelijk werd de bouwstijl vooral toegepast voor kerkgebouwen. Vanaf de late 15de eeuw inspireerden de gotische kathedralen ook de bouw van stadhuizen in het huidige Noord-Frankrijk, België en Nederland.</p>",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Gotiek_(bouwkunst)"
+                },
+                new MovementTranslation
+                {
+                    Id = 28,
+                    MovementId = 6,  
+                    Name = "Romanesque / Gothique",
+                    LanguageId = 3, //EN
+                    Description =   "<p><strong>Romanesque</strong></p> <p>Romanesque architecture flourished between 1000 and 1200. It took inspiration from Carolingian and Ottoman architects, who in turn were inspired by Roman and Byzantine architecture. Thick walls, rounded arches and robust columns are typical features of Romanesque architecture.</p> <p><strong>Gothic</strong></p> <p>The Gothic style of architecture emerged in the 12th century in France. Initially, this style was used for churches. From the late 15th century, gothic cathedrals were the inspiration for the construction of town halls in what is now northern France, Belgium and the Netherlands.</p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Gothic_architecture#Civic_architecture"
+                },
+                new MovementTranslation
+                {
+                    Id = 29,
+                    MovementId = 6,
+                    Name = "Romanisch / Gotisch",
+                    LanguageId = 4, //DE
+                    Description = "<p><strong>Romanisch</strong></p> <p>Die romanische Architektur erlebte ihre Blütezeit zwischen 1000 und 1200. Sie wurde von karolingischen und ottonischen Architekten inspiriert, die ihrerseits römischen und byzantinischen Vorbildern folgten. Typisch für die romanische Architektur sind dicke Mauern, Rundbogen und robuste Säulen.</p> <p><strong>Gotisch</strong></p> <p>Die gotische Architektur entstand in Frankreich im 12. Jahrhundert. Zunächst kam der Baustil vor allem in Kirchengebäuden zum Einsatz. Ab dem 15. Jahrhundert ließ man sich beim Bau von Rathäusern im heutigen Nordfrankreich, Belgien und den Niederlanden auch von den gotischen Kathedralen inspirieren.</p>",
+                    SourceLink = "https://de.wikipedia.org/wiki/Gotik#Baukunst"
+                },
+                new MovementTranslation
+                {
+                    Id = 30,
+                    MovementId = 6,
+                    Name = "Románico / Gótico",
+                    LanguageId = 5, //ES
+                    Description = "<p><strong>Románico</strong></p> <p>La arquitectura románica prosperó entre los años 1000 y 1200. Se inspiró en arquitectos carolingios y otomanos, que, a su vez, seguían los ejemplos romanos y bizantinos. Los elementos típicos de la arquitectura románica son los muros de gran grosor, los arcos de medio punto y las robustas columnas.&nbsp;</p> <p><strong>Gótico</strong></p> <p>La arquitectura gótica surgió en la Francia del siglo XII. Originariamente, el estilo de construcción se aplicó principalmente a edificios de iglesias. Desde finales del siglo XV, las catedrales góticas también inspiraron la construcción actual de ayuntamientos en el norte de Francia, Bélgica y los Países Bajos.</p>",
                     SourceLink = "https://es.wikipedia.org/wiki/Arquitectura_g%C3%B3tica"
                 }
             );
@@ -2184,34 +2490,34 @@ namespace backend.DAL
                 new Building // Burg
                 {
                     Id = 1,
-                    AuthorId = 1,
+                    AuthorId = 1, //fout
                     Year = 1400,
                     MuseumCode = "AA",
                     UseId = 1,
-                    MovementId = 2,
+                    MovementId = 1 //fout
                 },
                 new Building // Landhuis
                 {
                     Id = 2,
-                    AuthorId = 1,
+                    AuthorId = 1, //fout
                     Year = 1400,
                     MuseumCode = "AB",
                     UseId = 1,
-                    MovementId = 2,
+                    MovementId = 5,
                 },
                 new Building // Griffie
                 {
                     Id = 3,
-                    AuthorId = 1,
+                    AuthorId = 7,
                     Year = 1699,
                     MuseumCode = "AC",
                     UseId = 1,
-                    MovementId = 2
+                    MovementId = 4
                 },
                 new Building // Stadhuis
                 {
                     Id = 4,
-                    AuthorId = 1,
+                    AuthorId = 8,
                     Year = 1699,
                     MuseumCode = "AD",
                     UseId = 1,
@@ -2220,38 +2526,38 @@ namespace backend.DAL
                 new Building // Basiliek
                 {
                     Id = 5,
-                    AuthorId = 1,
+                    AuthorId = 1, // fout
                     Year = 1699,
                     MuseumCode = "AE",
                     UseId = 1,
-                    MovementId = 2
+                    MovementId = 6
                 },
                 new Building // Steen
                 {
                     Id = 6,
-                    AuthorId = 1,
+                    AuthorId = 1, //fout
                     Year = 1699,
                     MuseumCode = "AF",
                     UseId = 1,
-                    MovementId = 2
+                    MovementId = 1 //fout
                 },
                 new Building // Proosdij
                 {
                     Id = 7,
-                    AuthorId = 1,
+                    AuthorId = 1, //fout
                     Year = 1699,
                     MuseumCode = "AG",
                     UseId = 1,
-                    MovementId = 2
+                    MovementId = 1
                 },
                 new Building // Kathedraal/Crowne Plaza
                 {
                     Id = 8,
-                    AuthorId = 1,
+                    AuthorId = 1, //fout
                     Year = 1699,
                     MuseumCode = "AH",
                     UseId = 1,
-                    MovementId = 2
+                    MovementId = 6
                 }
             );
 
@@ -2323,45 +2629,45 @@ namespace backend.DAL
                     Id = 1,
                     BuildingId = 1,
                     LanguageId = 1, //FR
-                    Name = "Place du Bourg",
+                    Name = "La Place du Bourg",
                     Description = "<p>La place du Bourg est l’un des centres urbains les plus anciens de la ville de Bruges. Il s’agit d’une ancienne forteresse. Au départ, elle était fortifiée et dotée de portes d’accès.</p><p>La forteresse se situait à la jonction de la route Oudenburg-Aardenburg et du Reie, un cours d’eau.</p><p>Le comte Arnulf Ier de Flandre (889-965) a fait de la forteresse un centre de pouvoir avec une fonction administrative et religieuse. La résidence du comte, le conseil municipal, l’église de Saint-Donatien et, plus tard, la Basilique du Saint-Sang ont trouvé leur place dans la forteresse.</p><p>La cathédrale Saint-Donatien a été démolie en 1799. L’église n’a pas été reconstruite. Par conséquent, la place a doublé de taille.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://fr.wikipedia.org/wiki/Place_du_Bourg"
                 },
                 new BuildingTranslation
                 {
                     Id = 2,
                     BuildingId = 1,
                     LanguageId = 2, //NL
-                    Name = "Burg",
+                    Name = "De Burg",
                     Description = "<p>De Burg is een van de oudste kernen van de stad. Het is een voormalige vesting. Aanvankelijk was ze omwald en voorzien van toegangspoorten.</p><p>De versterkte vesting bevond zich op het knooppunt van de weg Oudenburg-Aardenburg en de waterloop de Reie.</p><p>Graaf Arnulf I van Vlaanderen (889-965) bouwde de burcht uit tot een machtscentrum met een bestuurlijke en religieuze functie. De grafelijke residentie, het stadsbestuur, de Sint-Donaaskerk en de latere Heilig-Bloedbasiliek vonden een plaats binnen de vesting.</p><p>In 1799 werd de Sint-Donaaskathedraal gesloopt. De kerk werd niet heropgebouwd. Daardoor verdubbelde het plein in omvang.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://nl.wikipedia.org/wiki/Burg_(Brugge)"
                 },
                 new BuildingTranslation
                 {
                     Id = 3,
                     BuildingId = 1,
                     LanguageId = 3, //EN
-                    Name = "Burg Square",
+                    Name = "The Burg Square",
                     Description = "<p>Burg Square is one of the oldest parts of the city centre. It is a former fortress and was originally walled in and had entrance gates.</p><p>The fortress was located at the meeting-point of the Oudenburg-Aardenburg road and the Reie canal.</p><p>Count Arnulf I van Vlaanderen (889-965) extended the fortress, transforming it into a powerful religious and administrative centre. The Count’s Residence, the City Council, Saint Donatian’s Church and later the Basilica of the Holy Blood were also located within the fortress walls.</p><p>Saint Donatian’s Cathedral was demolished in 1799. It was never re-built, meaning that the square doubled to twice its previous size.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://en.wikipedia.org/wiki/Burg_Square"
                 },
                 new BuildingTranslation
                 {
                     Id = 4,
                     BuildingId = 1,
                     LanguageId = 4, //DE
-                    Name = "Burg",
+                    Name = "Der Burgplatz",
                     Description = "<p>Der Burgplatz, eine ehemalige Festung, ist einer der ältesten Kernbereiche der Stadt. Anfänglich war der Platz mit Wällen und Zugangstoren versehen.</p><p>Die Festung befand sich am Knotenpunkt der Straße von Oudenburg nach Aardenburg und dem Fluss Reie.</p><p>Graf Arnulf I. von Flandern (889–965) verwandelte die Festung in ein Machtzentrum, das religiöse und verwaltungstechnische Funktionen erfüllte. In dieser Festung wurden die gräfliche Residenz, die Stadtverwaltung, die Kathedrale Sankt Donatian und die spätere Heilig-Blut-Basilika untergebracht.</p><p>1799 wurde die Kathedrale Sankt Donatian abgerissen und nicht wieder aufgebaut, wodurch der Platz zweimal so groß wurde.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://de.wikipedia.org/wiki/Burgplatz_(Br%C3%BCgge)"
                 },
                 new BuildingTranslation
                 {
                     Id = 5,
                     BuildingId = 1,
                     LanguageId = 5, //ES
-                    Name = "Burg",
+                    Name = "La Plaza Burg",
                     Description = "<p>El edificio de Burg constituye uno de los núcleos más antiguos de la ciudad. Se trata de una antigua fortaleza. Originariamente estaba amurallado y contaba con puertas de acceso.&nbsp;</p><p>La fortaleza estaba situada en la intersección de la carretera de <em>Oudenburg-Aardenburg</em> y el canal de <em>Reie</em>.</p><p>El conde Arnulfo I de Flandes (889-965) amplió el castillo a un centro de poder con una función administrativa y religiosa. La residencia condal, las autoridades municipales, la Iglesia de San Donaciano y la posterior Basílica de la Santa Sangre se encontraban en el interior de la fortaleza. &nbsp; &nbsp;</p><p>En 1799 se destruyó la Catedral de San Donaciano. La iglesia no volvió a construirse, algo que permitió que la plaza doblara su extensión.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://en.wikipedia.org/wiki/Burg_Square"
                 },
                 //LANDHUIS
                 new BuildingTranslation
@@ -2369,45 +2675,45 @@ namespace backend.DAL
                     Id = 6,
                     BuildingId = 2,
                     LanguageId = 1, //FR
-                    Name = "Maison du Franc de Bruges",
+                    Name = "Maison du Franc de Bruges ",
                     Description = "<p><strong>11<sup>e</sup> siècle</strong><br>Construction de « Love », la résidence des comtes de Flandre.</p><p><strong>15<sup>e</sup> siècle</strong><br>L’administration du Franc de Bruges (la campagne brugeoise) déménage du bâtiment « Het Steen » pour s’installer dans ce bâtiment situé de l’autre côté.</p><p><strong>1520-1525</strong><br>Construction d’une salle échevinale avec une cheminée monumentale.</p><p><strong>1528-1532</strong><br>Construction d’une galerie avec arches.</p><p><strong>17<sup>e</sup> siècle</strong><br>Nouvelle extension avec une chapelle et une chambre des orphelins.</p><p><strong>1722-1727</strong><br>Transformation dans un style classique.</p><p><strong>1794</strong><br>La maison du Franc de Bruges devient un tribunal.</p><p><strong>1984</strong><br>Le bâtiment est utilisé par l’administration de la ville de Bruges.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://fr.wikipedia.org/wiki/Franc_de_Bruges#Maison_du_Franc_%C3%A0_Bruges"
                 },
                 new BuildingTranslation
                 {
                     Id = 7,
                     BuildingId = 2,
                     LanguageId = 2, //NL
-                    Name = "Landhuis",
+                    Name = "Landhuis van het Brugse Vrije ",
                     Description = "<p><strong>11de eeuw</strong><br>bouw van de 'Love', residentie van de graven van Vlaanderen</p><p><strong>15de eeuw</strong>  <br>het bestuur van het Brugse Vrije (het platteland rondom Brugge) verhuist van Het Steen aan de overzijde naar deze locatie</p><p><strong>1520-1525</strong><br>bouw van een schepenkamer met monumentale schouw</p><p><strong>1528-1532</strong><br>bouw van een galerij met rondbogen</p><p><strong>17de eeuw</strong><br>verdere uitbreiding met een kapel en wezenkamer</p><p><strong>1722-1727</strong> <br>verbouwing in classicistische stijl</p><p><strong>1794</strong><br>het landhuis wordt gerechtshof</p><p><strong>1984</strong><br>in gebruik genomen door de stadsadministratie</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://nl.wikipedia.org/wiki/Brugse_Vrije"
                 },
                 new BuildingTranslation
                 {
                     Id = 8,
                     BuildingId = 2,
                     LanguageId = 3, //EN
-                    Name = "Manor House",
+                    Name = "Manor of the Franc of Bruges ",
                     Description = "<p><strong>11th century</strong><br>Love” building, the residence of the counts of Flanders</p><p><strong>15th century</strong><br>the government of the Franc of Bruges (the area of countryside surrounding Bruges) moved from Steen Castle (which was on the opposite side) to this location.</p><p><strong>1520-1525</strong><br>construction of an alderman’s room with monumental fireplace</p><p><strong>1528-1532</strong><br>construction of an arched gallery</p><p><strong>17th century</strong><br>further extensions including a chapel and orphanage</p><p><strong>1722-1727</strong><br>renovations in the classical style</p><p><strong>1794</strong><br>the manor became a court of justice</p><p><strong>1984</strong><br>came into use by the city administration</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://en.wikipedia.org/wiki/Brugse_Vrije#The_Manor"
                 },
                 new BuildingTranslation
                 {
                     Id = 9,
                     BuildingId = 2,
                     LanguageId = 4, //DE
-                    Name = "Landeshaus",
+                    Name = "Landeshaus des Brügger Freiamts ",
                     Description = "<p><strong>11. Jahrhundert</strong><br>Bau der Residenz „Love“ der Grafen von Flandern.</p><p><strong>15. Jahrhundert</strong><br>Das Brügger Freiamt (die Verwaltung des Brügger Umlands) zieht von „Het Steen“ auf die gegenüberliegende Seite an diesen Ort um.</p><p><strong>1520–1525</strong><br>Bau einer Schöffenkammer mit einem monumentalen Kamin.</p><p><strong>1528–1532</strong><br>Bau einer Galerie mit Rundbogen.</p><p><strong>17. Jahrhundert</strong><br>Zusätzliche Erweiterung mit Kapelle und Waisenkammer.</p><p><strong>1722–1727</strong><br>Umbau im klassizistischen Stil.</p><p><strong>1794</strong><br>Das Landeshaus wird in ein Gericht umfunktioniert.</p><p><strong>1984</strong><br>Die Stadtverwaltung wird im Gebäude untergebracht.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://de.wikipedia.org/wiki/Br%C3%BCgger_Freiamt#Landeshaus_des_Br%C3%BCgger_Freiamts"
                 },
                 new BuildingTranslation
                 {
                     Id = 10,
                     BuildingId = 2,
                     LanguageId = 5, //ES
-                    Name = "Landhuis",
+                    Name = "Mansión del Franconato de Brujas",
                     Description = "<p><strong>Siglo XI</strong><br>Construcción del «<em>Love</em>», residencia de los condes de Flandes</p><p><strong>Siglo XV</strong><br>La administración del <em>Brugse Vrije</em> (el campo que rodeaba Brujas) se traslada a esta ubicación desde el <em>Steen</em>, situado al otro lado</p><p><strong>1520-1525</strong><br>Construcción de una sala para el escabinado, con una monumental chimenea</p><p><strong>1528-1532</strong><br>Construcción de una galería con arcos de medio punto</p><p><strong>Siglo XVII</strong><br>Ampliación con una capilla y un juzgado de huérfanos</p><p><strong>1722-1727</strong><br>Reforma en estilo clasicista</p><p><strong>1794</strong><br>El <em>landhuis</em> se convierte en tribunal&nbsp;</p><p><strong>1984</strong><br>Se pone al servicio de la administración municipal</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://en.wikipedia.org/wiki/Brugse_Vrije#The_Manor"
                 },
                 //GRIFFIE
                 new BuildingTranslation
@@ -2415,27 +2721,27 @@ namespace backend.DAL
                     Id = 11,
                     BuildingId = 3,
                     LanguageId = 1, //FR
-                    Name = "Greffe",
+                    Name = "Ancien Greffe Civil",
                     Description = "<p><strong>1537</strong><br>Construit comme le bureau du greffier civil, l’un des plus importants fonctionnaires de la ville.</p><p><strong>1877-1881</strong><br>Restauration sous la direction de l’architecte de la ville Louis Delacenserie.</p><p><strong>1883</strong><br>Ajout de statues en bronze réalisées par le sculpteur brugeois Hendrik Pickery.</p><p><strong>2000</strong><br>Une nouvelle restauration redonne au bâtiment sa splendeur d’origine.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://fr.wikipedia.org/wiki/Ancien_greffe_civil_de_la_ville_de_Bruges"
                 },
                 new BuildingTranslation
                 {
                     Id = 12,
                     BuildingId = 3,
                     LanguageId = 2, //NL
-                    Name = "Griffie",
+                    Name = "Oude Civiele Griffie",
                     Description = "<p><strong>1537</strong><br>opgetrokken als kantoor van de griffier-civiel, een van de belangrijkste stadsambtenaren</p><p><strong>1877-1881</strong><br>restauratie onder leiding van stadsarchitect Louis Delacenserie</p><p><strong>1883</strong><br>toevoeging bronzen beelden door de Brugse beeldhouwer Hendrik Pickery</p><p><strong>2000</strong><br>een nieuwe restauratie geeft het gebouw zijn oorspronkelijke kleurenpracht terug</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://nl.wikipedia.org/wiki/Oude_Civiele_Griffie"
                 },
                 new BuildingTranslation
                 {
                     Id = 13,
                     BuildingId = 3,
                     LanguageId = 3, //EN
-                    Name = "Registry",
+                    Name = "Old Civil Registry",
                     Description = "<p><strong>1537</strong><br>came into use as the office of the Civil Registrar, one of the most important city officials</p><p><strong>1877-1881</strong><br>renovations led by city architect Louis Delacenserie</p><p><strong>1883</strong><br>addition of bronze sculptures by Bruges sculptor Hendrik Pickery</p><p><strong>2000</strong><br>another renovation restores the original beautiful colours to the building</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://en.wikipedia.org/wiki/Old_Civil_Registry"
                 },
                 new BuildingTranslation
                 {
@@ -2444,42 +2750,2210 @@ namespace backend.DAL
                     LanguageId = 4, //DE
                     Name = "Alte Zivilkanzlei",
                     Description = "<p><strong>1537</strong><br>Errichtung als Büro des Kanzleileiters des Zivilgerichts, der zu den wichtigsten Stadtbeamten gehört.</p><p><strong>1877–1881</strong><br>Restaurierung unter der Leitung des Stadtarchitekten Louis Delacenserie.</p><p><strong>1883</strong><br>Hinzufügung von Bronzeskulpturen des Brügger Bildhauers Hendrik Pickery.</p><p><strong>2000</strong><br>Im Zuge einer neuen Restaurierung erhält das Gebäude seine ursprüngliche Farbenpracht wieder.</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://de.wikipedia.org/wiki/Alte_Zivilkanzlei_(Br%C3%BCgge)"
                 },
                 new BuildingTranslation
                 {
                     Id = 15,
                     BuildingId = 3,
                     LanguageId = 5, //ES
-                    Name = "Escribanía civil",
+                    Name = "Antigua Escribanía civil",
                     Description = "<p><strong>1537</strong><br>Se construye como oficina del secretario judicial civil, uno de los funcionarios municipales más importantes</p><p><strong>1877-1881</strong><br>Restauración dirigida por el arquitecto municipal Louis Delacenserie</p><p><strong>1883</strong><br>Adición de esculturas de bronce del escultor brujense Hendrik Pickery</p><p><strong>2000</strong><br>Una nueva restauración le devuelve al edificio su colorido original</p>",
-                    SourceLink = "http://groeningemuseum.be/collection/work/data/0000_GRO0004_I"
+                    SourceLink = "https://en.wikipedia.org/wiki/Old_Civil_Registry"
+                },
+                //STADHUIS
+                new BuildingTranslation
+                {
+                    Id = 16,
+                    BuildingId = 4,
+                    LanguageId = 1, //FR
+                    Name = "Hôtel de ville",
+                    Description = "<p><strong>1280</strong><br>Après un incendie dans le Beffroi sur la Grand-Place, les échevins prennent possession de la « ghyselhuus », l’ancienne prison comtale.</p><p><strong>1376</strong><br>Le comte Lodewijk van Male fait démolir la « ghyselhuus » pour la remplacer par une véritable « scepenhuus » imaginée par Jan Roegiers.</p><p><strong>1887</strong><br>Un incendie ravage l’intérieur.</p><p><strong>1895-1905</strong><br>Louis Delacenserie et Jean-Baptiste de Béthune rénovent l’intérieur dans un style néogothique.</p>",
+                    SourceLink = "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Bruges"
+                },
+                new BuildingTranslation
+                {
+                    Id = 17,
+                    BuildingId = 4,
+                    LanguageId = 2, //NL
+                    Name = "Stadhuis",
+                    Description = "<p><strong>1280</strong><br>na een brand in het Belfort op de Markt nemen de schepenen hun intrek in het 'ghyselhuus', de oude grafelijke gevangenis</p><p><strong>1376</strong><br>graaf Lodewijk van Male laat het 'ghyselhuus' slopen om het te vervangen door een echt 'scepenhuus', ontworpen door Jan Roegiers</p><p><strong>1887</strong><br>een brand beschadigt het interieur</p><p><strong>1895-1905</strong><br>Louis Delacenserie en Jean-Baptiste de Béthune renoveren het interieur in neogotische stijl</p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Bruges_City_Hall"
+                },
+                new BuildingTranslation
+                {
+                    Id = 18,
+                    BuildingId = 4,
+                    LanguageId = 3, //EN
+                    Name = "City Hall",
+                    Description = "<p><strong>1280</strong><br>following a fire in the Belfry on the Markt, the aldermen are moved to the ‘Ghyselhuus’, the old Count’s prison</p><p><strong>1376</strong><br>Count Lodewijk van Male orders the demolition of the ‘Ghyselhuus’, to be replaced by a proper City hall designed by Jan Roegiers</p><p><strong>1887</strong><br>the interior is damaged by a fire</p><p><strong>1895-1905</strong><br>the interior is renovated in the neo-Gothic style by Louis Delacenserie and Jean-Baptiste de Béthune</p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Bruges_City_Hall"
+                },
+                new BuildingTranslation
+                {
+                    Id = 19,
+                    BuildingId = 4,
+                    LanguageId = 4, //DE
+                    Name = "Rathaus",
+                    Description = "<p><strong>1280</strong><br>Nach einem Brand im Belfried am Marktplatz ziehen die Schöffen in das alte Grafengefängnis „Ghyselhuus“ um. </p> <p><strong>1376</strong> <br>Graf Ludwig von Male lässt das „Ghyselhuus“ abreißen und durch ein echtes „Scepenhuus“ (Schöffenhaus) nach den Plänen von Jan Roegiers ersetzen. </p> <p><strong>1887</strong> <br>Ein Brand verursacht Schäden im Innern des Gebäudes. </p> <p><strong>1895–1905</strong> <br>Louis Delacenserie und Jean-Baptiste de Béthune renovieren den Innenbereich im neugotischen Stil. </p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Bruges_City_Hall"
+                },
+                new BuildingTranslation
+                {
+                    Id = 20,
+                    BuildingId = 4,
+                    LanguageId = 5, //ES
+                    Name = "Ayuntamiento",
+                    Description = "<p><strong>1280</strong> <br>Tras un incendio en el campanario de Belfort de la plaza de <em>Markt</em>, los escabinos se instalan en el «<em>ghyselhuus</em>», la antigua cárcel condal &nbsp;</p> <p><strong>1376</strong> <br>El conde Lodewijk van Male manda derribar el «<em>ghyselhuus</em>» para reemplazarlo por una verdadera «<em>scepenhuus</em>» (casa escabinal), diseñada por Jan Roegiers</p> <p><strong>1887</strong> <br>Un incendio devasta el interior </p> <p><strong>1895-1905</strong> <br>Louis Delacenserie y Jean-Baptiste de Béthune renuevan el interior en estilo neogótico </p>",
+                    SourceLink = "https://es.wikipedia.org/wiki/Ayuntamiento_de_Brujas"
+                },
+                //BASILIEK
+                new BuildingTranslation
+                {
+                    Id = 21,
+                    BuildingId = 5,
+                    LanguageId = 1, //FR
+                    Name = "Basilique du Saint-Sang",
+                    Description = "<p><strong>1134-1149</strong> <br>Construction d’une double chapelle romane pour les comtes de Flandre qui séjournent dans le « Het Steen » adjacent : la chapelle Saint-Basile inférieure et, plus tard, la chapelle du Saint-Sang supérieure. </p> <p><strong>13<sup>e</sup> siècle</strong> <br>La relique du Saint-Sang est conservée dans la chapelle supérieure. </p> <p><strong>15<sup>e</sup> siècle</strong> <br>Restauration de la chapelle supérieure dans un style gothique. </p> <p><strong>1528-1532</strong> <br>Construction d’un escalier de style gothique tardif pour accéder à la chapelle du Saint-Sang. </p> <p><strong>1819-1839</strong> <br>Reconstruction et restauration des chapelles avec la dévastation et le déclin sous la domination française. </p> <p><strong>1923</strong> <br>Élévation de la chapelle du Saint-Sang au rang de basilique. </p>",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Basilique_du_Saint-Sang_de_Bruges"
+                },
+                new BuildingTranslation
+                {
+                    Id = 22,
+                    BuildingId = 5,
+                    LanguageId = 2, //NL
+                    Name = "Basiliek van het Heilig Bloed",
+                    Description = "<p><strong>1134-1149</strong> <br>bouw van een romaanse dubbelkappel voor de graven van Vlaanderen, die verblijven in het naastgelegen Steen: onderaan de Sint-Basiliuskapel, bovenaan de latere Heilig-Bloedkapel </p> <p><strong>13de eeuw</strong> <br>de relikwie van het Heilig Bloed wordt in de bovenkapel ondergebracht </p> <p><strong>15de eeuw</strong> <br>restauratie van de bovenkapel in gotische stijl </p> <p><strong>1528-1532</strong> <br>bouw van een laatgotisch trappenhuis als toegang tot de Heilig-Bloedkapel </p> <p><strong>1819-1839</strong> <br>heropbouw en restauratie van de kapellen na verwoesting en verval onder de Franse overheersing </p> <p><strong>1923</strong> <br>verheffing van de Heilig-Bloedkapel tot basiliek </p>",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Basiliek_van_het_Heilig_Bloed"
+                },
+                new BuildingTranslation
+                {
+                    Id = 23,
+                    BuildingId = 5,
+                    LanguageId = 3, //EN
+                    Name = "Basilica of the Holy Blood",
+                    Description = "<p><strong>1134-1149</strong> <br>construction of a Romanesque double chapel for the Counts of Flanders, who lived in the nearby Steen Castle, with the lower Saint Basil’s Chapel and above it the upper Chapel of the Holy Blood, which was built later. </p> <p><strong>13th century</strong> <br>the relic of the Holy Blood is housed in the upper chapel </p> <p><strong>15th century</strong> <br>restoration of the upper chapel in Gothic style </p> <p><strong>1528-1532</strong> <br>construction of late Gothic staircase to access the Chapel of the Holy Blood </p> <p><strong>1819-1839</strong> <br>reconstruction and restoration of the chapels following destruction and decay under French rule </p> <p><strong>1923</strong> <br>elevation of the Chapel of the Holy Blood to a basilica </p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Basilica_of_the_Holy_Blood"
+                },
+                new BuildingTranslation
+                {
+                    Id = 24,
+                    BuildingId = 5,
+                    LanguageId = 4, //DE
+                    Name = "Heilig-Blut-Basilika",
+                    Description = "<p><strong>1134–1149</strong> <br>Bau einer romanischen Doppelkirche für die Grafen von Flandern, die im benachbarten „Steen“ wohnen: Unten befindet sich die Sankt Basiliuskapelle, oben die spätere Heilig-Blut-Kapelle. </p> <p><strong>13. Jahrhundert</strong> <br>Die Reliquie des Heiligen Blutes wird in der Oberkirche untergebracht. </p> <p><strong>15. Jahrhundert</strong> <br>Restaurierung der Oberkirche im gotischen Stil. </p> <p><strong>1528–1532</strong> <br>Bau eines spätgotischen Treppenhauses als Zugang zur Heilig-Blut-Kapelle. </p> <p><strong>1819–1839</strong> <br>Wiederaufbau und Restaurierung der Kapellen nach der Verwüstung und dem Verfall unter der französischen Verwaltung. </p> <p><strong>1923</strong> <br>Erhebung der Heilig-Blut-Kapelle zur Basilika. </p>",
+                    SourceLink = "https://de.wikipedia.org/wiki/Heilig-Blut-Basilika"
+                },
+                new BuildingTranslation
+                {
+                    Id = 25,
+                    BuildingId = 5,
+                    LanguageId = 5, //ES
+                    Name = "Basílica de la Santa Sangre",
+                    Description = "<p><strong>1134-1149</strong> <br>Construcción de una capilla doble románica para los condes de Flandes, que se hospedaban en el edificio conjunto llamado <em>Steen</em>: en la parte inferior de la Capilla de San Basilio, en la parte superior de la posterior capilla de la Santa Sangre</p> <p><strong>Siglo XIII</strong> <br>La reliquia de la Santa Sangre se conserva en la capilla superior &nbsp; </p> <p><strong>Siglo XV</strong> <br>Restauración de la capilla superior en estilo gótico </p> <p><strong>1528-1532</strong> <br>Construcción de una caja de escalera del gótico tardío como acceso a la capilla de la Santa Sangre </p> <p><strong>1819-1839</strong> <br>Reconstrucción y restauración de las capillas tras su destrucción y ruina bajo el dominio francés </p> <p><strong>1923</strong> <br>Elevación a basílica de la capilla de la Santa Sangre </p>",
+                    SourceLink = "https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_la_Santa_Sangre_de_Brujas"
+                },
+                //STEEN
+                new BuildingTranslation
+                {
+                    Id = 26,
+                    BuildingId = 6,
+                    LanguageId = 1, //FR
+                    Name = "Le château Steen ",
+                    Description = "<p><strong>1088</strong> <br>Le bâtiment est mentionné pour la première fois comme résidence des comtes de Flandre. </p> <p><strong>12<sup>e</sup> siècle</strong> <br>Les comtes quittent le bâtiment et s’installent dans le « Love » situé de l’autre côté de la place du Bourg (l’actuelle Maison du Franc de Bruges). Le « Het Steen » devient alors une prison. </p> <p><strong>1689</strong> <br>Le bâtiment brûle en grande partie. </p> <p><strong>1751</strong> <br>La ville de Bruges devient propriétaire du bâtiment « Het Steen » et le fait démolir en 1784. </p> <p><strong>1851</strong> <br>Une ferronnerie s’installe à cet endroit. </p> <p><strong>1931</strong> <br>Construction d’un bâtiment avec trois pignons à gradins dans un style néogothique (aujourd’hui Brasserie Tompouce). </p> <p><strong>1977</strong> <br>Construction de la galerie commerciale Ter Steeghere. </p>",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Het_Steen_(Bruges)"
+                },
+                new BuildingTranslation
+                {
+                    Id = 27,
+                    BuildingId = 6,
+                    LanguageId = 2, //NL
+                    Name = "Het Steen",
+                    Description = "<p><strong>1088</strong> <br>voor het eerst vermeld als residentie van de graven van Vlaanderen </p> <p><strong>12de eeuw</strong> <br>de graven verlaten het gebouw en vestigen zich in de 'Love' aan de overzijde van de Burg (het huidige Landhuis van het Brugse Vrije), het Steen wordt een gevangenis </p> <p><strong>1689</strong> <br>het gebouw brandt grotendeels af </p> <p><strong>1751</strong> <br>de Stad Brugge wordt eigenaar van Het Steen en laat het in 1784 afbreken </p> <p><strong>1851</strong> <br>een ijzerhandel vestigt zich op deze locatie </p> <p><strong>1931</strong> <br>bouw van een gebouw met drie trapgevels in neogotische stijl (nu Brasserie Tompouce) </p> <p><strong>1923</strong> <br>bouw van winkelgalerij Ter Steeghere </p>",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Het_Steen_(Brugge)"
+                },
+                new BuildingTranslation
+                {
+                    Id = 28,
+                    BuildingId = 6,
+                    LanguageId = 3, //EN
+                    Name = "The Steen Castle",
+                    Description = "<p><strong>1088</strong> <br>first mention of Steen Castle as a residence of the Counts of Flanders </p> <p><strong>12th century</strong> <br>the Counts leave the building, moving to the “Love” on the opposite side of Burg Square (which is now the Manor of the Franc of Bruges). Steen Castle becomes a prison. </p> <p><strong>1689</strong> <br>the building is largely destroyed in a fire </p> <p><strong>1751</strong> <br>the City of Bruges takes ownership of Steen Castle and orders its demolition in 1784 </p> <p><strong>1851</strong> <br>an ironmongers is established at this location </p> <p><strong>1931</strong> <br>construction of a building with three stepped gables in neo-Gothic style (now Brasserie Tompouce) </p> <p><strong>1977</strong> <br>construction of the Ter Steeghere shopping gallery </p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Draft:Het_Steen_(Brugge)"
+                },
+                new BuildingTranslation
+                {
+                    Id = 29,
+                    BuildingId = 6,
+                    LanguageId = 4, //DE
+                    Name = "Basilika",
+                    Description = "<p><strong>1088</strong> <br>Erstmalige Erwähnung als Residenz der Grafen von Flandern. </p> <p><strong>12. Jahrhundert</strong> <br>Die Grafen verlassen das Gebäude und ziehen in die Residenz „Love“ auf der gegenüberliegenden Seite des Burgplatzes (das gegenwärtige Landeshaus des Brügger Freiamts) um. „Het Steen“ wird ein Gefängnis. </p> <p><strong>1689</strong> <br>Das Gebäude wird größtenteils durch einen Brand zerstört. </p> <p><strong>1751</strong> <br>Die Stadt Brügge erwirbt „Het Steen“ und lässt das Gebäude 1784 abreißen. </p> <p><strong>1851</strong> <br>Stattdessen lässt sich ein Eisenwarenhandel hier nieder. </p> <p><strong>1931</strong> <br>Errichtung eines Gebäudes mit drei Treppengiebeln im neugotischen Stil (jetzt Brasserie Tompouce). </p> <p><strong>1977</strong> <br>Entstehung der Einkaufsgalerie „Ter Steeghere“. </p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Draft:Het_Steen_(Brugge)"
+                },
+                new BuildingTranslation
+                {
+                    Id = 30,
+                    BuildingId = 6,
+                    LanguageId = 5, //ES
+                    Name = "Basílica",
+                    Description = "1088 Nombrado por primera vez como residencia de los condes de Flandes Siglo XII Los condes abandonan el edificio y se instalan en el «Love» al otro lado del Burg (la actual Landhuis del Brugse Vrije), el Steen pasa a ser una cárcel 1689 El edificio se incendia casi en su totalidad 1751 La ciudad de Brujas pasa a ser propietaria del Steen y lo manda demoler en 1784 1851 Se instala una herrería en este sitio 1931 Construcción de un edificio con tres fachadas escalonadas de estilo neogótico (en la actualidad Brasserie Tompouce) 1977 Construcción del pasaje comercial de Ter Steeghere",
+                    SourceLink = "https://en.wikipedia.org/wiki/Draft:Het_Steen_(Brugge)"
+                },
+                //PROOSDIJ
+                new BuildingTranslation
+                {
+                    Id = 31,
+                    BuildingId = 7,
+                    LanguageId = 1, //FR
+                    Name = "Prévôté de Saint-Donatien",
+                    Description = "<p>La prévôté est l’ancien siège de la seigneurie ecclésiastique de Saint-Donatien.</p> <p>Le bâtiment de style baroque triomphaliste a été conçu par l’architecte Cornelis Verhouve et le chanoine Frederic Hillewerve, tous deux originaires d’Anvers. Les influences anversoises sont clairement visibles dans le bâtiment.</p> <p>La prévôté fait aujourd’hui partie de la résidence officielle du gouverneur de la province de Flandre occidentale.</p>",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Pr%C3%A9vot%C3%A9_de_Saint-Donatien_(Bruges)"
+                },
+                new BuildingTranslation
+                {
+                    Id = 32,
+                    BuildingId = 7,
+                    LanguageId = 2, //NL
+                    Name = "Sint-Donaasproosdij",
+                    Description = "<p>De proosdij is de voormalige hoofdzetel van de kerkelijke heerlijkheid Sint-Donaas.</p> <p>Het gebouw in triomfalistische barokstijl is ontworpen door architect Cornelis Verhouve en kanunnik Frederic Hillewerve, beiden afkomstig uit Antwerpen. De Antwerpse invloeden zijn duidelijk zichtbaar in het gebouw.</p> <p>De proosdij behoort vandaag tot de ambtswoning van de gouverneur van de provincie West-Vlaanderen.</p>",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Sint-Donaasproosdij"
+                },
+                new BuildingTranslation
+                {
+                    Id = 33,
+                    BuildingId = 7,
+                    LanguageId = 3, //EN
+                    Name = "Provostry of Saint-Donatian",
+                    Description = "<p>The provostry is the former seat of the ecclesiastical glory of Saint Donatian.</p> <p>The triumphal baroque style building was designed by architect Cornelis Verhouve and canon Frederic Hillewerve, who both came from Antwerp. The Antwerp influence can clearly be seen in the building.</p> <p>Today, the provostry is part of the official residence of the Governor of the province of West Flanders.&nbsp;</p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Provostry_of_St._Donatian"
+                },
+                new BuildingTranslation
+                {
+                    Id = 34,
+                    BuildingId = 7,
+                    LanguageId = 4, //DE
+                    Name = "Propstei Sankt-Donatian ",
+                    Description = "<p>Die Propstei ist der ehemalige Hauptsitz des kirchlichen Herrschaftsguts „Sint-Donaas“.</p> <p>Das Gebäude im triumphalistischen Barockstil wurde vom Architekten Cornelis Verhouve und dem Kanoniker Frederic Hillewerve entworfen, die beide aus Antwerpen stammten. Das Gebäude ist deutlich von Antwerpener Stilmerkmalen geprägt.</p> <p>Die Propstei gehört gegenwärtig zur Amtswohnung des Gouverneurs der Provinz Westflandern.</p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Provostry_of_St._Donatian"
+                },
+                new BuildingTranslation
+                {
+                    Id = 35,
+                    BuildingId = 7,
+                    LanguageId = 5, //ES
+                    Name = "Prebostazgo de San Donatiano",
+                    Description = "<p>El prebostazgo es la antigua sede principal del dominio eclesiástico de San Donaciano.&nbsp;</p> <p>El edificio, de estilo barroco triunfalista, fue diseñado por el arquitecto Cornelis Verhouve y por el canónigo Frederic Hillewerve, ambos procedentes de Amberes. Las influencias de Amberes pueden verse claramente en el edificio.&nbsp;</p> <p>El prebostazgo es en la actualidad la vivienda oficial del gobernador de la provincia de Flandes Occidental.&nbsp;</p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/Provostry_of_St._Donatian"
+                },
+                //Kathedraal
+                new BuildingTranslation
+                {
+                    Id = 36,
+                    BuildingId = 8,
+                    LanguageId = 1, //FR
+                    Name = "Cathédrale Sint-Donatien",
+                    Description = "<p><strong>944</strong> <br>Le comte Arnulf Ier fait construire ici une chapelle octogonale sur le modèle de la cathédrale d’Aix-la-Chapelle. </p> <p><strong>Du 10<sup>e</sup> au 13<sup>e</sup> siècle</strong> <br>Construction d’une église romane avec un couvent. </p> <p><strong>14<sup>e</sup> siècle</strong> <br>Construction d'une nef centrale et de nefs latérales dans un style gothique. </p> <p><strong>1559</strong> <br>Création du diocèse de Bruges : l’église devient une cathédrale. </p> <p><strong>1799</strong> <br>La cathédrale est vendue et est démolie sous le régime révolutionnaire français. </p> <p><strong>Fin des années 1920</strong> <br>L’hôtel Saint-Georges y ouvre ses portes. </p> <p><strong>1987-1991</strong> <br>Construction de l’hôtel Crowne Plaza. Les fondations de l’église qui datent du 12<sup>e</sup> siècle peuvent être admirées dans les caves de l’hôtel.</p>",
+                    SourceLink = "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Saint-Donatien_de_Bruges"
+                },
+                new BuildingTranslation
+                {
+                    Id = 37,
+                    BuildingId = 8,
+                    LanguageId = 2, //NL
+                    Name = "Sint-Donaaskathedraal",
+                    Description = "<p><strong>944</strong> <br>graaf Arnulf I laat hier een achthoekige kapel bouwen, naar het model van de Dom van Aken </p> <p><strong>10de-13de eeuw</strong> <br>uitbouw van een romaanse kerk met kloosterpand </p> <p><strong>14de eeuw</strong> <br>bouw van een kerkschip en zijbeuken in gotische stijl </p> <p><strong>1559</strong> <br>oprichting van het bisdom Brugge: de kerk wordt een kathedraal </p> <p><strong>1799</strong><strong> <br> </strong>de kathedraal wordt verkocht en afgebroken onder het Franse revolutionaire bewind</p> <p><strong>eind jaren 1920</strong> <br>het Hotel Saint-Georges is hier gevestigd </p> <p><strong>1987-1991</strong> <br>bouw van het Crowne Plaza Hotel, de 12de-eeuwse funderingen van de kerk worden blootgelegd en zijn te bezichtigen in de kelder </p>",
+                    SourceLink = "https://nl.wikipedia.org/wiki/Sint-Donaaskathedraal"
+                },
+                new BuildingTranslation
+                {
+                    Id = 38,
+                    BuildingId = 8,
+                    LanguageId = 3, //EN
+                    Name = "Saint Donatian’s Cathedral",
+                    Description = "<p><strong>944</strong> <br>Count Arnulf I orders the construction of an octagonal chapel here, modelled on Aachen Cathedral </p> <p><strong>10th – 13th century</strong> <br>expansion of a Romanesque church with monastery </p> <p><strong>14th century</strong> <br>construction of a nave and aisles in Gothic style </p> <p><strong>1559</strong> <br>founding of the diocese of Bruges – the church becomes a Cathedral </p> <p><strong>1799</strong> <br>the cathedral is sold and demolished under the French revolutionary reign </p> <p><strong>late 1920s</strong> <br>the Hotel Saint-Georges is located here </p> <p><strong>1987-1991</strong> <br>construction of the Crowne Plaza Hotel. The 12th century foundations of the church are exposed and can still be seen in the cellar. </p>",
+                    SourceLink = "https://en.wikipedia.org/wiki/St._Donatian%27s_Cathedral"
+                },
+                new BuildingTranslation
+                {
+                    Id = 39,
+                    BuildingId = 8,
+                    LanguageId = 4, //DE
+                    Name = "Kathedrale Sankt-Donatian",
+                    Description = "<p><strong>944</strong> <br>Graf Arnulf I. lässt an diesem Ort eine achteckige Kapelle nach dem Entwurf des Aachener Doms bauen. </p> <p><strong>10.–13. Jahrhundert</strong> <br>Ausbau einer romanischen Kirche mit Klostergebäude. </p> <p><strong>14. Jahrhundert</strong> <br>Bau eines Kirchenschiffs und von Seitenschiffen im gotischen Stil. </p> <p><strong>1559</strong> <br>Gründung des Bistums Brügge: Die Kirche wird eine Kathedrale. </p> <p><strong>1799</strong> <br>Die Kathedrale wird verkauft und unter der französischen Revolutionsverwaltung abgerissen. </p> <p><strong>Ende der 1920er Jahre</strong> <br>Das Hotel Saint-Georges wird hier untergebracht. </p> <p><strong>1987–1991</strong> <br>Bau des Crowne Plaza Hotels, die Kirchenfundamente aus dem 12. Jahrhundert werden freigelegt und können im Keller besichtigt werden. </p>",
+                    SourceLink = "https://de.wikipedia.org/wiki/Sint-Donaaskathedraal"
+                },
+                new BuildingTranslation
+                {
+                    Id = 40,
+                    BuildingId = 8,
+                    LanguageId = 5, //ES
+                    Name = "Catedral de San Donaciano",
+                    Description = "<p><strong>944</strong> <br>El conde Arnulfo I mandó construir aquí una capilla octogonal, tomando como modelo la catedral de Aquisgrán </p> <p><strong>Siglos X-XIII</strong> <br>Construcción de una iglesia románica con un cenobio </p> <p><strong>Siglo XIV</strong> <br>Construcción de una nave central y de naves laterales de estilo gótico </p> <p><strong>1559</strong> <br>Fundación del obispado de Brujas: la iglesia pasa a ser catedral </p> <p><strong>1799</strong> <br>Se vende la catedral y se derrumba bajo el régimen revolucionario francés </p> <p><strong>Finales de la década de 1920</strong> <br>Se instala aquí el Hotel Saint-Georges </p> <p><strong>1987-1991</strong> <br>Construcción del Crowne Plaza Hotel, se descubren los cimientos del siglo XII de la iglesia y se pueden visitar en el sótano </p>",
+                    SourceLink = "https://es.wikipedia.org/wiki/Catedral_de_San_Donaciano"
                 }
             );
 
             modelBuilder.Entity<BuildingStory>()
             .HasData(
+                // Burg 1: Artwork
                 new BuildingStory
                 {
                     Id = 82,
-                    Title = "Stadhuis FR",
-                    Type = "style",
-                    Subtitle = "about the technique",
-                    Text = "Artists started painting on canvas instead of wood because it holds the pigments better",
-                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/7/7d/Burg_in_Brugge_-_Belgi%C3%AB.jpg",
-                    LanguageId = 1,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Place du Bourg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    LanguageId = 1, //FR
                     BuildingId = 1
                 },
                 new BuildingStory
                 {
                     Id = 83,
-                    Title = "Stadhuis NL",
-                    Type = "style",
-                    Subtitle = "about the technique",
-                    Text = "Artists started painting on canvas instead of wood because it holds the pigments better",
-                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/7/7d/Burg_in_Brugge_-_Belgi%C3%AB.jpg",
-                    LanguageId = 2,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De Burg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    LanguageId = 2, //NL
                     BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 84,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Burg Square",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 85,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Der Burgplatz",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 86,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Plaza Burg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 1
+                },
+                // Burg 2: Artwork
+                new BuildingStory
+                {
+                    Id = 87,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Place du Bourg sur la Carte de Marcus Gerards (1591-1562).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 88,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De Burg op de kaart van Marcus Gerards (1561-1562).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 89,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Burg Square on the map of Marcus Gerards (1561-1562).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 90,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Der Burgplatz auf der Karte von Marcus Gerards (1561-1562).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 91,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Plaza Burg en el mapa de Marcus Gerards (1561-1562)",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 1
+                },
+                // Burg 3: Artwork
+                new BuildingStory
+                {
+                    Id = 92,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Le Bourg comme forteresse (12e siècle)",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 93,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De Burg als vesting (12de eeuw).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 94,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Burg as a fortress (12 century).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 95,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Die Burg als Festung (12. Jahrhundert)",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 96,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "El Burg compo fortaleza (Siglo XII).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 1
+                },
+                // Burg 4: Artwork
+                new BuildingStory
+                {
+                    Id = 97,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Place du Bourg dans la Flandria illustrata (1641) d’Antoine Sanderus.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 98,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De Burg in Antonius Sanderus’ Flandria illustrata (1641).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 99,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Burg Square in Antonius Sanderus’s Flandria illustrata (1641).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 100,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Der Burgplatz in der Flandria illustrata des Antonius Sanderus (1641)",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 101,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Plaza Burg en la Flandria illustrata de Antonius Sanderus (1641).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 1
+                },
+                // Burg 5: Artwork
+                new BuildingStory
+                {
+                    Id = 102,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Place du Bourg peinte par J.-B. van Meunincxhove (1691-1700).",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1012px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 103,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De Burg geschilderd door J.-B. van Meunincxhove (1691-1700)",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1012px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 104,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Burg Square painted by J.-B. van Meunincxhove (1691-1700)",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1012px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 105,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Der Burgplatz gemalt von J.-B. van Meunincxhove (1691-1700).",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1012px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 1
+                },
+                new BuildingStory
+                {
+                    Id = 106,
+                    Title = "De Burg",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Plaza Burg pintada por J.-B. van Meunincxhove (1691-1700).",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1012px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 1
+                },
+                // Landhuis 1: Artwork
+                new BuildingStory
+                {
+                    Id = 107,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Au Moyen-Âge, ce bâtiment abritait l’une des résidences des comtes de Flandre.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 108,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "In de middeleeuwen bevond zich hier een van de residenties van de graven van Vlaanderen.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 109,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "During the middle ages, this was one of the residences of the Counts of Flanders.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 110,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Im Mittelalter befand sich hier eine der Residenzen der Grafen von Flandern.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 111,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "En la época medieval, aquí se encontraba ubicada una de las residencias de los condes de Flandes.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
+                },
+                // Landhuis 2: Artwork
+                new BuildingStory
+                {
+                    Id = 112,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La monumentale cheminée Charles-Quint du 16e siècle, en chêne, marbre et albâtre, est située dans la salle échevinale.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 113,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "In de schepenzaal bevindt zich de monumentale 16de-eeuwse Keizer-Karel-schouw, in eikenhout, marmer en albast.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 114,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "In the aldermen’s room, there is a huge 16th century Charles V fireplace made of oak, marble and alabaster.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 115,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Im Schöffensaal befindet sich der monumentale Kaiser-Karl-Kamin aus dem 16. Jahrhundert, der aus Eichenholz, Marmor und Alabaster angefertigt wurde.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 116,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "En la sala del escabinado se encuentra la monumental chimenea del emperador Carlos V del siglo XVI, de madera de roble, mármol y alabastro.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
+                },
+                // Landhuis 3: Artwork
+                new BuildingStory
+                {
+                    Id = 117,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La salle échevinale dans la Maison du Franc (Gillis van Tillborgh, 1658).",
+                    ImageUrl = "https://museabrugge.imgix.net/https%3A%2F%2Fwww.museabrugge.be%2Fvolumes%2Fgeneral%2FSchilderij_VanTilborg-opgelicht.jpg?auto=compress%2Cformat&fit=clip&h=400&s=8b95ab0b4ffd6fafd41b5f9bd370d36e",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 118,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De schepenkamer in het Landhuis (Gillis van Tillborgh, 1658).",
+                    ImageUrl = "https://museabrugge.imgix.net/https%3A%2F%2Fwww.museabrugge.be%2Fvolumes%2Fgeneral%2FSchilderij_VanTilborg-opgelicht.jpg?auto=compress%2Cformat&fit=clip&h=400&s=8b95ab0b4ffd6fafd41b5f9bd370d36e",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 119,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The alderman’s room in the manor (Gillis van Tillborgh, 1658).",
+                    ImageUrl = "https://museabrugge.imgix.net/https%3A%2F%2Fwww.museabrugge.be%2Fvolumes%2Fgeneral%2FSchilderij_VanTilborg-opgelicht.jpg?auto=compress%2Cformat&fit=clip&h=400&s=8b95ab0b4ffd6fafd41b5f9bd370d36e",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 120,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Der Schöffenkammer im Landeshaus (Gillis van Tillborgh, 1658).",
+                    ImageUrl = "https://museabrugge.imgix.net/https%3A%2F%2Fwww.museabrugge.be%2Fvolumes%2Fgeneral%2FSchilderij_VanTilborg-opgelicht.jpg?auto=compress%2Cformat&fit=clip&h=400&s=8b95ab0b4ffd6fafd41b5f9bd370d36e",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 121,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La sala para el escabinado en el landhuis (Gillis van Tillborgh, 1658).",
+                    ImageUrl = "https://museabrugge.imgix.net/https%3A%2F%2Fwww.museabrugge.be%2Fvolumes%2Fgeneral%2FSchilderij_VanTilborg-opgelicht.jpg?auto=compress%2Cformat&fit=clip&h=400&s=8b95ab0b4ffd6fafd41b5f9bd370d36e",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
+                },
+                // Landhuis 4: Artwork
+                new BuildingStory
+                {
+                    Id = 122,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Jusqu’à la Révolution française, l’administration du Franc de Bruges, la campagne brugeoise, y siégeait.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 123,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Tot de Franse Revolutie zetelde hier het bestuur van het Brugse Vrije, het platteland rond Brugge.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 124,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Until the French Revolution, this was the administrative seat of the Franc of Bruges, the area surrounding Bruges.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 125,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Bis zur Französischen Revolution war hier das Brügger Freiamt, die Verwaltung des Brügger Umlands, untergebracht.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 126,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Hasta la Revolución Francesa, este lugar fue la sede de la dirección del Brugse Vrije, el campo que rodeaba Brujas.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
+                },
+                // Landhuis 5: Artwork
+                new BuildingStory
+                {
+                    Id = 127,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Maison du France comme Palais de Justice.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 128,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Het Landhuis als gerechtshof.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 129,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Manor as a court of justice.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 130,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Das Landeshaus als Gerichtshof.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 131,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La casa como tribunal de justicia.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
+                },
+                // Civiele Griffie 1: Artwork
+                new BuildingStory
+                {
+                    Id = 132,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "L’ancien Greffe Civil.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 133,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De Oude Civiele Griffie.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 134,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Old Civil Registry.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 135,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Die alte Zivilkanzlei.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 136,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Antigua Escribanía civil.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 3
+                },
+                // Civiele Griffie 2: Artwork
+                new BuildingStory
+                {
+                    Id = 137,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Le greffier civil était l’un des fonctionnaires les plus importants de la ville.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 138,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De griffier-civiel was een van de belangrijkste stedelijke ambtenaren.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 139,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Civil Registrar was one of the most important city officials.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 140,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Der Kanzleileiter des Zivilgerichts war einer der wichtigsten Stadtbeamten.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 141,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "El secretario judicial civil era uno de los funcionarios municipales más importantes.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 3
+                },
+                // Civiele Griffie 3: Artwork
+                new BuildingStory
+                {
+                    Id = 142,
+                    Title = "Griffie",
+                    Type = "artist",
+                    Subtitle = " ",
+                    Text = "Les statues en bronze d’Hendrik Pickery datent de 1883.",
+                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    LanguageId = 1, //FR
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 143,
+                    Title = "Griffie",
+                    Type = "artist",
+                    Subtitle = " ",
+                    Text = "De bronzen beelden van Hendrik Pickery dateren van 1883.",
+                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    LanguageId = 2, //NL
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 144,
+                    Title = "Griffie",
+                    Type = "artist",
+                    Subtitle = " ",
+                    Text = "Hendrik Pickery’s bronze statues date from 1883.",
+                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    LanguageId = 3, //EN
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 145,
+                    Title = "Griffie",
+                    Type = "artist",
+                    Subtitle = " ",
+                    Text = "Die Bronzeskulpturen von Hendrik Pickery stammen aus dem Jahr 1883.",
+                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    LanguageId = 4, //DE
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 146,
+                    Title = "Griffie",
+                    Type = "artist",
+                    Subtitle = " ",
+                    Text = "Las estatuas de bronce de Hendrik Pickery datan de 1883.",
+                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    LanguageId = 5, //ES
+                    BuildingId = 3
+                },
+                // Civiele Griffie 4: Artwork
+                new BuildingStory
+                {
+                    Id = 147,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Au début du siècle, le bâtiment a retrouvé sa splendeur d’origine.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Belgium-6081_%2813902669845%29.jpg/682px-Belgium-6081_%2813902669845%29.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 148,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Aan het begin van deze eeuw kreeg het gebouw zijn oorspronkelijke kleurenpracht terug.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Belgium-6081_%2813902669845%29.jpg/682px-Belgium-6081_%2813902669845%29.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 149,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "At the beginning of this century, the building’s original wonderful colours were restored.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Belgium-6081_%2813902669845%29.jpg/682px-Belgium-6081_%2813902669845%29.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 150,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Zu Beginn dieses Jahrhunderts erhielt das Gebäude seine ursprüngliche Farbenpracht wieder.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Belgium-6081_%2813902669845%29.jpg/682px-Belgium-6081_%2813902669845%29.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 3
+                },
+                new BuildingStory
+                {
+                    Id = 151,
+                    Title = "Griffie",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "A principios de siglo, el edificio recupera su colorido original.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Belgium-6081_%2813902669845%29.jpg/682px-Belgium-6081_%2813902669845%29.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 3
+                },
+                // Stadhuis 1: Artwork
+                new BuildingStory
+                {
+                    Id = 152,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Hôtel de ville.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 153,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Stadhuis.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 154,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "City Hall.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 155,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Rathaus.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 156,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Ayuntamiento.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 4
+                },
+                // Stadhuis 2: Artwork
+                new BuildingStory
+                {
+                    Id = 157,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "L’hôtel de ville de Bruges est l’un des plus anciens des Pays-Bas.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 158,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Het Brugse stadhuis is een van de oudste in de Nederlanden.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 159,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Bruges city hall is one of the oldest city halls in the low countries.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 160,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Das Brügger Rathaus ist eines der ältesten in den Niederlanden.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 161,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "El ayuntamiento de Brujas es uno de los más antiguos de los viejes Países Bajos.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 4
+                },
+                // Stadhuis 3: Artwork
+                new BuildingStory
+                {
+                    Id = 162,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Les couronnes dorées sur les cheminées font référence à des propos tenus par le roi Charles VII de France (1403–1461).",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    LanguageId = 1, //FR
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 163,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De gouden kroontjes op de schouwen verwijzen naar een uitspraak van koning Karel VII van Frankrijk (1403–1461).",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    LanguageId = 2, //NL
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 164,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The golden crowns on the chimneys refer to a statement made by King Charles VII of France (1403-1461).",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    LanguageId = 3, //EN
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 165,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Die goldenen Kronen auf der Schornsteine verweisen auf ein Urteil von König Karl VII. von Frankreich (1403–1461).",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    LanguageId = 4, //DE
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 166,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Las coronas doradas de las repisas hacen referencia a una declaración del rey Carlos VII de Francia (1403–1461)",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    LanguageId = 5, //ES
+                    BuildingId = 4
+                },
+                // Stadhuis 4: Artwork
+                new BuildingStory
+                {
+                    Id = 167,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La ‘salle gothique’ à l’étage supérieur a été aménagée aux alentours de 1900 dans un style néogothique.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 168,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De ‘gotische zaal’ op de bovenverdieping werd omstreeks 1900 ingericht in neogotische stijl.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 169,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Gothic Room on the top floor war was re-decorated in the neo-Gothic style around 1900.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 170,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Der „gotische Saal“ im Obergeschoss wurde ca. 1900 im neugotischen Stil eingerichtet.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 4
+                },
+                new BuildingStory
+                {
+                    Id = 171,
+                    Title = "Stadhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La «sala gótica» de la planta superior se habilitó hacia el año 1900 en estilo neogótico.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 4
+                },
+                // Basiliek 1: Artwork
+                new BuildingStory
+                {
+                    Id = 172,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Basilique du Saint-Sang.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 173,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De Heilig-Bloedbasiliek.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 174,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Basilica of the Holy Blood.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 175,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Heilig-Blut-Basilika.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 176,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Basílica de la Santa Sangre.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 5
+                },
+                // Basiliek 2: Artwork
+                new BuildingStory
+                {
+                    Id = 177,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La basilique abrite la relique du Saint-Sang qui est transportée chaque année partout dans la ville le jour de l’Ascension.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 178,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "In de basiliek wordt het relikwie van het Heilig Bloed bewaard, die elk jaar op Hemelvaart wordt rondgedragen in de stad.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 179,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The relic of the Holy Blood – which is carried around the city every year on Ascension Day – is kept in the Basilica.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 180,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "In der Basilika wird die Reliquie des Heiligen Blutes aufbewahrt, die jedes Jahr am Himmelfahrtstag in der Stadt herumgetragen wird.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 181,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "En la basílica se conserva la reliquia de la Santa Sangre, que cada año se exhibe en procesión por la ciudad el día de la Ascensión.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 5
+                },
+                // Basiliek 3: Artwork
+                new BuildingStory
+                {
+                    Id = 182,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Le comte Thierry d'Alsace aurait rapporté la relique du Saint-Sang de Terre Sainte au 13e siècle.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 183,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Graaf Diederik van de Elzas zou de relikwie van het Heilig Bloed in de 13de eeuw uit het Heilig Land hebben meegebracht.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 184,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Count Thierry of Alsace is said to have brought the relic of the Holy Blood back from the Holy Land in the 13th century.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 185,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Graf Dietrich von Elsass soll diese Reliquie im 13. Jahrhundert aus dem Heiligen Land mitgebracht haben.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 186,
+                    Title = "Basiliek",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Cuenta la leyenda que el conde Diederik van de Elzas trajo la reliquia de la Santa Sangre desde la Tierra Santa en el siglo XIII.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 5
+                },
+                // Basiliek 4: Artwork
+                new BuildingStory
+                {
+                    Id = 187,
+                    Title = "Basiliek",
+                    Type = "style",
+                    Subtitle = " ",
+                    Text = "La chapelle Saint-Basile est la seule église romane entièrement conservée dans la province de Flandre occidentale.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sint-Basiliuskapel_%282%29.jpg/1280px-Sint-Basiliuskapel_%282%29.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 188,
+                    Title = "Basiliek",
+                    Type = "style",
+                    Subtitle = " ",
+                    Text = "De Sint-Basiliuskapel is de enige volledig bewaarde romaanse kerk in de provincie West-Vlaanderen.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sint-Basiliuskapel_%282%29.jpg/1280px-Sint-Basiliuskapel_%282%29.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 189,
+                    Title = "Basiliek",
+                    Type = "style",
+                    Subtitle = " ",
+                    Text = "The Saint Basil Chapel is the only fully preserved Romanesque church in West Flanders.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sint-Basiliuskapel_%282%29.jpg/1280px-Sint-Basiliuskapel_%282%29.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 190,
+                    Title = "Basiliek",
+                    Type = "style",
+                    Subtitle = " ",
+                    Text = "Die Sankt Basiliuskapelle ist die einzige vollständig erhalten gebliebene romanische Kirche in der Provinz Westflandern.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sint-Basiliuskapel_%282%29.jpg/1280px-Sint-Basiliuskapel_%282%29.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 5
+                },
+                new BuildingStory
+                {
+                    Id = 191,
+                    Title = "Basiliek",
+                    Type = "style",
+                    Subtitle = " ",
+                    Text = "La capilla de San Basilio es la única iglesia romana de la provincia de Flandes Occidental que se conserva intacta. ",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sint-Basiliuskapel_%282%29.jpg/1280px-Sint-Basiliuskapel_%282%29.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 5
+                },
+                // Steen 1: Artwork
+                new BuildingStory
+                {
+                    Id = 192,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "L’emplacement de l’ancien château Steen.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bruges%2C_burg_01.JPG/1280px-Bruges%2C_burg_01.JPG",
+                    LanguageId = 1, //FR
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 193,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De locatie van het voormalige Steen.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bruges%2C_burg_01.JPG/1280px-Bruges%2C_burg_01.JPG",
+                    LanguageId = 2, //NL
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 194,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The location of the former Steen Castle.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bruges%2C_burg_01.JPG/1280px-Bruges%2C_burg_01.JPG",
+                    LanguageId = 3, //EN
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 195,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Die Lage des ehemaligen Schlosses Steen.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bruges%2C_burg_01.JPG/1280px-Bruges%2C_burg_01.JPG",
+                    LanguageId = 4, //DE
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 196,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La ubicación del antigua castillo Steen.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bruges%2C_burg_01.JPG/1280px-Bruges%2C_burg_01.JPG",
+                    LanguageId = 5, //ES
+                    BuildingId = 6
+                },
+                // Steen 2: Artwork
+                new BuildingStory
+                {
+                    Id = 197,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "« Het Steen » était probablement la première résidence des comtes de Flandre.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 198,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Het Steen was wellicht de eerste residentie van de graven van Vlaanderen.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 199,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Steen Castle was probably the first residence of the Counts of Flanders.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 200,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "„Het Steen“ war wahrscheinlich die erste Residenz der Grafen von Flandern.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 201,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "El Steen fue probablemente la primera residencia de los condes de Flandes.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 6
+                },
+                // Steen 3: Artwork
+                new BuildingStory
+                {
+                    Id = 202,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Dès le 12e siècle, le bâtiment est devenu une prison.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 203,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Vanaf de 12de eeuw was het gebouw een gevangenis.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 204,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "From the 12th century, Steen Castle was a prison.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 205,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Ab dem 12. Jahrhundert fungierte das Gebäude als Gefängnis.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 206,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "A partir del siglo XII el Steen pasó a ser una cárcel.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 6
+                },
+                // Steen 4: Artwork
+                new BuildingStory
+                {
+                    Id = 207,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "« Het Steen » a été démoli à la fin du 18e siècle.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 208,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Aan het einde van de 18de eeuw werd het Steen gesloopt.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 209,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Steen Castle was demolished at the end of the 18th century.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 210,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "„Het Steen“ wurde Ende des 18. Jahrhunderts abgerissen.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 6
+                },
+                new BuildingStory
+                {
+                    Id = 211,
+                    Title = "Steen",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "El Steen fue derribado a finales del siglo XVIII.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 6
+                },
+                // Proosdij 1: Artwork
+                new BuildingStory
+                {
+                    Id = 212,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Prévôté de Saint-Donatien.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 213,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De Sint-Donaasproosdij.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 214,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Provostry of Saint Donatian.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 215,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Propstei Sankt-Donatus.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 216,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Prebostazgo de San Donaciano.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 7
+                },
+                // Proosdij 2: Artwork
+                new BuildingStory
+                {
+                    Id = 217,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Cet exemple de baroque triomphaliste est unique à Bruges.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1280px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 218,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Dit voorbeeld van triomfalistische barokarchitectuur is uniek in Brugge.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1280px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 219,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "This example of triumphal Baroque architecture is unique in Bruges.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1280px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 220,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Dieses Musterbeispiel des triumphalistischen Barocks ist einzigartig in Brügge.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1280px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 221,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Se trata de un ejemplo exclusivo del barroco triunfalista en Brujas.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg/1280px-Jan_Baptist_van_Meunincxhove_-_The_Burg_in_Bruges.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 7
+                },
+                // Proosdij 3: Artwork
+                new BuildingStory
+                {
+                    Id = 222,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La prévôté fait aujourd’hui partie de la résidence officielle du gouverneur de la province de Flandre occidentale.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 223,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Vandaag maakt het deel uit van de ambtswoning van de gouverneur van West-Vlaanderen.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 224,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Nowadays, it is part of the official residence of the Governor of West Flanders.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 225,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Gegenwärtig gehört die Propstei zur Amtswohnung des Gouverneurs der Provinz Westflandern.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 226,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "En la actualidad forma parte de la residencia oficial del gobernador de Flandes Occidental.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 7
+                },
+                // Proosdij 4: Artwork
+                new BuildingStory
+                {
+                    Id = 227,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La façade est ornée de statues de Dame Justice ainsi que des dieux grecs de la vérité, de la charité et de la justice.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 228,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Op de gevel zijn beelden van Vrouwe Justitia en de Griekse goden waarheid, liefdadigheid en gerechtigheid aangebracht.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 229,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "There are images of Lady Justice and the Greek gods of truth, charity and justice on the facade.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 230,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "An der Fassade befinden sich Figuren von Justitia und der griechischen Götter der Wahrheit, Wohltätigkeit und Gerechtigkeit.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 7
+                },
+                new BuildingStory
+                {
+                    Id = 231,
+                    Title = "Proosdij",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "En la fachada se han instalado estatuas de la Dama de la Justicia y de las diosas griegas de la verdad, la caridad y la justicia.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 7
+                },
+                // Kathedraal 1: Artwork
+                new BuildingStory
+                {
+                    Id = 232,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "L’emplacement de l’ancienne cathédrale Saint-Donatien.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 233,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De locatie van de voormalige Sint-Donaaskathedraal.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 234,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The location of the former Saint Donatian’s cathedral.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 235,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Die Lage der ehemaligen Kathedrale Sankt Donatian.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 236,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La ubicación del antigua catedral de San Donaciano.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 8
+                },
+                // Kathedraal 2: Artwork
+                new BuildingStory
+                {
+                    Id = 237,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La cathédrale sur la Carte de Marcus Gerards (1591-1562).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 238,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De kathedraal op de kaart van Marcus Gerards (1561-1562).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 239,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The cathedral on the map of Marcus Gerards (1561-1562).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 240,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Die Kathedrale auf der Karte von Marcus Gerards (1561-1562).",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 241,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La catedral en el mapa de Marcus Gerards (1561-1562)",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 8
+                },
+                // Kathedraal 3: Artwork
+                new BuildingStory
+                {
+                    Id = 242,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "En 1127, le comte Charles le Bon de Flandre fut assassiné dans l’église.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 243,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "In 1127 werd in de kerk graaf Karel de Goede van Vlaanderen vermoord.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 244,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Count Charles the Good of Flanders was murdered in the church in 1127.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 245,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Im Jahre 1127 wurde Graf Karl der Gute von Flandern in der Kirche ermordet.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 246,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "En el año 1127 el conde Carlos el Bueno de Flandes fue asesinado en la iglesia.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 8
+                },
+                // Kathedraal 4: Artwork
+                new BuildingStory
+                {
+                    Id = 247,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La cathédrale a été démolie sous le régime français à la fin du 18e siècle.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 248,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "De kathedraal werd afgebroken onder het Franse regime eind 18de eeuw.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 249,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The cathedral was demolished under the French regime at the end of the 18th century.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 250,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Die Kathedrale wurde Ende des 18. Jahrhundert unter der französischen Verwaltung abgerissen.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 251,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La catedral fue derruida bajo el régimen francés a finales del siglo XVIII.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 8
+                },
+                // Kathedraal 5: Artwork
+                new BuildingStory
+                {
+                    Id = 252,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Les fondations de la cathédrale peuvent être admirées dans les caves de l’hôtel Crowne Plaza.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 253,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "In de kelders van het Crowne Plaza Hotel zijn de funderingen van de kathedraal te bezichtigen.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 254,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The foundations of the cathedral can still be seen in the cellars of the Crowne Plaza Hotel.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 255,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "In den Kellerräumen des Crowne Plaza Hotels können die Fundamente der Kathedrale auch heute noch besichtigt werden.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 8
+                },
+                new BuildingStory
+                {
+                    Id = 256,
+                    Title = "Kathedraal",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "En los sótanos del Crowne Plaza Hotel pueden visitarse los cimientos de la catedral.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 8
                 }
             );
         }
