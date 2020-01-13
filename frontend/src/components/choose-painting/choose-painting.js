@@ -35,6 +35,7 @@ class ChoosePainting extends React.Component{
     }
 
     async routeChange(event){
+        
         if(document.getElementById("paintingNumber").value.length !== 0){
             var infoType = document.getElementById("paintingNumber").value                
             if(infoType.length == 1){
@@ -61,6 +62,7 @@ class ChoosePainting extends React.Component{
                 this.setState({isEmpty : false});
             }
             document.getElementById("paintingNumber").value = input+number;
+            this.routeChange();
         }
     }
 
@@ -90,7 +92,7 @@ class ChoosePainting extends React.Component{
                 }
                 
                 <div className={styles.choose}>
-                    <div>
+                    <div className={`${styles.hidden}`}>
                         <label htmlFor="paintingNumber">{Translation.Translate("codeMissing")}</label>
                         <input type="text" id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>
                     </div>
@@ -99,7 +101,7 @@ class ChoosePainting extends React.Component{
                     <div className="table-responsive-sm">
                         <table className={`table table-borderless ${styles.chooseTable}`}>
                         <thead>
-                            <tr>
+                            <tr className={`${styles.hidden}`}>
                                 <th scope="col"></th>
                                 <th scope="col"></th>
                                 <th scope="col"></th>
@@ -107,21 +109,25 @@ class ChoosePainting extends React.Component{
                         </thead>
                             <tbody>
                                 <tr>
-                                    <td onClick={this.updateInput('A')}><span className={`${styles.touchButton}`}>A</span></td>
-                                    <td onClick={this.updateInput('B')}><span className={`${styles.touchButton}`}>B</span></td>
-                                    <td onClick={this.updateInput('C')}><span className={`${styles.touchButton}`}>C</span></td>
+                                    <td onClick={this.updateInput('AA')}>
+                                        <img className={`${styles.touchImage}`} src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Burg_in_Brugge_-_Belgi%C3%AB.jpg"></img>
+                                        <span className={`${styles.touchButton}`}>Burg</span>
+                                    </td>
+                                    <td onClick={this.updateInput('AB')}>
+                                        <span className={`${styles.touchButton}`}>Landhuis</span>
+                                    </td>
+                                    <td onClick={this.updateInput('AC')}><span className={`${styles.touchButton}`}>Griffie</span></td>
                                 </tr>
                                 <tr>
-                                    <td onClick={this.updateInput('D')}><span className={`${styles.touchButton}`}>D</span></td>
-                                    <td onClick={this.updateInput('E')}><span className={`${styles.touchButton}`}>E</span></td>
-                                    <td onClick={this.updateInput('F')}><span className={`${styles.touchButton}`}>F</span></td>
+                                    <td onClick={this.updateInput('AD')}><span className={`${styles.touchButton}`}>Stadhuis</span></td>
+                                    <td onClick={this.updateInput('AE')}><span className={`${styles.touchButton}`}>Basiliek</span></td>
+                                    <td onClick={this.updateInput('AF')}><span className={`${styles.touchButton}`}>Steen</span></td>
                                 </tr>
                                 <tr>
-                                    <td onClick={this.updateInput('G')}><span className={`${styles.touchButton}`}>G</span></td>
-                                    <td onClick={this.updateInput('H')}><span className={`${styles.touchButton}`}>H</span></td>
-                                    <td onClick={this.updateInput('I')}><span className={`${styles.touchButton}`}>I</span></td>
+                                    <td onClick={this.updateInput('AG')}><span className={`${styles.touchButton}`}>Proosdij</span></td>
+                                    <td onClick={this.updateInput('AH')}><span className={`${styles.touchButton}`}>Kathedraal</span></td>
                                 </tr>
-                                <tr>
+                                <tr className={`${styles.hidden}`}>
                                     <td>&nbsp;</td>
                                     <td onClick={this.routeChange} className={`search-button ${this.state.isEmpty ? null : styles.active} ${styles.playButton}`}><i className="fas fa-play-circle fa-3x"></i></td>
                                     <td className={`${styles.backspace}`} onClick={this.removeNumber}>

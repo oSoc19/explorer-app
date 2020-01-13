@@ -48,7 +48,7 @@ class PaintingDetail extends React.Component{
     }
 
     async componentWillMount(){
-        console.log(localStorage);
+        console.log(localStorage.getItem("language"));
         if( localStorage.getItem("language") === null || localStorage.getItem("language") === "false" ){
             let language = navigator.language || navigator.userLanguage;
             language = language.substring(0, 2).toUpperCase();
@@ -87,12 +87,15 @@ class PaintingDetail extends React.Component{
             await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : languages});
             this.addLanguages();
         }
+        
+        console.log(dataJSON);
+        console.log(this.state);
 
     }
 
     componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
-      }
+    }
 
     handleOnDragStart(e){
         e.preventDefault();

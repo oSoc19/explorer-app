@@ -132,6 +132,14 @@
 	margin: 2.1rem 0;
 }
 
+.hidden {
+	display: none;
+}
+
+.touchImage {
+	width: 100%
+}
+
 /* IPAD MEDIA QUERY */
 @media only screen 
 and (min-device-width : 768px) 
