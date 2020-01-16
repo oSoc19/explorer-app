@@ -97,8 +97,42 @@ class ChoosePainting extends React.Component{
                         <input type="text" id="paintingNumber" className={`${this.state.isEmpty ? styles.spanPlaceholder : styles.spanContent} ${styles.input}`}/>
                     </div>
                     
-                    
-                    <div className="table-responsive-sm">
+                    <div className="col-grid">
+                        <div className={`${styles.col1_2}`} onClick={this.updateInput('AA')}>
+                            <div className={`${styles.imagecover}`}><img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg"></img></div>
+                            <span className={`${styles.touchButton}`}>{Translation.Translate("Burg")}</span>
+                        </div>
+                        <div className={`${styles.col1_2}`} onClick={this.updateInput('AB')}>
+                            <div className={`${styles.imagecover}`}><img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg"></img></div>
+                            <span className={`${styles.touchButton}`}>{Translation.Translate("Landhuis")}</span>
+                        </div>
+                        <div className={`${styles.col1_2}`} onClick={this.updateInput('AC')}>
+                            <div className={`${styles.imagecover}`}><img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg"></img></div>
+                            <span className={`${styles.touchButton}`}>{Translation.Translate("Griffie")}</span>
+                        </div>
+                        <div className={`${styles.col1_2}`} onClick={this.updateInput('AD')}>
+                            <div className={`${styles.imagecover}`}><img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg"></img></div>
+                            <span className={`${styles.touchButton}`}>{Translation.Translate("Stadhuis")}</span>
+                        </div>
+                        <div className={`${styles.col1_2}`} onClick={this.updateInput('AE')}>
+                            <div className={`${styles.imagecover}`}><img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg"></img></div>
+                            <span className={`${styles.touchButton}`}>{Translation.Translate("Basiliek")}</span>
+                        </div>
+                        <div className={`${styles.col1_2}`} onClick={this.updateInput('AF')}>
+                            <div className={`${styles.imagecover}`}><img className={`${styles.touchImage}`} src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bruges%2C_burg_01.JPG/1280px-Bruges%2C_burg_01.JPG"></img></div>
+                            <span className={`${styles.touchButton}`}>{Translation.Translate("Steen")}</span>
+                        </div>
+                        <div className={`${styles.col1_2}`} onClick={this.updateInput('AG')}>
+                            <div className={`${styles.imagecover}`}><img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg"></img></div>
+                            <span className={`${styles.touchButton}`}>{Translation.Translate("Proosdij")}</span>
+                        </div>
+                        <div className={`${styles.col1_2}`} onClick={this.updateInput('AH')}>
+                            <div className={`${styles.imagecover}`}><img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg"></img></div>
+                            <span className={`${styles.touchButton}`}>{Translation.Translate("Kathedraal")}</span>
+                        </div>
+                    </div>
+
+                    {/* <div className="table-responsive-sm">
                         <table className={`table table-borderless ${styles.chooseTable}`}>
                         <thead>
                             <tr className={`${styles.hidden}`}>
@@ -155,7 +189,7 @@ class ChoosePainting extends React.Component{
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );

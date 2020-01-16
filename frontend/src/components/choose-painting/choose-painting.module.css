@@ -1,9 +1,42 @@
 .choose {
-	width: 70vw;
+	width: 90vw;
 	height: 90vh;
 	margin: auto;
 	font-family: 'Montserrat';
 	padding: 2rem 0 1rem 0;
+}
+
+.choose .col1_2 {
+	float: left;
+	width: 50%;
+	padding: 0 1rem 3rem 0;
+}
+
+.imagecover {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+
+.imagecover img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.choose .col1_2 {
+	float: left;
+	width: 50%;
+}
+
+.choose .col1_2:nth-child(2n):after {
+	content:"";
+	clear: both;
+	display: table;
+}
+
+.choose .col1_2:nth-child(2n+1):after {
+	clear: none;
 }
 
 .chooseTable {
