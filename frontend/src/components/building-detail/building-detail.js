@@ -263,10 +263,10 @@ class BuildingDetail extends React.Component{
                         
                         <hr className={styles.separation}></hr> */}
                         { this.state.data.translations[0].description
-                            ?   <div id="Description" className={styles.content}>
+                            ?   <div id={`Description-${this.props.match.params.id}`} className={styles.content}>
                                     <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={this.state.data.translations[0].name} content={this.state.data.translations[0].description}></InfoSection>
                                 </div>
-                            :   <div id="Description" className={styles.content}>
+                            :   <div id={`Description-${this.props.match.params.id}`} className={styles.content}>
                                     {Translation.Translate("missingLanguage")}
                                 </div>
                         }
