@@ -266,7 +266,7 @@ class BuildingDetail extends React.Component{
                             ?   <div id={`Description-${this.props.match.params.id}`} className={styles.content}>
                                     <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={this.state.data.translations[0].name} content={this.state.data.translations[0].description}></InfoSection>
                                 </div>
-                            :   <div id={`Description-${this.props.match.params.id}`} className={styles.content}>
+                            :   <div id="Description" className={styles.content}>
                                     {Translation.Translate("missingLanguage")}
                                 </div>
                         }
@@ -277,12 +277,14 @@ class BuildingDetail extends React.Component{
                             <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                         </div>
 
-                        <hr className={styles.separation}></hr>
-                        <a id={`Author-${this.props.match.params.id}`} className={styles.anchor}></a>
-                        <div className={styles.content}>
-                            <InfoSection  type="author" sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={this.state.data.author.firstName + ' ' + this.state.data.author.lastName} content={this.state.data.author.translations[0].description}></InfoSection>
-                        </div>
-                        
+                        { this.state.data.author.id !== 1
+                            ?   <div id={`Author-${this.props.match.params.id}`} className={styles.content}>
+                                    <hr className={styles.separation}></hr>
+                                    <InfoSection type="author" sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={this.state.data.author.firstName + ' ' + this.state.data.author.lastName} content={this.state.data.author.translations[0].description}></InfoSection>
+                                </div>
+                            :   <div id="Author" className={styles.content}></div>
+                        }
+
                         <hr className={styles.separation}></hr>
                         <div className={styles.feedback}>
                             <p>
