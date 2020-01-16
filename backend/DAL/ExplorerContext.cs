@@ -2886,7 +2886,7 @@ namespace backend.DAL
                     Id = 29,
                     BuildingId = 6,
                     LanguageId = 4, //DE
-                    Name = "Basilika",
+                    Name = "Das Schloss Steen",
                     Description = "<p><strong>1088</strong> <br>Erstmalige Erwähnung als Residenz der Grafen von Flandern. </p> <p><strong>12. Jahrhundert</strong> <br>Die Grafen verlassen das Gebäude und ziehen in die Residenz „Love“ auf der gegenüberliegenden Seite des Burgplatzes (das gegenwärtige Landeshaus des Brügger Freiamts) um. „Het Steen“ wird ein Gefängnis. </p> <p><strong>1689</strong> <br>Das Gebäude wird größtenteils durch einen Brand zerstört. </p> <p><strong>1751</strong> <br>Die Stadt Brügge erwirbt „Het Steen“ und lässt das Gebäude 1784 abreißen. </p> <p><strong>1851</strong> <br>Stattdessen lässt sich ein Eisenwarenhandel hier nieder. </p> <p><strong>1931</strong> <br>Errichtung eines Gebäudes mit drei Treppengiebeln im neugotischen Stil (jetzt Brasserie Tompouce). </p> <p><strong>1977</strong> <br>Entstehung der Einkaufsgalerie „Ter Steeghere“. </p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Draft:Het_Steen_(Brugge)"
                 },
@@ -2895,7 +2895,7 @@ namespace backend.DAL
                     Id = 30,
                     BuildingId = 6,
                     LanguageId = 5, //ES
-                    Name = "Basílica",
+                    Name = "El castillo Steen",
                     Description = "1088 Nombrado por primera vez como residencia de los condes de Flandes Siglo XII Los condes abandonan el edificio y se instalan en el «Love» al otro lado del Burg (la actual Landhuis del Brugse Vrije), el Steen pasa a ser una cárcel 1689 El edificio se incendia casi en su totalidad 1751 La ciudad de Brujas pasa a ser propietaria del Steen y lo manda demoler en 1784 1851 Se instala una herrería en este sitio 1931 Construcción de un edificio con tres fachadas escalonadas de estilo neogótico (en la actualidad Brasserie Tompouce) 1977 Construcción del pasaje comercial de Ter Steeghere",
                     SourceLink = "https://en.wikipedia.org/wiki/Draft:Het_Steen_(Brugge)"
                 },
