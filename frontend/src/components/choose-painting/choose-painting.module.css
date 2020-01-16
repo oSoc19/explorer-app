@@ -19,6 +19,21 @@
 	width: 33%;	
 }
 
+.chooseTable td:first-child {
+	padding-left: 0;
+ }
+.chooseTable td:last-child {
+	padding-right: 0;
+ }
+.chooseTable td:first-child img {
+	width:calc(100% - .55rem);
+	float:right;
+ }
+ .chooseTable td:last-child img {
+	width:calc(100% - .55rem);
+	float:left;
+ }
+
 .input{
 	border: 0;
 	background-color: transparent;

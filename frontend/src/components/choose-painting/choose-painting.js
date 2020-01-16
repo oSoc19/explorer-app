@@ -110,22 +110,41 @@ class ChoosePainting extends React.Component{
                             <tbody>
                                 <tr>
                                     <td onClick={this.updateInput('AA')}>
-                                        <img className={`${styles.touchImage}`} src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Burg_in_Brugge_-_Belgi%C3%AB.jpg"></img>
-                                        <span className={`${styles.touchButton}`}>Burg</span>
+                                        <img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg"></img>
+                                        <span className={`${styles.touchButton}`}>{Translation.Translate("Burg")}</span>
                                     </td>
                                     <td onClick={this.updateInput('AB')}>
-                                        <span className={`${styles.touchButton}`}>Landhuis</span>
+                                        <img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg"></img>
+                                        <span className={`${styles.touchButton}`}>{Translation.Translate("Landhuis")}</span>
                                     </td>
-                                    <td onClick={this.updateInput('AC')}><span className={`${styles.touchButton}`}>Griffie</span></td>
+                                    <td onClick={this.updateInput('AC')}>
+                                        <img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg"></img>
+                                        <span className={`${styles.touchButton}`}>{Translation.Translate("Griffie")}</span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td onClick={this.updateInput('AD')}><span className={`${styles.touchButton}`}>Stadhuis</span></td>
-                                    <td onClick={this.updateInput('AE')}><span className={`${styles.touchButton}`}>Basiliek</span></td>
-                                    <td onClick={this.updateInput('AF')}><span className={`${styles.touchButton}`}>Steen</span></td>
+                                    <td onClick={this.updateInput('AD')}>
+                                        <img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg"></img>
+                                        <span className={`${styles.touchButton}`}>{Translation.Translate("Stadhuis")}</span>
+                                    </td>
+                                    <td onClick={this.updateInput('AE')}>
+                                        <img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg"></img>
+                                        <span className={`${styles.touchButton}`}>{Translation.Translate("Basiliek")}</span>
+                                    </td>
+                                    <td onClick={this.updateInput('AF')}>
+                                        <img className={`${styles.touchImage}`} src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bruges%2C_burg_01.JPG/1280px-Bruges%2C_burg_01.JPG"></img>
+                                        <span className={`${styles.touchButton}`}>{Translation.Translate("Steen")}</span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td onClick={this.updateInput('AG')}><span className={`${styles.touchButton}`}>Proosdij</span></td>
-                                    <td onClick={this.updateInput('AH')}><span className={`${styles.touchButton}`}>Kathedraal</span></td>
+                                    <td onClick={this.updateInput('AG')}>
+                                        <img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg"></img>
+                                        <span className={`${styles.touchButton}`}>{Translation.Translate("Proosdij")}</span>
+                                    </td>
+                                    <td onClick={this.updateInput('AH')}>
+                                        <img className={`${styles.touchImage}`} src="https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg"></img>
+                                        <span className={`${styles.touchButton}`}>{Translation.Translate("Kathedraal")}</span>
+                                    </td>
                                 </tr>
                                 <tr className={`${styles.hidden}`}>
                                     <td>&nbsp;</td>

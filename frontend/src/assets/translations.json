@@ -268,5 +268,85 @@
         "ES":"We're sorry your language is not available",
         "JA":"We're sorry your language is not available",
         "RU":"We're sorry your language is not available"
+    },
+    "Burg":{
+        "EN":"The Burg Square",
+        "NL":"De Burg",
+        "FR":"La Place du Bourg",
+        "DE":"Der Burgplatz",
+        "IT":"The Burg Square",
+        "ES":"La Plaza Burg",
+        "JA":"The Burg Square",
+        "RU":"The Burg Square"
+    },
+    "Landhuis":{
+        "EN":"Manor of the Franc of Bruges",
+        "NL":"Landhuis van het Brugse Vrije",
+        "FR":"Maison du Franc de Bruges",
+        "DE":"Landeshaus des Brügger Freiamts",
+        "IT":"Manor of the Franc of Bruges",
+        "ES":"Mansión del Franconato de Brujas",
+        "JA":"Manor of the Franc of Bruges",
+        "RU":"Manor of the Franc of Bruges"
+    },
+    "Griffie":{
+        "EN":"Old Civil Registry",
+        "NL":"Oude Civiele Griffie",
+        "FR":"Ancien Greffe Civil",
+        "DE":"Alte Zivilkanzlei",
+        "IT":"Old Civil Registry",
+        "ES":"Antigua Escribanía civil",
+        "JA":"Old Civil Registry",
+        "RU":"Old Civil Registry"
+    },
+    "Stadhuis":{
+        "EN":"City Hall",
+        "NL":"Stadhuis",
+        "FR":"Hôtel de ville",
+        "DE":"Rathaus",
+        "IT":"City Hall",
+        "ES":"Ayuntamiento",
+        "JA":"City Hall",
+        "RU":"City Hall"
+    },
+    "Basiliek":{
+        "EN":"Basilica of the Holy Blood",
+        "NL":"Basiliek van het Heilig Bloed",
+        "FR":"Basilique du Saint-Sang",
+        "DE":"Heilig-Blut-Basilika",
+        "IT":"Basilica of the Holy Blood",
+        "ES":"Basílica de la Santa Sangre",
+        "JA":"Basilica of the Holy Blood",
+        "RU":"Basilica of the Holy Blood"
+    },
+    "Steen":{
+        "EN":"The Steen Castle",
+        "NL":"Het Steen",
+        "FR":"Le château Steen",
+        "DE":"Das Schloss Steen",
+        "IT":"The Steen Castle",
+        "ES":"El castillo Steen",
+        "JA":"The Steen Castle",
+        "RU":"The Steen Castle"
+    },
+    "Proosdij":{
+        "EN":"Provostry of Saint-Donatian",
+        "NL":"Sint-Donaasproosdij",
+        "FR":"Prévôté de Saint-Donatien",
+        "DE":"Propstei Sankt-Donatian",
+        "IT":"Provostry of Saint-Donatian",
+        "ES":"Prebostazgo de San Donatiano",
+        "JA":"Provostry of Saint-Donatian",
+        "RU":"Provostry of Saint-Donatian"
+    },
+    "Kathedraal":{
+        "EN":"Saint Donatian’s Cathedral",
+        "NL":"Sint-Donaaskathedraal",
+        "FR":"Cathédrale Sint-Donatien",
+        "DE":"Kathedrale Sankt-Donatian",
+        "IT":"Saint Donatian’s Cathedral",
+        "ES":"Catedral de San Donaciano",
+        "JA":"Saint Donatian’s Cathedral",
+        "RU":"Saint Donatian’s Cathedral"
     }
 }
