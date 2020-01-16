@@ -73,8 +73,6 @@ class BuildingDetail extends React.Component{
             await this.setState({data : dataJSON, loading : false, currentStoryIndex : 0, availableLanguages : languages});
             this.addLanguages();
         }
-        console.log(dataJSON);
-        console.log(this.state);
     }
 
     componentWillUnmount() {
@@ -271,11 +269,13 @@ class BuildingDetail extends React.Component{
                                 </div>
                         }
 
-                        <hr className={styles.separation}></hr>
-                        <a id={`Movement-${this.props.match.params.id}`} className={styles.anchor}></a>
-                        <div className={styles.content}>
-                            <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
-                        </div>
+                        { this.state.data.id !== 6 && this.state.data.id !== 1
+                            ?   <div id={`Movement-${this.props.match.params.id}`} className={styles.content}>
+                                    <hr className={styles.separation}></hr>
+                                    <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
+                                </div>
+                            :   <div id="Movement" className={styles.content}></div>
+                        }
 
                         { this.state.data.author.id !== 1
                             ?   <div id={`Author-${this.props.match.params.id}`} className={styles.content}>
