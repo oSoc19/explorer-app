@@ -8,8 +8,14 @@
 
 .choose .col1_2 {
 	float: left;
+	min-height: 200px;
+	padding: 0 1rem 1.8rem 0;
 	width: 50%;
-	padding: 0 1rem 3rem 0;
+}
+
+.choose .col_grid {
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .imagecover {
@@ -32,11 +38,13 @@
 .choose .col1_2:nth-child(2n):after {
 	content:"";
 	clear: both;
-	display: table;
+	display: block;
+	height: 0; 
+	visibility: hidden;
 }
 
-.choose .col1_2:nth-child(2n+1):after {
-	clear: none;
+.choose .col1_2:nth-child(2n+1) {
+    clear:left;
 }
 
 .chooseTable {
@@ -110,7 +118,7 @@
 
 .touchButton {
 	display: block;
-	padding: 1rem 0;
+	padding: 1rem 0 0;
 	position: relative;
 }
 
