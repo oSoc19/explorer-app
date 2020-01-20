@@ -220,7 +220,7 @@ class BuildingDetail extends React.Component{
                                 <AliceCarousel 
                                     autoPlay={false} 
                                     mouseDragEnabled 
-                                    buttonsDisabled={false}
+                                    buttonsDisabled={(this.state.data.stories.length>1) ? false : true}
                                     slideToIndex={this.currentStoryIndex}
                                     swipeDisabled={true}
                                     onSlideChanged={this.handleChange}>
