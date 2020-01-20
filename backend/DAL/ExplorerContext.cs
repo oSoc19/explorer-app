@@ -465,8 +465,8 @@ namespace backend.DAL
                     Id = 33,
                     ArtistId = 7,
                     LanguageId = 3, //EN
-                    Description = "Hendrik Pickery (1828–1894) was a sculptor from Bruges. He was a student of the sculptor Eugène Simonis (1810–1882), who was from Liège. The statues on the steps of the gable of the Provinciaal Hof (Markt) and the statue of Hans Memling (Woensdagmarkt) are also Pickery’s work.",
-                    SourceLink = "https://rkd.nl/en/explore/artists/63328"
+                    Description = "Hendrik Pickery (1828–1894) was a sculptor from Bruges. He was a student of the sculptor Eugène Simonis (1810–1882), who was from Liège. The statues on the steps and the facade of the Provinciaal Hof (Markt) and the statue of Hans Memling (Woensdagmarkt) are also Pickery’s work.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/63327"
                 },
                 new ArtistTranslation
                 {
@@ -474,15 +474,15 @@ namespace backend.DAL
                     ArtistId = 7,
                     LanguageId = 4, //DE
                     Description = "Hendrik Pickery (1828–1894) war ein Brügger Bildhauer. Er war ein Schüler des Lütticher Bildhauers Eugène Simonis (1810–1882). Auch die Skulpturen auf den Treppen und an der Fassade des Provinzialpalastes („Provinciaal Hof“ am Marktplatz) und die Statue von Hans Memling (Woensdagmarkt) stammen von Pickery.",
-                    SourceLink = "https://rkd.nl/en/explore/artists/63328"
+                    SourceLink = "https://rkd.nl/en/explore/artists/63327"
                 },
                 new ArtistTranslation
                 {
                     Id = 35,
                     ArtistId = 7,
                     LanguageId = 5, //ES
-                    Description = "Hendrik Pickery (1828–1894) fue un escultor brujense. Fue alumno del escultor liejense Eugène Simonis (1810–1882). Las estatuas sobre las escaleras y en la fachada de la Corte Provincial (en la plaza del Markt), y la estatua de Hans Memling (plaza de Woensdagmarkt) son obra de Pickery.",
-                    SourceLink = "https://rkd.nl/en/explore/artists/63328"
+                    Description = "Hendrik Pickery (1828–1894) fue un escultor brujense. Fue alumno del escultor liejense Eugène Simonis (1810–1882). Las estatuas sobre las escaleras y en la fachada de la Corte Provincial (en la plaza de <em>Markt</em>), y la estatua de Hans Memling (plaza de Woensdagmarkt) son obra de Pickery.",
+                    SourceLink = "https://rkd.nl/en/explore/artists/63327"
                 },
                 // Delacenserie
                 new ArtistTranslation
@@ -674,7 +674,7 @@ namespace backend.DAL
                     MovementId = 3,
                     Name = "Romaans",
                     LanguageId = 2, //NL
-                    Description = "De romaanse architectuur bloeide tussen 1000 en 1200. Ze inspireerde zich op de Karolingische een Ottoonse architecten, die op hun beurt op Romeinse en Byzantijnse voorbeelden navolgden. Dikke muren, rondbogen en robuuste zuilen zijn typisch voor de romaanse architectuur.",
+                    Description = "De romaanse architectuur bloeide tussen 1000 en 1200. Ze inspireerde zich op de Karolingische een Ottoonse architecten, die op hun beurt Romeinse en Byzantijnse voorbeelden navolgden. Dikke muren, rondbogen en robuuste zuilen zijn typisch voor de romaanse architectuur.",
                     SourceLink = "https://nl.wikipedia.org/wiki/Romaanse_architectuur"
                 },
                 new MovementTranslation
@@ -759,7 +759,7 @@ namespace backend.DAL
                     Name = "Classicisme",
                     LanguageId = 1, //FR
                     Description = "Dès la Renaissance, l’architecture de l’Antiquité est redevenue une source d'inspiration pour les architectes. Dans l’architecture classique, des proportions fixes sont utilisées dans la composition et la colonne, le pilastre ainsi que le fronton sont les éléments de construction les plus importants.",
-                    SourceLink = "https://fr.wikipedia.org/wiki/Classicisme#Architecture"
+                    SourceLink = "https://fr.wikipedia.org/wiki/Classicisme#Architecture_classique"
                 
                 },
                 new MovementTranslation
@@ -2648,7 +2648,7 @@ namespace backend.DAL
                     BuildingId = 1,
                     LanguageId = 3, //EN
                     Name = "The Burg Square",
-                    Description = "<p>Burg Square is one of the oldest parts of the city centre. It is a former fortress and was originally walled in and had entrance gates.</p><p>The fortress was located at the meeting-point of the Oudenburg-Aardenburg road and the Reie canal.</p><p>Count Arnulf I van Vlaanderen (889-965) extended the fortress, transforming it into a powerful religious and administrative centre. The Count’s Residence, the City Council, Saint Donatian’s Church and later the Basilica of the Holy Blood were also located within the fortress walls.</p><p>Saint Donatian’s Cathedral was demolished in 1799. It was never re-built, meaning that the square doubled to twice its previous size.</p>",
+                    Description = "<p>Burg Square is one of the oldest parts of the city centre. It is a former fortress and was originally walled and had entrance gates.</p><p>The fortress was located at the meeting-point of the Oudenburg-Aardenburg road and the Reie canal.</p><p>Count Arnulf I van Vlaanderen (889-965) extended the fortress, transforming it into a powerful religious and administrative centre. The Count’s Residence, the City Council, Saint Donatian’s Church and later the Basilica of the Holy Blood were also located within the fortress walls.</p><p>Saint Donatian’s Cathedral was demolished in 1799. It was never re-built, meaning that the square doubled to twice its previous size.</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Burg_Square"
                 },
                 new BuildingTranslation
@@ -2676,7 +2676,7 @@ namespace backend.DAL
                     BuildingId = 2,
                     LanguageId = 1, //FR
                     Name = "Maison du Franc de Bruges ",
-                    Description = "<p><strong>11<sup>e</sup> siècle</strong><br>Construction de « Love », la résidence des comtes de Flandre.</p><p><strong>15<sup>e</sup> siècle</strong><br>L’administration du Franc de Bruges (la campagne brugeoise) déménage du bâtiment « Het Steen » pour s’installer dans ce bâtiment situé de l’autre côté.</p><p><strong>1520-1525</strong><br>Construction d’une salle échevinale avec une cheminée monumentale.</p><p><strong>1528-1532</strong><br>Construction d’une galerie avec arches.</p><p><strong>17<sup>e</sup> siècle</strong><br>Nouvelle extension avec une chapelle et une chambre des orphelins.</p><p><strong>1722-1727</strong><br>Transformation dans un style classique.</p><p><strong>1794</strong><br>La maison du Franc de Bruges devient un tribunal.</p><p><strong>1984</strong><br>Le bâtiment est utilisé par l’administration de la ville de Bruges.</p>",
+                    Description = "<p><strong>11<sup>e</sup> siècle</strong><br>Construction du « Love », la résidence des comtes de Flandre.</p><p><strong>15<sup>e</sup> siècle</strong><br>L’administration du Franc de Bruges (la campagne brugeoise) déménage du bâtiment « Steen » pour s’installer dans ce bâtiment situé de l’autre côté.</p><p><strong>1520-1525</strong><br>Construction d’une salle échevinale avec une cheminée monumentale.</p><p><strong>1528-1532</strong><br>Construction d’une galerie avec arches.</p><p><strong>17<sup>e</sup> siècle</strong><br>Nouvelle extension avec une chapelle et une chambre des orphelins.</p><p><strong>1722-1727</strong><br>Transformation dans un style classique.</p><p><strong>1794</strong><br>La maison du Franc de Bruges devient un tribunal.</p><p><strong>1984</strong><br>Le bâtiment est utilisé par l’administration de la ville de Bruges.</p>",
                     SourceLink = "https://fr.wikipedia.org/wiki/Franc_de_Bruges#Maison_du_Franc_%C3%A0_Bruges"
                 },
                 new BuildingTranslation
@@ -2686,7 +2686,7 @@ namespace backend.DAL
                     LanguageId = 2, //NL
                     Name = "Landhuis van het Brugse Vrije ",
                     Description = "<p><strong>11de eeuw</strong><br>bouw van de 'Love', residentie van de graven van Vlaanderen</p><p><strong>15de eeuw</strong>  <br>het bestuur van het Brugse Vrije (het platteland rondom Brugge) verhuist van Het Steen aan de overzijde naar deze locatie</p><p><strong>1520-1525</strong><br>bouw van een schepenkamer met monumentale schouw</p><p><strong>1528-1532</strong><br>bouw van een galerij met rondbogen</p><p><strong>17de eeuw</strong><br>verdere uitbreiding met een kapel en wezenkamer</p><p><strong>1722-1727</strong> <br>verbouwing in classicistische stijl</p><p><strong>1794</strong><br>het landhuis wordt gerechtshof</p><p><strong>1984</strong><br>in gebruik genomen door de stadsadministratie</p>",
-                    SourceLink = "https://nl.wikipedia.org/wiki/Brugse_Vrije"
+                    SourceLink = "https://nl.wikipedia.org/wiki/Brugse_Vrije#Het_Landhuis_van_het_Brugse_Vrije_te_Brugge"
                 },
                 new BuildingTranslation
                 {
@@ -2694,7 +2694,7 @@ namespace backend.DAL
                     BuildingId = 2,
                     LanguageId = 3, //EN
                     Name = "Manor of the Franc of Bruges ",
-                    Description = "<p><strong>11th century</strong><br>Love” building, the residence of the counts of Flanders</p><p><strong>15th century</strong><br>the government of the Franc of Bruges (the area of countryside surrounding Bruges) moved from Steen Castle (which was on the opposite side) to this location.</p><p><strong>1520-1525</strong><br>construction of an alderman’s room with monumental fireplace</p><p><strong>1528-1532</strong><br>construction of an arched gallery</p><p><strong>17th century</strong><br>further extensions including a chapel and orphanage</p><p><strong>1722-1727</strong><br>renovations in the classical style</p><p><strong>1794</strong><br>the manor became a court of justice</p><p><strong>1984</strong><br>came into use by the city administration</p>",
+                    Description = "<p><strong>11th century</strong><br>'Love' building, the residence of the counts of Flanders</p><p><strong>15th century</strong><br>the government of the Franc of Bruges (the area of countryside surrounding Bruges) moved from Steen Castle (which was on the opposite side) to this location.</p><p><strong>1520-1525</strong><br>construction of an alderman’s room with monumental fireplace</p><p><strong>1528-1532</strong><br>construction of an arched gallery</p><p><strong>17th century</strong><br>further extensions including a chapel and orphanage</p><p><strong>1722-1727</strong><br>renovations in the classical style</p><p><strong>1794</strong><br>the manor became a court of justice</p><p><strong>1984</strong><br>came into use by the city administration</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Brugse_Vrije#The_Manor"
                 },
                 new BuildingTranslation
@@ -2712,7 +2712,7 @@ namespace backend.DAL
                     BuildingId = 2,
                     LanguageId = 5, //ES
                     Name = "Mansión del Franconato de Brujas",
-                    Description = "<p><strong>Siglo XI</strong><br>Construcción del «<em>Love</em>», residencia de los condes de Flandes</p><p><strong>Siglo XV</strong><br>La administración del <em>Brugse Vrije</em> (el campo que rodeaba Brujas) se traslada a esta ubicación desde el <em>Steen</em>, situado al otro lado</p><p><strong>1520-1525</strong><br>Construcción de una sala para el escabinado, con una monumental chimenea</p><p><strong>1528-1532</strong><br>Construcción de una galería con arcos de medio punto</p><p><strong>Siglo XVII</strong><br>Ampliación con una capilla y un juzgado de huérfanos</p><p><strong>1722-1727</strong><br>Reforma en estilo clasicista</p><p><strong>1794</strong><br>El <em>landhuis</em> se convierte en tribunal&nbsp;</p><p><strong>1984</strong><br>Se pone al servicio de la administración municipal</p>",
+                    Description = "<p><strong>Siglo XI</strong><br>Construcción del <em>Love</em>, residencia de los condes de Flandes</p><p><strong>Siglo XV</strong><br>La administración del <em>Brugse Vrije</em> (el campo que rodeaba Brujas) se traslada a esta ubicación desde el <em>Steen</em>, situado al otro lado</p><p><strong>1520-1525</strong><br>Construcción de una sala para el escabinado, con una monumental chimenea</p><p><strong>1528-1532</strong><br>Construcción de una galería con arcos de medio punto</p><p><strong>Siglo XVII</strong><br>Ampliación con una capilla y un juzgado de huérfanos</p><p><strong>1722-1727</strong><br>Reforma en estilo clasicista</p><p><strong>1794</strong><br>El mansión se convierte en tribunal&nbsp;</p><p><strong>1984</strong><br>Se pone al servicio de la administración municipal</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Brugse_Vrije#The_Manor"
                 },
                 //GRIFFIE
@@ -2768,7 +2768,7 @@ namespace backend.DAL
                     BuildingId = 4,
                     LanguageId = 1, //FR
                     Name = "Hôtel de ville",
-                    Description = "<p><strong>1280</strong><br>Après un incendie dans le Beffroi sur la Grand-Place, les échevins prennent possession de la « ghyselhuus », l’ancienne prison comtale.</p><p><strong>1376</strong><br>Le comte Lodewijk van Male fait démolir la « ghyselhuus » pour la remplacer par une véritable « scepenhuus » imaginée par Jan Roegiers.</p><p><strong>1887</strong><br>Un incendie ravage l’intérieur.</p><p><strong>1895-1905</strong><br>Louis Delacenserie et Jean-Baptiste de Béthune rénovent l’intérieur dans un style néogothique.</p>",
+                    Description = "<p><strong>1280</strong><br>Après un incendie dans le Beffroi sur la Grand-Place, les échevins prennent possession de la « ghyselhuus », l’ancienne prison comtale.</p><p><strong>1376</strong><br>Le comte Louis de Male fait démolir la « ghyselhuus » pour la remplacer par une véritable « scepenhuus » imaginée par Jan Roegiers.</p><p><strong>1887</strong><br>Un incendie ravage l’intérieur.</p><p><strong>1895-1905</strong><br>Louis Delacenserie et Jean-Baptiste de Béthune rénovent l’intérieur dans un style néogothique.</p>",
                     SourceLink = "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Bruges"
                 },
                 new BuildingTranslation
@@ -2778,7 +2778,7 @@ namespace backend.DAL
                     LanguageId = 2, //NL
                     Name = "Stadhuis",
                     Description = "<p><strong>1280</strong><br>na een brand in het Belfort op de Markt nemen de schepenen hun intrek in het 'ghyselhuus', de oude grafelijke gevangenis</p><p><strong>1376</strong><br>graaf Lodewijk van Male laat het 'ghyselhuus' slopen om het te vervangen door een echt 'scepenhuus', ontworpen door Jan Roegiers</p><p><strong>1887</strong><br>een brand beschadigt het interieur</p><p><strong>1895-1905</strong><br>Louis Delacenserie en Jean-Baptiste de Béthune renoveren het interieur in neogotische stijl</p>",
-                    SourceLink = "https://en.wikipedia.org/wiki/Bruges_City_Hall"
+                    SourceLink = "https://nl.wikipedia.org/wiki/Stadhuis_van_Brugge"
                 },
                 new BuildingTranslation
                 {
@@ -2786,7 +2786,7 @@ namespace backend.DAL
                     BuildingId = 4,
                     LanguageId = 3, //EN
                     Name = "City Hall",
-                    Description = "<p><strong>1280</strong><br>following a fire in the Belfry on the Markt, the aldermen are moved to the ‘Ghyselhuus’, the old Count’s prison</p><p><strong>1376</strong><br>Count Lodewijk van Male orders the demolition of the ‘Ghyselhuus’, to be replaced by a proper City hall designed by Jan Roegiers</p><p><strong>1887</strong><br>the interior is damaged by a fire</p><p><strong>1895-1905</strong><br>the interior is renovated in the neo-Gothic style by Louis Delacenserie and Jean-Baptiste de Béthune</p>",
+                    Description = "<p><strong>1280</strong><br>following a fire in the Belfry on the Markt, the aldermen are moved to the ‘Ghyselhuus’, the old Count’s prison</p><p><strong>1376</strong><br>Count Louis of Male orders the demolition of the ‘Ghyselhuus’, to be replaced by a proper City hall designed by Jan Roegiers</p><p><strong>1887</strong><br>the interior is damaged by a fire</p><p><strong>1895-1905</strong><br>the interior is renovated in the neo-Gothic style by Louis Delacenserie and Jean-Baptiste de Béthune</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Bruges_City_Hall"
                 },
                 new BuildingTranslation
@@ -2796,7 +2796,7 @@ namespace backend.DAL
                     LanguageId = 4, //DE
                     Name = "Rathaus",
                     Description = "<p><strong>1280</strong><br>Nach einem Brand im Belfried am Marktplatz ziehen die Schöffen in das alte Grafengefängnis „Ghyselhuus“ um. </p> <p><strong>1376</strong> <br>Graf Ludwig von Male lässt das „Ghyselhuus“ abreißen und durch ein echtes „Scepenhuus“ (Schöffenhaus) nach den Plänen von Jan Roegiers ersetzen. </p> <p><strong>1887</strong> <br>Ein Brand verursacht Schäden im Innern des Gebäudes. </p> <p><strong>1895–1905</strong> <br>Louis Delacenserie und Jean-Baptiste de Béthune renovieren den Innenbereich im neugotischen Stil. </p>",
-                    SourceLink = "https://en.wikipedia.org/wiki/Bruges_City_Hall"
+                    SourceLink = "https://de.wikipedia.org/wiki/Rathaus_von_Br%C3%BCgge"
                 },
                 new BuildingTranslation
                 {
@@ -2804,7 +2804,7 @@ namespace backend.DAL
                     BuildingId = 4,
                     LanguageId = 5, //ES
                     Name = "Ayuntamiento",
-                    Description = "<p><strong>1280</strong> <br>Tras un incendio en el campanario de Belfort de la plaza de <em>Markt</em>, los escabinos se instalan en el «<em>ghyselhuus</em>», la antigua cárcel condal &nbsp;</p> <p><strong>1376</strong> <br>El conde Lodewijk van Male manda derribar el «<em>ghyselhuus</em>» para reemplazarlo por una verdadera «<em>scepenhuus</em>» (casa escabinal), diseñada por Jan Roegiers</p> <p><strong>1887</strong> <br>Un incendio devasta el interior </p> <p><strong>1895-1905</strong> <br>Louis Delacenserie y Jean-Baptiste de Béthune renuevan el interior en estilo neogótico </p>",
+                    Description = "<p><strong>1280</strong> <br>Tras un incendio en el campanario de Belfort de la plaza de <em>Markt</em>, los escabinos se instalan en el <em>ghyselhuus</em>, la antigua cárcel condal &nbsp;</p> <p><strong>1376</strong> <br>El conde Luis II manda derribar el «<em>ghyselhuus</em>» para reemplazarlo por una verdadera <em>scepenhuus</em> (casa escabinal), diseñada por Jan Roegiers</p> <p><strong>1887</strong> <br>Un incendio devasta el interior </p> <p><strong>1895-1905</strong> <br>Louis Delacenserie y Jean-Baptiste de Béthune renuevan el interior en estilo neogótico </p>",
                     SourceLink = "https://es.wikipedia.org/wiki/Ayuntamiento_de_Brujas"
                 },
                 //BASILIEK
@@ -2814,7 +2814,7 @@ namespace backend.DAL
                     BuildingId = 5,
                     LanguageId = 1, //FR
                     Name = "Basilique du Saint-Sang",
-                    Description = "<p><strong>1134-1149</strong> <br>Construction d’une double chapelle romane pour les comtes de Flandre qui séjournent dans le « Het Steen » adjacent : la chapelle Saint-Basile inférieure et, plus tard, la chapelle du Saint-Sang supérieure. </p> <p><strong>13<sup>e</sup> siècle</strong> <br>La relique du Saint-Sang est conservée dans la chapelle supérieure. </p> <p><strong>15<sup>e</sup> siècle</strong> <br>Restauration de la chapelle supérieure dans un style gothique. </p> <p><strong>1528-1532</strong> <br>Construction d’un escalier de style gothique tardif pour accéder à la chapelle du Saint-Sang. </p> <p><strong>1819-1839</strong> <br>Reconstruction et restauration des chapelles avec la dévastation et le déclin sous la domination française. </p> <p><strong>1923</strong> <br>Élévation de la chapelle du Saint-Sang au rang de basilique. </p>",
+                    Description = "<p><strong>1134-1149</strong> <br>Construction d’une double chapelle romane pour les comtes de Flandre qui séjournent dans le « Steen » adjacent : la chapelle Saint-Basile inférieure et, plus tard, la chapelle du Saint-Sang supérieure. </p> <p><strong>13<sup>e</sup> siècle</strong> <br>La relique du Saint-Sang est conservée dans la chapelle supérieure. </p> <p><strong>15<sup>e</sup> siècle</strong> <br>Restauration de la chapelle supérieure dans un style gothique. </p> <p><strong>1528-1532</strong> <br>Construction d’un escalier de style gothique tardif pour accéder à la chapelle du Saint-Sang. </p> <p><strong>1819-1839</strong> <br>Reconstruction et restauration des chapelles avec la dévastation et le déclin sous la domination française. </p> <p><strong>1923</strong> <br>Élévation de la chapelle du Saint-Sang au rang de basilique. </p>",
                     SourceLink = "https://fr.wikipedia.org/wiki/Basilique_du_Saint-Sang_de_Bruges"
                 },
                 new BuildingTranslation
@@ -2888,7 +2888,7 @@ namespace backend.DAL
                     LanguageId = 4, //DE
                     Name = "Das Schloss Steen",
                     Description = "<p><strong>1088</strong> <br>Erstmalige Erwähnung als Residenz der Grafen von Flandern. </p> <p><strong>12. Jahrhundert</strong> <br>Die Grafen verlassen das Gebäude und ziehen in die Residenz „Love“ auf der gegenüberliegenden Seite des Burgplatzes (das gegenwärtige Landeshaus des Brügger Freiamts) um. „Het Steen“ wird ein Gefängnis. </p> <p><strong>1689</strong> <br>Das Gebäude wird größtenteils durch einen Brand zerstört. </p> <p><strong>1751</strong> <br>Die Stadt Brügge erwirbt „Het Steen“ und lässt das Gebäude 1784 abreißen. </p> <p><strong>1851</strong> <br>Stattdessen lässt sich ein Eisenwarenhandel hier nieder. </p> <p><strong>1931</strong> <br>Errichtung eines Gebäudes mit drei Treppengiebeln im neugotischen Stil (jetzt Brasserie Tompouce). </p> <p><strong>1977</strong> <br>Entstehung der Einkaufsgalerie „Ter Steeghere“. </p>",
-                    SourceLink = "https://en.wikipedia.org/wiki/Draft:Het_Steen_(Brugge)"
+                    SourceLink = "https://de.wikipedia.org/wiki/Het_Steen_(Br%C3%BCgge)"
                 },
                 new BuildingTranslation
                 {
@@ -2896,7 +2896,7 @@ namespace backend.DAL
                     BuildingId = 6,
                     LanguageId = 5, //ES
                     Name = "El castillo Steen",
-                    Description = "1088 Nombrado por primera vez como residencia de los condes de Flandes Siglo XII Los condes abandonan el edificio y se instalan en el «Love» al otro lado del Burg (la actual Landhuis del Brugse Vrije), el Steen pasa a ser una cárcel 1689 El edificio se incendia casi en su totalidad 1751 La ciudad de Brujas pasa a ser propietaria del Steen y lo manda demoler en 1784 1851 Se instala una herrería en este sitio 1931 Construcción de un edificio con tres fachadas escalonadas de estilo neogótico (en la actualidad Brasserie Tompouce) 1977 Construcción del pasaje comercial de Ter Steeghere",
+                    Description = "<p><strong>1088</strong> <br>Nombrado por primera vez como residencia de los condes de Flandes </p> <p><strong>Siglo XII</strong> <br>Los condes abandonan el edificio y se instalan en el <em>Love</em> al otro lado del Burg (la actual <em>Landhuis</em> del <em>Brugse Vrije</em>), el <em>Steen</em> pasa a ser una cárcel&nbsp;</p> <p><strong>1689</strong> <br>El edificio se incendia casi en su totalidad </p> <p><strong>1751</strong> <br>La ciudad de Brujas pasa a ser propietaria del <em>Steen</em> y lo manda demoler en 1784 &nbsp;&nbsp;</p> <p><strong>1851</strong> <br>Se instala una herrería en este sitio </p> <p><strong>1931</strong> <br>Construcción de un edificio con tres fachadas escalonadas de estilo neogótico (en la actualidad <em>Brasserie Tompouce</em>)</p> <p><strong>1977</strong> <br>Construcción del pasaje comercial de <em>Ter Steeghere</em></p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Draft:Het_Steen_(Brugge)"
                 },
                 //PROOSDIJ
@@ -2906,7 +2906,7 @@ namespace backend.DAL
                     BuildingId = 7,
                     LanguageId = 1, //FR
                     Name = "Prévôté de Saint-Donatien",
-                    Description = "<p>La prévôté est l’ancien siège de la seigneurie ecclésiastique de Saint-Donatien.</p> <p>Le bâtiment de style baroque triomphaliste a été conçu par l’architecte Cornelis Verhouve et le chanoine Frederic Hillewerve, tous deux originaires d’Anvers. Les influences anversoises sont clairement visibles dans le bâtiment.</p> <p>La prévôté fait aujourd’hui partie de la résidence officielle du gouverneur de la province de Flandre occidentale.</p>",
+                    Description = "<p>La prévôté est (1666) l’ancien siège de la seigneurie ecclésiastique de Saint-Donatien.</p> <p>Le bâtiment de style baroque triomphaliste a été conçu par l’architecte Cornelis Verhouve et le chanoine Frederic Hillewerve, tous deux originaires d’Anvers. Les influences anversoises sont clairement visibles dans le bâtiment.</p> <p>La prévôté fait aujourd’hui partie de la résidence officielle du gouverneur de la province de Flandre occidentale.</p>",
                     SourceLink = "https://fr.wikipedia.org/wiki/Pr%C3%A9vot%C3%A9_de_Saint-Donatien_(Bruges)"
                 },
                 new BuildingTranslation
@@ -2915,7 +2915,7 @@ namespace backend.DAL
                     BuildingId = 7,
                     LanguageId = 2, //NL
                     Name = "Sint-Donaasproosdij",
-                    Description = "<p>De proosdij is de voormalige hoofdzetel van de kerkelijke heerlijkheid Sint-Donaas.</p> <p>Het gebouw in triomfalistische barokstijl is ontworpen door architect Cornelis Verhouve en kanunnik Frederic Hillewerve, beiden afkomstig uit Antwerpen. De Antwerpse invloeden zijn duidelijk zichtbaar in het gebouw.</p> <p>De proosdij behoort vandaag tot de ambtswoning van de gouverneur van de provincie West-Vlaanderen.</p>",
+                    Description = "<p>De Proosdij (1666) is de voormalige hoofdzetel van de kerkelijke heerlijkheid Sint-Donaas.</p> <p>Het gebouw in triomfalistische barokstijl is ontworpen door architect Cornelis Verhouve en kanunnik Frederic Hillewerve, beiden afkomstig uit Antwerpen. De Antwerpse invloeden zijn duidelijk zichtbaar in het gebouw.</p> <p>De proosdij behoort vandaag tot de ambtswoning van de gouverneur van de provincie West-Vlaanderen.</p>",
                     SourceLink = "https://nl.wikipedia.org/wiki/Sint-Donaasproosdij"
                 },
                 new BuildingTranslation
@@ -2924,7 +2924,7 @@ namespace backend.DAL
                     BuildingId = 7,
                     LanguageId = 3, //EN
                     Name = "Provostry of Saint-Donatian",
-                    Description = "<p>The provostry is the former seat of the ecclesiastical glory of Saint Donatian.</p> <p>The triumphal baroque style building was designed by architect Cornelis Verhouve and canon Frederic Hillewerve, who both came from Antwerp. The Antwerp influence can clearly be seen in the building.</p> <p>Today, the provostry is part of the official residence of the Governor of the province of West Flanders.&nbsp;</p>",
+                    Description = "<p>The provostry (1666) is the former seat of the ecclesiastical seigniory of Saint Donatian.</p> <p>The triumphal baroque style building was designed by architect Cornelis Verhouve and canon Frederic Hillewerve, who both came from Antwerp. The Antwerp influence can clearly be seen in the building.</p> <p>Today, the provostry is part of the official residence of the Governor of the province of West Flanders.&nbsp;</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Provostry_of_St._Donatian"
                 },
                 new BuildingTranslation
@@ -2933,8 +2933,8 @@ namespace backend.DAL
                     BuildingId = 7,
                     LanguageId = 4, //DE
                     Name = "Propstei Sankt-Donatian ",
-                    Description = "<p>Die Propstei ist der ehemalige Hauptsitz des kirchlichen Herrschaftsguts „Sint-Donaas“.</p> <p>Das Gebäude im triumphalistischen Barockstil wurde vom Architekten Cornelis Verhouve und dem Kanoniker Frederic Hillewerve entworfen, die beide aus Antwerpen stammten. Das Gebäude ist deutlich von Antwerpener Stilmerkmalen geprägt.</p> <p>Die Propstei gehört gegenwärtig zur Amtswohnung des Gouverneurs der Provinz Westflandern.</p>",
-                    SourceLink = "https://en.wikipedia.org/wiki/Provostry_of_St._Donatian"
+                    Description = "<p>Die Propstei (1666) ist der ehemalige Hauptsitz des kirchlichen Herrschaftsguts „Sankt Donatus“.</p> <p>Das Gebäude im triumphalistischen Barockstil wurde vom Architekten Cornelis Verhouve und dem Kanoniker Frederic Hillewerve entworfen, die beide aus Antwerpen stammten. Das Gebäude ist deutlich von Antwerpener Stilmerkmalen geprägt.</p> <p>Die Propstei gehört gegenwärtig zur Amtswohnung des Gouverneurs der Provinz Westflandern.</p>",
+                    SourceLink = "https://de.wikipedia.org/wiki/Propstei_des_Hl._Donatian_(Br%C3%BCgge)"
                 },
                 new BuildingTranslation
                 {
@@ -2942,7 +2942,7 @@ namespace backend.DAL
                     BuildingId = 7,
                     LanguageId = 5, //ES
                     Name = "Prebostazgo de San Donatiano",
-                    Description = "<p>El prebostazgo es la antigua sede principal del dominio eclesiástico de San Donaciano.&nbsp;</p> <p>El edificio, de estilo barroco triunfalista, fue diseñado por el arquitecto Cornelis Verhouve y por el canónigo Frederic Hillewerve, ambos procedentes de Amberes. Las influencias de Amberes pueden verse claramente en el edificio.&nbsp;</p> <p>El prebostazgo es en la actualidad la vivienda oficial del gobernador de la provincia de Flandes Occidental.&nbsp;</p>",
+                    Description = "<p>El prebostazgo (1666) es la antigua sede principal del dominio eclesiástico de San Donaciano.&nbsp;</p> <p>El edificio, de estilo barroco triunfalista, fue diseñado por el arquitecto Cornelis Verhouve y por el canónigo Frederic Hillewerve, ambos procedentes de Amberes. Las influencias de Amberes pueden verse claramente en el edificio.&nbsp;</p> <p>El prebostazgo es en la actualidad la vivienda oficial del gobernador de la provincia de Flandes Occidental.&nbsp;</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Provostry_of_St._Donatian"
                 },
                 //Kathedraal
@@ -2952,7 +2952,7 @@ namespace backend.DAL
                     BuildingId = 8,
                     LanguageId = 1, //FR
                     Name = "Cathédrale Sint-Donatien",
-                    Description = "<p><strong>944</strong> <br>Le comte Arnulf Ier fait construire ici une chapelle octogonale sur le modèle de la cathédrale d’Aix-la-Chapelle. </p> <p><strong>Du 10<sup>e</sup> au 13<sup>e</sup> siècle</strong> <br>Construction d’une église romane avec un couvent. </p> <p><strong>14<sup>e</sup> siècle</strong> <br>Construction d'une nef centrale et de nefs latérales dans un style gothique. </p> <p><strong>1559</strong> <br>Création du diocèse de Bruges : l’église devient une cathédrale. </p> <p><strong>1799</strong> <br>La cathédrale est vendue et est démolie sous le régime révolutionnaire français. </p> <p><strong>Fin des années 1920</strong> <br>L’hôtel Saint-Georges y ouvre ses portes. </p> <p><strong>1987-1991</strong> <br>Construction de l’hôtel Crowne Plaza. Les fondations de l’église qui datent du 12<sup>e</sup> siècle peuvent être admirées dans les caves de l’hôtel.</p>",
+                    Description = "<p><strong>944</strong> <br>Le comte Arnulf Ier fait construire ici une chapelle octogonale sur le modèle de la cathédrale d’Aix-la-Chapelle. </p> <p><strong>Du 10<sup>e</sup> au 13<sup>e</sup> siècle</strong> <br>Construction d’une église romane avec un cloître. </p> <p><strong>14<sup>e</sup> siècle</strong> <br>Construction d'une nef centrale et de nefs latérales dans un style gothique. </p> <p><strong>1559</strong> <br>Création du diocèse de Bruges : l’église devient une cathédrale. </p> <p><strong>1799</strong> <br>La cathédrale est vendue et est démolie sous le régime révolutionnaire français. </p> <p><strong>Fin des années 1920</strong> <br>L’hôtel Saint-Georges y ouvre ses portes. </p> <p><strong>1987-1991</strong> <br>Construction de l’hôtel Crowne Plaza. Les fondations de l’église qui datent du 12<sup>e</sup> siècle peuvent être admirées dans les caves de l’hôtel.</p>",
                     SourceLink = "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Saint-Donatien_de_Bruges"
                 },
                 new BuildingTranslation
@@ -2970,7 +2970,7 @@ namespace backend.DAL
                     BuildingId = 8,
                     LanguageId = 3, //EN
                     Name = "Saint Donatian’s Cathedral",
-                    Description = "<p><strong>944</strong> <br>Count Arnulf I orders the construction of an octagonal chapel here, modelled on Aachen Cathedral </p> <p><strong>10th – 13th century</strong> <br>expansion of a Romanesque church with monastery </p> <p><strong>14th century</strong> <br>construction of a nave and aisles in Gothic style </p> <p><strong>1559</strong> <br>founding of the diocese of Bruges – the church becomes a Cathedral </p> <p><strong>1799</strong> <br>the cathedral is sold and demolished under the French revolutionary reign </p> <p><strong>late 1920s</strong> <br>the Hotel Saint-Georges is located here </p> <p><strong>1987-1991</strong> <br>construction of the Crowne Plaza Hotel. The 12th century foundations of the church are exposed and can still be seen in the cellar. </p>",
+                    Description = "<p><strong>944</strong> <br>Count Arnulf I orders the construction of an octagonal chapel here, modelled on Aachen Cathedral </p> <p><strong>10th – 13th century</strong> <br>expansion of a Romanesque church with monastery </p> <p><strong>14th century</strong> <br>construction of a nave and aisles in Gothic style </p> <p><strong>1559</strong> <br>founding of the diocese of Bruges – the church becomes a cathedral </p> <p><strong>1799</strong> <br>the cathedral is sold and demolished under the French revolutionary reign </p> <p><strong>late 1920s</strong> <br>the Hotel Saint-Georges is located here </p> <p><strong>1987-1991</strong> <br>construction of the Crowne Plaza Hotel. The 12th century foundations of the church are exposed and can still be seen in the cellar. </p>",
                     SourceLink = "https://en.wikipedia.org/wiki/St._Donatian%27s_Cathedral"
                 },
                 new BuildingTranslation
@@ -3058,7 +3058,7 @@ namespace backend.DAL
                     Title = "De Burg",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "La Place du Bourg sur la Carte de Marcus Gerards (1591-1562).",
+                    Text = "La Place du Bourg sur la Carte de Marcus Gerards (1561-1562).",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 1
@@ -3136,7 +3136,7 @@ namespace backend.DAL
                     Title = "De Burg",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "The Burg as a fortress (12 century).",
+                    Text = "The Burg as a fortress (12th century).",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 1
@@ -3158,7 +3158,7 @@ namespace backend.DAL
                     Title = "De Burg",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "El Burg compo fortaleza (Siglo XII).",
+                    Text = "El Burg como fortaleza (Siglo XII).",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 1
@@ -3416,7 +3416,7 @@ namespace backend.DAL
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "The alderman’s room in the manor (Gillis van Tillborgh, 1658).",
+                    Text = "The aldermen’s room in the manor (Gillis van Tillborgh, 1658).",
                     ImageUrl = "https://museabrugge.imgix.net/https%3A%2F%2Fwww.museabrugge.be%2Fvolumes%2Fgeneral%2FSchilderij_VanTilborg-opgelicht.jpg?auto=compress%2Cformat&fit=clip&h=400&s=8b95ab0b4ffd6fafd41b5f9bd370d36e",
                     LanguageId = 3, //EN
                     BuildingId = 2
@@ -3675,7 +3675,7 @@ namespace backend.DAL
                     Type = "artist",
                     Subtitle = " ",
                     Text = "Les statues en bronze d’Hendrik Pickery datent de 1883.",
-                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG/768px-Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG",
                     LanguageId = 1, //FR
                     BuildingId = 3
                 },
@@ -3686,7 +3686,7 @@ namespace backend.DAL
                     Type = "artist",
                     Subtitle = " ",
                     Text = "De bronzen beelden van Hendrik Pickery dateren van 1883.",
-                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG/768px-Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG",
                     LanguageId = 2, //NL
                     BuildingId = 3
                 },
@@ -3697,7 +3697,7 @@ namespace backend.DAL
                     Type = "artist",
                     Subtitle = " ",
                     Text = "Hendrik Pickery’s bronze statues date from 1883.",
-                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG/768px-Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG",
                     LanguageId = 3, //EN
                     BuildingId = 3
                 },
@@ -3708,7 +3708,7 @@ namespace backend.DAL
                     Type = "artist",
                     Subtitle = " ",
                     Text = "Die Bronzeskulpturen von Hendrik Pickery stammen aus dem Jahr 1883.",
-                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG/768px-Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG",
                     LanguageId = 4, //DE
                     BuildingId = 3
                 },
@@ -3719,7 +3719,7 @@ namespace backend.DAL
                     Type = "artist",
                     Subtitle = " ",
                     Text = "Las estatuas de bronce de Hendrik Pickery datan de 1883.",
-                    ImageUrl = "https://commons.wikimedia.org/wiki/File:Vrouwe_Justitia-beeld_op_de_Civiele_Griffie,_Burg_11_2,_Brugge.JPG",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG/768px-Vrouwe_Justitia-beeld_op_de_Civiele_Griffie%2C_Burg_11_2%2C_Brugge.JPG",
                     LanguageId = 5, //ES
                     BuildingId = 3
                 },
@@ -3864,7 +3864,7 @@ namespace backend.DAL
                     Title = "Stadhuis",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "The Bruges city hall is one of the oldest city halls in the low countries.",
+                    Text = "The Bruges city hall is one of the oldest city halls in the Low Countries.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 4
@@ -3931,7 +3931,7 @@ namespace backend.DAL
                     Title = "Stadhuis",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "Die goldenen Kronen auf der Schornsteine verweisen auf ein Urteil von König Karl VII. von Frankreich (1403–1461).",
+                    Text = "Die goldenen Kronen auf der Schornsteine verweisen auf eine Äußerung von König Karl VII. von Frankreich (1403–1461).",
                     ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
                     LanguageId = 4, //DE
                     BuildingId = 4
@@ -4077,7 +4077,7 @@ namespace backend.DAL
                     Title = "Basiliek",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "In de basiliek wordt het relikwie van het Heilig Bloed bewaard, die elk jaar op Hemelvaart wordt rondgedragen in de stad.",
+                    Text = "In de basiliek wordt het relikwie van het Heilig Bloed bewaard, dat elk jaar op Hemelvaart wordt rondgedragen in de stad.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 5
@@ -4234,7 +4234,7 @@ namespace backend.DAL
                     Title = "Steen",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "L’emplacement de l’ancien château Steen.",
+                    Text = "L’emplacement de l’ancien château « Steen ».",
                     ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Bruges%2C_burg_01.JPG/1280px-Bruges%2C_burg_01.JPG",
                     LanguageId = 1, //FR
                     BuildingId = 6
@@ -4290,7 +4290,7 @@ namespace backend.DAL
                     Title = "Steen",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "« Het Steen » était probablement la première résidence des comtes de Flandre.",
+                    Text = "« Steen » était probablement la première résidence des comtes de Flandre.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 6
