@@ -450,7 +450,7 @@ namespace backend.DAL
                     ArtistId = 7,
                     LanguageId = 1, //FR
                     Description = "Hendrik Pickery (1828-1894) était un sculpteur brugeois. Il fut l’élève du sculpteur liégeois Eugène Simonis (1810-1882). Les statues sur les escaliers et sur la façade du Palais provincial de Bruges (Grand-Place) ainsi que la statue de Hans Memling (Woensdagmarkt) ont également été réalisées par Pickery.",
-                    SourceLink = "https://rkd.nl/en/explore/artists/63328"
+                    SourceLink = "https://rkd.nl/en/explore/artists/63327"
                 },
                 new ArtistTranslation
                 {
@@ -815,7 +815,7 @@ namespace backend.DAL
                     MovementId = 6,
                     Name = "Romaans / Gotisch",
                     LanguageId = 2, //NL
-                    Description = "<p><strong>Romaans</strong></p> <p>De romaanse architectuur bloeide tussen 1000 en 1200. Ze inspireerde zich op de Karolingische een Ottoonse architecten, die op hun beurt op Romeinse en Byzantijnse voorbeelden navolgden. Dikke muren, rondbogen en robuuste zuilen zijn typisch voor de romaanse architectuur.</p> <p><strong>Gotisch</strong></p> <p>Gotische architectuur ontstond in het 12<sup>de</sup>-eeuwse Frankrijk. Aanvankelijk werd de bouwstijl vooral toegepast voor kerkgebouwen. Vanaf de late 15de eeuw inspireerden de gotische kathedralen ook de bouw van stadhuizen in het huidige Noord-Frankrijk, België en Nederland.</p>",
+                    Description = "<p><strong>Romaans</strong></p> <p>De romaanse architectuur bloeide tussen 1000 en 1200. Ze inspireerde zich op de Karolingische een Ottoonse architecten, die op hun beurt Romeinse en Byzantijnse voorbeelden navolgden. Dikke muren, rondbogen en robuuste zuilen zijn typisch voor de romaanse architectuur.</p> <p><strong>Gotisch</strong></p> <p>Gotische architectuur ontstond in het 12<sup>de</sup>-eeuwse Frankrijk. Aanvankelijk werd de bouwstijl vooral toegepast voor kerkgebouwen. Vanaf de late 15de eeuw inspireerden de gotische kathedralen ook de bouw van stadhuizen in het huidige Noord-Frankrijk, België en Nederland.</p>",
                     SourceLink = "https://nl.wikipedia.org/wiki/Gotiek_(bouwkunst)"
                 },
                 new MovementTranslation
@@ -2694,7 +2694,7 @@ namespace backend.DAL
                     BuildingId = 2,
                     LanguageId = 3, //EN
                     Name = "Manor of the Franc of Bruges ",
-                    Description = "<p><strong>11th century</strong><br>'Love' building, the residence of the counts of Flanders</p><p><strong>15th century</strong><br>the government of the Franc of Bruges (the area of countryside surrounding Bruges) moved from Steen Castle (which was on the opposite side) to this location.</p><p><strong>1520-1525</strong><br>construction of an alderman’s room with monumental fireplace</p><p><strong>1528-1532</strong><br>construction of an arched gallery</p><p><strong>17th century</strong><br>further extensions including a chapel and orphanage</p><p><strong>1722-1727</strong><br>renovations in the classical style</p><p><strong>1794</strong><br>the manor became a court of justice</p><p><strong>1984</strong><br>came into use by the city administration</p>",
+                    Description = "<p><strong>11th century</strong><br>'Love' building, the residence of the counts of Flanders</p><p><strong>15th century</strong><br>the government of the Franc of Bruges (the area of countryside surrounding Bruges) moved from Steen Castle (which was on the opposite side) to this location.</p><p><strong>1520-1525</strong><br>construction of an aldermen’s room with monumental fireplace</p><p><strong>1528-1532</strong><br>construction of an arched gallery</p><p><strong>17th century</strong><br>further extensions including a chapel and orphanage</p><p><strong>1722-1727</strong><br>renovations in the classical style</p><p><strong>1794</strong><br>the manor became a court of justice</p><p><strong>1984</strong><br>came into use by the city administration</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Brugse_Vrije#The_Manor"
                 },
                 new BuildingTranslation
@@ -2804,7 +2804,7 @@ namespace backend.DAL
                     BuildingId = 4,
                     LanguageId = 5, //ES
                     Name = "Ayuntamiento",
-                    Description = "<p><strong>1280</strong> <br>Tras un incendio en el campanario de Belfort de la plaza de <em>Markt</em>, los escabinos se instalan en el <em>ghyselhuus</em>, la antigua cárcel condal &nbsp;</p> <p><strong>1376</strong> <br>El conde Luis II manda derribar el «<em>ghyselhuus</em>» para reemplazarlo por una verdadera <em>scepenhuus</em> (casa escabinal), diseñada por Jan Roegiers</p> <p><strong>1887</strong> <br>Un incendio devasta el interior </p> <p><strong>1895-1905</strong> <br>Louis Delacenserie y Jean-Baptiste de Béthune renuevan el interior en estilo neogótico </p>",
+                    Description = "<p><strong>1280</strong> <br>Tras un incendio en el campanario de Belfort de la plaza de <em>Markt</em>, los escabinos se instalan en el <em>ghyselhuus</em>, la antigua cárcel condal &nbsp;</p> <p><strong>1376</strong> <br>El conde Luis II manda derribar el <em>ghyselhuus</em> para reemplazarlo por una verdadera <em>scepenhuus</em> (casa escabinal), diseñada por Jan Roegiers</p> <p><strong>1887</strong> <br>Un incendio devasta el interior </p> <p><strong>1895-1905</strong> <br>Louis Delacenserie y Jean-Baptiste de Béthune renuevan el interior en estilo neogótico </p>",
                     SourceLink = "https://es.wikipedia.org/wiki/Ayuntamiento_de_Brujas"
                 },
                 //BASILIEK
@@ -2860,7 +2860,7 @@ namespace backend.DAL
                     BuildingId = 6,
                     LanguageId = 1, //FR
                     Name = "Le château Steen ",
-                    Description = "<p><strong>1088</strong> <br>Le bâtiment est mentionné pour la première fois comme résidence des comtes de Flandre. </p> <p><strong>12<sup>e</sup> siècle</strong> <br>Les comtes quittent le bâtiment et s’installent dans le « Love » situé de l’autre côté de la place du Bourg (l’actuelle Maison du Franc de Bruges). Le « Het Steen » devient alors une prison. </p> <p><strong>1689</strong> <br>Le bâtiment brûle en grande partie. </p> <p><strong>1751</strong> <br>La ville de Bruges devient propriétaire du bâtiment « Het Steen » et le fait démolir en 1784. </p> <p><strong>1851</strong> <br>Une ferronnerie s’installe à cet endroit. </p> <p><strong>1931</strong> <br>Construction d’un bâtiment avec trois pignons à gradins dans un style néogothique (aujourd’hui Brasserie Tompouce). </p> <p><strong>1977</strong> <br>Construction de la galerie commerciale Ter Steeghere. </p>",
+                    Description = "<p><strong>1088</strong> <br>Le bâtiment est mentionné pour la première fois comme résidence des comtes de Flandre. </p> <p><strong>12<sup>e</sup> siècle</strong> <br>Les comtes quittent le bâtiment et s’installent dans le « Love » situé de l’autre côté de la place du Bourg (l’actuelle Maison du Franc de Bruges). Le « Steen » devient alors une prison. </p> <p><strong>1689</strong> <br>Le bâtiment brûle en grande partie. </p> <p><strong>1751</strong> <br>La ville de Bruges devient propriétaire du bâtiment et le fait démolir en 1784. </p> <p><strong>1851</strong> <br>Une ferronnerie s’installe à cet endroit. </p> <p><strong>1931</strong> <br>Construction d’un bâtiment avec trois pignons à gradins dans un style néogothique (aujourd’hui Brasserie Tompouce). </p> <p><strong>1977</strong> <br>Construction de la galerie commerciale Ter Steeghere. </p>",
                     SourceLink = "https://fr.wikipedia.org/wiki/Het_Steen_(Bruges)"
                 },
                 new BuildingTranslation
