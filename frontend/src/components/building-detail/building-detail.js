@@ -260,7 +260,8 @@ class BuildingDetail extends React.Component{
                         
                         <hr className={styles.separation}></hr> */}
                         { this.state.data.translations[0].description
-                            ?   <div id={`Description-${this.props.match.params.id}`} className={styles.content}>
+                            ?   <div className={styles.content}>
+                                    <a id={`Description-${this.props.match.params.id}`} className={styles.anchor}></a>
                                     <InfoSection type="artwork" sourceLink={this.state.data.translations[0].sourceLink} storyTitle={this.state.data.translations[0].name} content={this.state.data.translations[0].description}></InfoSection>
                                 </div>
                             :   <div id="Description" className={styles.content}>
@@ -269,19 +270,21 @@ class BuildingDetail extends React.Component{
                         }
 
                         { this.state.data.id !== 6 && this.state.data.id !== 1
-                            ?   <div id={`Movement-${this.props.match.params.id}`} className={styles.content}>
+                            ?   <div className={styles.content}>
                                     <hr className={styles.separation}></hr>
+                                    <a id={`Movement-${this.props.match.params.id}`} className={styles.anchor}></a>
                                     <InfoSection  type="movement" sourceLink={this.state.data.movement.translations[0].sourceLink} storyTitle={this.state.data.movement.translations[0].name} content={this.state.data.movement.translations[0].description}></InfoSection>
                                 </div>
                             :   <div id="Movement" className={styles.content}></div>
                         }
 
                         { this.state.data.author.id !== 1
-                            ?   <div id={`Author-${this.props.match.params.id}`} className={styles.content}>
+                            ?   <div id="Artist" className={styles.content}>
                                     <hr className={styles.separation}></hr>
+                                    <a id={`Artist-${this.props.match.params.id}`} className={styles.anchor}></a>
                                     <InfoSection type="author" sourceLink={this.state.data.author.translations[0].sourceLink} storyTitle={this.state.data.author.firstName + ' ' + this.state.data.author.lastName} content={this.state.data.author.translations[0].description}></InfoSection>
                                 </div>
-                            :   <div id="Author" className={styles.content}></div>
+                            :   <div id="Artist" className={styles.content}></div>
                         }
 
                         <hr className={styles.separation}></hr>
