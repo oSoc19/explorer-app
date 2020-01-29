@@ -290,14 +290,14 @@
         "RU":"Manor of the Franc of Bruges"
     },
     "Griffie":{
-        "EN":"Old Civil Registry",
-        "NL":"Oude Civiele Griffie",
-        "FR":"Ancien Greffe Civil",
-        "DE":"Alte Zivilkanzlei",
-        "IT":"Old Civil Registry",
-        "ES":"Antigua Escribanía civil",
-        "JA":"Old Civil Registry",
-        "RU":"Old Civil Registry"
+        "EN":"Civil Registry",
+        "NL":"Civiele Griffie",
+        "FR":"Greffe Civil",
+        "DE":"Zivilkanzlei",
+        "IT":"Civil Registry",
+        "ES":"Escribanía civil",
+        "JA":"Civil Registry",
+        "RU":"Civil Registry"
     },
     "Stadhuis":{
         "EN":"City Hall",

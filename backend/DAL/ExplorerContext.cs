@@ -2721,7 +2721,7 @@ namespace backend.DAL
                     Id = 11,
                     BuildingId = 3,
                     LanguageId = 1, //FR
-                    Name = "Ancien Greffe Civil",
+                    Name = "Greffe Civil",
                     Description = "<p><strong>1537</strong><br>Construit comme le bureau du greffier civil, l’un des plus importants fonctionnaires de la ville.</p><p><strong>1877-1881</strong><br>Restauration sous la direction de l’architecte de la ville Louis Delacenserie.</p><p><strong>1883</strong><br>Ajout de statues en bronze réalisées par le sculpteur brugeois Hendrik Pickery.</p><p><strong>2000</strong><br>Une nouvelle restauration redonne au bâtiment sa splendeur d’origine.</p>",
                     SourceLink = "https://fr.wikipedia.org/wiki/Ancien_greffe_civil_de_la_ville_de_Bruges"
                 },
@@ -2730,7 +2730,7 @@ namespace backend.DAL
                     Id = 12,
                     BuildingId = 3,
                     LanguageId = 2, //NL
-                    Name = "Oude Civiele Griffie",
+                    Name = "Civiele Griffie",
                     Description = "<p><strong>1537</strong><br>opgetrokken als kantoor van de griffier-civiel, een van de belangrijkste stadsambtenaren</p><p><strong>1877-1881</strong><br>restauratie onder leiding van stadsarchitect Louis Delacenserie</p><p><strong>1883</strong><br>toevoeging bronzen beelden door de Brugse beeldhouwer Hendrik Pickery</p><p><strong>2000</strong><br>een nieuwe restauratie geeft het gebouw zijn oorspronkelijke kleurenpracht terug</p>",
                     SourceLink = "https://nl.wikipedia.org/wiki/Oude_Civiele_Griffie"
                 },
@@ -2739,7 +2739,7 @@ namespace backend.DAL
                     Id = 13,
                     BuildingId = 3,
                     LanguageId = 3, //EN
-                    Name = "Old Civil Registry",
+                    Name = "Civil Registry",
                     Description = "<p><strong>1537</strong><br>came into use as the office of the Civil Registrar, one of the most important city officials</p><p><strong>1877-1881</strong><br>renovations led by city architect Louis Delacenserie</p><p><strong>1883</strong><br>addition of bronze sculptures by Bruges sculptor Hendrik Pickery</p><p><strong>2000</strong><br>another renovation restores the original beautiful colours to the building</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Old_Civil_Registry"
                 },
@@ -2748,7 +2748,7 @@ namespace backend.DAL
                     Id = 14,
                     BuildingId = 3,
                     LanguageId = 4, //DE
-                    Name = "Alte Zivilkanzlei",
+                    Name = "Zivilkanzlei",
                     Description = "<p><strong>1537</strong><br>Errichtung als Büro des Kanzleileiters des Zivilgerichts, der zu den wichtigsten Stadtbeamten gehört.</p><p><strong>1877–1881</strong><br>Restaurierung unter der Leitung des Stadtarchitekten Louis Delacenserie.</p><p><strong>1883</strong><br>Hinzufügung von Bronzeskulpturen des Brügger Bildhauers Hendrik Pickery.</p><p><strong>2000</strong><br>Im Zuge einer neuen Restaurierung erhält das Gebäude seine ursprüngliche Farbenpracht wieder.</p>",
                     SourceLink = "https://de.wikipedia.org/wiki/Alte_Zivilkanzlei_(Br%C3%BCgge)"
                 },
@@ -2757,7 +2757,7 @@ namespace backend.DAL
                     Id = 15,
                     BuildingId = 3,
                     LanguageId = 5, //ES
-                    Name = "Antigua Escribanía civil",
+                    Name = "Escribanía civil",
                     Description = "<p><strong>1537</strong><br>Se construye como oficina del secretario judicial civil, uno de los funcionarios municipales más importantes</p><p><strong>1877-1881</strong><br>Restauración dirigida por el arquitecto municipal Louis Delacenserie</p><p><strong>1883</strong><br>Adición de esculturas de bronce del escultor brujense Hendrik Pickery</p><p><strong>2000</strong><br>Una nueva restauración le devuelve al edificio su colorido original</p>",
                     SourceLink = "https://en.wikipedia.org/wiki/Old_Civil_Registry"
                 },
@@ -3003,7 +3003,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La Place du Bourg",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ce11143bc4b9486f951582af4a134300a50f02858161414e9696c5a491f5ed78/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 1
                 },
@@ -3014,7 +3014,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De Burg",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ce11143bc4b9486f951582af4a134300a50f02858161414e9696c5a491f5ed78/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 1
                 },
@@ -3025,7 +3025,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The Burg Square",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ce11143bc4b9486f951582af4a134300a50f02858161414e9696c5a491f5ed78/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 1
                 },
@@ -3036,7 +3036,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Der Burgplatz",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ce11143bc4b9486f951582af4a134300a50f02858161414e9696c5a491f5ed78/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 1
                 },
@@ -3047,7 +3047,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La Plaza Burg",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c293bb3893004c94b54d41ff03c43e2d6df2b2586c3b44359daac05da0e0eea6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ce11143bc4b9486f951582af4a134300a50f02858161414e9696c5a491f5ed78/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 1
                 },
@@ -3059,7 +3059,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La Place du Bourg sur la Carte de Marcus Gerards (1561-1562).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 1
                 },
@@ -3070,7 +3070,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De Burg op de kaart van Marcus Gerards (1561-1562).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 1
                 },
@@ -3081,7 +3081,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The Burg Square on the map of Marcus Gerards (1561-1562).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 1
                 },
@@ -3092,7 +3092,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Der Burgplatz auf der Karte von Marcus Gerards (1561-1562).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 1
                 },
@@ -3103,7 +3103,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La Plaza Burg en el mapa de Marcus Gerards (1561-1562)",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 1
                 },
@@ -3115,7 +3115,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Le Bourg comme forteresse (12e siècle)",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3dc47759f0454462aed1f12628811519bf8e766e026f4c0ba997e4e8dacdd7f7/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 1
                 },
@@ -3126,7 +3126,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De Burg als vesting (12de eeuw).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3dc47759f0454462aed1f12628811519bf8e766e026f4c0ba997e4e8dacdd7f7/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 1
                 },
@@ -3137,7 +3137,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The Burg as a fortress (12th century).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3dc47759f0454462aed1f12628811519bf8e766e026f4c0ba997e4e8dacdd7f7/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 1
                 },
@@ -3148,7 +3148,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Die Burg als Festung (12. Jahrhundert)",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3dc47759f0454462aed1f12628811519bf8e766e026f4c0ba997e4e8dacdd7f7/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 1
                 },
@@ -3159,7 +3159,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "El Burg como fortaleza (Siglo XII).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3dc47759f0454462aed1f12628811519bf8e766e026f4c0ba997e4e8dacdd7f7/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 1
                 },
@@ -3171,7 +3171,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La Place du Bourg dans la Flandria illustrata (1641) d’Antoine Sanderus.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/28351cca31e04251840ce40ac99e9aace1bcb0d4b52b4a28b0fd04d4de8c9c8f/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 1
                 },
@@ -3182,7 +3182,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De Burg in Antonius Sanderus’ Flandria illustrata (1641).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/28351cca31e04251840ce40ac99e9aace1bcb0d4b52b4a28b0fd04d4de8c9c8f/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 1
                 },
@@ -3193,7 +3193,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The Burg Square in Antonius Sanderus’s Flandria illustrata (1641).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/28351cca31e04251840ce40ac99e9aace1bcb0d4b52b4a28b0fd04d4de8c9c8f/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 1
                 },
@@ -3204,7 +3204,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Der Burgplatz in der Flandria illustrata des Antonius Sanderus (1641)",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/28351cca31e04251840ce40ac99e9aace1bcb0d4b52b4a28b0fd04d4de8c9c8f/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 1
                 },
@@ -3215,7 +3215,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La Plaza Burg en la Flandria illustrata de Antonius Sanderus (1641).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bd01bb012ed4513bf197603e9fd16dc383e91235acc45869cc19a48d5b64633/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/28351cca31e04251840ce40ac99e9aace1bcb0d4b52b4a28b0fd04d4de8c9c8f/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 1
                 },
@@ -3283,7 +3283,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Au Moyen-Âge, ce bâtiment abritait l’une des résidences des comtes de Flandre.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/012e71463a0b41a19df118bf2ff08e0499a665fb247d4c3e95e3e0968a96b0f3/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 2
                 },
@@ -3294,7 +3294,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "In de middeleeuwen bevond zich hier een van de residenties van de graven van Vlaanderen.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/012e71463a0b41a19df118bf2ff08e0499a665fb247d4c3e95e3e0968a96b0f3/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 2
                 },
@@ -3305,7 +3305,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "During the middle ages, this was one of the residences of the Counts of Flanders.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/012e71463a0b41a19df118bf2ff08e0499a665fb247d4c3e95e3e0968a96b0f3/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 2
                 },
@@ -3316,7 +3316,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Im Mittelalter befand sich hier eine der Residenzen der Grafen von Flandern.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/012e71463a0b41a19df118bf2ff08e0499a665fb247d4c3e95e3e0968a96b0f3/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 2
                 },
@@ -3327,7 +3327,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "En la época medieval, aquí se encontraba ubicada una de las residencias de los condes de Flandes.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b382e23288c947a397a1d2862c70cc358a96af88bbcd423b9305218b6b816bc7/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/012e71463a0b41a19df118bf2ff08e0499a665fb247d4c3e95e3e0968a96b0f3/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 2
                 },
@@ -3339,7 +3339,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La monumentale cheminée Charles-Quint du 16e siècle, en chêne, marbre et albâtre, est située dans la salle échevinale.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5f6d2be4fe1341cdb997fdc50b2dc1af506df3a577254e02ad61811a3872254f/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 2
                 },
@@ -3350,7 +3350,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "In de schepenzaal bevindt zich de monumentale 16de-eeuwse Keizer-Karel-schouw, in eikenhout, marmer en albast.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5f6d2be4fe1341cdb997fdc50b2dc1af506df3a577254e02ad61811a3872254f/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 2
                 },
@@ -3361,7 +3361,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "In the aldermen’s room, there is a huge 16th century Charles V fireplace made of oak, marble and alabaster.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5f6d2be4fe1341cdb997fdc50b2dc1af506df3a577254e02ad61811a3872254f/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 2
                 },
@@ -3372,7 +3372,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Im Schöffensaal befindet sich der monumentale Kaiser-Karl-Kamin aus dem 16. Jahrhundert, der aus Eichenholz, Marmor und Alabaster angefertigt wurde.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5f6d2be4fe1341cdb997fdc50b2dc1af506df3a577254e02ad61811a3872254f/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 2
                 },
@@ -3383,7 +3383,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "En la sala del escabinado se encuentra la monumental chimenea del emperador Carlos V del siglo XVI, de madera de roble, mármol y alabastro.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/e1651f7244954c1a9499a07a694130d043c3b60fbea24a6d91ea3e9ef8dc3df2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5f6d2be4fe1341cdb997fdc50b2dc1af506df3a577254e02ad61811a3872254f/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 2
                 },
@@ -3507,7 +3507,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La Maison du France comme Palais de Justice.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 2
                 },
@@ -3518,7 +3518,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Het Landhuis als gerechtshof.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 2
                 },
@@ -3529,7 +3529,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The Manor as a court of justice.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 2
                 },
@@ -3540,7 +3540,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Das Landeshaus als Gerichtshof.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 2
                 },
@@ -3551,7 +3551,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La casa como tribunal de justicia.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/6d2bc8dac1c44fd28e04a030d6ce464a410d5ac70faa468faf3754196a022ca2/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 2
                 },
@@ -3562,8 +3562,8 @@ namespace backend.DAL
                     Title = "Griffie",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "L’ancien Greffe Civil.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    Text = "Greffe Civil.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b3d0a2fe1bb44d1c9f409b22d8cc36a681be760b5293423f9917df455c053c7d/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 3
                 },
@@ -3573,8 +3573,8 @@ namespace backend.DAL
                     Title = "Griffie",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "De Oude Civiele Griffie.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    Text = "Civiele Griffie.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b3d0a2fe1bb44d1c9f409b22d8cc36a681be760b5293423f9917df455c053c7d/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 3
                 },
@@ -3584,8 +3584,8 @@ namespace backend.DAL
                     Title = "Griffie",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "The Old Civil Registry.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    Text = "Civil Registry.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b3d0a2fe1bb44d1c9f409b22d8cc36a681be760b5293423f9917df455c053c7d/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 3
                 },
@@ -3595,8 +3595,8 @@ namespace backend.DAL
                     Title = "Griffie",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "Die alte Zivilkanzlei.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    Text = "Zivilkanzlei.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b3d0a2fe1bb44d1c9f409b22d8cc36a681be760b5293423f9917df455c053c7d/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 3
                 },
@@ -3606,8 +3606,8 @@ namespace backend.DAL
                     Title = "Griffie",
                     Type = "artwork",
                     Subtitle = " ",
-                    Text = "Antigua Escribanía civil.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ae5e6015ebdc4a6d8fbbec53140a186e337bffefa0ec446b9f01e036edc352a6/browse.jpg",
+                    Text = "Escribanía civil.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b3d0a2fe1bb44d1c9f409b22d8cc36a681be760b5293423f9917df455c053c7d/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 3
                 },
@@ -3619,7 +3619,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Le greffier civil était l’un des fonctionnaires les plus importants de la ville.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ab721d2a771f459bb42f20451e7fef996901a221df504f76b7f36378c4e31ea8/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 3
                 },
@@ -3630,7 +3630,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De griffier-civiel was een van de belangrijkste stedelijke ambtenaren.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ab721d2a771f459bb42f20451e7fef996901a221df504f76b7f36378c4e31ea8/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 3
                 },
@@ -3641,7 +3641,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The Civil Registrar was one of the most important city officials.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ab721d2a771f459bb42f20451e7fef996901a221df504f76b7f36378c4e31ea8/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 3
                 },
@@ -3652,7 +3652,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Der Kanzleileiter des Zivilgerichts war einer der wichtigsten Stadtbeamten.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ab721d2a771f459bb42f20451e7fef996901a221df504f76b7f36378c4e31ea8/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 3
                 },
@@ -3663,7 +3663,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "El secretario judicial civil era uno de los funcionarios municipales más importantes.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1ff8db830e6d4862873580c7f30b92b05fdd00d9b6b94ffdb44bc0c65ce0cc75/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/ab721d2a771f459bb42f20451e7fef996901a221df504f76b7f36378c4e31ea8/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 3
                 },
@@ -3787,7 +3787,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Hôtel de ville.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/0d89e96ce69f4ba499a13d2a7217491b5859a5984bb8421fb6b906bd83e852ef/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 4
                 },
@@ -3798,7 +3798,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Stadhuis.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/0d89e96ce69f4ba499a13d2a7217491b5859a5984bb8421fb6b906bd83e852ef/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 4
                 },
@@ -3809,7 +3809,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "City Hall.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/0d89e96ce69f4ba499a13d2a7217491b5859a5984bb8421fb6b906bd83e852ef/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 4
                 },
@@ -3820,7 +3820,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Rathaus.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/0d89e96ce69f4ba499a13d2a7217491b5859a5984bb8421fb6b906bd83e852ef/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 4
                 },
@@ -3831,7 +3831,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Ayuntamiento.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/02bcd6e29ca84abd8a417433c1de751a886873e2193b496293aee4d8a19f930a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/0d89e96ce69f4ba499a13d2a7217491b5859a5984bb8421fb6b906bd83e852ef/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 4
                 },
@@ -3843,7 +3843,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "L’hôtel de ville de Bruges est l’un des plus anciens des Pays-Bas.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 4
                 },
@@ -3854,7 +3854,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Het Brugse stadhuis is een van de oudste in de Nederlanden.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 4
                 },
@@ -3865,7 +3865,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The Bruges city hall is one of the oldest city halls in the Low Countries.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 4
                 },
@@ -3876,7 +3876,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Das Brügger Rathaus ist eines der ältesten in den Niederlanden.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 4
                 },
@@ -3887,7 +3887,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "El ayuntamiento de Brujas es uno de los más antiguos de los viejes Países Bajos.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 4
                 },
@@ -3899,7 +3899,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Les couronnes dorées sur les cheminées font référence à des propos tenus par le roi Charles VII de France (1403–1461).",
-                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 4
                 },
@@ -3910,7 +3910,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De gouden kroontjes op de schouwen verwijzen naar een uitspraak van koning Karel VII van Frankrijk (1403–1461).",
-                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 4
                 },
@@ -3921,7 +3921,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The golden crowns on the chimneys refer to a statement made by King Charles VII of France (1403-1461).",
-                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 4
                 },
@@ -3932,7 +3932,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Die goldenen Kronen auf der Schornsteine verweisen auf eine Äußerung von König Karl VII. von Frankreich (1403–1461).",
-                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 4
                 },
@@ -3943,7 +3943,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Las coronas doradas de las repisas hacen referencia a una declaración del rey Carlos VII de Francia (1403–1461)",
-                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg ",
+                    ImageUrl = "http://1.bp.blogspot.com/-4wmQC1henLQ/VDV6icTx1tI/AAAAAAAAAEo/xyvuwxHuWHk/s1600/IMG_7031.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 4
                 },
@@ -3955,7 +3955,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La ‘salle gothique’ à l’étage supérieur a été aménagée aux alentours de 1900 dans un style néogothique.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fbfd5cee00594ee384b177fe2777eb9311396a37a82f4f129835da216b5d5a59/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 4
                 },
@@ -3966,7 +3966,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De ‘gotische zaal’ op de bovenverdieping werd omstreeks 1900 ingericht in neogotische stijl.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fbfd5cee00594ee384b177fe2777eb9311396a37a82f4f129835da216b5d5a59/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 4
                 },
@@ -3977,7 +3977,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The Gothic Room on the top floor war was re-decorated in the neo-Gothic style around 1900.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fbfd5cee00594ee384b177fe2777eb9311396a37a82f4f129835da216b5d5a59/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 4
                 },
@@ -3988,7 +3988,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Der „gotische Saal“ im Obergeschoss wurde ca. 1900 im neugotischen Stil eingerichtet.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fbfd5cee00594ee384b177fe2777eb9311396a37a82f4f129835da216b5d5a59/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 4
                 },
@@ -3999,7 +3999,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La «sala gótica» de la planta superior se habilitó hacia el año 1900 en estilo neogótico.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7257ddbac44d49c4a2fecc2edecbeedb075df9bf1b08408fb4ef8eb35b316ef6/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fbfd5cee00594ee384b177fe2777eb9311396a37a82f4f129835da216b5d5a59/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 4
                 },
@@ -4011,7 +4011,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Basilique du Saint-Sang.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a2c92f7d17a147d49851c12252bdc39b3317c585428e40b287f0cf483c62c454/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 5
                 },
@@ -4022,7 +4022,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De Heilig-Bloedbasiliek.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a2c92f7d17a147d49851c12252bdc39b3317c585428e40b287f0cf483c62c454/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 5
                 },
@@ -4033,7 +4033,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Basilica of the Holy Blood.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a2c92f7d17a147d49851c12252bdc39b3317c585428e40b287f0cf483c62c454/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 5
                 },
@@ -4044,7 +4044,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Heilig-Blut-Basilika.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a2c92f7d17a147d49851c12252bdc39b3317c585428e40b287f0cf483c62c454/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 5
                 },
@@ -4055,7 +4055,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Basílica de la Santa Sangre.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5cd374fbf4044e78a86e2b5239dd691d923ec92b18dc432883018f0d5e004a73/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a2c92f7d17a147d49851c12252bdc39b3317c585428e40b287f0cf483c62c454/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 5
                 },
@@ -4067,7 +4067,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La basilique abrite la relique du Saint-Sang qui est transportée chaque année partout dans la ville le jour de l’Ascension.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/95092c01989a490e94175183e4fab9f33ef2e425a529497d8800ef58880c35f2/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 5
                 },
@@ -4078,7 +4078,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "In de basiliek wordt het relikwie van het Heilig Bloed bewaard, dat elk jaar op Hemelvaart wordt rondgedragen in de stad.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/95092c01989a490e94175183e4fab9f33ef2e425a529497d8800ef58880c35f2/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 5
                 },
@@ -4089,7 +4089,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The relic of the Holy Blood – which is carried around the city every year on Ascension Day – is kept in the Basilica.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/95092c01989a490e94175183e4fab9f33ef2e425a529497d8800ef58880c35f2/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 5
                 },
@@ -4100,7 +4100,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "In der Basilika wird die Reliquie des Heiligen Blutes aufbewahrt, die jedes Jahr am Himmelfahrtstag in der Stadt herumgetragen wird.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/95092c01989a490e94175183e4fab9f33ef2e425a529497d8800ef58880c35f2/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 5
                 },
@@ -4111,7 +4111,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "En la basílica se conserva la reliquia de la Santa Sangre, que cada año se exhibe en procesión por la ciudad el día de la Ascensión.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c2f23b47d46d4f58be719efdb995d3a64e86296d24764d4e8da44811a17a0ab4/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/95092c01989a490e94175183e4fab9f33ef2e425a529497d8800ef58880c35f2/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 5
                 },
@@ -4123,7 +4123,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Le comte Thierry d'Alsace aurait rapporté la relique du Saint-Sang de Terre Sainte au 13e siècle.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a6d3ff460784eb2994b5fc6216ffd68e86d634cdc6d4bebb98c377c1e16aeb9/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 5
                 },
@@ -4134,7 +4134,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Graaf Diederik van de Elzas zou de relikwie van het Heilig Bloed in de 13de eeuw uit het Heilig Land hebben meegebracht.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a6d3ff460784eb2994b5fc6216ffd68e86d634cdc6d4bebb98c377c1e16aeb9/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 5
                 },
@@ -4145,7 +4145,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Count Thierry of Alsace is said to have brought the relic of the Holy Blood back from the Holy Land in the 13th century.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a6d3ff460784eb2994b5fc6216ffd68e86d634cdc6d4bebb98c377c1e16aeb9/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 5
                 },
@@ -4156,7 +4156,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Graf Dietrich von Elsass soll diese Reliquie im 13. Jahrhundert aus dem Heiligen Land mitgebracht haben.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a6d3ff460784eb2994b5fc6216ffd68e86d634cdc6d4bebb98c377c1e16aeb9/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 5
                 },
@@ -4167,7 +4167,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Cuenta la leyenda que el conde Diederik van de Elzas trajo la reliquia de la Santa Sangre desde la Tierra Santa en el siglo XIII.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/79f6ec0210534015b51ac478d0b1358e1762118fbe294a0d906baffbe46d1b14/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5a6d3ff460784eb2994b5fc6216ffd68e86d634cdc6d4bebb98c377c1e16aeb9/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 5
                 },
@@ -4291,7 +4291,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "« Steen » était probablement la première résidence des comtes de Flandre.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b4d59a67bcbc49d28ed124f28af6a7568aab4f3199054bec81ad49a4883545da/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 6
                 },
@@ -4302,7 +4302,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Het Steen was wellicht de eerste residentie van de graven van Vlaanderen.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b4d59a67bcbc49d28ed124f28af6a7568aab4f3199054bec81ad49a4883545da/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 6
                 },
@@ -4313,7 +4313,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Steen Castle was probably the first residence of the Counts of Flanders.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b4d59a67bcbc49d28ed124f28af6a7568aab4f3199054bec81ad49a4883545da/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 6
                 },
@@ -4324,7 +4324,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "„Het Steen“ war wahrscheinlich die erste Residenz der Grafen von Flandern.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b4d59a67bcbc49d28ed124f28af6a7568aab4f3199054bec81ad49a4883545da/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 6
                 },
@@ -4335,7 +4335,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "El Steen fue probablemente la primera residencia de los condes de Flandes.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/a8786c07be4e460082f3e2d7de731f318bc3a58aa03042078cec21a5d1f55fc3/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b4d59a67bcbc49d28ed124f28af6a7568aab4f3199054bec81ad49a4883545da/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 6
                 },
@@ -4347,7 +4347,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Dès le 12e siècle, le bâtiment est devenu une prison.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d51b2c8c949742049799d6b9affaf14b20158299d9f04d21a5a44e35343d1ec2/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 6
                 },
@@ -4358,7 +4358,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Vanaf de 12de eeuw was het gebouw een gevangenis.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d51b2c8c949742049799d6b9affaf14b20158299d9f04d21a5a44e35343d1ec2/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 6
                 },
@@ -4369,7 +4369,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "From the 12th century, Steen Castle was a prison.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d51b2c8c949742049799d6b9affaf14b20158299d9f04d21a5a44e35343d1ec2/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 6
                 },
@@ -4380,7 +4380,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Ab dem 12. Jahrhundert fungierte das Gebäude als Gefängnis.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d51b2c8c949742049799d6b9affaf14b20158299d9f04d21a5a44e35343d1ec2/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 6
                 },
@@ -4391,7 +4391,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "A partir del siglo XII el Steen pasó a ser una cárcel.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8237aef04775478dbdc89e459a2da5539ca132c304be43a0b9bc5bbffeeed1ce/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d51b2c8c949742049799d6b9affaf14b20158299d9f04d21a5a44e35343d1ec2/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 6
                 },
@@ -4403,7 +4403,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "« Het Steen » a été démoli à la fin du 18e siècle.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 6
                 },
@@ -4414,7 +4414,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Aan het einde van de 18de eeuw werd het Steen gesloopt.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 6
                 },
@@ -4425,7 +4425,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Steen Castle was demolished at the end of the 18th century.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 6
                 },
@@ -4436,7 +4436,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "„Het Steen“ wurde Ende des 18. Jahrhunderts abgerissen.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 6
                 },
@@ -4447,7 +4447,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "El Steen fue derribado a finales del siglo XVIII.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/03a335f7a15c489691b3f3b6f60cbb436d83eb86cd2840ef8910c0544d675340/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/16c6a492d65e46fabd500525c1283b15ceb27ed69661482da16cc015717eae2c/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 6
                 },
@@ -4459,7 +4459,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Prévôté de Saint-Donatien.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7ab00f6d4c7446e3868462f3f6ba2ce956820df77801427d9a09bbd9ec1668d5/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 7
                 },
@@ -4470,7 +4470,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De Sint-Donaasproosdij.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7ab00f6d4c7446e3868462f3f6ba2ce956820df77801427d9a09bbd9ec1668d5/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 7
                 },
@@ -4481,7 +4481,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Provostry of Saint Donatian.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7ab00f6d4c7446e3868462f3f6ba2ce956820df77801427d9a09bbd9ec1668d5/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 7
                 },
@@ -4492,7 +4492,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Propstei Sankt-Donatus.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7ab00f6d4c7446e3868462f3f6ba2ce956820df77801427d9a09bbd9ec1668d5/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 7
                 },
@@ -4503,7 +4503,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Prebostazgo de San Donaciano.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dd4755c106634a4595587d90ee418325eae83fad51724c90a025df548e94de58/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/7ab00f6d4c7446e3868462f3f6ba2ce956820df77801427d9a09bbd9ec1668d5/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 7
                 },
@@ -4571,7 +4571,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La prévôté fait aujourd’hui partie de la résidence officielle du gouverneur de la province de Flandre occidentale.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 7
                 },
@@ -4582,7 +4582,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Vandaag maakt het deel uit van de ambtswoning van de gouverneur van West-Vlaanderen.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 7
                 },
@@ -4593,7 +4593,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Nowadays, it is part of the official residence of the Governor of West Flanders.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 7
                 },
@@ -4604,7 +4604,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Gegenwärtig gehört die Propstei zur Amtswohnung des Gouverneurs der Provinz Westflandern.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 7
                 },
@@ -4615,7 +4615,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "En la actualidad forma parte de la residencia oficial del gobernador de Flandes Occidental.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 7
                 },
@@ -4627,7 +4627,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La façade est ornée de statues de Dame Justice ainsi que des dieux grecs de la vérité, de la charité et de la justice.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 7
                 },
@@ -4638,7 +4638,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Op de gevel zijn beelden van Vrouwe Justitia en de Griekse goden waarheid, liefdadigheid en gerechtigheid aangebracht.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 7
                 },
@@ -4649,7 +4649,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "There are images of Lady Justice and the Greek gods of truth, charity and justice on the facade.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 7
                 },
@@ -4660,7 +4660,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "An der Fassade befinden sich Figuren von Justitia und der griechischen Götter der Wahrheit, Wohltätigkeit und Gerechtigkeit.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 7
                 },
@@ -4671,7 +4671,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "En la fachada se han instalado estatuas de la Dama de la Justicia y de las diosas griegas de la verdad, la caridad y la justicia.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/22b55579708844c4adc22576333be9ed76cb453f25a04726b9d36ff6d0d2cc99/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c9d434b84918427caa5d7d772c3d6a34ebf6f43bc8d949ab99c79532b74b5649/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 7
                 },
@@ -4683,7 +4683,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "L’emplacement de l’ancienne cathédrale Saint-Donatien.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b8a900a3efbe41b386ad5a0f4a681dab908f916e209b46c2b324ba9d5a160f9c/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 8
                 },
@@ -4694,7 +4694,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De locatie van de voormalige Sint-Donaaskathedraal.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b8a900a3efbe41b386ad5a0f4a681dab908f916e209b46c2b324ba9d5a160f9c/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 8
                 },
@@ -4705,7 +4705,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The location of the former Saint Donatian’s cathedral.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b8a900a3efbe41b386ad5a0f4a681dab908f916e209b46c2b324ba9d5a160f9c/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 8
                 },
@@ -4716,7 +4716,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Die Lage der ehemaligen Kathedrale Sankt Donatian.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b8a900a3efbe41b386ad5a0f4a681dab908f916e209b46c2b324ba9d5a160f9c/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 8
                 },
@@ -4727,7 +4727,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La ubicación del antigua catedral de San Donaciano.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/176de22472d54fb8acd043861293cd259b3a5772fb4142afae1454575f03b66d/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/b8a900a3efbe41b386ad5a0f4a681dab908f916e209b46c2b324ba9d5a160f9c/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 8
                 },
@@ -4739,7 +4739,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La cathédrale sur la Carte de Marcus Gerards (1591-1562).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 8
                 },
@@ -4750,7 +4750,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De kathedraal op de kaart van Marcus Gerards (1561-1562).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 8
                 },
@@ -4761,7 +4761,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The cathedral on the map of Marcus Gerards (1561-1562).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 8
                 },
@@ -4772,7 +4772,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Die Kathedrale auf der Karte von Marcus Gerards (1561-1562).",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 8
                 },
@@ -4783,7 +4783,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La catedral en el mapa de Marcus Gerards (1561-1562)",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c316e46152184d4b9c96e5ac62eea6ae9ee2640e6a5e4f579c9e7617e469a7ae/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/146632b90ade45aa895039331a0ca7eacae793ae076845daa219384fb579656d/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 8
                 },
@@ -4795,7 +4795,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "En 1127, le comte Charles le Bon de Flandre fut assassiné dans l’église.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8bab1ec7242e487e988792657fd1767a000eb486d5474cf5bfee03267ce602ac/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 8
                 },
@@ -4806,7 +4806,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "In 1127 werd in de kerk graaf Karel de Goede van Vlaanderen vermoord.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8bab1ec7242e487e988792657fd1767a000eb486d5474cf5bfee03267ce602ac/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 8
                 },
@@ -4817,7 +4817,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Count Charles the Good of Flanders was murdered in the church in 1127.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8bab1ec7242e487e988792657fd1767a000eb486d5474cf5bfee03267ce602ac/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 8
                 },
@@ -4828,7 +4828,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Im Jahre 1127 wurde Graf Karl der Gute von Flandern in der Kirche ermordet.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8bab1ec7242e487e988792657fd1767a000eb486d5474cf5bfee03267ce602ac/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 8
                 },
@@ -4839,7 +4839,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "En el año 1127 el conde Carlos el Bueno de Flandes fue asesinado en la iglesia.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/dfabe3a6e47c4617955509bf3008cdc6d5b7dd1e57124d44933d919440675b1a/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8bab1ec7242e487e988792657fd1767a000eb486d5474cf5bfee03267ce602ac/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 8
                 },
@@ -4851,7 +4851,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La cathédrale a été démolie sous le régime français à la fin du 18e siècle.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1103d239eded48dca13e050e4200a20c5dd6083fc1cd4014a9be868bedd85486/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 8
                 },
@@ -4862,7 +4862,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "De kathedraal werd afgebroken onder het Franse regime eind 18de eeuw.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1103d239eded48dca13e050e4200a20c5dd6083fc1cd4014a9be868bedd85486/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 8
                 },
@@ -4873,7 +4873,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The cathedral was demolished under the French regime at the end of the 18th century.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1103d239eded48dca13e050e4200a20c5dd6083fc1cd4014a9be868bedd85486/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 8
                 },
@@ -4884,7 +4884,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Die Kathedrale wurde Ende des 18. Jahrhundert unter der französischen Verwaltung abgerissen.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1103d239eded48dca13e050e4200a20c5dd6083fc1cd4014a9be868bedd85486/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 8
                 },
@@ -4895,7 +4895,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La catedral fue derruida bajo el régimen francés a finales del siglo XVIII.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/cf0cfcd74972433dbb34464a37a6f3b0a901b088721c4e20b92a0e12a8cdf49c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1103d239eded48dca13e050e4200a20c5dd6083fc1cd4014a9be868bedd85486/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 8
                 },
@@ -4907,7 +4907,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "Les fondations de la cathédrale peuvent être admirées dans les caves de l’hôtel Crowne Plaza.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/eb747d7d64484eb5bcb71d153383dd4ac04ebd2b09f44b1f913423d86648e2ad/browse.jpg",
                     LanguageId = 1, //FR
                     BuildingId = 8
                 },
@@ -4918,7 +4918,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "In de kelders van het Crowne Plaza Hotel zijn de funderingen van de kathedraal te bezichtigen.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/eb747d7d64484eb5bcb71d153383dd4ac04ebd2b09f44b1f913423d86648e2ad/browse.jpg",
                     LanguageId = 2, //NL
                     BuildingId = 8
                 },
@@ -4929,7 +4929,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "The foundations of the cathedral can still be seen in the cellars of the Crowne Plaza Hotel.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/eb747d7d64484eb5bcb71d153383dd4ac04ebd2b09f44b1f913423d86648e2ad/browse.jpg",
                     LanguageId = 3, //EN
                     BuildingId = 8
                 },
@@ -4940,7 +4940,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "In den Kellerräumen des Crowne Plaza Hotels können die Fundamente der Kathedrale auch heute noch besichtigt werden.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/eb747d7d64484eb5bcb71d153383dd4ac04ebd2b09f44b1f913423d86648e2ad/browse.jpg",
                     LanguageId = 4, //DE
                     BuildingId = 8
                 },
@@ -4951,7 +4951,7 @@ namespace backend.DAL
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "En los sótanos del Crowne Plaza Hotel pueden visitarse los cimientos de la catedral.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/64b1e13a417140b9ac1896e74f75b1bc2c07d91365ec4f5fbd0d8eb34ea7466c/browse.jpg",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/eb747d7d64484eb5bcb71d153383dd4ac04ebd2b09f44b1f913423d86648e2ad/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 8
                 }
