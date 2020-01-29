@@ -17,6 +17,7 @@ namespace backend.DAL
         public DbSet<Use> Use {get;set;}
         public DbSet<Building> Building { get; set; }
         public DbSet<BuildingStory> BuildingStory {get;set;}
+        public DbSet<BuildingAudio> BuildingAudio {get;set;}
         public ExplorerContext(DbContextOptions<ExplorerContext> options) : base(options)
         {
         }
@@ -1522,6 +1523,133 @@ namespace backend.DAL
                     AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/68a8083495404f51af3ef6cc65d28192fc390fb6e39d4fe682ba7de2178209e3/browse.mp3",
                     LanguageId = 4,
                     PaintingId = 2
+                }
+            );
+
+            modelBuilder.Entity<BuildingAudio>()
+            .HasData(
+                // Audiofragment Burg
+                new BuildingAudio
+                {
+                    Id = 1,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/240151bc61934d899e8e72bda7301beb98d571224db744a2bc967955d924fc17/browse.mp3",
+                    LanguageId = 1, //FR
+                    BuildingId = 1
+                },
+                new BuildingAudio
+                {
+                    Id = 2,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a8c5124faab430bad55be7e5499c26c1da0f4cb4592489ebd42ce3e43365176/browse.mp3",
+                    LanguageId = 2, //NL
+                    BuildingId = 1
+                },
+                new BuildingAudio
+                {
+                    Id = 3,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a186f7d78504408831f1fc8bb7f9f4ad10c61942b314397a9949435e0d86483/browse.mp3",
+                    LanguageId = 3, //EN
+                    BuildingId = 1
+                },
+                new BuildingAudio
+                {
+                    Id = 4,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/464617389c7d4cd59c77fb184d03158326c265aee38c433aa2117bae2d1a6ffb/browse.mp3",
+                    LanguageId = 4, //DE
+                    BuildingId = 1
+                },
+                new BuildingAudio
+                {
+                    Id = 5,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/58d13827e4d84a47bd03b40fdfbba012b52c7bec24594821b197c4b4cf8e7dbb/browse.mp3",
+                    LanguageId = 5, //ES
+                    BuildingId = 1
+                },
+                // Audiofragment Stadhuis
+                new BuildingAudio
+                {
+                    Id = 6,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/1dc5545666c54effbe4d03e8e081f32912763e9a8dbb4a6a8ba2c8bea043d345/browse.mp3",
+                    LanguageId = 1, //FR
+                    BuildingId = 4
+                },
+                new BuildingAudio
+                {
+                    Id = 7,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/732e132e789e4c7db2bfc2d54da6f4e03e7f2c00c727493d9e07971cb5ef8a0e/browse.mp3",
+                    LanguageId = 2, //NL
+                    BuildingId = 4
+                },
+                new BuildingAudio
+                {
+                    Id = 8,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3f16977087a24cc3a62f84ce7c65c88b95d23e9a573e4dfab303b9d1b0f113ee/browse.mp3",
+                    LanguageId = 3, //EN
+                    BuildingId = 4
+                },
+                new BuildingAudio
+                {
+                    Id = 9,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/fb161fc88d18470eb1e50244e3def1153becabebb66d48de9a8f01cd2fea5915/browse.mp3",
+                    LanguageId = 4, //DE
+                    BuildingId = 4
+                },
+                new BuildingAudio
+                {
+                    Id = 10,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8f455c2eaf754c74ba19c373f990dabda7afb5649cc24b48a772262488051ddc/browse.mp3",
+                    LanguageId = 5, //ES
+                    BuildingId = 4
+                },
+                // Audiofragment Landhuis
+                new BuildingAudio
+                {
+                    Id = 11,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/d39c65c14c20494ea4b84854b93f4ae967463ccffb374d57a9e086f1a0df63d9/browse.mp3",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingAudio
+                {
+                    Id = 12,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/3bdc151159c441529ce4c8ecbdd9208c45d160b87cc846a6bf0a0b7c8ca44f3e/browse.mp3",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingAudio
+                {
+                    Id = 13,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5b5c2774cf754aa7b7e4cac2719fd7b338fc44b17a9248979220bd21d85a6ad0/browse.mp3",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingAudio
+                {
+                    Id = 14,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/29c25c7a38024c99b27d89ff5538c468c2617d20662c41f8ae300b995bd89cf6/browse.mp3",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingAudio
+                {
+                    Id = 15,
+                    Name = null,
+                    AudioUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/c205edf23a2c4620a5d8bbb00019d92bc8ccb27732ee4eac96749e0938c41ee2/browse.mp3",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
                 }
             );
 

@@ -12,6 +12,7 @@ namespace backend.dto
         public virtual UseDto Use {get;set;}
         public virtual MovementDto Movement {get;set;}
         public virtual List<BuildingTranslationDto> Translations {get;set;}
+        public virtual List<BuildingAudioDto> Audios {get;set;}
         public virtual List<BuildingStoryDto> Stories {get;set;}
 
         public void FilterByLanguage(string language){
@@ -19,6 +20,7 @@ namespace backend.dto
             Author.FilterByLanguage(language);
             Use.FilterByLanguage(language);
             Movement.FilterByLanguage(language);
+            this.Audios = this.Audios.Where(a => a.Language.Code == language).ToList();
             this.Stories = this.Stories.Where(s => s.Language.Code == language).ToList();
             this.Translations = this.Translations.Where(pt => pt.Language.Code == language).ToList();
         }

@@ -21,7 +21,7 @@ namespace backend.Models
         public virtual Use Use {get;set;}
         [ForeignKey("MovementId")]
         public virtual Movement Movement {get;set;}
-
+        public virtual List<BuildingAudio> Audios {get;set;}
         public virtual List<BuildingStory> Stories {get;set;}
         public virtual List<BuildingTranslation> Translations {get;set;}
     }
