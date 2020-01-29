@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.DAL;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(ExplorerContext))]
-    partial class PaintingContextModelSnapshot : ModelSnapshot
+    [Migration("20200129142046_extraStopLandhuisDeur")]
+    partial class extraStopLandhuisDeur
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1032,10 +1034,10 @@ namespace backend.Migrations
                         {
                             Id = 122L,
                             BuildingId = 2L,
-                            ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
                             LanguageId = 1L,
                             Subtitle = " ",
-                            Text = "Entrée vers la salle échevinale.",
+                            Text = "Au Moyen-Âge, ce bâtiment abritait l’une des résidences des comtes de Flandre.",
                             Title = "Landhuis",
                             Type = "artwork"
                         },
@@ -1043,10 +1045,10 @@ namespace backend.Migrations
                         {
                             Id = 123L,
                             BuildingId = 2L,
-                            ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
                             LanguageId = 2L,
                             Subtitle = " ",
-                            Text = "Ingang naar de schepenzaal.",
+                            Text = "Ingang naar de schepenzaal",
                             Title = "Landhuis",
                             Type = "artwork"
                         },
@@ -1054,10 +1056,10 @@ namespace backend.Migrations
                         {
                             Id = 124L,
                             BuildingId = 2L,
-                            ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
                             LanguageId = 3L,
                             Subtitle = " ",
-                            Text = "Entrance to the aldermen's room.",
+                            Text = "During the middle ages, this was one of the residences of the Counts of Flanders.",
                             Title = "Landhuis",
                             Type = "artwork"
                         },
@@ -1065,10 +1067,10 @@ namespace backend.Migrations
                         {
                             Id = 125L,
                             BuildingId = 2L,
-                            ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/9d6c51e780e044759631a07bd9dcbd322af40c753c0549c7a69a6158a0874eb5/browse.jpg",
                             LanguageId = 4L,
                             Subtitle = " ",
-                            Text = "Eingang zum Schöffensaal.",
+                            Text = "Im Mittelalter befand sich hier eine der Residenzen der Grafen von Flandern.",
                             Title = "Landhuis",
                             Type = "artwork"
                         },
@@ -1076,10 +1078,10 @@ namespace backend.Migrations
                         {
                             Id = 126L,
                             BuildingId = 2L,
-                            ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                            ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/012e71463a0b41a19df118bf2ff08e0499a665fb247d4c3e95e3e0968a96b0f3/browse.jpg",
                             LanguageId = 5L,
                             Subtitle = " ",
-                            Text = "Entrada a la sala del escabinado.",
+                            Text = "En la época medieval, aquí se encontraba ubicada una de las residencias de los condes de Flandes.",
                             Title = "Landhuis",
                             Type = "artwork"
                         },

@@ -3338,6 +3338,174 @@ namespace backend.DAL
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
+                    Text = "Jusqu’à la Révolution française, l’administration du Franc de Bruges, la campagne brugeoise, y siégeait.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 113,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Tot de Franse Revolutie zetelde hier het bestuur van het Brugse Vrije, het platteland rond Brugge.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 114,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Until the French Revolution, this was the administrative seat of the Franc of Bruges, the area surrounding Bruges.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 115,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Bis zur Französischen Revolution war hier das Brügger Freiamt, die Verwaltung des Brügger Umlands, untergebracht.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 116,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Hasta la Revolución Francesa, este lugar fue la sede de la dirección del Brugse Vrije, el campo que rodeaba Brujas.",
+                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
+                },
+                // Landhuis 3: Artwork
+                new BuildingStory
+                {
+                    Id = 117,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La Maison du France comme Palais de Justice.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 118,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Het Landhuis als gerechtshof.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 119,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "The Manor as a court of justice.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 120,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Das Landeshaus als Gerichtshof.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 121,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "La casa como tribunal de justicia.",
+                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
+                },
+                // Landhuis 1: Extra!!
+                new BuildingStory
+                {
+                    Id = 122,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Entrée vers la salle échevinale.",
+                    ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                    LanguageId = 1, //FR
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 123,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Ingang naar de schepenzaal.",
+                    ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                    LanguageId = 2, //NL
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 124,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Entrance to the aldermen's room.",
+                    ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                    LanguageId = 3, //EN
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 125,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Eingang zum Schöffensaal.",
+                    ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                    LanguageId = 4, //DE
+                    BuildingId = 2
+                },
+                new BuildingStory
+                {
+                    Id = 126,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
+                    Text = "Entrada a la sala del escabinado.",
+                    ImageUrl = "https://www.visitflanders.com/nl/binaries/b901d286-b88c-4d90-abf1-1d48e61813b0_tcm14-154310.jpg",
+                    LanguageId = 5, //ES
+                    BuildingId = 2
+                },
+                // Landhuis 2: Artwork
+                new BuildingStory
+                {
+                    Id = 127,
+                    Title = "Landhuis",
+                    Type = "artwork",
+                    Subtitle = " ",
                     Text = "La monumentale cheminée Charles-Quint du 16e siècle, en chêne, marbre et albâtre, est située dans la salle échevinale.",
                     ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/5f6d2be4fe1341cdb997fdc50b2dc1af506df3a577254e02ad61811a3872254f/browse.jpg",
                     LanguageId = 1, //FR
@@ -3345,7 +3513,7 @@ namespace backend.DAL
                 },
                 new BuildingStory
                 {
-                    Id = 113,
+                    Id = 128,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
@@ -3356,7 +3524,7 @@ namespace backend.DAL
                 },
                 new BuildingStory
                 {
-                    Id = 114,
+                    Id = 129,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
@@ -3367,7 +3535,7 @@ namespace backend.DAL
                 },
                 new BuildingStory
                 {
-                    Id = 115,
+                    Id = 130,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
@@ -3378,7 +3546,7 @@ namespace backend.DAL
                 },
                 new BuildingStory
                 {
-                    Id = 116,
+                    Id = 131,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
@@ -3390,7 +3558,7 @@ namespace backend.DAL
                 // Landhuis 3: Artwork
                 new BuildingStory
                 {
-                    Id = 117,
+                    Id = 257,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
@@ -3401,7 +3569,7 @@ namespace backend.DAL
                 },
                 new BuildingStory
                 {
-                    Id = 118,
+                    Id = 258,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
@@ -3412,7 +3580,7 @@ namespace backend.DAL
                 },
                 new BuildingStory
                 {
-                    Id = 119,
+                    Id = 259,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
@@ -3423,7 +3591,7 @@ namespace backend.DAL
                 },
                 new BuildingStory
                 {
-                    Id = 120,
+                    Id = 260,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
@@ -3434,124 +3602,12 @@ namespace backend.DAL
                 },
                 new BuildingStory
                 {
-                    Id = 121,
+                    Id = 261,
                     Title = "Landhuis",
                     Type = "artwork",
                     Subtitle = " ",
                     Text = "La sala para el escabinado en el landhuis (Gillis van Tillborgh, 1658).",
                     ImageUrl = "https://museabrugge.imgix.net/https%3A%2F%2Fwww.museabrugge.be%2Fvolumes%2Fgeneral%2FSchilderij_VanTilborg-opgelicht.jpg?auto=compress%2Cformat&fit=clip&h=400&s=8b95ab0b4ffd6fafd41b5f9bd370d36e",
-                    LanguageId = 5, //ES
-                    BuildingId = 2
-                },
-                // Landhuis 4: Artwork
-                new BuildingStory
-                {
-                    Id = 122,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "Jusqu’à la Révolution française, l’administration du Franc de Bruges, la campagne brugeoise, y siégeait.",
-                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
-                    LanguageId = 1, //FR
-                    BuildingId = 2
-                },
-                new BuildingStory
-                {
-                    Id = 123,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "Tot de Franse Revolutie zetelde hier het bestuur van het Brugse Vrije, het platteland rond Brugge.",
-                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
-                    LanguageId = 2, //NL
-                    BuildingId = 2
-                },
-                new BuildingStory
-                {
-                    Id = 124,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "Until the French Revolution, this was the administrative seat of the Franc of Bruges, the area surrounding Bruges.",
-                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
-                    LanguageId = 3, //EN
-                    BuildingId = 2
-                },
-                new BuildingStory
-                {
-                    Id = 125,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "Bis zur Französischen Revolution war hier das Brügger Freiamt, die Verwaltung des Brügger Umlands, untergebracht.",
-                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
-                    LanguageId = 4, //DE
-                    BuildingId = 2
-                },
-                new BuildingStory
-                {
-                    Id = 126,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "Hasta la Revolución Francesa, este lugar fue la sede de la dirección del Brugse Vrije, el campo que rodeaba Brujas.",
-                    ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif/lossy-page1-1280px-Famien_Strada_Histoire-Palace_of_het_Brugse_Vrije-ppn087811480_MG_8951T3p403.tif.jpg",
-                    LanguageId = 5, //ES
-                    BuildingId = 2
-                },
-                // Landhuis 5: Artwork
-                new BuildingStory
-                {
-                    Id = 127,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "La Maison du France comme Palais de Justice.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
-                    LanguageId = 1, //FR
-                    BuildingId = 2
-                },
-                new BuildingStory
-                {
-                    Id = 128,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "Het Landhuis als gerechtshof.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
-                    LanguageId = 2, //NL
-                    BuildingId = 2
-                },
-                new BuildingStory
-                {
-                    Id = 129,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "The Manor as a court of justice.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
-                    LanguageId = 3, //EN
-                    BuildingId = 2
-                },
-                new BuildingStory
-                {
-                    Id = 130,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "Das Landeshaus als Gerichtshof.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
-                    LanguageId = 4, //DE
-                    BuildingId = 2
-                },
-                new BuildingStory
-                {
-                    Id = 131,
-                    Title = "Landhuis",
-                    Type = "artwork",
-                    Subtitle = " ",
-                    Text = "La casa como tribunal de justicia.",
-                    ImageUrl = "https://mheuropehot.blob.core.windows.net/mediahaven-saas-browse-main/BRUGGE/8a7cd41758ee4ff6b8a852b200ea2f2abb2e28fe6bbb485195b1066f001d1228/browse.jpg",
                     LanguageId = 5, //ES
                     BuildingId = 2
                 },
