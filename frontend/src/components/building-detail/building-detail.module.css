@@ -251,3 +251,23 @@ padding: 0px;
 .feedback a:focus ~ p {
     display: block;
 }
+
+a.btnToTop,
+a.btnToTopHide {
+    border-bottom-color: transparent;
+    bottom: 5rem;
+    display: block;
+    position: fixed;
+    right: 1rem;
+    transition: right 0.2s;
+    z-index: 1050;
+}
+
+a.btnToTopHide {
+    right: -3rem;
+}
+
+.btnToTop span,
+.btnToTopHide span {
+    display: none;
+}

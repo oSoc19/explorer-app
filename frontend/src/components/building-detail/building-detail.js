@@ -2,6 +2,7 @@ import React from 'react';
 import { ClipLoader } from 'react-spinners';
 import styles from './building-detail.module.css';
 import AliceCarousel from 'react-alice-carousel';
+import AudioPlayer from "../audio-player/index";
 import "react-alice-carousel/lib/alice-carousel.css";
 import Api from '../../services/api';
 import { css } from '@emotion/core';
@@ -45,7 +46,6 @@ class BuildingDetail extends React.Component{
     }
 
     async componentWillMount(){
-        console.log(localStorage.getItem("language"));
         if( localStorage.getItem("language") === null || localStorage.getItem("language") === "false" ){
             let language = navigator.language || navigator.userLanguage;
             language = language.substring(0, 2).toUpperCase();
@@ -292,12 +292,21 @@ class BuildingDetail extends React.Component{
                             <p>
                                 {Translation.Translate("useful")}
                             </p>
-                            <a className={styles.positiveFeedback} href={`#positive-${this.props.match.params.id}`}><i className="far fa-smile fa-3x"></i></a>
-                            <a className={styles.negativeFeedback} href={`#negative-${this.props.match.params.id}`}><i className="far fa-frown fa-3x"></i></a>
-                            <p>{Translation.Translate("thanks")}</p>
+                            <a className={styles.positiveFeedback} href={`#positive-${this.props.match.params.id}`} data-feedback="positive"><i className="far fa-smile fa-3x"></i></a>
+                            <a className={styles.negativeFeedback} href={`#negative-${this.props.match.params.id}`} data-feedback="negative"><i className="far fa-frown fa-3x"></i></a>
+                            <p>
+                                {Translation.Translate("thanks")}
+                                <br/>
+                                <a href="https://tiny.cc/reviewlearnmore" target="_blank">{Translation.Translate("morefeedback")}</a>
+                            </p>
                         </div>
                     </div>
                 </div>
+                <a className={`fas fa-arrow-circle-up fa-3x ${(this.state.buttonHidden ? styles.btnToTop : styles.btnToTopHide)}`} href="#totop"><span>totop</span></a>
+                {this.state.data.audios.length > 0 
+                    ? <footer className={`fixed-bottom`}><AudioPlayer src={this.state.data.audios[0].audioUrl}/></footer>
+                    : null
+                }
             </div>
         );
 
